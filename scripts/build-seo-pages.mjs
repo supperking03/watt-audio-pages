@@ -3,6 +3,10 @@ import path from "node:path";
 
 const appUrl = "https://apps.apple.com/vn/app/watt-audio-%C4%91%E1%BB%8Dc-truy%E1%BB%87n-audio/id6775724279";
 const siteUrl = "https://wattaudios.com";
+const publisher = {
+  name: "Watt Audio",
+  logo: `${siteUrl}/assets/icons/icon-512.png`
+};
 const blogImage = {
   src: "/assets/blog/how-to-listen-to-wattpad-stories-watt-audio.webp",
   width: 1536,
@@ -22,6 +26,12 @@ const homeImages = {
     alt: "Watt Audio homepage hero image in English showing the app turning stories into audio"
   }
 };
+const faviconTags = `<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#F74E05" />`;
 
 const topics = [
   {
@@ -649,6 +659,59 @@ function articleUrl(lang, slug) {
   return `${siteUrl}/${lang}/articles/${slug}.html`;
 }
 
+function absoluteUrl(pathname) {
+  return `${siteUrl}${pathname}`;
+}
+
+function articleTags(topic, lang) {
+  const shared = ["Watt Audio", "Wattpad audio", "text to speech", "AI voice", "story audio"];
+  const bySlug = {
+    "how-to-listen-to-wattpad-stories": ["listen to Wattpad stories", "Wattpad reader", "story listening"],
+    "how-to-convert-wattpad-to-audio": ["convert Wattpad to audio", "chapter audio", "audio converter"],
+    "best-wattpad-audiobook-app": ["Wattpad audiobook app", "audiobook app", "offline listening"],
+    "listen-to-romance-stories-online": ["romance stories", "listen online", "romance audio"],
+    "listen-to-fantasy-stories-online": ["fantasy stories", "fantasy audio", "web fiction"],
+    "wattpad-text-to-speech-app": ["Wattpad text to speech", "TTS app", "screen fatigue"],
+    "wattpad-audio-reader-for-iphone": ["iPhone audio reader", "iOS story app", "background playback"],
+    "offline-wattpad-audio-listening": ["offline Wattpad audio", "offline stories", "travel listening"],
+    "listen-to-web-novels-with-ai-voice": ["web novels", "AI voice", "serialized fiction"],
+    "listen-to-stories-while-commuting": ["commute listening", "hands-free stories", "listen while commuting"]
+  };
+  const vi = ["nghe truyện", "truyện audio", "giọng đọc AI", "Wattpad tiếng Việt", "nghe truyện offline"];
+  return [...shared, ...(bySlug[topic.slug] || []), ...(lang === "vi" ? vi : [])];
+}
+
+function hashtagText(tag) {
+  return `#${tag.replace(/[^A-Za-z0-9À-ỹ]+/g, "")}`;
+}
+
+function jsonScript(data) {
+  return `<script type="application/ld+json">${JSON.stringify(data).replaceAll("</", "<\\/")}</script>`;
+}
+
+function baseMeta({ title, description, canonical, image, imageWidth, imageHeight, lang, type = "website", keywords = [] }) {
+  const locale = lang === "vi" ? "vi_VN" : "en_US";
+  return `${faviconTags}
+<meta name="description" content="${escapeHtml(description)}" />
+${keywords.length ? `<meta name="keywords" content="${escapeHtml(keywords.join(", "))}" />` : ""}
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="author" content="Watt Audio" />
+<link rel="canonical" href="${canonical}" />
+<meta property="og:site_name" content="Watt Audio" />
+<meta property="og:locale" content="${locale}" />
+<meta property="og:title" content="${escapeHtml(title)}" />
+<meta property="og:description" content="${escapeHtml(description)}" />
+<meta property="og:type" content="${type}" />
+<meta property="og:url" content="${canonical}" />
+${image ? `<meta property="og:image" content="${image}" />
+<meta property="og:image:width" content="${imageWidth}" />
+<meta property="og:image:height" content="${imageHeight}" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="${escapeHtml(title)}" />
+<meta name="twitter:description" content="${escapeHtml(description)}" />
+<meta name="twitter:image" content="${image}" />` : ""}`;
+}
+
 function relatedLinks(currentSlug, lang) {
   return topics
     .filter((topic) => topic.slug !== currentSlug)
@@ -664,6 +727,38 @@ function articleHtml(topic, lang) {
   const page = topic[lang];
   const l = labels[lang];
   const canonical = articleUrl(lang, topic.slug);
+  const tags = articleTags(topic, lang);
+  const title = `${page.title} | Watt Audio`;
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: page.title,
+    description: page.description,
+    image: [absoluteUrl(blogImage.src)],
+    author: publisher,
+    publisher: {
+      "@type": "Organization",
+      name: publisher.name,
+      logo: {
+        "@type": "ImageObject",
+        url: publisher.logo
+      }
+    },
+    mainEntityOfPage: canonical,
+    inLanguage: lang === "vi" ? "vi-VN" : "en",
+    keywords: tags,
+    datePublished: "2026-06-11",
+    dateModified: "2026-06-11"
+  };
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Watt Audio", item: `${siteUrl}/${lang}/` },
+      { "@type": "ListItem", position: 2, name: l.guides, item: `${siteUrl}/${lang}/articles/` },
+      { "@type": "ListItem", position: 3, name: page.title, item: canonical }
+    ]
+  };
   const stepItems = page.steps.map((step) => `<li>${escapeHtml(step)}</li>`).join("\n");
   const tipItems = page.tips.map((tip) => `<li>${escapeHtml(tip)}</li>`).join("\n");
   const faq = page.faq.map(([question, answer]) => `
@@ -675,21 +770,24 @@ function articleHtml(topic, lang) {
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>${escapeHtml(page.title)} | Watt Audio</title>
-<meta name="description" content="${escapeHtml(page.description)}" />
-<link rel="canonical" href="${canonical}" />
+<title>${escapeHtml(title)}</title>
+${baseMeta({
+  title,
+  description: page.description,
+  canonical,
+  image: absoluteUrl(blogImage.src),
+  imageWidth: blogImage.width,
+  imageHeight: blogImage.height,
+  lang,
+  type: "article",
+  keywords: tags
+})}
 <link rel="alternate" hreflang="en" href="${articleUrl("en", topic.slug)}" />
 <link rel="alternate" hreflang="vi-VN" href="${articleUrl("vi", topic.slug)}" />
 <link rel="alternate" hreflang="x-default" href="${articleUrl("en", topic.slug)}" />
-<meta property="og:title" content="${escapeHtml(page.title)}" />
-<meta property="og:description" content="${escapeHtml(page.description)}" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="${canonical}" />
-<meta property="og:image" content="${siteUrl}${blogImage.src}" />
-<meta property="og:image:width" content="${blogImage.width}" />
-<meta property="og:image:height" content="${blogImage.height}" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="${siteUrl}${blogImage.src}" />
+${tags.map((tag) => `<meta property="article:tag" content="${escapeHtml(tag)}" />`).join("\n")}
+${jsonScript(articleSchema)}
+${jsonScript(breadcrumbSchema)}
 <link rel="stylesheet" href="../../assets/seo.css" />
 </head>
 <body>
@@ -710,6 +808,9 @@ function articleHtml(topic, lang) {
       <div class="eyebrow">${l.guide}</div>
       <h1>${escapeHtml(page.title)}</h1>
       <p class="intro">${escapeHtml(page.description)} ${lang === "en" ? "This guide is written for" : "Bài này dành cho"} ${escapeHtml(page.audience)}.</p>
+      <div class="tag-row" aria-label="${lang === "en" ? "Topic tags" : "Chủ đề"}">
+        ${tags.slice(0, 8).map((tag) => `<a href="index.html">${escapeHtml(hashtagText(tag))}</a>`).join("\n        ")}
+      </div>
 
       <p>${escapeHtml(fill(l.introA, page))}</p>
       <p>${escapeHtml(fill(l.introB, page))}</p>
@@ -771,6 +872,11 @@ function articleHtml(topic, lang) {
 
 function guidesIndexHtml(lang) {
   const l = labels[lang];
+  const title = `${l.indexTitle} | Watt Audio`;
+  const canonical = `${siteUrl}/${lang}/articles/`;
+  const keywords = lang === "vi"
+    ? ["Watt Audio", "nghe truyện Wattpad", "chuyển truyện thành audio", "giọng đọc AI", "truyện audio"]
+    : ["Watt Audio", "Wattpad audio", "story audio guides", "text to speech", "AI voice"];
   const list = topics.map((topic) => {
     const page = topic[lang];
     return `<a href="${topic.slug}.html">${escapeHtml(page.title)}<span>${escapeHtml(page.description)}</span></a>`;
@@ -780,12 +886,30 @@ function guidesIndexHtml(lang) {
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>${l.indexTitle}</title>
-<meta name="description" content="${escapeHtml(l.indexDescription)}" />
-<link rel="canonical" href="${siteUrl}/${lang}/articles/" />
+<title>${title}</title>
+${baseMeta({
+  title,
+  description: l.indexDescription,
+  canonical,
+  image: absoluteUrl(homeImages[lang].src),
+  imageWidth: homeImages[lang].width,
+  imageHeight: homeImages[lang].height,
+  lang,
+  type: "website",
+  keywords
+})}
 <link rel="alternate" hreflang="en" href="${siteUrl}/en/articles/" />
 <link rel="alternate" hreflang="vi-VN" href="${siteUrl}/vi/articles/" />
 <link rel="alternate" hreflang="x-default" href="${siteUrl}/en/articles/" />
+${jsonScript({
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: l.indexTitle,
+  description: l.indexDescription,
+  url: canonical,
+  inLanguage: lang === "vi" ? "vi-VN" : "en",
+  publisher
+})}
 <link rel="stylesheet" href="../../assets/seo.css" />
 </head>
 <body>
@@ -818,6 +942,16 @@ function guidesIndexHtml(lang) {
 function localizedHomeHtml(lang) {
   const l = labels[lang];
   const homeImage = homeImages[lang];
+  const title = lang === "en"
+    ? "Watt Audio | Turn Stories into Audio"
+    : "Watt Audio | Chuyển truyện chữ thành audio";
+  const description = lang === "en"
+    ? "Watt Audio helps you turn supported story links into chapter audio with AI voice, background playback, offline replay, speed control, and sleep timer."
+    : "Watt Audio giúp chuyển link truyện được hỗ trợ thành audio theo chương bằng giọng đọc AI, nghe nền, nghe lại offline, chỉnh tốc độ và hẹn giờ ngủ.";
+  const keywords = lang === "en"
+    ? ["Watt Audio", "Wattpad audio app", "text to speech stories", "AI voice reader", "listen to stories"]
+    : ["Watt Audio", "nghe truyện Wattpad", "chuyển truyện thành audio", "app đọc truyện audio", "giọng đọc AI"];
+  const canonical = `${siteUrl}/${lang}/`;
   const guideTitle = lang === "en" ? "Watt Audio Guides" : "Hướng dẫn Watt Audio";
   const guideSub = lang === "en" ? "SEO articles and listening guides" : "Bài hướng dẫn nghe truyện và SEO";
   const appTitle = lang === "en" ? "Listen to stories your way" : "Nghe truyện theo cách của bạn";
@@ -832,17 +966,42 @@ function localizedHomeHtml(lang) {
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Watt Audio</title>
-<meta name="description" content="${escapeHtml(l.homeTag)}" />
-<link rel="canonical" href="${siteUrl}/${lang}/" />
+<title>${title}</title>
+${baseMeta({
+  title,
+  description,
+  canonical,
+  image: absoluteUrl(homeImage.src),
+  imageWidth: homeImage.width,
+  imageHeight: homeImage.height,
+  lang,
+  type: "website",
+  keywords
+})}
 <link rel="alternate" hreflang="en" href="${siteUrl}/en/" />
 <link rel="alternate" hreflang="vi-VN" href="${siteUrl}/vi/" />
 <link rel="alternate" hreflang="x-default" href="${siteUrl}/en/" />
-<meta property="og:image" content="${siteUrl}${homeImage.src}" />
-<meta property="og:image:width" content="${homeImage.width}" />
-<meta property="og:image:height" content="${homeImage.height}" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="${siteUrl}${homeImage.src}" />
+${jsonScript({
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "Watt Audio",
+  applicationCategory: "MultimediaApplication",
+  operatingSystem: "iOS",
+  description,
+  url: canonical,
+  image: absoluteUrl(homeImage.src),
+  downloadUrl: appUrl,
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD"
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Watt Audio",
+    logo: publisher.logo
+  }
+})}
 <link rel="stylesheet" href="../assets/seo.css" />
 <style>
   body { background:#fff7f0; }
@@ -934,17 +1093,37 @@ function localizedHomeHtml(lang) {
 }
 
 function rootIndexHtml() {
+  const title = "Watt Audio | Turn Stories into Audio";
+  const description = "Watt Audio turns supported story links into chapter audio with AI voice, background playback, offline replay, speed control, and sleep timer.";
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Watt Audio</title>
-<meta name="description" content="Watt Audio turns supported story links into chapter audio." />
-<link rel="canonical" href="${siteUrl}/" />
+<title>${title}</title>
+${baseMeta({
+  title,
+  description,
+  canonical: `${siteUrl}/`,
+  image: absoluteUrl(homeImages.en.src),
+  imageWidth: homeImages.en.width,
+  imageHeight: homeImages.en.height,
+  lang: "en",
+  type: "website",
+  keywords: ["Watt Audio", "Wattpad audio", "story audio", "AI voice", "text to speech"]
+})}
 <link rel="alternate" hreflang="en" href="${siteUrl}/en/" />
 <link rel="alternate" hreflang="vi-VN" href="${siteUrl}/vi/" />
 <link rel="alternate" hreflang="x-default" href="${siteUrl}/en/" />
+${jsonScript({
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Watt Audio",
+  url: siteUrl,
+  description,
+  inLanguage: ["en", "vi-VN"],
+  publisher
+})}
 <link rel="stylesheet" href="assets/seo.css" />
 <script>
   (function () {
@@ -983,6 +1162,7 @@ function legacyRedirectHtml(target, title = "Redirecting") {
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>${title}</title>
+${faviconTags}
 <meta name="robots" content="noindex" />
 <link rel="canonical" href="${siteUrl}${target}" />
 <meta http-equiv="refresh" content="0; url=${target}" />
@@ -1040,5 +1220,28 @@ fs.writeFileSync(path.join(process.cwd(), "robots.txt"), `User-agent: *
 Allow: /
 Sitemap: ${siteUrl}/sitemap.xml
 `);
+fs.writeFileSync(path.join(process.cwd(), "site.webmanifest"), JSON.stringify({
+  name: "Watt Audio",
+  short_name: "Watt Audio",
+  description: "Turn stories into audio.",
+  start_url: "/",
+  display: "standalone",
+  background_color: "#fff7f0",
+  theme_color: "#F74E05",
+  icons: [
+    {
+      src: "/assets/icons/icon-192.png",
+      sizes: "192x192",
+      type: "image/png",
+      purpose: "any maskable"
+    },
+    {
+      src: "/assets/icons/icon-512.png",
+      sizes: "512x512",
+      type: "image/png",
+      purpose: "any maskable"
+    }
+  ]
+}, null, 2) + "\n");
 
 console.log(`Generated ${topics.length} topics in English and Vietnamese.`);
