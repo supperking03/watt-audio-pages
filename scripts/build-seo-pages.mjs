@@ -3,6 +3,11 @@ import path from "node:path";
 
 const appUrl = "https://apps.apple.com/vn/app/watt-audio-%C4%91%E1%BB%8Dc-truy%E1%BB%87n-audio/id6775724279";
 const siteUrl = "https://wattaudios.com";
+const blogImage = {
+  src: "/assets/blog/how-to-listen-to-wattpad-stories-watt-audio.webp",
+  width: 1536,
+  height: 1024
+};
 
 const topics = [
   {
@@ -666,6 +671,11 @@ function articleHtml(topic, lang) {
 <meta property="og:description" content="${escapeHtml(page.description)}" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="${canonical}" />
+<meta property="og:image" content="${siteUrl}${blogImage.src}" />
+<meta property="og:image:width" content="${blogImage.width}" />
+<meta property="og:image:height" content="${blogImage.height}" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="${siteUrl}${blogImage.src}" />
 <link rel="stylesheet" href="../../assets/seo.css" />
 </head>
 <body>
@@ -694,12 +704,16 @@ function articleHtml(topic, lang) {
       <p>${escapeHtml(fill(l.whyA, page))}</p>
       <p>${escapeHtml(fill(l.whyB, page))}</p>
 
-      <div class="placeholder">
-        <div>
-          <strong>${l.screenshotTitle}</strong>
-          <span>${escapeHtml(page.screenshot)} ${l.screenshotSuffix}</span>
-        </div>
-      </div>
+      <figure class="blog-figure">
+        <img
+          src="../../assets/blog/how-to-listen-to-wattpad-stories-watt-audio.webp"
+          width="${blogImage.width}"
+          height="${blogImage.height}"
+          alt="${escapeHtml(`Watt Audio app blog image for ${page.title}`)}"
+          loading="eager"
+          decoding="async" />
+        <figcaption>${escapeHtml(page.screenshot)}</figcaption>
+      </figure>
 
       <h2>${l.stepHeading}</h2>
       <p>${escapeHtml(l.stepIntro)}</p>

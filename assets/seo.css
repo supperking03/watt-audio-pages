@@ -120,6 +120,26 @@ li { margin: 8px 0; }
   margin-bottom: 6px;
 }
 
+.blog-figure {
+  margin: 28px 0;
+}
+
+.blog-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: #050505;
+}
+
+.blog-figure figcaption {
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 8px;
+  text-align: center;
+}
+
 .cta {
   margin: 36px 0 8px;
   padding: 24px;
