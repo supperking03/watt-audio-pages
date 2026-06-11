@@ -9,33 +9,97 @@
 <link rel="alternate" hreflang="en" href="https://wattaudios.com/en/" />
 <link rel="alternate" hreflang="vi-VN" href="https://wattaudios.com/vi/" />
 <link rel="alternate" hreflang="x-default" href="https://wattaudios.com/en/" />
+<meta property="og:image" content="https://wattaudios.com/assets/blog/homepage-watt-audio-vi.webp" />
+<meta property="og:image:width" content="1942" />
+<meta property="og:image:height" content="809" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://wattaudios.com/assets/blog/homepage-watt-audio-vi.webp" />
 <link rel="stylesheet" href="../assets/seo.css" />
 <style>
-  .home-hero { display:flex; align-items:center; gap:18px; margin:18px 0 32px; }
-  .home-hero img { width:84px; height:84px; border-radius:20px; box-shadow:0 8px 24px rgba(247,78,5,.25); }
-  .home-hero h1 { font-size:34px; margin:0; }
-  .home-hero p { color:var(--muted); margin:4px 0 0; }
+  body { background:#fff7f0; }
+  .home-wrap { max-width:1180px; }
+  .home-nav { align-items:center; justify-content:space-between; margin-bottom:18px; }
+  .home-brand { display:flex; align-items:center; gap:12px; color:var(--ink); text-decoration:none; font-weight:900; }
+  .home-brand img { width:44px; height:44px; border-radius:12px; box-shadow:0 10px 24px rgba(247,78,5,.24); }
+  .home-actions { display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
+  .hero-shell {
+    overflow:hidden;
+    border:1px solid rgba(247,78,5,.18);
+    border-radius:8px;
+    background:#fff;
+    box-shadow:0 28px 70px rgba(94,42,8,.14);
+  }
+  .hero-shell img { display:block; width:100%; height:auto; }
+  .home-copy {
+    display:grid;
+    grid-template-columns:minmax(0,1.1fr) minmax(280px,.9fr);
+    gap:28px;
+    align-items:start;
+    margin:34px 0 24px;
+  }
+  .home-copy h1 { margin:0 0 12px; font-size:clamp(34px,5vw,58px); }
+  .home-copy p { font-size:18px; color:#343842; margin:0; }
+  .feature-strip {
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:12px;
+    margin:22px 0;
+  }
+  .feature {
+    background:rgba(255,255,255,.72);
+    border:1px solid rgba(247,78,5,.16);
+    border-radius:8px;
+    padding:16px;
+  }
+  .feature b { display:block; font-size:16px; }
+  .feature span { display:block; color:var(--muted); font-size:14px; margin-top:2px; }
+  .home-links { margin-top:0; }
+  .home-footer { margin-top:38px; }
+  @media (max-width:760px) {
+    .home-copy { grid-template-columns:1fr; }
+    .feature-strip { grid-template-columns:1fr; }
+  }
 </style>
 </head>
 <body>
-  <div class="wrap">
-    <nav class="nav">
-      <a href="../en/">English</a>
-      <a href="https://apps.apple.com/vn/app/watt-audio-%C4%91%E1%BB%8Dc-truy%E1%BB%87n-audio/id6775724279">Tải app</a>
-    </nav>
-    <div class="home-hero">
-      <img src="../icon.png" alt="Watt Audio" />
-      <div>
-        <h1>Watt Audio</h1>
-        <p>Chuyển truyện chữ thành audio, nghe mọi lúc.</p>
+  <div class="wrap home-wrap">
+    <nav class="nav home-nav">
+      <a class="home-brand" href="./"><img src="../icon.png" alt="Watt Audio" /><span>Watt Audio</span></a>
+      <div class="home-actions">
+        <a href="../en/">English</a>
+        <a class="btn" href="https://apps.apple.com/vn/app/watt-audio-%C4%91%E1%BB%8Dc-truy%E1%BB%87n-audio/id6775724279">Tải app</a>
       </div>
-    </div>
-    <div class="article-list">
-      <a href="articles/">Hướng dẫn Watt Audio<span>Bài hướng dẫn nghe truyện và SEO</span></a>
-      <a href="../privacy.html">Chính sách quyền riêng tư<span>Privacy Policy</span></a>
-      <a href="../support.html">Hỗ trợ<span>Support</span></a>
-    </div>
-    <footer>© 2026 Watt Audio</footer>
+    </nav>
+
+    <section class="hero-shell" aria-label="Watt Audio">
+      <img
+        src="../assets/blog/homepage-watt-audio-vi.webp"
+        width="1942"
+        height="809"
+        alt="Watt Audio homepage hero image in Vietnamese showing the app turning stories into audio"
+        fetchpriority="high"
+        decoding="async" />
+    </section>
+
+    <section class="home-copy">
+      <div>
+        <div class="eyebrow">Watt Audio</div>
+        <h1>Nghe truyện theo cách của bạn</h1>
+        <p>Tạo audio theo chương từ link truyện được hỗ trợ, nghe khi tắt màn hình và tiếp tục thói quen đọc ở bất cứ đâu.</p>
+        <div class="feature-strip">
+          <div class="feature"><b>Giọng đọc tự nhiên</b><span>Dễ nghe và giàu cảm xúc</span></div>
+          <div class="feature"><b>Sẵn sàng offline</b><span>Nghe lại audio đã tạo</span></div>
+          <div class="feature"><b>Dành cho truyện</b><span>Nghe theo từng chương</span></div>
+        </div>
+      </div>
+      <div class="article-list home-links">
+        <a href="articles/">Hướng dẫn Watt Audio<span>Bài hướng dẫn nghe truyện và SEO</span></a>
+        <a href="../privacy.html">Chính sách quyền riêng tư<span>Privacy Policy</span></a>
+        <a href="../support.html">Hỗ trợ<span>Support</span></a>
+      </div>
+    </section>
+
+    <footer class="home-footer">© 2026 Watt Audio</footer>
   </div>
 </body>
 </html>

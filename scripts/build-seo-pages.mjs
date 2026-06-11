@@ -8,6 +8,20 @@ const blogImage = {
   width: 1536,
   height: 1024
 };
+const homeImages = {
+  vi: {
+    src: "/assets/blog/homepage-watt-audio-vi.webp",
+    width: 1942,
+    height: 809,
+    alt: "Watt Audio homepage hero image in Vietnamese showing the app turning stories into audio"
+  },
+  en: {
+    src: "/assets/blog/homepage-watt-audio-en.webp",
+    width: 1672,
+    height: 941,
+    alt: "Watt Audio homepage hero image in English showing the app turning stories into audio"
+  }
+};
 
 const topics = [
   {
@@ -803,8 +817,16 @@ function guidesIndexHtml(lang) {
 
 function localizedHomeHtml(lang) {
   const l = labels[lang];
+  const homeImage = homeImages[lang];
   const guideTitle = lang === "en" ? "Watt Audio Guides" : "Hướng dẫn Watt Audio";
   const guideSub = lang === "en" ? "SEO articles and listening guides" : "Bài hướng dẫn nghe truyện và SEO";
+  const appTitle = lang === "en" ? "Listen to stories your way" : "Nghe truyện theo cách của bạn";
+  const appText = lang === "en"
+    ? "Create chapter audio from supported story links, listen with the screen off, and keep your reading habit moving anywhere."
+    : "Tạo audio theo chương từ link truyện được hỗ trợ, nghe khi tắt màn hình và tiếp tục thói quen đọc ở bất cứ đâu.";
+  const features = lang === "en"
+    ? [["Natural voices", "Realistic and expressive"], ["Offline ready", "Replay generated audio"], ["Made for stories", "Chapter-based listening"]]
+    : [["Giọng đọc tự nhiên", "Dễ nghe và giàu cảm xúc"], ["Sẵn sàng offline", "Nghe lại audio đã tạo"], ["Dành cho truyện", "Nghe theo từng chương"]];
   return `<!DOCTYPE html>
 <html lang="${l.htmlLang}">
 <head>
@@ -816,33 +838,95 @@ function localizedHomeHtml(lang) {
 <link rel="alternate" hreflang="en" href="${siteUrl}/en/" />
 <link rel="alternate" hreflang="vi-VN" href="${siteUrl}/vi/" />
 <link rel="alternate" hreflang="x-default" href="${siteUrl}/en/" />
+<meta property="og:image" content="${siteUrl}${homeImage.src}" />
+<meta property="og:image:width" content="${homeImage.width}" />
+<meta property="og:image:height" content="${homeImage.height}" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="${siteUrl}${homeImage.src}" />
 <link rel="stylesheet" href="../assets/seo.css" />
 <style>
-  .home-hero { display:flex; align-items:center; gap:18px; margin:18px 0 32px; }
-  .home-hero img { width:84px; height:84px; border-radius:20px; box-shadow:0 8px 24px rgba(247,78,5,.25); }
-  .home-hero h1 { font-size:34px; margin:0; }
-  .home-hero p { color:var(--muted); margin:4px 0 0; }
+  body { background:#fff7f0; }
+  .home-wrap { max-width:1180px; }
+  .home-nav { align-items:center; justify-content:space-between; margin-bottom:18px; }
+  .home-brand { display:flex; align-items:center; gap:12px; color:var(--ink); text-decoration:none; font-weight:900; }
+  .home-brand img { width:44px; height:44px; border-radius:12px; box-shadow:0 10px 24px rgba(247,78,5,.24); }
+  .home-actions { display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
+  .hero-shell {
+    overflow:hidden;
+    border:1px solid rgba(247,78,5,.18);
+    border-radius:8px;
+    background:#fff;
+    box-shadow:0 28px 70px rgba(94,42,8,.14);
+  }
+  .hero-shell img { display:block; width:100%; height:auto; }
+  .home-copy {
+    display:grid;
+    grid-template-columns:minmax(0,1.1fr) minmax(280px,.9fr);
+    gap:28px;
+    align-items:start;
+    margin:34px 0 24px;
+  }
+  .home-copy h1 { margin:0 0 12px; font-size:clamp(34px,5vw,58px); }
+  .home-copy p { font-size:18px; color:#343842; margin:0; }
+  .feature-strip {
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:12px;
+    margin:22px 0;
+  }
+  .feature {
+    background:rgba(255,255,255,.72);
+    border:1px solid rgba(247,78,5,.16);
+    border-radius:8px;
+    padding:16px;
+  }
+  .feature b { display:block; font-size:16px; }
+  .feature span { display:block; color:var(--muted); font-size:14px; margin-top:2px; }
+  .home-links { margin-top:0; }
+  .home-footer { margin-top:38px; }
+  @media (max-width:760px) {
+    .home-copy { grid-template-columns:1fr; }
+    .feature-strip { grid-template-columns:1fr; }
+  }
 </style>
 </head>
 <body>
-  <div class="wrap">
-    <nav class="nav">
-      <a href="${lang === "en" ? "../vi/" : "../en/"}">${lang === "en" ? "Tiếng Việt" : "English"}</a>
-      <a href="${appUrl}">${l.download}</a>
-    </nav>
-    <div class="home-hero">
-      <img src="../icon.png" alt="Watt Audio" />
-      <div>
-        <h1>Watt Audio</h1>
-        <p>${l.homeTag}</p>
+  <div class="wrap home-wrap">
+    <nav class="nav home-nav">
+      <a class="home-brand" href="./"><img src="../icon.png" alt="Watt Audio" /><span>Watt Audio</span></a>
+      <div class="home-actions">
+        <a href="${lang === "en" ? "../vi/" : "../en/"}">${lang === "en" ? "Tiếng Việt" : "English"}</a>
+        <a class="btn" href="${appUrl}">${l.download}</a>
       </div>
-    </div>
-    <div class="article-list">
-      <a href="articles/">${guideTitle}<span>${guideSub}</span></a>
-      <a href="../privacy.html">${l.privacy}<span>Privacy Policy</span></a>
-      <a href="../support.html">${l.support}<span>Support</span></a>
-    </div>
-    <footer>© 2026 Watt Audio</footer>
+    </nav>
+
+    <section class="hero-shell" aria-label="Watt Audio">
+      <img
+        src="..${homeImage.src}"
+        width="${homeImage.width}"
+        height="${homeImage.height}"
+        alt="${homeImage.alt}"
+        fetchpriority="high"
+        decoding="async" />
+    </section>
+
+    <section class="home-copy">
+      <div>
+        <div class="eyebrow">Watt Audio</div>
+        <h1>${appTitle}</h1>
+        <p>${appText}</p>
+        <div class="feature-strip">
+          ${features.map(([title, text]) => `<div class="feature"><b>${title}</b><span>${text}</span></div>`).join("\n          ")}
+        </div>
+      </div>
+      <div class="article-list home-links">
+        <a href="articles/">${guideTitle}<span>${guideSub}</span></a>
+        <a href="../privacy.html">${l.privacy}<span>Privacy Policy</span></a>
+        <a href="../support.html">${l.support}<span>Support</span></a>
+      </div>
+    </section>
+
+    <footer class="home-footer">© 2026 Watt Audio</footer>
   </div>
 </body>
 </html>
