@@ -16,17 +16,34 @@ const blogImage = {
   width: 1536,
   height: 1024
 };
+const appIcon = {
+  src: "/assets/icons/app-icon-96.webp",
+  width: 96,
+  height: 96
+};
 const homeImages = {
   vi: {
     src: "/assets/blog/homepage-watt-audio-vi.webp",
+    desktop: "/assets/blog/homepage-watt-audio-vi-1340.webp",
+    mobile: "/assets/blog/homepage-watt-audio-vi-760.webp",
     width: 1942,
     height: 809,
+    desktopWidth: 1340,
+    desktopHeight: 559,
+    mobileWidth: 760,
+    mobileHeight: 317,
     alt: "Watt Audio homepage hero image in Vietnamese showing the app turning stories into audio"
   },
   en: {
     src: "/assets/blog/homepage-watt-audio-en.webp",
+    desktop: "/assets/blog/homepage-watt-audio-en-1340.webp",
+    mobile: "/assets/blog/homepage-watt-audio-en-760.webp",
     width: 1672,
     height: 941,
+    desktopWidth: 1340,
+    desktopHeight: 755,
+    mobileWidth: 760,
+    mobileHeight: 428,
     alt: "Watt Audio homepage hero image in English showing the app turning stories into audio"
   }
 };
@@ -936,7 +953,7 @@ ${jsonScript(breadcrumbSchema)}
 <body>
   <div class="wrap">
     <div class="top">
-      <img src="../../icon.png" alt="Watt Audio app icon" />
+      <img src="../..${appIcon.src}" width="${appIcon.width}" height="${appIcon.height}" alt="Watt Audio app icon" />
       <b>Watt Audio</b>
     </div>
     <nav class="nav">
@@ -1059,7 +1076,7 @@ ${jsonScript({
 <body>
   <div class="wrap">
     <div class="top">
-      <img src="../../icon.png" alt="Watt Audio app icon" />
+      <img src="../..${appIcon.src}" width="${appIcon.width}" height="${appIcon.height}" alt="Watt Audio app icon" />
       <b>Watt Audio</b>
     </div>
     <nav class="nav">
@@ -1161,7 +1178,7 @@ ${jsonScript({
     background:#fff;
     box-shadow:0 28px 70px rgba(94,42,8,.14);
   }
-  .hero-shell img { display:block; width:100%; height:auto; }
+  .hero-shell picture, .hero-shell img { display:block; width:100%; height:auto; }
   .visually-hidden {
     position:absolute;
     width:1px;
@@ -1209,7 +1226,7 @@ ${jsonScript({
 <body>
   <div class="wrap home-wrap">
     <nav class="nav home-nav">
-      <a class="home-brand" href="./"><img src="../icon.png" alt="Watt Audio" /><span>Watt Audio</span></a>
+      <a class="home-brand" href="./"><img src="..${appIcon.src}" width="${appIcon.width}" height="${appIcon.height}" alt="" /><span>Watt Audio</span></a>
       <div class="home-actions">
         <a href="${lang === "en" ? "../vi/" : "../en/"}">${lang === "en" ? "Tiếng Việt" : "English"}</a>
         <a class="btn" href="${appUrl}">${l.download}</a>
@@ -1217,13 +1234,17 @@ ${jsonScript({
     </nav>
 
     <section class="hero-shell" aria-label="Watt Audio">
-      <img
-        src="..${homeImage.src}"
-        width="${homeImage.width}"
-        height="${homeImage.height}"
-        alt="${homeImage.alt}"
-        fetchpriority="high"
-        decoding="async" />
+      <picture>
+        <source media="(max-width: 760px)" srcset="..${homeImage.mobile}" width="${homeImage.mobileWidth}" height="${homeImage.mobileHeight}" />
+        <source media="(max-width: 1440px)" srcset="..${homeImage.desktop}" width="${homeImage.desktopWidth}" height="${homeImage.desktopHeight}" />
+        <img
+          src="..${homeImage.desktop}"
+          width="${homeImage.desktopWidth}"
+          height="${homeImage.desktopHeight}"
+          alt="${homeImage.alt}"
+          fetchpriority="high"
+          decoding="async" />
+      </picture>
     </section>
 
     <main>
@@ -1415,7 +1436,7 @@ ${jsonScript(schema)}
 <body>
   <div class="wrap">
     <div class="top">
-      <img src="icon.png" alt="Watt Audio app icon" />
+      <img src=".${appIcon.src}" width="${appIcon.width}" height="${appIcon.height}" alt="Watt Audio app icon" />
       <b>Watt Audio</b>
     </div>
     <nav class="nav">
@@ -1431,7 +1452,7 @@ ${jsonScript(schema)}
       <p class="intro">Watt Audio is an iOS app for readers who want to listen to supported web stories with AI voice, chapter controls, background playback, offline replay, speed control, and sleep timer.</p>
 
       <figure class="blog-figure">
-        <img src="assets/blog/homepage-watt-audio-en.webp" width="${homeImages.en.width}" height="${homeImages.en.height}" alt="Watt Audio app homepage hero showing story audio features" loading="eager" decoding="async" />
+        <img src=".${homeImages.en.desktop}" width="${homeImages.en.desktopWidth}" height="${homeImages.en.desktopHeight}" alt="Watt Audio app homepage hero showing story audio features" loading="eager" decoding="async" />
       </figure>
 
       <h2>What Watt Audio does</h2>
