@@ -60,6 +60,74 @@ const faviconTags = `<link rel="icon" href="/favicon.ico" sizes="any" />
 <link rel="manifest" href="/site.webmanifest" />
 <meta name="theme-color" content="#F74E05" />`;
 
+function searchIntentTopic({
+  slug,
+  enTitle,
+  enDescription,
+  enAudience,
+  enFocus,
+  enScenario,
+  viTitle,
+  viDescription,
+  viAudience,
+  viFocus,
+  viScenario
+}) {
+  return {
+    slug,
+    en: {
+      title: enTitle,
+      description: enDescription,
+      audience: enAudience,
+      focus: enFocus,
+      scenario: enScenario,
+      screenshot: `Watt Audio screen showing a chapter-based listening workflow for ${enFocus}.`,
+      steps: [
+        "Start from the original story page or a story source you already use, then copy the story or chapter link.",
+        "Open Watt Audio and add the supported story link so the app can keep chapters together in one listening library.",
+        "Generate audio for one chapter first, because a short test helps you check voice clarity, pacing, and chapter boundaries.",
+        "Use playback controls such as speed, sleep timer, background listening, and chapter navigation instead of manually selecting text every time.",
+        "Keep the workflow personal and respectful: use audio to continue stories you can access, not to redistribute files or bypass author rights."
+      ],
+      tips: [
+        "Searches that mention free, MP3, download, or audiobooks often mean the reader wants convenience, offline replay, and less screen time.",
+        "A story-focused app is usually better than a generic web reader when chapter order, updates, and listening progress matter.",
+        "If you are comparing audiobook stores, TTS apps, and Wattpad-style readers, test one chapter in each workflow before choosing your daily setup."
+      ],
+      faq: [
+        ["Can Watt Audio create official audiobooks?", "No. Watt Audio is a personal listening tool for supported story links, not an official audiobook publisher or store."],
+        ["Can I use it instead of searching for MP3 downloads?", "Use it as a safer personal listening workflow. It is designed for chapter audio you generate for yourself, not for sharing unauthorized downloads."],
+        ["Why make a separate page for this search?", "Readers use different phrases for the same need. Some search for Wattpad audio, others search for audio reader, free audiobooks, MP3, download, or text to speech."]
+      ]
+    },
+    vi: {
+      title: viTitle,
+      description: viDescription,
+      audience: viAudience,
+      focus: viFocus,
+      scenario: viScenario,
+      screenshot: `Màn hình Watt Audio minh hoạ workflow nghe theo chương cho nhu cầu ${viFocus}.`,
+      steps: [
+        "Bắt đầu từ trang truyện gốc hoặc nguồn truyện bạn đang dùng, sau đó copy link truyện hoặc link chương.",
+        "Mở Watt Audio và thêm link truyện được hỗ trợ để app giữ các chương trong một thư viện nghe gọn gàng.",
+        "Tạo audio cho một chương trước, vì nghe thử ngắn giúp kiểm tra độ rõ của giọng, nhịp đọc và ranh giới chương.",
+        "Dùng các điều khiển như tốc độ, hẹn giờ ngủ, phát nền và chuyển chương thay vì phải chọn văn bản thủ công mỗi lần.",
+        "Giữ workflow cho nhu cầu cá nhân và tôn trọng tác giả: dùng audio để nghe tiếp nội dung bạn có quyền truy cập, không chia sẻ file trái phép."
+      ],
+      tips: [
+        "Các tìm kiếm có chữ free, MP3, download hoặc audiobooks thường xuất phát từ nhu cầu tiện hơn, nghe lại offline và giảm thời gian nhìn màn hình.",
+        "App tập trung vào truyện thường hợp hơn trình đọc web chung khi thứ tự chương, cập nhật và tiến độ nghe là phần quan trọng.",
+        "Nếu bạn đang so sánh kho audiobook, app TTS và trình nghe kiểu Wattpad, hãy thử một chương trong từng workflow trước khi chọn cách dùng hằng ngày."
+      ],
+      faq: [
+        ["Watt Audio có tạo audiobook chính thức không?", "Không. Watt Audio là công cụ nghe cá nhân cho link truyện được hỗ trợ, không phải nhà xuất bản hoặc kho bán audiobook chính thức."],
+        ["Có dùng thay cho việc tìm MP3 download không?", "Hãy dùng như workflow nghe cá nhân an toàn hơn. App tập trung vào audio theo chương bạn tự tạo để nghe, không dùng để chia sẻ file không được phép."],
+        ["Vì sao cần trang riêng cho cụm tìm kiếm này?", "Người đọc dùng nhiều cách gọi khác nhau cho cùng một nhu cầu: Wattpad audio, audio reader, audiobooks free, MP3, download hoặc text to speech."]
+      ]
+    }
+  };
+}
+
 const topics = [
   {
     slug: "how-to-listen-to-wattpad-stories",
@@ -220,6 +288,97 @@ const topics = [
       ]
     }
   },
+  searchIntentTopic({
+    slug: "wattpad-audio-reader",
+    enTitle: "Wattpad Audio Reader",
+    enDescription: "How to use a Wattpad audio reader workflow to hear stories with chapter controls, AI voice, and Watt Audio.",
+    enAudience: "readers searching for a Wattpad audio reader that feels closer to an audiobook player than a screen reader",
+    enFocus: "using a Wattpad audio reader",
+    enScenario: "hearing story updates during commutes, walks, chores, and bedtime without holding the phone open",
+    viTitle: "Wattpad audio reader là gì?",
+    viDescription: "Cách dùng Watt Audio như một Wattpad audio reader để nghe truyện theo chương, phát nền và dùng giọng AI.",
+    viAudience: "người đọc đang tìm Wattpad audio reader giống trình nghe audiobook hơn là trình đọc màn hình",
+    viFocus: "dùng Wattpad audio reader",
+    viScenario: "nghe cập nhật truyện khi đi làm, đi bộ, dọn nhà hoặc trước khi ngủ mà không phải mở màn hình liên tục"
+  }),
+  searchIntentTopic({
+    slug: "wattpad-audio-free",
+    enTitle: "Wattpad Audio Free Options",
+    enDescription: "A practical look at free Wattpad audio options, text to speech limits, and when Watt Audio can help with personal listening.",
+    enAudience: "readers searching for free ways to listen to Wattpad-style stories without committing to a full audiobook subscription",
+    enFocus: "finding free Wattpad audio options",
+    enScenario: "testing whether story audio fits your routine before paying for audiobook stores, subscriptions, or premium TTS tools",
+    viTitle: "Cách nghe Wattpad audio miễn phí",
+    viDescription: "Các lựa chọn nghe Wattpad audio miễn phí, giới hạn của text to speech và khi nào Watt Audio hữu ích cho nghe cá nhân.",
+    viAudience: "người đọc muốn thử cách nghe truyện Wattpad miễn phí trước khi trả tiền cho audiobook hoặc app TTS cao cấp",
+    viFocus: "tìm cách nghe Wattpad audio miễn phí",
+    viScenario: "thử xem audio truyện có hợp thói quen hằng ngày trước khi dùng kho audiobook, subscription hoặc công cụ TTS trả phí"
+  }),
+  searchIntentTopic({
+    slug: "wattpad-audio-mp3",
+    enTitle: "Wattpad Audio MP3: What Readers Should Know",
+    enDescription: "Searching for Wattpad audio MP3? Learn safer alternatives for personal story listening with generated chapter audio.",
+    enAudience: "readers who search for Wattpad audio MP3 but mainly want offline replay and a simpler way to hear long chapters",
+    enFocus: "understanding Wattpad audio MP3 alternatives",
+    enScenario: "preparing story chapters for offline-style listening without relying on random download sites or messy browser tabs",
+    viTitle: "Wattpad audio MP3: nên hiểu thế nào?",
+    viDescription: "Nếu bạn tìm Wattpad audio MP3, đây là cách nghĩ an toàn hơn về nghe truyện cá nhân bằng audio theo chương.",
+    viAudience: "người đọc search Wattpad audio MP3 nhưng thật ra cần nghe lại offline và nghe chương dài dễ hơn",
+    viFocus: "hiểu lựa chọn thay thế Wattpad audio MP3",
+    viScenario: "chuẩn bị chương truyện để nghe kiểu offline mà không phải phụ thuộc website tải file lạ hoặc nhiều tab trình duyệt"
+  }),
+  searchIntentTopic({
+    slug: "wattpad-audio-download",
+    enTitle: "Wattpad Audio Download Alternatives",
+    enDescription: "Before searching for Wattpad audio download links, compare personal text to speech, chapter audio, and Watt Audio.",
+    enAudience: "readers who search for Wattpad audio download because they want portable listening, not another reading screen",
+    enFocus: "finding Wattpad audio download alternatives",
+    enScenario: "listening on low-signal trips, long rides, flights, or quiet moments where reopening a web page is inconvenient",
+    viTitle: "Lựa chọn thay thế Wattpad audio download",
+    viDescription: "Trước khi tìm Wattpad audio download, hãy so sánh text to speech cá nhân, audio theo chương và Watt Audio.",
+    viAudience: "người đọc tìm Wattpad audio download vì muốn nghe linh hoạt hơn chứ không muốn thêm một màn hình đọc",
+    viFocus: "tìm lựa chọn thay thế Wattpad audio download",
+    viScenario: "nghe khi sóng yếu, đi xa, trên máy bay hoặc những lúc mở lại trang web không tiện"
+  }),
+  searchIntentTopic({
+    slug: "wattpad-audiobooks-free",
+    enTitle: "Wattpad Audiobooks Free: Reader Guide",
+    enDescription: "A guide to free Wattpad audiobook searches, official audio stories, text to speech, and personal listening with Watt Audio.",
+    enAudience: "readers comparing free Wattpad audiobooks, official audio stories, audiobook stores, and AI voice reading apps",
+    enFocus: "searching for free Wattpad audiobooks",
+    enScenario: "deciding whether an official audiobook, a free audio story, or personal chapter audio is the right way to keep reading",
+    viTitle: "Wattpad audiobooks free: hướng dẫn cho người đọc",
+    viDescription: "Hướng dẫn tìm Wattpad audiobooks free, audio chính thức, text to speech và cách nghe cá nhân bằng Watt Audio.",
+    viAudience: "người đọc đang so sánh Wattpad audiobooks miễn phí, audio chính thức, kho audiobook và app đọc giọng AI",
+    viFocus: "tìm Wattpad audiobooks miễn phí",
+    viScenario: "quyết định nên nghe audiobook chính thức, truyện audio miễn phí hay audio theo chương tự tạo để tiếp tục đọc"
+  }),
+  searchIntentTopic({
+    slug: "wattpad-audio-books",
+    enTitle: "Wattpad Audio Books and Story Listening",
+    enDescription: "How Wattpad audio books differ from text to speech story listening, and how Watt Audio fits chapter-based fiction.",
+    enAudience: "readers searching for Wattpad audio books who want to understand the difference between audiobooks and AI story audio",
+    enFocus: "comparing Wattpad audio books and story listening",
+    enScenario: "choosing between polished audiobook narration, quick AI voice listening, and a chapter library for serialized fiction",
+    viTitle: "Wattpad audio books và cách nghe truyện",
+    viDescription: "Wattpad audio books khác gì text to speech cho truyện, và Watt Audio phù hợp thế nào với fiction theo chương.",
+    viAudience: "người đọc tìm Wattpad audio books và muốn hiểu khác biệt giữa audiobook với audio truyện bằng AI",
+    viFocus: "so sánh Wattpad audio books và cách nghe truyện",
+    viScenario: "chọn giữa audiobook được thu chuyên nghiệp, nghe nhanh bằng giọng AI và thư viện chương cho truyện đăng kỳ"
+  }),
+  searchIntentTopic({
+    slug: "wattpad-audio-romance",
+    enTitle: "Wattpad Audio Romance Stories",
+    enDescription: "How to listen to Wattpad audio romance stories with chapter audio, slower pacing, sleep timer, and Watt Audio.",
+    enAudience: "romance readers searching specifically for Wattpad audio romance, romantic audiobooks, or hands-free story listening",
+    enFocus: "listening to Wattpad audio romance stories",
+    enScenario: "following slow-burn chapters, emotional dialogue, late-night updates, and favorite rereads without screen fatigue",
+    viTitle: "Nghe Wattpad audio romance",
+    viDescription: "Cách nghe truyện Wattpad audio romance bằng audio theo chương, nhịp đọc chậm hơn, hẹn giờ ngủ và Watt Audio.",
+    viAudience: "người đọc romance đang tìm Wattpad audio romance, audiobook tình cảm hoặc cách nghe truyện rảnh tay",
+    viFocus: "nghe Wattpad audio romance",
+    viScenario: "theo dõi slow-burn, đối thoại cảm xúc, cập nhật ban đêm và đọc lại chương yêu thích mà không mỏi mắt"
+  }),
   {
     slug: "listen-to-romance-stories-online",
     en: {
@@ -802,6 +961,13 @@ function articleTags(topic, lang) {
     "how-to-listen-to-wattpad-stories": ["listen to Wattpad stories", "Wattpad reader", "story listening"],
     "how-to-convert-wattpad-to-audio": ["convert Wattpad to audio", "chapter audio", "audio converter"],
     "best-wattpad-audiobook-app": ["Wattpad audiobook app", "audiobook app", "offline listening"],
+    "wattpad-audio-reader": ["Wattpad audio reader", "audio reader", "story reader app"],
+    "wattpad-audio-free": ["Wattpad audio free", "free story audio", "free text to speech"],
+    "wattpad-audio-mp3": ["Wattpad audio MP3", "MP3 alternative", "offline replay"],
+    "wattpad-audio-download": ["Wattpad audio download", "download alternative", "portable listening"],
+    "wattpad-audiobooks-free": ["Wattpad audiobooks free", "free audiobooks", "audio stories"],
+    "wattpad-audio-books": ["Wattpad audio books", "audio books", "audiobook alternative"],
+    "wattpad-audio-romance": ["Wattpad audio romance", "romance audio", "romantic audiobooks"],
     "listen-to-romance-stories-online": ["romance stories", "listen online", "romance audio"],
     "listen-to-fantasy-stories-online": ["fantasy stories", "fantasy audio", "web fiction"],
     "wattpad-text-to-speech-app": ["Wattpad text to speech", "TTS app", "Speechify alternative", "screen fatigue"],
