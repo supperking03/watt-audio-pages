@@ -4,6 +4,7 @@ import path from "node:path";
 const appUrl = "https://apps.apple.com/vn/app/watt-audio-%C4%91%E1%BB%8Dc-truy%E1%BB%87n-audio/id6775724279";
 const siteUrl = "https://wattaudios.com";
 const lastModified = "2026-06-12";
+const gaMeasurementId = "G-CPTTPW88BP";
 const publisher = {
   "@type": "Organization",
   name: "Watt Audio",
@@ -59,6 +60,22 @@ const faviconTags = `<link rel="icon" href="/favicon.ico" sizes="any" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <link rel="manifest" href="/site.webmanifest" />
 <meta name="theme-color" content="#F74E05" />`;
+const analyticsTags = `<script async src="https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '${gaMeasurementId}');
+  document.addEventListener('click', function (event) {
+    var link = event.target.closest && event.target.closest('a[href*="apps.apple.com"]');
+    if (!link || typeof gtag !== 'function') return;
+    gtag('event', 'download_app_click', {
+      event_category: 'engagement',
+      event_label: link.href,
+      page_location: window.location.href
+    });
+  });
+</script>`;
 
 function searchIntentTopic({
   slug,
@@ -1120,6 +1137,7 @@ ${jsonScript(articleSchema)}
 ${jsonScript(howToSchema)}
 ${jsonScript(faqSchema)}
 ${jsonScript(breadcrumbSchema)}
+${analyticsTags}
 <link rel="stylesheet" href="../../assets/seo.css" />
 </head>
 <body>
@@ -1247,6 +1265,7 @@ ${jsonScript({
   inLanguage: lang === "vi" ? "vi-VN" : "en",
   publisher
 })}
+${analyticsTags}
 <link rel="stylesheet" href="../../assets/seo.css" />
 </head>
 <body>
@@ -1339,6 +1358,7 @@ ${jsonScript({
     logo: publisher.logo
   }
 })}
+${analyticsTags}
 <link rel="stylesheet" href="../assets/seo.css" />
 <style>
   body { background:#fff7f0; }
@@ -1472,6 +1492,7 @@ ${jsonScript({
   inLanguage: ["en", "vi-VN"],
   publisher
 })}
+${analyticsTags}
 <link rel="stylesheet" href="assets/seo.css" />
 <script>
   (function () {
@@ -1607,6 +1628,7 @@ ${baseMeta({
   keywords: ["Watt Audio", "story audio app", "AI voice reader", "Wattpad audio app", "text to speech stories"]
 })}
 ${jsonScript(schema)}
+${analyticsTags}
 <link rel="stylesheet" href="assets/seo.css" />
 </head>
 <body>

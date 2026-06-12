@@ -27,6 +27,22 @@
 <meta name="twitter:description" content="Quick start and support for Watt Audio: add stories, generate audio, listen offline, and contact support." />
 <meta name="twitter:image" content="https://wattaudios.com/assets/blog/homepage-watt-audio-vi.webp" />
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Hỗ trợ · Watt Audio","description":"Support and quick start guide for Watt Audio.","url":"https://wattaudios.com/support.html","publisher":{"@type":"Organization","name":"Watt Audio","logo":"https://wattaudios.com/assets/icons/icon-512.png"}}</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CPTTPW88BP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CPTTPW88BP');
+  document.addEventListener('click', function (event) {
+    var link = event.target.closest && event.target.closest('a[href*="apps.apple.com"]');
+    if (!link || typeof gtag !== 'function') return;
+    gtag('event', 'download_app_click', {
+      event_category: 'engagement',
+      event_label: link.href,
+      page_location: window.location.href
+    });
+  });
+</script>
 <style>
   :root { --accent:#F74E05; --ink:#1b1d22; --muted:#6b7280; --line:#ececf0; --bg:#fafafa; }
   * { box-sizing:border-box; }
