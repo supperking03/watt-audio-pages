@@ -1096,14 +1096,14 @@ function localizedHomeHtml(lang) {
     : ["Watt Audio", "nghe truyện Wattpad", "Wattpad audio", "app text to speech", "app thay thế Speechify", "chuyển truyện thành audio", "app đọc truyện audio", "giọng đọc AI"];
   const canonical = `${siteUrl}/${lang}/`;
   const guideTitle = lang === "en" ? "Watt Audio Guides" : "Hướng dẫn Watt Audio";
-  const guideSub = lang === "en" ? "SEO articles and listening guides" : "Bài hướng dẫn nghe truyện và SEO";
+  const guideSub = lang === "en" ? "Listening guides and TTS tips" : "Hướng dẫn nghe truyện và TTS";
   const appTitle = lang === "en" ? "Listen to stories your way" : "Nghe truyện theo cách của bạn";
   const appText = lang === "en"
     ? "Create chapter audio from supported story links, listen with the screen off, and keep your reading habit moving anywhere."
     : "Tạo audio theo chương từ link truyện được hỗ trợ, nghe khi tắt màn hình và tiếp tục thói quen đọc ở bất cứ đâu.";
-  const features = lang === "en"
-    ? [["Natural voices", "Realistic and expressive"], ["Offline ready", "Replay generated audio"], ["Made for stories", "Chapter-based listening"]]
-    : [["Giọng đọc tự nhiên", "Dễ nghe và giàu cảm xúc"], ["Sẵn sàng offline", "Nghe lại audio đã tạo"], ["Dành cho truyện", "Nghe theo từng chương"]];
+  const seoText = lang === "en"
+    ? "Watt Audio is an iOS app for Wattpad audio, story text to speech, AI voice listening, Speechify alternative searches, web novels, romance, fantasy, background playback, chapter audio, and offline replay."
+    : "Watt Audio là app iOS cho nhu cầu nghe truyện Wattpad, Wattpad audio, text to speech cho truyện, giọng đọc AI, app thay thế Speechify, web novel, romance, fantasy, phát nền, audio theo chương và nghe lại offline.";
   return `<!DOCTYPE html>
 <html lang="${l.htmlLang}">
 <head>
@@ -1161,34 +1161,47 @@ ${jsonScript({
     box-shadow:0 28px 70px rgba(94,42,8,.14);
   }
   .hero-shell img { display:block; width:100%; height:auto; }
-  .home-copy {
-    display:grid;
-    grid-template-columns:minmax(0,1.1fr) minmax(280px,.9fr);
-    gap:28px;
-    align-items:start;
-    margin:34px 0 24px;
+  .visually-hidden {
+    position:absolute;
+    width:1px;
+    height:1px;
+    padding:0;
+    margin:-1px;
+    overflow:hidden;
+    clip:rect(0,0,0,0);
+    white-space:nowrap;
+    border:0;
   }
-  .home-copy h1 { margin:0 0 12px; font-size:clamp(34px,5vw,58px); }
-  .home-copy p { font-size:18px; color:#343842; margin:0; }
-  .feature-strip {
+  .home-links {
     display:grid;
     grid-template-columns:repeat(3,minmax(0,1fr));
     gap:12px;
-    margin:22px 0;
+    margin:16px 0 24px;
   }
-  .feature {
-    background:rgba(255,255,255,.72);
-    border:1px solid rgba(247,78,5,.16);
-    border-radius:8px;
-    padding:16px;
+  .home-links a {
+    position:relative;
+    min-height:86px;
+    padding:18px 18px 17px;
+    border:1px solid rgba(247,78,5,.18);
+    background:rgba(255,255,255,.82);
+    box-shadow:0 14px 34px rgba(94,42,8,.08);
   }
-  .feature b { display:block; font-size:16px; }
-  .feature span { display:block; color:var(--muted); font-size:14px; margin-top:2px; }
-  .home-links { margin-top:0; }
+  .home-links a::after {
+    content:"";
+    position:absolute;
+    right:18px;
+    top:22px;
+    width:8px;
+    height:8px;
+    border-top:2px solid var(--accent);
+    border-right:2px solid var(--accent);
+    transform:rotate(45deg);
+    opacity:.72;
+  }
+  .home-links span { max-width:82%; }
   .home-footer { margin-top:38px; }
   @media (max-width:760px) {
-    .home-copy { grid-template-columns:1fr; }
-    .feature-strip { grid-template-columns:1fr; }
+    .home-links { grid-template-columns:1fr; }
   }
 </style>
 </head>
@@ -1212,21 +1225,15 @@ ${jsonScript({
         decoding="async" />
     </section>
 
-    <section class="home-copy">
-      <div>
-        <div class="eyebrow">Watt Audio</div>
-        <h1>${appTitle}</h1>
-        <p>${appText}</p>
-        <div class="feature-strip">
-          ${features.map(([title, text]) => `<div class="feature"><b>${title}</b><span>${text}</span></div>`).join("\n          ")}
-        </div>
-      </div>
-      <div class="article-list home-links">
+    <main>
+      <h1 class="visually-hidden">${appTitle}</h1>
+      <p class="visually-hidden">${appText} ${seoText}</p>
+      <nav class="article-list home-links" aria-label="${lang === "en" ? "Watt Audio pages" : "Các trang Watt Audio"}">
         <a href="articles/">${guideTitle}<span>${guideSub}</span></a>
-        <a href="../about.html">${lang === "en" ? "About Watt Audio" : "Giới thiệu Watt Audio"}<span>${lang === "en" ? "Product, features, and story listening workflow" : "Sản phẩm, tính năng và cách nghe truyện"}</span></a>
-        <a href="../support.html">${l.support}<span>Support</span></a>
-      </div>
-    </section>
+        <a href="../about.html">${lang === "en" ? "About Watt Audio" : "Giới thiệu Watt Audio"}<span>${lang === "en" ? "App details and listening workflow" : "Thông tin app và cách nghe truyện"}</span></a>
+        <a href="../support.html">${l.support}<span>${lang === "en" ? "Help and contact" : "Trợ giúp và liên hệ"}</span></a>
+      </nav>
+    </main>
 
     <footer class="home-footer">© 2026 Watt Audio</footer>
   </div>

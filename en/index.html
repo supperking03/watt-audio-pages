@@ -49,34 +49,47 @@
     box-shadow:0 28px 70px rgba(94,42,8,.14);
   }
   .hero-shell img { display:block; width:100%; height:auto; }
-  .home-copy {
-    display:grid;
-    grid-template-columns:minmax(0,1.1fr) minmax(280px,.9fr);
-    gap:28px;
-    align-items:start;
-    margin:34px 0 24px;
+  .visually-hidden {
+    position:absolute;
+    width:1px;
+    height:1px;
+    padding:0;
+    margin:-1px;
+    overflow:hidden;
+    clip:rect(0,0,0,0);
+    white-space:nowrap;
+    border:0;
   }
-  .home-copy h1 { margin:0 0 12px; font-size:clamp(34px,5vw,58px); }
-  .home-copy p { font-size:18px; color:#343842; margin:0; }
-  .feature-strip {
+  .home-links {
     display:grid;
     grid-template-columns:repeat(3,minmax(0,1fr));
     gap:12px;
-    margin:22px 0;
+    margin:16px 0 24px;
   }
-  .feature {
-    background:rgba(255,255,255,.72);
-    border:1px solid rgba(247,78,5,.16);
-    border-radius:8px;
-    padding:16px;
+  .home-links a {
+    position:relative;
+    min-height:86px;
+    padding:18px 18px 17px;
+    border:1px solid rgba(247,78,5,.18);
+    background:rgba(255,255,255,.82);
+    box-shadow:0 14px 34px rgba(94,42,8,.08);
   }
-  .feature b { display:block; font-size:16px; }
-  .feature span { display:block; color:var(--muted); font-size:14px; margin-top:2px; }
-  .home-links { margin-top:0; }
+  .home-links a::after {
+    content:"";
+    position:absolute;
+    right:18px;
+    top:22px;
+    width:8px;
+    height:8px;
+    border-top:2px solid var(--accent);
+    border-right:2px solid var(--accent);
+    transform:rotate(45deg);
+    opacity:.72;
+  }
+  .home-links span { max-width:82%; }
   .home-footer { margin-top:38px; }
   @media (max-width:760px) {
-    .home-copy { grid-template-columns:1fr; }
-    .feature-strip { grid-template-columns:1fr; }
+    .home-links { grid-template-columns:1fr; }
   }
 </style>
 </head>
@@ -100,23 +113,15 @@
         decoding="async" />
     </section>
 
-    <section class="home-copy">
-      <div>
-        <div class="eyebrow">Watt Audio</div>
-        <h1>Listen to stories your way</h1>
-        <p>Create chapter audio from supported story links, listen with the screen off, and keep your reading habit moving anywhere.</p>
-        <div class="feature-strip">
-          <div class="feature"><b>Natural voices</b><span>Realistic and expressive</span></div>
-          <div class="feature"><b>Offline ready</b><span>Replay generated audio</span></div>
-          <div class="feature"><b>Made for stories</b><span>Chapter-based listening</span></div>
-        </div>
-      </div>
-      <div class="article-list home-links">
-        <a href="articles/">Watt Audio Guides<span>SEO articles and listening guides</span></a>
-        <a href="../about.html">About Watt Audio<span>Product, features, and story listening workflow</span></a>
-        <a href="../support.html">Support<span>Support</span></a>
-      </div>
-    </section>
+    <main>
+      <h1 class="visually-hidden">Listen to stories your way</h1>
+      <p class="visually-hidden">Create chapter audio from supported story links, listen with the screen off, and keep your reading habit moving anywhere. Watt Audio is an iOS app for Wattpad audio, story text to speech, AI voice listening, Speechify alternative searches, web novels, romance, fantasy, background playback, chapter audio, and offline replay.</p>
+      <nav class="article-list home-links" aria-label="Watt Audio pages">
+        <a href="articles/">Watt Audio Guides<span>Listening guides and TTS tips</span></a>
+        <a href="../about.html">About Watt Audio<span>App details and listening workflow</span></a>
+        <a href="../support.html">Support<span>Help and contact</span></a>
+      </nav>
+    </main>
 
     <footer class="home-footer">© 2026 Watt Audio</footer>
   </div>
