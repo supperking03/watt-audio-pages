@@ -13,8 +13,14 @@ const publisher = {
 };
 const blogImage = {
   src: "/assets/blog/how-to-listen-to-wattpad-stories-watt-audio.webp",
+  desktop: "/assets/blog/watt-audio-blog-hero-920.webp",
+  mobile: "/assets/blog/watt-audio-blog-hero-640.webp",
   width: 1536,
-  height: 1024
+  height: 1024,
+  desktopWidth: 920,
+  desktopHeight: 614,
+  mobileWidth: 640,
+  mobileHeight: 427
 };
 const appIcon = {
   src: "/assets/icons/app-icon-96.webp",
@@ -970,13 +976,17 @@ ${jsonScript(breadcrumbSchema)}
       <p class="intro">${escapeHtml(page.description)} ${lang === "en" ? "This guide is written for" : "Bài này dành cho"} ${escapeHtml(page.audience)}.</p>
 
       <figure class="blog-figure blog-figure-top">
-        <img
-          src="../../assets/blog/how-to-listen-to-wattpad-stories-watt-audio.webp"
-          width="${blogImage.width}"
-          height="${blogImage.height}"
-          alt="${escapeHtml(`Watt Audio app blog image for ${page.title}`)}"
-          loading="eager"
-          decoding="async" />
+        <picture>
+          <source media="(max-width: 700px)" srcset="../..${blogImage.mobile}" width="${blogImage.mobileWidth}" height="${blogImage.mobileHeight}" />
+          <img
+            src="../..${blogImage.desktop}"
+            width="${blogImage.desktopWidth}"
+            height="${blogImage.desktopHeight}"
+            alt="${escapeHtml(`Watt Audio app blog image for ${page.title}`)}"
+            loading="eager"
+            fetchpriority="high"
+            decoding="async" />
+        </picture>
         <figcaption>${escapeHtml(page.screenshot)}</figcaption>
       </figure>
 

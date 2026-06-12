@@ -128,10 +128,14 @@ li { margin: 8px 0; }
   margin: 24px 0 18px;
 }
 
+.blog-figure picture,
 .blog-figure img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.blog-figure img {
   border-radius: 8px;
   border: 1px solid var(--line);
   background: #050505;
