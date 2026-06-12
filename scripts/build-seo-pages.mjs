@@ -951,6 +951,18 @@ ${jsonScript(breadcrumbSchema)}
       <div class="eyebrow">${l.guide}</div>
       <h1>${escapeHtml(page.title)}</h1>
       <p class="intro">${escapeHtml(page.description)} ${lang === "en" ? "This guide is written for" : "Bài này dành cho"} ${escapeHtml(page.audience)}.</p>
+
+      <figure class="blog-figure blog-figure-top">
+        <img
+          src="../../assets/blog/how-to-listen-to-wattpad-stories-watt-audio.webp"
+          width="${blogImage.width}"
+          height="${blogImage.height}"
+          alt="${escapeHtml(`Watt Audio app blog image for ${page.title}`)}"
+          loading="eager"
+          decoding="async" />
+        <figcaption>${escapeHtml(page.screenshot)}</figcaption>
+      </figure>
+
       <div class="tag-row" aria-label="${lang === "en" ? "Topic tags" : "Chủ đề"}">
         ${tags.slice(0, 8).map((tag) => `<a href="index.html">${escapeHtml(hashtagText(tag))}</a>`).join("\n        ")}
       </div>
@@ -961,17 +973,6 @@ ${jsonScript(breadcrumbSchema)}
       <h2>${l.whyHeading}</h2>
       <p>${escapeHtml(fill(l.whyA, page))}</p>
       <p>${escapeHtml(fill(l.whyB, page))}</p>
-
-      <figure class="blog-figure">
-        <img
-          src="../../assets/blog/how-to-listen-to-wattpad-stories-watt-audio.webp"
-          width="${blogImage.width}"
-          height="${blogImage.height}"
-          alt="${escapeHtml(`Watt Audio app blog image for ${page.title}`)}"
-          loading="eager"
-          decoding="async" />
-        <figcaption>${escapeHtml(page.screenshot)}</figcaption>
-      </figure>
 
       <h2>${l.stepHeading}</h2>
       <p>${escapeHtml(l.stepIntro)}</p>
