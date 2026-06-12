@@ -3,9 +3,13 @@ import path from "node:path";
 
 const appUrl = "https://apps.apple.com/vn/app/watt-audio-%C4%91%E1%BB%8Dc-truy%E1%BB%87n-audio/id6775724279";
 const siteUrl = "https://wattaudios.com";
+const lastModified = "2026-06-12";
 const publisher = {
+  "@type": "Organization",
   name: "Watt Audio",
-  logo: `${siteUrl}/assets/icons/icon-512.png`
+  url: siteUrl,
+  logo: `${siteUrl}/assets/icons/icon-512.png`,
+  sameAs: [appUrl]
 };
 const blogImage = {
   src: "/assets/blog/how-to-listen-to-wattpad-stories-watt-audio.webp",
@@ -406,6 +410,112 @@ const topics = [
     }
   },
   {
+    slug: "best-text-to-speech-app-for-wattpad",
+    en: {
+      title: "Best Text to Speech App for Wattpad Stories",
+      description: "Compare text to speech apps for Wattpad-style stories, including Speechify-style readers, phone voices, and Watt Audio.",
+      audience: "readers comparing TTS apps, AI voice readers, Speechify-style tools, and dedicated Wattpad audio workflows",
+      focus: "choosing the best text to speech app for Wattpad stories",
+      scenario: "testing generic TTS readers, audiobook apps, browser readers, and story-focused audio tools before choosing one daily listening setup",
+      screenshot: "Comparison view showing Watt Audio as a story-focused text to speech app with chapter audio controls.",
+      steps: [
+        "Start by deciding what you actually want to hear: a web page, a PDF, an ebook, or a Wattpad-style story with many chapters.",
+        "Try one generic text to speech tool such as a phone screen reader or Speechify-style reader to understand the basic TTS experience.",
+        "Then test Watt Audio with a supported story link so you can compare story import, chapter organization, generated audio, and playback controls.",
+        "Listen to the same chapter in each workflow and compare friction: how many taps it takes, whether menus get read aloud, and whether progress is easy to resume.",
+        "Choose the app that fits the way you read most often, especially if Wattpad stories, web novels, romance, and fantasy chapters are your main content."
+      ],
+      tips: [
+        "Speechify, NaturalReader, Voice Dream Reader, and phone accessibility voices are often useful for documents, web pages, PDFs, and study material.",
+        "For serialized fiction, chapter handling matters as much as voice quality because readers need to pause, resume, and follow updates.",
+        "A dedicated story audio app can be better when your search intent is not just text to speech, but how to listen to Wattpad stories comfortably."
+      ],
+      faq: [
+        ["Is Watt Audio a Speechify replacement?", "Not exactly. Speechify-style apps are broad text to speech readers, while Watt Audio is focused on supported story links, chapter audio, and fiction listening workflows."],
+        ["What should I search for if I want Wattpad audio?", "Useful searches include Wattpad audio, Wattpad text to speech, how to listen to Wattpad, Wattpad audiobook app, and text to speech app for stories."],
+        ["Why not use a generic TTS app for every story?", "Generic TTS can work, but it may read page navigation or require manual text selection. A story-focused workflow keeps chapters and playback easier to manage."]
+      ]
+    },
+    vi: {
+      title: "App text to speech tốt nhất cho truyện Wattpad",
+      description: "So sánh app text to speech cho truyện Wattpad: kiểu Speechify, giọng đọc điện thoại, trình đọc web và Watt Audio.",
+      audience: "người đọc đang so sánh app TTS, trình đọc giọng AI, công cụ kiểu Speechify và workflow nghe Wattpad chuyên cho truyện",
+      focus: "chọn app text to speech tốt nhất cho truyện Wattpad",
+      scenario: "thử các app TTS chung, app audiobook, trình đọc trình duyệt và công cụ audio tập trung vào truyện trước khi chọn cách nghe hằng ngày",
+      screenshot: "Màn hình so sánh Watt Audio như app text to speech tập trung vào truyện với điều khiển audio theo chương.",
+      steps: [
+        "Đầu tiên hãy xác định bạn muốn nghe loại nội dung nào: trang web, PDF, ebook hay truyện kiểu Wattpad có nhiều chương.",
+        "Thử một công cụ text to speech chung như trình đọc màn hình điện thoại hoặc app kiểu Speechify để hiểu trải nghiệm TTS cơ bản.",
+        "Sau đó thử Watt Audio với một link truyện được hỗ trợ để so sánh nhập truyện, sắp xếp chương, tạo audio và điều khiển phát.",
+        "Nghe cùng một chương trong từng workflow và so sánh độ phiền: cần bao nhiêu thao tác, có đọc menu không, có dễ nghe tiếp không.",
+        "Chọn app khớp với nội dung bạn đọc nhiều nhất, nhất là nếu Wattpad, web novel, romance và fantasy là thói quen chính."
+      ],
+      tips: [
+        "Speechify, NaturalReader, Voice Dream Reader và giọng accessibility của điện thoại thường hữu ích cho tài liệu, web page, PDF và nội dung học tập.",
+        "Với truyện đăng kỳ, quản lý chương quan trọng không kém chất lượng giọng vì người đọc cần dừng, nghe tiếp và theo dõi cập nhật.",
+        "App nghe truyện chuyên biệt phù hợp hơn khi mục tiêu không chỉ là text to speech, mà là cách nghe truyện Wattpad thoải mái."
+      ],
+      faq: [
+        ["Watt Audio có thay thế Speechify không?", "Không hẳn. App kiểu Speechify là trình đọc text to speech rộng, còn Watt Audio tập trung vào link truyện được hỗ trợ, audio theo chương và workflow nghe fiction."],
+        ["Muốn nghe Wattpad thì nên search gì?", "Các cụm hữu ích gồm nghe Wattpad, Wattpad audio, Wattpad text to speech, cách nghe audio Wattpad, app nghe truyện Wattpad và text to speech cho truyện."],
+        ["Sao không dùng app TTS chung cho mọi truyện?", "TTS chung có thể dùng được, nhưng có thể đọc cả menu hoặc cần chọn văn bản thủ công. Workflow chuyên cho truyện giúp quản lý chương và phát audio dễ hơn."]
+      ]
+    }
+  },
+  {
+    slug: "speechify-alternative-for-wattpad-stories",
+    en: {
+      title: "Speechify Alternative for Wattpad Stories",
+      description: "Looking for a Speechify alternative for Wattpad stories? See when a story-focused audio app like Watt Audio can fit better.",
+      audience: "readers who searched for Speechify, text to speech, TTS reader, or audiobook app but mainly want to hear Wattpad-style fiction",
+      focus: "finding a Speechify alternative for Wattpad stories",
+      scenario: "comparing broad TTS apps with a more focused way to turn supported story links into chapter audio",
+      screenshot: "Watt Audio story library showing chapter-based audio as an alternative workflow to generic text to speech readers.",
+      steps: [
+        "List the reason you searched for Speechify or another TTS app: reading less on screen, hearing long chapters, studying documents, or multitasking.",
+        "If your main content is documents, PDFs, emails, or articles, a broad text to speech reader may be the right tool.",
+        "If your main content is Wattpad-style fiction, copy a supported story link and test Watt Audio as a dedicated chapter audio workflow.",
+        "Compare whether the app remembers story structure, keeps chapters together, and lets you listen with the screen off.",
+        "Keep the broad TTS tool for general reading and use Watt Audio when your intent is specifically Wattpad audio or story listening."
+      ],
+      tips: [
+        "Searches like Speechify for Wattpad, Wattpad audio app, and how to listen to Wattpad usually point to a story-listening problem rather than a document-reading problem.",
+        "A good alternative does not need to copy every feature; it needs to solve the exact job better for a specific reader.",
+        "For fiction, playback flow, chapter order, sleep timer, and offline replay often matter more than document import features."
+      ],
+      faq: [
+        ["Is Watt Audio affiliated with Speechify?", "No. Watt Audio is an independent app. Speechify is mentioned only as a familiar example of a broad text to speech reader people may compare against."],
+        ["When is Speechify-style TTS better?", "It can be better for PDFs, school material, emails, articles, and general reading where document import is the main need."],
+        ["When is Watt Audio better?", "Watt Audio is designed for readers who want supported story links organized into chapter audio with fiction-friendly playback controls."]
+      ]
+    },
+    vi: {
+      title: "App thay thế Speechify để nghe truyện Wattpad",
+      description: "Nếu bạn tìm app thay thế Speechify để nghe Wattpad, đây là lúc Watt Audio hợp hơn app text to speech chung.",
+      audience: "người đọc đã search Speechify, text to speech, TTS reader hoặc audiobook app nhưng chủ yếu muốn nghe truyện kiểu Wattpad",
+      focus: "tìm app thay thế Speechify để nghe truyện Wattpad",
+      scenario: "so sánh app TTS rộng với một cách tập trung hơn để biến link truyện được hỗ trợ thành audio theo chương",
+      screenshot: "Thư viện Watt Audio hiển thị audio theo chương như một workflow thay thế trình đọc text to speech chung.",
+      steps: [
+        "Liệt kê lý do bạn tìm Speechify hoặc app TTS khác: đỡ nhìn màn hình, nghe chương dài, học tài liệu hay multitasking.",
+        "Nếu nội dung chính của bạn là tài liệu, PDF, email hoặc bài viết, app text to speech rộng có thể phù hợp.",
+        "Nếu nội dung chính là truyện kiểu Wattpad, hãy copy link truyện được hỗ trợ và thử Watt Audio như workflow audio theo chương.",
+        "So sánh app có nhớ cấu trúc truyện, giữ chương cùng một chỗ và cho nghe khi tắt màn hình không.",
+        "Giữ app TTS chung cho đọc tài liệu và dùng Watt Audio khi mục tiêu cụ thể là Wattpad audio hoặc nghe truyện."
+      ],
+      tips: [
+        "Các tìm kiếm như Speechify cho Wattpad, Wattpad audio app và cách nghe Wattpad thường là nhu cầu nghe truyện hơn là đọc tài liệu.",
+        "Một app thay thế tốt không cần copy mọi tính năng; nó cần giải quyết đúng việc tốt hơn cho nhóm người đọc cụ thể.",
+        "Với fiction, luồng phát, thứ tự chương, hẹn giờ ngủ và nghe lại offline thường quan trọng hơn tính năng nhập tài liệu."
+      ],
+      faq: [
+        ["Watt Audio có liên quan đến Speechify không?", "Không. Watt Audio là app độc lập. Speechify chỉ được nhắc như ví dụ quen thuộc của app text to speech rộng mà người dùng hay so sánh."],
+        ["Khi nào app kiểu Speechify tốt hơn?", "Khi bạn nghe PDF, tài liệu học, email, bài viết và nội dung đọc chung mà nhập tài liệu là nhu cầu chính."],
+        ["Khi nào Watt Audio tốt hơn?", "Watt Audio được thiết kế cho người muốn đưa link truyện được hỗ trợ vào audio theo chương với điều khiển nghe hợp fiction."]
+      ]
+    }
+  },
+  {
     slug: "offline-wattpad-audio-listening",
     en: {
       title: "Offline Wattpad Audio Listening",
@@ -587,7 +697,7 @@ const labels = {
     ctaHeading: "Download Watt Audio",
     ctaText: "Turn supported story links into chapter audio, listen with the screen off, adjust playback speed, and keep your reading habit moving when life is busy.",
     indexTitle: "Watt Audio Guides",
-    indexDescription: "Guides for listening to Wattpad stories, web novels, romance, fantasy, and other online fiction with Watt Audio.",
+    indexDescription: "Guides for listening to Wattpad stories, Wattpad audio, text to speech apps, Speechify alternatives, web novels, romance, fantasy, and online fiction with Watt Audio.",
     homeTag: "Turn stories into audio and listen anywhere.",
     privacy: "Privacy Policy",
     footer: "AI-assisted educational guide",
@@ -622,7 +732,7 @@ const labels = {
     ctaHeading: "Tải Watt Audio",
     ctaText: "Biến link truyện được hỗ trợ thành audio theo chương, nghe khi tắt màn hình, chỉnh tốc độ và giữ thói quen đọc truyện ngay cả khi bận.",
     indexTitle: "Hướng dẫn Watt Audio",
-    indexDescription: "Các hướng dẫn nghe truyện Wattpad, web novel, romance, fantasy và truyện online bằng Watt Audio.",
+    indexDescription: "Các hướng dẫn nghe truyện Wattpad, Wattpad audio, app text to speech, app thay thế Speechify, web novel, romance, fantasy và truyện online bằng Watt Audio.",
     homeTag: "Chuyển truyện chữ thành audio, nghe mọi lúc.",
     privacy: "Chính sách quyền riêng tư",
     footer: "Bài hướng dẫn có hỗ trợ bởi AI",
@@ -664,20 +774,22 @@ function absoluteUrl(pathname) {
 }
 
 function articleTags(topic, lang) {
-  const shared = ["Watt Audio", "Wattpad audio", "text to speech", "AI voice", "story audio"];
+  const shared = ["Watt Audio", "Wattpad audio", "text to speech", "text to speech app", "TTS reader", "AI voice", "story audio"];
   const bySlug = {
     "how-to-listen-to-wattpad-stories": ["listen to Wattpad stories", "Wattpad reader", "story listening"],
     "how-to-convert-wattpad-to-audio": ["convert Wattpad to audio", "chapter audio", "audio converter"],
     "best-wattpad-audiobook-app": ["Wattpad audiobook app", "audiobook app", "offline listening"],
     "listen-to-romance-stories-online": ["romance stories", "listen online", "romance audio"],
     "listen-to-fantasy-stories-online": ["fantasy stories", "fantasy audio", "web fiction"],
-    "wattpad-text-to-speech-app": ["Wattpad text to speech", "TTS app", "screen fatigue"],
+    "wattpad-text-to-speech-app": ["Wattpad text to speech", "TTS app", "Speechify alternative", "screen fatigue"],
+    "best-text-to-speech-app-for-wattpad": ["best text to speech app", "Speechify", "NaturalReader", "Voice Dream Reader", "Wattpad TTS"],
+    "speechify-alternative-for-wattpad-stories": ["Speechify alternative", "Speechify for Wattpad", "TTS reader app", "Wattpad audiobook alternative"],
     "wattpad-audio-reader-for-iphone": ["iPhone audio reader", "iOS story app", "background playback"],
     "offline-wattpad-audio-listening": ["offline Wattpad audio", "offline stories", "travel listening"],
     "listen-to-web-novels-with-ai-voice": ["web novels", "AI voice", "serialized fiction"],
     "listen-to-stories-while-commuting": ["commute listening", "hands-free stories", "listen while commuting"]
   };
-  const vi = ["nghe truyện", "truyện audio", "giọng đọc AI", "Wattpad tiếng Việt", "nghe truyện offline"];
+  const vi = ["nghe truyện", "truyện audio", "giọng đọc AI", "Wattpad tiếng Việt", "nghe truyện offline", "app đọc truyện audio", "app thay thế Speechify"];
   return [...shared, ...(bySlug[topic.slug] || []), ...(lang === "vi" ? vi : [])];
 }
 
@@ -706,6 +818,7 @@ ${keywords.length ? `<meta name="keywords" content="${escapeHtml(keywords.join("
 ${image ? `<meta property="og:image" content="${image}" />
 <meta property="og:image:width" content="${imageWidth}" />
 <meta property="og:image:height" content="${imageHeight}" />
+<meta property="og:image:alt" content="${escapeHtml(title)}" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="${escapeHtml(title)}" />
 <meta name="twitter:description" content="${escapeHtml(description)}" />
@@ -748,7 +861,32 @@ function articleHtml(topic, lang) {
     inLanguage: lang === "vi" ? "vi-VN" : "en",
     keywords: tags,
     datePublished: "2026-06-11",
-    dateModified: "2026-06-11"
+    dateModified: lastModified
+  };
+  const howToSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: page.title,
+    description: page.description,
+    image: absoluteUrl(blogImage.src),
+    inLanguage: lang === "vi" ? "vi-VN" : "en",
+    step: page.steps.map((step, index) => ({
+      "@type": "HowToStep",
+      position: index + 1,
+      text: step
+    }))
+  };
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: page.faq.map(([question, answer]) => ({
+      "@type": "Question",
+      name: question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: answer
+      }
+    }))
   };
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -786,7 +924,12 @@ ${baseMeta({
 <link rel="alternate" hreflang="vi-VN" href="${articleUrl("vi", topic.slug)}" />
 <link rel="alternate" hreflang="x-default" href="${articleUrl("en", topic.slug)}" />
 ${tags.map((tag) => `<meta property="article:tag" content="${escapeHtml(tag)}" />`).join("\n")}
+<meta property="article:published_time" content="2026-06-11T00:00:00+07:00" />
+<meta property="article:modified_time" content="${lastModified}T00:00:00+07:00" />
+<meta property="article:section" content="${escapeHtml(l.guides)}" />
 ${jsonScript(articleSchema)}
+${jsonScript(howToSchema)}
+${jsonScript(faqSchema)}
 ${jsonScript(breadcrumbSchema)}
 <link rel="stylesheet" href="../../assets/seo.css" />
 </head>
@@ -863,7 +1006,7 @@ ${jsonScript(breadcrumbSchema)}
       </div>
     </article>
 
-    <footer>© 2026 Watt Audio · ${l.footer}</footer>
+    <footer>© 2026 Watt Audio · ${l.guides}</footer>
   </div>
 </body>
 </html>
@@ -875,8 +1018,8 @@ function guidesIndexHtml(lang) {
   const title = `${l.indexTitle} | Watt Audio`;
   const canonical = `${siteUrl}/${lang}/articles/`;
   const keywords = lang === "vi"
-    ? ["Watt Audio", "nghe truyện Wattpad", "chuyển truyện thành audio", "giọng đọc AI", "truyện audio"]
-    : ["Watt Audio", "Wattpad audio", "story audio guides", "text to speech", "AI voice"];
+    ? ["Watt Audio", "nghe truyện Wattpad", "Wattpad audio", "app text to speech", "app thay thế Speechify", "chuyển truyện thành audio", "giọng đọc AI", "truyện audio"]
+    : ["Watt Audio", "Wattpad audio", "story audio guides", "text to speech", "text to speech app", "Speechify alternative", "TTS reader", "AI voice"];
   const list = topics.map((topic) => {
     const page = topic[lang];
     return `<a href="${topic.slug}.html">${escapeHtml(page.title)}<span>${escapeHtml(page.description)}</span></a>`;
@@ -949,8 +1092,8 @@ function localizedHomeHtml(lang) {
     ? "Watt Audio helps you turn supported story links into chapter audio with AI voice, background playback, offline replay, speed control, and sleep timer."
     : "Watt Audio giúp chuyển link truyện được hỗ trợ thành audio theo chương bằng giọng đọc AI, nghe nền, nghe lại offline, chỉnh tốc độ và hẹn giờ ngủ.";
   const keywords = lang === "en"
-    ? ["Watt Audio", "Wattpad audio app", "text to speech stories", "AI voice reader", "listen to stories"]
-    : ["Watt Audio", "nghe truyện Wattpad", "chuyển truyện thành audio", "app đọc truyện audio", "giọng đọc AI"];
+    ? ["Watt Audio", "Wattpad audio app", "text to speech stories", "text to speech app for Wattpad", "Speechify alternative", "AI voice reader", "listen to stories"]
+    : ["Watt Audio", "nghe truyện Wattpad", "Wattpad audio", "app text to speech", "app thay thế Speechify", "chuyển truyện thành audio", "app đọc truyện audio", "giọng đọc AI"];
   const canonical = `${siteUrl}/${lang}/`;
   const guideTitle = lang === "en" ? "Watt Audio Guides" : "Hướng dẫn Watt Audio";
   const guideSub = lang === "en" ? "SEO articles and listening guides" : "Bài hướng dẫn nghe truyện và SEO";
@@ -1080,7 +1223,7 @@ ${jsonScript({
       </div>
       <div class="article-list home-links">
         <a href="articles/">${guideTitle}<span>${guideSub}</span></a>
-        <a href="../privacy.html">${l.privacy}<span>Privacy Policy</span></a>
+        <a href="../about.html">${lang === "en" ? "About Watt Audio" : "Giới thiệu Watt Audio"}<span>${lang === "en" ? "Product, features, and story listening workflow" : "Sản phẩm, tính năng và cách nghe truyện"}</span></a>
         <a href="../support.html">${l.support}<span>Support</span></a>
       </div>
     </section>
@@ -1110,7 +1253,7 @@ ${baseMeta({
   imageHeight: homeImages.en.height,
   lang: "en",
   type: "website",
-  keywords: ["Watt Audio", "Wattpad audio", "story audio", "AI voice", "text to speech"]
+  keywords: ["Watt Audio", "Wattpad audio", "Wattpad audio app", "story audio", "AI voice", "text to speech", "text to speech app", "TTS reader", "Speechify alternative"]
 })}
 <link rel="alternate" hreflang="en" href="${siteUrl}/en/" />
 <link rel="alternate" hreflang="vi-VN" href="${siteUrl}/vi/" />
@@ -1147,6 +1290,9 @@ ${jsonScript({
         <a href="vi/">Tiếng Việt<span>Dành cho người dùng ở Việt Nam hoặc trình duyệt tiếng Việt</span></a>
         <a href="en/">English<span>For international visitors</span></a>
       </div>
+      <noscript>
+        <p class="intro">JavaScript is disabled. Use the language links above to open the Vietnamese or English version of Watt Audio.</p>
+      </noscript>
     </article>
     <footer>© 2026 Watt Audio</footer>
   </div>
@@ -1174,24 +1320,190 @@ ${faviconTags}
 `;
 }
 
+function aboutHtml() {
+  const title = "About Watt Audio | Story Audio App";
+  const description = "Learn what Watt Audio is, how it turns supported story links into chapter audio, and why readers use it for AI voice listening, offline replay, and background playback.";
+  const canonical = `${siteUrl}/about.html`;
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": `${siteUrl}/#organization`,
+        name: "Watt Audio",
+        url: siteUrl,
+        logo: publisher.logo,
+        sameAs: [appUrl]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": `${siteUrl}/#app`,
+        name: "Watt Audio",
+        applicationCategory: "MultimediaApplication",
+        operatingSystem: "iOS",
+        description,
+        url: canonical,
+        image: absoluteUrl(homeImages.en.src),
+        downloadUrl: appUrl,
+        publisher: { "@id": `${siteUrl}/#organization` },
+        offers: {
+          "@type": "Offer",
+          price: "0",
+          priceCurrency: "USD"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "What is Watt Audio?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Watt Audio is an iOS app that helps readers turn supported story links into chapter audio using AI voice generation and a listening-focused player."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "Who is Watt Audio for?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Watt Audio is for readers who follow web fiction, Wattpad-style stories, romance, fantasy, and long serialized stories but want a hands-free way to continue reading."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "Can Watt Audio play audio offline?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "After chapter audio has been generated, readers can replay that audio later without reopening the original web page."
+            }
+          }
+        ]
+      }
+    ]
+  };
+
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>${title}</title>
+${baseMeta({
+  title,
+  description,
+  canonical,
+  image: absoluteUrl(homeImages.en.src),
+  imageWidth: homeImages.en.width,
+  imageHeight: homeImages.en.height,
+  lang: "en",
+  type: "website",
+  keywords: ["Watt Audio", "story audio app", "AI voice reader", "Wattpad audio app", "text to speech stories"]
+})}
+${jsonScript(schema)}
+<link rel="stylesheet" href="assets/seo.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <img src="icon.png" alt="Watt Audio app icon" />
+      <b>Watt Audio</b>
+    </div>
+    <nav class="nav">
+      <a href="en/">English Home</a>
+      <a href="vi/">Tiếng Việt</a>
+      <a href="en/articles/">Guides</a>
+      <a href="support.html">Support</a>
+      <a href="${appUrl}">Download app</a>
+    </nav>
+    <article>
+      <div class="eyebrow">About Watt Audio</div>
+      <h1>Watt Audio turns stories into chapter audio</h1>
+      <p class="intro">Watt Audio is an iOS app for readers who want to listen to supported web stories with AI voice, chapter controls, background playback, offline replay, speed control, and sleep timer.</p>
+
+      <figure class="blog-figure">
+        <img src="assets/blog/homepage-watt-audio-en.webp" width="${homeImages.en.width}" height="${homeImages.en.height}" alt="Watt Audio app homepage hero showing story audio features" loading="eager" decoding="async" />
+      </figure>
+
+      <h2>What Watt Audio does</h2>
+      <p>Watt Audio helps readers bring supported story links into a listening library, generate audio for individual chapters, and continue stories without staring at a phone screen. It is designed for Wattpad-style web fiction, romance, fantasy, serialized stories, web novels, and long chapters that are easier to finish while commuting, walking, resting, or doing chores.</p>
+
+      <h2>Core features</h2>
+      <ul>
+        <li><strong>Chapter audio:</strong> generate audio at the chapter level so progress stays organized.</li>
+        <li><strong>AI voice:</strong> convert story text into a listenable voice without manual recording.</li>
+        <li><strong>Background playback:</strong> listen with the screen off or while using headphones.</li>
+        <li><strong>Offline replay:</strong> replay generated chapter audio later without reloading the story page.</li>
+        <li><strong>Listening controls:</strong> adjust speed, use a sleep timer, and continue between chapters.</li>
+      </ul>
+
+      <h2>Who it helps</h2>
+      <p>Watt Audio is useful for readers who love long online stories but do not always have the time, eye comfort, or quiet screen-focused moment to read. It is especially helpful for catching up on updates, rereading favorite arcs, listening before sleep, and using commute time for fiction.</p>
+
+      <div class="cta">
+        <h2>Download Watt Audio</h2>
+        <p>Start turning supported story links into audio and keep your reading habit moving.</p>
+        <a class="btn" href="${appUrl}">Download on the App Store</a>
+      </div>
+    </article>
+    <footer>© 2026 Watt Audio</footer>
+  </div>
+</body>
+</html>
+`;
+}
+
 function sitemapXml() {
   const urls = [
-    `${siteUrl}/`,
-    `${siteUrl}/en/`,
-    `${siteUrl}/vi/`,
-    `${siteUrl}/support.html`,
-    `${siteUrl}/privacy.html`,
-    `${siteUrl}/en/articles/`,
-    `${siteUrl}/vi/articles/`,
+    { loc: `${siteUrl}/`, priority: "1.0", changefreq: "weekly" },
+    { loc: `${siteUrl}/en/`, priority: "0.9", changefreq: "weekly" },
+    { loc: `${siteUrl}/vi/`, priority: "0.9", changefreq: "weekly" },
+    { loc: `${siteUrl}/about.html`, priority: "0.8", changefreq: "monthly" },
+    { loc: `${siteUrl}/support.html`, priority: "0.5", changefreq: "monthly" },
+    { loc: `${siteUrl}/privacy.html`, priority: "0.4", changefreq: "yearly" },
+    { loc: `${siteUrl}/en/articles/`, priority: "0.8", changefreq: "weekly" },
+    { loc: `${siteUrl}/vi/articles/`, priority: "0.8", changefreq: "weekly" },
     ...topics.flatMap((topic) => [
-      articleUrl("en", topic.slug),
-      articleUrl("vi", topic.slug)
+      { loc: articleUrl("en", topic.slug), priority: "0.7", changefreq: "monthly" },
+      { loc: articleUrl("vi", topic.slug), priority: "0.7", changefreq: "monthly" }
     ])
   ];
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map((loc) => `  <url><loc>${loc}</loc></url>`).join("\n")}
+${urls.map(({ loc, priority, changefreq }) => `  <url><loc>${loc}</loc><lastmod>${lastModified}</lastmod><changefreq>${changefreq}</changefreq><priority>${priority}</priority></url>`).join("\n")}
 </urlset>
+`;
+}
+
+function llmsTxt() {
+  const englishArticles = topics.map((topic) => {
+    const page = topic.en;
+    return `- [${page.title}](${articleUrl("en", topic.slug)}): ${page.description}`;
+  }).join("\n");
+  const vietnameseArticles = topics.map((topic) => {
+    const page = topic.vi;
+    return `- [${page.title}](${articleUrl("vi", topic.slug)}): ${page.description}`;
+  }).join("\n");
+  return `# Watt Audio
+
+Watt Audio is an iOS app that turns supported story links into chapter audio using AI voice generation, background playback, speed control, sleep timer, and offline replay for generated audio.
+
+## Primary Pages
+- [English homepage](${siteUrl}/en/): Product overview and App Store download link.
+- [Vietnamese homepage](${siteUrl}/vi/): Tổng quan sản phẩm và link tải App Store.
+- [About Watt Audio](${siteUrl}/about.html): Product entity page with features, audience, app description, and download link.
+- [Support](${siteUrl}/support.html): Quick start, troubleshooting, and contact details.
+- [Privacy Policy](${siteUrl}/privacy.html): Privacy, local storage, generated audio, and network use.
+
+## English Guides
+${englishArticles}
+
+## Vietnamese Guides
+${vietnameseArticles}
+
+## App Store
+- [Download Watt Audio](${appUrl})
 `;
 }
 
@@ -1215,11 +1527,13 @@ for (const topic of topics) {
 }
 
 fs.writeFileSync(path.join(process.cwd(), "index.html"), rootIndexHtml());
+fs.writeFileSync(path.join(process.cwd(), "about.html"), aboutHtml());
 fs.writeFileSync(path.join(process.cwd(), "sitemap.xml"), sitemapXml());
 fs.writeFileSync(path.join(process.cwd(), "robots.txt"), `User-agent: *
 Allow: /
 Sitemap: ${siteUrl}/sitemap.xml
 `);
+fs.writeFileSync(path.join(process.cwd(), "llms.txt"), llmsTxt());
 fs.writeFileSync(path.join(process.cwd(), "site.webmanifest"), JSON.stringify({
   name: "Watt Audio",
   short_name: "Watt Audio",
