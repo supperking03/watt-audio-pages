@@ -3,7 +3,7 @@ import path from "node:path";
 
 const appUrl = "https://apps.apple.com/vn/app/watt-audio-%C4%91%E1%BB%8Dc-truy%E1%BB%87n-audio/id6775724279";
 const siteUrl = "https://wattaudios.com";
-const lastModified = "2026-06-12";
+const lastModified = "2026-06-14";
 const gaMeasurementId = "G-CPTTPW88BP";
 const publisher = {
   "@type": "Organization",
@@ -146,6 +146,175 @@ function searchIntentTopic({
 }
 
 const topics = [
+  searchIntentTopic({
+    slug: "what-is-wattpad",
+    enTitle: "What Is Wattpad?",
+    enDescription: "A simple guide to what Wattpad is, how readers discover stories, and where audio listening with Watt Audio fits.",
+    enAudience: "new readers who have heard about Wattpad and want to understand the social storytelling platform before listening to stories",
+    enFocus: "understanding what Wattpad is",
+    enScenario: "discovering serialized fiction, fanfiction, romance, fantasy, werewolf stories, and community-written chapters for the first time",
+    viTitle: "Wattpad là gì?",
+    viDescription: "Giải thích Wattpad là gì, người đọc khám phá truyện như thế nào và Watt Audio phù hợp ở đâu khi muốn nghe truyện.",
+    viAudience: "người đọc mới nghe đến Wattpad và muốn hiểu nền tảng truyện cộng đồng trước khi chuyển sang nghe audio",
+    viFocus: "hiểu Wattpad là gì",
+    viScenario: "khám phá truyện đăng kỳ, fanfiction, romance, fantasy, werewolf và các chương do cộng đồng viết lần đầu"
+  }),
+  searchIntentTopic({
+    slug: "can-you-listen-to-wattpad-stories",
+    enTitle: "Can You Listen to Wattpad Stories?",
+    enDescription: "Can you listen to Wattpad stories? Compare built-in text to speech, phone readers, browser tools, and Watt Audio.",
+    enAudience: "readers who want to know whether Wattpad stories can be heard like audio chapters instead of read on screen",
+    enFocus: "listening to Wattpad stories",
+    enScenario: "checking whether a story can become audio for commutes, night reading, long chapters, or hands-free listening",
+    viTitle: "Có nghe truyện Wattpad được không?",
+    viDescription: "Có nghe truyện Wattpad được không? So sánh text to speech, trình đọc điện thoại, công cụ trình duyệt và Watt Audio.",
+    viAudience: "người đọc muốn biết truyện Wattpad có thể nghe như audio theo chương thay vì đọc trên màn hình không",
+    viFocus: "nghe truyện Wattpad",
+    viScenario: "kiểm tra cách biến truyện thành audio để nghe khi đi làm, đọc đêm, chương dài hoặc nghe rảnh tay"
+  }),
+  searchIntentTopic({
+    slug: "why-readers-prefer-audio",
+    enTitle: "Why Readers Prefer Audio",
+    enDescription: "Why many web fiction readers prefer audio for long chapters, screen fatigue, multitasking, commuting, and bedtime.",
+    enAudience: "readers comparing reading on screen with listening to AI voice audio for web fiction and Wattpad-style stories",
+    enFocus: "why readers prefer audio",
+    enScenario: "reducing screen fatigue while keeping up with updates during chores, travel, exercise, or quiet evening routines",
+    viTitle: "Vì sao nhiều người thích nghe audio hơn đọc?",
+    viDescription: "Lý do người đọc truyện mạng thích audio: chương dài, mỏi mắt, multitasking, commute và nghe trước khi ngủ.",
+    viAudience: "người đọc đang so sánh đọc trên màn hình với nghe audio giọng AI cho web fiction và truyện kiểu Wattpad",
+    viFocus: "vì sao người đọc thích audio",
+    viScenario: "giảm mỏi mắt nhưng vẫn theo kịp chương mới khi làm việc nhà, di chuyển, tập luyện hoặc nghe yên tĩnh buổi tối"
+  }),
+  searchIntentTopic({
+    slug: "how-to-convert-wattpad-stories-into-audio",
+    enTitle: "How to Convert Wattpad Stories into Audio",
+    enDescription: "Step-by-step guide to converting Wattpad-style stories into chapter audio with AI voice and Watt Audio.",
+    enAudience: "readers who search for a direct way to convert Wattpad stories into audio without recording narration themselves",
+    enFocus: "converting Wattpad stories into audio",
+    enScenario: "building a personal listening queue from chapters you can access instead of keeping many story tabs open",
+    viTitle: "Cách chuyển truyện Wattpad thành audio",
+    viDescription: "Hướng dẫn từng bước chuyển truyện kiểu Wattpad thành audio theo chương bằng giọng AI và Watt Audio.",
+    viAudience: "người đọc tìm cách chuyển truyện Wattpad thành audio mà không phải tự thu âm",
+    viFocus: "chuyển truyện Wattpad thành audio",
+    viScenario: "tạo hàng chờ nghe cá nhân từ những chương bạn có quyền truy cập thay vì giữ nhiều tab truyện"
+  }),
+  searchIntentTopic({
+    slug: "best-app-to-listen-to-wattpad-stories",
+    enTitle: "Best App to Listen to Wattpad Stories",
+    enDescription: "What makes the best app to listen to Wattpad stories: link import, chapter audio, offline replay, and story controls.",
+    enAudience: "readers comparing apps for listening to Wattpad stories, text to speech, AI voice readers, and audiobook-style players",
+    enFocus: "choosing the best app to listen to Wattpad stories",
+    enScenario: "testing story audio apps before choosing one daily workflow for romance, fantasy, fanfiction, and long serialized fiction",
+    viTitle: "App tốt nhất để nghe truyện Wattpad cần gì?",
+    viDescription: "Các tiêu chí chọn app nghe truyện Wattpad: nhập link, audio theo chương, nghe lại offline và điều khiển cho truyện.",
+    viAudience: "người đọc đang so sánh app nghe Wattpad, text to speech, giọng AI và trình phát kiểu audiobook",
+    viFocus: "chọn app tốt nhất để nghe truyện Wattpad",
+    viScenario: "thử các app nghe truyện trước khi chọn workflow hằng ngày cho romance, fantasy, fanfiction và truyện dài đăng kỳ"
+  }),
+  searchIntentTopic({
+    slug: "best-werewolf-stories",
+    enTitle: "Best Werewolf Stories to Listen To",
+    enDescription: "How to choose the best werewolf stories for audio listening, from mate bonds and pack drama to chapter pacing.",
+    enAudience: "readers who enjoy werewolf fiction and want a better way to listen to long pack romance and supernatural chapters",
+    enFocus: "finding the best werewolf stories to listen to",
+    enScenario: "following mate-bond tension, alpha politics, pack rivalries, supernatural reveals, and cliffhanger chapters hands-free",
+    viTitle: "Truyện werewolf hay để nghe audio",
+    viDescription: "Cách chọn truyện werewolf hợp để nghe audio: mate bond, drama bầy đàn, romance siêu nhiên và nhịp chương.",
+    viAudience: "người đọc thích werewolf fiction và muốn nghe các chương romance bầy đàn, siêu nhiên dài hơn",
+    viFocus: "tìm truyện werewolf hay để nghe",
+    viScenario: "theo dõi mate bond, alpha drama, cạnh tranh bầy đàn, twist siêu nhiên và cliffhanger khi rảnh tay"
+  }),
+  searchIntentTopic({
+    slug: "best-romance-stories",
+    enTitle: "Best Romance Stories to Listen To",
+    enDescription: "A guide to choosing romance stories that work well in audio, with pacing tips for slow burn, drama, and rereads.",
+    enAudience: "romance readers searching for emotional stories that are comfortable to hear through chapter audio",
+    enFocus: "finding the best romance stories to listen to",
+    enScenario: "enjoying slow burn tension, dialogue-heavy chapters, confession scenes, breakup arcs, and comfort rereads without eye strain",
+    viTitle: "Truyện romance hay để nghe audio",
+    viDescription: "Cách chọn truyện romance hợp nghe audio, từ slow burn, drama, cảnh tỏ tình đến đọc lại chương yêu thích.",
+    viAudience: "người đọc romance muốn tìm truyện tình cảm nghe bằng audio theo chương thật dễ chịu",
+    viFocus: "tìm truyện romance hay để nghe",
+    viScenario: "nghe slow burn, chương nhiều đối thoại, cảnh tỏ tình, drama chia tay và đọc lại chương comfort mà không mỏi mắt"
+  }),
+  searchIntentTopic({
+    slug: "best-ceo-romance-stories",
+    enTitle: "Best CEO Romance Stories to Listen To",
+    enDescription: "How to pick CEO romance stories for audio listening, including office tension, contract romance, and dramatic chapters.",
+    enAudience: "readers who like CEO romance, billionaire romance, office drama, and contract relationship stories",
+    enFocus: "finding the best CEO romance stories to listen to",
+    enScenario: "listening to office tension, power dynamics, contract marriage chapters, dramatic reveals, and addictive cliffhangers",
+    viTitle: "Truyện CEO romance hay để nghe audio",
+    viDescription: "Cách chọn truyện CEO romance hợp nghe audio: office tension, hợp đồng tình yêu, drama và cliffhanger.",
+    viAudience: "người đọc thích CEO romance, billionaire romance, drama công sở và truyện hợp đồng tình cảm",
+    viFocus: "tìm truyện CEO romance hay để nghe",
+    viScenario: "nghe office tension, quyền lực trong tình yêu, cưới hợp đồng, reveal kịch tính và cliffhanger gây nghiện"
+  }),
+  searchIntentTopic({
+    slug: "best-fantasy-romance-stories",
+    enTitle: "Best Fantasy Romance Stories to Listen To",
+    enDescription: "A guide to fantasy romance stories that work well in audio, from magic systems to emotional relationship arcs.",
+    enAudience: "readers who love fantasy romance, magical worlds, enemies-to-lovers arcs, and long serialized chapters",
+    enFocus: "finding the best fantasy romance stories to listen to",
+    enScenario: "following magical rules, world-building, romantic tension, battles, court intrigue, and emotional arcs by chapter",
+    viTitle: "Truyện fantasy romance hay để nghe audio",
+    viDescription: "Gợi ý cách chọn fantasy romance hợp nghe audio, từ hệ thống phép thuật đến tuyến tình cảm nhiều cảm xúc.",
+    viAudience: "người đọc thích fantasy romance, thế giới phép thuật, enemies-to-lovers và truyện dài đăng kỳ",
+    viFocus: "tìm truyện fantasy romance hay để nghe",
+    viScenario: "theo dõi luật phép thuật, world-building, căng thẳng tình cảm, chiến đấu, cung đấu và arc cảm xúc theo chương"
+  }),
+  searchIntentTopic({
+    slug: "best-fanfiction-stories",
+    enTitle: "Best Fanfiction Stories to Listen To",
+    enDescription: "How to choose fanfiction stories that work for audio listening, with tips for dialogue, canon context, and long arcs.",
+    enAudience: "fanfiction readers who want to listen to favorite fandom stories, alternate universe arcs, and long chapter updates",
+    enFocus: "finding the best fanfiction stories to listen to",
+    enScenario: "catching up with alternate universe chapters, character dialogue, ship moments, long arcs, and comfort rereads",
+    viTitle: "Fanfiction hay để nghe audio",
+    viDescription: "Cách chọn fanfiction hợp nghe audio: đối thoại, bối cảnh canon, alternate universe và arc dài.",
+    viAudience: "người đọc fanfiction muốn nghe fandom yêu thích, alternate universe và cập nhật chương dài",
+    viFocus: "tìm fanfiction hay để nghe",
+    viScenario: "nghe alternate universe, đối thoại nhân vật, ship moment, arc dài và đọc lại comfort fic"
+  }),
+  searchIntentTopic({
+    slug: "watt-audio-vs-speechify",
+    enTitle: "Watt Audio vs Speechify",
+    enDescription: "Compare Watt Audio vs Speechify for Wattpad-style stories, documents, PDFs, websites, and chapter-based listening.",
+    enAudience: "readers comparing a broad text to speech app like Speechify with a story-focused audio workflow like Watt Audio",
+    enFocus: "comparing Watt Audio vs Speechify",
+    enScenario: "deciding whether you need document reading, website reading, PDF listening, or a chapter library for serialized fiction",
+    viTitle: "Watt Audio vs Speechify",
+    viDescription: "So sánh Watt Audio và Speechify cho truyện kiểu Wattpad, tài liệu, PDF, website và nghe theo chương.",
+    viAudience: "người đọc đang so sánh app text to speech rộng như Speechify với workflow nghe truyện tập trung như Watt Audio",
+    viFocus: "so sánh Watt Audio và Speechify",
+    viScenario: "quyết định bạn cần đọc tài liệu, nghe website/PDF hay thư viện chương cho truyện đăng kỳ"
+  }),
+  searchIntentTopic({
+    slug: "watt-audio-vs-elevenlabs-reader",
+    enTitle: "Watt Audio vs ElevenLabs Reader",
+    enDescription: "Compare Watt Audio vs ElevenLabs Reader for AI voices, documents, ePubs, web articles, and story chapter listening.",
+    enAudience: "readers comparing ElevenLabs Reader with Watt Audio for AI voice listening and long fiction chapters",
+    enFocus: "comparing Watt Audio vs ElevenLabs Reader",
+    enScenario: "choosing between a polished AI reader for many text formats and a story-focused app for supported chapter links",
+    viTitle: "Watt Audio vs ElevenLabs Reader",
+    viDescription: "So sánh Watt Audio và ElevenLabs Reader cho giọng AI, tài liệu, ePub, bài web và nghe truyện theo chương.",
+    viAudience: "người đọc so sánh ElevenLabs Reader với Watt Audio để nghe giọng AI và truyện dài theo chương",
+    viFocus: "so sánh Watt Audio và ElevenLabs Reader",
+    viScenario: "chọn giữa trình đọc AI cho nhiều định dạng văn bản và app tập trung vào link truyện theo chương"
+  }),
+  searchIntentTopic({
+    slug: "best-apps-to-listen-to-stories-faq",
+    enTitle: "Best Apps to Listen to Stories: FAQ",
+    enDescription: "FAQ guide to the best apps for listening to stories, including audiobooks, text to speech, AI readers, and Watt Audio.",
+    enAudience: "readers choosing between audiobook apps, TTS readers, AI voice apps, browser readers, and story-specific listening tools",
+    enFocus: "choosing the best apps to listen to stories",
+    enScenario: "answering common questions about listening to fiction, web novels, Wattpad-style stories, PDFs, articles, and offline audio",
+    viTitle: "FAQ: App tốt nhất để nghe truyện",
+    viDescription: "FAQ chọn app nghe truyện: audiobook, text to speech, AI reader, trình đọc web và Watt Audio.",
+    viAudience: "người đọc đang chọn giữa app audiobook, TTS reader, app giọng AI, trình đọc trình duyệt và công cụ nghe truyện riêng",
+    viFocus: "chọn app tốt nhất để nghe truyện",
+    viScenario: "trả lời câu hỏi thường gặp về nghe fiction, web novel, truyện kiểu Wattpad, PDF, bài viết và audio offline"
+  }),
   {
     slug: "how-to-listen-to-wattpad-stories",
     en: {
@@ -975,6 +1144,19 @@ function absoluteUrl(pathname) {
 function articleTags(topic, lang) {
   const shared = ["Watt Audio", "Wattpad audio", "text to speech", "text to speech app", "TTS reader", "AI voice", "story audio"];
   const bySlug = {
+    "what-is-wattpad": ["What is Wattpad", "Wattpad stories", "social storytelling", "web fiction"],
+    "can-you-listen-to-wattpad-stories": ["Can you listen to Wattpad", "listen to Wattpad stories", "Wattpad text to speech"],
+    "why-readers-prefer-audio": ["why readers prefer audio", "audio reading", "screen fatigue", "hands-free reading"],
+    "how-to-convert-wattpad-stories-into-audio": ["convert Wattpad stories into audio", "Wattpad audio converter", "chapter audio"],
+    "best-app-to-listen-to-wattpad-stories": ["best app to listen to Wattpad", "Wattpad listening app", "AI story reader"],
+    "best-werewolf-stories": ["best werewolf stories", "werewolf romance", "alpha werewolf stories", "supernatural romance"],
+    "best-romance-stories": ["best romance stories", "romance audio", "slow burn romance", "love stories"],
+    "best-ceo-romance-stories": ["CEO romance stories", "billionaire romance", "office romance", "contract romance"],
+    "best-fantasy-romance-stories": ["fantasy romance stories", "romantasy", "magic romance", "enemies to lovers"],
+    "best-fanfiction-stories": ["fanfiction stories", "fanfic audio", "alternate universe", "fandom stories"],
+    "watt-audio-vs-speechify": ["Watt Audio vs Speechify", "Speechify alternative", "text to speech comparison"],
+    "watt-audio-vs-elevenlabs-reader": ["Watt Audio vs ElevenLabs Reader", "ElevenLabs Reader alternative", "AI reader comparison"],
+    "best-apps-to-listen-to-stories-faq": ["best apps to listen to stories", "story listening apps", "audio story FAQ"],
     "how-to-listen-to-wattpad-stories": ["listen to Wattpad stories", "Wattpad reader", "story listening"],
     "how-to-convert-wattpad-to-audio": ["convert Wattpad to audio", "chapter audio", "audio converter"],
     "best-wattpad-audiobook-app": ["Wattpad audiobook app", "audiobook app", "offline listening"],
