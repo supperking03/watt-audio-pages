@@ -3,7 +3,7 @@ import path from "node:path";
 
 const appUrl = "https://apps.apple.com/vn/app/watt-audio-%C4%91%E1%BB%8Dc-truy%E1%BB%87n-audio/id6775724279";
 const siteUrl = "https://wattaudios.com";
-const lastModified = "2026-06-14";
+const lastModified = "2026-06-20";
 const gaMeasurementId = "G-CPTTPW88BP";
 const publisher = {
   "@type": "Organization",
@@ -143,6 +143,49 @@ function searchIntentTopic({
       ]
     }
   };
+}
+
+function storyTitleTopic({ slug, title, enMotif, viMotif }) {
+  const topic = searchIntentTopic({
+    slug,
+    enTitle: `${title}: Audio Story Listening Guide`,
+    enDescription: `A listening guide for readers searching ${title} audio, similar ${enMotif} stories, and Watt Audio workflows.`,
+    enAudience: `readers who searched for ${title}, Vietnamese audio stories, YouTube story audio, or similar ${enMotif} fiction`,
+    enFocus: `listening to ${title} and similar ${enMotif} stories`,
+    enScenario: `catching up on ${enMotif} chapters, long Vietnamese story audio, similar YouTube audio story searches, and personal listening sessions`,
+    viTitle: `Nghe audio ${title}`,
+    viDescription: `Gợi ý nghe ${title}, tìm truyện ${viMotif} cùng vibe và dùng Watt Audio để nghe truyện theo chương.`,
+    viAudience: `người đọc đang tìm ${title}, truyện audio YouTube, truyện full hoặc các truyện ${viMotif} tương tự`,
+    viFocus: `nghe ${title} và các truyện ${viMotif} tương tự`,
+    viScenario: `theo dõi chương truyện ${viMotif}, truyện audio Việt trên YouTube, truyện full dài và các buổi nghe cá nhân`
+  });
+  topic.en.steps = [
+    `Search for ${title} on the original channel, story site, or source you already use.`,
+    "Copy a supported story or chapter link into Watt Audio to keep listening progress organized.",
+    "Generate one chapter first, then adjust speed, sleep timer, and background playback for personal listening."
+  ];
+  topic.en.tips = [
+    `Use this page as a discovery guide for ${title} and similar ${enMotif} stories, not as a repost of the story itself.`,
+    "For long Vietnamese audio stories, prepare only a few chapters at a time so the listening queue stays clean."
+  ];
+  topic.en.faq = [
+    [`Does Watt Audio host ${title}?`, "No. Watt Audio is a personal listening workflow for supported story links. This guide helps readers organize listening, not download or redistribute story content."],
+    ["Why target the exact story title?", "Readers often search by story name after seeing a YouTube audio episode, then look for a more comfortable way to continue listening."]
+  ];
+  topic.vi.steps = [
+    `Tìm ${title} trên kênh, nền tảng hoặc nguồn truyện bạn đang dùng.`,
+    "Copy link truyện hoặc link chương được hỗ trợ vào Watt Audio để giữ tiến độ nghe gọn hơn.",
+    "Tạo thử một chương, rồi chỉnh tốc độ, hẹn giờ ngủ và phát nền theo thói quen nghe cá nhân."
+  ];
+  topic.vi.tips = [
+    `Dùng page này như hướng dẫn discovery cho ${title} và truyện ${viMotif} cùng vibe, không phải nơi đăng lại nội dung truyện.`,
+    "Với truyện audio Việt dài, chỉ nên chuẩn bị vài chương mỗi lần để thư viện nghe không bị rối."
+  ];
+  topic.vi.faq = [
+    [`Watt Audio có lưu trữ ${title} không?`, "Không. Watt Audio là workflow nghe cá nhân cho link truyện được hỗ trợ. Bài này giúp người đọc tổ chức việc nghe, không tải lại hoặc phân phối nội dung truyện."],
+    ["Vì sao dùng thẳng tên truyện làm keyword?", "Nhiều người xem một tập truyện audio trên YouTube rồi search đúng tên truyện để tìm cách nghe tiếp thuận tiện hơn."]
+  ];
+  return topic;
 }
 
 const topics = [
@@ -1041,7 +1084,127 @@ const topics = [
         ["Nên đọc hay nghe?", "Dùng cả hai. Nghe hợp khi tay và mắt bận; đọc hợp khi bạn muốn tập trung trọn vẹn."]
       ]
     }
-  }
+  },
+  storyTitleTopic({
+    slug: "trong-sinh-em-gai-chon-thanh-hoa-toi-chon-10-ty",
+    title: "Trọng Sinh Em Gái Chọn Thanh Hoa, Tôi Chọn 10 Tỷ",
+    enMotif: "rebirth, family-choice, school, and second-life",
+    viMotif: "trọng sinh, lựa chọn gia đình, học đường và làm lại cuộc đời"
+  }),
+  storyTitleTopic({
+    slug: "huy-hon-thai-tu-gia-toi-ga-cho-ke-thu-cua-han",
+    title: "Hủy Hôn Thái Tử Gia, Tôi Gả Cho Kẻ Thù Của Hắn",
+    enMotif: "broken engagement, revenge romance, and arranged marriage",
+    viMotif: "hủy hôn, báo thù, cưới gả và romance drama"
+  }),
+  storyTitleTopic({
+    slug: "toi-luoi-den-muc-khien-tra-xanh-tram-cam",
+    title: "Tôi Lười Đến Mức Khiến Trà Xanh Trầm Cảm",
+    enMotif: "green tea rival, comedy, lazy heroine, and face-slapping",
+    viMotif: "trà xanh, hài hước, nữ chính lười và vả mặt"
+  }),
+  storyTitleTopic({
+    slug: "thong-tha-nhin-em-gai-bo-hoc-lam-streamer",
+    title: "Thông Thả Nhìn Em Gái Bỏ Học Làm Streamer",
+    enMotif: "rebirth, family conflict, livestream, and modern drama",
+    viMotif: "trọng sinh, drama gia đình, livestream và hiện đại"
+  }),
+  storyTitleTopic({
+    slug: "ca-nha-toi-la-to-nghe-diet-tra-xanh",
+    title: "Cả Nhà Tôi Là Tổ Nghề Diệt Trà Xanh",
+    enMotif: "family comedy, green tea rival, protection, and revenge",
+    viMotif: "gia đình, trà xanh, bảo vệ nữ chính và báo thù"
+  }),
+  storyTitleTopic({
+    slug: "ba-nam-khong-danh-phan-toi-tu-cho-minh-mot-loi-thoat",
+    title: "Ba Năm Không Danh Phận, Tôi Tự Cho Mình Một Lối Thoát",
+    enMotif: "angst romance, breakup, self-respect, and emotional healing",
+    viMotif: "ngược tâm, chia tay, tự tôn và chữa lành"
+  }),
+  storyTitleTopic({
+    slug: "vua-bi-gia-dinh-vut-bo-toi-da-tro-thanh-nguoi-thua-ke-hang-chuc-ty",
+    title: "Vừa Bị Gia Đình Vứt Bỏ, Tôi Đã Trở Thành Người Thừa Kế Hàng Chục Tỷ",
+    enMotif: "inheritance, abandoned daughter, comeback, and rich-family drama",
+    viMotif: "thừa kế, bị bỏ rơi, phản công và hào môn"
+  }),
+  storyTitleTopic({
+    slug: "ca-lo-nha-toi-deu-la-vai-phan-dien",
+    title: "Cả Lò Nhà Tôi Đều Là Vai Phản Diện",
+    enMotif: "villain family, transmigration, comedy, and redemption arcs",
+    viMotif: "vai phản diện, xuyên không, hài hước và cứu vớt gia đình"
+  }),
+  storyTitleTopic({
+    slug: "dem-ngay-giai-nghe-toi-tu-bo-hinh-tuong-quyet-lam-ca-man",
+    title: "Đêm Ngày Giải Nghệ, Tôi Từ Bỏ Hình Tượng Quyết Làm Cá Mặn",
+    enMotif: "entertainment circle, salted fish heroine, celebrity, and comedy",
+    viMotif: "showbiz, cá mặn, giải nghệ và hài hiện đại"
+  }),
+  storyTitleTopic({
+    slug: "no-mau-phai-tra-bang-mau",
+    title: "Nợ Máu Phải Trả Bằng Máu",
+    enMotif: "revenge, crime, dark drama, and justice",
+    viMotif: "báo thù, phá án, drama đen tối và công lý"
+  }),
+  storyTitleTopic({
+    slug: "toi-la-hoc-sinh-ngheo-o-truong-quy-toc",
+    title: "Tôi Là Học Sinh Nghèo Ở Trường Quý Tộc",
+    enMotif: "school drama, class gap, rich students, and underdog heroine",
+    viMotif: "học đường, chênh lệch giai cấp, trường quý tộc và nữ chính nghèo"
+  }),
+  storyTitleTopic({
+    slug: "nhat-ky-lam-ca-man-chon-hau-cung",
+    title: "Nhật Ký Làm Cá Mặn Chốn Hậu Cung",
+    enMotif: "palace drama, salted fish heroine, survival, and historical comedy",
+    viMotif: "hậu cung, cá mặn, sinh tồn và hài cổ trang"
+  }),
+  storyTitleTopic({
+    slug: "nhat-ky-cua-an-an-nghe-de-khoc",
+    title: "Nhật Ký Của An An: Nghe Để Khóc",
+    enMotif: "emotional diary, tearjerker, family pain, and healing",
+    viMotif: "nhật ký cảm xúc, truyện lấy nước mắt, gia đình và chữa lành"
+  }),
+  storyTitleTopic({
+    slug: "hon-uoc-tu-be-voi-dai-ca-truong",
+    title: "Hôn Ước Từ Bé Với Đại Ca Trường",
+    enMotif: "school romance, childhood engagement, campus boss, and sweet drama",
+    viMotif: "thanh xuân vườn trường, hôn ước từ bé, đại ca trường và romance"
+  }),
+  storyTitleTopic({
+    slug: "mang-tieng-la-tra-xanh-toi-tham-gia-show-hen-ho-tau-hai-la-chinh",
+    title: "Mang Tiếng Là Trà Xanh, Tôi Tham Gia Show Hẹn Hò Tấu Hài Là Chính",
+    enMotif: "dating show, green tea reputation, comedy, and variety-show romance",
+    viMotif: "show hẹn hò, trà xanh, tấu hài và romance giải trí"
+  }),
+  storyTitleTopic({
+    slug: "hoa-khoi-tung-tin-hen-ho-voi-trum-truong-the-ma-lai-hay",
+    title: "Hoa Khôi Tung Tin Hẹn Hò Với Trùm Trường, Thế Mà Lại Hay",
+    enMotif: "campus romance, school queen, school boss, and fake dating",
+    viMotif: "vườn trường, hoa khôi, trùm trường và fake dating"
+  }),
+  storyTitleTopic({
+    slug: "xuyen-sach-toi-pha-nat-moi-kich-ban",
+    title: "Xuyên Sách Tôi Phá Nát Mọi Kịch Bản",
+    enMotif: "book transmigration, plot-breaking heroine, system, and comedy",
+    viMotif: "xuyên sách, phá kịch bản, hệ thống và hài hước"
+  }),
+  storyTitleTopic({
+    slug: "toi-mo-tiem-thu-cung-hong-bien-hao-mon",
+    title: "Tôi Mở Tiệm Thú Cưng Hòng Biến Hào Môn",
+    enMotif: "pet shop, rich-family romance, comedy, and modern fantasy",
+    viMotif: "tiệm thú cưng, hào môn, hài hước và hiện đại kỳ ảo"
+  }),
+  storyTitleTopic({
+    slug: "dua-tre-khong-duoc-yeu-thuong",
+    title: "Đứa Trẻ Không Được Yêu Thương",
+    enMotif: "family angst, neglected child, healing, and emotional drama",
+    viMotif: "gia đình ngược, đứa trẻ bị bỏ quên, chữa lành và drama cảm xúc"
+  }),
+  storyTitleTopic({
+    slug: "thien-kim-gia-bi-ao-tuong-nu-chinh",
+    title: "Thiên Kim Giả Bị Ảo Tưởng Nữ Chính",
+    enMotif: "fake heiress, heroine delusion, identity swap, and rich-family drama",
+    viMotif: "thiên kim giả, ảo tưởng nữ chính, tráo thân phận và hào môn"
+  })
 ];
 
 const labels = {
@@ -1178,7 +1341,11 @@ function articleTags(topic, lang) {
     "listen-to-stories-while-commuting": ["commute listening", "hands-free stories", "listen while commuting"]
   };
   const vi = ["nghe truyện", "truyện audio", "giọng đọc AI", "Wattpad tiếng Việt", "nghe truyện offline", "app đọc truyện audio", "app thay thế Speechify"];
-  return [...shared, ...(bySlug[topic.slug] || []), ...(lang === "vi" ? vi : [])];
+  const viTitle = topic.vi?.title?.replace(/^Nghe audio\s+/i, "");
+  const storyTitleTags = topic.en?.title?.includes(": Audio Story Listening Guide") && viTitle
+    ? [viTitle, `${viTitle} audio`, `${viTitle} truyện audio`, "truyện audio YouTube", "truyện full audio"]
+    : [];
+  return [...shared, ...storyTitleTags, ...(bySlug[topic.slug] || []), ...(lang === "vi" ? vi : [])];
 }
 
 function hashtagText(tag) {
