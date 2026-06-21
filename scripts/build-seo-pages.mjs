@@ -3,7 +3,7 @@ import path from "node:path";
 
 const appUrl = "https://apps.apple.com/vn/app/watt-audio-%C4%91%E1%BB%8Dc-truy%E1%BB%87n-audio/id6775724279";
 const siteUrl = "https://wattaudios.com";
-const lastModified = "2026-06-20";
+const lastModified = "2026-06-21";
 const gaMeasurementId = "G-CPTTPW88BP";
 const publisher = {
   "@type": "Organization",
@@ -361,8 +361,8 @@ const topics = [
   {
     slug: "how-to-listen-to-wattpad-stories",
     en: {
-      title: "How to Listen to Wattpad Stories",
-      description: "A practical guide to listening to Wattpad stories with text to speech, offline playback, chapter controls, and Watt Audio.",
+      title: "How to Listen to Wattpad Stories as Audio",
+      description: "Learn how to listen to Wattpad stories with text to speech, chapter audio, background playback, and Watt Audio on iPhone.",
       audience: "readers who already love Wattpad but do not always have the time or eye comfort to read every chapter on screen",
       focus: "listening to Wattpad stories",
       scenario: "commuting, cleaning, walking, resting your eyes at night, or catching up on long chapters while your phone stays in your pocket",
@@ -380,6 +380,8 @@ const topics = [
         "Download or generate audio before you leave stable Wi-Fi if you plan to listen while traveling."
       ],
       faq: [
+        ["How to listen to stories on Wattpad?", "The easiest workflow is to keep reading from the original story source, then use Watt Audio for supported story links when you want chapter audio, background playback, and less screen time."],
+        ["How to get Wattpad to read to you?", "You can try phone accessibility voices, browser text to speech, or a story-focused app like Watt Audio when you want cleaner chapter controls."],
         ["Can I listen with the screen off?", "Yes. After audio has been created for a chapter, you can listen while the screen is locked, which is the main advantage over trying to read a web page directly."],
         ["Does this replace the original Wattpad app?", "No. Watt Audio is a companion listening workflow for readers who want audio from stories they already access."],
         ["Is it good for long stories?", "It is especially useful for long stories because you can move through chapters during small pockets of time instead of waiting for a reading session."]
@@ -405,12 +407,66 @@ const topics = [
         "Tạo audio trước khi rời Wi-Fi ổn định nếu bạn định nghe khi di chuyển."
       ],
       faq: [
+        ["Làm sao để nghe truyện trên Wattpad?", "Bạn có thể tiếp tục dùng nguồn truyện gốc, rồi dùng Watt Audio với link truyện được hỗ trợ khi muốn nghe audio theo chương, phát nền và giảm thời gian nhìn màn hình."],
+        ["Làm sao để Wattpad đọc truyện cho mình?", "Bạn có thể thử giọng accessibility của điện thoại, text to speech trên trình duyệt hoặc app tập trung vào truyện như Watt Audio nếu muốn điều khiển chương sạch hơn."],
         ["Có nghe khi tắt màn hình được không?", "Có. Sau khi audio của chương đã được tạo, bạn có thể nghe khi khóa màn hình, giống một trải nghiệm audiobook tiện hơn việc đọc web trực tiếp."],
         ["Watt Audio có thay thế Wattpad không?", "Không. Watt Audio là công cụ nghe bổ trợ cho những truyện bạn đã truy cập và muốn nghe theo cách linh hoạt hơn."],
         ["Truyện dài có phù hợp không?", "Rất phù hợp, vì bạn có thể đi qua từng chương trong các khoảng thời gian nhỏ thay vì phải ngồi đọc một mạch."]
       ]
     }
   },
+  searchIntentTopic({
+    slug: "how-to-listen-to-stories-on-wattpad",
+    enTitle: "How to Listen to Stories on Wattpad",
+    enDescription: "How to listen to stories on Wattpad with text to speech, phone voices, chapter audio, and Watt Audio.",
+    enAudience: "readers who search how to listen to stories on Wattpad and want a practical audio workflow instead of constant scrolling",
+    enFocus: "how to listen to stories on Wattpad",
+    enScenario: "turning long chapters into personal audio for commutes, bedtime, chores, rereads, and hands-free story sessions",
+    viTitle: "Cách nghe truyện trên Wattpad",
+    viDescription: "Cách nghe truyện trên Wattpad bằng text to speech, giọng điện thoại, audio theo chương và Watt Audio.",
+    viAudience: "người đọc search cách nghe truyện trên Wattpad và muốn workflow audio thực tế thay vì cuộn đọc liên tục",
+    viFocus: "cách nghe truyện trên Wattpad",
+    viScenario: "biến chương dài thành audio cá nhân để nghe khi đi làm, trước khi ngủ, làm việc nhà, đọc lại và rảnh tay"
+  }),
+  searchIntentTopic({
+    slug: "does-wattpad-have-audiobooks",
+    enTitle: "Does Wattpad Have Audiobooks?",
+    enDescription: "Does Wattpad have audiobooks? Understand official audio, text to speech options, and Watt Audio for personal listening.",
+    enAudience: "readers asking whether Wattpad has audiobooks, audio stories, text to speech, or a way to hear long chapters",
+    enFocus: "whether Wattpad has audiobooks",
+    enScenario: "comparing official audiobooks, audio stories, AI voice readers, and personal chapter audio before choosing how to listen",
+    viTitle: "Wattpad có audiobook không?",
+    viDescription: "Wattpad có audiobook không? Tìm hiểu audio chính thức, text to speech và Watt Audio cho nhu cầu nghe cá nhân.",
+    viAudience: "người đọc hỏi Wattpad có audiobook, truyện audio, text to speech hoặc cách nghe chương dài không",
+    viFocus: "Wattpad có audiobook không",
+    viScenario: "so sánh audiobook chính thức, truyện audio, app đọc giọng AI và audio theo chương cá nhân trước khi chọn cách nghe"
+  }),
+  searchIntentTopic({
+    slug: "wattpad-audiobook-reader-guide",
+    enTitle: "Wattpad Audiobook: Reader Guide",
+    enDescription: "A reader guide to Wattpad audiobook searches, audio stories, text to speech, and Watt Audio chapter listening.",
+    enAudience: "readers searching Wattpad audiobook, Wattpad audiobooks, audiobook app, or audio books for serialized fiction",
+    enFocus: "Wattpad audiobook options",
+    enScenario: "finding a comfortable way to hear serialized fiction, romance, fantasy, fanfiction, and long story updates",
+    viTitle: "Wattpad audiobook: hướng dẫn cho người đọc",
+    viDescription: "Hướng dẫn về Wattpad audiobook, truyện audio, text to speech và cách nghe theo chương bằng Watt Audio.",
+    viAudience: "người đọc search Wattpad audiobook, Wattpad audiobooks, app audiobook hoặc audio books cho truyện đăng kỳ",
+    viFocus: "các lựa chọn Wattpad audiobook",
+    viScenario: "tìm cách nghe truyện đăng kỳ, romance, fantasy, fanfiction và chương dài một cách dễ chịu hơn"
+  }),
+  searchIntentTopic({
+    slug: "how-to-get-wattpad-to-read-to-you",
+    enTitle: "How to Get Wattpad to Read to You",
+    enDescription: "How to get Wattpad to read to you using phone accessibility, text to speech, AI voice, and Watt Audio.",
+    enAudience: "readers who want Wattpad to read aloud so they can rest their eyes, multitask, or listen with the screen off",
+    enFocus: "how to get Wattpad to read to you",
+    enScenario: "using read-aloud tools, text to speech voices, generated chapter audio, and background playback for long stories",
+    viTitle: "Cách để Wattpad đọc truyện cho bạn",
+    viDescription: "Cách để Wattpad đọc truyện cho bạn bằng accessibility, text to speech, giọng AI và Watt Audio.",
+    viAudience: "người đọc muốn Wattpad đọc thành tiếng để nghỉ mắt, multitask hoặc nghe khi tắt màn hình",
+    viFocus: "cách để Wattpad đọc truyện cho bạn",
+    viScenario: "dùng công cụ read-aloud, giọng text to speech, audio theo chương đã tạo và phát nền cho truyện dài"
+  }),
   {
     slug: "how-to-convert-wattpad-to-audio",
     en: {
@@ -1280,6 +1336,16 @@ const labels = {
   }
 };
 
+const popularGuideSlugs = [
+  "how-to-listen-to-wattpad-stories",
+  "how-to-listen-to-stories-on-wattpad",
+  "does-wattpad-have-audiobooks",
+  "wattpad-audiobook-reader-guide",
+  "how-to-get-wattpad-to-read-to-you",
+  "wattpad-audio-reader",
+  "best-wattpad-audiobook-app"
+];
+
 function escapeHtml(value) {
   return String(value)
     .replaceAll("&", "&amp;")
@@ -1321,6 +1387,10 @@ function articleTags(topic, lang) {
     "watt-audio-vs-elevenlabs-reader": ["Watt Audio vs ElevenLabs Reader", "ElevenLabs Reader alternative", "AI reader comparison"],
     "best-apps-to-listen-to-stories-faq": ["best apps to listen to stories", "story listening apps", "audio story FAQ"],
     "how-to-listen-to-wattpad-stories": ["listen to Wattpad stories", "Wattpad reader", "story listening"],
+    "how-to-listen-to-stories-on-wattpad": ["how to listen to stories on Wattpad", "listen to stories on Wattpad", "Wattpad text to speech"],
+    "does-wattpad-have-audiobooks": ["does Wattpad have audiobooks", "Wattpad audiobooks", "audio stories", "Wattpad audio"],
+    "wattpad-audiobook-reader-guide": ["Wattpad audiobook", "Wattpad audiobooks", "audiobook reader", "story audio"],
+    "how-to-get-wattpad-to-read-to-you": ["how to get Wattpad to read to you", "Wattpad read aloud", "text to speech Wattpad"],
     "how-to-convert-wattpad-to-audio": ["convert Wattpad to audio", "chapter audio", "audio converter"],
     "best-wattpad-audiobook-app": ["Wattpad audiobook app", "audiobook app", "offline listening"],
     "wattpad-audio-reader": ["Wattpad audio reader", "audio reader", "story reader app"],
@@ -1381,12 +1451,27 @@ ${image ? `<meta property="og:image" content="${image}" />
 }
 
 function relatedLinks(currentSlug, lang) {
-  return topics
-    .filter((topic) => topic.slug !== currentSlug)
+  const preferred = popularGuideSlugs
+    .filter((slug) => slug !== currentSlug)
+    .map((slug) => topics.find((topic) => topic.slug === slug))
+    .filter(Boolean);
+  const fallback = topics.filter((topic) => topic.slug !== currentSlug && !popularGuideSlugs.includes(topic.slug));
+  return [...preferred, ...fallback]
     .slice(0, 4)
     .map((topic) => {
       const page = topic[lang];
       return `<a href="${topic.slug}.html">${escapeHtml(page.title)}</a>`;
+    })
+    .join("\n");
+}
+
+function popularGuideLinks(lang, prefix = "articles/") {
+  return popularGuideSlugs
+    .map((slug) => topics.find((topic) => topic.slug === slug))
+    .filter(Boolean)
+    .map((topic) => {
+      const page = topic[lang];
+      return `<a href="${prefix}${topic.slug}.html">${escapeHtml(page.title)}<span>${escapeHtml(page.description)}</span></a>`;
     })
     .join("\n");
 }
@@ -1633,6 +1718,11 @@ ${analyticsTags}
       <div class="eyebrow">${l.guides}</div>
       <h1>${l.indexTitle}</h1>
       <p class="intro">${escapeHtml(l.indexDescription)}</p>
+      <h2>${lang === "en" ? "Popular Wattpad Audio Guides" : "Hướng dẫn Wattpad audio nổi bật"}</h2>
+      <div class="article-list">
+        ${popularGuideLinks(lang, "")}
+      </div>
+      <h2>${lang === "en" ? "All Guides" : "Tất cả hướng dẫn"}</h2>
       <div class="article-list">
         ${list}
       </div>
@@ -1800,6 +1890,13 @@ ${analyticsTags}
         <a href="../about.html">${lang === "en" ? "About Watt Audio" : "Giới thiệu Watt Audio"}<span>${lang === "en" ? "App details and listening workflow" : "Thông tin app và cách nghe truyện"}</span></a>
         <a href="../support.html">${l.support}<span>${lang === "en" ? "Help and contact" : "Trợ giúp và liên hệ"}</span></a>
       </nav>
+      <section aria-label="${lang === "en" ? "Popular Wattpad audio guides" : "Hướng dẫn Wattpad audio nổi bật"}">
+        <div class="eyebrow">${lang === "en" ? "Popular Guides" : "Hướng dẫn nổi bật"}</div>
+        <h2>${lang === "en" ? "Popular Wattpad Audio Guides" : "Hướng dẫn Wattpad audio nổi bật"}</h2>
+        <div class="article-list home-links">
+          ${popularGuideLinks(lang, "articles/")}
+        </div>
+      </section>
     </main>
 
     <footer class="home-footer">© 2026 Watt Audio</footer>
