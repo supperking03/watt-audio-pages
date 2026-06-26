@@ -3,7 +3,7 @@ import path from "node:path";
 
 const appUrl = "https://apps.apple.com/vn/app/watt-audio-%C4%91%E1%BB%8Dc-truy%E1%BB%87n-audio/id6775724279";
 const siteUrl = "https://wattaudios.com";
-const lastModified = "2026-06-21";
+const lastModified = "2026-06-26";
 const gaMeasurementId = "G-CPTTPW88BP";
 const publisher = {
   "@type": "Organization",
@@ -188,7 +188,106 @@ function storyTitleTopic({ slug, title, enMotif, viMotif }) {
   return topic;
 }
 
+function accessIssueTopic({
+  slug,
+  enTitle,
+  enDescription,
+  enFocus,
+  enScenario,
+  viTitle,
+  viDescription,
+  viFocus,
+  viScenario
+}) {
+  const topic = searchIntentTopic({
+    slug,
+    enTitle,
+    enDescription,
+    enAudience: "readers who cannot open Wattpad normally, see loading errors, or hear that Wattpad may need a VPN in their area",
+    enFocus,
+    enScenario,
+    viTitle,
+    viDescription,
+    viAudience: "người đọc không vào Wattpad được, gặp lỗi tải trang hoặc nghe nói Wattpad phải dùng VPN mới vào được",
+    viFocus,
+    viScenario
+  });
+  topic.en.steps = [
+    "Try mobile data, Wi-Fi, browser, and the official app to see whether the issue is device-specific or network-specific.",
+    "Check status pages and recent community reports before assuming the service is blocked in your area.",
+    "For supported links you can access, use Watt Audio to create personal chapter audio for later listening."
+  ];
+  topic.en.tips = [
+    "Searches around blocked, VPN, DNS, and loading error usually mean the reader wants a diagnosis before choosing a workaround.",
+    "Do not use access issues as a reason to copy or redistribute story content. Keep listening workflows personal."
+  ];
+  topic.en.faq = [
+    ["Is Wattpad officially blocked in Vietnam?", "I could not verify a current official notice. Treat it as a connection issue first, then compare with other users on the same network."],
+    ["Should I use a VPN for Wattpad?", "Only if it is legal for you and you trust the provider. VPNs can affect privacy, speed, and account security."],
+    ["Can Watt Audio bypass a block?", "No. Watt Audio is not a bypass tool. It helps with personal listening for supported links you can access."]
+  ];
+  topic.vi.steps = [
+    "Thử 4G/5G, Wi-Fi, trình duyệt và app chính thức để biết lỗi nằm ở thiết bị hay mạng.",
+    "Xem trang trạng thái và báo lỗi gần đây trong cộng đồng trước khi kết luận dịch vụ bị chặn.",
+    "Với link truyện bạn truy cập được và được hỗ trợ, dùng Watt Audio để tạo audio theo chương cho nhu cầu nghe cá nhân."
+  ];
+  topic.vi.tips = [
+    "Các keyword như bị chặn, VPN, lỗi DNS và loading error thường đến từ nhu cầu chẩn đoán trước khi xử lý.",
+    "Đừng dùng lỗi truy cập làm lý do copy hoặc chia sẻ nội dung truyện trái phép. Workflow nghe nên giữ cho mục đích cá nhân."
+  ];
+  topic.vi.faq = [
+    ["Wattpad có chính thức bị chặn ở Việt Nam không?", "Mình chưa xác minh được thông báo chính thức hiện tại. Hãy xem đây là lỗi kết nối trước, rồi so sánh với người dùng cùng mạng."],
+    ["Có nên dùng VPN để vào Wattpad không?", "Chỉ dùng VPN nếu hợp pháp với bạn và bạn tin nhà cung cấp. VPN có đánh đổi về quyền riêng tư, tốc độ và bảo mật."],
+    ["Watt Audio có vượt chặn không?", "Không. Watt Audio không phải công cụ vượt chặn. App chỉ hỗ trợ nghe cá nhân với link truyện bạn truy cập được."]
+  ];
+  return topic;
+}
+
 const topics = [
+  accessIssueTopic({
+    slug: "wattpad-bi-chan-vpn",
+    enTitle: "Wattpad Blocked or Needs VPN? What Readers Should Check",
+    enDescription: "If Wattpad seems blocked or only opens with VPN, check DNS, ISP, app status, privacy risks, and safer listening workflows.",
+    enFocus: "checking whether Wattpad is blocked or needs a VPN",
+    enScenario: "troubleshooting Wattpad access, VPN rumors, DNS changes, app loading errors, and personal story listening when access is unstable",
+    viTitle: "Wattpad bị chặn, phải dùng VPN? Cách kiểm tra an toàn",
+    viDescription: "Nếu Wattpad bị chặn hoặc chỉ vào được bằng VPN, hãy kiểm tra DNS, ISP, trạng thái app, rủi ro riêng tư và cách nghe an toàn.",
+    viFocus: "kiểm tra Wattpad bị chặn hoặc cần VPN",
+    viScenario: "xử lý lỗi truy cập Wattpad, tin đồn phải dùng VPN, đổi DNS, lỗi tải app và nghe truyện cá nhân khi kết nối không ổn định"
+  }),
+  accessIssueTopic({
+    slug: "wattpad-khong-vao-duoc",
+    enTitle: "Wattpad Not Working or Not Opening: Troubleshooting Guide",
+    enDescription: "Wattpad not working? Check app errors, browser loading, DNS, network issues, and ways to keep listening responsibly.",
+    enFocus: "fixing Wattpad not working or not opening",
+    enScenario: "testing mobile data, Wi-Fi, browser errors, app loading loops, DNS problems, and story audio habits during outages",
+    viTitle: "Wattpad không vào được: cách kiểm tra và xử lý",
+    viDescription: "Wattpad không vào được? Kiểm tra lỗi app, trình duyệt, DNS, mạng và cách tiếp tục nghe truyện có trách nhiệm.",
+    viFocus: "xử lý Wattpad không vào được",
+    viScenario: "thử 4G/5G, Wi-Fi, lỗi trình duyệt, app tải mãi, vấn đề DNS và thói quen nghe truyện khi dịch vụ chập chờn"
+  }),
+  accessIssueTopic({
+    slug: "wattpad-loi-dns-khong-tai-duoc",
+    enTitle: "Wattpad DNS Error or Loading Problem",
+    enDescription: "A practical guide to Wattpad DNS errors, loading problems, network checks, privacy tradeoffs, and story audio backup habits.",
+    enFocus: "understanding Wattpad DNS errors and loading problems",
+    enScenario: "seeing blank pages, endless loading, DNS failures, connection resets, slow images, or app login problems",
+    viTitle: "Wattpad lỗi DNS hoặc tải mãi không được",
+    viDescription: "Hướng dẫn xử lý Wattpad lỗi DNS, tải mãi không được, kiểm tra mạng, quyền riêng tư và thói quen nghe dự phòng.",
+    viFocus: "hiểu lỗi DNS Wattpad và lỗi tải trang",
+    viScenario: "gặp trang trắng, tải mãi không xong, lỗi DNS, reset kết nối, ảnh tải chậm hoặc lỗi đăng nhập app"
+  }),
+  accessIssueTopic({
+    slug: "nghe-truyen-khi-wattpad-bi-chan",
+    enTitle: "How to Listen to Stories When Wattpad Is Unavailable",
+    enDescription: "If Wattpad is unavailable, learn how to plan personal story listening, save chapter audio, and avoid unsafe downloads.",
+    enFocus: "listening to stories when Wattpad is unavailable",
+    enScenario: "keeping a personal listening routine during app errors, temporary outages, blocked access reports, or unstable networks",
+    viTitle: "Cách nghe truyện khi Wattpad bị chặn hoặc không vào được",
+    viDescription: "Khi Wattpad không vào được, đây là cách chuẩn bị nghe truyện cá nhân, audio theo chương và tránh tải file không an toàn.",
+    viFocus: "nghe truyện khi Wattpad bị chặn hoặc không vào được",
+    viScenario: "giữ thói quen nghe truyện cá nhân khi app lỗi, dịch vụ chập chờn, có tin bị chặn hoặc mạng không ổn định"
+  }),
   searchIntentTopic({
     slug: "what-is-wattpad",
     enTitle: "What Is Wattpad?",
@@ -1337,6 +1436,18 @@ const labels = {
 };
 
 const popularGuideSlugs = [
+  "wattpad-bi-chan-vpn",
+  "wattpad-khong-vao-duoc",
+  "how-to-listen-to-wattpad-stories",
+  "how-to-listen-to-stories-on-wattpad",
+  "does-wattpad-have-audiobooks",
+  "wattpad-audiobook-reader-guide",
+  "how-to-get-wattpad-to-read-to-you",
+  "wattpad-audio-reader",
+  "best-wattpad-audiobook-app"
+];
+
+const relatedGuideSlugs = [
   "how-to-listen-to-wattpad-stories",
   "how-to-listen-to-stories-on-wattpad",
   "does-wattpad-have-audiobooks",
@@ -1373,6 +1484,10 @@ function absoluteUrl(pathname) {
 function articleTags(topic, lang) {
   const shared = ["Watt Audio", "Wattpad audio", "text to speech", "text to speech app", "TTS reader", "AI voice", "story audio"];
   const bySlug = {
+    "wattpad-bi-chan-vpn": ["Wattpad bị chặn", "Wattpad VPN", "Wattpad blocked", "Wattpad không vào được", "Wattpad DNS"],
+    "wattpad-khong-vao-duoc": ["Wattpad không vào được", "Wattpad bị lỗi", "Wattpad not working", "Wattpad loading error"],
+    "wattpad-loi-dns-khong-tai-duoc": ["Wattpad lỗi DNS", "Wattpad tải mãi", "Wattpad DNS error", "Wattpad connection problem"],
+    "nghe-truyen-khi-wattpad-bi-chan": ["nghe truyện khi Wattpad bị chặn", "Wattpad bị chặn VPN", "Wattpad offline", "truyện audio dự phòng"],
     "what-is-wattpad": ["What is Wattpad", "Wattpad stories", "social storytelling", "web fiction"],
     "can-you-listen-to-wattpad-stories": ["Can you listen to Wattpad", "listen to Wattpad stories", "Wattpad text to speech"],
     "why-readers-prefer-audio": ["why readers prefer audio", "audio reading", "screen fatigue", "hands-free reading"],
@@ -1451,11 +1566,11 @@ ${image ? `<meta property="og:image" content="${image}" />
 }
 
 function relatedLinks(currentSlug, lang) {
-  const preferred = popularGuideSlugs
+  const preferred = relatedGuideSlugs
     .filter((slug) => slug !== currentSlug)
     .map((slug) => topics.find((topic) => topic.slug === slug))
     .filter(Boolean);
-  const fallback = topics.filter((topic) => topic.slug !== currentSlug && !popularGuideSlugs.includes(topic.slug));
+  const fallback = topics.filter((topic) => topic.slug !== currentSlug && !relatedGuideSlugs.includes(topic.slug));
   return [...preferred, ...fallback]
     .slice(0, 4)
     .map((topic) => {
