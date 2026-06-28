@@ -555,16 +555,55 @@ const topics = [
   }),
   searchIntentTopic({
     slug: "how-to-get-wattpad-to-read-to-you",
-    enTitle: "How to Get Wattpad to Read to You",
-    enDescription: "How to get Wattpad to read to you using phone accessibility, text to speech, AI voice, and Watt Audio.",
-    enAudience: "readers who want Wattpad to read aloud so they can rest their eyes, multitask, or listen with the screen off",
-    enFocus: "how to get Wattpad to read to you",
+    enTitle: "Can Wattpad Read to You?",
+    enDescription: "Can Wattpad read to you? Compare built-in options, phone text to speech, read aloud tools, AI voice, and Watt Audio.",
+    enAudience: "readers asking can Wattpad read to you, how to get Wattpad to read aloud, or how to listen with the screen off",
+    enFocus: "whether Wattpad can read to you",
     enScenario: "using read-aloud tools, text to speech voices, generated chapter audio, and background playback for long stories",
-    viTitle: "Cách để Wattpad đọc truyện cho bạn",
-    viDescription: "Cách để Wattpad đọc truyện cho bạn bằng accessibility, text to speech, giọng AI và Watt Audio.",
-    viAudience: "người đọc muốn Wattpad đọc thành tiếng để nghỉ mắt, multitask hoặc nghe khi tắt màn hình",
-    viFocus: "cách để Wattpad đọc truyện cho bạn",
+    viTitle: "Wattpad có đọc truyện cho bạn được không?",
+    viDescription: "Wattpad có đọc truyện cho bạn được không? So sánh text to speech, read aloud, giọng AI và Watt Audio.",
+    viAudience: "người đọc hỏi Wattpad có đọc truyện thành tiếng không, cách để Wattpad đọc truyện hoặc nghe khi tắt màn hình",
+    viFocus: "Wattpad có đọc truyện cho bạn được không",
     viScenario: "dùng công cụ read-aloud, giọng text to speech, audio theo chương đã tạo và phát nền cho truyện dài"
+  }),
+  searchIntentTopic({
+    slug: "how-to-add-text-to-speech-in-wattpad",
+    enTitle: "How to Add Text to Speech in Wattpad",
+    enDescription: "How to add text to speech in Wattpad using phone read aloud settings, browser tools, AI voice, and Watt Audio.",
+    enAudience: "readers searching how to add text to speech in Wattpad because they want stories read aloud without constant scrolling",
+    enFocus: "how to add text to speech in Wattpad",
+    enScenario: "testing phone accessibility voices, browser read aloud, AI voice apps, and chapter audio for long Wattpad stories",
+    viTitle: "Cách thêm text to speech vào Wattpad",
+    viDescription: "Cách thêm text to speech vào Wattpad bằng cài đặt đọc màn hình, trình duyệt, giọng AI và Watt Audio.",
+    viAudience: "người đọc tìm cách thêm text to speech vào Wattpad để nghe truyện thay vì cuộn đọc liên tục",
+    viFocus: "cách thêm text to speech vào Wattpad",
+    viScenario: "thử giọng accessibility, read aloud trên trình duyệt, app giọng AI và audio theo chương cho truyện Wattpad dài"
+  }),
+  searchIntentTopic({
+    slug: "does-wattpad-have-text-to-speech",
+    enTitle: "Does Wattpad Have Text to Speech?",
+    enDescription: "Does Wattpad have text to speech? Learn what read aloud options exist and when Watt Audio helps with chapter listening.",
+    enAudience: "readers asking whether Wattpad has text to speech, read aloud, audio stories, or an easier way to hear chapters",
+    enFocus: "whether Wattpad has text to speech",
+    enScenario: "checking official app options, phone accessibility, browser TTS, story audio apps, and personal listening routines",
+    viTitle: "Wattpad có text to speech không?",
+    viDescription: "Wattpad có text to speech không? Tìm hiểu read aloud, giọng điện thoại và khi nào Watt Audio hữu ích.",
+    viAudience: "người đọc hỏi Wattpad có text to speech, read aloud, truyện audio hoặc cách nghe chương dễ hơn không",
+    viFocus: "Wattpad có text to speech không",
+    viScenario: "kiểm tra lựa chọn trong app, accessibility điện thoại, TTS trình duyệt, app nghe truyện và workflow cá nhân"
+  }),
+  searchIntentTopic({
+    slug: "watts-audio",
+    enTitle: "Watts Audio or Watt Audio?",
+    enDescription: "Searching for Watts Audio? The app name is Watt Audio: an iOS story audio app for Wattpad-style listening.",
+    enAudience: "people who typed watts audio, watt audio, wattaudio, or Watt Audio while looking for the story listening app",
+    enFocus: "finding Watt Audio after searching Watts Audio",
+    enScenario: "correcting a common brand typo and finding the app for Wattpad audio, text to speech stories, and AI voice listening",
+    viTitle: "Watts Audio hay Watt Audio?",
+    viDescription: "Nếu bạn search Watts Audio, tên đúng là Watt Audio: app iOS nghe truyện bằng audio và giọng AI.",
+    viAudience: "người dùng gõ watts audio, watt audio, wattaudio hoặc Watt Audio khi tìm app nghe truyện",
+    viFocus: "tìm Watt Audio sau khi search Watts Audio",
+    viScenario: "sửa lỗi gõ tên thương hiệu và tìm app cho Wattpad audio, text to speech cho truyện và giọng đọc AI"
   }),
   {
     slug: "how-to-convert-wattpad-to-audio",
@@ -1443,6 +1482,8 @@ const popularGuideSlugs = [
   "does-wattpad-have-audiobooks",
   "wattpad-audiobook-reader-guide",
   "how-to-get-wattpad-to-read-to-you",
+  "does-wattpad-have-text-to-speech",
+  "how-to-add-text-to-speech-in-wattpad",
   "wattpad-audio-reader",
   "best-wattpad-audiobook-app"
 ];
@@ -1453,6 +1494,8 @@ const relatedGuideSlugs = [
   "does-wattpad-have-audiobooks",
   "wattpad-audiobook-reader-guide",
   "how-to-get-wattpad-to-read-to-you",
+  "does-wattpad-have-text-to-speech",
+  "how-to-add-text-to-speech-in-wattpad",
   "wattpad-audio-reader",
   "best-wattpad-audiobook-app"
 ];
@@ -1505,7 +1548,10 @@ function articleTags(topic, lang) {
     "how-to-listen-to-stories-on-wattpad": ["how to listen to stories on Wattpad", "listen to stories on Wattpad", "Wattpad text to speech"],
     "does-wattpad-have-audiobooks": ["does Wattpad have audiobooks", "Wattpad audiobooks", "audio stories", "Wattpad audio"],
     "wattpad-audiobook-reader-guide": ["Wattpad audiobook", "Wattpad audiobooks", "audiobook reader", "story audio"],
-    "how-to-get-wattpad-to-read-to-you": ["how to get Wattpad to read to you", "Wattpad read aloud", "text to speech Wattpad"],
+    "how-to-get-wattpad-to-read-to-you": ["can Wattpad read to you", "how to get Wattpad to read to you", "Wattpad read aloud", "text to speech Wattpad"],
+    "how-to-add-text-to-speech-in-wattpad": ["how to add text to speech in Wattpad", "add text to speech Wattpad", "Wattpad read aloud", "Wattpad TTS"],
+    "does-wattpad-have-text-to-speech": ["does Wattpad have text to speech", "Wattpad text to speech", "Wattpad read aloud", "Wattpad TTS"],
+    "watts-audio": ["watts audio", "watt audio", "wattaudio", "Watt Audio app"],
     "how-to-convert-wattpad-to-audio": ["convert Wattpad to audio", "chapter audio", "audio converter"],
     "best-wattpad-audiobook-app": ["Wattpad audiobook app", "audiobook app", "offline listening"],
     "wattpad-audio-reader": ["Wattpad audio reader", "audio reader", "story reader app"],
@@ -1856,8 +1902,8 @@ function localizedHomeHtml(lang) {
     ? "Watt Audio | Turn Stories into Audio"
     : "Watt Audio | Chuyển truyện chữ thành audio";
   const description = lang === "en"
-    ? "Watt Audio helps you turn supported story links into chapter audio with AI voice, background playback, offline replay, speed control, and sleep timer."
-    : "Watt Audio giúp chuyển link truyện được hỗ trợ thành audio theo chương bằng giọng đọc AI, nghe nền, nghe lại offline, chỉnh tốc độ và hẹn giờ ngủ.";
+    ? "Listen to Wattpad stories as audio with Watt Audio. Turn stories you can access into personal audio and listen anytime, anywhere."
+    : "Nghe audio trên Wattpad bằng Watt Audio. Chuyển truyện chữ bạn truy cập được thành audio và nghe mọi lúc mọi nơi.";
   const keywords = lang === "en"
     ? ["Watt Audio", "listen to Wattpad audio", "Wattpad audio app", "text to speech stories", "text to speech app for Wattpad", "Speechify alternative", "AI voice reader", "listen to stories"]
     : ["Watt Audio", "nghe audio trên Wattpad", "nghe truyện Wattpad", "Wattpad audio", "app text to speech", "app thay thế Speechify", "chuyển truyện thành audio", "app đọc truyện audio", "giọng đọc AI"];
@@ -1866,8 +1912,8 @@ function localizedHomeHtml(lang) {
   const guideSub = lang === "en" ? "Listening guides and TTS tips" : "Hướng dẫn nghe truyện và TTS";
   const appTitle = lang === "en" ? "Listen to stories your way" : "Nghe truyện theo cách của bạn";
   const appText = lang === "en"
-    ? "Create chapter audio from supported story links, listen with the screen off, and keep your reading habit moving anywhere."
-    : "Tạo audio theo chương từ link truyện được hỗ trợ, nghe khi tắt màn hình và tiếp tục thói quen đọc ở bất cứ đâu.";
+    ? "Listen to Wattpad stories as audio, turn stories you can access into personal audio, and keep your reading habit moving anywhere."
+    : "Nghe audio trên Wattpad, chuyển truyện chữ bạn truy cập được thành audio và tiếp tục nghe mọi lúc mọi nơi.";
   const seoText = lang === "en"
     ? "Watt Audio is an iOS app for people who want to listen to Wattpad audio, use story text to speech, compare Speechify alternatives, follow web novels, romance, fantasy, background playback, chapter audio, and offline replay."
     : "Watt Audio là app iOS cho nhu cầu nghe audio trên Wattpad, nghe truyện Wattpad, Wattpad audio, text to speech cho truyện, giọng đọc AI, app thay thế Speechify, web novel, romance, fantasy, phát nền, audio theo chương và nghe lại offline.";
@@ -2023,7 +2069,7 @@ ${analyticsTags}
 
 function rootIndexHtml() {
   const title = "Watt Audio | Turn Stories into Audio";
-  const description = "Watt Audio turns supported story links into chapter audio with AI voice, background playback, offline replay, speed control, and sleep timer.";
+  const description = "Listen to Wattpad stories as audio with Watt Audio. Turn stories you can access into personal audio and listen anytime, anywhere.";
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -2275,7 +2321,7 @@ function llmsTxt() {
   }).join("\n");
   return `# Watt Audio
 
-Watt Audio is an iOS app that turns supported story links into chapter audio using AI voice generation, background playback, speed control, sleep timer, and offline replay for generated audio.
+Watt Audio is an iOS app for readers who want to listen to Wattpad stories as audio, create personal chapter audio from supported story links, and keep up with long stories hands-free.
 
 ## Primary Pages
 - [English homepage](${siteUrl}/en/): Product overview and App Store download link.
