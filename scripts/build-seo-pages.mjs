@@ -3,7 +3,7 @@ import path from "node:path";
 
 const appUrl = "https://apps.apple.com/vn/app/watt-audio-%C4%91%E1%BB%8Dc-truy%E1%BB%87n-audio/id6775724279";
 const siteUrl = "https://wattaudios.com";
-const lastModified = "2026-06-26";
+const lastModified = "2026-06-28";
 const gaMeasurementId = "G-CPTTPW88BP";
 const publisher = {
   "@type": "Organization",
@@ -1383,7 +1383,7 @@ const labels = {
     ctaHeading: "Download Watt Audio",
     ctaText: "Turn supported story links into chapter audio, listen with the screen off, adjust playback speed, and keep your reading habit moving when life is busy.",
     indexTitle: "Watt Audio Guides",
-    indexDescription: "Guides for listening to Wattpad stories, Wattpad audio, text to speech apps, Speechify alternatives, web novels, romance, fantasy, and online fiction with Watt Audio.",
+    indexDescription: "Guides to listen to Wattpad audio, hear Wattpad stories with text to speech, compare Speechify alternatives, and follow web novels, romance, fantasy, and online fiction with Watt Audio.",
     homeTag: "Turn stories into audio and listen anywhere.",
     privacy: "Privacy Policy",
     footer: "AI-assisted educational guide",
@@ -1418,7 +1418,7 @@ const labels = {
     ctaHeading: "Tải Watt Audio",
     ctaText: "Biến link truyện được hỗ trợ thành audio theo chương, nghe khi tắt màn hình, chỉnh tốc độ và giữ thói quen đọc truyện ngay cả khi bận.",
     indexTitle: "Hướng dẫn Watt Audio",
-    indexDescription: "Các hướng dẫn nghe truyện Wattpad, Wattpad audio, app text to speech, app thay thế Speechify, web novel, romance, fantasy và truyện online bằng Watt Audio.",
+    indexDescription: "Các hướng dẫn nghe audio trên Wattpad, nghe truyện Wattpad bằng text to speech, app thay thế Speechify, web novel, romance, fantasy và truyện online bằng Watt Audio.",
     homeTag: "Chuyển truyện chữ thành audio, nghe mọi lúc.",
     privacy: "Chính sách quyền riêng tư",
     footer: "Bài hướng dẫn có hỗ trợ bởi AI",
@@ -1482,7 +1482,7 @@ function absoluteUrl(pathname) {
 }
 
 function articleTags(topic, lang) {
-  const shared = ["Watt Audio", "Wattpad audio", "text to speech", "text to speech app", "TTS reader", "AI voice", "story audio"];
+  const shared = ["Watt Audio", "Wattpad audio", "listen to Wattpad audio", "nghe audio trên Wattpad", "nghe audio Wattpad", "text to speech", "text to speech app", "TTS reader", "AI voice", "story audio"];
   const bySlug = {
     "wattpad-bi-chan-vpn": ["Wattpad bị chặn", "Wattpad VPN", "Wattpad blocked", "Wattpad không vào được", "Wattpad DNS"],
     "wattpad-khong-vao-duoc": ["Wattpad không vào được", "Wattpad bị lỗi", "Wattpad not working", "Wattpad loading error"],
@@ -1779,8 +1779,8 @@ function guidesIndexHtml(lang) {
   const title = `${l.indexTitle} | Watt Audio`;
   const canonical = `${siteUrl}/${lang}/articles/`;
   const keywords = lang === "vi"
-    ? ["Watt Audio", "nghe truyện Wattpad", "Wattpad audio", "app text to speech", "app thay thế Speechify", "chuyển truyện thành audio", "giọng đọc AI", "truyện audio"]
-    : ["Watt Audio", "Wattpad audio", "story audio guides", "text to speech", "text to speech app", "Speechify alternative", "TTS reader", "AI voice"];
+    ? ["Watt Audio", "nghe audio trên Wattpad", "nghe truyện Wattpad", "Wattpad audio", "app text to speech", "app thay thế Speechify", "chuyển truyện thành audio", "giọng đọc AI", "truyện audio"]
+    : ["Watt Audio", "listen to Wattpad audio", "Wattpad audio", "story audio guides", "text to speech", "text to speech app", "Speechify alternative", "TTS reader", "AI voice"];
   const list = topics.map((topic) => {
     const page = topic[lang];
     return `<a href="${topic.slug}.html">${escapeHtml(page.title)}<span>${escapeHtml(page.description)}</span></a>`;
@@ -1859,8 +1859,8 @@ function localizedHomeHtml(lang) {
     ? "Watt Audio helps you turn supported story links into chapter audio with AI voice, background playback, offline replay, speed control, and sleep timer."
     : "Watt Audio giúp chuyển link truyện được hỗ trợ thành audio theo chương bằng giọng đọc AI, nghe nền, nghe lại offline, chỉnh tốc độ và hẹn giờ ngủ.";
   const keywords = lang === "en"
-    ? ["Watt Audio", "Wattpad audio app", "text to speech stories", "text to speech app for Wattpad", "Speechify alternative", "AI voice reader", "listen to stories"]
-    : ["Watt Audio", "nghe truyện Wattpad", "Wattpad audio", "app text to speech", "app thay thế Speechify", "chuyển truyện thành audio", "app đọc truyện audio", "giọng đọc AI"];
+    ? ["Watt Audio", "listen to Wattpad audio", "Wattpad audio app", "text to speech stories", "text to speech app for Wattpad", "Speechify alternative", "AI voice reader", "listen to stories"]
+    : ["Watt Audio", "nghe audio trên Wattpad", "nghe truyện Wattpad", "Wattpad audio", "app text to speech", "app thay thế Speechify", "chuyển truyện thành audio", "app đọc truyện audio", "giọng đọc AI"];
   const canonical = `${siteUrl}/${lang}/`;
   const guideTitle = lang === "en" ? "Watt Audio Guides" : "Hướng dẫn Watt Audio";
   const guideSub = lang === "en" ? "Listening guides and TTS tips" : "Hướng dẫn nghe truyện và TTS";
@@ -1869,8 +1869,8 @@ function localizedHomeHtml(lang) {
     ? "Create chapter audio from supported story links, listen with the screen off, and keep your reading habit moving anywhere."
     : "Tạo audio theo chương từ link truyện được hỗ trợ, nghe khi tắt màn hình và tiếp tục thói quen đọc ở bất cứ đâu.";
   const seoText = lang === "en"
-    ? "Watt Audio is an iOS app for Wattpad audio, story text to speech, AI voice listening, Speechify alternative searches, web novels, romance, fantasy, background playback, chapter audio, and offline replay."
-    : "Watt Audio là app iOS cho nhu cầu nghe truyện Wattpad, Wattpad audio, text to speech cho truyện, giọng đọc AI, app thay thế Speechify, web novel, romance, fantasy, phát nền, audio theo chương và nghe lại offline.";
+    ? "Watt Audio is an iOS app for people who want to listen to Wattpad audio, use story text to speech, compare Speechify alternatives, follow web novels, romance, fantasy, background playback, chapter audio, and offline replay."
+    : "Watt Audio là app iOS cho nhu cầu nghe audio trên Wattpad, nghe truyện Wattpad, Wattpad audio, text to speech cho truyện, giọng đọc AI, app thay thế Speechify, web novel, romance, fantasy, phát nền, audio theo chương và nghe lại offline.";
   return `<!DOCTYPE html>
 <html lang="${l.htmlLang}">
 <head>
@@ -2039,7 +2039,7 @@ ${baseMeta({
   imageHeight: homeImages.en.height,
   lang: "en",
   type: "website",
-  keywords: ["Watt Audio", "Wattpad audio", "Wattpad audio app", "story audio", "AI voice", "text to speech", "text to speech app", "TTS reader", "Speechify alternative"]
+  keywords: ["Watt Audio", "listen to Wattpad audio", "nghe audio trên Wattpad", "Wattpad audio", "Wattpad audio app", "story audio", "AI voice", "text to speech", "text to speech app", "TTS reader", "Speechify alternative"]
 })}
 <link rel="alternate" hreflang="en" href="${siteUrl}/en/" />
 <link rel="alternate" hreflang="vi-VN" href="${siteUrl}/vi/" />
@@ -2186,7 +2186,7 @@ ${baseMeta({
   imageHeight: homeImages.en.height,
   lang: "en",
   type: "website",
-  keywords: ["Watt Audio", "story audio app", "AI voice reader", "Wattpad audio app", "text to speech stories"]
+  keywords: ["Watt Audio", "listen to Wattpad audio", "nghe audio trên Wattpad", "story audio app", "AI voice reader", "Wattpad audio app", "text to speech stories"]
 })}
 ${jsonScript(schema)}
 ${analyticsTags}
