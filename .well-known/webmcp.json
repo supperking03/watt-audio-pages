@@ -1,0 +1,24 @@
+{
+  "name": "Watt Audio",
+  "url": "https://wattaudios.com",
+  "description": "Public website manifest for agents and web MCP clients.",
+  "mcp_endpoint": null,
+  "resources": [
+    {
+      "name": "LLM guide",
+      "url": "https://wattaudios.com/llms.txt",
+      "media_type": "text/plain"
+    },
+    {
+      "name": "Sitemap",
+      "url": "https://wattaudios.com/sitemap.xml",
+      "media_type": "application/xml"
+    },
+    {
+      "name": "Agent discovery",
+      "url": "https://wattaudios.com/.well-known/ai.json",
+      "media_type": "application/json"
+    }
+  ],
+  "updated": "2026-06-30"
+}

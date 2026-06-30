@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "title": "Watt Audio API Catalog",
+  "description": "Watt Audio currently publishes public website discovery endpoints only. No authenticated public product API is available.",
+  "apis": [
+    {
+      "name": "Watt Audio Public Website Metadata",
+      "type": "openapi",
+      "url": "https://wattaudios.com/.well-known/openapi.json",
+      "authentication": "none",
+      "status": "available"
+    }
+  ],
+  "updated": "2026-06-30"
+}

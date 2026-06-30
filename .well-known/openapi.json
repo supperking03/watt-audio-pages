@@ -1,0 +1,56 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Watt Audio Public Website",
+    "version": "1.0.0",
+    "description": "Static public discovery metadata for Watt Audio. The website does not expose a public application API."
+  },
+  "servers": [
+    {
+      "url": "https://wattaudios.com"
+    }
+  ],
+  "paths": {
+    "/sitemap.xml": {
+      "get": {
+        "summary": "XML sitemap",
+        "responses": {
+          "200": {
+            "description": "Sitemap XML",
+            "content": {
+              "application/xml": {}
+            }
+          }
+        }
+      }
+    },
+    "/llms.txt": {
+      "get": {
+        "summary": "LLM-readable site guide",
+        "responses": {
+          "200": {
+            "description": "Plain text LLM guide",
+            "content": {
+              "text/plain": {}
+            }
+          }
+        }
+      }
+    },
+    "/content-signals.json": {
+      "get": {
+        "summary": "Content usage signals",
+        "responses": {
+          "200": {
+            "description": "Content signals JSON",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    }
+  },
+  "x-no-public-api": true,
+  "x-app-store-url": "https://apps.apple.com/vn/app/watt-audio-%C4%91%E1%BB%8Dc-truy%E1%BB%87n-audio/id6775724279"
+}

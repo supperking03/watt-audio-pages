@@ -1,0 +1,12 @@
+{
+  "name": "Watt Audio Agent Registration",
+  "registration": "not_required",
+  "authentication": "none_for_public_content",
+  "contact": "https://wattaudios.com/support.html",
+  "public_resources": [
+    "https://wattaudios.com/llms.txt",
+    "https://wattaudios.com/sitemap.xml",
+    "https://wattaudios.com/content-signals.json"
+  ],
+  "updated": "2026-06-30"
+}

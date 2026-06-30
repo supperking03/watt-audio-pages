@@ -1,0 +1,16 @@
+{
+  "name": "Watt Audio Public Website",
+  "description": "Static site discovery card. No MCP endpoint is currently offered.",
+  "version": "1.0.0",
+  "url": "https://wattaudios.com",
+  "mcp": {
+    "available": false,
+    "endpoint": null
+  },
+  "resources": [
+    "https://wattaudios.com/llms.txt",
+    "https://wattaudios.com/sitemap.xml",
+    "https://wattaudios.com/.well-known/agent-skills.json"
+  ],
+  "updated": "2026-06-30"
+}

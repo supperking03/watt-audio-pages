@@ -1,0 +1,47 @@
+{
+  "name": "Watt Audio Agent Skills",
+  "url": "https://wattaudios.com/.well-known/agent-skills.json",
+  "version": "1.0.0",
+  "skills": [
+    {
+      "id": "find-watt-audio-guides",
+      "name": "Find Watt Audio guides",
+      "description": "Locate public Watt Audio articles about listening to Wattpad stories, text to speech, audiobooks, VPN/access issues, and story audio.",
+      "inputs": [
+        "query",
+        "language"
+      ],
+      "outputs": [
+        "url",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "explain-watt-audio",
+      "name": "Explain Watt Audio",
+      "description": "Summarize what Watt Audio does, who it helps, and where to download it.",
+      "inputs": [
+        "question",
+        "language"
+      ],
+      "outputs": [
+        "answer",
+        "source_url"
+      ]
+    },
+    {
+      "id": "route-to-download",
+      "name": "Route to App Store",
+      "description": "Send users to the official Watt Audio App Store listing.",
+      "inputs": [
+        "device",
+        "locale"
+      ],
+      "outputs": [
+        "app_store_url"
+      ]
+    }
+  ],
+  "updated": "2026-06-30"
+}

@@ -1,0 +1,10 @@
+{
+  "resource": "https://wattaudios.com",
+  "authorization_servers": [
+    "https://wattaudios.com/.well-known/oauth-authorization-server"
+  ],
+  "scopes_supported": [],
+  "bearer_methods_supported": [],
+  "resource_documentation": "https://wattaudios.com/support.html",
+  "x-note": "No public protected resource API is currently exposed."
+}

@@ -1,0 +1,16 @@
+/*
+  Link: </llms.txt>; rel="service-desc"; type="text/plain"
+  Link: </.well-known/ai.json>; rel="service-desc"; type="application/json"
+  Link: </.well-known/openapi.json>; rel="service-desc"; type="application/openapi+json"
+  Link: </.well-known/agent-skills.json>; rel="service-desc"; type="application/json"
+  Link: </content-signals.json>; rel="describedby"; type="application/json"
+  Vary: Accept
+
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+
+/*.json
+  Content-Type: application/json; charset=utf-8
+
+/*.md
+  Content-Type: text/markdown; charset=utf-8

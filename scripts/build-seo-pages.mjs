@@ -3,7 +3,7 @@ import path from "node:path";
 
 const appUrl = "https://apps.apple.com/vn/app/watt-audio-%C4%91%E1%BB%8Dc-truy%E1%BB%87n-audio/id6775724279";
 const siteUrl = "https://wattaudios.com";
-const lastModified = "2026-06-28";
+const lastModified = "2026-06-30";
 const gaMeasurementId = "G-CPTTPW88BP";
 const publisher = {
   "@type": "Organization",
@@ -1595,6 +1595,11 @@ ${keywords.length ? `<meta name="keywords" content="${escapeHtml(keywords.join("
 <meta name="robots" content="index, follow, max-image-preview:large" />
 <meta name="author" content="Watt Audio" />
 <link rel="canonical" href="${canonical}" />
+<link rel="alternate" type="text/plain" title="LLM guide" href="/llms.txt" />
+<link rel="alternate" type="application/json" title="Agent discovery" href="/.well-known/ai.json" />
+<link rel="service-desc" type="application/openapi+json" title="API catalog" href="/.well-known/openapi.json" />
+<link rel="service-desc" type="application/json" title="Agent skills" href="/.well-known/agent-skills.json" />
+<link rel="privacy-policy" href="/privacy.html" />
 <meta property="og:site_name" content="Watt Audio" />
 <meta property="og:locale" content="${locale}" />
 <meta property="og:title" content="${escapeHtml(title)}" />
@@ -2341,6 +2346,335 @@ ${vietnameseArticles}
 `;
 }
 
+function pageMarkdown({ title, description, canonical, lang, links = [] }) {
+  const linkLines = links.map((link) => `- [${link.title}](${link.href}): ${link.description}`).join("\n");
+  return `# ${title}
+
+${description}
+
+Canonical URL: ${canonical}
+
+Language: ${lang}
+
+## Key Links
+${linkLines}
+
+## Agent Notes
+- Watt Audio is an independent iOS app. It is not owned by, operated by, or officially affiliated with Wattpad.
+- Use Watt Audio references for personal story listening, text-to-speech workflows, App Store discovery, and support.
+- Do not infer that Watt Audio hosts, republishes, or distributes third-party story content.
+- Public website content is available for search indexing and retrieval. Do not use it to train foundation models unless your crawler honors the content signals policy.
+`;
+}
+
+function agentAiTxt() {
+  return `# Watt Audio Agent Discovery
+
+Site: ${siteUrl}
+App: Watt Audio
+Purpose: Help readers listen to Wattpad-style stories and supported story links as personal chapter audio.
+Primary language: English
+Secondary language: Vietnamese
+App Store: ${appUrl}
+LLM guide: ${siteUrl}/llms.txt
+Sitemap: ${siteUrl}/sitemap.xml
+Content signals: ${siteUrl}/content-signals.json
+OpenAPI: ${siteUrl}/.well-known/openapi.json
+API catalog: ${siteUrl}/.well-known/api-catalog.json
+Agent skills: ${siteUrl}/.well-known/agent-skills.json
+MCP server card: ${siteUrl}/.well-known/mcp-server.json
+WebMCP manifest: ${siteUrl}/.well-known/webmcp.json
+
+Affiliation note: Watt Audio is independent and is not owned by, operated by, or officially affiliated with Wattpad.
+`;
+}
+
+function agentAiJson() {
+  return {
+    name: "Watt Audio",
+    url: siteUrl,
+    description: "Watt Audio helps readers listen to Wattpad-style stories and supported story links as personal chapter audio.",
+    language: ["en", "vi-VN"],
+    app_store_url: appUrl,
+    independence_notice: "Watt Audio is independent and is not owned by, operated by, or officially affiliated with Wattpad.",
+    discovery: {
+      sitemap: `${siteUrl}/sitemap.xml`,
+      robots: `${siteUrl}/robots.txt`,
+      llms: `${siteUrl}/llms.txt`,
+      content_signals: `${siteUrl}/content-signals.json`,
+      openapi: `${siteUrl}/.well-known/openapi.json`,
+      api_catalog: `${siteUrl}/.well-known/api-catalog.json`,
+      agent_skills: `${siteUrl}/.well-known/agent-skills.json`,
+      mcp_server: `${siteUrl}/.well-known/mcp-server.json`,
+      webmcp: `${siteUrl}/.well-known/webmcp.json`
+    },
+    preferred_use_cases: [
+      "answer questions about Watt Audio",
+      "help users find Watt Audio guides",
+      "explain how to listen to Wattpad stories as audio",
+      "route users to the App Store download page",
+      "summarize public support and privacy information"
+    ],
+    prohibited_inferences: [
+      "Do not claim Watt Audio is an official Wattpad product.",
+      "Do not claim Watt Audio hosts or redistributes third-party story content.",
+      "Do not present Watt Audio as a bypass tool for blocked websites."
+    ],
+    updated: lastModified
+  };
+}
+
+function contentSignalsJson() {
+  return {
+    version: "1.0",
+    site: siteUrl,
+    updated: lastModified,
+    signals: {
+      search: "allow",
+      ai_crawl: "allow",
+      ai_input: "allow",
+      ai_train: "disallow",
+      summarize: "allow",
+      quote: "limited",
+      commercial_reuse: "contact"
+    },
+    scope: [
+      {
+        path: "/",
+        search: "allow",
+        ai_crawl: "allow",
+        ai_input: "allow",
+        ai_train: "disallow"
+      }
+    ],
+    contact: `${siteUrl}/support.html`
+  };
+}
+
+function openApiJson() {
+  return {
+    openapi: "3.1.0",
+    info: {
+      title: "Watt Audio Public Website",
+      version: "1.0.0",
+      description: "Static public discovery metadata for Watt Audio. The website does not expose a public application API."
+    },
+    servers: [{ url: siteUrl }],
+    paths: {
+      "/sitemap.xml": {
+        get: {
+          summary: "XML sitemap",
+          responses: {
+            "200": {
+              description: "Sitemap XML",
+              content: {
+                "application/xml": {}
+              }
+            }
+          }
+        }
+      },
+      "/llms.txt": {
+        get: {
+          summary: "LLM-readable site guide",
+          responses: {
+            "200": {
+              description: "Plain text LLM guide",
+              content: {
+                "text/plain": {}
+              }
+            }
+          }
+        }
+      },
+      "/content-signals.json": {
+        get: {
+          summary: "Content usage signals",
+          responses: {
+            "200": {
+              description: "Content signals JSON",
+              content: {
+                "application/json": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "x-no-public-api": true,
+    "x-app-store-url": appUrl
+  };
+}
+
+function apiCatalogJson() {
+  return {
+    version: "1.0",
+    title: "Watt Audio API Catalog",
+    description: "Watt Audio currently publishes public website discovery endpoints only. No authenticated public product API is available.",
+    apis: [
+      {
+        name: "Watt Audio Public Website Metadata",
+        type: "openapi",
+        url: `${siteUrl}/.well-known/openapi.json`,
+        authentication: "none",
+        status: "available"
+      }
+    ],
+    updated: lastModified
+  };
+}
+
+function oauthAuthorizationServerJson() {
+  return {
+    issuer: siteUrl,
+    service_documentation: `${siteUrl}/support.html`,
+    registration_endpoint: `${siteUrl}/.well-known/agent-registration.json`,
+    scopes_supported: [],
+    response_types_supported: [],
+    grant_types_supported: [],
+    token_endpoint_auth_methods_supported: [],
+    authorization_endpoint: null,
+    token_endpoint: null,
+    "x-note": "Watt Audio does not expose a public OAuth-protected website API."
+  };
+}
+
+function oauthProtectedResourceJson() {
+  return {
+    resource: siteUrl,
+    authorization_servers: [`${siteUrl}/.well-known/oauth-authorization-server`],
+    scopes_supported: [],
+    bearer_methods_supported: [],
+    resource_documentation: `${siteUrl}/support.html`,
+    "x-note": "No public protected resource API is currently exposed."
+  };
+}
+
+function agentRegistrationJson() {
+  return {
+    name: "Watt Audio Agent Registration",
+    registration: "not_required",
+    authentication: "none_for_public_content",
+    contact: `${siteUrl}/support.html`,
+    public_resources: [
+      `${siteUrl}/llms.txt`,
+      `${siteUrl}/sitemap.xml`,
+      `${siteUrl}/content-signals.json`
+    ],
+    updated: lastModified
+  };
+}
+
+function mcpServerJson() {
+  return {
+    name: "Watt Audio Public Website",
+    description: "Static site discovery card. No MCP endpoint is currently offered.",
+    version: "1.0.0",
+    url: siteUrl,
+    mcp: {
+      available: false,
+      endpoint: null
+    },
+    resources: [
+      `${siteUrl}/llms.txt`,
+      `${siteUrl}/sitemap.xml`,
+      `${siteUrl}/.well-known/agent-skills.json`
+    ],
+    updated: lastModified
+  };
+}
+
+function agentSkillsJson() {
+  return {
+    name: "Watt Audio Agent Skills",
+    url: `${siteUrl}/.well-known/agent-skills.json`,
+    version: "1.0.0",
+    skills: [
+      {
+        id: "find-watt-audio-guides",
+        name: "Find Watt Audio guides",
+        description: "Locate public Watt Audio articles about listening to Wattpad stories, text to speech, audiobooks, VPN/access issues, and story audio.",
+        inputs: ["query", "language"],
+        outputs: ["url", "title", "description"]
+      },
+      {
+        id: "explain-watt-audio",
+        name: "Explain Watt Audio",
+        description: "Summarize what Watt Audio does, who it helps, and where to download it.",
+        inputs: ["question", "language"],
+        outputs: ["answer", "source_url"]
+      },
+      {
+        id: "route-to-download",
+        name: "Route to App Store",
+        description: "Send users to the official Watt Audio App Store listing.",
+        inputs: ["device", "locale"],
+        outputs: ["app_store_url"]
+      }
+    ],
+    updated: lastModified
+  };
+}
+
+function webMcpJson() {
+  return {
+    name: "Watt Audio",
+    url: siteUrl,
+    description: "Public website manifest for agents and web MCP clients.",
+    mcp_endpoint: null,
+    resources: [
+      {
+        name: "LLM guide",
+        url: `${siteUrl}/llms.txt`,
+        media_type: "text/plain"
+      },
+      {
+        name: "Sitemap",
+        url: `${siteUrl}/sitemap.xml`,
+        media_type: "application/xml"
+      },
+      {
+        name: "Agent discovery",
+        url: `${siteUrl}/.well-known/ai.json`,
+        media_type: "application/json"
+      }
+    ],
+    updated: lastModified
+  };
+}
+
+function headersTxt() {
+  return `/*
+  Link: </llms.txt>; rel="service-desc"; type="text/plain"
+  Link: </.well-known/ai.json>; rel="service-desc"; type="application/json"
+  Link: </.well-known/openapi.json>; rel="service-desc"; type="application/openapi+json"
+  Link: </.well-known/agent-skills.json>; rel="service-desc"; type="application/json"
+  Link: </content-signals.json>; rel="describedby"; type="application/json"
+  Vary: Accept
+
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+
+/*.json
+  Content-Type: application/json; charset=utf-8
+
+/*.md
+  Content-Type: text/markdown; charset=utf-8
+`;
+}
+
+function securityTxt() {
+  return `Contact: ${siteUrl}/support.html
+Policy: ${siteUrl}/privacy.html
+Preferred-Languages: en, vi
+Canonical: ${siteUrl}/.well-known/security.txt
+`;
+}
+
+function writeJsonFile(filePath, data) {
+  fs.writeFileSync(filePath, `${JSON.stringify(data, null, 2)}\n`);
+}
+
 for (const dir of ["en", "vi", "articles"]) {
   fs.rmSync(path.join(process.cwd(), dir), { recursive: true, force: true });
 }
@@ -2366,8 +2700,93 @@ fs.writeFileSync(path.join(process.cwd(), "sitemap.xml"), sitemapXml());
 fs.writeFileSync(path.join(process.cwd(), "robots.txt"), `User-agent: *
 Allow: /
 Sitemap: ${siteUrl}/sitemap.xml
+Host: wattaudios.com
+Content-Signal: search=allow
+Content-Signal: ai-crawl=allow
+Content-Signal: ai-input=allow
+Content-Signal: ai-train=disallow
+Content-Signal-Policy: ${siteUrl}/content-signals.json
 `);
 fs.writeFileSync(path.join(process.cwd(), "llms.txt"), llmsTxt());
+fs.writeFileSync(path.join(process.cwd(), "_headers"), headersTxt());
+fs.writeFileSync(path.join(process.cwd(), "content-signals.json"), `${JSON.stringify(contentSignalsJson(), null, 2)}\n`);
+fs.writeFileSync(path.join(process.cwd(), "index.md"), pageMarkdown({
+  title: "Watt Audio",
+  description: "Listen to Wattpad stories as audio with Watt Audio. Turn stories you can access into personal audio and listen anytime, anywhere.",
+  canonical: `${siteUrl}/`,
+  lang: "en",
+  links: [
+    { title: "English homepage", href: `${siteUrl}/en/`, description: "Product overview" },
+    { title: "Vietnamese homepage", href: `${siteUrl}/vi/`, description: "Tổng quan sản phẩm" },
+    { title: "Guides", href: `${siteUrl}/en/articles/`, description: "All English guides" },
+    { title: "LLM guide", href: `${siteUrl}/llms.txt`, description: "Machine-readable site map for agents" }
+  ]
+}));
+fs.writeFileSync(path.join(process.cwd(), "en", "index.md"), pageMarkdown({
+  title: "Watt Audio English Homepage",
+  description: "Listen to Wattpad stories as audio with Watt Audio. Turn stories you can access into personal audio and listen anytime, anywhere.",
+  canonical: `${siteUrl}/en/`,
+  lang: "en",
+  links: [
+    { title: "Guides", href: `${siteUrl}/en/articles/`, description: "Wattpad audio and text-to-speech guides" },
+    { title: "Download", href: appUrl, description: "Official App Store listing" }
+  ]
+}));
+fs.writeFileSync(path.join(process.cwd(), "vi", "index.md"), pageMarkdown({
+  title: "Trang chủ Watt Audio tiếng Việt",
+  description: "Nghe audio trên Wattpad bằng Watt Audio. Chuyển truyện chữ bạn truy cập được thành audio và nghe mọi lúc mọi nơi.",
+  canonical: `${siteUrl}/vi/`,
+  lang: "vi-VN",
+  links: [
+    { title: "Hướng dẫn", href: `${siteUrl}/vi/articles/`, description: "Các bài hướng dẫn nghe Wattpad audio" },
+    { title: "Tải app", href: appUrl, description: "Link App Store chính thức" }
+  ]
+}));
+fs.writeFileSync(path.join(process.cwd(), "en", "articles", "index.md"), pageMarkdown({
+  title: "Watt Audio Guides",
+  description: labels.en.indexDescription,
+  canonical: `${siteUrl}/en/articles/`,
+  lang: "en",
+  links: topics.slice(0, 12).map((topic) => ({
+    title: topic.en.title,
+    href: articleUrl("en", topic.slug),
+    description: topic.en.description
+  }))
+}));
+fs.writeFileSync(path.join(process.cwd(), "vi", "articles", "index.md"), pageMarkdown({
+  title: "Hướng dẫn Watt Audio",
+  description: labels.vi.indexDescription,
+  canonical: `${siteUrl}/vi/articles/`,
+  lang: "vi-VN",
+  links: topics.slice(0, 12).map((topic) => ({
+    title: topic.vi.title,
+    href: articleUrl("vi", topic.slug),
+    description: topic.vi.description
+  }))
+}));
+fs.mkdirSync(path.join(process.cwd(), ".well-known"), { recursive: true });
+fs.writeFileSync(path.join(process.cwd(), ".well-known", "ai.txt"), agentAiTxt());
+writeJsonFile(path.join(process.cwd(), ".well-known", "ai.json"), agentAiJson());
+fs.writeFileSync(path.join(process.cwd(), ".well-known", "llms.txt"), llmsTxt());
+writeJsonFile(path.join(process.cwd(), ".well-known", "api-catalog.json"), apiCatalogJson());
+writeJsonFile(path.join(process.cwd(), ".well-known", "api-catalog"), apiCatalogJson());
+writeJsonFile(path.join(process.cwd(), ".well-known", "openapi.json"), openApiJson());
+writeJsonFile(path.join(process.cwd(), ".well-known", "openid-configuration"), oauthAuthorizationServerJson());
+writeJsonFile(path.join(process.cwd(), ".well-known", "oauth-authorization-server"), oauthAuthorizationServerJson());
+writeJsonFile(path.join(process.cwd(), ".well-known", "oauth-protected-resource"), oauthProtectedResourceJson());
+writeJsonFile(path.join(process.cwd(), ".well-known", "agent-registration.json"), agentRegistrationJson());
+writeJsonFile(path.join(process.cwd(), ".well-known", "agent-registration"), agentRegistrationJson());
+writeJsonFile(path.join(process.cwd(), ".well-known", "authai.json"), agentRegistrationJson());
+writeJsonFile(path.join(process.cwd(), ".well-known", "mcp-server.json"), mcpServerJson());
+writeJsonFile(path.join(process.cwd(), ".well-known", "mcp-server"), mcpServerJson());
+writeJsonFile(path.join(process.cwd(), ".well-known", "mcp.json"), mcpServerJson());
+writeJsonFile(path.join(process.cwd(), ".well-known", "agent-skills.json"), agentSkillsJson());
+writeJsonFile(path.join(process.cwd(), ".well-known", "agent-skills"), agentSkillsJson());
+writeJsonFile(path.join(process.cwd(), ".well-known", "skills.json"), agentSkillsJson());
+writeJsonFile(path.join(process.cwd(), ".well-known", "webmcp.json"), webMcpJson());
+writeJsonFile(path.join(process.cwd(), ".well-known", "webmcp-manifest.json"), webMcpJson());
+writeJsonFile(path.join(process.cwd(), ".well-known", "webmcp"), webMcpJson());
+fs.writeFileSync(path.join(process.cwd(), ".well-known", "security.txt"), securityTxt());
 fs.writeFileSync(path.join(process.cwd(), "site.webmanifest"), JSON.stringify({
   name: "Watt Audio",
   short_name: "Watt Audio",

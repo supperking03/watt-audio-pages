@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "site": "https://wattaudios.com",
+  "updated": "2026-06-30",
+  "signals": {
+    "search": "allow",
+    "ai_crawl": "allow",
+    "ai_input": "allow",
+    "ai_train": "disallow",
+    "summarize": "allow",
+    "quote": "limited",
+    "commercial_reuse": "contact"
+  },
+  "scope": [
+    {
+      "path": "/",
+      "search": "allow",
+      "ai_crawl": "allow",
+      "ai_input": "allow",
+      "ai_train": "disallow"
+    }
+  ],
+  "contact": "https://wattaudios.com/support.html"
+}

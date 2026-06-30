@@ -1,3 +1,9 @@
 User-agent: *
 Allow: /
 Sitemap: https://wattaudios.com/sitemap.xml
+Host: wattaudios.com
+Content-Signal: search=allow
+Content-Signal: ai-crawl=allow
+Content-Signal: ai-input=allow
+Content-Signal: ai-train=disallow
+Content-Signal-Policy: https://wattaudios.com/content-signals.json
