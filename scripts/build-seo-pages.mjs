@@ -1529,15 +1529,18 @@ function absoluteUrl(pathname) {
 function downloadButtonLinks(lang) {
   const iosLabel = lang === "vi" ? "Tải trên App Store" : "App Store";
   const androidLabel = lang === "vi" ? "Tải trên Google Play" : "Google Play";
-  return `<div class="store-links">
-          <a class="btn" href="${iosUrl}">${iosLabel}</a>
-          <a class="btn btn-secondary" href="${androidUrl}">${androidLabel}</a>
+  const downloadLabel = lang === "vi" ? "Tải app" : "Download app";
+  return `<div class="store-menu">
+          <button class="btn store-trigger" type="button" aria-haspopup="true">${downloadLabel}</button>
+          <div class="store-options" aria-label="${downloadLabel}">
+            <a href="${androidUrl}">${androidLabel}</a>
+            <a href="${iosUrl}">${iosLabel}</a>
+          </div>
         </div>`;
 }
 
 function downloadNavLinks(lang) {
-  return `<a href="${iosUrl}">iOS</a>
-      <a href="${androidUrl}">Android</a>`;
+  return downloadButtonLinks(lang);
 }
 
 function articleTags(topic, lang) {
