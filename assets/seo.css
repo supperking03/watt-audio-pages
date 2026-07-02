@@ -44,6 +44,7 @@ a { color: var(--accent); }
 
 .nav {
   display: flex;
+  align-items: center;
   gap: 14px;
   flex-wrap: wrap;
   margin: 8px 0 32px;
@@ -202,8 +203,28 @@ li { margin: 8px 0; }
 .nav .store-menu,
 .home-actions .store-menu { margin-top: 0; }
 
+.nav .store-trigger,
+.home-actions .store-trigger {
+  min-height: auto;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.nav .store-trigger:hover,
+.home-actions .store-trigger:hover {
+  color: var(--accent-2);
+}
+
 .store-trigger {
+  appearance: none;
+  -webkit-appearance: none;
   border: 0;
+  outline: 0;
   cursor: pointer;
   font: inherit;
 }
@@ -220,7 +241,7 @@ li { margin: 8px 0; }
 
 .store-options {
   position: absolute;
-  top: calc(100% + 8px);
+  top: 100%;
   left: 0;
   z-index: 20;
   min-width: 210px;

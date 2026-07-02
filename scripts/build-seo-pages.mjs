@@ -7,6 +7,7 @@ const downloadUrls = [iosUrl, androidUrl];
 const siteUrl = "https://wattaudios.com";
 const lastModified = "2026-06-30";
 const gaMeasurementId = "G-CPTTPW88BP";
+const cssVersion = "20260702-compact-download-nav";
 const publisher = {
   "@type": "Organization",
   name: "Watt Audio",
@@ -1526,6 +1527,10 @@ function absoluteUrl(pathname) {
   return `${siteUrl}${pathname}`;
 }
 
+function stylesheetHref(pathname) {
+  return `${pathname}?v=${cssVersion}`;
+}
+
 function downloadButtonLinks(lang) {
   const iosLabel = lang === "vi" ? "Tải trên App Store" : "App Store";
   const androidLabel = lang === "vi" ? "Tải trên Google Play" : "Google Play";
@@ -1757,7 +1762,7 @@ ${jsonScript(howToSchema)}
 ${jsonScript(faqSchema)}
 ${jsonScript(breadcrumbSchema)}
 ${analyticsTags}
-<link rel="stylesheet" href="../../assets/seo.css" />
+<link rel="stylesheet" href="${stylesheetHref("../../assets/seo.css")}" />
 </head>
 <body>
   <div class="wrap">
@@ -1885,7 +1890,7 @@ ${jsonScript({
   publisher
 })}
 ${analyticsTags}
-<link rel="stylesheet" href="../../assets/seo.css" />
+<link rel="stylesheet" href="${stylesheetHref("../../assets/seo.css")}" />
 </head>
 <body>
   <div class="wrap">
@@ -1983,7 +1988,7 @@ ${jsonScript({
   }
 })}
 ${analyticsTags}
-<link rel="stylesheet" href="../assets/seo.css" />
+<link rel="stylesheet" href="${stylesheetHref("../assets/seo.css")}" />
 <style>
   body { background:#fff7f0; }
   .home-wrap { max-width:1180px; }
@@ -2124,7 +2129,7 @@ ${jsonScript({
   publisher
 })}
 ${analyticsTags}
-<link rel="stylesheet" href="assets/seo.css" />
+<link rel="stylesheet" href="${stylesheetHref("assets/seo.css")}" />
 <script>
   (function () {
     var params = new URLSearchParams(window.location.search);
@@ -2260,7 +2265,7 @@ ${baseMeta({
 })}
 ${jsonScript(schema)}
 ${analyticsTags}
-<link rel="stylesheet" href="assets/seo.css" />
+<link rel="stylesheet" href="${stylesheetHref("assets/seo.css")}" />
 </head>
 <body>
   <div class="wrap">
