@@ -1,7 +1,9 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const appUrl = "https://apps.apple.com/vn/app/watt-audio-%C4%91%E1%BB%8Dc-truy%E1%BB%87n-audio/id6775724279";
+const iosUrl = "https://apps.apple.com/vn/app/watt-audio-%C4%91%E1%BB%8Dc-truy%E1%BB%87n-audio/id6775724279";
+const androidUrl = "https://play.google.com/store/apps/details?id=com.supperking03.wattpadaudio";
+const downloadUrls = [iosUrl, androidUrl];
 const siteUrl = "https://wattaudios.com";
 const lastModified = "2026-06-30";
 const gaMeasurementId = "G-CPTTPW88BP";
@@ -10,7 +12,7 @@ const publisher = {
   name: "Watt Audio",
   url: siteUrl,
   logo: `${siteUrl}/assets/icons/icon-512.png`,
-  sameAs: [appUrl]
+  sameAs: downloadUrls
 };
 const blogImage = {
   src: "/assets/blog/how-to-listen-to-wattpad-stories-watt-audio.webp",
@@ -67,7 +69,7 @@ const analyticsTags = `<script async src="https://www.googletagmanager.com/gtag/
   gtag('js', new Date());
   gtag('config', '${gaMeasurementId}');
   document.addEventListener('click', function (event) {
-    var link = event.target.closest && event.target.closest('a[href*="apps.apple.com"]');
+    var link = event.target.closest && event.target.closest('a[href*="apps.apple.com"], a[href*="play.google.com/store/apps"]');
     if (!link || typeof gtag !== 'function') return;
     gtag('event', 'download_app_click', {
       event_category: 'engagement',
@@ -461,7 +463,7 @@ const topics = [
     slug: "how-to-listen-to-wattpad-stories",
     en: {
       title: "How to Listen to Wattpad Stories as Audio",
-      description: "Learn how to listen to Wattpad stories with text to speech, chapter audio, background playback, and Watt Audio on iPhone.",
+      description: "Learn how to listen to Wattpad stories with text to speech, chapter audio, background playback, and Watt Audio on mobile.",
       audience: "readers who already love Wattpad but do not always have the time or eye comfort to read every chapter on screen",
       focus: "listening to Wattpad stories",
       scenario: "commuting, cleaning, walking, resting your eyes at night, or catching up on long chapters while your phone stays in your pocket",
@@ -600,7 +602,7 @@ const topics = [
     enFocus: "finding Watt Audio after searching Watts Audio",
     enScenario: "correcting a common brand typo and finding the app for Wattpad audio, text to speech stories, and AI voice listening",
     viTitle: "Watts Audio hay Watt Audio?",
-    viDescription: "Nếu bạn search Watts Audio, tên đúng là Watt Audio: app iOS nghe truyện bằng audio và giọng AI.",
+    viDescription: "Nếu bạn search Watts Audio, tên đúng là Watt Audio: app mobile nghe truyện bằng audio và giọng AI.",
     viAudience: "người dùng gõ watts audio, watt audio, wattaudio hoặc Watt Audio khi tìm app nghe truyện",
     viFocus: "tìm Watt Audio sau khi search Watts Audio",
     viScenario: "sửa lỗi gõ tên thương hiệu và tìm app cho Wattpad audio, text to speech cho truyện và giọng đọc AI"
@@ -1524,6 +1526,20 @@ function absoluteUrl(pathname) {
   return `${siteUrl}${pathname}`;
 }
 
+function downloadButtonLinks(lang) {
+  const iosLabel = lang === "vi" ? "Tải trên App Store" : "App Store";
+  const androidLabel = lang === "vi" ? "Tải trên Google Play" : "Google Play";
+  return `<div class="store-links">
+          <a class="btn" href="${iosUrl}">${iosLabel}</a>
+          <a class="btn btn-secondary" href="${androidUrl}">${androidLabel}</a>
+        </div>`;
+}
+
+function downloadNavLinks(lang) {
+  return `<a href="${iosUrl}">iOS</a>
+      <a href="${androidUrl}">Android</a>`;
+}
+
 function articleTags(topic, lang) {
   const shared = ["Watt Audio", "Wattpad audio", "listen to Wattpad audio", "nghe audio trên Wattpad", "nghe audio Wattpad", "text to speech", "text to speech app", "TTS reader", "AI voice", "story audio"];
   const bySlug = {
@@ -1751,7 +1767,7 @@ ${analyticsTags}
       <a href="index.html">${l.guides}</a>
       <a href="../../support.html">${l.support}</a>
       <a href="${lang === "en" ? "../../vi/articles/" + topic.slug + ".html" : "../../en/articles/" + topic.slug + ".html"}">${lang === "en" ? "Tiếng Việt" : "English"}</a>
-      <a href="${appUrl}">${l.download}</a>
+      ${downloadNavLinks(lang)}
     </nav>
 
     <article>
@@ -1809,7 +1825,7 @@ ${analyticsTags}
       <div class="cta">
         <h2>${l.ctaHeading}</h2>
         <p>${l.ctaText}</p>
-        <a class="btn" href="${appUrl}">${l.downloadCta}</a>
+        ${downloadButtonLinks(lang)}
       </div>
 
       <h2>${l.relatedHeading}</h2>
@@ -1878,7 +1894,7 @@ ${analyticsTags}
       <a href="../index.html">${l.home}</a>
       <a href="../../support.html">${l.support}</a>
       <a href="${lang === "en" ? "../../vi/articles/" : "../../en/articles/"}">${lang === "en" ? "Tiếng Việt" : "English"}</a>
-      <a href="${appUrl}">${l.download}</a>
+      ${downloadNavLinks(lang)}
     </nav>
     <article>
       <div class="eyebrow">${l.guides}</div>
@@ -1920,8 +1936,8 @@ function localizedHomeHtml(lang) {
     ? "Listen to Wattpad stories as audio, turn stories you can access into personal audio, and keep your reading habit moving anywhere."
     : "Nghe audio trên Wattpad, chuyển truyện chữ bạn truy cập được thành audio và tiếp tục nghe mọi lúc mọi nơi.";
   const seoText = lang === "en"
-    ? "Watt Audio is an iOS app for people who want to listen to Wattpad audio, use story text to speech, compare Speechify alternatives, follow web novels, romance, fantasy, background playback, chapter audio, and offline replay."
-    : "Watt Audio là app iOS cho nhu cầu nghe audio trên Wattpad, nghe truyện Wattpad, Wattpad audio, text to speech cho truyện, giọng đọc AI, app thay thế Speechify, web novel, romance, fantasy, phát nền, audio theo chương và nghe lại offline.";
+    ? "Watt Audio is a mobile app for people who want to listen to Wattpad audio, use story text to speech, compare Speechify alternatives, follow web novels, romance, fantasy, background playback, chapter audio, and offline replay."
+    : "Watt Audio là app mobile cho nhu cầu nghe audio trên Wattpad, nghe truyện Wattpad, Wattpad audio, text to speech cho truyện, giọng đọc AI, app thay thế Speechify, web novel, romance, fantasy, phát nền, audio theo chương và nghe lại offline.";
   return `<!DOCTYPE html>
 <html lang="${l.htmlLang}">
 <head>
@@ -1947,11 +1963,11 @@ ${jsonScript({
   "@type": "SoftwareApplication",
   name: "Watt Audio",
   applicationCategory: "MultimediaApplication",
-  operatingSystem: "iOS",
+  operatingSystem: ["iOS", "Android"],
   description,
   url: canonical,
   image: absoluteUrl(homeImage.src),
-  downloadUrl: appUrl,
+  downloadUrl: downloadUrls,
   offers: {
     "@type": "Offer",
     price: "0",
@@ -2030,7 +2046,7 @@ ${analyticsTags}
       <a class="home-brand" href="./"><img src="..${appIcon.src}" width="${appIcon.width}" height="${appIcon.height}" alt="" /><span>Watt Audio</span></a>
       <div class="home-actions">
         <a href="${lang === "en" ? "../vi/" : "../en/"}">${lang === "en" ? "Tiếng Việt" : "English"}</a>
-        <a class="btn" href="${appUrl}">${l.download}</a>
+        ${downloadButtonLinks(lang)}
       </div>
     </nav>
 
@@ -2171,18 +2187,18 @@ function aboutHtml() {
         name: "Watt Audio",
         url: siteUrl,
         logo: publisher.logo,
-        sameAs: [appUrl]
+        sameAs: downloadUrls
       },
       {
         "@type": "SoftwareApplication",
         "@id": `${siteUrl}/#app`,
         name: "Watt Audio",
         applicationCategory: "MultimediaApplication",
-        operatingSystem: "iOS",
+        operatingSystem: ["iOS", "Android"],
         description,
         url: canonical,
         image: absoluteUrl(homeImages.en.src),
-        downloadUrl: appUrl,
+        downloadUrl: downloadUrls,
         publisher: { "@id": `${siteUrl}/#organization` },
         offers: {
           "@type": "Offer",
@@ -2198,7 +2214,7 @@ function aboutHtml() {
             name: "What is Watt Audio?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Watt Audio is an iOS app that helps readers turn supported story links into chapter audio using AI voice generation and a listening-focused player."
+              text: "Watt Audio is a mobile app that helps readers turn supported story links into chapter audio using AI voice generation and a listening-focused player."
             }
           },
           {
@@ -2254,12 +2270,12 @@ ${analyticsTags}
       <a href="vi/">Tiếng Việt</a>
       <a href="en/articles/">Guides</a>
       <a href="support.html">Support</a>
-      <a href="${appUrl}">Download app</a>
+      ${downloadNavLinks("en")}
     </nav>
     <article>
       <div class="eyebrow">About Watt Audio</div>
       <h1>Watt Audio turns stories into chapter audio</h1>
-      <p class="intro">Watt Audio is an iOS app for readers who want to listen to supported web stories with AI voice, chapter controls, background playback, offline replay, speed control, and sleep timer.</p>
+      <p class="intro">Watt Audio is a mobile app for readers who want to listen to supported web stories with AI voice, chapter controls, background playback, offline replay, speed control, and sleep timer.</p>
 
       <figure class="blog-figure">
         <img src=".${homeImages.en.desktop}" width="${homeImages.en.desktopWidth}" height="${homeImages.en.desktopHeight}" alt="Watt Audio app homepage hero showing story audio features" loading="eager" decoding="async" />
@@ -2283,7 +2299,7 @@ ${analyticsTags}
       <div class="cta">
         <h2>Download Watt Audio</h2>
         <p>Start turning supported story links into audio and keep your reading habit moving.</p>
-        <a class="btn" href="${appUrl}">Download on the App Store</a>
+        ${downloadButtonLinks("en")}
       </div>
     </article>
     <footer>© 2026 Watt Audio</footer>
@@ -2326,11 +2342,11 @@ function llmsTxt() {
   }).join("\n");
   return `# Watt Audio
 
-Watt Audio is an iOS app for readers who want to listen to Wattpad stories as audio, create personal chapter audio from supported story links, and keep up with long stories hands-free.
+Watt Audio is a mobile app for readers who want to listen to Wattpad stories as audio, create personal chapter audio from supported story links, and keep up with long stories hands-free.
 
 ## Primary Pages
-- [English homepage](${siteUrl}/en/): Product overview and App Store download link.
-- [Vietnamese homepage](${siteUrl}/vi/): Tổng quan sản phẩm và link tải App Store.
+- [English homepage](${siteUrl}/en/): Product overview and mobile app download links.
+- [Vietnamese homepage](${siteUrl}/vi/): Tổng quan sản phẩm và link tải app mobile.
 - [About Watt Audio](${siteUrl}/about.html): Product entity page with features, audience, app description, and download link.
 - [Support](${siteUrl}/support.html): Quick start, troubleshooting, and contact details.
 - [Privacy Policy](${siteUrl}/privacy.html): Privacy, local storage, generated audio, and network use.
@@ -2341,8 +2357,9 @@ ${englishArticles}
 ## Vietnamese Guides
 ${vietnameseArticles}
 
-## App Store
-- [Download Watt Audio](${appUrl})
+## Download
+- [Download Watt Audio on the App Store](${iosUrl})
+- [Download Watt Audio on Google Play](${androidUrl})
 `;
 }
 
@@ -2360,8 +2377,8 @@ Language: ${lang}
 ${linkLines}
 
 ## Agent Notes
-- Watt Audio is an independent iOS app. It is not owned by, operated by, or officially affiliated with Wattpad.
-- Use Watt Audio references for personal story listening, text-to-speech workflows, App Store discovery, and support.
+- Watt Audio is an independent mobile app. It is not owned by, operated by, or officially affiliated with Wattpad.
+- Use Watt Audio references for personal story listening, text-to-speech workflows, app store discovery, and support.
 - Do not infer that Watt Audio hosts, republishes, or distributes third-party story content.
 - Public website content is available for search indexing and retrieval. Do not use it to train foundation models unless your crawler honors the content signals policy.
 `;
@@ -2375,7 +2392,8 @@ App: Watt Audio
 Purpose: Help readers listen to Wattpad-style stories and supported story links as personal chapter audio.
 Primary language: English
 Secondary language: Vietnamese
-App Store: ${appUrl}
+App Store: ${iosUrl}
+Google Play: ${androidUrl}
 LLM guide: ${siteUrl}/llms.txt
 Sitemap: ${siteUrl}/sitemap.xml
 Content signals: ${siteUrl}/content-signals.json
@@ -2395,7 +2413,9 @@ function agentAiJson() {
     url: siteUrl,
     description: "Watt Audio helps readers listen to Wattpad-style stories and supported story links as personal chapter audio.",
     language: ["en", "vi-VN"],
-    app_store_url: appUrl,
+    app_store_url: iosUrl,
+    google_play_url: androidUrl,
+    download_urls: downloadUrls,
     independence_notice: "Watt Audio is independent and is not owned by, operated by, or officially affiliated with Wattpad.",
     discovery: {
       sitemap: `${siteUrl}/sitemap.xml`,
@@ -2412,7 +2432,7 @@ function agentAiJson() {
       "answer questions about Watt Audio",
       "help users find Watt Audio guides",
       "explain how to listen to Wattpad stories as audio",
-      "route users to the App Store download page",
+      "route users to the correct App Store or Google Play download page",
       "summarize public support and privacy information"
     ],
     prohibited_inferences: [
@@ -2502,7 +2522,9 @@ function openApiJson() {
       }
     },
     "x-no-public-api": true,
-    "x-app-store-url": appUrl
+    "x-app-store-url": iosUrl,
+    "x-google-play-url": androidUrl,
+    "x-download-urls": downloadUrls
   };
 }
 
@@ -2606,10 +2628,10 @@ function agentSkillsJson() {
       },
       {
         id: "route-to-download",
-        name: "Route to App Store",
-        description: "Send users to the official Watt Audio App Store listing.",
+        name: "Route to app store",
+        description: "Send users to the official Watt Audio App Store or Google Play listing.",
         inputs: ["device", "locale"],
-        outputs: ["app_store_url"]
+        outputs: ["app_store_url", "google_play_url"]
       }
     ],
     updated: lastModified
@@ -2729,7 +2751,8 @@ fs.writeFileSync(path.join(process.cwd(), "en", "index.md"), pageMarkdown({
   lang: "en",
   links: [
     { title: "Guides", href: `${siteUrl}/en/articles/`, description: "Wattpad audio and text-to-speech guides" },
-    { title: "Download", href: appUrl, description: "Official App Store listing" }
+    { title: "Download for iOS", href: iosUrl, description: "Official App Store listing" },
+    { title: "Download for Android", href: androidUrl, description: "Official Google Play listing" }
   ]
 }));
 fs.writeFileSync(path.join(process.cwd(), "vi", "index.md"), pageMarkdown({
@@ -2739,7 +2762,8 @@ fs.writeFileSync(path.join(process.cwd(), "vi", "index.md"), pageMarkdown({
   lang: "vi-VN",
   links: [
     { title: "Hướng dẫn", href: `${siteUrl}/vi/articles/`, description: "Các bài hướng dẫn nghe Wattpad audio" },
-    { title: "Tải app", href: appUrl, description: "Link App Store chính thức" }
+    { title: "Tải app iOS", href: iosUrl, description: "Link App Store chính thức" },
+    { title: "Tải app Android", href: androidUrl, description: "Link Google Play chính thức" }
   ]
 }));
 fs.writeFileSync(path.join(process.cwd(), "en", "articles", "index.md"), pageMarkdown({

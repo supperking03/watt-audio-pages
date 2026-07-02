@@ -193,6 +193,21 @@ li { margin: 8px 0; }
   font-weight: 800;
 }
 
+.store-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.store-links .btn { margin-top: 0; }
+
+.btn-secondary {
+  background: #171a21;
+  color: #fff;
+}
+
 .related {
   display: grid;
   gap: 10px;

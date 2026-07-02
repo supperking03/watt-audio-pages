@@ -39,7 +39,7 @@
   gtag('js', new Date());
   gtag('config', 'G-CPTTPW88BP');
   document.addEventListener('click', function (event) {
-    var link = event.target.closest && event.target.closest('a[href*="apps.apple.com"]');
+    var link = event.target.closest && event.target.closest('a[href*="apps.apple.com"], a[href*="play.google.com/store/apps"]');
     if (!link || typeof gtag !== 'function') return;
     gtag('event', 'download_app_click', {
       event_category: 'engagement',

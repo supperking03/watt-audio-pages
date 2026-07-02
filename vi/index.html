@@ -37,7 +37,7 @@
 <link rel="alternate" hreflang="en" href="https://wattaudios.com/en/" />
 <link rel="alternate" hreflang="vi-VN" href="https://wattaudios.com/vi/" />
 <link rel="alternate" hreflang="x-default" href="https://wattaudios.com/en/" />
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Watt Audio","applicationCategory":"MultimediaApplication","operatingSystem":"iOS","description":"Nghe audio trên Wattpad bằng Watt Audio. Chuyển truyện chữ bạn truy cập được thành audio và nghe mọi lúc mọi nơi.","url":"https://wattaudios.com/vi/","image":"https://wattaudios.com/assets/blog/homepage-watt-audio-vi.webp","downloadUrl":"https://apps.apple.com/vn/app/watt-audio-%C4%91%E1%BB%8Dc-truy%E1%BB%87n-audio/id6775724279","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"Watt Audio","logo":"https://wattaudios.com/assets/icons/icon-512.png"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Watt Audio","applicationCategory":"MultimediaApplication","operatingSystem":["iOS","Android"],"description":"Nghe audio trên Wattpad bằng Watt Audio. Chuyển truyện chữ bạn truy cập được thành audio và nghe mọi lúc mọi nơi.","url":"https://wattaudios.com/vi/","image":"https://wattaudios.com/assets/blog/homepage-watt-audio-vi.webp","downloadUrl":["https://apps.apple.com/vn/app/watt-audio-%C4%91%E1%BB%8Dc-truy%E1%BB%87n-audio/id6775724279","https://play.google.com/store/apps/details?id=com.supperking03.wattpadaudio"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"Watt Audio","logo":"https://wattaudios.com/assets/icons/icon-512.png"}}</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CPTTPW88BP"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -45,7 +45,7 @@
   gtag('js', new Date());
   gtag('config', 'G-CPTTPW88BP');
   document.addEventListener('click', function (event) {
-    var link = event.target.closest && event.target.closest('a[href*="apps.apple.com"]');
+    var link = event.target.closest && event.target.closest('a[href*="apps.apple.com"], a[href*="play.google.com/store/apps"]');
     if (!link || typeof gtag !== 'function') return;
     gtag('event', 'download_app_click', {
       event_category: 'engagement',
@@ -120,7 +120,10 @@
       <a class="home-brand" href="./"><img src="../assets/icons/app-icon-96.webp" width="96" height="96" alt="" /><span>Watt Audio</span></a>
       <div class="home-actions">
         <a href="../en/">English</a>
-        <a class="btn" href="https://apps.apple.com/vn/app/watt-audio-%C4%91%E1%BB%8Dc-truy%E1%BB%87n-audio/id6775724279">Tải app</a>
+        <div class="store-links">
+          <a class="btn" href="https://apps.apple.com/vn/app/watt-audio-%C4%91%E1%BB%8Dc-truy%E1%BB%87n-audio/id6775724279">Tải trên App Store</a>
+          <a class="btn btn-secondary" href="https://play.google.com/store/apps/details?id=com.supperking03.wattpadaudio">Tải trên Google Play</a>
+        </div>
       </div>
     </nav>
 
@@ -140,7 +143,7 @@
 
     <main>
       <h1 class="visually-hidden">Nghe truyện theo cách của bạn</h1>
-      <p class="visually-hidden">Nghe audio trên Wattpad, chuyển truyện chữ bạn truy cập được thành audio và tiếp tục nghe mọi lúc mọi nơi. Watt Audio là app iOS cho nhu cầu nghe audio trên Wattpad, nghe truyện Wattpad, Wattpad audio, text to speech cho truyện, giọng đọc AI, app thay thế Speechify, web novel, romance, fantasy, phát nền, audio theo chương và nghe lại offline.</p>
+      <p class="visually-hidden">Nghe audio trên Wattpad, chuyển truyện chữ bạn truy cập được thành audio và tiếp tục nghe mọi lúc mọi nơi. Watt Audio là app mobile cho nhu cầu nghe audio trên Wattpad, nghe truyện Wattpad, Wattpad audio, text to speech cho truyện, giọng đọc AI, app thay thế Speechify, web novel, romance, fantasy, phát nền, audio theo chương và nghe lại offline.</p>
       <nav class="article-list home-links" aria-label="Các trang Watt Audio">
         <a href="articles/">Hướng dẫn Watt Audio<span>Hướng dẫn nghe truyện và TTS</span></a>
         <a href="../about.html">Giới thiệu Watt Audio<span>Thông tin app và cách nghe truyện</span></a>
