@@ -7,7 +7,7 @@ const downloadUrls = [iosUrl, androidUrl];
 const siteUrl = "https://wattaudios.com";
 const lastModified = "2026-06-30";
 const gaMeasurementId = "G-CPTTPW88BP";
-const cssVersion = "20260702-compact-download-nav";
+const cssVersion = "20260704-home-search-intent";
 const publisher = {
   "@type": "Organization",
   name: "Watt Audio",
@@ -1946,6 +1946,73 @@ function localizedHomeHtml(lang) {
   const seoText = lang === "en"
     ? "Watt Audio is a mobile app for people who want to listen to Wattpad audio, use story text to speech, compare Speechify alternatives, follow web novels, romance, fantasy, background playback, chapter audio, and offline replay."
     : "Watt Audio là app mobile cho nhu cầu nghe audio trên Wattpad, nghe truyện Wattpad, Wattpad audio, text to speech cho truyện, giọng đọc AI, app thay thế Speechify, web novel, romance, fantasy, phát nền, audio theo chương và nghe lại offline.";
+  const trustChips = lang === "en"
+    ? ["Wattpad audio", "Chapter listening", "Background playback", "iOS & Android", "Personal use"]
+    : ["Nghe audio Wattpad", "Theo từng chương", "Phát nền", "iOS & Android", "Dùng cá nhân"];
+  const workflowItems = lang === "en"
+    ? [
+      ["Paste a story link", "Start from a supported story link you can access instead of copying text paragraph by paragraph."],
+      ["Generate chapter audio", "Turn long chapters into personal audio so your listening progress stays organized."],
+      ["Listen hands-free", "Keep up with stories while commuting, resting your eyes, doing chores, or listening before sleep."]
+    ]
+    : [
+      ["Dán link truyện", "Bắt đầu từ link truyện được hỗ trợ mà bạn truy cập được, không cần copy từng đoạn chữ."],
+      ["Tạo audio theo chương", "Chuyển chương dài thành audio cá nhân để tiến độ nghe luôn gọn gàng."],
+      ["Nghe rảnh tay", "Theo dõi truyện khi đi làm, nghỉ mắt, làm việc nhà hoặc nghe trước khi ngủ."]
+    ];
+  const painItems = lang === "en"
+    ? [
+      ["Less screen fatigue", "Use audio when your eyes are tired but you still want to continue a story."],
+      ["Better than generic TTS for chapters", "A story library keeps chapters, playback, and rereads easier to manage than one-off text selection."],
+      ["Useful for Wattpad-style stories", "Works best for serialized fiction, romance, fantasy, fanfiction, web novels, and long updates."]
+    ]
+    : [
+      ["Đỡ mỏi mắt", "Dùng audio khi mắt đã mệt nhưng vẫn muốn nghe tiếp truyện."],
+      ["Hợp truyện dài hơn TTS chung", "Thư viện truyện giữ chương, playback và nghe lại gọn hơn việc chọn text thủ công."],
+      ["Dành cho truyện kiểu Wattpad", "Hợp với truyện đăng kỳ, romance, fantasy, fanfiction, web novel và chương dài."]
+    ];
+  const searchLinks = lang === "en"
+    ? [
+      ["How to listen to Wattpad stories", "articles/how-to-listen-to-wattpad-stories.html"],
+      ["Wattpad text to speech", "articles/wattpad-text-to-speech-app.html"],
+      ["Can Wattpad read to you?", "articles/how-to-get-wattpad-to-read-to-you.html"],
+      ["Speechify alternative", "articles/speechify-alternative-for-wattpad-stories.html"],
+      ["Does Wattpad have audiobooks?", "articles/does-wattpad-have-audiobooks.html"],
+      ["Offline Wattpad audio", "articles/offline-wattpad-audio-listening.html"]
+    ]
+    : [
+      ["Cách nghe truyện Wattpad", "articles/how-to-listen-to-wattpad-stories.html"],
+      ["Nghe audio trên Wattpad", "articles/how-to-listen-to-stories-on-wattpad.html"],
+      ["Wattpad bị chặn", "articles/wattpad-bi-chan-vpn.html"],
+      ["Wattpad text to speech", "articles/wattpad-text-to-speech-app.html"],
+      ["App nghe audiobook Wattpad", "articles/best-wattpad-audiobook-app.html"],
+      ["Nghe truyện offline", "articles/offline-wattpad-audio-listening.html"]
+    ];
+  const homeFaq = lang === "en"
+    ? [
+      ["Can you listen to Wattpad stories as audio?", "Yes. Watt Audio helps you turn supported story links you can access into personal chapter audio for hands-free listening."],
+      ["Is Watt Audio available on Android?", "Yes. Watt Audio now has download links for both Android on Google Play and iOS on the App Store."],
+      ["Is Watt Audio affiliated with Wattpad?", "No. Watt Audio is independent and is not owned by, operated by, or officially affiliated with Wattpad."],
+      ["Why use Watt Audio instead of a generic text to speech app?", "Watt Audio is built around story links, chapter audio, background playback, and listening progress, which is more comfortable for long serialized fiction."]
+    ]
+    : [
+      ["Có nghe truyện Wattpad bằng audio được không?", "Có. Watt Audio giúp bạn chuyển link truyện được hỗ trợ mà bạn truy cập được thành audio theo chương để nghe rảnh tay."],
+      ["Watt Audio có Android chưa?", "Có. Watt Audio hiện có link tải cho Android trên Google Play và iOS trên App Store."],
+      ["Watt Audio có phải của Wattpad không?", "Không. Watt Audio là app độc lập, không thuộc sở hữu, vận hành hoặc liên kết chính thức với Wattpad."],
+      ["Vì sao dùng Watt Audio thay vì app text to speech chung?", "Watt Audio tập trung vào link truyện, audio theo chương, phát nền và tiến độ nghe, nên hợp với truyện đăng kỳ dài hơn."]
+    ];
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: homeFaq.map(([question, answer]) => ({
+      "@type": "Question",
+      name: question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: answer
+      }
+    }))
+  };
   return `<!DOCTYPE html>
 <html lang="${l.htmlLang}">
 <head>
@@ -1987,6 +2054,7 @@ ${jsonScript({
     logo: publisher.logo
   }
 })}
+${jsonScript(faqSchema)}
 ${analyticsTags}
 <link rel="stylesheet" href="${stylesheetHref("../assets/seo.css")}" />
 <style>
@@ -2004,6 +2072,24 @@ ${analyticsTags}
     box-shadow:0 28px 70px rgba(94,42,8,.14);
   }
   .hero-shell picture, .hero-shell img { display:block; width:100%; height:auto; }
+  .trust-strip {
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin:16px 0 26px;
+  }
+  .trust-strip span {
+    display:inline-flex;
+    align-items:center;
+    min-height:34px;
+    padding:7px 12px;
+    border:1px solid rgba(247,78,5,.18);
+    border-radius:999px;
+    background:rgba(255,255,255,.82);
+    color:#5b3425;
+    font-size:13px;
+    font-weight:800;
+  }
   .visually-hidden {
     position:absolute;
     width:1px;
@@ -2042,9 +2128,84 @@ ${analyticsTags}
     opacity:.72;
   }
   .home-links span { max-width:82%; }
+  .home-section {
+    margin:34px 0;
+  }
+  .home-section h2 {
+    max-width:760px;
+    margin-top:8px;
+  }
+  .home-section > p {
+    max-width:820px;
+    color:var(--muted);
+    font-size:17px;
+  }
+  .feature-grid {
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:12px;
+    margin-top:16px;
+  }
+  .feature-grid > div {
+    min-height:156px;
+    padding:20px;
+    border:1px solid rgba(247,78,5,.16);
+    border-radius:8px;
+    background:rgba(255,255,255,.88);
+    box-shadow:0 14px 34px rgba(94,42,8,.07);
+  }
+  .feature-grid h3 {
+    margin:0 0 8px;
+    font-size:18px;
+  }
+  .feature-grid p {
+    margin:0;
+    color:var(--muted);
+    line-height:1.55;
+  }
+  .search-grid {
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:16px;
+  }
+  .search-grid a {
+    display:inline-flex;
+    min-height:36px;
+    align-items:center;
+    padding:7px 12px;
+    border:1px solid rgba(247,78,5,.2);
+    border-radius:8px;
+    background:#fff;
+    color:var(--accent);
+    font-size:14px;
+    font-weight:800;
+    text-decoration:none;
+  }
+  .faq-list {
+    display:grid;
+    gap:12px;
+    margin-top:16px;
+  }
+  .faq-list details {
+    border:1px solid rgba(247,78,5,.16);
+    border-radius:8px;
+    background:#fff;
+    padding:16px 18px;
+  }
+  .faq-list summary {
+    cursor:pointer;
+    color:var(--ink);
+    font-weight:900;
+  }
+  .faq-list p {
+    margin:10px 0 0;
+    color:var(--muted);
+  }
   .home-footer { margin-top:38px; }
   @media (max-width:760px) {
     .home-links { grid-template-columns:1fr; }
+    .feature-grid { grid-template-columns:1fr; }
   }
 </style>
 </head>
@@ -2071,20 +2232,52 @@ ${analyticsTags}
           decoding="async" />
       </picture>
     </section>
+    <div class="trust-strip" aria-label="${lang === "en" ? "Watt Audio highlights" : "Điểm nổi bật của Watt Audio"}">
+      ${trustChips.map((chip) => `<span>${escapeHtml(chip)}</span>`).join("\n      ")}
+    </div>
 
     <main>
       <h1 class="visually-hidden">${appTitle}</h1>
       <p class="visually-hidden">${appText} ${seoText}</p>
+      <section class="home-section">
+        <div class="eyebrow">${lang === "en" ? "Listen to Wattpad Audio" : "Nghe audio trên Wattpad"}</div>
+        <h2>${lang === "en" ? "Turn story links into chapter audio" : "Chuyển link truyện thành audio theo chương"}</h2>
+        <p>${lang === "en" ? "Watt Audio is built for readers who search for Wattpad audio, text to speech for stories, and a better way to keep up with long chapters without staring at the screen." : "Watt Audio dành cho người đang tìm cách nghe audio trên Wattpad, text to speech cho truyện và cách theo dõi chương dài mà không phải nhìn màn hình liên tục."}</p>
+        <div class="feature-grid">
+          ${workflowItems.map(([heading, text]) => `<div><h3>${escapeHtml(heading)}</h3><p>${escapeHtml(text)}</p></div>`).join("\n          ")}
+        </div>
+      </section>
+      <section class="home-section">
+        <div class="eyebrow">${lang === "en" ? "Why Readers Use Audio" : "Vì sao người đọc chọn audio"}</div>
+        <h2>${lang === "en" ? "Made for long story sessions" : "Hợp với những buổi nghe truyện dài"}</h2>
+        <div class="feature-grid">
+          ${painItems.map(([heading, text]) => `<div><h3>${escapeHtml(heading)}</h3><p>${escapeHtml(text)}</p></div>`).join("\n          ")}
+        </div>
+      </section>
       <nav class="article-list home-links" aria-label="${lang === "en" ? "Watt Audio pages" : "Các trang Watt Audio"}">
         <a href="articles/">${guideTitle}<span>${guideSub}</span></a>
         <a href="../about.html">${lang === "en" ? "About Watt Audio" : "Giới thiệu Watt Audio"}<span>${lang === "en" ? "App details and listening workflow" : "Thông tin app và cách nghe truyện"}</span></a>
         <a href="../support.html">${l.support}<span>${lang === "en" ? "Help and contact" : "Trợ giúp và liên hệ"}</span></a>
       </nav>
+      <section class="home-section">
+        <div class="eyebrow">${lang === "en" ? "Popular Searches" : "Từ khóa người đọc hay tìm"}</div>
+        <h2>${lang === "en" ? "Guides for Wattpad audio, TTS, and story listening" : "Hướng dẫn về Wattpad audio, TTS và nghe truyện"}</h2>
+        <div class="search-grid">
+          ${searchLinks.map(([label, href]) => `<a href="${href}">${escapeHtml(label)}</a>`).join("\n          ")}
+        </div>
+      </section>
       <section aria-label="${lang === "en" ? "Popular Wattpad audio guides" : "Hướng dẫn Wattpad audio nổi bật"}">
         <div class="eyebrow">${lang === "en" ? "Popular Guides" : "Hướng dẫn nổi bật"}</div>
         <h2>${lang === "en" ? "Popular Wattpad Audio Guides" : "Hướng dẫn Wattpad audio nổi bật"}</h2>
         <div class="article-list home-links">
           ${popularGuideLinks(lang, "articles/")}
+        </div>
+      </section>
+      <section class="home-section">
+        <div class="eyebrow">FAQ</div>
+        <h2>${lang === "en" ? "Common questions about Wattpad audio" : "Câu hỏi thường gặp về nghe audio Wattpad"}</h2>
+        <div class="faq-list">
+          ${homeFaq.map(([question, answer]) => `<details><summary>${escapeHtml(question)}</summary><p>${escapeHtml(answer)}</p></details>`).join("\n          ")}
         </div>
       </section>
     </main>
