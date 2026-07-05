@@ -163,6 +163,7 @@ function storyTitleTopic({ slug, title, enMotif, viMotif, languages = ["en", "vi
     viScenario: `theo dõi chương truyện ${viMotif}, truyện audio Việt trên YouTube, truyện full dài và các buổi nghe cá nhân`
   });
   topic.languages = languages;
+  topic.kind = "story-title";
   topic.en.steps = [
     `Search for ${title} on the original channel, story site, or source you already use.`,
     "Copy a supported story or chapter link into Watt Audio to keep listening progress organized.",
@@ -1845,6 +1846,18 @@ function articleHtml(topic, lang) {
     : lang === "vi" && topic.en
       ? `<a href="../../en/articles/${topic.slug}.html">English</a>`
       : "";
+  const storyTitleName = topic.kind === "story-title"
+    ? page.title.replace(/^Nghe audio\s+/i, "").replace(/:\s*Audio Story Listening Guide$/i, "")
+    : "";
+  const topStoryCta = topic.kind === "story-title"
+    ? `<section class="story-quick-cta" aria-label="${escapeHtml(lang === "vi" ? "Tải Watt Audio" : "Download Watt Audio")}">
+        <div>
+          <strong>${escapeHtml(lang === "vi" ? `Tải Watt Audio để nghe ${storyTitleName}` : `Download Watt Audio to listen to ${storyTitleName}`)}</strong>
+          <p>${escapeHtml(lang === "vi" ? "Chuyển link truyện được hỗ trợ thành audio theo chương, nghe khi tắt màn hình và tiếp tục truyện mọi lúc." : "Turn supported story links into chapter audio, listen with the screen off, and keep the story moving anywhere.")}</p>
+        </div>
+        ${downloadButtonLinks(lang)}
+      </section>`
+    : "";
 
   return `<!DOCTYPE html>
 <html lang="${l.htmlLang}">
@@ -1895,6 +1908,8 @@ ${analyticsTags}
       <div class="eyebrow">${l.guide}</div>
       <h1>${escapeHtml(page.title)}</h1>
       <p class="intro">${escapeHtml(page.description)} ${lang === "en" ? "This guide is written for" : "Bài này dành cho"} ${escapeHtml(page.audience)}.</p>
+
+      ${topStoryCta}
 
       <figure class="blog-figure blog-figure-top">
         <picture>

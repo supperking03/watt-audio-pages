@@ -125,6 +125,35 @@ li { margin: 8px 0; }
   margin: 28px 0;
 }
 
+.story-quick-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin: 22px 0 16px;
+  padding: 18px 20px;
+  border: 1px solid #ffd4c0;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #fff7f0, #fff);
+}
+
+.story-quick-cta strong {
+  display: block;
+  color: var(--ink);
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+.story-quick-cta p {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.story-quick-cta .store-menu {
+  flex: 0 0 auto;
+}
+
 .blog-figure-top {
   margin: 24px 0 18px;
 }
@@ -328,4 +357,12 @@ footer {
   .wrap { padding: 24px 16px 56px; }
   article { padding: 24px 18px; }
   .placeholder { min-height: 210px; }
+  .story-quick-cta {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .story-quick-cta .store-menu,
+  .story-quick-cta .store-trigger {
+    width: 100%;
+  }
 }
