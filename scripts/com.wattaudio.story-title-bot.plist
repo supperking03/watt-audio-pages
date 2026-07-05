@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.wattaudio.story-title-bot</string>
+
+    <!-- Keep the executable copy in ~/.bubu, same pattern as the TikTok bot.
+         macOS launchd can be weird with background scripts inside Downloads. -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/kelvin/.bubu/watt-audio-story-title-bot.sh</string>
+    </array>
+
+    <!-- Run once per day at 09:20 Vietnam time. If the Mac is asleep, launchd
+         usually runs one missed interval shortly after wake. -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key><integer>9</integer>
+        <key>Minute</key><integer>20</integer>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/Users/kelvin/.bubu/watt-audio-story-title-bot-launchd.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/kelvin/.bubu/watt-audio-story-title-bot-launchd.log</string>
+</dict>
+</plist>

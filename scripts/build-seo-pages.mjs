@@ -148,7 +148,7 @@ function searchIntentTopic({
   };
 }
 
-function storyTitleTopic({ slug, title, enMotif, viMotif }) {
+function storyTitleTopic({ slug, title, enMotif, viMotif, languages = ["en", "vi"] }) {
   const topic = searchIntentTopic({
     slug,
     enTitle: `${title}: Audio Story Listening Guide`,
@@ -162,6 +162,7 @@ function storyTitleTopic({ slug, title, enMotif, viMotif }) {
     viFocus: `nghe ${title} và các truyện ${viMotif} tương tự`,
     viScenario: `theo dõi chương truyện ${viMotif}, truyện audio Việt trên YouTube, truyện full dài và các buổi nghe cá nhân`
   });
+  topic.languages = languages;
   topic.en.steps = [
     `Search for ${title} on the original channel, story site, or source you already use.`,
     "Copy a supported story or chapter link into Watt Audio to keep listening progress organized.",
@@ -188,6 +189,8 @@ function storyTitleTopic({ slug, title, enMotif, viMotif }) {
     [`Watt Audio có lưu trữ ${title} không?`, "Không. Watt Audio là workflow nghe cá nhân cho link truyện được hỗ trợ. Bài này giúp người đọc tổ chức việc nghe, không tải lại hoặc phân phối nội dung truyện."],
     ["Vì sao dùng thẳng tên truyện làm keyword?", "Nhiều người xem một tập truyện audio trên YouTube rồi search đúng tên truyện để tìm cách nghe tiếp thuận tiện hơn."]
   ];
+  if (!languages.includes("en")) delete topic.en;
+  if (!languages.includes("vi")) delete topic.vi;
   return topic;
 }
 
@@ -1466,6 +1469,20 @@ const topics = [
     title: "Thiên Kim Giả Bị Ảo Tưởng Nữ Chính",
     enMotif: "fake heiress, heroine delusion, identity swap, and rich-family drama",
     viMotif: "thiên kim giả, ảo tưởng nữ chính, tráo thân phận và hào môn"
+  }),
+  storyTitleTopic({
+    slug: "tra-xanh-tuong-bo-hot-duoc-vang",
+    title: "Trà Xanh Tưởng Bở Hốt Được Vàng",
+    enMotif: "green tea rival",
+    viMotif: "trà xanh",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "toi-va-co-ban-than-cung-cuoi-hai-anh-em-nha-giau-nghien-vo",
+    title: "Tôi Và Cô Bạn Thân Cùng Cưới Hai Anh Em Nhà Giàu Nghiện Vợ",
+    enMotif: "marriage drama",
+    viMotif: "cưới gả",
+    languages: ["vi"]
   })
 ];
 
@@ -1595,6 +1612,10 @@ function articleUrl(lang, slug) {
   return `${siteUrl}/${lang}/articles/${slug}.html`;
 }
 
+function topicLanguages(topic) {
+  return ["en", "vi"].filter((lang) => topic[lang]);
+}
+
 function absoluteUrl(pathname) {
   return `${siteUrl}${pathname}`;
 }
@@ -1674,7 +1695,7 @@ function articleTags(topic, lang) {
   };
   const vi = ["nghe truyện", "truyện audio", "giọng đọc AI", "Wattpad tiếng Việt", "nghe truyện offline", "app đọc truyện audio", "app thay thế Speechify"];
   const viTitle = topic.vi?.title?.replace(/^Nghe audio\s+/i, "");
-  const storyTitleTags = topic.en?.title?.includes(": Audio Story Listening Guide") && viTitle
+  const storyTitleTags = viTitle
     ? [viTitle, `${viTitle} audio`, `${viTitle} truyện audio`, "truyện audio YouTube", "truyện full audio"]
     : [];
   return [...shared, ...storyTitleTags, ...(bySlug[topic.slug] || []), ...(lang === "vi" ? vi : [])];
@@ -1724,6 +1745,7 @@ function relatedLinks(currentSlug, lang) {
     .filter(Boolean);
   const fallback = topics.filter((topic) => topic.slug !== currentSlug && !relatedGuideSlugs.includes(topic.slug));
   return [...preferred, ...fallback]
+    .filter((topic) => topic[lang])
     .slice(0, 4)
     .map((topic) => {
       const page = topic[lang];
@@ -1735,7 +1757,7 @@ function relatedLinks(currentSlug, lang) {
 function popularGuideLinks(lang, prefix = "articles/") {
   return popularGuideSlugs
     .map((slug) => topics.find((topic) => topic.slug === slug))
-    .filter(Boolean)
+    .filter((topic) => topic?.[lang])
     .map((topic) => {
       const page = topic[lang];
       return `<a href="${prefix}${topic.slug}.html">${escapeHtml(page.title)}<span>${escapeHtml(page.description)}</span></a>`;
@@ -1747,6 +1769,8 @@ function articleHtml(topic, lang) {
   const page = topic[lang];
   const l = labels[lang];
   const canonical = articleUrl(lang, topic.slug);
+  const languages = topicLanguages(topic);
+  const defaultLang = languages.includes("en") ? "en" : languages[0];
   const tags = articleTags(topic, lang);
   const title = `${page.title} | Watt Audio`;
   const articleSchema = {
@@ -1809,6 +1833,11 @@ function articleHtml(topic, lang) {
   const faq = page.faq.map(([question, answer]) => `
       <h3>${escapeHtml(question)}</h3>
       <p>${escapeHtml(answer)}</p>`).join("\n");
+  const languageSwitchLink = lang === "en" && topic.vi
+    ? `<a href="../../vi/articles/${topic.slug}.html">Tiếng Việt</a>`
+    : lang === "vi" && topic.en
+      ? `<a href="../../en/articles/${topic.slug}.html">English</a>`
+      : "";
 
   return `<!DOCTYPE html>
 <html lang="${l.htmlLang}">
@@ -1827,9 +1856,9 @@ ${baseMeta({
   type: "article",
   keywords: tags
 })}
-<link rel="alternate" hreflang="en" href="${articleUrl("en", topic.slug)}" />
-<link rel="alternate" hreflang="vi-VN" href="${articleUrl("vi", topic.slug)}" />
-<link rel="alternate" hreflang="x-default" href="${articleUrl("en", topic.slug)}" />
+${topic.en ? `<link rel="alternate" hreflang="en" href="${articleUrl("en", topic.slug)}" />` : ""}
+${topic.vi ? `<link rel="alternate" hreflang="vi-VN" href="${articleUrl("vi", topic.slug)}" />` : ""}
+<link rel="alternate" hreflang="x-default" href="${articleUrl(defaultLang, topic.slug)}" />
 ${tags.map((tag) => `<meta property="article:tag" content="${escapeHtml(tag)}" />`).join("\n")}
 <meta property="article:published_time" content="2026-06-11T00:00:00+07:00" />
 <meta property="article:modified_time" content="${lastModified}T00:00:00+07:00" />
@@ -1851,7 +1880,7 @@ ${analyticsTags}
       <a href="../index.html">${l.home}</a>
       <a href="index.html">${l.guides}</a>
       <a href="../../support.html">${l.support}</a>
-      <a href="${lang === "en" ? "../../vi/articles/" + topic.slug + ".html" : "../../en/articles/" + topic.slug + ".html"}">${lang === "en" ? "Tiếng Việt" : "English"}</a>
+      ${languageSwitchLink}
       ${downloadNavLinks(lang)}
     </nav>
 
@@ -1933,7 +1962,7 @@ function guidesIndexHtml(lang) {
   const keywords = lang === "vi"
     ? ["Watt Audio", "nghe audio trên Wattpad", "nghe truyện Wattpad", "Wattpad audio", "app text to speech", "app thay thế Speechify", "chuyển truyện thành audio", "giọng đọc AI", "truyện audio"]
     : ["Watt Audio", "listen to Wattpad audio", "Wattpad audio", "story audio guides", "text to speech", "text to speech app", "Speechify alternative", "TTS reader", "AI voice"];
-  const list = topics.map((topic) => {
+  const list = topics.filter((topic) => topic[lang]).map((topic) => {
     const page = topic[lang];
     return `<a href="${topic.slug}.html">${escapeHtml(page.title)}<span>${escapeHtml(page.description)}</span></a>`;
   }).join("\n");
@@ -2599,10 +2628,11 @@ function sitemapXml() {
     { loc: `${siteUrl}/privacy.html`, priority: "0.4", changefreq: "yearly" },
     { loc: `${siteUrl}/en/articles/`, priority: "0.8", changefreq: "weekly" },
     { loc: `${siteUrl}/vi/articles/`, priority: "0.8", changefreq: "weekly" },
-    ...topics.flatMap((topic) => [
-      { loc: articleUrl("en", topic.slug), priority: "0.7", changefreq: "monthly" },
-      { loc: articleUrl("vi", topic.slug), priority: "0.7", changefreq: "monthly" }
-    ])
+    ...topics.flatMap((topic) => topicLanguages(topic).map((lang) => ({
+      loc: articleUrl(lang, topic.slug),
+      priority: "0.7",
+      changefreq: "monthly"
+    })))
   ];
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -2612,11 +2642,11 @@ ${urls.map(({ loc, priority, changefreq }) => `  <url><loc>${loc}</loc><lastmod>
 }
 
 function llmsTxt() {
-  const englishArticles = topics.map((topic) => {
+  const englishArticles = topics.filter((topic) => topic.en).map((topic) => {
     const page = topic.en;
     return `- [${page.title}](${articleUrl("en", topic.slug)}): ${page.description}`;
   }).join("\n");
-  const vietnameseArticles = topics.map((topic) => {
+  const vietnameseArticles = topics.filter((topic) => topic.vi).map((topic) => {
     const page = topic.vi;
     return `- [${page.title}](${articleUrl("vi", topic.slug)}): ${page.description}`;
   }).join("\n");
@@ -2985,7 +3015,7 @@ for (const lang of ["en", "vi"]) {
   fs.mkdirSync(path.join(process.cwd(), lang, "articles"), { recursive: true });
   fs.writeFileSync(path.join(process.cwd(), lang, "index.html"), localizedHomeHtml(lang));
   fs.writeFileSync(path.join(process.cwd(), lang, "articles", "index.html"), guidesIndexHtml(lang));
-  for (const topic of topics) {
+  for (const topic of topics.filter((item) => item[lang])) {
     fs.writeFileSync(path.join(process.cwd(), lang, "articles", `${topic.slug}.html`), articleHtml(topic, lang));
   }
 }
@@ -2993,7 +3023,9 @@ for (const lang of ["en", "vi"]) {
 fs.mkdirSync(path.join(process.cwd(), "articles"), { recursive: true });
 fs.writeFileSync(path.join(process.cwd(), "articles", "index.html"), legacyRedirectHtml("/en/articles/", "Watt Audio Guides"));
 for (const topic of topics) {
-  fs.writeFileSync(path.join(process.cwd(), "articles", `${topic.slug}.html`), legacyRedirectHtml(`/en/articles/${topic.slug}.html`, topic.en.title));
+  const lang = topic.en ? "en" : "vi";
+  const page = topic[lang];
+  fs.writeFileSync(path.join(process.cwd(), "articles", `${topic.slug}.html`), legacyRedirectHtml(`/${lang}/articles/${topic.slug}.html`, page.title));
 }
 
 fs.writeFileSync(path.join(process.cwd(), "index.html"), rootIndexHtml());
@@ -3051,7 +3083,7 @@ fs.writeFileSync(path.join(process.cwd(), "en", "articles", "index.md"), pageMar
   description: labels.en.indexDescription,
   canonical: `${siteUrl}/en/articles/`,
   lang: "en",
-  links: topics.slice(0, 12).map((topic) => ({
+  links: topics.filter((topic) => topic.en).slice(0, 12).map((topic) => ({
     title: topic.en.title,
     href: articleUrl("en", topic.slug),
     description: topic.en.description
@@ -3062,7 +3094,7 @@ fs.writeFileSync(path.join(process.cwd(), "vi", "articles", "index.md"), pageMar
   description: labels.vi.indexDescription,
   canonical: `${siteUrl}/vi/articles/`,
   lang: "vi-VN",
-  links: topics.slice(0, 12).map((topic) => ({
+  links: topics.filter((topic) => topic.vi).slice(0, 12).map((topic) => ({
     title: topic.vi.title,
     href: articleUrl("vi", topic.slug),
     description: topic.vi.description

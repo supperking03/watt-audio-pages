@@ -1,0 +1,53 @@
+{
+  "queries": [
+    "truyện audio hot",
+    "truyện audio ngôn tình",
+    "truyện audio full",
+    "truyện full audio mới",
+    "truyện wattpad audio",
+    "truyện ngôn tình audio youtube",
+    "truyện trọng sinh audio",
+    "truyện trà xanh audio",
+    "truyện tổng tài audio",
+    "truyện xuyên sách audio",
+    "truyenfull audio",
+    "wattpad audio romance"
+  ],
+  "suggestTemplates": [
+    "{query}",
+    "{query} hay",
+    "{query} mới",
+    "{query} full",
+    "{query} youtube"
+  ],
+  "youtubeQueries": [
+    "truyện audio full mới nhất",
+    "truyện ngôn tình audio full",
+    "truyện wattpad audio full",
+    "truyện trọng sinh audio",
+    "truyện trà xanh audio"
+  ],
+  "blockedTitlePatterns": [
+    "watt audio",
+    "wattpad",
+    "truyenfull",
+    "truyện audio",
+    "truyen audio",
+    "audio truyện",
+    "ngôn tình audio",
+    "review truyện",
+    "tóm tắt truyện"
+  ],
+  "blockedContentPatterns": [
+    "18+",
+    "ấu dâm",
+    "bao dâm",
+    "bạo dâm",
+    "cưỡng hiếp",
+    "hiếp dâm",
+    "loạn luân",
+    "tự tử",
+    "rape",
+    "suicide"
+  ]
+}
