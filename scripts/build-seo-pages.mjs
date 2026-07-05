@@ -1483,6 +1483,13 @@ const topics = [
     enMotif: "marriage drama",
     viMotif: "cưới gả",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "tra-xanh-muon-quyen-ru-anh-de-nhung-anh-la-mot-ke-nghien-vo",
+    title: "Trà Xanh Muốn Quyến Rũ Ảnh Đế Nhưng Anh Là Một Kẻ Nghiện Vợ",
+    enMotif: "green tea rival",
+    viMotif: "trà xanh",
+    languages: ["vi"]
   })
 ];
 
