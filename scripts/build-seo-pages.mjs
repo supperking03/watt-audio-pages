@@ -5,7 +5,7 @@ const iosUrl = "https://apps.apple.com/vn/app/watt-audio-%C4%91%E1%BB%8Dc-truy%E
 const androidUrl = "https://play.google.com/store/apps/details?id=com.supperking03.wattpadaudio";
 const downloadUrls = [iosUrl, androidUrl];
 const siteUrl = "https://wattaudios.com";
-const lastModified = "2026-06-30";
+const lastModified = "2026-07-05";
 const gaMeasurementId = "G-CPTTPW88BP";
 const cssVersion = "20260704-home-search-intent";
 const publisher = {
@@ -463,8 +463,8 @@ const topics = [
   {
     slug: "how-to-listen-to-wattpad-stories",
     en: {
-      title: "How to Listen to Wattpad Stories as Audio",
-      description: "Learn how to listen to Wattpad stories with text to speech, chapter audio, background playback, and Watt Audio on mobile.",
+      title: "How to Listen to Wattpad Stories as Audio on iOS & Android",
+      description: "Listen to Wattpad stories as audio with chapter playback, text to speech, background listening, and Watt Audio on iOS or Android.",
       audience: "readers who already love Wattpad but do not always have the time or eye comfort to read every chapter on screen",
       focus: "listening to Wattpad stories",
       scenario: "commuting, cleaning, walking, resting your eyes at night, or catching up on long chapters while your phone stays in your pocket",
@@ -519,8 +519,8 @@ const topics = [
   },
   searchIntentTopic({
     slug: "how-to-listen-to-stories-on-wattpad",
-    enTitle: "How to Listen to Stories on Wattpad",
-    enDescription: "How to listen to stories on Wattpad with text to speech, phone voices, chapter audio, and Watt Audio.",
+    enTitle: "How to Listen to Stories on Wattpad Without Reading",
+    enDescription: "How to listen to stories on Wattpad using text to speech, read aloud tools, chapter audio, and Watt Audio on mobile.",
     enAudience: "readers who search how to listen to stories on Wattpad and want a practical audio workflow instead of constant scrolling",
     enFocus: "how to listen to stories on Wattpad",
     enScenario: "turning long chapters into personal audio for commutes, bedtime, chores, rereads, and hands-free story sessions",
@@ -532,8 +532,8 @@ const topics = [
   }),
   searchIntentTopic({
     slug: "does-wattpad-have-audiobooks",
-    enTitle: "Does Wattpad Have Audiobooks?",
-    enDescription: "Does Wattpad have audiobooks? Understand official audio, text to speech options, and Watt Audio for personal listening.",
+    enTitle: "Does Wattpad Have Audiobooks? Audio Options Explained",
+    enDescription: "Does Wattpad have audiobooks? Compare official audio, text to speech, read aloud tools, and Watt Audio for personal chapter listening.",
     enAudience: "readers asking whether Wattpad has audiobooks, audio stories, text to speech, or a way to hear long chapters",
     enFocus: "whether Wattpad has audiobooks",
     enScenario: "comparing official audiobooks, audio stories, AI voice readers, and personal chapter audio before choosing how to listen",
@@ -558,8 +558,8 @@ const topics = [
   }),
   searchIntentTopic({
     slug: "how-to-get-wattpad-to-read-to-you",
-    enTitle: "Can Wattpad Read to You?",
-    enDescription: "Can Wattpad read to you? Compare built-in options, phone text to speech, read aloud tools, AI voice, and Watt Audio.",
+    enTitle: "Can Wattpad Read to You? Read Aloud Options",
+    enDescription: "Can Wattpad read to you? Compare read aloud, phone text to speech, AI voice, screen-off listening, and Watt Audio.",
     enAudience: "readers asking can Wattpad read to you, how to get Wattpad to read aloud, or how to listen with the screen off",
     enFocus: "whether Wattpad can read to you",
     enScenario: "using read-aloud tools, text to speech voices, generated chapter audio, and background playback for long stories",
@@ -571,8 +571,8 @@ const topics = [
   }),
   searchIntentTopic({
     slug: "how-to-add-text-to-speech-in-wattpad",
-    enTitle: "How to Add Text to Speech in Wattpad",
-    enDescription: "How to add text to speech in Wattpad using phone read aloud settings, browser tools, AI voice, and Watt Audio.",
+    enTitle: "How to Add Text to Speech on Wattpad",
+    enDescription: "How to add text to speech on Wattpad with phone read aloud settings, browser tools, AI voice apps, and Watt Audio.",
     enAudience: "readers searching how to add text to speech in Wattpad because they want stories read aloud without constant scrolling",
     enFocus: "how to add text to speech in Wattpad",
     enScenario: "testing phone accessibility voices, browser read aloud, AI voice apps, and chapter audio for long Wattpad stories",
@@ -584,8 +584,8 @@ const topics = [
   }),
   searchIntentTopic({
     slug: "does-wattpad-have-text-to-speech",
-    enTitle: "Does Wattpad Have Text to Speech?",
-    enDescription: "Does Wattpad have text to speech? Learn what read aloud options exist and when Watt Audio helps with chapter listening.",
+    enTitle: "Does Wattpad Have Text to Speech? TTS Guide",
+    enDescription: "Does Wattpad have text to speech? Learn read aloud options, phone TTS limits, and when Watt Audio helps with chapter audio.",
     enAudience: "readers asking whether Wattpad has text to speech, read aloud, audio stories, or an easier way to hear chapters",
     enFocus: "whether Wattpad has text to speech",
     enScenario: "checking official app options, phone accessibility, browser TTS, story audio apps, and personal listening routines",
@@ -594,6 +594,71 @@ const topics = [
     viAudience: "người đọc hỏi Wattpad có text to speech, read aloud, truyện audio hoặc cách nghe chương dễ hơn không",
     viFocus: "Wattpad có text to speech không",
     viScenario: "kiểm tra lựa chọn trong app, accessibility điện thoại, TTS trình duyệt, app nghe truyện và workflow cá nhân"
+  }),
+  searchIntentTopic({
+    slug: "wattpad-audio-on-android",
+    enTitle: "Wattpad Audio on Android",
+    enDescription: "How to listen to Wattpad audio on Android with text to speech, chapter audio, background playback, and Watt Audio.",
+    enAudience: "Android readers searching for Wattpad audio, read aloud tools, text to speech, or a story listening app on Google Play",
+    enFocus: "listening to Wattpad audio on Android",
+    enScenario: "turning long story chapters into audio on an Android phone for commuting, chores, bedtime, and hands-free listening",
+    viTitle: "Nghe Wattpad audio trên Android",
+    viDescription: "Cách nghe Wattpad audio trên Android bằng text to speech, audio theo chương, phát nền và Watt Audio.",
+    viAudience: "người dùng Android tìm Wattpad audio, read aloud, text to speech hoặc app nghe truyện trên Google Play",
+    viFocus: "nghe Wattpad audio trên Android",
+    viScenario: "chuyển chương truyện dài thành audio trên điện thoại Android để nghe khi đi làm, làm việc nhà, trước khi ngủ và rảnh tay"
+  }),
+  searchIntentTopic({
+    slug: "wattpad-text-to-speech-android",
+    enTitle: "Wattpad Text to Speech on Android",
+    enDescription: "Use Wattpad text to speech on Android with read aloud settings, TTS apps, AI voices, and Watt Audio chapter listening.",
+    enAudience: "Android users who want Wattpad stories read aloud without keeping the screen open or selecting text repeatedly",
+    enFocus: "using Wattpad text to speech on Android",
+    enScenario: "testing Android read aloud, browser TTS, AI voice apps, and a chapter-based listening library for web fiction",
+    viTitle: "Wattpad text to speech trên Android",
+    viDescription: "Cách dùng Wattpad text to speech trên Android bằng read aloud, app TTS, giọng AI và Watt Audio.",
+    viAudience: "người dùng Android muốn nghe truyện Wattpad đọc thành tiếng mà không phải mở màn hình hoặc chọn text liên tục",
+    viFocus: "dùng Wattpad text to speech trên Android",
+    viScenario: "thử read aloud Android, TTS trình duyệt, app giọng AI và thư viện nghe theo chương cho truyện mạng"
+  }),
+  searchIntentTopic({
+    slug: "does-wattpad-read-to-you",
+    enTitle: "Does Wattpad Read to You?",
+    enDescription: "Does Wattpad read to you? Understand read aloud, text to speech, audio stories, and Watt Audio for chapter listening.",
+    enAudience: "readers typing does Wattpad read to you because they want stories spoken aloud instead of read on screen",
+    enFocus: "whether Wattpad reads to you",
+    enScenario: "finding a practical way to hear chapters during screen breaks, commutes, chores, and late-night story sessions",
+    viTitle: "Wattpad có tự đọc truyện cho bạn không?",
+    viDescription: "Wattpad có tự đọc truyện cho bạn không? Tìm hiểu read aloud, text to speech, truyện audio và Watt Audio.",
+    viAudience: "người đọc hỏi Wattpad có tự đọc truyện không vì muốn nghe truyện thay vì nhìn màn hình",
+    viFocus: "Wattpad có tự đọc truyện cho bạn không",
+    viScenario: "tìm cách nghe chương truyện khi nghỉ mắt, đi làm, làm việc nhà hoặc đọc khuya"
+  }),
+  searchIntentTopic({
+    slug: "can-wattpad-read-stories-aloud",
+    enTitle: "Can Wattpad Read Stories Aloud?",
+    enDescription: "Can Wattpad read stories aloud? Compare built-in audio, accessibility voices, browser read aloud, and Watt Audio.",
+    enAudience: "readers searching can Wattpad read stories aloud, Wattpad read aloud, or how to hear stories with the screen off",
+    enFocus: "whether Wattpad can read stories aloud",
+    enScenario: "choosing between accessibility settings, browser tools, generic TTS apps, and generated chapter audio",
+    viTitle: "Wattpad có đọc truyện thành tiếng không?",
+    viDescription: "Wattpad có đọc truyện thành tiếng không? So sánh audio có sẵn, accessibility, trình duyệt và Watt Audio.",
+    viAudience: "người đọc tìm Wattpad read aloud, đọc truyện thành tiếng hoặc cách nghe truyện khi tắt màn hình",
+    viFocus: "Wattpad có đọc truyện thành tiếng không",
+    viScenario: "chọn giữa cài đặt accessibility, công cụ trình duyệt, app TTS chung và audio theo chương"
+  }),
+  searchIntentTopic({
+    slug: "how-to-listen-to-wattpad-offline",
+    enTitle: "How to Listen to Wattpad Offline",
+    enDescription: "How to listen to Wattpad offline or with less screen time using prepared chapter audio, text to speech, and Watt Audio.",
+    enAudience: "readers who want to keep up with Wattpad stories while traveling, commuting, or away from stable internet",
+    enFocus: "listening to Wattpad offline",
+    enScenario: "preparing story audio before a trip, low-signal commute, flight, or bedtime session where reopening pages is annoying",
+    viTitle: "Cách nghe Wattpad offline",
+    viDescription: "Cách nghe Wattpad offline hoặc giảm thời gian nhìn màn hình bằng audio theo chương, text to speech và Watt Audio.",
+    viAudience: "người đọc muốn theo dõi truyện Wattpad khi đi xa, đi làm hoặc không có internet ổn định",
+    viFocus: "nghe Wattpad offline",
+    viScenario: "chuẩn bị audio trước chuyến đi, lúc sóng yếu, trên máy bay hoặc buổi nghe trước khi ngủ"
   }),
   searchIntentTopic({
     slug: "watts-audio",
@@ -1481,8 +1546,10 @@ const popularGuideSlugs = [
   "wattpad-bi-chan-vpn",
   "wattpad-khong-vao-duoc",
   "how-to-listen-to-wattpad-stories",
+  "wattpad-audio-on-android",
   "how-to-listen-to-stories-on-wattpad",
   "does-wattpad-have-audiobooks",
+  "does-wattpad-read-to-you",
   "wattpad-audiobook-reader-guide",
   "how-to-get-wattpad-to-read-to-you",
   "does-wattpad-have-text-to-speech",
@@ -1493,12 +1560,17 @@ const popularGuideSlugs = [
 
 const relatedGuideSlugs = [
   "how-to-listen-to-wattpad-stories",
+  "wattpad-audio-on-android",
   "how-to-listen-to-stories-on-wattpad",
   "does-wattpad-have-audiobooks",
+  "does-wattpad-read-to-you",
+  "can-wattpad-read-stories-aloud",
   "wattpad-audiobook-reader-guide",
   "how-to-get-wattpad-to-read-to-you",
   "does-wattpad-have-text-to-speech",
   "how-to-add-text-to-speech-in-wattpad",
+  "wattpad-text-to-speech-android",
+  "how-to-listen-to-wattpad-offline",
   "wattpad-audio-reader",
   "best-wattpad-audiobook-app"
 ];
@@ -1575,6 +1647,11 @@ function articleTags(topic, lang) {
     "how-to-get-wattpad-to-read-to-you": ["can Wattpad read to you", "how to get Wattpad to read to you", "Wattpad read aloud", "text to speech Wattpad"],
     "how-to-add-text-to-speech-in-wattpad": ["how to add text to speech in Wattpad", "add text to speech Wattpad", "Wattpad read aloud", "Wattpad TTS"],
     "does-wattpad-have-text-to-speech": ["does Wattpad have text to speech", "Wattpad text to speech", "Wattpad read aloud", "Wattpad TTS"],
+    "wattpad-audio-on-android": ["Wattpad audio Android", "Wattpad audio on Android", "Android story audio", "Google Play story app"],
+    "wattpad-text-to-speech-android": ["Wattpad text to speech Android", "Android TTS", "read Wattpad aloud Android", "Google Play TTS"],
+    "does-wattpad-read-to-you": ["does Wattpad read to you", "Wattpad read to you", "Wattpad read aloud", "text to speech Wattpad"],
+    "can-wattpad-read-stories-aloud": ["can Wattpad read stories aloud", "Wattpad stories read aloud", "Wattpad read aloud", "AI voice reader"],
+    "how-to-listen-to-wattpad-offline": ["listen to Wattpad offline", "offline Wattpad audio", "Wattpad offline listening", "offline story audio"],
     "watts-audio": ["watts audio", "watt audio", "wattaudio", "Watt Audio app"],
     "how-to-convert-wattpad-to-audio": ["convert Wattpad to audio", "chapter audio", "audio converter"],
     "best-wattpad-audiobook-app": ["Wattpad audiobook app", "audiobook app", "offline listening"],
@@ -1978,15 +2055,17 @@ function localizedHomeHtml(lang) {
       ["Can Wattpad read to you?", "articles/how-to-get-wattpad-to-read-to-you.html"],
       ["Speechify alternative", "articles/speechify-alternative-for-wattpad-stories.html"],
       ["Does Wattpad have audiobooks?", "articles/does-wattpad-have-audiobooks.html"],
-      ["Offline Wattpad audio", "articles/offline-wattpad-audio-listening.html"]
+      ["Wattpad audio on Android", "articles/wattpad-audio-on-android.html"],
+      ["Offline Wattpad audio", "articles/how-to-listen-to-wattpad-offline.html"]
     ]
     : [
       ["Cách nghe truyện Wattpad", "articles/how-to-listen-to-wattpad-stories.html"],
       ["Nghe audio trên Wattpad", "articles/how-to-listen-to-stories-on-wattpad.html"],
       ["Wattpad bị chặn", "articles/wattpad-bi-chan-vpn.html"],
       ["Wattpad text to speech", "articles/wattpad-text-to-speech-app.html"],
+      ["Wattpad audio Android", "articles/wattpad-audio-on-android.html"],
       ["App nghe audiobook Wattpad", "articles/best-wattpad-audiobook-app.html"],
-      ["Nghe truyện offline", "articles/offline-wattpad-audio-listening.html"]
+      ["Nghe Wattpad offline", "articles/how-to-listen-to-wattpad-offline.html"]
     ];
   const homeFaq = lang === "en"
     ? [
