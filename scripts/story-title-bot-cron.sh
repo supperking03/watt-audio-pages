@@ -104,12 +104,19 @@ publish_output=""
 publish_status=0
 git_output=""
 git_status=0
+published_links=""
+published_count=0
 if [ "$status" -eq 0 ] && [ "$AUTO_PUBLISH" = "1" ]; then
   publish_output=$("$NODE_BIN" scripts/publish-story-title-drafts.mjs --min-score="$PUBLISH_MIN_SCORE" --max="$PUBLISH_MAX" --build 2>&1)
   publish_status=$?
   printf '%s\n' "$publish_output" >> "$LOG"
   if [ "$publish_status" -eq 0 ] && printf '%s' "$publish_output" | grep -q '^Publishable drafts:'; then
     slugs=$(printf '%s\n' "$publish_output" | sed -nE 's/^- .* -> ([a-z0-9-]+)$/\1/p')
+    for slug in $slugs; do
+      published_count=$((published_count + 1))
+      published_links="${published_links}https://wattaudios.com/vi/articles/$slug.html
+"
+    done
     git add scripts/build-seo-pages.mjs sitemap.xml llms.txt vi/articles/index.html articles/index.html data/story-title-bot/drafts/*.json data/story-title-bot/drafts/*.md >> "$LOG" 2>&1 || git_status=$?
     for slug in $slugs; do
       git add "vi/articles/$slug.html" "articles/$slug.html" >> "$LOG" 2>&1 || git_status=$?
@@ -140,6 +147,14 @@ fi
 if [ "$status" -eq 0 ] && [ "$publish_status" -eq 0 ] && [ "$git_status" -eq 0 ]; then
   if [ "$AUTO_PUBLISH" = "1" ]; then
     mode="Auto-publish enabled. Threshold: $PUBLISH_MIN_SCORE. Max per run: $PUBLISH_MAX."
+    if [ "$published_count" -gt 0 ]; then
+      publish_summary="Published $published_count new Vietnamese article(s):
+$published_links"
+      subject="✅ Watt Audio SEO published $published_count bài ($(date '+%F'))"
+    else
+      publish_summary="No new article was published. No candidate passed the threshold, or all candidates were duplicates."
+      subject="ℹ️ Watt Audio SEO no new post ($(date '+%F'))"
+    fi
     action="Publisher output:
 $publish_output
 
@@ -147,16 +162,20 @@ Git output:
 ${git_output:-No publish commit was needed.}"
   else
     mode="Draft-only mode. No article was published."
+    publish_summary="No article was published because auto-publish is off."
+    subject="✅ Watt Audio SEO drafts ready ($(date '+%F'))"
     action="Approve a selected draft with:
 node scripts/approve-story-title-draft.mjs <slug> --build"
   fi
-  send_email "✅ Watt Audio SEO drafts ready ($(date '+%F'))" \
+  send_email "$subject" \
 "Story-title bot generated fresh drafts.
 
 Top candidate: ${top:-?}
 Draft file: ${draft_md:-data/story-title-bot/drafts}
 
 $mode
+
+$publish_summary
 
 $action
 
