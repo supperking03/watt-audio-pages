@@ -1850,7 +1850,9 @@ function articleHtml(topic, lang) {
     ? page.title.replace(/^Nghe audio\s+/i, "").replace(/:\s*Audio Story Listening Guide$/i, "")
     : "";
   const topStoryCta = topic.kind === "story-title"
-    ? `<section class="story-quick-cta" aria-label="${escapeHtml(lang === "vi" ? "Tải Watt Audio" : "Download Watt Audio")}">
+    ? `
+
+      <section class="story-quick-cta" aria-label="${escapeHtml(lang === "vi" ? "Tải Watt Audio" : "Download Watt Audio")}">
         <div>
           <strong>${escapeHtml(lang === "vi" ? `Tải Watt Audio để nghe ${storyTitleName}` : `Download Watt Audio to listen to ${storyTitleName}`)}</strong>
           <p>${escapeHtml(lang === "vi" ? "Chuyển link truyện được hỗ trợ thành audio theo chương, nghe khi tắt màn hình và tiếp tục truyện mọi lúc." : "Turn supported story links into chapter audio, listen with the screen off, and keep the story moving anywhere.")}</p>
@@ -1907,9 +1909,7 @@ ${analyticsTags}
     <article>
       <div class="eyebrow">${l.guide}</div>
       <h1>${escapeHtml(page.title)}</h1>
-      <p class="intro">${escapeHtml(page.description)} ${lang === "en" ? "This guide is written for" : "Bài này dành cho"} ${escapeHtml(page.audience)}.</p>
-
-      ${topStoryCta}
+      <p class="intro">${escapeHtml(page.description)} ${lang === "en" ? "This guide is written for" : "Bài này dành cho"} ${escapeHtml(page.audience)}.</p>${topStoryCta}
 
       <figure class="blog-figure blog-figure-top">
         <picture>
