@@ -1491,6 +1491,13 @@ const topics = [
     enMotif: "green tea rival",
     viMotif: "trà xanh",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "nu-luat-su-mo-hon-xuyen-vao-thien-kim-that-nha-hao-mon",
+    title: "Nữ Luật Sư Mỏ Hỗn Xuyên Vào Thiên Kim Thật Nhà Hào Môn",
+    enMotif: "rich-family romance",
+    viMotif: "hào môn",
+    languages: ["vi"]
   })
 ];
 
