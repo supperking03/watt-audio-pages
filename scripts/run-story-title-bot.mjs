@@ -32,6 +32,19 @@ const genericTerms = new Set([
   "mới nhất"
 ]);
 
+async function mapLimit(items, concurrency, mapper) {
+  const results = [];
+  let index = 0;
+  async function worker() {
+    while (index < items.length) {
+      const currentIndex = index++;
+      results[currentIndex] = await mapper(items[currentIndex], currentIndex);
+    }
+  }
+  await Promise.all(Array.from({ length: Math.min(concurrency, items.length) }, worker));
+  return results;
+}
+
 function stripVietnamese(input) {
   return input
     .normalize("NFD")
@@ -159,7 +172,7 @@ function joinMotifs(items) {
   return `${unique.slice(0, -1).join(", ")} và ${unique.at(-1)}`;
 }
 
-async function fetchText(url, timeoutMs = 12000) {
+async function fetchText(url, timeoutMs = 8000) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeoutMs);
   try {
@@ -187,6 +200,11 @@ async function collectGoogleSuggest(query) {
   }));
 }
 
+async function collectDemandSuggest(query) {
+  const items = await collectGoogleSuggest(query);
+  return items.map((item) => ({ ...item, source: "google-demand-suggest" }));
+}
+
 async function collectYouTube(query) {
   const url = `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}`;
   const html = await fetchText(url);
@@ -204,6 +222,94 @@ async function collectYouTube(query) {
   }));
 }
 
+function titleTokenOverlap(a, b) {
+  const tokensA = new Set(stripVietnamese(normalizeTitle(a)).split(/[^a-z0-9]+/).filter((token) => token.length > 1));
+  const tokensB = new Set(stripVietnamese(normalizeTitle(b)).split(/[^a-z0-9]+/).filter((token) => token.length > 1));
+  if (!tokensA.size || !tokensB.size) return 0;
+  let hits = 0;
+  for (const token of tokensA) {
+    if (tokensB.has(token)) hits += 1;
+  }
+  return hits / tokensA.size;
+}
+
+async function estimateAudioCompetition(candidate) {
+  const exactQueries = [
+    `"${candidate.title}" audio`,
+    `"${candidate.title}" "truyện audio"`
+  ];
+  const matched = [];
+  let errorCount = 0;
+  let successCount = 0;
+  for (const query of exactQueries) {
+    try {
+      const items = await collectYouTube(query);
+      successCount += 1;
+      for (const item of items) {
+        const overlap = titleTokenOverlap(candidate.title, item.text);
+        if (overlap >= 0.72 && /audio|truyện|full|nghe|đọc|youtube/i.test(item.text)) {
+          matched.push({ ...item, overlap });
+        }
+      }
+    } catch (error) {
+      errorCount += 1;
+      candidate.evidence.push({ source: "competition-error", query, text: error.message });
+    }
+  }
+
+  const uniqueMatches = new Map();
+  for (const item of matched) {
+    uniqueMatches.set(normalizeTitle(item.text), item);
+  }
+  const count = uniqueMatches.size;
+  const level = successCount === 0 && errorCount > 0
+    ? "unknown"
+    : count >= 5
+      ? "high"
+      : count >= 2
+        ? "medium"
+        : count === 1
+          ? "low"
+          : "none";
+  return {
+    audioCompetitionScore: count,
+    audioCompetitionLevel: level,
+    evidence: [...uniqueMatches.values()].slice(0, 4)
+  };
+}
+
+async function enrichCompetition(candidates) {
+  const enriched = await mapLimit(candidates, 3, async (candidate) => {
+    const competition = await estimateAudioCompetition(candidate);
+    const penalty = competition.audioCompetitionLevel === "high"
+      ? 36
+      : competition.audioCompetitionLevel === "medium"
+        ? 18
+      : competition.audioCompetitionLevel === "low"
+          ? 6
+          : competition.audioCompetitionLevel === "unknown"
+            ? 12
+            : 0;
+    const opportunityScore = Math.max(0, candidate.demandScore + candidate.audioSignalScore - penalty);
+    return {
+      ...candidate,
+      audioCompetitionScore: competition.audioCompetitionScore,
+      audioCompetitionLevel: competition.audioCompetitionLevel,
+      opportunityScore,
+      score: opportunityScore,
+      evidence: [
+        ...candidate.evidence,
+        ...competition.evidence.map((item) => ({
+          source: "youtube-audio-competition",
+          query: item.query,
+          text: item.text
+        }))
+      ]
+    };
+  });
+  return enriched.sort((a, b) => b.opportunityScore - a.opportunityScore).slice(0, limit);
+}
+
 function makeCandidate(item) {
   const title = cleanCandidate(item.text);
   if (!title) return null;
@@ -219,16 +325,26 @@ function makeCandidate(item) {
 
   const context = `${item.text} ${item.query}`;
   const motifs = inferMotifs(title, context);
-  let score = scoreTitleShape(title);
-  if (item.source === "youtube-search") score += 12;
-  if (/full|audio|truyện|wattpad|youtube/i.test(context)) score += 8;
-  if (/mới|hot|2026|hay/i.test(context)) score += 4;
-  if (/phim|nhạc|karaoke|minecraft|roblox|game/i.test(context)) score -= 30;
+  let demandScore = scoreTitleShape(title);
+  let audioSignalScore = 0;
+  if (item.source === "google-demand-suggest") demandScore += 18;
+  if (item.source === "google-suggest") demandScore += 8;
+  if (item.source === "youtube-search") audioSignalScore += 8;
+  if (/wattpad|truyenfull|truyện full|truyện hot|ngôn tình|trà xanh|trọng sinh|xuyên sách|hào môn|tổng tài|vả mặt/i.test(context)) demandScore += 10;
+  if (/full|audio|truyện|wattpad|youtube/i.test(context)) demandScore += 4;
+  if (/mới|hot|2026|hay/i.test(context)) demandScore += 4;
+  if (/phim|nhạc|karaoke|minecraft|roblox|game/i.test(context)) demandScore -= 30;
+  const score = demandScore + audioSignalScore;
 
   return {
     title,
     slug,
     score,
+    demandScore,
+    audioSignalScore,
+    audioCompetitionScore: 0,
+    audioCompetitionLevel: "unknown",
+    opportunityScore: score,
     enMotif: motifs.enMotif,
     viMotif: motifs.viMotif,
     evidence: [item],
@@ -244,6 +360,9 @@ function mergeCandidates(items) {
     const prev = bySlug.get(candidate.slug);
     if (prev) {
       prev.score += Math.round(candidate.score / 3);
+      prev.demandScore += Math.round(candidate.demandScore / 3);
+      prev.audioSignalScore += Math.round(candidate.audioSignalScore / 3);
+      prev.opportunityScore = prev.score;
       prev.evidence.push(...candidate.evidence);
     } else {
       bySlug.set(candidate.slug, candidate);
@@ -251,7 +370,7 @@ function mergeCandidates(items) {
   }
   return [...bySlug.values()]
     .sort((a, b) => b.score - a.score)
-    .slice(0, limit);
+    .slice(0, Math.max(limit, 12));
 }
 
 function draftMarkdown(draft) {
@@ -261,7 +380,9 @@ Run: ${draft.generatedAt}
 
 ${draft.candidates.map((candidate, index) => `## ${index + 1}. ${candidate.title}
 
-- Score: ${candidate.score}
+- Opportunity score: ${candidate.opportunityScore}
+- Demand score: ${candidate.demandScore}
+- Audio competition: ${candidate.audioCompetitionLevel} (${candidate.audioCompetitionScore} exact-ish YouTube matches)
 - Slug: \`${candidate.slug}\`
 - enMotif: ${candidate.enMotif}
 - viMotif: ${candidate.viMotif}
@@ -279,33 +400,50 @@ node scripts/approve-story-title-draft.mjs ${candidate.slug} --build
 
 async function main() {
   const rawItems = [];
+  const demandQueries = (config.demandQueries || []).flatMap((query) =>
+    config.suggestTemplates.map((template) => template.replace("{query}", query))
+  );
   const suggestQueries = config.queries.flatMap((query) =>
     config.suggestTemplates.map((template) => template.replace("{query}", query))
   );
 
   if (!noNetwork) {
-    for (const query of suggestQueries) {
+    const demandResults = await mapLimit(demandQueries, 8, async (query) => {
       try {
-        rawItems.push(...await collectGoogleSuggest(query));
+        return await collectDemandSuggest(query);
       } catch (error) {
-        rawItems.push({ source: "error", query, text: `google-suggest failed: ${error.message}` });
+        return [{ source: "error", query, text: `google-demand-suggest failed: ${error.message}` }];
       }
-    }
-    for (const query of config.youtubeQueries) {
+    });
+    rawItems.push(...demandResults.flat());
+
+    const suggestResults = await mapLimit(suggestQueries, 8, async (query) => {
       try {
-        rawItems.push(...await collectYouTube(query));
+        return await collectGoogleSuggest(query);
       } catch (error) {
-        rawItems.push({ source: "error", query, text: `youtube-search failed: ${error.message}` });
+        return [{ source: "error", query, text: `google-suggest failed: ${error.message}` }];
       }
-    }
+    });
+    rawItems.push(...suggestResults.flat());
+
+    const youtubeResults = await mapLimit(config.youtubeQueries, 3, async (query) => {
+      try {
+        return await collectYouTube(query);
+      } catch (error) {
+        return [{ source: "error", query, text: `youtube-search failed: ${error.message}` }];
+      }
+    });
+    rawItems.push(...youtubeResults.flat());
   }
 
-  const candidates = mergeCandidates(rawItems.filter((item) => item.source !== "error"));
+  const mergedCandidates = mergeCandidates(rawItems.filter((item) => item.source !== "error"));
+  const candidates = noNetwork ? mergedCandidates.slice(0, limit) : await enrichCompetition(mergedCandidates);
   const draft = {
     generatedAt: now.toISOString(),
     date: dateId,
     mode: noNetwork ? "no-network" : "network",
     sourceCount: rawItems.length,
+    scoring: "v2-opportunity-demand-minus-audio-competition",
     candidates
   };
 

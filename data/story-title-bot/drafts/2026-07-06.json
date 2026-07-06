@@ -1,130 +1,31 @@
 {
-  "generatedAt": "2026-07-06T03:31:21.539Z",
+  "generatedAt": "2026-07-06T16:11:13.321Z",
   "date": "2026-07-06",
   "mode": "network",
-  "sourceCount": 199,
+  "sourceCount": 225,
+  "scoring": "v2-opportunity-demand-minus-audio-competition",
   "candidates": [
     {
-      "title": "Nuôi Vợ Nhỏ Bao Năm Cuối Cùng Cũng Được Ăn",
-      "slug": "nuoi-vo-nho-bao-nam-cuoi-cung-cung-duoc-an",
-      "score": 81,
-      "enMotif": "Vietnamese web fiction và romance drama",
-      "viMotif": "truyện mạng Việt và romance drama",
+      "title": "Bị Ép Gả Thay Em Gái, Tôi Bật Chế Độ Mỏ Hỗn Dẹp Loạn Hào Môn",
+      "slug": "bi-ep-ga-thay-em-gai-toi-bat-che-do-mo-hon-dep-loan-hao-mon",
+      "score": 68,
+      "demandScore": 66,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 1,
+      "audioCompetitionLevel": "low",
+      "opportunityScore": 68,
+      "enMotif": "rich-family romance",
+      "viMotif": "hào môn",
       "evidence": [
         {
           "source": "youtube-search",
           "query": "truyện audio full mới nhất",
-          "text": "Nuôi Vợ Nhỏ Bao Năm Cuối Cùng Cũng Được Ăn | Truyện Audio Nấu Ăn"
+          "text": "[Truyện Audio Full] | BỊ ÉP GẢ THAY EM GÁI, TÔI BẬT CHẾ ĐỘ MỎ HỖN DẸP LOẠN HÀO MÔN | Vả Mặt Audio"
         },
         {
-          "source": "youtube-search",
-          "query": "truyện ngôn tình audio full",
-          "text": "Nuôi Vợ Nhỏ Bao Năm Cuối Cùng Cũng Được Ăn | Truyện Audio Nấu Ăn"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "Hôn Ước Từ Bé với Ông Trùm Hắc Bang",
-      "slug": "hon-uoc-tu-be-voi-ong-trum-hac-bang",
-      "score": 79,
-      "enMotif": "marriage drama",
-      "viMotif": "cưới gả",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "query": "truyện audio full mới nhất",
-          "text": "Truyện Audio || HÔN ƯỚC TỪ BÉ VỚI ÔNG TRÙM HẮC BANG (Full) || AnAn Audio"
-        },
-        {
-          "source": "youtube-search",
-          "query": "truyện ngôn tình audio full",
-          "text": "Truyện Audio || HÔN ƯỚC TỪ BÉ VỚI ÔNG TRÙM HẮC BANG (Full) || AnAn Audio"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ",
-      "slug": "trung-sinh-toi-quyet-nghe-theo-bo-me",
-      "score": 79,
-      "enMotif": "family drama",
-      "viMotif": "gia đình",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "query": "truyện audio full mới nhất",
-          "text": "[Truyện Audio] | Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ | Túi Mù Audio #audio  #truyenaudio"
-        },
-        {
-          "source": "youtube-search",
-          "query": "truyện trọng sinh audio",
-          "text": "[Truyện Audio] | Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ | Túi Mù Audio #audio  #truyenaudio"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "Sếp Tổng Cứ Dụ Tôi Về Làm Vợ",
-      "slug": "sep-tong-cu-du-toi-ve-lam-vo",
-      "score": 76,
-      "enMotif": "Vietnamese web fiction và romance drama",
-      "viMotif": "truyện mạng Việt và romance drama",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "query": "truyện audio full mới nhất",
-          "text": "Truyện Audio || Sếp Tổng Cứ Dụ Tôi Về Làm Vợ || ChuChu Audio"
-        },
-        {
-          "source": "youtube-search",
-          "query": "truyện ngôn tình audio full",
-          "text": "Truyện Audio || Sếp Tổng Cứ Dụ Tôi Về Làm Vợ || ChuChu Audio"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "Thiên Kim Thật Mỏ Hỗn Trở Về là Con Gái Ông Trùm Thế Giới Ngầm",
-      "slug": "thien-kim-that-mo-hon-tro-ve-la-con-gai-ong-trum-the-gioi-ngam",
-      "score": 70,
-      "enMotif": "family drama",
-      "viMotif": "gia đình",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "query": "truyện audio full mới nhất",
-          "text": "[Truyện Audio Full] | THIÊN KIM THẬT MỎ HỖN TRỞ VỀ LÀ CON GÁI ÔNG TRÙM THẾ GIỚI NGẦM | Vả Mặt Audio"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "Thiên Kim Thật Trở Về là Phú Bà Mỏ Hỗn Giàu Nhất Đế Đô",
-      "slug": "thien-kim-that-tro-ve-la-phu-ba-mo-hon-giau-nhat-de-do",
-      "score": 70,
-      "enMotif": "Vietnamese web fiction và romance drama",
-      "viMotif": "truyện mạng Việt và romance drama",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "query": "truyện audio full mới nhất",
-          "text": "[Truyện Audio Full] | THIÊN KIM THẬT TRỞ VỀ LÀ PHÚ BÀ MỎ HỖN GIÀU NHẤT ĐẾ ĐÔ | Vả Mặt Audio"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "Thiên Kim Thật Mỏ Hỗn Trở Về Vả Mặt Em Gái Trà Xanh Mít Ướt",
-      "slug": "thien-kim-that-mo-hon-tro-ve-va-mat-em-gai-tra-xanh-mit-uot",
-      "score": 70,
-      "enMotif": "green tea rival",
-      "viMotif": "trà xanh",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "query": "truyện audio full mới nhất",
-          "text": "[Truyện Audio Full] | THIÊN KIM THẬT MỎ HỖN TRỞ VỀ VẢ MẶT EM GÁI TRÀ XANH MÍT ƯỚT | Vả Mặt Audio"
+          "source": "youtube-audio-competition",
+          "query": "\"Bị Ép Gả Thay Em Gái, Tôi Bật Chế Độ Mỏ Hỗn Dẹp Loạn Hào Môn\" \"truyện audio\"",
+          "text": "[Truyện Audio Full] | BỊ ÉP GẢ THAY EM GÁI, TÔI BẬT CHẾ ĐỘ MỎ HỖN DẸP LOẠN HÀO MÔN | Vả Mặt Audio"
         }
       ],
       "status": "draft"
@@ -132,7 +33,12 @@
     {
       "title": "Trọng Sinh Tôi Mặc Kệ Bạn Cùng Phòng Ôm Mộng Gả Vào Hào Môn",
       "slug": "trong-sinh-toi-mac-ke-ban-cung-phong-om-mong-ga-vao-hao-mon",
-      "score": 70,
+      "score": 66,
+      "demandScore": 64,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 1,
+      "audioCompetitionLevel": "low",
+      "opportunityScore": 66,
       "enMotif": "rebirth và rich-family romance",
       "viMotif": "trọng sinh và hào môn",
       "evidence": [
@@ -140,21 +46,71 @@
           "source": "youtube-search",
           "query": "truyện trọng sinh audio",
           "text": "Full audio |  TRỌNG SINH TÔI MẶC KỆ BẠN CÙNG PHÒNG ÔM MỘNG GẢ VÀO HÀO MÔN  | Củ Tỏi Audio #truyenhay"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Trọng Sinh Tôi Mặc Kệ Bạn Cùng Phòng Ôm Mộng Gả Vào Hào Môn\" audio",
+          "text": "Full audio |  TRỌNG SINH TÔI MẶC KỆ BẠN CÙNG PHÒNG ÔM MỘNG GẢ VÀO HÀO MÔN  | Củ Tỏi Audio #truyenhay"
         }
       ],
       "status": "draft"
     },
     {
-      "title": "Trùng Sinh Tôi Lấy Hết Tài Sản, Tra Nam và Trà Xanh Khóc Thét",
-      "slug": "trung-sinh-toi-lay-het-tai-san-tra-nam-va-tra-xanh-khoc-thet",
-      "score": 68,
-      "enMotif": "rebirth, green tea rival và emotional angst",
-      "viMotif": "trọng sinh, trà xanh và ngược tâm",
+      "title": "Mở Mắt Ra Lần Nữa, Ta Đã Trở Lại Ngày Đưa Hắn Vào Trích Tinh Lâu",
+      "slug": "mo-mat-ra-lan-nua-ta-da-tro-lai-ngay-dua-han-vao-trich-tinh-lau",
+      "score": 64,
+      "demandScore": 62,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 1,
+      "audioCompetitionLevel": "low",
+      "opportunityScore": 64,
+      "enMotif": "Vietnamese web fiction và romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "query": "truyện wattpad audio full",
+          "text": "TRUYỆN BOY LOVE FULL | MỞ MẮT RA LẦN NỮA, TA ĐÃ TRỞ LẠI NGÀY ĐƯA HẮN VÀO TRÍCH TINH LÂU"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Mở Mắt Ra Lần Nữa, Ta Đã Trở Lại Ngày Đưa Hắn Vào Trích Tinh Lâu\" \"truyện audio\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Mở Mắt Ra Lần Nữa, Ta Đã Trở Lại Ngày Đưa Hắn Vào Trích Tinh Lâu\" audio",
+          "text": "TRUYỆN BOY LOVE FULL | MỞ MẮT RA LẦN NỮA, TA ĐÃ TRỞ LẠI NGÀY ĐƯA HẮN VÀO TRÍCH TINH LÂU"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Trọng Sinh Tôi Mặc Kệ Tra Nam Ung Thư, Vả Trà Xanh Hồn Siêu Phách Tán",
+      "slug": "trong-sinh-toi-mac-ke-tra-nam-ung-thu-va-tra-xanh-hon-sieu-phach-tan",
+      "score": 64,
+      "demandScore": 62,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 1,
+      "audioCompetitionLevel": "low",
+      "opportunityScore": 64,
+      "enMotif": "rebirth và green tea rival",
+      "viMotif": "trọng sinh và trà xanh",
       "evidence": [
         {
           "source": "youtube-search",
           "query": "truyện trọng sinh audio",
-          "text": "Air Dry Clay \\u0026 Full audio| TRÙNG SINH TÔI LẤY HẾT TÀI SẢN, TRA NAM VÀ TRÀ XANH KHÓC THÉT|Truyenaudio"
+          "text": "FULL AUDIO| TRỌNG SINH TÔI MẶC KỆ TRA NAM UNG THƯ, VẢ TRÀ XANH HỒN SIÊU PHÁCH TÁN | Tập vẽ tô màu"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Trọng Sinh Tôi Mặc Kệ Tra Nam Ung Thư, Vả Trà Xanh Hồn Siêu Phách Tán\" \"truyện audio\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Trọng Sinh Tôi Mặc Kệ Tra Nam Ung Thư, Vả Trà Xanh Hồn Siêu Phách Tán\" audio",
+          "text": "FULL AUDIO| TRỌNG SINH TÔI MẶC KỆ TRA NAM UNG THƯ, VẢ TRÀ XANH HỒN SIÊU PHÁCH TÁN | Tập vẽ tô màu"
         }
       ],
       "status": "draft"
@@ -162,7 +118,12 @@
     {
       "title": "Tái Sinh, Tôi Khoanh Tay Đứng Nhìn Em Gái Tự Hủy Hoại Cuộc Đời",
       "slug": "tai-sinh-toi-khoanh-tay-dung-nhin-em-gai-tu-huy-hoai-cuoc-doi",
-      "score": 68,
+      "score": 58,
+      "demandScore": 62,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 58,
       "enMotif": "rebirth",
       "viMotif": "trọng sinh",
       "evidence": [
@@ -170,6 +131,16 @@
           "source": "youtube-search",
           "query": "truyện trọng sinh audio",
           "text": "[TRUYỆN AUDIO] Tái Sinh, Tôi Khoanh Tay Đứng Nhìn Em Gái Tự Hủy Hoại Cuộc Đời | Dịt Dàng Audio"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Tái Sinh, Tôi Khoanh Tay Đứng Nhìn Em Gái Tự Hủy Hoại Cuộc Đời\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Tái Sinh, Tôi Khoanh Tay Đứng Nhìn Em Gái Tự Hủy Hoại Cuộc Đời\" \"truyện audio\"",
+          "text": "fetch failed"
         }
       ],
       "status": "draft"
@@ -177,7 +148,12 @@
     {
       "title": "Chị Gái Trà Xanh Giả Bệnh Cướp Chồng, Nhưng Anh Chỉ Yêu Mình Tôi",
       "slug": "chi-gai-tra-xanh-gia-benh-cuop-chong-nhung-anh-chi-yeu-minh-toi",
-      "score": 68,
+      "score": 58,
+      "demandScore": 62,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 58,
       "enMotif": "green tea rival",
       "viMotif": "trà xanh",
       "evidence": [
@@ -185,6 +161,16 @@
           "source": "youtube-search",
           "query": "truyện trà xanh audio",
           "text": "Chị Gái Trà Xanh Giả Bệnh Cướp Chồng, Nhưng Anh Chỉ Yêu Mình Tôi | Truyện Full"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Chị Gái Trà Xanh Giả Bệnh Cướp Chồng, Nhưng Anh Chỉ Yêu Mình Tôi\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Chị Gái Trà Xanh Giả Bệnh Cướp Chồng, Nhưng Anh Chỉ Yêu Mình Tôi\" \"truyện audio\"",
+          "text": "fetch failed"
         }
       ],
       "status": "draft"
@@ -192,7 +178,12 @@
     {
       "title": "Em Gái Trà Xanh Bị Cả Nhà Nghe Được Tiếng Lòng, Tôi Chỉ Việc Xem Kịch",
       "slug": "em-gai-tra-xanh-bi-ca-nha-nghe-duoc-tieng-long-toi-chi-viec-xem-kich",
-      "score": 68,
+      "score": 58,
+      "demandScore": 62,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 58,
       "enMotif": "green tea rival",
       "viMotif": "trà xanh",
       "evidence": [
@@ -200,6 +191,61 @@
           "source": "youtube-search",
           "query": "truyện trà xanh audio",
           "text": "Em gái trà xanh bị cả nhà nghe được tiếng lòng, tôi chỉ việc xem kịch | Full audio"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Em Gái Trà Xanh Bị Cả Nhà Nghe Được Tiếng Lòng, Tôi Chỉ Việc Xem Kịch\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Em Gái Trà Xanh Bị Cả Nhà Nghe Được Tiếng Lòng, Tôi Chỉ Việc Xem Kịch\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Đam Mỹ Trọng Sinh Hay Nhất",
+      "slug": "dam-my-trong-sinh-hay-nhat",
+      "score": 57,
+      "demandScore": 75,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 4,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 57,
+      "enMotif": "rebirth",
+      "viMotif": "trọng sinh",
+      "evidence": [
+        {
+          "source": "google-suggest",
+          "query": "truyện trọng sinh audio",
+          "text": "truyện audio đam mỹ trọng sinh hay nhất"
+        },
+        {
+          "source": "google-suggest",
+          "query": "truyện trọng sinh audio hay",
+          "text": "truyện audio đam mỹ trọng sinh hay nhất"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Đam Mỹ Trọng Sinh Hay Nhất\" \"truyện audio\"",
+          "text": "[1] Hồ Sơ Thần Côn - Nhất Thế Hoa Thường | Đam Mỹ | Trọng Sinh | Phong Thủy | Truyện Audio Hay Nhất"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Đam Mỹ Trọng Sinh Hay Nhất\" \"truyện audio\"",
+          "text": "Truyện Đam Mỹ  [FULL] Trọng Sinh: Tướng Quân Cưng Chiều Phu Quân Nhỏ Nhút Nhát"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Đam Mỹ Trọng Sinh Hay Nhất\" \"truyện audio\"",
+          "text": "[Chương 1 – 50] Phế Sài Trọng Sinh Chi Đệ Nhất Yêu Tiên | Audio Đam Mỹ"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Đam Mỹ Trọng Sinh Hay Nhất\" \"truyện audio\"",
+          "text": "[ Audio Truyện BL ] Tôi Trọng Sinh Trở Thành Người Được Vương Gia Sủng Nhất - Đam Mỹ FULL"
         }
       ],
       "status": "draft"

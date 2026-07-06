@@ -13,7 +13,14 @@ Outputs:
 - `data/story-title-bot/drafts/YYYY-MM-DD.json`
 - `data/story-title-bot/drafts/YYYY-MM-DD.md`
 
-The bot collects Google Suggest and YouTube search signals, extracts story-title candidates, dedupes existing pages, scores candidates, and writes reviewable drafts.
+The bot collects Google Suggest and YouTube search signals, extracts story-title candidates, dedupes existing pages, estimates exact-title audio competition, scores candidates by opportunity, and writes reviewable drafts.
+
+V2 scoring favors SEO gaps:
+
+- Higher demand from Wattpad/TruyenFull/story search suggestions.
+- Lower score when exact-title YouTube audio already has several matches.
+- `Opportunity score = demand + weak audio signal - audio competition penalty`.
+- Competition levels: `none`, `low`, `medium`, `high`, or `unknown` when the check fails.
 
 ## Run Local Schedule
 
