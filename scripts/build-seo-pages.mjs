@@ -1498,6 +1498,13 @@ const topics = [
     enMotif: "rich-family romance",
     viMotif: "hào môn",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "nuoi-vo-nho-bao-nam-cuoi-cung-cung-duoc-an",
+    title: "Nuôi Vợ Nhỏ Bao Năm Cuối Cùng Cũng Được Ăn",
+    enMotif: "Vietnamese web fiction và romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["vi"]
   })
 ];
 
