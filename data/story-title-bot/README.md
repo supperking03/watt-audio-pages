@@ -70,7 +70,7 @@ Use:
 
 ```bash
 STORY_TITLE_BOT_AUTO_PUBLISH="1"
-STORY_TITLE_BOT_PUBLISH_MIN_SCORE="70"
+STORY_TITLE_BOT_PUBLISH_MIN_SCORE="65"
 STORY_TITLE_BOT_PUBLISH_MAX="1"
 STORY_TITLE_BOT_GIT_PUSH="1"
 ```
@@ -80,7 +80,7 @@ The publisher checks duplicate slugs and duplicate normalized titles before inse
 Manual dry run:
 
 ```bash
-node scripts/publish-story-title-drafts.mjs --min-score=70 --max=1 --dry-run
+node scripts/publish-story-title-drafts.mjs --min-score=65 --max=1 --dry-run
 ```
 
 ## Guardrails

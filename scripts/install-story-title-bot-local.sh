@@ -24,7 +24,7 @@ if [ ! -f "$ENV_FILE" ]; then
     echo "WATT_AUDIO_PAGES_DIR=\"$PROJECT_DIR\""
     echo "STORY_TITLE_BOT_LIMIT=\"12\""
     echo "STORY_TITLE_BOT_AUTO_PUBLISH=\"0\""
-    echo "STORY_TITLE_BOT_PUBLISH_MIN_SCORE=\"70\""
+    echo "STORY_TITLE_BOT_PUBLISH_MIN_SCORE=\"65\""
     echo "STORY_TITLE_BOT_PUBLISH_MAX=\"1\""
     echo "STORY_TITLE_BOT_GIT_PUSH=\"1\""
     echo "NODE_BIN=\"$(command -v node)\""
