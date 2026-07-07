@@ -24,6 +24,10 @@ mkdir -p "$HOME/.bubu"
 
 ts() { date '+%F %T %Z'; }
 
+run_git() {
+  ( cd / && git -C "$PROJECT_DIR" "$@" )
+}
+
 send_email() {
   local subject="$1" body="$2"
   if [ ! -f "$NOTIFY_ENV" ]; then
@@ -117,21 +121,21 @@ if [ "$status" -eq 0 ] && [ "$AUTO_PUBLISH" = "1" ]; then
       published_links="${published_links}https://wattaudios.com/vi/articles/$slug.html
 "
     done
-    git -C "$PROJECT_DIR" add scripts/build-seo-pages.mjs sitemap.xml llms.txt .well-known/llms.txt vi/articles/index.html articles/index.html data/story-title-bot/drafts/*.json data/story-title-bot/drafts/*.md >> "$LOG" 2>&1 || git_status=$?
+    run_git add scripts/build-seo-pages.mjs sitemap.xml llms.txt .well-known/llms.txt vi/articles/index.html articles/index.html data/story-title-bot/drafts/*.json data/story-title-bot/drafts/*.md >> "$LOG" 2>&1 || git_status=$?
     for slug in $slugs; do
-      git -C "$PROJECT_DIR" add "vi/articles/$slug.html" "articles/$slug.html" >> "$LOG" 2>&1 || git_status=$?
+      run_git add "vi/articles/$slug.html" "articles/$slug.html" >> "$LOG" 2>&1 || git_status=$?
     done
     if [ "$git_status" -eq 0 ]; then
-      if git -C "$PROJECT_DIR" diff --cached --quiet; then
+      if run_git diff --cached --quiet; then
         git_output="No staged changes after publish."
       else
         first_slug=$(printf '%s\n' "$slugs" | head -1)
         commit_msg="seo: publish story audio guide ${first_slug:-draft}"
-        git_output=$(git -C "$PROJECT_DIR" commit -m "$commit_msg" 2>&1)
+        git_output=$(run_git commit -m "$commit_msg" 2>&1)
         git_status=$?
         printf '%s\n' "$git_output" >> "$LOG"
         if [ "$git_status" -eq 0 ] && [ "$GIT_PUSH" = "1" ]; then
-          push_output=$(git -C "$PROJECT_DIR" push 2>&1)
+          push_output=$(run_git push 2>&1)
           push_status=$?
           git_output="$git_output
 

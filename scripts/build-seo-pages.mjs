@@ -1505,6 +1505,13 @@ const topics = [
     enMotif: "Vietnamese web fiction và romance drama",
     viMotif: "truyện mạng Việt và romance drama",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "tra-xanh-choc-nham-vo-cung-cua-co-tong",
+    title: "Trà Xanh Chọc Nhầm Vợ Cưng Của Cố Tổng",
+    enMotif: "green tea rival và school romance",
+    viMotif: "trà xanh và vườn trường",
+    languages: ["vi"]
   })
 ];
 
