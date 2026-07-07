@@ -1512,6 +1512,13 @@ const topics = [
     enMotif: "green tea rival và school romance",
     viMotif: "trà xanh và vườn trường",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "dam-my-trong-sinh-hay-nhat",
+    title: "Đam Mỹ Trọng Sinh Hay Nhất",
+    enMotif: "rebirth",
+    viMotif: "trọng sinh",
+    languages: ["vi"]
   })
 ];
 
