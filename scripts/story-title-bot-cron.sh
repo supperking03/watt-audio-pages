@@ -10,6 +10,13 @@ if [ -f "$ENV_FILE" ]; then
   # shellcheck disable=SC1090
   source "$ENV_FILE"
 fi
+SITEMAP_ENV_FILE="$HOME/.bubu/watt-audio-sitemap-submit.env"
+if [ -f "$SITEMAP_ENV_FILE" ]; then
+  # shellcheck disable=SC1090
+  set -a
+  source "$SITEMAP_ENV_FILE"
+  set +a
+fi
 
 PROJECT_DIR="${WATT_AUDIO_PAGES_DIR:-/Users/kelvin/Downloads/watt-audio-pages}"
 LOG="$HOME/.bubu/watt-audio-story-title-bot.log"
@@ -109,6 +116,7 @@ git_output=""
 git_status=0
 published_links=""
 published_count=0
+sitemap_output=""
 if [ "$status" -eq 0 ] && [ "$AUTO_PUBLISH" = "1" ]; then
   publish_output=$(run_node scripts/publish-story-title-drafts.mjs --min-score="$PUBLISH_MIN_SCORE" --max="$PUBLISH_MAX" --build 2>&1)
   publish_status=$?
@@ -127,6 +135,10 @@ if [ "$status" -eq 0 ] && [ "$AUTO_PUBLISH" = "1" ]; then
     git_output=$(run_node scripts/commit-story-title-publish.mjs $push_arg --message "$commit_msg" --slugs $slugs 2>&1)
     git_status=$?
     printf '%s\n' "$git_output" >> "$LOG"
+    if [ "$git_status" -eq 0 ] && [ "$GIT_PUSH" = "1" ] && [ "${GSC_SITEMAP_SUBMIT_ENABLED:-0}" = "1" ]; then
+      sitemap_output=$(run_node scripts/submit-sitemap.mjs 2>&1)
+      printf '%s\n' "$sitemap_output" >> "$LOG"
+    fi
   fi
 fi
 
@@ -145,7 +157,10 @@ $published_links"
 $publish_output
 
 Git output:
-${git_output:-No publish commit was needed.}"
+${git_output:-No publish commit was needed.}
+
+Sitemap submit:
+${sitemap_output:-Skipped or not configured.}"
   else
     mode="Draft-only mode. No article was published."
     publish_summary="No article was published because auto-publish is off."
