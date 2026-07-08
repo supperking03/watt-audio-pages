@@ -1519,6 +1519,13 @@ const topics = [
     enMotif: "rebirth",
     viMotif: "trọng sinh",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "ga-cho-thai-tu-gia-ngo-dau-anh-sieu-nghien-vo",
+    title: "Gả cho Thái Tử Gia Ngờ Đâu Anh Siêu Nghiện Vợ",
+    enMotif: "Vietnamese web fiction và romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["vi"]
   })
 ];
 

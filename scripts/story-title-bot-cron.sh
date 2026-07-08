@@ -24,8 +24,12 @@ mkdir -p "$HOME/.bubu"
 
 ts() { date '+%F %T %Z'; }
 
+run_node() {
+  ( cd "$PROJECT_DIR" && "$NODE_BIN" "$@" )
+}
+
 run_git() {
-  ( cd / && git -C "$PROJECT_DIR" "$@" )
+  ( cd / && GIT_DIR="$PROJECT_DIR/.git" GIT_WORK_TREE="$PROJECT_DIR" git "$@" )
 }
 
 send_email() {
@@ -69,8 +73,6 @@ if [ ! -d "$PROJECT_DIR" ]; then
   exit 1
 fi
 
-cd "$PROJECT_DIR" || exit 1
-
 NODE_BIN="${NODE_BIN:-$(command -v node || true)}"
 if [ -z "$NODE_BIN" ]; then
   msg="Node.js not found in launchd PATH. Set NODE_BIN in ~/.bubu/watt-audio-story-title-bot.env"
@@ -79,7 +81,7 @@ if [ -z "$NODE_BIN" ]; then
   exit 1
 fi
 
-if ! "$NODE_BIN" --check scripts/run-story-title-bot.mjs >> "$LOG" 2>&1; then
+if ! run_node --check scripts/run-story-title-bot.mjs >> "$LOG" 2>&1; then
   send_email "❌ Watt Audio SEO bot failed ($(date '+%F %H:%M'))" \
 "Syntax check failed.
 
@@ -88,7 +90,7 @@ Log: $LOG"
   exit 1
 fi
 
-if ! "$NODE_BIN" --check scripts/publish-story-title-drafts.mjs >> "$LOG" 2>&1; then
+if ! run_node --check scripts/publish-story-title-drafts.mjs >> "$LOG" 2>&1; then
   send_email "❌ Watt Audio SEO bot failed ($(date '+%F %H:%M'))" \
 "Publisher syntax check failed.
 
@@ -97,7 +99,7 @@ Log: $LOG"
   exit 1
 fi
 
-output=$("$NODE_BIN" scripts/run-story-title-bot.mjs --limit="$LIMIT" 2>&1)
+output=$(run_node scripts/run-story-title-bot.mjs --limit="$LIMIT" 2>&1)
 status=$?
 printf '%s\n' "$output" >> "$LOG"
 
@@ -111,7 +113,7 @@ git_status=0
 published_links=""
 published_count=0
 if [ "$status" -eq 0 ] && [ "$AUTO_PUBLISH" = "1" ]; then
-  publish_output=$("$NODE_BIN" scripts/publish-story-title-drafts.mjs --min-score="$PUBLISH_MIN_SCORE" --max="$PUBLISH_MAX" --build 2>&1)
+  publish_output=$(run_node scripts/publish-story-title-drafts.mjs --min-score="$PUBLISH_MIN_SCORE" --max="$PUBLISH_MAX" --build 2>&1)
   publish_status=$?
   printf '%s\n' "$publish_output" >> "$LOG"
   if [ "$publish_status" -eq 0 ] && printf '%s' "$publish_output" | grep -q '^Publishable drafts:'; then
