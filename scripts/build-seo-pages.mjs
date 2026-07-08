@@ -1540,6 +1540,13 @@ const topics = [
     enMotif: "school romance",
     viMotif: "vườn trường",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "bi-ep-ga-thay-em-gai-toi-bat-che-do-mo-hon-dep-loan-hao-mon",
+    title: "Bị Ép Gả Thay Em Gái, Tôi Bật Chế Độ Mỏ Hỗn Dẹp Loạn Hào Môn",
+    enMotif: "rich-family romance",
+    viMotif: "hào môn",
+    languages: ["vi"]
   })
 ];
 

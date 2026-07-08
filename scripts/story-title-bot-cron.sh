@@ -29,10 +29,6 @@ run_node() {
   ( cd "$PROJECT_DIR" && "$NODE_BIN" "$@" )
 }
 
-run_git() {
-  ( cd / && PWD=/ git -C "$PROJECT_DIR" "$@" )
-}
-
 send_email() {
   local subject="$1" body="$2"
   if [ ! -f "$NOTIFY_ENV" ]; then
@@ -124,30 +120,13 @@ if [ "$status" -eq 0 ] && [ "$AUTO_PUBLISH" = "1" ]; then
       published_links="${published_links}https://wattaudios.com/vi/articles/$slug.html
 "
     done
-    run_git add scripts/build-seo-pages.mjs sitemap.xml llms.txt .well-known/llms.txt vi/articles/index.html articles/index.html data/story-title-bot/drafts/*.json data/story-title-bot/drafts/*.md >> "$LOG" 2>&1 || git_status=$?
-    for slug in $slugs; do
-      run_git add "vi/articles/$slug.html" "articles/$slug.html" >> "$LOG" 2>&1 || git_status=$?
-    done
-    if [ "$git_status" -eq 0 ]; then
-      if run_git diff --cached --quiet; then
-        git_output="No staged changes after publish."
-      else
-        first_slug=$(printf '%s\n' "$slugs" | head -1)
-        commit_msg="seo: publish story audio guide ${first_slug:-draft}"
-        git_output=$(run_git commit -m "$commit_msg" 2>&1)
-        git_status=$?
-        printf '%s\n' "$git_output" >> "$LOG"
-        if [ "$git_status" -eq 0 ] && [ "$GIT_PUSH" = "1" ]; then
-          push_output=$(run_git push 2>&1)
-          push_status=$?
-          git_output="$git_output
-
-$push_output"
-          git_status=$push_status
-          printf '%s\n' "$push_output" >> "$LOG"
-        fi
-      fi
-    fi
+    first_slug=$(printf '%s\n' "$slugs" | head -1)
+    commit_msg="seo: publish story audio guide ${first_slug:-draft}"
+    push_arg=""
+    if [ "$GIT_PUSH" = "1" ]; then push_arg="--push"; fi
+    git_output=$(run_node scripts/commit-story-title-publish.mjs $push_arg --message "$commit_msg" --slugs $slugs 2>&1)
+    git_status=$?
+    printf '%s\n' "$git_output" >> "$LOG"
   fi
 fi
 
