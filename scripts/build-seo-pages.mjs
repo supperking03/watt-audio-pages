@@ -1533,6 +1533,13 @@ const topics = [
     enMotif: "school romance",
     viMotif: "vườn trường",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "ban-than-phai-long-hoc-ba-con-toi-yeu-dai-ca-truong",
+    title: "Bạn Thân Phải Lòng Học Bá Còn Tôi Yêu Đại Ca Trường",
+    enMotif: "school romance",
+    viMotif: "vườn trường",
+    languages: ["vi"]
   })
 ];
 

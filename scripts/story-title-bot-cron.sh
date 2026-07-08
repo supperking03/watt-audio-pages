@@ -30,7 +30,7 @@ run_node() {
 }
 
 run_git() {
-  ( cd / && GIT_DIR="$PROJECT_DIR/.git" GIT_WORK_TREE="$PROJECT_DIR" git "$@" )
+  ( cd / && PWD=/ git -C "$PROJECT_DIR" "$@" )
 }
 
 send_email() {
