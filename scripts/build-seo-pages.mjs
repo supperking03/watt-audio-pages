@@ -1547,6 +1547,13 @@ const topics = [
     enMotif: "rich-family romance",
     viMotif: "hào môn",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "toi-va-co-ban-than-duoc-hai-nam-than-truong-dien-cuong-theo-duoi",
+    title: "Tôi Và Cô Bạn Thân Được Hai Nam Thần Trường Điên Cuồng Theo Đuổi",
+    enMotif: "school romance",
+    viMotif: "vườn trường",
+    languages: ["vi"]
   })
 ];
 

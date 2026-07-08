@@ -1,31 +1,56 @@
 {
-  "generatedAt": "2026-07-08T04:57:09.334Z",
+  "generatedAt": "2026-07-08T05:00:23.460Z",
   "date": "2026-07-08",
   "mode": "network",
-  "sourceCount": 218,
+  "sourceCount": 223,
   "scoring": "v2-opportunity-demand-minus-audio-competition",
   "candidates": [
     {
-      "title": "Bị Ép Gả Thay Em Gái, Tôi Bật Chế Độ Mỏ Hỗn Dẹp Loạn Hào Môn",
-      "slug": "bi-ep-ga-thay-em-gai-toi-bat-che-do-mo-hon-dep-loan-hao-mon",
-      "score": 68,
-      "demandScore": 66,
+      "title": "Tôi Và Cô Bạn Thân Được Hai Nam Thần Trường Điên Cuồng Theo Đuổi",
+      "slug": "toi-va-co-ban-than-duoc-hai-nam-than-truong-dien-cuong-theo-duoi",
+      "score": 66,
+      "demandScore": 64,
       "audioSignalScore": 8,
       "audioCompetitionScore": 1,
       "audioCompetitionLevel": "low",
-      "opportunityScore": 68,
-      "enMotif": "rich-family romance",
-      "viMotif": "hào môn",
+      "opportunityScore": 66,
+      "enMotif": "school romance",
+      "viMotif": "vườn trường",
       "evidence": [
         {
           "source": "youtube-search",
           "query": "truyện audio full mới nhất",
-          "text": "[Truyện Audio Full] | BỊ ÉP GẢ THAY EM GÁI, TÔI BẬT CHẾ ĐỘ MỎ HỖN DẸP LOẠN HÀO MÔN | Vả Mặt Audio"
+          "text": "Tôi Và Cô Bạn Thân Được Hai Nam Thần Trường Điên Cuồng Theo Đuổi | Truyện Full"
         },
         {
           "source": "youtube-audio-competition",
-          "query": "\"Bị Ép Gả Thay Em Gái, Tôi Bật Chế Độ Mỏ Hỗn Dẹp Loạn Hào Môn\" \"truyện audio\"",
-          "text": "[Truyện Audio Full] | BỊ ÉP GẢ THAY EM GÁI, TÔI BẬT CHẾ ĐỘ MỎ HỖN DẸP LOẠN HÀO MÔN | Vả Mặt Audio"
+          "query": "\"Tôi Và Cô Bạn Thân Được Hai Nam Thần Trường Điên Cuồng Theo Đuổi\" \"truyện audio\"",
+          "text": "Tôi Và Cô Bạn Thân Được Hai Nam Thần Trường Điên Cuồng Theo Đuổi | Truyện Full"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Nữ Minh Tinh Mỏ Hỗn Đại Náo Show Thực Tế Khiến Toàn Mạng Chấn Động",
+      "slug": "nu-minh-tinh-mo-hon-dai-nao-show-thuc-te-khien-toan-mang-chan-dong",
+      "score": 66,
+      "demandScore": 64,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 1,
+      "audioCompetitionLevel": "low",
+      "opportunityScore": 66,
+      "enMotif": "Vietnamese web fiction và romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "query": "truyện audio full mới nhất",
+          "text": "[Truyện Audio Full] | NỮ MINH TINH MỎ HỖN ĐẠI NÁO SHOW THỰC TẾ KHIẾN TOÀN MẠNG CHẤN ĐỘNG | Vả Mặt"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Nữ Minh Tinh Mỏ Hỗn Đại Náo Show Thực Tế Khiến Toàn Mạng Chấn Động\" \"truyện audio\"",
+          "text": "[Truyện Audio Full] | NỮ MINH TINH MỎ HỖN ĐẠI NÁO SHOW THỰC TẾ KHIẾN TOÀN MẠNG CHẤN ĐỘNG | Vả Mặt"
         }
       ],
       "status": "draft"
@@ -73,6 +98,11 @@
           "text": "Full audio |  TRỌNG SINH TÔI MẶC KỆ BẠN CÙNG PHÒNG ÔM MỘNG GẢ VÀO HÀO MÔN  | Củ Tỏi Audio #truyenhay"
         },
         {
+          "source": "competition-error",
+          "query": "\"Trọng Sinh Tôi Mặc Kệ Bạn Cùng Phòng Ôm Mộng Gả Vào Hào Môn\" \"truyện audio\"",
+          "text": "fetch failed"
+        },
+        {
           "source": "youtube-audio-competition",
           "query": "\"Trọng Sinh Tôi Mặc Kệ Bạn Cùng Phòng Ôm Mộng Gả Vào Hào Môn\" audio",
           "text": "Full audio |  TRỌNG SINH TÔI MẶC KỆ BẠN CÙNG PHÒNG ÔM MỘNG GẢ VÀO HÀO MÔN  | Củ Tỏi Audio #truyenhay"
@@ -81,14 +111,89 @@
       "status": "draft"
     },
     {
-      "title": "Bạn Cùng Phòng Chê Đối Tượng Yêu Qua Mạng, Thế là Nhờ Tôi Nói Chuyện Hộ",
-      "slug": "ban-cung-phong-che-doi-tuong-yeu-qua-mang-the-la-nho-toi-noi-chuyen-ho",
+      "title": "Trọng Sinh Tôi Mặc Kệ Chị Gái Chọn Kẻ Bệnh Kiều Biến Thái",
+      "slug": "trong-sinh-toi-mac-ke-chi-gai-chon-ke-benh-kieu-bien-thai",
       "score": 64,
       "demandScore": 62,
       "audioSignalScore": 8,
       "audioCompetitionScore": 1,
       "audioCompetitionLevel": "low",
       "opportunityScore": 64,
+      "enMotif": "rebirth",
+      "viMotif": "trọng sinh",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "query": "truyện audio full mới nhất",
+          "text": "Trọng sinh tôi mặc kệ chị gái chọn kẻ bệnh kiều biến thái | Truyện full"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Trọng Sinh Tôi Mặc Kệ Chị Gái Chọn Kẻ Bệnh Kiều Biến Thái\" \"truyện audio\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Trọng Sinh Tôi Mặc Kệ Chị Gái Chọn Kẻ Bệnh Kiều Biến Thái\" audio",
+          "text": "Trọng sinh tôi mặc kệ chị gái chọn kẻ bệnh kiều biến thái | Truyện full"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Cục Cưng Đòi Chia Tay, Thái Tử Gia Phát Điên Rồi",
+      "slug": "cuc-cung-doi-chia-tay-thai-tu-gia-phat-dien-roi",
+      "score": 62,
+      "demandScore": 69,
+      "audioSignalScore": 11,
+      "audioCompetitionScore": 4,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 62,
+      "enMotif": "Vietnamese web fiction và romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "query": "truyện audio full mới nhất",
+          "text": "[Truyện Audio] | Cục Cưng Đòi Chia Tay, Thái Tử Gia Phát Điên Rồi | Phụng Miên Audio #truyenaudio"
+        },
+        {
+          "source": "youtube-search",
+          "query": "truyện ngôn tình audio full",
+          "text": "[Truyện Audio] | Cục Cưng Đòi Chia Tay, Thái Tử Gia Phát Điên Rồi | Phụng Miên Audio #truyenaudio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Cục Cưng Đòi Chia Tay, Thái Tử Gia Phát Điên Rồi\" \"truyện audio\"",
+          "text": "[Truyện Audio] | Cục Cưng Đòi Chia Tay, Thái Tử Gia Phát Điên Rồi | Phụng Miên Audio #truyenaudio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Cục Cưng Đòi Chia Tay, Thái Tử Gia Phát Điên Rồi\" audio",
+          "text": "Cục Cưng Đòi Chia Tay, Thái Tử Gia Phát Điên Rồi | Truyện full"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Cục Cưng Đòi Chia Tay, Thái Tử Gia Phát Điên Rồi\" \"truyện audio\"",
+          "text": "[ Truyện Audio ] Cục Cưng Đòi Chia Tay, Thái Tử Gia Phát Điên Rồi"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Cục Cưng Đòi Chia Tay, Thái Tử Gia Phát Điên Rồi\" audio",
+          "text": "( FULL AUDIO ) CỤC CƯNG ĐÒI CHIA TAY , THÁI TỬ GIA PHÁT ĐIÊN RỒI !!"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Bạn Cùng Phòng Chê Đối Tượng Yêu Qua Mạng, Thế là Nhờ Tôi Nói Chuyện Hộ",
+      "slug": "ban-cung-phong-che-doi-tuong-yeu-qua-mang-the-la-nho-toi-noi-chuyen-ho",
+      "score": 58,
+      "demandScore": 62,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 58,
       "enMotif": "Vietnamese web fiction và romance drama",
       "viMotif": "truyện mạng Việt và romance drama",
       "evidence": [
@@ -98,9 +203,14 @@
           "text": "TRUYỆN BOY LOVE FULL | BẠN CÙNG PHÒNG CHÊ ĐỐI TƯỢNG YÊU QUA MẠNG, THẾ LÀ NHỜ TÔI NÓI CHUYỆN HỘ"
         },
         {
-          "source": "youtube-audio-competition",
+          "source": "competition-error",
           "query": "\"Bạn Cùng Phòng Chê Đối Tượng Yêu Qua Mạng, Thế là Nhờ Tôi Nói Chuyện Hộ\" audio",
-          "text": "TRUYỆN BOY LOVE FULL | BẠN CÙNG PHÒNG CHÊ ĐỐI TƯỢNG YÊU QUA MẠNG, THẾ LÀ NHỜ TÔI NÓI CHUYỆN HỘ"
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Bạn Cùng Phòng Chê Đối Tượng Yêu Qua Mạng, Thế là Nhờ Tôi Nói Chuyện Hộ\" \"truyện audio\"",
+          "text": "fetch failed"
         }
       ],
       "status": "draft"
@@ -108,12 +218,12 @@
     {
       "title": "Chỉ Còn Cách Một Bước Nữa là Theo Đuổi Được Vợ, Hắn Lại Mất Trí Nhớ",
       "slug": "chi-con-cach-mot-buoc-nua-la-theo-duoi-duoc-vo-han-lai-mat-tri-nho",
-      "score": 64,
+      "score": 58,
       "demandScore": 62,
       "audioSignalScore": 8,
-      "audioCompetitionScore": 1,
-      "audioCompetitionLevel": "low",
-      "opportunityScore": 64,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 58,
       "enMotif": "Vietnamese web fiction và romance drama",
       "viMotif": "truyện mạng Việt và romance drama",
       "evidence": [
@@ -123,39 +233,14 @@
           "text": "BOY LOVE FULL | CHỈ CÒN CÁCH MỘT BƯỚC NỮA LÀ THEO ĐUỔI ĐƯỢC VỢ, HẮN LẠI MẤT TRÍ NHỚ | Đam Mỹ Zhihu"
         },
         {
-          "source": "youtube-audio-competition",
-          "query": "\"Chỉ Còn Cách Một Bước Nữa là Theo Đuổi Được Vợ, Hắn Lại Mất Trí Nhớ\" \"truyện audio\"",
-          "text": "BOY LOVE FULL | CHỈ CÒN CÁCH MỘT BƯỚC NỮA LÀ THEO ĐUỔI ĐƯỢC VỢ, HẮN LẠI MẤT TRÍ NHỚ | Đam Mỹ Zhihu"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "Chị Gái Trà Xanh Giả Bệnh Cướp Chồng, Nhưng Anh Chỉ Yêu Mình Tôi",
-      "slug": "chi-gai-tra-xanh-gia-benh-cuop-chong-nhung-anh-chi-yeu-minh-toi",
-      "score": 64,
-      "demandScore": 62,
-      "audioSignalScore": 8,
-      "audioCompetitionScore": 1,
-      "audioCompetitionLevel": "low",
-      "opportunityScore": 64,
-      "enMotif": "green tea rival",
-      "viMotif": "trà xanh",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "query": "truyện trà xanh audio",
-          "text": "Chị Gái Trà Xanh Giả Bệnh Cướp Chồng, Nhưng Anh Chỉ Yêu Mình Tôi | Truyện Full"
-        },
-        {
           "source": "competition-error",
-          "query": "\"Chị Gái Trà Xanh Giả Bệnh Cướp Chồng, Nhưng Anh Chỉ Yêu Mình Tôi\" \"truyện audio\"",
+          "query": "\"Chỉ Còn Cách Một Bước Nữa là Theo Đuổi Được Vợ, Hắn Lại Mất Trí Nhớ\" audio",
           "text": "fetch failed"
         },
         {
-          "source": "youtube-audio-competition",
-          "query": "\"Chị Gái Trà Xanh Giả Bệnh Cướp Chồng, Nhưng Anh Chỉ Yêu Mình Tôi\" audio",
-          "text": "Chị Gái Trà Xanh Giả Bệnh Cướp Chồng, Nhưng Anh Chỉ Yêu Mình Tôi | Truyện Full"
+          "source": "competition-error",
+          "query": "\"Chỉ Còn Cách Một Bước Nữa là Theo Đuổi Được Vợ, Hắn Lại Mất Trí Nhớ\" \"truyện audio\"",
+          "text": "fetch failed"
         }
       ],
       "status": "draft"
@@ -191,146 +276,41 @@
       "status": "draft"
     },
     {
-      "title": "Truyện Trọng Sinh Hay",
-      "slug": "truyen-trong-sinh-hay",
-      "score": 57,
-      "demandScore": 69,
-      "audioSignalScore": 0,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "unknown",
-      "opportunityScore": 57,
-      "enMotif": "rebirth",
-      "viMotif": "trọng sinh",
-      "evidence": [
-        {
-          "source": "google-demand-suggest",
-          "query": "truyện wattpad trọng sinh",
-          "text": "truyện trọng sinh hay wattpad"
-        },
-        {
-          "source": "google-demand-suggest",
-          "query": "truyện wattpad trọng sinh hay",
-          "text": "truyện trọng sinh hay wattpad"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"Truyện Trọng Sinh Hay\" audio",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"Truyện Trọng Sinh Hay\" \"truyện audio\"",
-          "text": "fetch failed"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "Ngôn Tình Hay Nhất",
-      "slug": "ngon-tinh-hay-nhat",
-      "score": 57,
-      "demandScore": 69,
-      "audioSignalScore": 0,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "unknown",
-      "opportunityScore": 57,
+      "title": "Vị Hôn Thê Nuôi Từ Nhỏ Của Đại Thiếu Gia",
+      "slug": "vi-hon-the-nuoi-tu-nho-cua-dai-thieu-gia",
+      "score": 56,
+      "demandScore": 63,
+      "audioSignalScore": 11,
+      "audioCompetitionScore": 3,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 56,
       "enMotif": "Vietnamese web fiction và romance drama",
       "viMotif": "truyện mạng Việt và romance drama",
       "evidence": [
         {
-          "source": "google-suggest",
-          "query": "truyện audio ngôn tình",
-          "text": "truyện audio ngôn tình hay nhất"
-        },
-        {
-          "source": "google-suggest",
-          "query": "truyện audio ngôn tình hay",
-          "text": "truyện audio ngôn tình hay nhất"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"Ngôn Tình Hay Nhất\" audio",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"Ngôn Tình Hay Nhất\" \"truyện audio\"",
-          "text": "fetch failed"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "Bà Trùm Mỏ Hỗn Xuyên Vào Thiên Kim Thật Nhà Hào Môn",
-      "slug": "ba-trum-mo-hon-xuyen-vao-thien-kim-that-nha-hao-mon",
-      "score": 56,
-      "demandScore": 60,
-      "audioSignalScore": 8,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "unknown",
-      "opportunityScore": 56,
-      "enMotif": "rich-family romance",
-      "viMotif": "hào môn",
-      "evidence": [
-        {
           "source": "youtube-search",
           "query": "truyện audio full mới nhất",
-          "text": "[Truyện Audio Full] | BÀ TRÙM MỎ HỖN XUYÊN VÀO THIÊN KIM THẬT NHÀ HÀO MÔN | Vả Mặt Audio"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"Bà Trùm Mỏ Hỗn Xuyên Vào Thiên Kim Thật Nhà Hào Môn\" audio",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"Bà Trùm Mỏ Hỗn Xuyên Vào Thiên Kim Thật Nhà Hào Môn\" \"truyện audio\"",
-          "text": "fetch failed"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "Hôn Ước Từ Bé với Ông Trùm Hắc Bang",
-      "slug": "hon-uoc-tu-be-voi-ong-trum-hac-bang",
-      "score": 54,
-      "demandScore": 61,
-      "audioSignalScore": 11,
-      "audioCompetitionScore": 4,
-      "audioCompetitionLevel": "medium",
-      "opportunityScore": 54,
-      "enMotif": "marriage drama",
-      "viMotif": "cưới gả",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "query": "truyện audio full mới nhất",
-          "text": "Truyện Audio || HÔN ƯỚC TỪ BÉ VỚI ÔNG TRÙM HẮC BANG (Full) || AnAn Audio"
+          "text": "[Truyện Audio] Vị Hôn Thê Nuôi Từ Nhỏ Của Đại Thiếu Gia | Mèo Cưng Audio"
         },
         {
           "source": "youtube-search",
           "query": "truyện ngôn tình audio full",
-          "text": "Truyện Audio || HÔN ƯỚC TỪ BÉ VỚI ÔNG TRÙM HẮC BANG (Full) || AnAn Audio"
+          "text": "[Truyện Audio] Vị Hôn Thê Nuôi Từ Nhỏ Của Đại Thiếu Gia | Mèo Cưng Audio"
         },
         {
           "source": "youtube-audio-competition",
-          "query": "\"Hôn Ước Từ Bé với Ông Trùm Hắc Bang\" \"truyện audio\"",
-          "text": "Truyện Audio || HÔN ƯỚC TỪ BÉ VỚI ÔNG TRÙM HẮC BANG (Full) || AnAn Audio"
+          "query": "\"Vị Hôn Thê Nuôi Từ Nhỏ Của Đại Thiếu Gia\" \"truyện audio\"",
+          "text": "[Truyện Audio] Vị Hôn Thê Nuôi Từ Nhỏ Của Đại Thiếu Gia | Mèo Cưng Audio"
         },
         {
           "source": "youtube-audio-competition",
-          "query": "\"Hôn Ước Từ Bé với Ông Trùm Hắc Bang\" \"truyện audio\"",
-          "text": "Hôn Ước Từ Bé Với Ông Trùm Hắc Bang  Truyện Audio FULL"
+          "query": "\"Vị Hôn Thê Nuôi Từ Nhỏ Của Đại Thiếu Gia\" \"truyện audio\"",
+          "text": "[Truyện Audio] Vị Hôn Thê Nuôi Từ Nhỏ Của Đại Thiếu Gia | Đậu Nành Audio"
         },
         {
           "source": "youtube-audio-competition",
-          "query": "\"Hôn Ước Từ Bé với Ông Trùm Hắc Bang\" audio",
-          "text": "[AUDIO]- HÔN ƯỚC TỪ BÉ VỚI ÔNG TRÙM HẮC BANG SIÊU DÍNH VỢ- FULL- TẤM AUDIO"
-        },
-        {
-          "source": "youtube-audio-competition",
-          "query": "\"Hôn Ước Từ Bé với Ông Trùm Hắc Bang\" audio",
-          "text": "[Truyện Audiu] HÔN ƯỚC TỪ BÉ VỚI ÔNG TRÙM HẮC BANG | Xuân xanh Audio"
+          "query": "\"Vị Hôn Thê Nuôi Từ Nhỏ Của Đại Thiếu Gia\" \"truyện audio\"",
+          "text": "[FULL AUDIO] Vị Hôn Thê Nuôi Từ Nhỏ Của Đại Thiếu Gia | Kho của Thỏ audio"
         }
       ],
       "status": "draft"
@@ -360,12 +340,12 @@
         {
           "source": "youtube-audio-competition",
           "query": "\"Ngôn Tình Trung Quốc Hay Nhất\" audio",
-          "text": "[TẬP 1]  13 NHÂN CÁCH CHỈ ĐỂ YÊU EM |Truyện Ngôn Tình Trung Quốc Hay Nhất| MC Phương Thùy| Hạc Toại"
+          "text": "Truyện ngôn tình Trung Quốc hay nhất 2025 | THIẾU GIA Ở RỂ (Tập 1) #trumtruyenvn"
         },
         {
           "source": "youtube-audio-competition",
           "query": "\"Ngôn Tình Trung Quốc Hay Nhất\" audio",
-          "text": "Truyện ngôn tình Trung Quốc hay nhất 2025 | THIẾU GIA Ở RỂ (Tập 1) #trumtruyenvn"
+          "text": "[TẬP 1]  13 NHÂN CÁCH CHỈ ĐỂ YÊU EM |Truyện Ngôn Tình Trung Quốc Hay Nhất| MC Phương Thùy| Hạc Toại"
         },
         {
           "source": "youtube-audio-competition",
@@ -375,7 +355,57 @@
         {
           "source": "youtube-audio-competition",
           "query": "\"Ngôn Tình Trung Quốc Hay Nhất\" audio",
-          "text": "Ngôn Tình 3D FULL NỮ PHỤ TRONG KỊCH BẢN CẨU HUYẾT | Phim Hoạt Hình 3D Trung Quốc Hay Nhất | 3D FULL"
+          "text": "[TẬP 2] 13 NHÂN CÁCH CHỈ ĐỂ YÊU EM |Truyện Ngôn Tình Trung Quốc Hay Nhất| MC Phương Thùy| Ánh Mắt"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ",
+      "slug": "trung-sinh-toi-quyet-nghe-theo-bo-me",
+      "score": 36,
+      "demandScore": 61,
+      "audioSignalScore": 11,
+      "audioCompetitionScore": 5,
+      "audioCompetitionLevel": "high",
+      "opportunityScore": 36,
+      "enMotif": "family drama",
+      "viMotif": "gia đình",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "query": "truyện audio full mới nhất",
+          "text": "[Truyện Audio] | Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ | Túi Mù Audio #audio  #truyenaudio"
+        },
+        {
+          "source": "youtube-search",
+          "query": "truyện trọng sinh audio",
+          "text": "[Truyện Audio] | Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ | Túi Mù Audio #audio  #truyenaudio"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ\" \"truyện audio\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ\" audio",
+          "text": "[Truyện Audio] | Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ | Túi Mù Audio #audio  #truyenaudio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ\" audio",
+          "text": "[Truyện Audio] | Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ | Aris Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ\" audio",
+          "text": "No 43. Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ\" audio",
+          "text": "TRUYỆN AUDIO | Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ"
         }
       ],
       "status": "draft"
