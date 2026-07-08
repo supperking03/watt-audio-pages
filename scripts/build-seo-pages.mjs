@@ -1526,6 +1526,13 @@ const topics = [
     enMotif: "Vietnamese web fiction và romance drama",
     viMotif: "truyện mạng Việt và romance drama",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "to-tinh-hoc-ba-that-bai-toi-yeu-luon-dai-ca-truong",
+    title: "Tỏ Tình Học Bá Thất Bại, Tôi Yêu Luôn Đại Ca Trường",
+    enMotif: "school romance",
+    viMotif: "vườn trường",
+    languages: ["vi"]
   })
 ];
 
