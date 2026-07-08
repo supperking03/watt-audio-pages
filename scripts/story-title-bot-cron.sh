@@ -21,6 +21,7 @@ PUBLISH_MAX="${STORY_TITLE_BOT_PUBLISH_MAX:-1}"
 GIT_PUSH="${STORY_TITLE_BOT_GIT_PUSH:-1}"
 
 mkdir -p "$HOME/.bubu"
+cd / || exit 1
 
 ts() { date '+%F %T %Z'; }
 
