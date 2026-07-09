@@ -1554,6 +1554,13 @@ const topics = [
     enMotif: "school romance",
     viMotif: "vườn trường",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "thien-kim-that-mo-hon-tro-ve-vua-co-nao-lai-vua-nhieu-tien",
+    title: "Thiên Kim Thật Mỏ Hỗn Trở Về Vừa Có Não Lại Vừa Nhiều Tiền",
+    enMotif: "Vietnamese web fiction và romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["vi"]
   })
 ];
 
