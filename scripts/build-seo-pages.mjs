@@ -1561,6 +1561,13 @@ const topics = [
     enMotif: "Vietnamese web fiction và romance drama",
     viMotif: "truyện mạng Việt và romance drama",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "choi-that-hay-thach-ai-ngo-toi-duoc-hon-ngay-dai-ca-truong",
+    title: "Chơi Thật Hay Thách, Ai Ngờ Tôi Được Hôn Ngay Đại Ca Trường",
+    enMotif: "school romance",
+    viMotif: "vườn trường",
+    languages: ["vi"]
   })
 ];
 
