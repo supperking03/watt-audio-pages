@@ -1568,6 +1568,13 @@ const topics = [
     enMotif: "school romance",
     viMotif: "vườn trường",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "tra-xanh-nha-toi-khong-ngo-toi-la-tra-xanh-thuong-hang",
+    title: "Trà Xanh Nhà Tôi Không Ngờ Tôi là Trà Xanh Thượng Hạng",
+    enMotif: "rebirth và green tea rival",
+    viMotif: "trọng sinh và trà xanh",
+    languages: ["vi"]
   })
 ];
 

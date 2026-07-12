@@ -1,0 +1,419 @@
+{
+  "generatedAt": "2026-07-12T03:00:04.225Z",
+  "date": "2026-07-12",
+  "mode": "network",
+  "sourceCount": 224,
+  "scoring": "v2-opportunity-demand-minus-audio-competition",
+  "candidates": [
+    {
+      "title": "Trà Xanh Nhà Tôi Không Ngờ Tôi là Trà Xanh Thượng Hạng",
+      "slug": "tra-xanh-nha-toi-khong-ngo-toi-la-tra-xanh-thuong-hang",
+      "score": 80,
+      "demandScore": 75,
+      "audioSignalScore": 11,
+      "audioCompetitionScore": 1,
+      "audioCompetitionLevel": "low",
+      "opportunityScore": 80,
+      "enMotif": "rebirth và green tea rival",
+      "viMotif": "trọng sinh và trà xanh",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "query": "truyện trọng sinh audio",
+          "text": "FULL AUDIO | TRÀ XANH NHÀ TÔI KHÔNG NGỜ TÔI LÀ TRÀ XANH THƯỢNG HẠNG | THẨM TIÊN SINH AUDIO"
+        },
+        {
+          "source": "youtube-search",
+          "query": "truyện trà xanh audio",
+          "text": "FULL AUDIO | TRÀ XANH NHÀ TÔI KHÔNG NGỜ TÔI LÀ TRÀ XANH THƯỢNG HẠNG | THẨM TIÊN SINH AUDIO"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Trà Xanh Nhà Tôi Không Ngờ Tôi là Trà Xanh Thượng Hạng\" audio",
+          "text": "FULL AUDIO | TRÀ XANH NHÀ TÔI KHÔNG NGỜ TÔI LÀ TRÀ XANH THƯỢNG HẠNG | THẨM TIÊN SINH AUDIO"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Cổ Trang - TỈ TỈ TRỌNG SINH, MUỐN THAY TA TIẾN CUNG - [LÝ MỘ UYỂN]",
+      "slug": "co-trang-ti-ti-trong-sinh-muon-thay-ta-tien-cung-ly-mo-uyen",
+      "score": 68,
+      "demandScore": 66,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 1,
+      "audioCompetitionLevel": "low",
+      "opportunityScore": 68,
+      "enMotif": "rebirth và palace drama",
+      "viMotif": "trọng sinh và cổ trang",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "query": "truyện trọng sinh audio",
+          "text": "Audio Cổ Trang - [FULL] TỈ TỈ TRỌNG SINH, MUỐN THAY TA TIẾN CUNG - [LÝ MỘ UYỂN]"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Cổ Trang - TỈ TỈ TRỌNG SINH, MUỐN THAY TA TIẾN CUNG - [LÝ MỘ UYỂN]\" \"truyện audio\"",
+          "text": "Audio Cổ Trang - [FULL] TỈ TỈ TRỌNG SINH, MUỐN THAY TA TIẾN CUNG - [LÝ MỘ UYỂN]"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Chị Gái Trà Xanh Giả Bệnh Cướp Chồng, Nhưng Anh Chỉ Yêu Mình Tôi",
+      "slug": "chi-gai-tra-xanh-gia-benh-cuop-chong-nhung-anh-chi-yeu-minh-toi",
+      "score": 58,
+      "demandScore": 62,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 58,
+      "enMotif": "green tea rival",
+      "viMotif": "trà xanh",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "query": "truyện trà xanh audio",
+          "text": "Chị Gái Trà Xanh Giả Bệnh Cướp Chồng, Nhưng Anh Chỉ Yêu Mình Tôi | Truyện Full"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Chị Gái Trà Xanh Giả Bệnh Cướp Chồng, Nhưng Anh Chỉ Yêu Mình Tôi\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Chị Gái Trà Xanh Giả Bệnh Cướp Chồng, Nhưng Anh Chỉ Yêu Mình Tôi\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Trà Xanh Muốn Quyến Rũ Kẻ Thù, Nhưng Anh Lại Cuồng Cưng Chiều Tôi",
+      "slug": "tra-xanh-muon-quyen-ru-ke-thu-nhung-anh-lai-cuong-cung-chieu-toi",
+      "score": 58,
+      "demandScore": 62,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 58,
+      "enMotif": "green tea rival",
+      "viMotif": "trà xanh",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "query": "truyện trà xanh audio",
+          "text": "[Truyện Audio] Trà Xanh Muốn Quyến Rũ Kẻ Thù, Nhưng Anh Lại Cuồng Cưng Chiều Tôi | Nhóc Cưng Audio"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Trà Xanh Muốn Quyến Rũ Kẻ Thù, Nhưng Anh Lại Cuồng Cưng Chiều Tôi\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Trà Xanh Muốn Quyến Rũ Kẻ Thù, Nhưng Anh Lại Cuồng Cưng Chiều Tôi\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Thiên Kim Thật Trở Về Vả Mặt Em Gái Trà Xanh Hay Khóc",
+      "slug": "thien-kim-that-tro-ve-va-mat-em-gai-tra-xanh-hay-khoc",
+      "score": 58,
+      "demandScore": 62,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 58,
+      "enMotif": "green tea rival và emotional angst",
+      "viMotif": "trà xanh và ngược tâm",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "query": "truyện trà xanh audio",
+          "text": "Full audio | Thiên Kim Thật Trở về vả mặt em gái trà xanh hay khóc | Trạm Dừng Chân Audio #audio"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Thiên Kim Thật Trở Về Vả Mặt Em Gái Trà Xanh Hay Khóc\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Thiên Kim Thật Trở Về Vả Mặt Em Gái Trà Xanh Hay Khóc\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Tái Sinh, Tôi Bình Thản Nhìn Bạn Thân Trà Xanh Cướp Bạn Trai Tôi",
+      "slug": "tai-sinh-toi-binh-than-nhin-ban-than-tra-xanh-cuop-ban-trai-toi",
+      "score": 58,
+      "demandScore": 62,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 58,
+      "enMotif": "green tea rival",
+      "viMotif": "trà xanh",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "query": "truyện trà xanh audio",
+          "text": "[TRUYỆN AUDIO] Tái Sinh, Tôi Bình Thản Nhìn Bạn Thân Trà Xanh Cướp Bạn Trai Tôi | Dịt Dàng Audio"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Tái Sinh, Tôi Bình Thản Nhìn Bạn Thân Trà Xanh Cướp Bạn Trai Tôi\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Tái Sinh, Tôi Bình Thản Nhìn Bạn Thân Trà Xanh Cướp Bạn Trai Tôi\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Ngôn Tình Trung Quốc Hay Nhất",
+      "slug": "ngon-tinh-trung-quoc-hay-nhat",
+      "score": 57,
+      "demandScore": 75,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 3,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 57,
+      "enMotif": "Vietnamese web fiction và romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "google-suggest",
+          "query": "truyện audio ngôn tình",
+          "text": "truyện audio ngôn tình trung quốc hay nhất"
+        },
+        {
+          "source": "google-suggest",
+          "query": "truyện audio ngôn tình hay",
+          "text": "truyện audio ngôn tình trung quốc hay nhất"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Ngôn Tình Trung Quốc Hay Nhất\" audio",
+          "text": "Ngôn Tình 3D FULL NỮ PHỤ TRONG KỊCH BẢN CẨU HUYẾT | Phim Hoạt Hình 3D Trung Quốc Hay Nhất | 3D FULL"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Ngôn Tình Trung Quốc Hay Nhất\" audio",
+          "text": "Truyện ngôn tình Trung Quốc hay nhất 2025 | THIẾU GIA Ở RỂ (Tập 1) #trumtruyenvn"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Ngôn Tình Trung Quốc Hay Nhất\" audio",
+          "text": "[Truyện Đêm Khuya] Buông Rèm Pha Lê – Phần Cuối | Audio Truyện Ngôn Tình Trung Quốc Hay Nhất"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Vị Hôn Thê Nuôi Từ Nhỏ Của Đại Thiếu Gia",
+      "slug": "vi-hon-the-nuoi-tu-nho-cua-dai-thieu-gia",
+      "score": 56,
+      "demandScore": 63,
+      "audioSignalScore": 11,
+      "audioCompetitionScore": 3,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 56,
+      "enMotif": "Vietnamese web fiction và romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "query": "truyện audio full mới nhất",
+          "text": "[Truyện Audio] Vị Hôn Thê Nuôi Từ Nhỏ Của Đại Thiếu Gia | Mèo Cưng Audio"
+        },
+        {
+          "source": "youtube-search",
+          "query": "truyện ngôn tình audio full",
+          "text": "[Truyện Audio] Vị Hôn Thê Nuôi Từ Nhỏ Của Đại Thiếu Gia | Mèo Cưng Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Vị Hôn Thê Nuôi Từ Nhỏ Của Đại Thiếu Gia\" \"truyện audio\"",
+          "text": "[Truyện Audio] Vị Hôn Thê Nuôi Từ Nhỏ Của Đại Thiếu Gia | Đậu Nành Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Vị Hôn Thê Nuôi Từ Nhỏ Của Đại Thiếu Gia\" \"truyện audio\"",
+          "text": "[Truyện Audio] Vị Hôn Thê Nuôi Từ Nhỏ Của Đại Thiếu Gia | Mèo Cưng Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Vị Hôn Thê Nuôi Từ Nhỏ Của Đại Thiếu Gia\" \"truyện audio\"",
+          "text": "[FULL AUDIO] Vị Hôn Thê Nuôi Từ Nhỏ Của Đại Thiếu Gia | Kho của Thỏ audio"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "VỢ ƠI! ANH BIẾT LỖI RỒI - Tiểu Thuyết Yêu Ngôn Tình Hay Nhất 2024",
+      "slug": "vo-oi-anh-biet-loi-roi-tieu-thuyet-yeu-ngon-tinh-hay-nhat-2024",
+      "score": 56,
+      "demandScore": 66,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 2,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 56,
+      "enMotif": "Vietnamese web fiction và romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "query": "truyện wattpad audio full",
+          "text": "VỢ ƠI! ANH BIẾT LỖI RỒI (FULL) - Tiểu thuyết yêu ngôn tình hay nhất 2024"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"VỢ ƠI! ANH BIẾT LỖI RỒI - Tiểu Thuyết Yêu Ngôn Tình Hay Nhất 2024\" \"truyện audio\"",
+          "text": "VỢ ƠI! ANH BIẾT LỖI RỒI (FULL) - Tiểu thuyết yêu ngôn tình hay nhất 2024"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"VỢ ƠI! ANH BIẾT LỖI RỒI - Tiểu Thuyết Yêu Ngôn Tình Hay Nhất 2024\" \"truyện audio\"",
+          "text": "VỢ ƠI! ANH BIẾT LỖI RỒI  (BẢN FULL) - TIỂU THUYẾT TÌNH YÊU NHẤT ĐỊNH PHẢI NGHE 1 LẦN TRONG ĐỜI"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Tái Sinh, Tôi Khoanh Tay Đứng Nhìn Em Gái Tự Hủy Hoại Cuộc Đời",
+      "slug": "tai-sinh-toi-khoanh-tay-dung-nhin-em-gai-tu-huy-hoai-cuoc-doi",
+      "score": 52,
+      "demandScore": 62,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 3,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 52,
+      "enMotif": "rebirth",
+      "viMotif": "trọng sinh",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "query": "truyện trọng sinh audio",
+          "text": "[TRUYỆN AUDIO] Tái Sinh, Tôi Khoanh Tay Đứng Nhìn Em Gái Tự Hủy Hoại Cuộc Đời | Dịt Dàng Audio"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Tái Sinh, Tôi Khoanh Tay Đứng Nhìn Em Gái Tự Hủy Hoại Cuộc Đời\" \"truyện audio\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Tái Sinh, Tôi Khoanh Tay Đứng Nhìn Em Gái Tự Hủy Hoại Cuộc Đời\" audio",
+          "text": "[TRUYỆN AUDIO] Tái Sinh, Tôi Khoanh Tay Đứng Nhìn Em Gái Tự Hủy Hoại Cuộc Đời | Dịt Dàng Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Tái Sinh, Tôi Khoanh Tay Đứng Nhìn Em Gái Tự Hủy Hoại Cuộc Đời\" audio",
+          "text": "[ FULL ] TÁI SINH, TÔI KHOANH TAY ĐỨNG NHÌN EM GÁI TỰ HỦY HOẠI CUỘC ĐỜI I Cổ Vân truyện Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Tái Sinh, Tôi Khoanh Tay Đứng Nhìn Em Gái Tự Hủy Hoại Cuộc Đời\" audio",
+          "text": "Truyện Audio: Tái Sinh, Tôi Khoanh Tay Đứng Nhìn Em Gái Tự Hủy Hoại Cuộc Đời"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ",
+      "slug": "trung-sinh-toi-quyet-nghe-theo-bo-me",
+      "score": 36,
+      "demandScore": 61,
+      "audioSignalScore": 11,
+      "audioCompetitionScore": 5,
+      "audioCompetitionLevel": "high",
+      "opportunityScore": 36,
+      "enMotif": "family drama",
+      "viMotif": "gia đình",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "query": "truyện audio full mới nhất",
+          "text": "[Truyện Audio] | Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ | Túi Mù Audio #audio  #truyenaudio"
+        },
+        {
+          "source": "youtube-search",
+          "query": "truyện trọng sinh audio",
+          "text": "[Truyện Audio] | Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ | Túi Mù Audio #audio  #truyenaudio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ\" \"truyện audio\"",
+          "text": "[Truyện Audio] | Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ | Túi Mù Audio #audio  #truyenaudio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ\" \"truyện audio\"",
+          "text": "[Truyện Audio] | Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ | Aris Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ\" audio",
+          "text": "No 43. Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ\" \"truyện audio\"",
+          "text": "TRUYỆN AUDIO | Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Em Gái Trà Xanh Bị Cả Nhà Nghe Được Tiếng Lòng, Tôi Chỉ Việc Xem Kịch",
+      "slug": "em-gai-tra-xanh-bi-ca-nha-nghe-duoc-tieng-long-toi-chi-viec-xem-kich",
+      "score": 34,
+      "demandScore": 62,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 5,
+      "audioCompetitionLevel": "high",
+      "opportunityScore": 34,
+      "enMotif": "green tea rival",
+      "viMotif": "trà xanh",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "query": "truyện trà xanh audio",
+          "text": "Em gái trà xanh bị cả nhà nghe được tiếng lòng, tôi chỉ việc xem kịch | Full audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Em Gái Trà Xanh Bị Cả Nhà Nghe Được Tiếng Lòng, Tôi Chỉ Việc Xem Kịch\" audio",
+          "text": "Em gái trà xanh bị cả nhà nghe được tiếng lòng, tôi chỉ việc xem kịch | Full audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Em Gái Trà Xanh Bị Cả Nhà Nghe Được Tiếng Lòng, Tôi Chỉ Việc Xem Kịch\" audio",
+          "text": "[ Truyện Audio ] CẢ NHÀ NGHE ĐƯỢC TIẾNG LÒNG EM GÁI TRÀ XANH TÔI CHỈ VIỆC XEM KỊCH || QUẠ AUDIO"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Em Gái Trà Xanh Bị Cả Nhà Nghe Được Tiếng Lòng, Tôi Chỉ Việc Xem Kịch\" audio",
+          "text": "[Truyện Audio] | Cả Nhà Nghe Được Tiếng Lòng Của Em Gái Trà Xanh, Tôi Chỉ Việc Xem Kịch | Aris Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Em Gái Trà Xanh Bị Cả Nhà Nghe Được Tiếng Lòng, Tôi Chỉ Việc Xem Kịch\" \"truyện audio\"",
+          "text": "Full audio | Em gái trà xanh bị cả nhà nghe được tiếng lòng, tôi chỉ việc xem kịch #truyenaudio"
+        }
+      ],
+      "status": "draft"
+    }
+  ]
+}
