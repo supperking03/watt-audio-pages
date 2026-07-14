@@ -1575,6 +1575,13 @@ const topics = [
     enMotif: "rebirth và green tea rival",
     viMotif: "trọng sinh và trà xanh",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "thuong-me-hoc-ba-dien-cuong-hoc-do-dai-hoc-trong-diem",
+    title: "Thương Mẹ, Học Bá Điên Cuồng Học Đỗ Đại Học Trọng Điểm",
+    enMotif: "school romance và family drama",
+    viMotif: "vườn trường và gia đình",
+    languages: ["vi"]
   })
 ];
 
