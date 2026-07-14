@@ -33,16 +33,17 @@
     {
       "id": "route-to-download",
       "name": "Route to app store",
-      "description": "Send users to the official Watt Audio App Store or Google Play listing.",
+      "description": "Send users to the official Watt Audio App Store, Google Play, or Chrome Web Store listing.",
       "inputs": [
         "device",
         "locale"
       ],
       "outputs": [
         "app_store_url",
-        "google_play_url"
+        "google_play_url",
+        "chrome_extension_url"
       ]
     }
   ],
-  "updated": "2026-07-05"
+  "updated": "2026-07-15"
 }

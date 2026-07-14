@@ -34,7 +34,7 @@
 <meta name="twitter:title" content="About Watt Audio | Story Audio App" />
 <meta name="twitter:description" content="Learn what Watt Audio is, how it turns supported story links into chapter audio, and why readers use it for AI voice listening, offline replay, and background playback." />
 <meta name="twitter:image" content="https://wattaudios.com/assets/blog/homepage-watt-audio-en.webp" />
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://wattaudios.com/#organization","name":"Watt Audio","url":"https://wattaudios.com","logo":"https://wattaudios.com/assets/icons/icon-512.png","sameAs":["https://apps.apple.com/vn/app/watt-audio-%C4%91%E1%BB%8Dc-truy%E1%BB%87n-audio/id6775724279","https://play.google.com/store/apps/details?id=com.supperking03.wattpadaudio"]},{"@type":"SoftwareApplication","@id":"https://wattaudios.com/#app","name":"Watt Audio","applicationCategory":"MultimediaApplication","operatingSystem":["iOS","Android"],"description":"Learn what Watt Audio is, how it turns supported story links into chapter audio, and why readers use it for AI voice listening, offline replay, and background playback.","url":"https://wattaudios.com/about.html","image":"https://wattaudios.com/assets/blog/homepage-watt-audio-en.webp","downloadUrl":["https://apps.apple.com/vn/app/watt-audio-%C4%91%E1%BB%8Dc-truy%E1%BB%87n-audio/id6775724279","https://play.google.com/store/apps/details?id=com.supperking03.wattpadaudio"],"publisher":{"@id":"https://wattaudios.com/#organization"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is Watt Audio?","acceptedAnswer":{"@type":"Answer","text":"Watt Audio is a mobile app that helps readers turn supported story links into chapter audio using AI voice generation and a listening-focused player."}},{"@type":"Question","name":"Who is Watt Audio for?","acceptedAnswer":{"@type":"Answer","text":"Watt Audio is for readers who follow web fiction, Wattpad-style stories, romance, fantasy, and long serialized stories but want a hands-free way to continue reading."}},{"@type":"Question","name":"Can Watt Audio play audio offline?","acceptedAnswer":{"@type":"Answer","text":"After chapter audio has been generated, readers can replay that audio later without reopening the original web page."}}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://wattaudios.com/#organization","name":"Watt Audio","url":"https://wattaudios.com","logo":"https://wattaudios.com/assets/icons/icon-512.png","sameAs":["https://apps.apple.com/vn/app/watt-audio-%C4%91%E1%BB%8Dc-truy%E1%BB%87n-audio/id6775724279","https://play.google.com/store/apps/details?id=com.supperking03.wattpadaudio","https://chromewebstore.google.com/detail/watt-audio-nghe-wattpad-a/aipmnekljadgnhedbkhmbghkanjepied"]},{"@type":"SoftwareApplication","@id":"https://wattaudios.com/#app","name":"Watt Audio","applicationCategory":"MultimediaApplication","operatingSystem":["iOS","Android","ChromeOS","Web Browser"],"description":"Learn what Watt Audio is, how it turns supported story links into chapter audio, and why readers use it for AI voice listening, offline replay, and background playback.","url":"https://wattaudios.com/about.html","image":"https://wattaudios.com/assets/blog/homepage-watt-audio-en.webp","downloadUrl":["https://apps.apple.com/vn/app/watt-audio-%C4%91%E1%BB%8Dc-truy%E1%BB%87n-audio/id6775724279","https://play.google.com/store/apps/details?id=com.supperking03.wattpadaudio","https://chromewebstore.google.com/detail/watt-audio-nghe-wattpad-a/aipmnekljadgnhedbkhmbghkanjepied"],"publisher":{"@id":"https://wattaudios.com/#organization"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is Watt Audio?","acceptedAnswer":{"@type":"Answer","text":"Watt Audio is a mobile app that helps readers turn supported story links into chapter audio using AI voice generation and a listening-focused player."}},{"@type":"Question","name":"Who is Watt Audio for?","acceptedAnswer":{"@type":"Answer","text":"Watt Audio is for readers who follow web fiction, Wattpad-style stories, romance, fantasy, and long serialized stories but want a hands-free way to continue reading."}},{"@type":"Question","name":"Can Watt Audio play audio offline?","acceptedAnswer":{"@type":"Answer","text":"After chapter audio has been generated, readers can replay that audio later without reopening the original web page."}}]}]}</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CPTTPW88BP"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -42,7 +42,7 @@
   gtag('js', new Date());
   gtag('config', 'G-CPTTPW88BP');
   document.addEventListener('click', function (event) {
-    var link = event.target.closest && event.target.closest('a[href*="apps.apple.com"], a[href*="play.google.com/store/apps"]');
+    var link = event.target.closest && event.target.closest('a[href*="apps.apple.com"], a[href*="play.google.com/store/apps"], a[href*="chromewebstore.google.com"]');
     if (!link || typeof gtag !== 'function') return;
     gtag('event', 'download_app_click', {
       event_category: 'engagement',
@@ -51,7 +51,7 @@
     });
   });
 </script>
-<link rel="stylesheet" href="assets/seo.css?v=20260704-home-search-intent" />
+<link rel="stylesheet" href="assets/seo.css?v=20260715-chrome-extension" />
 </head>
 <body>
   <div class="wrap">
@@ -69,6 +69,7 @@
           <div class="store-options" aria-label="Download app">
             <a href="https://play.google.com/store/apps/details?id=com.supperking03.wattpadaudio">Google Play</a>
             <a href="https://apps.apple.com/vn/app/watt-audio-%C4%91%E1%BB%8Dc-truy%E1%BB%87n-audio/id6775724279">App Store</a>
+            <a href="https://chromewebstore.google.com/detail/watt-audio-nghe-wattpad-a/aipmnekljadgnhedbkhmbghkanjepied">Chrome Extension</a>
           </div>
         </div>
     </nav>
@@ -104,6 +105,7 @@
           <div class="store-options" aria-label="Download app">
             <a href="https://play.google.com/store/apps/details?id=com.supperking03.wattpadaudio">Google Play</a>
             <a href="https://apps.apple.com/vn/app/watt-audio-%C4%91%E1%BB%8Dc-truy%E1%BB%87n-audio/id6775724279">App Store</a>
+            <a href="https://chromewebstore.google.com/detail/watt-audio-nghe-wattpad-a/aipmnekljadgnhedbkhmbghkanjepied">Chrome Extension</a>
           </div>
         </div>
       </div>

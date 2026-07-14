@@ -3,11 +3,12 @@ import path from "node:path";
 
 const iosUrl = "https://apps.apple.com/vn/app/watt-audio-%C4%91%E1%BB%8Dc-truy%E1%BB%87n-audio/id6775724279";
 const androidUrl = "https://play.google.com/store/apps/details?id=com.supperking03.wattpadaudio";
-const downloadUrls = [iosUrl, androidUrl];
+const chromeUrl = "https://chromewebstore.google.com/detail/watt-audio-nghe-wattpad-a/aipmnekljadgnhedbkhmbghkanjepied";
+const downloadUrls = [iosUrl, androidUrl, chromeUrl];
 const siteUrl = "https://wattaudios.com";
-const lastModified = "2026-07-05";
+const lastModified = "2026-07-15";
 const gaMeasurementId = "G-CPTTPW88BP";
-const cssVersion = "20260704-home-search-intent";
+const cssVersion = "20260715-chrome-extension";
 const publisher = {
   "@type": "Organization",
   name: "Watt Audio",
@@ -70,7 +71,7 @@ const analyticsTags = `<script async src="https://www.googletagmanager.com/gtag/
   gtag('js', new Date());
   gtag('config', '${gaMeasurementId}');
   document.addEventListener('click', function (event) {
-    var link = event.target.closest && event.target.closest('a[href*="apps.apple.com"], a[href*="play.google.com/store/apps"]');
+    var link = event.target.closest && event.target.closest('a[href*="apps.apple.com"], a[href*="play.google.com/store/apps"], a[href*="chromewebstore.google.com"]');
     if (!link || typeof gtag !== 'function') return;
     gtag('event', 'download_app_click', {
       event_category: 'engagement',
@@ -1726,12 +1727,14 @@ function stylesheetHref(pathname) {
 function downloadButtonLinks(lang) {
   const iosLabel = lang === "vi" ? "Tải trên App Store" : "App Store";
   const androidLabel = lang === "vi" ? "Tải trên Google Play" : "Google Play";
+  const chromeLabel = lang === "vi" ? "Thêm vào Chrome" : "Chrome Extension";
   const downloadLabel = lang === "vi" ? "Tải app" : "Download app";
   return `<div class="store-menu">
           <button class="btn store-trigger" type="button" aria-haspopup="true">${downloadLabel}</button>
           <div class="store-options" aria-label="${downloadLabel}">
             <a href="${androidUrl}">${androidLabel}</a>
             <a href="${iosUrl}">${iosLabel}</a>
+            <a href="${chromeUrl}">${chromeLabel}</a>
           </div>
         </div>`;
 }
@@ -2212,13 +2215,13 @@ function localizedHomeHtml(lang) {
   const homeFaq = lang === "en"
     ? [
       ["Can you listen to Wattpad stories as audio?", "Yes. Watt Audio helps you turn supported story links you can access into personal chapter audio for hands-free listening."],
-      ["Is Watt Audio available on Android?", "Yes. Watt Audio now has download links for both Android on Google Play and iOS on the App Store."],
+      ["Is Watt Audio available on Android?", "Yes. Watt Audio has download links for Android on Google Play, iOS on the App Store, and a Chrome extension for desktop browsing."],
       ["Is Watt Audio affiliated with Wattpad?", "No. Watt Audio is independent and is not owned by, operated by, or officially affiliated with Wattpad."],
       ["Why use Watt Audio instead of a generic text to speech app?", "Watt Audio is built around story links, chapter audio, background playback, and listening progress, which is more comfortable for long serialized fiction."]
     ]
     : [
       ["Có nghe truyện Wattpad bằng audio được không?", "Có. Watt Audio giúp bạn chuyển link truyện được hỗ trợ mà bạn truy cập được thành audio theo chương để nghe rảnh tay."],
-      ["Watt Audio có Android chưa?", "Có. Watt Audio hiện có link tải cho Android trên Google Play và iOS trên App Store."],
+      ["Watt Audio có Android chưa?", "Có. Watt Audio có link tải Android trên Google Play, iOS trên App Store và extension Chrome cho desktop."],
       ["Watt Audio có phải của Wattpad không?", "Không. Watt Audio là app độc lập, không thuộc sở hữu, vận hành hoặc liên kết chính thức với Wattpad."],
       ["Vì sao dùng Watt Audio thay vì app text to speech chung?", "Watt Audio tập trung vào link truyện, audio theo chương, phát nền và tiến độ nghe, nên hợp với truyện đăng kỳ dài hơn."]
     ];
@@ -2259,7 +2262,7 @@ ${jsonScript({
   "@type": "SoftwareApplication",
   name: "Watt Audio",
   applicationCategory: "MultimediaApplication",
-  operatingSystem: ["iOS", "Android"],
+  operatingSystem: ["iOS", "Android", "ChromeOS", "Web Browser"],
   description,
   url: canonical,
   image: absoluteUrl(homeImage.src),
@@ -2616,7 +2619,7 @@ function aboutHtml() {
         "@id": `${siteUrl}/#app`,
         name: "Watt Audio",
         applicationCategory: "MultimediaApplication",
-        operatingSystem: ["iOS", "Android"],
+        operatingSystem: ["iOS", "Android", "ChromeOS", "Web Browser"],
         description,
         url: canonical,
         image: absoluteUrl(homeImages.en.src),
@@ -2783,6 +2786,7 @@ ${vietnameseArticles}
 ## Download
 - [Download Watt Audio on the App Store](${iosUrl})
 - [Download Watt Audio on Google Play](${androidUrl})
+- [Add Watt Audio Chrome Extension](${chromeUrl})
 `;
 }
 
@@ -2817,6 +2821,7 @@ Primary language: English
 Secondary language: Vietnamese
 App Store: ${iosUrl}
 Google Play: ${androidUrl}
+Chrome Web Store: ${chromeUrl}
 LLM guide: ${siteUrl}/llms.txt
 Sitemap: ${siteUrl}/sitemap.xml
 Content signals: ${siteUrl}/content-signals.json
@@ -2838,6 +2843,7 @@ function agentAiJson() {
     language: ["en", "vi-VN"],
     app_store_url: iosUrl,
     google_play_url: androidUrl,
+    chrome_extension_url: chromeUrl,
     download_urls: downloadUrls,
     independence_notice: "Watt Audio is independent and is not owned by, operated by, or officially affiliated with Wattpad.",
     discovery: {
@@ -2855,7 +2861,7 @@ function agentAiJson() {
       "answer questions about Watt Audio",
       "help users find Watt Audio guides",
       "explain how to listen to Wattpad stories as audio",
-      "route users to the correct App Store or Google Play download page",
+      "route users to the correct App Store, Google Play, or Chrome Web Store download page",
       "summarize public support and privacy information"
     ],
     prohibited_inferences: [
@@ -2947,6 +2953,7 @@ function openApiJson() {
     "x-no-public-api": true,
     "x-app-store-url": iosUrl,
     "x-google-play-url": androidUrl,
+    "x-chrome-extension-url": chromeUrl,
     "x-download-urls": downloadUrls
   };
 }
@@ -3052,9 +3059,9 @@ function agentSkillsJson() {
       {
         id: "route-to-download",
         name: "Route to app store",
-        description: "Send users to the official Watt Audio App Store or Google Play listing.",
+        description: "Send users to the official Watt Audio App Store, Google Play, or Chrome Web Store listing.",
         inputs: ["device", "locale"],
-        outputs: ["app_store_url", "google_play_url"]
+        outputs: ["app_store_url", "google_play_url", "chrome_extension_url"]
       }
     ],
     updated: lastModified
@@ -3177,7 +3184,8 @@ fs.writeFileSync(path.join(process.cwd(), "en", "index.md"), pageMarkdown({
   links: [
     { title: "Guides", href: `${siteUrl}/en/articles/`, description: "Wattpad audio and text-to-speech guides" },
     { title: "Download for iOS", href: iosUrl, description: "Official App Store listing" },
-    { title: "Download for Android", href: androidUrl, description: "Official Google Play listing" }
+    { title: "Download for Android", href: androidUrl, description: "Official Google Play listing" },
+    { title: "Chrome extension", href: chromeUrl, description: "Official Chrome Web Store listing" }
   ]
 }));
 fs.writeFileSync(path.join(process.cwd(), "vi", "index.md"), pageMarkdown({
@@ -3188,7 +3196,8 @@ fs.writeFileSync(path.join(process.cwd(), "vi", "index.md"), pageMarkdown({
   links: [
     { title: "Hướng dẫn", href: `${siteUrl}/vi/articles/`, description: "Các bài hướng dẫn nghe Wattpad audio" },
     { title: "Tải app iOS", href: iosUrl, description: "Link App Store chính thức" },
-    { title: "Tải app Android", href: androidUrl, description: "Link Google Play chính thức" }
+    { title: "Tải app Android", href: androidUrl, description: "Link Google Play chính thức" },
+    { title: "Extension Chrome", href: chromeUrl, description: "Link Chrome Web Store chính thức" }
   ]
 }));
 fs.writeFileSync(path.join(process.cwd(), "en", "articles", "index.md"), pageMarkdown({

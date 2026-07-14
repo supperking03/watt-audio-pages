@@ -10,6 +10,7 @@ Language: en
 - [Guides](https://wattaudios.com/en/articles/): Wattpad audio and text-to-speech guides
 - [Download for iOS](https://apps.apple.com/vn/app/watt-audio-%C4%91%E1%BB%8Dc-truy%E1%BB%87n-audio/id6775724279): Official App Store listing
 - [Download for Android](https://play.google.com/store/apps/details?id=com.supperking03.wattpadaudio): Official Google Play listing
+- [Chrome extension](https://chromewebstore.google.com/detail/watt-audio-nghe-wattpad-a/aipmnekljadgnhedbkhmbghkanjepied): Official Chrome Web Store listing
 
 ## Agent Notes
 - Watt Audio is an independent mobile app. It is not owned by, operated by, or officially affiliated with Wattpad.
