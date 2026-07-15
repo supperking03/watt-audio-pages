@@ -1583,6 +1583,13 @@ const topics = [
     enMotif: "school romance và family drama",
     viMotif: "vườn trường và gia đình",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "vo-oi-anh-biet-loi-roi-tieu-thuyet-yeu-ngon-tinh-hay-nhat-2024",
+    title: "VỢ ƠI! ANH BIẾT LỖI RỒI - Tiểu Thuyết Yêu Ngôn Tình Hay Nhất 2024",
+    enMotif: "Vietnamese web fiction và romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["vi"]
   })
 ];
 
