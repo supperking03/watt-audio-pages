@@ -150,13 +150,20 @@ function searchIntentTopic({
 }
 
 function storyTitleTopic({ slug, title, enMotif, viMotif, languages = ["en", "vi"] }) {
+  const englishOnly = languages.length === 1 && languages[0] === "en";
+  const enAudienceContext = englishOnly
+    ? `readers who searched for ${title}, Wattpad-style stories, web fiction audio, read-aloud story apps, or similar ${enMotif} fiction`
+    : `readers who searched for ${title}, Vietnamese audio stories, YouTube story audio, or similar ${enMotif} fiction`;
+  const enScenarioContext = englishOnly
+    ? `catching up on ${enMotif} chapters, long web fiction, Wattpad-style story searches, Royal Road-style webnovels, and personal listening sessions`
+    : `catching up on ${enMotif} chapters, long Vietnamese story audio, similar YouTube audio story searches, and personal listening sessions`;
   const topic = searchIntentTopic({
     slug,
     enTitle: `${title}: Audio Story Listening Guide`,
     enDescription: `A listening guide for readers searching ${title} audio, similar ${enMotif} stories, and Watt Audio workflows.`,
-    enAudience: `readers who searched for ${title}, Vietnamese audio stories, YouTube story audio, or similar ${enMotif} fiction`,
+    enAudience: enAudienceContext,
     enFocus: `listening to ${title} and similar ${enMotif} stories`,
-    enScenario: `catching up on ${enMotif} chapters, long Vietnamese story audio, similar YouTube audio story searches, and personal listening sessions`,
+    enScenario: enScenarioContext,
     viTitle: `Nghe audio ${title}`,
     viDescription: `Gợi ý nghe ${title}, tìm truyện ${viMotif} cùng vibe và dùng Watt Audio để nghe truyện theo chương.`,
     viAudience: `người đọc đang tìm ${title}, truyện audio YouTube, truyện full hoặc các truyện ${viMotif} tương tự`,
@@ -172,7 +179,9 @@ function storyTitleTopic({ slug, title, enMotif, viMotif, languages = ["en", "vi
   ];
   topic.en.tips = [
     `Use this page as a discovery guide for ${title} and similar ${enMotif} stories, not as a repost of the story itself.`,
-    "For long Vietnamese audio stories, prepare only a few chapters at a time so the listening queue stays clean."
+    englishOnly
+      ? "For long web fiction and webnovels, prepare only a few chapters at a time so the listening queue stays clean."
+      : "For long Vietnamese audio stories, prepare only a few chapters at a time so the listening queue stays clean."
   ];
   topic.en.faq = [
     [`Does Watt Audio host ${title}?`, "No. Watt Audio is a personal listening workflow for supported story links. This guide helps readers organize listening, not download or redistribute story content."],
@@ -1589,6 +1598,20 @@ const topics = [
     title: "VỢ ƠI! ANH BIẾT LỖI RỒI - Tiểu Thuyết Yêu Ngôn Tình Hay Nhất 2024",
     enMotif: "Vietnamese web fiction và romance drama",
     viMotif: "truyện mạng Việt và romance drama",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "i-shouldn-t-have-saved-him-that-night",
+    title: "I Shouldn't Have Saved Him That Night...",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "vo-tu-nho-la-ngoai-le-cua-thu-khoa-dai-hoc-a",
+    title: "Vợ Từ Nhỏ Là Ngoại Lệ Của Thủ Khoa Đại Học A",
+    enMotif: "school romance",
+    viMotif: "vườn trường",
     languages: ["vi"]
   })
 ];

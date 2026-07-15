@@ -26,6 +26,8 @@ if [ ! -f "$ENV_FILE" ]; then
     echo "STORY_TITLE_BOT_AUTO_PUBLISH=\"0\""
     echo "STORY_TITLE_BOT_PUBLISH_MIN_SCORE=\"65\""
     echo "STORY_TITLE_BOT_PUBLISH_MAX=\"1\""
+    echo "STORY_TITLE_BOT_PUBLISH_MAX_PER_LANGUAGE=\"1\""
+    echo "STORY_TITLE_BOT_PUBLISH_LANGUAGES=\"vi,en\""
     echo "STORY_TITLE_BOT_GIT_PUSH=\"1\""
     echo "NODE_BIN=\"$(command -v node)\""
   } > "$ENV_FILE"

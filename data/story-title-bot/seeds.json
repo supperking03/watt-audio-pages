@@ -44,6 +44,54 @@
     "truyện trọng sinh audio",
     "truyện trà xanh audio"
   ],
+  "englishDemandQueries": [
+    "wattpad audio romance",
+    "wattpad story read aloud",
+    "wattpad text to speech",
+    "listen to wattpad stories",
+    "wattpad audiobook",
+    "wattpad werewolf story audio",
+    "wattpad fanfiction audio",
+    "wattpad romance read aloud",
+    "webnovel audio",
+    "royal road audiobook",
+    "royal road text to speech",
+    "listen to web novels"
+  ],
+  "englishQueries": [
+    "wattpad audio",
+    "wattpad audiobook free",
+    "wattpad read aloud",
+    "wattpad text to speech app",
+    "webnovel read aloud",
+    "web novel audiobook",
+    "fiction story audio app",
+    "fanfiction text to speech"
+  ],
+  "englishSuggestTemplates": [
+    "{query}",
+    "{query} app",
+    "{query} free",
+    "{query} online",
+    "{query} chrome extension"
+  ],
+  "englishYoutubeQueries": [
+    "wattpad story audio",
+    "wattpad read aloud romance",
+    "wattpad fanfiction audio",
+    "webnovel audiobook",
+    "royal road audiobook"
+  ],
+  "englishStorySources": [
+    {
+      "name": "royalroad-trending",
+      "url": "https://www.royalroad.com/fictions/trending"
+    },
+    {
+      "name": "royalroad-best-rated",
+      "url": "https://www.royalroad.com/fictions/best-rated"
+    }
+  ],
   "blockedTitlePatterns": [
     "watt audio",
     "wattpad",

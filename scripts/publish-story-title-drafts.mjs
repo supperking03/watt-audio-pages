@@ -9,6 +9,13 @@ const draftsDir = path.join(root, "data", "story-title-bot", "drafts");
 const cliArgs = process.argv.slice(2);
 const minScore = Number(cliArgs.find((arg) => arg.startsWith("--min-score="))?.split("=")[1] || 85);
 const maxPublish = Number(cliArgs.find((arg) => arg.startsWith("--max="))?.split("=")[1] || 1);
+const maxPerLanguage = Number(cliArgs.find((arg) => arg.startsWith("--max-per-language="))?.split("=")[1] || maxPublish);
+const publishLanguages = new Set(
+  (cliArgs.find((arg) => arg.startsWith("--languages="))?.split("=")[1] || "vi")
+    .split(",")
+    .map((lang) => lang.trim())
+    .filter(Boolean)
+);
 const shouldBuild = cliArgs.includes("--build");
 const dryRun = cliArgs.includes("--dry-run");
 const draftArg = cliArgs.find((arg) => arg.startsWith("--draft="))?.split("=")[1];
@@ -35,12 +42,13 @@ function normalizeTitle(title) {
 }
 
 function topicBlock(candidate) {
+  const language = candidate.language === "en" ? "en" : "vi";
   return `  storyTitleTopic({
     slug: ${quote(candidate.slug)},
     title: ${quote(candidate.title)},
     enMotif: ${quote(candidate.enMotif)},
     viMotif: ${quote(candidate.viMotif)},
-    languages: ["vi"]
+    languages: [${quote(language)}]
   })`;
 }
 
@@ -56,15 +64,26 @@ if (!source.includes(marker)) {
 const existingSlugs = new Set([...source.matchAll(/slug:\s*"([^"]+)"/g)].map((match) => match[1]));
 const existingTitles = new Set([...source.matchAll(/title:\s*"([^"]+)"/g)].map((match) => normalizeTitle(match[1])));
 
-const selected = draft.candidates
+const publishable = draft.candidates
   .filter((candidate) => candidate.score >= minScore)
+  .filter((candidate) => publishLanguages.has(candidate.language === "en" ? "en" : "vi"))
   .filter((candidate) => !existingSlugs.has(candidate.slug))
   .filter((candidate) => !existingTitles.has(normalizeTitle(candidate.title)))
-  .sort((a, b) => b.score - a.score)
-  .slice(0, maxPublish);
+  .sort((a, b) => b.score - a.score);
+
+const selected = [];
+const languageCounts = new Map();
+for (const candidate of publishable) {
+  const language = candidate.language === "en" ? "en" : "vi";
+  const count = languageCounts.get(language) || 0;
+  if (count >= maxPerLanguage) continue;
+  selected.push(candidate);
+  languageCounts.set(language, count + 1);
+  if (selected.length >= maxPublish && publishLanguages.size === 1) break;
+}
 
 if (!selected.length) {
-  console.log(`No publishable drafts. minScore=${minScore}, max=${maxPublish}, draft=${draftPath}`);
+  console.log(`No publishable drafts. minScore=${minScore}, max=${maxPublish}, maxPerLanguage=${maxPerLanguage}, languages=${[...publishLanguages].join(",")}, draft=${draftPath}`);
   process.exit(0);
 }
 
@@ -72,7 +91,7 @@ const blocks = selected.map(topicBlock);
 
 console.log(`Publishable drafts: ${selected.length}`);
 for (const candidate of selected) {
-  console.log(`- ${candidate.title} (${candidate.score}) -> ${candidate.slug}`);
+  console.log(`- [${candidate.language === "en" ? "en" : "vi"}] ${candidate.title} (${candidate.score}) -> ${candidate.slug}`);
 }
 
 if (dryRun) {

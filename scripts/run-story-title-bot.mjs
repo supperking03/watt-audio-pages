@@ -27,6 +27,12 @@ const genericTerms = new Set([
   "wattpad",
   "youtube",
   "review",
+  "read",
+  "aloud",
+  "audiobook",
+  "webnovel",
+  "web",
+  "novel",
   "tóm tắt",
   "ngôn tình",
   "mới nhất"
@@ -91,12 +97,13 @@ function cleanCandidate(raw) {
     .replace(/\[[^\]]*(full|audio|truyện|review|tập|chap)[^\]]*\]/gi, " ")
     .replace(/\([^\)]*(full|audio|truyện|review|tập|chap)[^\)]*\)/gi, " ")
     .replace(/#\S+/g, " ")
+    .replace(/\b(full audiobook|audiobook|audio book|read aloud|sleeping story|narrated by .*)\b/gi, " ")
     .replace(/\b(full|audio|audiobook|truyện audio|truyen audio|review truyện|tóm tắt truyện|truyenfull|wattpad|youtube)\b/gi, " ")
     .replace(/\b(tập|tap|chap|chapter|chương)\s*\d+.*/gi, " ")
     .replace(/\b(phần|phan)\s*\d+.*/gi, " ");
 
   const chunks = text
-    .split(/\s*(?:\|\||\||｜|–|—)\s*|:\s/)
+    .split(/\s*(?:\|\||\||｜|–|—|\s+-\s+)\s*|:\s/)
     .map((chunk) => chunk.trim())
     .map((chunk) => chunk.replace(/\b(truyện\s*)?(audio|full|nấu ăn|vả mặt audio|chuchu audio|chu chu audio|review|wattpad)\b/gi, " ").trim())
     .filter(Boolean);
@@ -156,20 +163,20 @@ function inferMotifs(title, context) {
   if (/hài|cười|comedy|cá mặn/.test(haystack)) add("comedy", "hài hước");
 
   if (!en.length) {
-    en.push("Vietnamese web fiction", "romance drama");
+    en.push(/[À-ỹ]/.test(title) ? "Vietnamese web fiction" : "web fiction", "romance drama");
     vi.push("truyện mạng Việt", "romance drama");
   }
 
   return {
-    enMotif: joinMotifs(en),
-    viMotif: joinMotifs(vi)
+    enMotif: joinMotifs(en, "and"),
+    viMotif: joinMotifs(vi, "và")
   };
 }
 
-function joinMotifs(items) {
+function joinMotifs(items, conjunction = "and") {
   const unique = [...new Set(items)].slice(0, 4);
   if (unique.length <= 1) return unique[0] || "story audio";
-  return `${unique.slice(0, -1).join(", ")} và ${unique.at(-1)}`;
+  return `${unique.slice(0, -1).join(", ")} ${conjunction} ${unique.at(-1)}`;
 }
 
 async function fetchText(url, timeoutMs = 8000) {
@@ -189,19 +196,21 @@ async function fetchText(url, timeoutMs = 8000) {
   }
 }
 
-async function collectGoogleSuggest(query) {
-  const url = `https://suggestqueries.google.com/complete/search?client=firefox&hl=vi&q=${encodeURIComponent(query)}`;
+async function collectGoogleSuggest(query, language = "vi") {
+  const hl = language === "en" ? "en" : "vi";
+  const url = `https://suggestqueries.google.com/complete/search?client=firefox&hl=${hl}&q=${encodeURIComponent(query)}`;
   const text = await fetchText(url);
   const payload = JSON.parse(text);
   return (payload[1] || []).map((suggestion) => ({
     source: "google-suggest",
+    language,
     query,
     text: String(suggestion)
   }));
 }
 
-async function collectDemandSuggest(query) {
-  const items = await collectGoogleSuggest(query);
+async function collectDemandSuggest(query, language = "vi") {
+  const items = await collectGoogleSuggest(query, language);
   return items.map((item) => ({ ...item, source: "google-demand-suggest" }));
 }
 
@@ -217,7 +226,30 @@ async function collectYouTube(query) {
   }
   return [...titles].slice(0, 30).map((text) => ({
     source: "youtube-search",
+    language: /[À-ỹ]|truyện|ngôn tình|truyen/i.test(`${query} ${text}`) ? "vi" : "en",
     query,
+    text
+  }));
+}
+
+async function collectRoyalRoad(source) {
+  const html = await fetchText(source.url, 12000);
+  const titles = new Set();
+  for (const match of html.matchAll(/<h2[^>]*>\s*<a[^>]*>(.*?)<\/a>/gis)) {
+    const title = match[1]
+      .replace(/<[^>]+>/g, " ")
+      .replace(/&#x([0-9a-f]+);/gi, (_, hex) => String.fromCodePoint(parseInt(hex, 16)))
+      .replace(/&amp;/g, "&")
+      .replace(/&quot;/g, "\"")
+      .replace(/&#39;|&apos;/g, "'")
+      .replace(/\s+/g, " ")
+      .trim();
+    if (title) titles.add(title);
+  }
+  return [...titles].slice(0, 40).map((text) => ({
+    source: source.name || "royalroad",
+    language: "en",
+    query: source.url,
     text
   }));
 }
@@ -234,10 +266,16 @@ function titleTokenOverlap(a, b) {
 }
 
 async function estimateAudioCompetition(candidate) {
-  const exactQueries = [
-    `"${candidate.title}" audio`,
-    `"${candidate.title}" "truyện audio"`
-  ];
+  const exactQueries = candidate.language === "en"
+    ? [
+        `"${candidate.title}" audiobook`,
+        `"${candidate.title}" "read aloud"`,
+        `"${candidate.title}" audio`
+      ]
+    : [
+        `"${candidate.title}" audio`,
+        `"${candidate.title}" "truyện audio"`
+      ];
   const matched = [];
   let errorCount = 0;
   let successCount = 0;
@@ -247,7 +285,7 @@ async function estimateAudioCompetition(candidate) {
       successCount += 1;
       for (const item of items) {
         const overlap = titleTokenOverlap(candidate.title, item.text);
-        if (overlap >= 0.72 && /audio|truyện|full|nghe|đọc|youtube/i.test(item.text)) {
+        if (overlap >= 0.72 && /audio|audiobook|read aloud|tts|truyện|full|nghe|đọc|youtube/i.test(item.text)) {
           matched.push({ ...item, overlap });
         }
       }
@@ -313,32 +351,42 @@ async function enrichCompetition(candidates) {
 function makeCandidate(item) {
   const title = cleanCandidate(item.text);
   if (!title) return null;
+  const context = `${item.text} ${item.query}`;
+  const language = item.language || (/[À-ỹ]|truyện|ngôn tình|truyen/i.test(context) ? "vi" : "en");
+  const normalized = normalizeTitle(title);
+  if (language === "en" && /^google-/.test(item.source)) return null;
+  if (language === "en" && /^(how|does|do|can|is|are|what|why|where|when|which)\b/i.test(title)) return null;
+  if (language === "en" && /^(reading|watching|reacting to|trying|ranking|reviewing)\b/i.test(title)) return null;
+  if (language === "en" && /\b(text to speech|tts|read aloud|audiobook|audio book|chrome extension|app for android|reading on free)\b/i.test(title)) return null;
+  if (language === "vi" && /^google-/.test(item.source) && /^truyện\s+(đam mỹ|ngôn tình|trọng sinh|xuyên sách|tổng tài|wattpad|full|hot|hay)\b/i.test(title)) return null;
   const words = title.split(/\s+/).filter(Boolean);
   if (words.length < 4 || words.length > 18) return null;
   if (title.length < 18 || title.length > 120) return null;
-  const normalized = normalizeTitle(title);
   if (existingTitles.has(normalized)) return null;
   if (config.blockedTitlePatterns.some((pattern) => normalized === normalizeTitle(pattern))) return null;
   if ((config.blockedContentPatterns || []).some((pattern) => normalized.includes(normalizeTitle(pattern)))) return null;
   const slug = slugify(title);
   if (!slug || existingSlugs.has(slug)) return null;
 
-  const context = `${item.text} ${item.query}`;
   const motifs = inferMotifs(title, context);
   let demandScore = scoreTitleShape(title);
   let audioSignalScore = 0;
   if (item.source === "google-demand-suggest") demandScore += 18;
   if (item.source === "google-suggest") demandScore += 8;
   if (item.source === "youtube-search") audioSignalScore += 8;
+  if (/^royalroad/.test(item.source)) demandScore += 24;
+  if (/royalroad|royal road|webnovel|web novel|wattpad|fanfiction|ao3|archive of our own|inkitt/i.test(context)) demandScore += 10;
   if (/wattpad|truyenfull|truyện full|truyện hot|ngôn tình|trà xanh|trọng sinh|xuyên sách|hào môn|tổng tài|vả mặt/i.test(context)) demandScore += 10;
-  if (/full|audio|truyện|wattpad|youtube/i.test(context)) demandScore += 4;
-  if (/mới|hot|2026|hay/i.test(context)) demandScore += 4;
+  if (/full|audio|audiobook|read aloud|text to speech|tts|truyện|wattpad|youtube/i.test(context)) demandScore += 4;
+  if (/mới|hot|2026|2025|hay|trending|best|popular/i.test(context)) demandScore += 4;
+  if (language === "en" && /^[\x00-\x7F]+$/.test(title)) demandScore += 6;
   if (/phim|nhạc|karaoke|minecraft|roblox|game/i.test(context)) demandScore -= 30;
   const score = demandScore + audioSignalScore;
 
   return {
     title,
     slug,
+    language,
     score,
     demandScore,
     audioSignalScore,
@@ -364,6 +412,7 @@ function mergeCandidates(items) {
       prev.audioSignalScore += Math.round(candidate.audioSignalScore / 3);
       prev.opportunityScore = prev.score;
       prev.evidence.push(...candidate.evidence);
+      if (prev.language !== candidate.language) prev.language = prev.score >= candidate.score ? prev.language : candidate.language;
     } else {
       bySlug.set(candidate.slug, candidate);
     }
@@ -380,6 +429,7 @@ Run: ${draft.generatedAt}
 
 ${draft.candidates.map((candidate, index) => `## ${index + 1}. ${candidate.title}
 
+- Language: ${candidate.language || "vi"}
 - Opportunity score: ${candidate.opportunityScore}
 - Demand score: ${candidate.demandScore}
 - Audio competition: ${candidate.audioCompetitionLevel} (${candidate.audioCompetitionScore} exact-ish YouTube matches)
@@ -406,11 +456,17 @@ async function main() {
   const suggestQueries = config.queries.flatMap((query) =>
     config.suggestTemplates.map((template) => template.replace("{query}", query))
   );
+  const englishDemandQueries = (config.englishDemandQueries || []).flatMap((query) =>
+    (config.englishSuggestTemplates || config.suggestTemplates).map((template) => template.replace("{query}", query))
+  );
+  const englishSuggestQueries = (config.englishQueries || []).flatMap((query) =>
+    (config.englishSuggestTemplates || config.suggestTemplates).map((template) => template.replace("{query}", query))
+  );
 
   if (!noNetwork) {
     const demandResults = await mapLimit(demandQueries, 8, async (query) => {
       try {
-        return await collectDemandSuggest(query);
+        return await collectDemandSuggest(query, "vi");
       } catch (error) {
         return [{ source: "error", query, text: `google-demand-suggest failed: ${error.message}` }];
       }
@@ -419,7 +475,7 @@ async function main() {
 
     const suggestResults = await mapLimit(suggestQueries, 8, async (query) => {
       try {
-        return await collectGoogleSuggest(query);
+        return await collectGoogleSuggest(query, "vi");
       } catch (error) {
         return [{ source: "error", query, text: `google-suggest failed: ${error.message}` }];
       }
@@ -434,6 +490,43 @@ async function main() {
       }
     });
     rawItems.push(...youtubeResults.flat());
+
+    const englishDemandResults = await mapLimit(englishDemandQueries, 8, async (query) => {
+      try {
+        return await collectDemandSuggest(query, "en");
+      } catch (error) {
+        return [{ source: "error", language: "en", query, text: `english google-demand-suggest failed: ${error.message}` }];
+      }
+    });
+    rawItems.push(...englishDemandResults.flat());
+
+    const englishSuggestResults = await mapLimit(englishSuggestQueries, 8, async (query) => {
+      try {
+        return await collectGoogleSuggest(query, "en");
+      } catch (error) {
+        return [{ source: "error", language: "en", query, text: `english google-suggest failed: ${error.message}` }];
+      }
+    });
+    rawItems.push(...englishSuggestResults.flat());
+
+    const englishYoutubeResults = await mapLimit(config.englishYoutubeQueries || [], 3, async (query) => {
+      try {
+        const items = await collectYouTube(query);
+        return items.map((item) => ({ ...item, language: "en" }));
+      } catch (error) {
+        return [{ source: "error", language: "en", query, text: `english youtube-search failed: ${error.message}` }];
+      }
+    });
+    rawItems.push(...englishYoutubeResults.flat());
+
+    const englishStorySourceResults = await mapLimit(config.englishStorySources || [], 2, async (source) => {
+      try {
+        return await collectRoyalRoad(source);
+      } catch (error) {
+        return [{ source: "error", language: "en", query: source.url, text: `${source.name || "english-source"} failed: ${error.message}` }];
+      }
+    });
+    rawItems.push(...englishStorySourceResults.flat());
   }
 
   const mergedCandidates = mergeCandidates(rawItems.filter((item) => item.source !== "error"));
@@ -443,7 +536,7 @@ async function main() {
     date: dateId,
     mode: noNetwork ? "no-network" : "network",
     sourceCount: rawItems.length,
-    scoring: "v2-opportunity-demand-minus-audio-competition",
+    scoring: "v3-bilingual-opportunity-demand-minus-audio-competition",
     candidates
   };
 

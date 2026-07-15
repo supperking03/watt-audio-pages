@@ -13,11 +13,12 @@ Outputs:
 - `data/story-title-bot/drafts/YYYY-MM-DD.json`
 - `data/story-title-bot/drafts/YYYY-MM-DD.md`
 
-The bot collects Google Suggest and YouTube search signals, extracts story-title candidates, dedupes existing pages, estimates exact-title audio competition, scores candidates by opportunity, and writes reviewable drafts.
+The bot collects Google Suggest, YouTube search, and English web-fiction source signals, extracts story-title candidates, dedupes existing pages, estimates exact-title audio competition, scores candidates by opportunity, and writes reviewable drafts.
 
 V2 scoring favors SEO gaps:
 
 - Higher demand from Wattpad/TruyenFull/story search suggestions.
+- English demand from Wattpad/read-aloud/webnovel searches plus Royal Road trending and best-rated pages.
 - Lower score when exact-title YouTube audio already has several matches.
 - `Opportunity score = demand + weak audio signal - audio competition penalty`.
 - Competition levels: `none`, `low`, `medium`, `high`, or `unknown` when the check fails.
@@ -72,10 +73,12 @@ Use:
 STORY_TITLE_BOT_AUTO_PUBLISH="1"
 STORY_TITLE_BOT_PUBLISH_MIN_SCORE="65"
 STORY_TITLE_BOT_PUBLISH_MAX="1"
+STORY_TITLE_BOT_PUBLISH_MAX_PER_LANGUAGE="1"
+STORY_TITLE_BOT_PUBLISH_LANGUAGES="vi,en"
 STORY_TITLE_BOT_GIT_PUSH="1"
 ```
 
-The publisher checks duplicate slugs and duplicate normalized titles before inserting anything. It then runs `scripts/build-seo-pages.mjs`, which generates Vietnamese story-title pages, updates `sitemap.xml`, commits the relevant generated files, and pushes to the current git remote when `STORY_TITLE_BOT_GIT_PUSH="1"`.
+The publisher checks duplicate slugs and duplicate normalized titles before inserting anything. It then runs `scripts/build-seo-pages.mjs`, which generates Vietnamese and/or English story-title pages based on each candidate language, updates `sitemap.xml`, commits the relevant generated files, and pushes to the current git remote when `STORY_TITLE_BOT_GIT_PUSH="1"`.
 
 Manual dry run:
 

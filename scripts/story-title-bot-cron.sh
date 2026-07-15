@@ -25,6 +25,8 @@ LIMIT="${STORY_TITLE_BOT_LIMIT:-12}"
 AUTO_PUBLISH="${STORY_TITLE_BOT_AUTO_PUBLISH:-0}"
 PUBLISH_MIN_SCORE="${STORY_TITLE_BOT_PUBLISH_MIN_SCORE:-65}"
 PUBLISH_MAX="${STORY_TITLE_BOT_PUBLISH_MAX:-1}"
+PUBLISH_MAX_PER_LANGUAGE="${STORY_TITLE_BOT_PUBLISH_MAX_PER_LANGUAGE:-1}"
+PUBLISH_LANGUAGES="${STORY_TITLE_BOT_PUBLISH_LANGUAGES:-vi}"
 GIT_PUSH="${STORY_TITLE_BOT_GIT_PUSH:-1}"
 
 mkdir -p "$HOME/.bubu"
@@ -118,21 +120,23 @@ published_links=""
 published_count=0
 sitemap_output=""
 if [ "$status" -eq 0 ] && [ "$AUTO_PUBLISH" = "1" ]; then
-  publish_output=$(run_node scripts/publish-story-title-drafts.mjs --min-score="$PUBLISH_MIN_SCORE" --max="$PUBLISH_MAX" --build 2>&1)
+  publish_output=$(run_node scripts/publish-story-title-drafts.mjs --min-score="$PUBLISH_MIN_SCORE" --max="$PUBLISH_MAX" --max-per-language="$PUBLISH_MAX_PER_LANGUAGE" --languages="$PUBLISH_LANGUAGES" --build 2>&1)
   publish_status=$?
   printf '%s\n' "$publish_output" >> "$LOG"
   if [ "$publish_status" -eq 0 ] && printf '%s' "$publish_output" | grep -q '^Publishable drafts:'; then
-    slugs=$(printf '%s\n' "$publish_output" | sed -nE 's/^- .* -> ([a-z0-9-]+)$/\1/p')
-    for slug in $slugs; do
+    slug_args=$(printf '%s\n' "$publish_output" | sed -nE 's/^- \[([a-z]{2})\] .* -> ([a-z0-9-]+)$/\1:\2/p')
+    for slug_arg in $slug_args; do
+      lang="${slug_arg%%:*}"
+      slug="${slug_arg#*:}"
       published_count=$((published_count + 1))
-      published_links="${published_links}https://wattaudios.com/vi/articles/$slug.html
+      published_links="${published_links}https://wattaudios.com/$lang/articles/$slug.html
 "
     done
-    first_slug=$(printf '%s\n' "$slugs" | head -1)
+    first_slug=$(printf '%s\n' "$slug_args" | head -1 | sed 's/^[a-z][a-z]://')
     commit_msg="seo: publish story audio guide ${first_slug:-draft}"
     push_arg=""
     if [ "$GIT_PUSH" = "1" ]; then push_arg="--push"; fi
-    git_output=$(run_node scripts/commit-story-title-publish.mjs $push_arg --message "$commit_msg" --slugs $slugs 2>&1)
+    git_output=$(run_node scripts/commit-story-title-publish.mjs $push_arg --message "$commit_msg" --slugs $slug_args 2>&1)
     git_status=$?
     printf '%s\n' "$git_output" >> "$LOG"
     if [ "$git_status" -eq 0 ] && [ "$GIT_PUSH" = "1" ] && [ "${GSC_SITEMAP_SUBMIT_ENABLED:-0}" = "1" ]; then
@@ -144,9 +148,9 @@ fi
 
 if [ "$status" -eq 0 ] && [ "$publish_status" -eq 0 ] && [ "$git_status" -eq 0 ]; then
   if [ "$AUTO_PUBLISH" = "1" ]; then
-    mode="Auto-publish enabled. Threshold: $PUBLISH_MIN_SCORE. Max per run: $PUBLISH_MAX."
+    mode="Auto-publish enabled. Threshold: $PUBLISH_MIN_SCORE. Languages: $PUBLISH_LANGUAGES. Max per language: $PUBLISH_MAX_PER_LANGUAGE."
     if [ "$published_count" -gt 0 ]; then
-      publish_summary="Published $published_count new Vietnamese article(s):
+      publish_summary="Published $published_count new story-title article(s):
 $published_links"
       subject="✅ Watt Audio SEO published $published_count bài ($(date '+%F'))"
     else
