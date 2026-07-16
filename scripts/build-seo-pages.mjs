@@ -1613,6 +1613,13 @@ const topics = [
     enMotif: "school romance",
     viMotif: "vườn trường",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "cuc-cung-doi-chia-tay-thai-tu-gia-phat-dien-roi",
+    title: "Cục Cưng Đòi Chia Tay, Thái Tử Gia Phát Điên Rồi",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["vi"]
   })
 ];
 
