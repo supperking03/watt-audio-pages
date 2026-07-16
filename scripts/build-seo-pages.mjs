@@ -1620,6 +1620,13 @@ const topics = [
     enMotif: "Vietnamese web fiction and romance drama",
     viMotif: "truyện mạng Việt và romance drama",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "accidentally-married-by-victorine-e-lieske",
+    title: "Accidentally Married By Victorine E. Lieske",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["en"]
   })
 ];
 
