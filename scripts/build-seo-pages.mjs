@@ -1627,6 +1627,20 @@ const topics = [
     enMotif: "web fiction and romance drama",
     viMotif: "truyện mạng Việt và romance drama",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "dai-tieu-thu-mo-hon-tro-ve-day-do-em-gai-tra-xanh-gia-tao",
+    title: "Đại Tiểu Thư Mỏ Hỗn Trở Về Dạy Dỗ Em Gái Trà Xanh Giả Tạo",
+    enMotif: "green tea rival",
+    viMotif: "trà xanh",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "dao-of-the-world-walker-craft-based-slice-of-life-xianxia-with-world-hopping",
+    title: "Dao Of The World Walker (Craft-based Slice Of Life Xianxia With World Hopping)",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["en"]
   })
 ];
 

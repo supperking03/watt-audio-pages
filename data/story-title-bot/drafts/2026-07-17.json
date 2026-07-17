@@ -1,0 +1,431 @@
+{
+  "generatedAt": "2026-07-17T03:00:04.887Z",
+  "date": "2026-07-17",
+  "mode": "network",
+  "sourceCount": 602,
+  "scoring": "v3-bilingual-opportunity-demand-minus-audio-competition",
+  "candidates": [
+    {
+      "title": "Đại Tiểu Thư Mỏ Hỗn Trở Về Dạy Dỗ Em Gái Trà Xanh Giả Tạo",
+      "slug": "dai-tieu-thu-mo-hon-tro-ve-day-do-em-gai-tra-xanh-gia-tao",
+      "language": "vi",
+      "score": 89,
+      "demandScore": 84,
+      "audioSignalScore": 11,
+      "audioCompetitionScore": 1,
+      "audioCompetitionLevel": "low",
+      "opportunityScore": 89,
+      "enMotif": "green tea rival",
+      "viMotif": "trà xanh",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện audio full mới nhất",
+          "text": "[Truyện Audio Full] | ĐẠI TIỂU THƯ MỎ HỖN TRỞ VỀ DẠY DỖ EM GÁI TRÀ XANH GIẢ TẠO | Vả Mặt Audio"
+        },
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện trà xanh audio",
+          "text": "[Truyện Audio Full] | ĐẠI TIỂU THƯ MỎ HỖN TRỞ VỀ DẠY DỖ EM GÁI TRÀ XANH GIẢ TẠO | Vả Mặt Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Đại Tiểu Thư Mỏ Hỗn Trở Về Dạy Dỗ Em Gái Trà Xanh Giả Tạo\" \"truyện audio\"",
+          "text": "[Truyện Audio Full] | ĐẠI TIỂU THƯ MỎ HỖN TRỞ VỀ DẠY DỖ EM GÁI TRÀ XANH GIẢ TẠO | Vả Mặt Audio"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Dao Of The World Walker (Craft-based Slice Of Life Xianxia With World Hopping)",
+      "slug": "dao-of-the-world-walker-craft-based-slice-of-life-xianxia-with-world-hopping",
+      "language": "en",
+      "score": 80,
+      "demandScore": 80,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "none",
+      "opportunityScore": 80,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-trending",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/trending",
+          "text": "Dao of the World Walker (Craft-based Slice of life Xianxia with World Hopping)"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Dao Of The World Walker (Craft-based Slice Of Life Xianxia With World Hopping)\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Amberlin's Apprentice Is Secretly Strong (Arc 1 Complete) [OP MC, Archmage, Progression]",
+      "slug": "amberlin-s-apprentice-is-secretly-strong-arc-1-complete-op-mc-archmage-progression",
+      "language": "en",
+      "score": 80,
+      "demandScore": 80,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "none",
+      "opportunityScore": 80,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-trending",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/trending",
+          "text": "Amberlin's Apprentice Is Secretly Strong (Arc 1 Complete) [OP MC, Archmage, Progression]"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Amberlin's Apprentice Is Secretly Strong (Arc 1 Complete) [OP MC, Archmage, Progression]\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Amberlin's Apprentice Is Secretly Strong (Arc 1 Complete) [OP MC, Archmage, Progression]\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Lỡ Lột Áo Đại Ca Trường Tôi Bị Anh Hốt Luôn Về Làm Vợ",
+      "slug": "lo-lot-ao-dai-ca-truong-toi-bi-anh-hot-luon-ve-lam-vo",
+      "language": "vi",
+      "score": 66,
+      "demandScore": 70,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 66,
+      "enMotif": "school romance",
+      "viMotif": "vườn trường",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "Lỡ Lột Áo Đại Ca Trường Tôi Bị Anh Hốt Luôn Về Làm Vợ | Truyện Full"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Lỡ Lột Áo Đại Ca Trường Tôi Bị Anh Hốt Luôn Về Làm Vợ\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Lỡ Lột Áo Đại Ca Trường Tôi Bị Anh Hốt Luôn Về Làm Vợ\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Tôi Và Bạn Thân Cùng Xuyên Vào Vợ Của 2 Phản Diện Cuồng Yêu",
+      "slug": "toi-va-ban-than-cung-xuyen-vao-vo-cua-2-phan-dien-cuong-yeu",
+      "language": "vi",
+      "score": 66,
+      "demandScore": 70,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 66,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "[Truyện Audio] | Tôi Và Bạn Thân Cùng Xuyên Vào Vợ Của 2 Phản Diện Cuồng Yêu | Tâm Di Audio"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Tôi Và Bạn Thân Cùng Xuyên Vào Vợ Của 2 Phản Diện Cuồng Yêu\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Tôi Và Bạn Thân Cùng Xuyên Vào Vợ Của 2 Phản Diện Cuồng Yêu\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Black Knight Seeks Quiet Life [OP MC, East Meets West Fantasy]",
+      "slug": "black-knight-seeks-quiet-life-op-mc-east-meets-west-fantasy",
+      "language": "en",
+      "score": 66,
+      "demandScore": 78,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 66,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-trending",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/trending",
+          "text": "Black Knight Seeks Quiet Life [OP MC, East Meets West Fantasy]"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Black Knight Seeks Quiet Life [OP MC, East Meets West Fantasy]\" audiobook",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Black Knight Seeks Quiet Life [OP MC, East Meets West Fantasy]\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Black Knight Seeks Quiet Life [OP MC, East Meets West Fantasy]\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "The Elf Who Would Become A Dragon [Story Complete; Copyedits In Progress]",
+      "slug": "the-elf-who-would-become-a-dragon-story-complete-copyedits-in-progress",
+      "language": "en",
+      "score": 66,
+      "demandScore": 78,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 66,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-best-rated",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/best-rated",
+          "text": "The Elf Who Would Become A Dragon [Story Complete; Copyedits in Progress]"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Elf Who Would Become A Dragon [Story Complete; Copyedits In Progress]\" audiobook",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Elf Who Would Become A Dragon [Story Complete; Copyedits In Progress]\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Elf Who Would Become A Dragon [Story Complete; Copyedits In Progress]\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Truyện Đam Mỹ Xuyên Sách",
+      "slug": "truyen-dam-my-xuyen-sach",
+      "language": "vi",
+      "score": 65,
+      "demandScore": 77,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 65,
+      "enMotif": "transmigration",
+      "viMotif": "xuyên sách",
+      "evidence": [
+        {
+          "source": "google-demand-suggest",
+          "language": "vi",
+          "query": "truyện wattpad xuyên sách",
+          "text": "truyện đam mỹ xuyên sách wattpad"
+        },
+        {
+          "source": "google-demand-suggest",
+          "language": "vi",
+          "query": "truyện full xuyên sách",
+          "text": "truyện đam mỹ xuyên sách full"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Truyện Đam Mỹ Xuyên Sách\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Truyện Đam Mỹ Xuyên Sách\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Reincarnated As A Brewer (Against My Better Judgement) [Book 1 Complete]",
+      "slug": "reincarnated-as-a-brewer-against-my-better-judgement-book-1-complete",
+      "language": "en",
+      "score": 64,
+      "demandScore": 76,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 64,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-trending",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/trending",
+          "text": "Reincarnated as a Brewer (Against My Better judgement) [Book 1 Complete]"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Reincarnated As A Brewer (Against My Better Judgement) [Book 1 Complete]\" audiobook",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Reincarnated As A Brewer (Against My Better Judgement) [Book 1 Complete]\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Reincarnated As A Brewer (Against My Better Judgement) [Book 1 Complete]\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "The Archmage's Second Life As An Introvert [OP MC, LitRPG]",
+      "slug": "the-archmage-s-second-life-as-an-introvert-op-mc-litrpg",
+      "language": "en",
+      "score": 64,
+      "demandScore": 76,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 64,
+      "enMotif": "family drama",
+      "viMotif": "gia đình",
+      "evidence": [
+        {
+          "source": "royalroad-trending",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/trending",
+          "text": "The Archmage's Second Life as an Introvert [OP MC, LitRPG]"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Archmage's Second Life As An Introvert [OP MC, LitRPG]\" audiobook",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Archmage's Second Life As An Introvert [OP MC, LitRPG]\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Archmage's Second Life As An Introvert [OP MC, LitRPG]\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Tạt Nước Lạnh Trả Thù Người Yêu Cũ, Ai Ngờ Tôi Tạt Trúng Đại Ca Trường",
+      "slug": "tat-nuoc-lanh-tra-thu-nguoi-yeu-cu-ai-ngo-toi-tat-trung-dai-ca-truong",
+      "language": "vi",
+      "score": 62,
+      "demandScore": 72,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 2,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 62,
+      "enMotif": "revenge and school romance",
+      "viMotif": "báo thù và vườn trường",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "Tạt Nước Lạnh Trả Thù Người Yêu Cũ, Ai Ngờ Tôi Tạt Trúng Đại Ca Trường | Truyện Audio Nấu Ăn"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Tạt Nước Lạnh Trả Thù Người Yêu Cũ, Ai Ngờ Tôi Tạt Trúng Đại Ca Trường\" \"truyện audio\"",
+          "text": "Tạt Nước Lạnh Trả Thù Người Yêu Cũ, Ai Ngờ Tôi Tạt Trúng Đại Ca Trường | Truyện Audio Nấu Ăn"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Tạt Nước Lạnh Trả Thù Người Yêu Cũ, Ai Ngờ Tôi Tạt Trúng Đại Ca Trường\" \"truyện audio\"",
+          "text": "[ Truyện Audio ] Tạt Nước Lạnh Trả Thù Người Yêu Cũ, Ai Ngờ Tôi Tạt Trúng Đại Ca Trường"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Arranged Mafia Marriage By Bella King",
+      "slug": "arranged-mafia-marriage-by-bella-king",
+      "language": "en",
+      "score": 62,
+      "demandScore": 69,
+      "audioSignalScore": 11,
+      "audioCompetitionScore": 4,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 62,
+      "enMotif": "marriage drama",
+      "viMotif": "cưới gả",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "en",
+          "query": "wattpad story audio",
+          "text": "Arranged Mafia Marriage by Bella King - Full Romance Audiobook"
+        },
+        {
+          "source": "youtube-search",
+          "language": "en",
+          "query": "wattpad read aloud romance",
+          "text": "Arranged Mafia Marriage by Bella King - Full Romance Audiobook"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Arranged Mafia Marriage By Bella King\" audio",
+          "text": "Arranged Mafia Marriage by Bella King - Full Romance Audiobook"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Arranged Mafia Marriage By Bella King\" \"read aloud\"",
+          "text": "Ruthless Marriage by Bella King - Full Mafia Romance Audiobook"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Arranged Mafia Marriage By Bella King\" \"read aloud\"",
+          "text": "Arranged Mafia Daddy by Bella King - Full Mafia Romance Audiobook"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Arranged Mafia Marriage By Bella King\" \"read aloud\"",
+          "text": "Arranged with Twins Audiobook | Mafia Surprise Pregnancy Romance by Bella King"
+        }
+      ],
+      "status": "draft"
+    }
+  ]
+}
