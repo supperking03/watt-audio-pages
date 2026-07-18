@@ -1641,6 +1641,20 @@ const topics = [
     enMotif: "web fiction and romance drama",
     viMotif: "truyện mạng Việt và romance drama",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "amberlin-s-apprentice-is-secretly-strong-arc-1-complete-op-mc-archmage-progression",
+    title: "Amberlin's Apprentice Is Secretly Strong (Arc 1 Complete) [OP MC, Archmage, Progression]",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "truyen-dam-my-xuyen-sach",
+    title: "Truyện Đam Mỹ Xuyên Sách",
+    enMotif: "transmigration",
+    viMotif: "xuyên sách",
+    languages: ["vi"]
   })
 ];
 
