@@ -1655,6 +1655,20 @@ const topics = [
     enMotif: "transmigration",
     viMotif: "xuyên sách",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "black-knight-seeks-quiet-life-op-mc-east-meets-west-fantasy",
+    title: "Black Knight Seeks Quiet Life [OP MC, East Meets West Fantasy]",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "lo-lot-ao-dai-ca-truong-toi-bi-anh-hot-luon-ve-lam-vo",
+    title: "Lỡ Lột Áo Đại Ca Trường Tôi Bị Anh Hốt Luôn Về Làm Vợ",
+    enMotif: "school romance",
+    viMotif: "vườn trường",
+    languages: ["vi"]
   })
 ];
 
