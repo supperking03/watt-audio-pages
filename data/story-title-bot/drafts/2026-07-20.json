@@ -1,0 +1,405 @@
+{
+  "generatedAt": "2026-07-20T03:00:05.696Z",
+  "date": "2026-07-20",
+  "mode": "network",
+  "sourceCount": 593,
+  "scoring": "v3-bilingual-opportunity-demand-minus-audio-competition",
+  "candidates": [
+    {
+      "title": "The Elf Who Would Become A Dragon [Story Complete; Copyedits In Progress]",
+      "slug": "the-elf-who-would-become-a-dragon-story-complete-copyedits-in-progress",
+      "language": "en",
+      "score": 78,
+      "demandScore": 78,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "none",
+      "opportunityScore": 78,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-best-rated",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/best-rated",
+          "text": "The Elf Who Would Become A Dragon [Story Complete; Copyedits in Progress]"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "The Archmage's Second Life As An Introvert [OP MC, LitRPG]",
+      "slug": "the-archmage-s-second-life-as-an-introvert-op-mc-litrpg",
+      "language": "en",
+      "score": 76,
+      "demandScore": 76,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "none",
+      "opportunityScore": 76,
+      "enMotif": "family drama",
+      "viMotif": "gia đình",
+      "evidence": [
+        {
+          "source": "royalroad-trending",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/trending",
+          "text": "The Archmage's Second Life as an Introvert [OP MC, LitRPG]"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Archmage's Second Life As An Introvert [OP MC, LitRPG]\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Archmage's Second Life As An Introvert [OP MC, LitRPG]\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Tôi Và Bạn Thân Cùng Xuyên Vào Vợ Của 2 Phản Diện Cuồng Yêu",
+      "slug": "toi-va-ban-than-cung-xuyen-vao-vo-cua-2-phan-dien-cuong-yeu",
+      "language": "vi",
+      "score": 72,
+      "demandScore": 70,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 1,
+      "audioCompetitionLevel": "low",
+      "opportunityScore": 72,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "[Truyện Audio] | Tôi Và Bạn Thân Cùng Xuyên Vào Vợ Của 2 Phản Diện Cuồng Yêu | Tâm Di Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Tôi Và Bạn Thân Cùng Xuyên Vào Vợ Của 2 Phản Diện Cuồng Yêu\" \"truyện audio\"",
+          "text": "[Truyện Audio] | Tôi Và Bạn Thân Cùng Xuyên Vào Vợ Của 2 Phản Diện Cuồng Yêu | Tâm Di Audio"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Xuyên Vào Tần Phi Thất Sủng Tôi Khiến Cả Hoàng Cung Chao Đảo",
+      "slug": "xuyen-vao-tan-phi-that-sung-toi-khien-ca-hoang-cung-chao-dao",
+      "language": "vi",
+      "score": 70,
+      "demandScore": 68,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 1,
+      "audioCompetitionLevel": "low",
+      "opportunityScore": 70,
+      "enMotif": "palace drama and family drama",
+      "viMotif": "cổ trang và gia đình",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "[Truyện Audio] | Xuyên Vào Tần Phi Thất Sủng Tôi Khiến Cả Hoàng Cung Chao Đảo | Phụng Miên Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Xuyên Vào Tần Phi Thất Sủng Tôi Khiến Cả Hoàng Cung Chao Đảo\" \"truyện audio\"",
+          "text": "[Truyện Audio] | Xuyên Vào Tần Phi Thất Sủng Tôi Khiến Cả Hoàng Cung Chao Đảo | Phụng Miên Audio"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Reincarnated As A Brewer (Against My Better Judgement) [Book 1 Complete]",
+      "slug": "reincarnated-as-a-brewer-against-my-better-judgement-book-1-complete",
+      "language": "en",
+      "score": 64,
+      "demandScore": 76,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 64,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-trending",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/trending",
+          "text": "Reincarnated as a Brewer (Against My Better judgement) [Book 1 Complete]"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Reincarnated As A Brewer (Against My Better Judgement) [Book 1 Complete]\" audiobook",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Reincarnated As A Brewer (Against My Better Judgement) [Book 1 Complete]\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Reincarnated As A Brewer (Against My Better Judgement) [Book 1 Complete]\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Ngôn Tình Xuyên Không Hay Nhất",
+      "slug": "ngon-tinh-xuyen-khong-hay-nhat",
+      "language": "vi",
+      "score": 63,
+      "demandScore": 75,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 63,
+      "enMotif": "transmigration",
+      "viMotif": "xuyên sách",
+      "evidence": [
+        {
+          "source": "google-suggest",
+          "language": "vi",
+          "query": "truyện audio ngôn tình",
+          "text": "truyện audio ngôn tình xuyên không hay nhất"
+        },
+        {
+          "source": "google-suggest",
+          "language": "vi",
+          "query": "truyện audio ngôn tình hay",
+          "text": "truyện audio ngôn tình xuyên không hay nhất"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Ngôn Tình Xuyên Không Hay Nhất\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Ngôn Tình Xuyên Không Hay Nhất\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Ngôn Tình Trung Quốc Hay Nhất",
+      "slug": "ngon-tinh-trung-quoc-hay-nhat",
+      "language": "vi",
+      "score": 63,
+      "demandScore": 75,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 63,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "google-suggest",
+          "language": "vi",
+          "query": "truyện audio ngôn tình",
+          "text": "truyện audio ngôn tình trung quốc hay nhất"
+        },
+        {
+          "source": "google-suggest",
+          "language": "vi",
+          "query": "truyện audio ngôn tình hay",
+          "text": "truyện audio ngôn tình trung quốc hay nhất"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Ngôn Tình Trung Quốc Hay Nhất\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Ngôn Tình Trung Quốc Hay Nhất\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Nam Thần Từ Chối, Tôi Khiến Anh Phát Điên Vì Ghen",
+      "slug": "nam-than-tu-choi-toi-khien-anh-phat-dien-vi-ghen",
+      "language": "vi",
+      "score": 62,
+      "demandScore": 66,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 62,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "Nam Thần Từ Chối, Tôi Khiến Anh Phát Điên Vì Ghen | Truyện audio | Tô màu"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Nam Thần Từ Chối, Tôi Khiến Anh Phát Điên Vì Ghen\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Nam Thần Từ Chối, Tôi Khiến Anh Phát Điên Vì Ghen\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "The Level 1 Transmigrator [LitRPG Skill Progression] [Book 1 Complete]",
+      "slug": "the-level-1-transmigrator-litrpg-skill-progression-book-1-complete",
+      "language": "en",
+      "score": 62,
+      "demandScore": 74,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 62,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-trending",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/trending",
+          "text": "Archmage to Druid: The Level 1 Transmigrator [LitRPG Skill Progression] [Book 1 Complete]"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Level 1 Transmigrator [LitRPG Skill Progression] [Book 1 Complete]\" audiobook",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Level 1 Transmigrator [LitRPG Skill Progression] [Book 1 Complete]\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Level 1 Transmigrator [LitRPG Skill Progression] [Book 1 Complete]\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Passive Aggressive [Reverse Portal Invasion LitRPG With A Broken Build]",
+      "slug": "passive-aggressive-reverse-portal-invasion-litrpg-with-a-broken-build",
+      "language": "en",
+      "score": 62,
+      "demandScore": 74,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 62,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-trending",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/trending",
+          "text": "Passive Aggressive [Reverse portal invasion LitRPG with a broken build]"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Passive Aggressive [Reverse Portal Invasion LitRPG With A Broken Build]\" audiobook",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Passive Aggressive [Reverse Portal Invasion LitRPG With A Broken Build]\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Passive Aggressive [Reverse Portal Invasion LitRPG With A Broken Build]\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Clara Casewell, Attorney To The Villainess [Vol 1 Complete]",
+      "slug": "clara-casewell-attorney-to-the-villainess-vol-1-complete",
+      "language": "en",
+      "score": 62,
+      "demandScore": 74,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 62,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-best-rated",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/best-rated",
+          "text": "Clara Casewell, Attorney to the Villainess [Vol 1 Complete]"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Clara Casewell, Attorney To The Villainess [Vol 1 Complete]\" audiobook",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Clara Casewell, Attorney To The Villainess [Vol 1 Complete]\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Clara Casewell, Attorney To The Villainess [Vol 1 Complete]\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Theo Đuổi Crush Không Thành, Tôi Vừa Bỏ Cuộc Anh Liền Phát Điên",
+      "slug": "theo-duoi-crush-khong-thanh-toi-vua-bo-cuoc-anh-lien-phat-dien",
+      "language": "vi",
+      "score": 60,
+      "demandScore": 70,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 2,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 60,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "Theo Đuổi Crush Không Thành, Tôi Vừa Bỏ Cuộc Anh Liền Phát Điên | Truyện Full"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Theo Đuổi Crush Không Thành, Tôi Vừa Bỏ Cuộc Anh Liền Phát Điên\" \"truyện audio\"",
+          "text": "Theo Đuổi Crush Không Thành, Tôi Vừa Bỏ Cuộc Anh Liền Phát Điên | Truyện Full"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Theo Đuổi Crush Không Thành, Tôi Vừa Bỏ Cuộc Anh Liền Phát Điên\" \"truyện audio\"",
+          "text": "Truyện Audio| Theo Đuổi Crush Không Thành, Tôi Vừa Bỏ Cuộc Anh Liền Phát Điên |Người Ở Lại #shorts"
+        }
+      ],
+      "status": "draft"
+    }
+  ]
+}

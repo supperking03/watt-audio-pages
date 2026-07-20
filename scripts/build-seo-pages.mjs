@@ -1669,6 +1669,20 @@ const topics = [
     enMotif: "school romance",
     viMotif: "vườn trường",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "the-elf-who-would-become-a-dragon-story-complete-copyedits-in-progress",
+    title: "The Elf Who Would Become A Dragon [Story Complete; Copyedits In Progress]",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "toi-va-ban-than-cung-xuyen-vao-vo-cua-2-phan-dien-cuong-yeu",
+    title: "Tôi Và Bạn Thân Cùng Xuyên Vào Vợ Của 2 Phản Diện Cuồng Yêu",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["vi"]
   })
 ];
 
