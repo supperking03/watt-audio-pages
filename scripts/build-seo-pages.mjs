@@ -1683,6 +1683,20 @@ const topics = [
     enMotif: "Vietnamese web fiction and romance drama",
     viMotif: "truyện mạng Việt và romance drama",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "reincarnated-as-a-brewer-against-my-better-judgement-book-1-complete",
+    title: "Reincarnated As A Brewer (Against My Better Judgement) [Book 1 Complete]",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "ngon-tinh-xuyen-khong-hay-nhat",
+    title: "Ngôn Tình Xuyên Không Hay Nhất",
+    enMotif: "transmigration",
+    viMotif: "xuyên sách",
+    languages: ["vi"]
   })
 ];
 
