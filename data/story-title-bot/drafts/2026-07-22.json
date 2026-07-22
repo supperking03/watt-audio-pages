@@ -1,0 +1,420 @@
+{
+  "generatedAt": "2026-07-22T03:00:05.589Z",
+  "date": "2026-07-22",
+  "mode": "network",
+  "sourceCount": 606,
+  "scoring": "v3-bilingual-opportunity-demand-minus-audio-competition",
+  "candidates": [
+    {
+      "title": "Sentenced To The Penal Mecha Battalion, But My Copilot Is A Beautiful War Criminal [Yuri, Mecha]",
+      "slug": "sentenced-to-the-penal-mecha-battalion-but-my-copilot-is-a-beautiful-war-criminal-yuri-mecha",
+      "language": "en",
+      "score": 84,
+      "demandScore": 84,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "none",
+      "opportunityScore": 84,
+      "enMotif": "family drama",
+      "viMotif": "gia đình",
+      "evidence": [
+        {
+          "source": "royalroad-trending",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/trending",
+          "text": "Bunny Lovelace: Sentenced to the Penal Mecha Battalion, But my Copilot is a Beautiful War Criminal [Yuri, Mecha]"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Hoa Khôi Tự Nhận Mình Là Bạch Nguyệt Quang Của Cả Trường",
+      "slug": "hoa-khoi-tu-nhan-minh-la-bach-nguyet-quang-cua-ca-truong",
+      "language": "vi",
+      "score": 80,
+      "demandScore": 75,
+      "audioSignalScore": 11,
+      "audioCompetitionScore": 1,
+      "audioCompetitionLevel": "low",
+      "opportunityScore": 80,
+      "enMotif": "school romance",
+      "viMotif": "vườn trường",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện ngôn tình audio full",
+          "text": "Full audio | Hoa Khôi Tự Nhận Mình Là Bạch Nguyệt Quang Của Cả Trường | Tiểu Long Nữ Audio #audio"
+        },
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện trà xanh audio",
+          "text": "Full audio | Hoa Khôi Tự Nhận Mình Là Bạch Nguyệt Quang Của Cả Trường | Tiểu Long Nữ Audio #audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Hoa Khôi Tự Nhận Mình Là Bạch Nguyệt Quang Của Cả Trường\" \"truyện audio\"",
+          "text": "Full audio | Hoa Khôi Tự Nhận Mình Là Bạch Nguyệt Quang Của Cả Trường | Tiểu Long Nữ Audio #audio"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Bà Trùm Hacker Xuyên Vào Thiên Kim Thật Mỏ Hỗn Nhà Hào Môn",
+      "slug": "ba-trum-hacker-xuyen-vao-thien-kim-that-mo-hon-nha-hao-mon",
+      "language": "vi",
+      "score": 70,
+      "demandScore": 68,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 1,
+      "audioCompetitionLevel": "low",
+      "opportunityScore": 70,
+      "enMotif": "rich-family romance",
+      "viMotif": "hào môn",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "[Truyện Audio Full] | BÀ TRÙM HACKER XUYÊN VÀO THIÊN KIM THẬT MỎ HỖN NHÀ HÀO MÔN | Vả Mặt Audio"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Bà Trùm Hacker Xuyên Vào Thiên Kim Thật Mỏ Hỗn Nhà Hào Môn\" \"truyện audio\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Bà Trùm Hacker Xuyên Vào Thiên Kim Thật Mỏ Hỗn Nhà Hào Môn\" audio",
+          "text": "[Truyện Audio Full] | BÀ TRÙM HACKER XUYÊN VÀO THIÊN KIM THẬT MỎ HỖN NHÀ HÀO MÔN | Vả Mặt Audio"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Xuyên Vào Tần Phi Thất Sủng Tôi Khiến Cả Hoàng Cung Chao Đảo",
+      "slug": "xuyen-vao-tan-phi-that-sung-toi-khien-ca-hoang-cung-chao-dao",
+      "language": "vi",
+      "score": 64,
+      "demandScore": 68,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 64,
+      "enMotif": "palace drama and family drama",
+      "viMotif": "cổ trang và gia đình",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "[Truyện Audio] | Xuyên Vào Tần Phi Thất Sủng Tôi Khiến Cả Hoàng Cung Chao Đảo | Phụng Miên Audio"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Xuyên Vào Tần Phi Thất Sủng Tôi Khiến Cả Hoàng Cung Chao Đảo\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Xuyên Vào Tần Phi Thất Sủng Tôi Khiến Cả Hoàng Cung Chao Đảo\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Nam Thần Từ Chối, Tôi Khiến Anh Phát Điên Vì Ghen",
+      "slug": "nam-than-tu-choi-toi-khien-anh-phat-dien-vi-ghen",
+      "language": "vi",
+      "score": 62,
+      "demandScore": 66,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 62,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "Nam Thần Từ Chối, Tôi Khiến Anh Phát Điên Vì Ghen | Truyện audio | Tô màu"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Nam Thần Từ Chối, Tôi Khiến Anh Phát Điên Vì Ghen\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Nam Thần Từ Chối, Tôi Khiến Anh Phát Điên Vì Ghen\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "The Level 1 Transmigrator [LitRPG Skill Progression] [Book 1 Complete]",
+      "slug": "the-level-1-transmigrator-litrpg-skill-progression-book-1-complete",
+      "language": "en",
+      "score": 62,
+      "demandScore": 74,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 62,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-trending",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/trending",
+          "text": "Archmage to Druid: The Level 1 Transmigrator [LitRPG Skill Progression] [Book 1 Complete]"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Level 1 Transmigrator [LitRPG Skill Progression] [Book 1 Complete]\" audiobook",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Level 1 Transmigrator [LitRPG Skill Progression] [Book 1 Complete]\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Level 1 Transmigrator [LitRPG Skill Progression] [Book 1 Complete]\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Thousandth Death's The Charm [A Time Loop Dungeon Diving Fantasy]",
+      "slug": "thousandth-death-s-the-charm-a-time-loop-dungeon-diving-fantasy",
+      "language": "en",
+      "score": 62,
+      "demandScore": 74,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 62,
+      "enMotif": "family drama",
+      "viMotif": "gia đình",
+      "evidence": [
+        {
+          "source": "royalroad-trending",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/trending",
+          "text": "Thousandth Death's the Charm [A Time Loop Dungeon Diving Fantasy]"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Thousandth Death's The Charm [A Time Loop Dungeon Diving Fantasy]\" audiobook",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Thousandth Death's The Charm [A Time Loop Dungeon Diving Fantasy]\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Thousandth Death's The Charm [A Time Loop Dungeon Diving Fantasy]\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "The Lost Mortal's Endless Deaths [LitRPG, Isekai, Sci-Fantasy Tragedy]",
+      "slug": "the-lost-mortal-s-endless-deaths-litrpg-isekai-sci-fantasy-tragedy",
+      "language": "en",
+      "score": 62,
+      "demandScore": 74,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 62,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-trending",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/trending",
+          "text": "The Lost Mortal's Endless Deaths [LitRPG, Isekai, Sci-Fantasy Tragedy]"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Lost Mortal's Endless Deaths [LitRPG, Isekai, Sci-Fantasy Tragedy]\" audiobook",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Lost Mortal's Endless Deaths [LitRPG, Isekai, Sci-Fantasy Tragedy]\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Lost Mortal's Endless Deaths [LitRPG, Isekai, Sci-Fantasy Tragedy]\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Clara Casewell, Attorney To The Villainess [Vol 1 Complete]",
+      "slug": "clara-casewell-attorney-to-the-villainess-vol-1-complete",
+      "language": "en",
+      "score": 62,
+      "demandScore": 74,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 62,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-best-rated",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/best-rated",
+          "text": "Clara Casewell, Attorney to the Villainess [Vol 1 Complete]"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Clara Casewell, Attorney To The Villainess [Vol 1 Complete]\" audiobook",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Clara Casewell, Attorney To The Villainess [Vol 1 Complete]\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Clara Casewell, Attorney To The Villainess [Vol 1 Complete]\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Theo Đuổi Crush Không Thành, Tôi Vừa Bỏ Cuộc Anh Liền Phát Điên",
+      "slug": "theo-duoi-crush-khong-thanh-toi-vua-bo-cuoc-anh-lien-phat-dien",
+      "language": "vi",
+      "score": 60,
+      "demandScore": 70,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 2,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 60,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "Theo Đuổi Crush Không Thành, Tôi Vừa Bỏ Cuộc Anh Liền Phát Điên | Truyện Full"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Theo Đuổi Crush Không Thành, Tôi Vừa Bỏ Cuộc Anh Liền Phát Điên\" \"truyện audio\"",
+          "text": "Theo Đuổi Crush Không Thành, Tôi Vừa Bỏ Cuộc Anh Liền Phát Điên | Truyện Full"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Theo Đuổi Crush Không Thành, Tôi Vừa Bỏ Cuộc Anh Liền Phát Điên\" \"truyện audio\"",
+          "text": "Truyện Audio| Theo Đuổi Crush Không Thành, Tôi Vừa Bỏ Cuộc Anh Liền Phát Điên |Người Ở Lại #shorts"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "[Alchemical Dark Academia, Found Family, Slow-Burn][200k Words Written]",
+      "slug": "alchemical-dark-academia-found-family-slow-burn-200k-words-written",
+      "language": "en",
+      "score": 60,
+      "demandScore": 72,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 60,
+      "enMotif": "family drama",
+      "viMotif": "gia đình",
+      "evidence": [
+        {
+          "source": "royalroad-trending",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/trending",
+          "text": "Thrice Woven — [Alchemical Dark Academia, Found Family, Slow-Burn][200k Words Written]"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"[Alchemical Dark Academia, Found Family, Slow-Burn][200k Words Written]\" audiobook",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"[Alchemical Dark Academia, Found Family, Slow-Burn][200k Words Written]\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"[Alchemical Dark Academia, Found Family, Slow-Burn][200k Words Written]\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Ngôn Tình Trung Quốc Hay Nhất",
+      "slug": "ngon-tinh-trung-quoc-hay-nhat",
+      "language": "vi",
+      "score": 57,
+      "demandScore": 75,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 3,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 57,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "google-suggest",
+          "language": "vi",
+          "query": "truyện audio ngôn tình",
+          "text": "truyện audio ngôn tình trung quốc hay nhất"
+        },
+        {
+          "source": "google-suggest",
+          "language": "vi",
+          "query": "truyện audio ngôn tình hay",
+          "text": "truyện audio ngôn tình trung quốc hay nhất"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Ngôn Tình Trung Quốc Hay Nhất\" audio",
+          "text": "[Truyện Đêm Khuya] Buông Rèm Pha Lê – Phần Cuối | Audio Truyện Ngôn Tình Trung Quốc Hay Nhất"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Ngôn Tình Trung Quốc Hay Nhất\" audio",
+          "text": "Truyện ngôn tình Trung Quốc hay nhất 2025 | THIẾU GIA Ở RỂ (Tập 1) #trumtruyenvn"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Ngôn Tình Trung Quốc Hay Nhất\" audio",
+          "text": "[TẬP 1]  13 NHÂN CÁCH CHỈ ĐỂ YÊU EM |Truyện Ngôn Tình Trung Quốc Hay Nhất| MC Phương Thùy| Hạc Toại"
+        }
+      ],
+      "status": "draft"
+    }
+  ]
+}

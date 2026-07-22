@@ -1697,6 +1697,20 @@ const topics = [
     enMotif: "transmigration",
     viMotif: "xuyên sách",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "sentenced-to-the-penal-mecha-battalion-but-my-copilot-is-a-beautiful-war-criminal-yuri-mecha",
+    title: "Sentenced To The Penal Mecha Battalion, But My Copilot Is A Beautiful War Criminal [Yuri, Mecha]",
+    enMotif: "family drama",
+    viMotif: "gia đình",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "hoa-khoi-tu-nhan-minh-la-bach-nguyet-quang-cua-ca-truong",
+    title: "Hoa Khôi Tự Nhận Mình Là Bạch Nguyệt Quang Của Cả Trường",
+    enMotif: "school romance",
+    viMotif: "vườn trường",
+    languages: ["vi"]
   })
 ];
 
