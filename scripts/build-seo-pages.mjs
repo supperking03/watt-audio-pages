@@ -1711,6 +1711,20 @@ const topics = [
     enMotif: "school romance",
     viMotif: "vườn trường",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "ca-ky-tuc-xa-trong-sinh-va-nat-mat-tra-xanh",
+    title: "Cả Ký Túc Xá Trọng Sinh, Vả Nát Mặt Trà Xanh",
+    enMotif: "rebirth and green tea rival",
+    viMotif: "trọng sinh và trà xanh",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "the-archmage-s-second-life-as-an-introvert-op-mc-litrpg",
+    title: "The Archmage's Second Life As An Introvert [OP MC, LitRPG]",
+    enMotif: "family drama",
+    viMotif: "gia đình",
+    languages: ["en"]
   })
 ];
 
