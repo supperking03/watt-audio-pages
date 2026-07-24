@@ -1725,6 +1725,20 @@ const topics = [
     enMotif: "family drama",
     viMotif: "gia đình",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "i-made-a-railgun-with-lightning-magic-litrpg-op-mc-isekai",
+    title: "I Made A Railgun With Lightning Magic (LitRPG / OP MC / Isekai)",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "xuyen-vao-tan-phi-that-sung-toi-khien-ca-hoang-cung-chao-dao",
+    title: "Xuyên Vào Tần Phi Thất Sủng Tôi Khiến Cả Hoàng Cung Chao Đảo",
+    enMotif: "palace drama and family drama",
+    viMotif: "cổ trang và gia đình",
+    languages: ["vi"]
   })
 ];
 
