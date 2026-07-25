@@ -1739,6 +1739,13 @@ const topics = [
     enMotif: "palace drama and family drama",
     viMotif: "cổ trang và gia đình",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "bi-nha-chong-duoi-toi-ve-lam-dai-tieu-thu-hao-mon-va-mat-tra-xanh",
+    title: "Bị Nhà Chồng Đuổi, Tôi Về Làm Đại Tiểu Thư Hào Môn Vả Mặt Trà Xanh",
+    enMotif: "green tea rival and rich-family romance",
+    viMotif: "trà xanh và hào môn",
+    languages: ["vi"]
   })
 ];
 
