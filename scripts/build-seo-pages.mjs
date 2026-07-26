@@ -1746,6 +1746,20 @@ const topics = [
     enMotif: "green tea rival and rich-family romance",
     viMotif: "trà xanh và hào môn",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "tat-nuoc-lanh-tra-thu-nguoi-yeu-cu-ai-ngo-toi-tat-trung-dai-ca-truong",
+    title: "Tạt Nước Lạnh Trả Thù Người Yêu Cũ, Ai Ngờ Tôi Tạt Trúng Đại Ca Trường",
+    enMotif: "revenge and school romance",
+    viMotif: "báo thù và vườn trường",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "ten-thousand-tragedies-xianxia-timeloop-book-1-stubs-on-aug-10th",
+    title: "Ten Thousand Tragedies [Xianxia Timeloop] (Book 1 Stubs On Aug 10th)",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["en"]
   })
 ];
 
