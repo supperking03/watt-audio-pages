@@ -1760,6 +1760,13 @@ const topics = [
     enMotif: "web fiction and romance drama",
     viMotif: "truyện mạng Việt và romance drama",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "tim-thay-nick-phu-cua-dai-ca-truong-thi-ra-anh-tham-thich-toi",
+    title: "Tìm Thấy Nick Phụ Của Đại Ca Trường, Thì Ra Anh Thầm Thích Tôi",
+    enMotif: "school romance",
+    viMotif: "vườn trường",
+    languages: ["vi"]
   })
 ];
 
