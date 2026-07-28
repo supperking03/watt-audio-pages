@@ -1767,6 +1767,20 @@ const topics = [
     enMotif: "school romance",
     viMotif: "vườn trường",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "quay-ve-nam-thu-hai-sau-khi-lam-the-than-toi-qua-quyet-bo-di",
+    title: "Quay Về Năm Thứ Hai Sau Khi Làm Thế Thân, Tôi Quả Quyết Bỏ Đi",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "the-level-1-transmigrator-litrpg-skill-progression-book-1-complete",
+    title: "The Level 1 Transmigrator [LitRPG Skill Progression] [Book 1 Complete]",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["en"]
   })
 ];
 
