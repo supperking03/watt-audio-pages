@@ -1781,6 +1781,20 @@ const topics = [
     enMotif: "web fiction and romance drama",
     viMotif: "truyện mạng Việt và romance drama",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "passive-aggressive-reverse-portal-invasion-litrpg-with-a-broken-build",
+    title: "Passive Aggressive [Reverse Portal Invasion LitRPG With A Broken Build]",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "sat-nhan-xuyen-sach-tan-sat-ca-gia-dinh-tra-xanh",
+    title: "Sát Nhân Xuyên Sách Tàn Sát Cả Gia Đình Trà Xanh",
+    enMotif: "transmigration, green tea rival and family drama",
+    viMotif: "xuyên sách, trà xanh và gia đình",
+    languages: ["vi"]
   })
 ];
 
