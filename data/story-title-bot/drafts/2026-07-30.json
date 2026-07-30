@@ -1,0 +1,441 @@
+{
+  "generatedAt": "2026-07-30T03:00:05.429Z",
+  "date": "2026-07-30",
+  "mode": "network",
+  "sourceCount": 594,
+  "scoring": "v3-bilingual-opportunity-demand-minus-audio-competition",
+  "candidates": [
+    {
+      "title": "An Archmage's Second Life [OP MC, LitRPG, Book 1 Complete, Stubbing December!]",
+      "slug": "an-archmage-s-second-life-op-mc-litrpg-book-1-complete-stubbing-december",
+      "language": "en",
+      "score": 80,
+      "demandScore": 80,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "none",
+      "opportunityScore": 80,
+      "enMotif": "family drama",
+      "viMotif": "gia đình",
+      "evidence": [
+        {
+          "source": "royalroad-trending",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/trending",
+          "text": "Blessed by Death: An Archmage's Second Life [OP MC, LitRPG, Book 1 Complete, stubbing December!]"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Sau Năm Năm Tôi Rút Khỏi Giới Giải Trí, Sự Thật Lại Được Phơi Bày",
+      "slug": "sau-nam-nam-toi-rut-khoi-gioi-giai-tri-su-that-lai-duoc-phoi-bay",
+      "language": "vi",
+      "score": 74,
+      "demandScore": 72,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 1,
+      "audioCompetitionLevel": "low",
+      "opportunityScore": 74,
+      "enMotif": "entertainment circle",
+      "viMotif": "showbiz",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "TRUYỆN BOY LOVE FULL | SAU NĂM NĂM TÔI RÚT KHỎI GIỚI GIẢI TRÍ, SỰ THẬT LẠI ĐƯỢC PHƠI BÀY"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Sau Năm Năm Tôi Rút Khỏi Giới Giải Trí, Sự Thật Lại Được Phơi Bày\" \"truyện audio\"",
+          "text": "TRUYỆN BOY LOVE FULL | SAU NĂM NĂM TÔI RÚT KHỎI GIỚI GIẢI TRÍ, SỰ THẬT LẠI ĐƯỢC PHƠI BÀY"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Clara Casewell, Attorney To The Villainess [Vol 1 Complete]",
+      "slug": "clara-casewell-attorney-to-the-villainess-vol-1-complete",
+      "language": "en",
+      "score": 74,
+      "demandScore": 74,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "none",
+      "opportunityScore": 74,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-best-rated",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/best-rated",
+          "text": "Clara Casewell, Attorney to the Villainess [Vol 1 Complete]"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Clara Casewell, Attorney To The Villainess [Vol 1 Complete]\" audiobook",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Clara Casewell, Attorney To The Villainess [Vol 1 Complete]\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Nam Thần Từ Chối, Tôi Khiến Anh Phát Điên Vì Ghen",
+      "slug": "nam-than-tu-choi-toi-khien-anh-phat-dien-vi-ghen",
+      "language": "vi",
+      "score": 62,
+      "demandScore": 66,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 62,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "Nam Thần Từ Chối, Tôi Khiến Anh Phát Điên Vì Ghen | Truyện audio | Tô màu"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Nam Thần Từ Chối, Tôi Khiến Anh Phát Điên Vì Ghen\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Nam Thần Từ Chối, Tôi Khiến Anh Phát Điên Vì Ghen\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Giáo Sư Mới Của Lớp Chính Là Chồng Tôi",
+      "slug": "giao-su-moi-cua-lop-chinh-la-chong-toi",
+      "language": "vi",
+      "score": 61,
+      "demandScore": 62,
+      "audioSignalScore": 11,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 61,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện audio full mới nhất",
+          "text": "Giáo Sư Mới Của Lớp Chính Là Chồng Tôi | Truyện Audio Nấu Ăn"
+        },
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện ngôn tình audio full",
+          "text": "Giáo Sư Mới Của Lớp Chính Là Chồng Tôi | Truyện Audio Nấu Ăn"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Giáo Sư Mới Của Lớp Chính Là Chồng Tôi\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Giáo Sư Mới Của Lớp Chính Là Chồng Tôi\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Bilyonaryong Kauuwi Lang Sa Pinas, Na LOVE AT FIRST SIGHT Sa KASAMBAHAY Na Mistulang Anghel Sa Ganda",
+      "slug": "bilyonaryong-kauuwi-lang-sa-pinas-na-love-at-first-sight-sa-kasambahay-na-mistulang-anghel-s",
+      "language": "en",
+      "score": 60,
+      "demandScore": 64,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 60,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "en",
+          "query": "wattpad story audio",
+          "text": "Bilyonaryong kauuwi lang sa Pinas, na LOVE AT FIRST SIGHT sa KASAMBAHAY na mistulang anghel sa ganda"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Bilyonaryong Kauuwi Lang Sa Pinas, Na LOVE AT FIRST SIGHT Sa KASAMBAHAY Na Mistulang Anghel Sa Ganda\" audiobook",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Bilyonaryong Kauuwi Lang Sa Pinas, Na LOVE AT FIRST SIGHT Sa KASAMBAHAY Na Mistulang Anghel Sa Ganda\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Bilyonaryong Kauuwi Lang Sa Pinas, Na LOVE AT FIRST SIGHT Sa KASAMBAHAY Na Mistulang Anghel Sa Ganda\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "The Archmage And The Valkyr [Progression, LITRPG, ISEKAI]",
+      "slug": "the-archmage-and-the-valkyr-progression-litrpg-isekai",
+      "language": "en",
+      "score": 60,
+      "demandScore": 72,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 60,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-trending",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/trending",
+          "text": "The Wixx Chronicles: The Archmage and the Valkyr [Progression, LITRPG, ISEKAI]"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Archmage And The Valkyr [Progression, LITRPG, ISEKAI]\" audiobook",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Archmage And The Valkyr [Progression, LITRPG, ISEKAI]\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Archmage And The Valkyr [Progression, LITRPG, ISEKAI]\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "The God Of Death Just Wants To Quit?!",
+      "slug": "the-god-of-death-just-wants-to-quit",
+      "language": "en",
+      "score": 60,
+      "demandScore": 72,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 60,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-trending",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/trending",
+          "text": "The God of Death Just Wants to Quit?!"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The God Of Death Just Wants To Quit?!\" audiobook",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The God Of Death Just Wants To Quit?!\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The God Of Death Just Wants To Quit?!\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Headless Over Heels [A Dark Fantasy Romance][Book 1 Complete]",
+      "slug": "headless-over-heels-a-dark-fantasy-romance-book-1-complete",
+      "language": "en",
+      "score": 60,
+      "demandScore": 72,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 60,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-best-rated",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/best-rated",
+          "text": "Headless Over Heels [A Dark Fantasy Romance][Book 1 complete]"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Headless Over Heels [A Dark Fantasy Romance][Book 1 Complete]\" audiobook",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Headless Over Heels [A Dark Fantasy Romance][Book 1 Complete]\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Headless Over Heels [A Dark Fantasy Romance][Book 1 Complete]\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Ngôn Tình Trung Quốc Hay Nhất",
+      "slug": "ngon-tinh-trung-quoc-hay-nhat",
+      "language": "vi",
+      "score": 57,
+      "demandScore": 75,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 3,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 57,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "google-suggest",
+          "language": "vi",
+          "query": "truyện audio ngôn tình",
+          "text": "truyện audio ngôn tình trung quốc hay nhất"
+        },
+        {
+          "source": "google-suggest",
+          "language": "vi",
+          "query": "truyện audio ngôn tình hay",
+          "text": "truyện audio ngôn tình trung quốc hay nhất"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Ngôn Tình Trung Quốc Hay Nhất\" audio",
+          "text": "[Truyện Đêm Khuya] Buông Rèm Pha Lê – Phần Cuối | Audio Truyện Ngôn Tình Trung Quốc Hay Nhất"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Ngôn Tình Trung Quốc Hay Nhất\" audio",
+          "text": "Truyện ngôn tình Trung Quốc hay nhất 2025 | THIẾU GIA Ở RỂ (Tập 1) #trumtruyenvn"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Ngôn Tình Trung Quốc Hay Nhất\" audio",
+          "text": "[TẬP 1]  13 NHÂN CÁCH CHỈ ĐỂ YÊU EM |Truyện Ngôn Tình Trung Quốc Hay Nhất| MC Phương Thùy| Hạc Toại"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Vị Hôn Thê Nuôi Từ Nhỏ Của Đại Thiếu Gia",
+      "slug": "vi-hon-the-nuoi-tu-nho-cua-dai-thieu-gia",
+      "language": "vi",
+      "score": 56,
+      "demandScore": 63,
+      "audioSignalScore": 11,
+      "audioCompetitionScore": 3,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 56,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện audio full mới nhất",
+          "text": "[Truyện Audio] Vị Hôn Thê Nuôi Từ Nhỏ Của Đại Thiếu Gia | Mèo Cưng Audio"
+        },
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện ngôn tình audio full",
+          "text": "[Truyện Audio] Vị Hôn Thê Nuôi Từ Nhỏ Của Đại Thiếu Gia | Mèo Cưng Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Vị Hôn Thê Nuôi Từ Nhỏ Của Đại Thiếu Gia\" \"truyện audio\"",
+          "text": "[Truyện Audio] Vị Hôn Thê Nuôi Từ Nhỏ Của Đại Thiếu Gia | Mèo Cưng Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Vị Hôn Thê Nuôi Từ Nhỏ Của Đại Thiếu Gia\" \"truyện audio\"",
+          "text": "[Truyện Audio] Vị Hôn Thê Nuôi Từ Nhỏ Của Đại Thiếu Gia | Đậu Nành Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Vị Hôn Thê Nuôi Từ Nhỏ Của Đại Thiếu Gia\" \"truyện audio\"",
+          "text": "[FULL AUDIO] Vị Hôn Thê Nuôi Từ Nhỏ Của Đại Thiếu Gia | Kho của Thỏ audio"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Hoa Khôi Ép Cả Lớp Chơi Ma Sói Trong Đêm Cắm Trại",
+      "slug": "hoa-khoi-ep-ca-lop-choi-ma-soi-trong-dem-cam-trai",
+      "language": "vi",
+      "score": 56,
+      "demandScore": 66,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 4,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 56,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "Full Audio || HOA KHÔI ÉP CẢ LỚP CHƠI MA SÓI TRONG ĐÊM CẮM TRẠI | Bảo Bối Audio"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Hoa Khôi Ép Cả Lớp Chơi Ma Sói Trong Đêm Cắm Trại\" \"truyện audio\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Hoa Khôi Ép Cả Lớp Chơi Ma Sói Trong Đêm Cắm Trại\" audio",
+          "text": "Full Audio || HOA KHÔI ÉP CẢ LỚP CHƠI MA SÓI TRONG ĐÊM CẮM TRẠI | Bảo Bối Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Hoa Khôi Ép Cả Lớp Chơi Ma Sói Trong Đêm Cắm Trại\" audio",
+          "text": "Full Audio || HOA KHÔI ÉP CẢ LỚP CHƠI MA SÓI TRONG ĐÊM CẮM TRẠI !"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Hoa Khôi Ép Cả Lớp Chơi Ma Sói Trong Đêm Cắm Trại\" audio",
+          "text": "Phàm Nhân Audio 27 | | HOA KHÔI ÉP CẢ LỚP CHƠI MA SÓI TRONG ĐÊM CẮM TRẠI"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Hoa Khôi Ép Cả Lớp Chơi Ma Sói Trong Đêm Cắm Trại\" audio",
+          "text": "Full Audio -- HOA KHÔI ÉP CẢ LỚP CHƠI MA SÓI TRONG ĐÊM CẮM TRẠI - Cáo Audio"
+        }
+      ],
+      "status": "draft"
+    }
+  ]
+}

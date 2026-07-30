@@ -1795,6 +1795,20 @@ const topics = [
     enMotif: "transmigration, green tea rival and family drama",
     viMotif: "xuyên sách, trà xanh và gia đình",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "an-archmage-s-second-life-op-mc-litrpg-book-1-complete-stubbing-december",
+    title: "An Archmage's Second Life [OP MC, LitRPG, Book 1 Complete, Stubbing December!]",
+    enMotif: "family drama",
+    viMotif: "gia đình",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "sau-nam-nam-toi-rut-khoi-gioi-giai-tri-su-that-lai-duoc-phoi-bay",
+    title: "Sau Năm Năm Tôi Rút Khỏi Giới Giải Trí, Sự Thật Lại Được Phơi Bày",
+    enMotif: "entertainment circle",
+    viMotif: "showbiz",
+    languages: ["vi"]
   })
 ];
 
