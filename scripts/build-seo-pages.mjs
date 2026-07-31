@@ -1809,6 +1809,13 @@ const topics = [
     enMotif: "entertainment circle",
     viMotif: "showbiz",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "sau-khi-chong-alpha-thay-doi-toi-bong-thay-hang-loat-dong-binh-luan",
+    title: "Sau Khi Chồng Alpha Thay Đổi, Tôi Bỗng Thấy Hàng Loạt Dòng Bình Luận",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["vi"]
   })
 ];
 
