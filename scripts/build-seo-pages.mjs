@@ -1816,6 +1816,20 @@ const topics = [
     enMotif: "Vietnamese web fiction and romance drama",
     viMotif: "truyện mạng Việt và romance drama",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "translating-stories-in-english",
+    title: "Translating Stories In English.",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "ca-nha-dai-boss-run-so-vi-nghe-duoc-tieng-long-cua-ca-man-mo-hon",
+    title: "Cả Nhà Đại Boss Run Sợ Vì Nghe Được Tiếng Lòng của Cá Mặn Mỏ Hỗn",
+    enMotif: "comedy",
+    viMotif: "hài hước",
+    languages: ["vi"]
   })
 ];
 
