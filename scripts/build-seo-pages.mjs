@@ -1830,6 +1830,20 @@ const topics = [
     enMotif: "comedy",
     viMotif: "hài hước",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "toi-la-paparazzi-ai-cung-muon-danh-nhung-cang-chup-cang-khien-ho-hot-hon",
+    title: "Tôi là Paparazzi Ai Cũng Muốn Đánh, Nhưng Càng Chụp Càng Khiến Họ Hot Hơn",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "arsenal-mage-why-does-every-weapon-give-me-a-new-skill",
+    title: "Arsenal Mage! Why Does Every Weapon Give Me A New Skill?",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["en"]
   })
 ];
 

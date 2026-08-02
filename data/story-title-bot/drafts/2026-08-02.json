@@ -1,0 +1,446 @@
+{
+  "generatedAt": "2026-08-02T03:10:21.308Z",
+  "date": "2026-08-02",
+  "mode": "network",
+  "sourceCount": 569,
+  "scoring": "v3-bilingual-opportunity-demand-minus-audio-competition",
+  "candidates": [
+    {
+      "title": "Tôi là Paparazzi Ai Cũng Muốn Đánh, Nhưng Càng Chụp Càng Khiến Họ Hot Hơn",
+      "slug": "toi-la-paparazzi-ai-cung-muon-danh-nhung-cang-chup-cang-khien-ho-hot-hon",
+      "language": "vi",
+      "score": 78,
+      "demandScore": 76,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 1,
+      "audioCompetitionLevel": "low",
+      "opportunityScore": 78,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "Full audio | TÔI LÀ PAPARAZZI AI CŨNG MUỐN ĐÁNH, NHƯNG CÀNG CHỤP CÀNG KHIẾN HỌ HOT HƠN #truyenaudio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Tôi là Paparazzi Ai Cũng Muốn Đánh, Nhưng Càng Chụp Càng Khiến Họ Hot Hơn\" audio",
+          "text": "Full audio | TÔI LÀ PAPARAZZI AI CŨNG MUỐN ĐÁNH, NHƯNG CÀNG CHỤP CÀNG KHIẾN HỌ HOT HƠN #truyenaudio"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Arsenal Mage! Why Does Every Weapon Give Me A New Skill?",
+      "slug": "arsenal-mage-why-does-every-weapon-give-me-a-new-skill",
+      "language": "en",
+      "score": 78,
+      "demandScore": 78,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "none",
+      "opportunityScore": 78,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-trending",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/trending",
+          "text": "Arsenal Mage! Why Does Every Weapon Give Me A New Skill?"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Clara Casewell, Attorney To The Villainess [Vol 1 Complete]",
+      "slug": "clara-casewell-attorney-to-the-villainess-vol-1-complete",
+      "language": "en",
+      "score": 74,
+      "demandScore": 74,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "none",
+      "opportunityScore": 74,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-best-rated",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/best-rated",
+          "text": "Clara Casewell, Attorney to the Villainess [Vol 1 Complete]"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Clara Casewell, Attorney To The Villainess [Vol 1 Complete]\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Clara Casewell, Attorney To The Villainess [Vol 1 Complete]\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia",
+      "slug": "toi-nghe-thay-tieng-long-cua-thai-tu-gia",
+      "language": "vi",
+      "score": 64,
+      "demandScore": 71,
+      "audioSignalScore": 11,
+      "audioCompetitionScore": 4,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 64,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện audio full mới nhất",
+          "text": "Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia | Truyện Full"
+        },
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện ngôn tình audio full",
+          "text": "Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia | Truyện Full"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia\" \"truyện audio\"",
+          "text": "Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia | Truyện Full"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia\" \"truyện audio\"",
+          "text": "[TRUYỆN AUDIO] Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia Bắc Kinh | Dịt Dàng Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia\" \"truyện audio\"",
+          "text": "[TRUYỆN AUDIO] Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia Bắc Kinh"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia\" audio",
+          "text": "TÔI NGHE THẤY TIẾNG LÒNG CỦA THÁI TỬ GIA [FULL] - LÁ LỐT AUDIO #truyenaudio #audiotruyenhay"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "The Archmage And The Valkyr [Progression, LITRPG, ISEKAI]",
+      "slug": "the-archmage-and-the-valkyr-progression-litrpg-isekai",
+      "language": "en",
+      "score": 60,
+      "demandScore": 72,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 60,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-trending",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/trending",
+          "text": "The Wixx Chronicles: The Archmage and the Valkyr [Progression, LITRPG, ISEKAI]"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Archmage And The Valkyr [Progression, LITRPG, ISEKAI]\" audiobook",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Archmage And The Valkyr [Progression, LITRPG, ISEKAI]\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Archmage And The Valkyr [Progression, LITRPG, ISEKAI]\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "The God Of Death Just Wants To Quit?!",
+      "slug": "the-god-of-death-just-wants-to-quit",
+      "language": "en",
+      "score": 60,
+      "demandScore": 72,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 60,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-trending",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/trending",
+          "text": "The God of Death Just Wants to Quit?!"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The God Of Death Just Wants To Quit?!\" audiobook",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The God Of Death Just Wants To Quit?!\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The God Of Death Just Wants To Quit?!\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Headless Over Heels [A Dark Fantasy Romance][Book 1 Complete]",
+      "slug": "headless-over-heels-a-dark-fantasy-romance-book-1-complete",
+      "language": "en",
+      "score": 60,
+      "demandScore": 72,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 60,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-best-rated",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/best-rated",
+          "text": "Headless Over Heels [A Dark Fantasy Romance][Book 1 complete]"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Headless Over Heels [A Dark Fantasy Romance][Book 1 Complete]\" audiobook",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Headless Over Heels [A Dark Fantasy Romance][Book 1 Complete]\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Headless Over Heels [A Dark Fantasy Romance][Book 1 Complete]\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Throne Of Time [Magical Academy, Time Loop, Mystery]",
+      "slug": "throne-of-time-magical-academy-time-loop-mystery",
+      "language": "en",
+      "score": 60,
+      "demandScore": 72,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 60,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-best-rated",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/best-rated",
+          "text": "Throne of Time [Magical Academy, Time Loop, Mystery]"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Throne Of Time [Magical Academy, Time Loop, Mystery]\" audiobook",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Throne Of Time [Magical Academy, Time Loop, Mystery]\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Throne Of Time [Magical Academy, Time Loop, Mystery]\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Ngôn Tình Trung Quốc Hay Nhất",
+      "slug": "ngon-tinh-trung-quoc-hay-nhat",
+      "language": "vi",
+      "score": 57,
+      "demandScore": 75,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 3,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 57,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "google-suggest",
+          "language": "vi",
+          "query": "truyện audio ngôn tình",
+          "text": "truyện audio ngôn tình trung quốc hay nhất"
+        },
+        {
+          "source": "google-suggest",
+          "language": "vi",
+          "query": "truyện audio ngôn tình hay",
+          "text": "truyện audio ngôn tình trung quốc hay nhất"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Ngôn Tình Trung Quốc Hay Nhất\" audio",
+          "text": "[Truyện Đêm Khuya] Buông Rèm Pha Lê – Phần Cuối | Audio Truyện Ngôn Tình Trung Quốc Hay Nhất"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Ngôn Tình Trung Quốc Hay Nhất\" audio",
+          "text": "Truyện ngôn tình Trung Quốc hay nhất 2025 | THIẾU GIA Ở RỂ (Tập 1) #trumtruyenvn"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Ngôn Tình Trung Quốc Hay Nhất\" audio",
+          "text": "[TẬP 1]  13 NHÂN CÁCH CHỈ ĐỂ YÊU EM |Truyện Ngôn Tình Trung Quốc Hay Nhất| MC Phương Thùy| Hạc Toại"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Nam Thần Từ Chối, Tôi Khiến Anh Phát Điên Vì Ghen",
+      "slug": "nam-than-tu-choi-toi-khien-anh-phat-dien-vi-ghen",
+      "language": "vi",
+      "score": 56,
+      "demandScore": 66,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 2,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 56,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "Nam Thần Từ Chối, Tôi Khiến Anh Phát Điên Vì Ghen | Truyện audio | Tô màu"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Nam Thần Từ Chối, Tôi Khiến Anh Phát Điên Vì Ghen\" \"truyện audio\"",
+          "text": "Nam Thần Từ Chối, Tôi Khiến Anh Phát Điên Vì Ghen | Truyện audio | Tô màu"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Nam Thần Từ Chối, Tôi Khiến Anh Phát Điên Vì Ghen\" audio",
+          "text": "[Audio] BỊ NAM THẦN TỪ CHỐI, TÔI KHIẾN ANH PHÁT ĐIÊN VÌ GHEN | Cá Mặn Audio"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Giáo Sư Mới Của Lớp Chính Là Chồng Tôi",
+      "slug": "giao-su-moi-cua-lop-chinh-la-chong-toi",
+      "language": "vi",
+      "score": 55,
+      "demandScore": 62,
+      "audioSignalScore": 11,
+      "audioCompetitionScore": 3,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 55,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện audio full mới nhất",
+          "text": "Giáo Sư Mới Của Lớp Chính Là Chồng Tôi | Truyện Audio Nấu Ăn"
+        },
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện ngôn tình audio full",
+          "text": "Giáo Sư Mới Của Lớp Chính Là Chồng Tôi | Truyện Audio Nấu Ăn"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Giáo Sư Mới Của Lớp Chính Là Chồng Tôi\" \"truyện audio\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Giáo Sư Mới Của Lớp Chính Là Chồng Tôi\" audio",
+          "text": "Giáo Sư Mới Của Lớp Chính Là Chồng Tôi | Truyện Audio Nấu Ăn"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Giáo Sư Mới Của Lớp Chính Là Chồng Tôi\" audio",
+          "text": "[Truyện Audio] Giáo Sư Mới Của Lớp Chính Là Chồng Tôi - Sủng Thê Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Giáo Sư Mới Của Lớp Chính Là Chồng Tôi\" audio",
+          "text": "[ Truyện Audio ] Giáo Sư Mới Của Lớp Chính Là Chồng Tôi"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Bà Trùm Xã Hội Đen Xuyên Vào Thiên Kim Thật Mỏ Hỗn Nhà Hào Môn",
+      "slug": "ba-trum-xa-hoi-den-xuyen-vao-thien-kim-that-mo-hon-nha-hao-mon",
+      "language": "vi",
+      "score": 54,
+      "demandScore": 64,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 3,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 54,
+      "enMotif": "rich-family romance",
+      "viMotif": "hào môn",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện audio full mới nhất",
+          "text": "[Truyện Audio Full] | BÀ TRÙM XÃ HỘI ĐEN XUYÊN VÀO THIÊN KIM THẬT MỎ HỖN NHÀ HÀO MÔN | Vả Mặt Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Bà Trùm Xã Hội Đen Xuyên Vào Thiên Kim Thật Mỏ Hỗn Nhà Hào Môn\" \"truyện audio\"",
+          "text": "[Truyện Audio Full] | BÀ TRÙM XÃ HỘI ĐEN XUYÊN VÀO THIÊN KIM THẬT MỎ HỖN NHÀ HÀO MÔN | Vả Mặt Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Bà Trùm Xã Hội Đen Xuyên Vào Thiên Kim Thật Mỏ Hỗn Nhà Hào Môn\" \"truyện audio\"",
+          "text": "Truyện audio full BÀ TRÙM XÃ HỘI ĐEN XUYÊN VÀO THIÊN KIM THẬT MỎ HỖN NHÀ HÀO MÔN"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Bà Trùm Xã Hội Đen Xuyên Vào Thiên Kim Thật Mỏ Hỗn Nhà Hào Môn\" \"truyện audio\"",
+          "text": "Truyện Audio: Bà trùm xã hội đen xuyên vào thiên kim thật mỏ hỗn nhà hào môn"
+        }
+      ],
+      "status": "draft"
+    }
+  ]
+}
