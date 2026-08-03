@@ -1,0 +1,451 @@
+{
+  "generatedAt": "2026-08-03T03:07:25.710Z",
+  "date": "2026-08-03",
+  "mode": "network",
+  "sourceCount": 595,
+  "scoring": "v3-bilingual-opportunity-demand-minus-audio-competition",
+  "candidates": [
+    {
+      "title": "Clara Casewell, Attorney To The Villainess [Vol 1 Complete]",
+      "slug": "clara-casewell-attorney-to-the-villainess-vol-1-complete",
+      "language": "en",
+      "score": 74,
+      "demandScore": 74,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "none",
+      "opportunityScore": 74,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-best-rated",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/best-rated",
+          "text": "Clara Casewell, Attorney to the Villainess [Vol 1 Complete]"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Clara Casewell, Attorney To The Villainess [Vol 1 Complete]\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Clara Casewell, Attorney To The Villainess [Vol 1 Complete]\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Trúc Mã Trở Về, Ảnh Đế Nhà Ghen Tôi Phát Điên Rồi",
+      "slug": "truc-ma-tro-ve-anh-de-nha-ghen-toi-phat-dien-roi",
+      "language": "vi",
+      "score": 70,
+      "demandScore": 68,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 1,
+      "audioCompetitionLevel": "low",
+      "opportunityScore": 70,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "Truyện Audio || TRÚC MÃ TRỞ VỀ, ẢNH ĐẾ NHÀ GHEN TÔI PHÁT ĐIÊN RỒI || Tô Màu || AnAn Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Trúc Mã Trở Về, Ảnh Đế Nhà Ghen Tôi Phát Điên Rồi\" \"truyện audio\"",
+          "text": "Truyện Audio || TRÚC MÃ TRỞ VỀ, ẢNH ĐẾ NHÀ GHEN TÔI PHÁT ĐIÊN RỒI || Tô Màu || AnAn Audio"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia",
+      "slug": "toi-nghe-thay-tieng-long-cua-thai-tu-gia",
+      "language": "vi",
+      "score": 64,
+      "demandScore": 71,
+      "audioSignalScore": 11,
+      "audioCompetitionScore": 4,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 64,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện audio full mới nhất",
+          "text": "Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia | Truyện Full"
+        },
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện ngôn tình audio full",
+          "text": "Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia | Truyện Full"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia\" \"truyện audio\"",
+          "text": "Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia | Truyện Full"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia\" \"truyện audio\"",
+          "text": "[TRUYỆN AUDIO] Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia Bắc Kinh | Dịt Dàng Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia\" \"truyện audio\"",
+          "text": "[TRUYỆN AUDIO] Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia Bắc Kinh"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia\" audio",
+          "text": "TÔI NGHE THẤY TIẾNG LÒNG CỦA THÁI TỬ GIA [FULL] - LÁ LỐT AUDIO #truyenaudio #audiotruyenhay"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Bilyonaryong Kauuwi Lang Sa Pinas, Na LOVE AT FIRST SIGHT Sa KASAMBAHAY Na Mistulang Anghel Sa Ganda",
+      "slug": "bilyonaryong-kauuwi-lang-sa-pinas-na-love-at-first-sight-sa-kasambahay-na-mistulang-anghel-s",
+      "language": "en",
+      "score": 60,
+      "demandScore": 64,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 60,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "en",
+          "query": "wattpad story audio",
+          "text": "Bilyonaryong kauuwi lang sa Pinas, na LOVE AT FIRST SIGHT sa KASAMBAHAY na mistulang anghel sa ganda"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Bilyonaryong Kauuwi Lang Sa Pinas, Na LOVE AT FIRST SIGHT Sa KASAMBAHAY Na Mistulang Anghel Sa Ganda\" audiobook",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Bilyonaryong Kauuwi Lang Sa Pinas, Na LOVE AT FIRST SIGHT Sa KASAMBAHAY Na Mistulang Anghel Sa Ganda\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Bilyonaryong Kauuwi Lang Sa Pinas, Na LOVE AT FIRST SIGHT Sa KASAMBAHAY Na Mistulang Anghel Sa Ganda\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "The Archmage And The Valkyr [Progression, LITRPG, ISEKAI]",
+      "slug": "the-archmage-and-the-valkyr-progression-litrpg-isekai",
+      "language": "en",
+      "score": 60,
+      "demandScore": 72,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 60,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-trending",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/trending",
+          "text": "The Wixx Chronicles: The Archmage and the Valkyr [Progression, LITRPG, ISEKAI]"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Archmage And The Valkyr [Progression, LITRPG, ISEKAI]\" audiobook",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Archmage And The Valkyr [Progression, LITRPG, ISEKAI]\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Archmage And The Valkyr [Progression, LITRPG, ISEKAI]\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "The God Of Death Just Wants To Quit?!",
+      "slug": "the-god-of-death-just-wants-to-quit",
+      "language": "en",
+      "score": 60,
+      "demandScore": 72,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 60,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-trending",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/trending",
+          "text": "The God of Death Just Wants to Quit?!"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The God Of Death Just Wants To Quit?!\" audiobook",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The God Of Death Just Wants To Quit?!\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The God Of Death Just Wants To Quit?!\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Headless Over Heels [A Dark Fantasy Romance][Book 1 Complete]",
+      "slug": "headless-over-heels-a-dark-fantasy-romance-book-1-complete",
+      "language": "en",
+      "score": 60,
+      "demandScore": 72,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 60,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-best-rated",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/best-rated",
+          "text": "Headless Over Heels [A Dark Fantasy Romance][Book 1 complete]"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Headless Over Heels [A Dark Fantasy Romance][Book 1 Complete]\" audiobook",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Headless Over Heels [A Dark Fantasy Romance][Book 1 Complete]\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Headless Over Heels [A Dark Fantasy Romance][Book 1 Complete]\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Throne Of Time [Magical Academy, Time Loop, Mystery]",
+      "slug": "throne-of-time-magical-academy-time-loop-mystery",
+      "language": "en",
+      "score": 60,
+      "demandScore": 72,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 60,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-best-rated",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/best-rated",
+          "text": "Throne of Time [Magical Academy, Time Loop, Mystery]"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Throne Of Time [Magical Academy, Time Loop, Mystery]\" audiobook",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Throne Of Time [Magical Academy, Time Loop, Mystery]\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Throne Of Time [Magical Academy, Time Loop, Mystery]\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Hoa Khôi Đòi Bao Cả Lớp Đi Ăn Lẩu",
+      "slug": "hoa-khoi-doi-bao-ca-lop-di-an-lau",
+      "language": "vi",
+      "score": 60,
+      "demandScore": 61,
+      "audioSignalScore": 11,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 60,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện audio full mới nhất",
+          "text": "Truyện Audio Full | HOA KHÔI ĐÒI BAO CẢ LỚP ĐI ĂN LẨU | Mạn Mạn Audio"
+        },
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện ngôn tình audio full",
+          "text": "Truyện Audio Full | HOA KHÔI ĐÒI BAO CẢ LỚP ĐI ĂN LẨU | Mạn Mạn Audio"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Hoa Khôi Đòi Bao Cả Lớp Đi Ăn Lẩu\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Hoa Khôi Đòi Bao Cả Lớp Đi Ăn Lẩu\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Ngôn Tình Trung Quốc Hay Nhất",
+      "slug": "ngon-tinh-trung-quoc-hay-nhat",
+      "language": "vi",
+      "score": 57,
+      "demandScore": 75,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 2,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 57,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "google-suggest",
+          "language": "vi",
+          "query": "truyện audio ngôn tình",
+          "text": "truyện audio ngôn tình trung quốc hay nhất"
+        },
+        {
+          "source": "google-suggest",
+          "language": "vi",
+          "query": "truyện audio ngôn tình hay",
+          "text": "truyện audio ngôn tình trung quốc hay nhất"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Ngôn Tình Trung Quốc Hay Nhất\" audio",
+          "text": "[Truyện Đêm Khuya] Buông Rèm Pha Lê – Phần Cuối | Audio Truyện Ngôn Tình Trung Quốc Hay Nhất"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Ngôn Tình Trung Quốc Hay Nhất\" audio",
+          "text": "Truyện ngôn tình Trung Quốc hay nhất 2025 | THIẾU GIA Ở RỂ (Tập 1) #trumtruyenvn"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Nam Thần Từ Chối, Tôi Khiến Anh Phát Điên Vì Ghen",
+      "slug": "nam-than-tu-choi-toi-khien-anh-phat-dien-vi-ghen",
+      "language": "vi",
+      "score": 56,
+      "demandScore": 66,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 2,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 56,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "Nam Thần Từ Chối, Tôi Khiến Anh Phát Điên Vì Ghen | Truyện audio | Tô màu"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Nam Thần Từ Chối, Tôi Khiến Anh Phát Điên Vì Ghen\" \"truyện audio\"",
+          "text": "Nam Thần Từ Chối, Tôi Khiến Anh Phát Điên Vì Ghen | Truyện audio | Tô màu"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Nam Thần Từ Chối, Tôi Khiến Anh Phát Điên Vì Ghen\" audio",
+          "text": "[Audio] BỊ NAM THẦN TỪ CHỐI, TÔI KHIẾN ANH PHÁT ĐIÊN VÌ GHEN | Cá Mặn Audio"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Tôi Đòi Chia Tay, Nam Thần Lạnh Lùng Phát Điên Rồi",
+      "slug": "toi-doi-chia-tay-nam-than-lanh-lung-phat-dien-roi",
+      "language": "vi",
+      "score": 56,
+      "demandScore": 66,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 3,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 56,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "Tôi Đòi Chia Tay, Nam Thần Lạnh Lùng Phát Điên Rồi | Truyện Audio Nấu Ăn"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Tôi Đòi Chia Tay, Nam Thần Lạnh Lùng Phát Điên Rồi\" \"truyện audio\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Tôi Đòi Chia Tay, Nam Thần Lạnh Lùng Phát Điên Rồi\" audio",
+          "text": "Tôi Đòi Chia Tay, Nam Thần Lạnh Lùng Phát Điên Rồi | Truyện Audio Nấu Ăn"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Tôi Đòi Chia Tay, Nam Thần Lạnh Lùng Phát Điên Rồi\" audio",
+          "text": "Tôi Đòi Chia Tay, Nam Thần Lạnh Lùng Phát Điên Rồi cre: Truyện Audio - TTH #truyenaudio #truyenhay #"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Tôi Đòi Chia Tay, Nam Thần Lạnh Lùng Phát Điên Rồi\" audio",
+          "text": "[Truyện Audio] |Tôi Đòi Chia Tay, Nam Thần Lạnh Lùng Phát Điên Rồi | Audio Cho Người Cô Đơn"
+        }
+      ],
+      "status": "draft"
+    }
+  ]
+}

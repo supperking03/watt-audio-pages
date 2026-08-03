@@ -1844,6 +1844,20 @@ const topics = [
     enMotif: "web fiction and romance drama",
     viMotif: "truyện mạng Việt và romance drama",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "clara-casewell-attorney-to-the-villainess-vol-1-complete",
+    title: "Clara Casewell, Attorney To The Villainess [Vol 1 Complete]",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "truc-ma-tro-ve-anh-de-nha-ghen-toi-phat-dien-roi",
+    title: "Trúc Mã Trở Về, Ảnh Đế Nhà Ghen Tôi Phát Điên Rồi",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["vi"]
   })
 ];
 
