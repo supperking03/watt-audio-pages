@@ -1858,6 +1858,13 @@ const topics = [
     enMotif: "Vietnamese web fiction and romance drama",
     viMotif: "truyện mạng Việt và romance drama",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "ngon-tinh-trung-quoc-hay-nhat",
+    title: "Ngôn Tình Trung Quốc Hay Nhất",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["vi"]
   })
 ];
 
