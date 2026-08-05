@@ -1865,6 +1865,13 @@ const topics = [
     enMotif: "Vietnamese web fiction and romance drama",
     viMotif: "truyện mạng Việt và romance drama",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "me-ke-trong-sinh-roi-em-gai-tra-xanh-noi-gi-di",
+    title: "Mẹ Kế Trọng Sinh Rồi, Em Gái Trà Xanh Nói Gì Đi!",
+    enMotif: "rebirth, green tea rival and family drama",
+    viMotif: "trọng sinh, trà xanh và gia đình",
+    languages: ["vi"]
   })
 ];
 
