@@ -1872,6 +1872,13 @@ const topics = [
     enMotif: "rebirth, green tea rival and family drama",
     viMotif: "trọng sinh, trà xanh và gia đình",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "the-archmage-and-the-valkyr-progression-litrpg-isekai",
+    title: "The Archmage And The Valkyr [Progression, LITRPG, ISEKAI]",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["en"]
   })
 ];
 

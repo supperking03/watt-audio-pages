@@ -1,0 +1,463 @@
+{
+  "generatedAt": "2026-08-06T03:00:06.030Z",
+  "date": "2026-08-06",
+  "mode": "network",
+  "sourceCount": 591,
+  "scoring": "v3-bilingual-opportunity-demand-minus-audio-competition",
+  "candidates": [
+    {
+      "title": "The Archmage And The Valkyr [Progression, LITRPG, ISEKAI]",
+      "slug": "the-archmage-and-the-valkyr-progression-litrpg-isekai",
+      "language": "en",
+      "score": 72,
+      "demandScore": 72,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "none",
+      "opportunityScore": 72,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-trending",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/trending",
+          "text": "The Wixx Chronicles: The Archmage and the Valkyr [Progression, LITRPG, ISEKAI]"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Archmage And The Valkyr [Progression, LITRPG, ISEKAI]\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Archmage And The Valkyr [Progression, LITRPG, ISEKAI]\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia",
+      "slug": "toi-nghe-thay-tieng-long-cua-thai-tu-gia",
+      "language": "vi",
+      "score": 64,
+      "demandScore": 71,
+      "audioSignalScore": 11,
+      "audioCompetitionScore": 4,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 64,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện audio full mới nhất",
+          "text": "Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia | Truyện Full"
+        },
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện ngôn tình audio full",
+          "text": "Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia | Truyện Full"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia\" \"truyện audio\"",
+          "text": "Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia | Truyện Full"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia\" \"truyện audio\"",
+          "text": "[TRUYỆN AUDIO] Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia Bắc Kinh | Dịt Dàng Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia\" \"truyện audio\"",
+          "text": "[TRUYỆN AUDIO] Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia Bắc Kinh"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia\" audio",
+          "text": "TÔI NGHE THẤY TIẾNG LÒNG CỦA THÁI TỬ GIA [FULL] - LÁ LỐT AUDIO #truyenaudio #audiotruyenhay"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Học Sinh Mới Tới Đã Nhận Mình Là Hoa Khôi Của Trường",
+      "slug": "hoc-sinh-moi-toi-da-nhan-minh-la-hoa-khoi-cua-truong",
+      "language": "vi",
+      "score": 63,
+      "demandScore": 70,
+      "audioSignalScore": 11,
+      "audioCompetitionScore": 2,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 63,
+      "enMotif": "school romance",
+      "viMotif": "vườn trường",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện audio full mới nhất",
+          "text": "Truyện Audio Full | Học Sinh Mới Tới Đã Nhận Mình Là Hoa Khôi Của Trường | Mạn Mạn Audio"
+        },
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện ngôn tình audio full",
+          "text": "Truyện Audio Full | Học Sinh Mới Tới Đã Nhận Mình Là Hoa Khôi Của Trường | Mạn Mạn Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Học Sinh Mới Tới Đã Nhận Mình Là Hoa Khôi Của Trường\" \"truyện audio\"",
+          "text": "Truyện Audio Full | Học Sinh Mới Tới Đã Nhận Mình Là Hoa Khôi Của Trường | Mạn Mạn Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Học Sinh Mới Tới Đã Nhận Mình Là Hoa Khôi Của Trường\" \"truyện audio\"",
+          "text": "[Truyện Audio] Học Sinh Mới Tới Đã Nhận Mình Là Hoa Khôi Của Trường | Dứa Trọng Sinh Audioa"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "The God Of Death Just Wants To Quit?!",
+      "slug": "the-god-of-death-just-wants-to-quit",
+      "language": "en",
+      "score": 60,
+      "demandScore": 72,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 60,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-trending",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/trending",
+          "text": "The God of Death Just Wants to Quit?!"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The God Of Death Just Wants To Quit?!\" audiobook",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The God Of Death Just Wants To Quit?!\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The God Of Death Just Wants To Quit?!\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Headless Over Heels [A Dark Fantasy Romance][Book 1 Complete]",
+      "slug": "headless-over-heels-a-dark-fantasy-romance-book-1-complete",
+      "language": "en",
+      "score": 60,
+      "demandScore": 72,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 60,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-best-rated",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/best-rated",
+          "text": "Headless Over Heels [A Dark Fantasy Romance][Book 1 complete]"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Headless Over Heels [A Dark Fantasy Romance][Book 1 Complete]\" audiobook",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Headless Over Heels [A Dark Fantasy Romance][Book 1 Complete]\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Headless Over Heels [A Dark Fantasy Romance][Book 1 Complete]\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Cả Nhà Cùng Xuyên Sách Phá Nát Cốt Truyện",
+      "slug": "ca-nha-cung-xuyen-sach-pha-nat-cot-truyen",
+      "language": "vi",
+      "score": 60,
+      "demandScore": 61,
+      "audioSignalScore": 11,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 60,
+      "enMotif": "transmigration",
+      "viMotif": "xuyên sách",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện audio full mới nhất",
+          "text": "Audio Full | Cả Nhà Cùng Xuyên Sách Phá Nát Cốt Truyện | Mây Trắng Audio"
+        },
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "Audio Full | Cả Nhà Cùng Xuyên Sách Phá Nát Cốt Truyện | Mây Trắng Audio"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Cả Nhà Cùng Xuyên Sách Phá Nát Cốt Truyện\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Cả Nhà Cùng Xuyên Sách Phá Nát Cốt Truyện\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Từ Bỏ Nam Thần, Tôi Chọn Nam Phụ Luôn Che Chở Tôi",
+      "slug": "tu-bo-nam-than-toi-chon-nam-phu-luon-che-cho-toi",
+      "language": "vi",
+      "score": 58,
+      "demandScore": 68,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 2,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 58,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "Từ Bỏ Nam Thần, Tôi Chọn Nam Phụ Luôn Che Chở Tôi | Truyện Full"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Từ Bỏ Nam Thần, Tôi Chọn Nam Phụ Luôn Che Chở Tôi\" \"truyện audio\"",
+          "text": "Từ Bỏ Nam Thần, Tôi Chọn Nam Phụ Luôn Che Chở Tôi | Truyện Full"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Từ Bỏ Nam Thần, Tôi Chọn Nam Phụ Luôn Che Chở Tôi\" \"truyện audio\"",
+          "text": "[ Truyện Audio ] Từ Bỏ Nam Thần, Tôi Chọn Nam Phụ Luôn Che Chở Tôi"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Lỡ Nhìn Trộm Đại Ca Trường, Tôi Bị Anh Cướp Luôn Nụ Hôn Đầu",
+      "slug": "lo-nhin-trom-dai-ca-truong-toi-bi-anh-cuop-luon-nu-hon-dau",
+      "language": "vi",
+      "score": 58,
+      "demandScore": 62,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 58,
+      "enMotif": "school romance",
+      "viMotif": "vườn trường",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện ngôn tình audio full",
+          "text": "Lỡ Nhìn Trộm Đại Ca Trường, Tôi Bị Anh Cướp Luôn Nụ Hôn Đầu | Truyện Audio Nấu Ăn"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Lỡ Nhìn Trộm Đại Ca Trường, Tôi Bị Anh Cướp Luôn Nụ Hôn Đầu\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Lỡ Nhìn Trộm Đại Ca Trường, Tôi Bị Anh Cướp Luôn Nụ Hôn Đầu\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "[ Bách Hợp ] Crush Của Anh Trai Thích Tôi",
+      "slug": "bach-hop-crush-cua-anh-trai-thich-toi",
+      "language": "vi",
+      "score": 58,
+      "demandScore": 62,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 58,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "[ Bách Hợp ] Crush Của Anh Trai Thích Tôi - Truyện Girl Love / GL Audio Full"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"[ Bách Hợp ] Crush Của Anh Trai Thích Tôi\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"[ Bách Hợp ] Crush Của Anh Trai Thích Tôi\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Nam Thần Từ Chối, Tôi Khiến Anh Phát Điên Vì Ghen",
+      "slug": "nam-than-tu-choi-toi-khien-anh-phat-dien-vi-ghen",
+      "language": "vi",
+      "score": 56,
+      "demandScore": 66,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 2,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 56,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "Nam Thần Từ Chối, Tôi Khiến Anh Phát Điên Vì Ghen | Truyện audio | Tô màu"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Nam Thần Từ Chối, Tôi Khiến Anh Phát Điên Vì Ghen\" \"truyện audio\"",
+          "text": "Nam Thần Từ Chối, Tôi Khiến Anh Phát Điên Vì Ghen | Truyện audio | Tô màu"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Nam Thần Từ Chối, Tôi Khiến Anh Phát Điên Vì Ghen\" audio",
+          "text": "[Audio] BỊ NAM THẦN TỪ CHỐI, TÔI KHIẾN ANH PHÁT ĐIÊN VÌ GHEN | Cá Mặn Audio"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Hoa Khôi Đòi Bao Cả Lớp Đi Ăn Lẩu",
+      "slug": "hoa-khoi-doi-bao-ca-lop-di-an-lau",
+      "language": "vi",
+      "score": 54,
+      "demandScore": 61,
+      "audioSignalScore": 11,
+      "audioCompetitionScore": 2,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 54,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện audio full mới nhất",
+          "text": "Truyện Audio Full | HOA KHÔI ĐÒI BAO CẢ LỚP ĐI ĂN LẨU | Mạn Mạn Audio"
+        },
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện ngôn tình audio full",
+          "text": "Truyện Audio Full | HOA KHÔI ĐÒI BAO CẢ LỚP ĐI ĂN LẨU | Mạn Mạn Audio"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Hoa Khôi Đòi Bao Cả Lớp Đi Ăn Lẩu\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Hoa Khôi Đòi Bao Cả Lớp Đi Ăn Lẩu\" \"truyện audio\"",
+          "text": "Truyện Audio Full | HOA KHÔI ĐÒI BAO CẢ LỚP ĐI ĂN LẨU | Mạn Mạn Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Hoa Khôi Đòi Bao Cả Lớp Đi Ăn Lẩu\" \"truyện audio\"",
+          "text": "MÈO ĐỐM AUDIO SỐ 7 | FULL AUDIO | HOA KHÔI ĐÒI BAO CẢ LỚP ĐI ĂN LẨU #audio #truyenaudio"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Thái Tử Gia để ý Bảo Mẫu Vô Tri Rồi",
+      "slug": "thai-tu-gia-de-y-bao-mau-vo-tri-roi",
+      "language": "vi",
+      "score": 38,
+      "demandScore": 63,
+      "audioSignalScore": 11,
+      "audioCompetitionScore": 5,
+      "audioCompetitionLevel": "high",
+      "opportunityScore": 38,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện audio full mới nhất",
+          "text": "[ Truyện Audio ] Thái tử gia để ý bảo mẫu vô tri rồi (Full) - Sủng ái Audio"
+        },
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện ngôn tình audio full",
+          "text": "[ Truyện Audio ] Thái tử gia để ý bảo mẫu vô tri rồi (Full) - Sủng ái Audio"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Thái Tử Gia để ý Bảo Mẫu Vô Tri Rồi\" \"truyện audio\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Thái Tử Gia để ý Bảo Mẫu Vô Tri Rồi\" audio",
+          "text": "[ Truyện Audio ] Thái tử gia để ý bảo mẫu vô tri rồi (Full) - Sủng ái Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Thái Tử Gia để ý Bảo Mẫu Vô Tri Rồi\" audio",
+          "text": "AUDIO FULL | Thái tử gia để ý bảo mẫu vô tri rồi | Nâu Studio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Thái Tử Gia để ý Bảo Mẫu Vô Tri Rồi\" audio",
+          "text": "Truyện audio full | Thái tử gia để ý bảo mẫu vô tri rồi"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Thái Tử Gia để ý Bảo Mẫu Vô Tri Rồi\" audio",
+          "text": "[TRUYỆN AUDIO] Thái tử gia để ý bảo mẫu vô tri rồi | Hà Trang Audio"
+        }
+      ],
+      "status": "draft"
+    }
+  ]
+}
