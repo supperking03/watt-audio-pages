@@ -1,0 +1,425 @@
+{
+  "generatedAt": "2026-08-07T03:00:04.858Z",
+  "date": "2026-08-07",
+  "mode": "network",
+  "sourceCount": 603,
+  "scoring": "v3-bilingual-opportunity-demand-minus-audio-competition",
+  "candidates": [
+    {
+      "title": "The Necro-Industrial Revolution [Kingdom Building] (STUBBING BOOK 1 BY THE END OF AUG)",
+      "slug": "the-necro-industrial-revolution-kingdom-building-stubbing-book-1-by-the-end-of-aug",
+      "language": "en",
+      "score": 80,
+      "demandScore": 80,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "none",
+      "opportunityScore": 80,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-trending",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/trending",
+          "text": "The Necro-Industrial Revolution [Kingdom Building] (STUBBING BOOK 1 BY THE END OF AUG)"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Necro-Industrial Revolution [Kingdom Building] (STUBBING BOOK 1 BY THE END OF AUG)\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Necro-Industrial Revolution [Kingdom Building] (STUBBING BOOK 1 BY THE END OF AUG)\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Hất Trà Sữa Vào Thái Tử Gia, Tôi Phải Làm Vợ Ảnh Đế Trả Giá",
+      "slug": "hat-tra-sua-vao-thai-tu-gia-toi-phai-lam-vo-anh-de-tra-gia",
+      "language": "vi",
+      "score": 74,
+      "demandScore": 72,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 1,
+      "audioCompetitionLevel": "low",
+      "opportunityScore": 74,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "[AUDIO FULL] Hất Trà Sữa Vào Thái Tử Gia, Tôi Phải Làm Vợ Ảnh Đế Trả Giá| Tiểu Đồng audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Hất Trà Sữa Vào Thái Tử Gia, Tôi Phải Làm Vợ Ảnh Đế Trả Giá\" audio",
+          "text": "[AUDIO FULL] Hất Trà Sữa Vào Thái Tử Gia, Tôi Phải Làm Vợ Ảnh Đế Trả Giá| Tiểu Đồng audio"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Tôi Đóng Vai Thiên Thần, Để Bạch Nguyệt Quang Tự Lộ Ra Móng Vuốt",
+      "slug": "toi-dong-vai-thien-than-de-bach-nguyet-quang-tu-lo-ra-mong-vuot",
+      "language": "vi",
+      "score": 74,
+      "demandScore": 72,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 1,
+      "audioCompetitionLevel": "low",
+      "opportunityScore": 74,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "[TRUYỆN AUDIO] Tôi Đóng Vai Thiên Thần, Để Bạch Nguyệt Quang Tự Lộ Ra Móng Vuốt | Dịt Dàng Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Tôi Đóng Vai Thiên Thần, Để Bạch Nguyệt Quang Tự Lộ Ra Móng Vuốt\" \"truyện audio\"",
+          "text": "[TRUYỆN AUDIO] Tôi Đóng Vai Thiên Thần, Để Bạch Nguyệt Quang Tự Lộ Ra Móng Vuốt | Dịt Dàng Audio"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Cá Mặn Xuyên Thành Nữ Phụ, Nhưng Tôi Lười Độc Ác Lắm Hệ Thống Ơiii",
+      "slug": "ca-man-xuyen-thanh-nu-phu-nhung-toi-luoi-doc-ac-lam-he-thong-oiii",
+      "language": "vi",
+      "score": 74,
+      "demandScore": 72,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 1,
+      "audioCompetitionLevel": "low",
+      "opportunityScore": 74,
+      "enMotif": "comedy",
+      "viMotif": "hài hước",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "[AUDIO FULL] Cá Mặn Xuyên Thành Nữ Phụ, Nhưng Tôi Lười Độc Ác Lắm Hệ Thống Ơiii|Tiểu Đồng audio"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Cá Mặn Xuyên Thành Nữ Phụ, Nhưng Tôi Lười Độc Ác Lắm Hệ Thống Ơiii\" \"truyện audio\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Cá Mặn Xuyên Thành Nữ Phụ, Nhưng Tôi Lười Độc Ác Lắm Hệ Thống Ơiii\" audio",
+          "text": "[AUDIO FULL] Cá Mặn Xuyên Thành Nữ Phụ, Nhưng Tôi Lười Độc Ác Lắm Hệ Thống Ơiii|Tiểu Đồng audio"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Trà Xanh Giả Tạo Đụng Nhầm Bảo Bối của Tứ Đại Gia Tộc Bắc Kinh",
+      "slug": "tra-xanh-gia-tao-dung-nham-bao-boi-cua-tu-dai-gia-toc-bac-kinh",
+      "language": "vi",
+      "score": 72,
+      "demandScore": 70,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 1,
+      "audioCompetitionLevel": "low",
+      "opportunityScore": 72,
+      "enMotif": "green tea rival",
+      "viMotif": "trà xanh",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "[Truyện Audio Full] | TRÀ XANH GIẢ TẠO ĐỤNG NHẦM BẢO BỐI CỦA TỨ ĐẠI GIA TỘC BẮC KINH | Vả Mặt Audio"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Trà Xanh Giả Tạo Đụng Nhầm Bảo Bối của Tứ Đại Gia Tộc Bắc Kinh\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Trà Xanh Giả Tạo Đụng Nhầm Bảo Bối của Tứ Đại Gia Tộc Bắc Kinh\" \"truyện audio\"",
+          "text": "[Truyện Audio Full] | TRÀ XANH GIẢ TẠO ĐỤNG NHẦM BẢO BỐI CỦA TỨ ĐẠI GIA TỘC BẮC KINH | Vả Mặt Audio"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Từ Bỏ Nam Thần, Tôi Chọn Nam Phụ Luôn Che Chở Tôi",
+      "slug": "tu-bo-nam-than-toi-chon-nam-phu-luon-che-cho-toi",
+      "language": "vi",
+      "score": 64,
+      "demandScore": 68,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 64,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "Từ Bỏ Nam Thần, Tôi Chọn Nam Phụ Luôn Che Chở Tôi | Truyện Full"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Từ Bỏ Nam Thần, Tôi Chọn Nam Phụ Luôn Che Chở Tôi\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Từ Bỏ Nam Thần, Tôi Chọn Nam Phụ Luôn Che Chở Tôi\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Học Sinh Mới Tới Đã Nhận Mình Là Hoa Khôi Của Trường",
+      "slug": "hoc-sinh-moi-toi-da-nhan-minh-la-hoa-khoi-cua-truong",
+      "language": "vi",
+      "score": 63,
+      "demandScore": 70,
+      "audioSignalScore": 11,
+      "audioCompetitionScore": 2,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 63,
+      "enMotif": "school romance",
+      "viMotif": "vườn trường",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện audio full mới nhất",
+          "text": "Truyện Audio Full | Học Sinh Mới Tới Đã Nhận Mình Là Hoa Khôi Của Trường | Mạn Mạn Audio"
+        },
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện ngôn tình audio full",
+          "text": "Truyện Audio Full | Học Sinh Mới Tới Đã Nhận Mình Là Hoa Khôi Của Trường | Mạn Mạn Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Học Sinh Mới Tới Đã Nhận Mình Là Hoa Khôi Của Trường\" \"truyện audio\"",
+          "text": "Truyện Audio Full | Học Sinh Mới Tới Đã Nhận Mình Là Hoa Khôi Của Trường | Mạn Mạn Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Học Sinh Mới Tới Đã Nhận Mình Là Hoa Khôi Của Trường\" \"truyện audio\"",
+          "text": "[Truyện Audio] Học Sinh Mới Tới Đã Nhận Mình Là Hoa Khôi Của Trường | Dứa Trọng Sinh Audioa"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Tôi Đòi Chia Tay, Nam Thần Lạnh Lùng Phát Điên Rồi",
+      "slug": "toi-doi-chia-tay-nam-than-lanh-lung-phat-dien-roi",
+      "language": "vi",
+      "score": 62,
+      "demandScore": 66,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 62,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "Tôi Đòi Chia Tay, Nam Thần Lạnh Lùng Phát Điên Rồi | Truyện Audio Nấu Ăn"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Tôi Đòi Chia Tay, Nam Thần Lạnh Lùng Phát Điên Rồi\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Tôi Đòi Chia Tay, Nam Thần Lạnh Lùng Phát Điên Rồi\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Bà Trùm Xã Hội Đen Xuyên Vào Thiên Kim Thật Mỏ Hỗn Nhà Hào Môn",
+      "slug": "ba-trum-xa-hoi-den-xuyen-vao-thien-kim-that-mo-hon-nha-hao-mon",
+      "language": "vi",
+      "score": 60,
+      "demandScore": 70,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 3,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 60,
+      "enMotif": "rich-family romance",
+      "viMotif": "hào môn",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "[Truyện Audio Full] | BÀ TRÙM XÃ HỘI ĐEN XUYÊN VÀO THIÊN KIM THẬT MỎ HỖN NHÀ HÀO MÔN | Vả Mặt Audio"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Bà Trùm Xã Hội Đen Xuyên Vào Thiên Kim Thật Mỏ Hỗn Nhà Hào Môn\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Bà Trùm Xã Hội Đen Xuyên Vào Thiên Kim Thật Mỏ Hỗn Nhà Hào Môn\" \"truyện audio\"",
+          "text": "[Truyện Audio Full] | BÀ TRÙM XÃ HỘI ĐEN XUYÊN VÀO THIÊN KIM THẬT MỎ HỖN NHÀ HÀO MÔN | Vả Mặt Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Bà Trùm Xã Hội Đen Xuyên Vào Thiên Kim Thật Mỏ Hỗn Nhà Hào Môn\" \"truyện audio\"",
+          "text": "Truyện audio full BÀ TRÙM XÃ HỘI ĐEN XUYÊN VÀO THIÊN KIM THẬT MỎ HỖN NHÀ HÀO MÔN"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Bà Trùm Xã Hội Đen Xuyên Vào Thiên Kim Thật Mỏ Hỗn Nhà Hào Môn\" \"truyện audio\"",
+          "text": "Truyện Audio: Bà trùm xã hội đen xuyên vào thiên kim thật mỏ hỗn nhà hào môn"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "The God Of Death Just Wants To Quit?!",
+      "slug": "the-god-of-death-just-wants-to-quit",
+      "language": "en",
+      "score": 60,
+      "demandScore": 72,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 60,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-trending",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/trending",
+          "text": "The God of Death Just Wants to Quit?!"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The God Of Death Just Wants To Quit?!\" audiobook",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The God Of Death Just Wants To Quit?!\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The God Of Death Just Wants To Quit?!\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Headless Over Heels [A Dark Fantasy Romance][Book 1 Complete]",
+      "slug": "headless-over-heels-a-dark-fantasy-romance-book-1-complete",
+      "language": "en",
+      "score": 60,
+      "demandScore": 72,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 60,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-best-rated",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/best-rated",
+          "text": "Headless Over Heels [A Dark Fantasy Romance][Book 1 complete]"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Headless Over Heels [A Dark Fantasy Romance][Book 1 Complete]\" audiobook",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Headless Over Heels [A Dark Fantasy Romance][Book 1 Complete]\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Headless Over Heels [A Dark Fantasy Romance][Book 1 Complete]\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia",
+      "slug": "toi-nghe-thay-tieng-long-cua-thai-tu-gia",
+      "language": "vi",
+      "score": 46,
+      "demandScore": 71,
+      "audioSignalScore": 11,
+      "audioCompetitionScore": 5,
+      "audioCompetitionLevel": "high",
+      "opportunityScore": 46,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện audio full mới nhất",
+          "text": "Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia | Truyện Full"
+        },
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện ngôn tình audio full",
+          "text": "Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia | Truyện Full"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia\" \"truyện audio\"",
+          "text": "Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia | Truyện Full"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia\" \"truyện audio\"",
+          "text": "[TRUYỆN AUDIO] Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia Bắc Kinh | Dịt Dàng Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia\" \"truyện audio\"",
+          "text": "[TRUYỆN AUDIO] Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia Bắc Kinh"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia\" audio",
+          "text": "TÔI NGHE THẤY TIẾNG LÒNG CỦA THÁI TỬ GIA [FULL] - LÁ LỐT AUDIO #truyenaudio #audiotruyenhay"
+        }
+      ],
+      "status": "draft"
+    }
+  ]
+}

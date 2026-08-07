@@ -1879,6 +1879,20 @@ const topics = [
     enMotif: "web fiction and romance drama",
     viMotif: "truyện mạng Việt và romance drama",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "the-necro-industrial-revolution-kingdom-building-stubbing-book-1-by-the-end-of-aug",
+    title: "The Necro-Industrial Revolution [Kingdom Building] (STUBBING BOOK 1 BY THE END OF AUG)",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "hat-tra-sua-vao-thai-tu-gia-toi-phai-lam-vo-anh-de-tra-gia",
+    title: "Hất Trà Sữa Vào Thái Tử Gia, Tôi Phải Làm Vợ Ảnh Đế Trả Giá",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["vi"]
   })
 ];
 
