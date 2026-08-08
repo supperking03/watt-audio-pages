@@ -1893,6 +1893,13 @@ const topics = [
     enMotif: "Vietnamese web fiction and romance drama",
     viMotif: "truyện mạng Việt và romance drama",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "i-made-a-railgun-with-lightning-magic-litrpg-op-mc-isekai-book-1-completed",
+    title: "I Made A Railgun With Lightning Magic (LitRPG / OP MC / Isekai) [Book 1 Completed]",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["en"]
   })
 ];
 
