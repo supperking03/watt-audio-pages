@@ -1900,6 +1900,13 @@ const topics = [
     enMotif: "web fiction and romance drama",
     viMotif: "truyện mạng Việt và romance drama",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "summoned-a-hundred-years-too-late-stubbing-book-1-on-august-24th",
+    title: "Summoned A Hundred Years Too Late [Stubbing Book 1 On August 24th]",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["en"]
   })
 ];
 

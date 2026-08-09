@@ -1,0 +1,374 @@
+{
+  "generatedAt": "2026-08-09T03:00:02.325Z",
+  "date": "2026-08-09",
+  "mode": "network",
+  "sourceCount": 595,
+  "scoring": "v3-bilingual-opportunity-demand-minus-audio-competition",
+  "candidates": [
+    {
+      "title": "Summoned A Hundred Years Too Late [Stubbing Book 1 On August 24th]",
+      "slug": "summoned-a-hundred-years-too-late-stubbing-book-1-on-august-24th",
+      "language": "en",
+      "score": 78,
+      "demandScore": 78,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "none",
+      "opportunityScore": 78,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-trending",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/trending",
+          "text": "Summoned A Hundred Years Too Late [Stubbing book 1 on August 24th]"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "This Lady Shall Rise To Prominance! [LitRPG, OP MC]",
+      "slug": "this-lady-shall-rise-to-prominance-litrpg-op-mc",
+      "language": "en",
+      "score": 74,
+      "demandScore": 74,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "none",
+      "opportunityScore": 74,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-trending",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/trending",
+          "text": "This Lady Shall Rise To Prominance! [LitRPG, OP MC]"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "The God Of Death Just Wants To Quit?!",
+      "slug": "the-god-of-death-just-wants-to-quit",
+      "language": "en",
+      "score": 72,
+      "demandScore": 72,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "none",
+      "opportunityScore": 72,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-trending",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/trending",
+          "text": "The God of Death Just Wants to Quit?!"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Headless Over Heels [A Dark Fantasy Romance][Book 1 Complete]",
+      "slug": "headless-over-heels-a-dark-fantasy-romance-book-1-complete",
+      "language": "en",
+      "score": 72,
+      "demandScore": 72,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "none",
+      "opportunityScore": 72,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "royalroad-best-rated",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/best-rated",
+          "text": "Headless Over Heels [A Dark Fantasy Romance][Book 1 complete]"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Headless Over Heels [A Dark Fantasy Romance][Book 1 Complete]\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Headless Over Heels [A Dark Fantasy Romance][Book 1 Complete]\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Cả Nhà Cùng Xuyên Sách Phá Nát Cốt Truyện",
+      "slug": "ca-nha-cung-xuyen-sach-pha-nat-cot-truyen",
+      "language": "vi",
+      "score": 60,
+      "demandScore": 61,
+      "audioSignalScore": 11,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 60,
+      "enMotif": "transmigration",
+      "viMotif": "xuyên sách",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện audio full mới nhất",
+          "text": "Audio Full | Cả Nhà Cùng Xuyên Sách Phá Nát Cốt Truyện | Mây Trắng Audio"
+        },
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "Audio Full | Cả Nhà Cùng Xuyên Sách Phá Nát Cốt Truyện | Mây Trắng Audio"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Cả Nhà Cùng Xuyên Sách Phá Nát Cốt Truyện\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Cả Nhà Cùng Xuyên Sách Phá Nát Cốt Truyện\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "[ Bách Hợp ] Crush Của Anh Trai Thích Tôi",
+      "slug": "bach-hop-crush-cua-anh-trai-thich-toi",
+      "language": "vi",
+      "score": 58,
+      "demandScore": 62,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 58,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "[ Bách Hợp ] Crush Của Anh Trai Thích Tôi - Truyện Girl Love / GL Audio Full"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"[ Bách Hợp ] Crush Của Anh Trai Thích Tôi\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"[ Bách Hợp ] Crush Của Anh Trai Thích Tôi\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Khi Hai Trái Tim Cùng Giới Lạc Nhau Giữa Đời…",
+      "slug": "khi-hai-trai-tim-cung-gioi-lac-nhau-giua-doi",
+      "language": "vi",
+      "score": 58,
+      "demandScore": 62,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 58,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "[Truyện Audio GL]  Một Kiếp Tình Si | Trọn tập – Khi hai trái tim cùng giới lạc nhau giữa đời…"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Khi Hai Trái Tim Cùng Giới Lạc Nhau Giữa Đời…\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Khi Hai Trái Tim Cùng Giới Lạc Nhau Giữa Đời…\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Trọng Sinh Tôi Mặc Kệ Mẹ Giáo Sư Thanh Cao, Tôi Chọn Theo Bố",
+      "slug": "trong-sinh-toi-mac-ke-me-giao-su-thanh-cao-toi-chon-theo-bo",
+      "language": "vi",
+      "score": 58,
+      "demandScore": 62,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 58,
+      "enMotif": "rebirth and family drama",
+      "viMotif": "trọng sinh và gia đình",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện trọng sinh audio",
+          "text": "Trọng sinh tôi mặc kệ mẹ giáo sư thanh cao, tôi chọn theo bố | Full audio"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Trọng Sinh Tôi Mặc Kệ Mẹ Giáo Sư Thanh Cao, Tôi Chọn Theo Bố\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Trọng Sinh Tôi Mặc Kệ Mẹ Giáo Sư Thanh Cao, Tôi Chọn Theo Bố\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Trọng Sinh, Tôi Không Còn Cảnh Báo Anh Họ Về Những Món Ăn Nguy Hiểm",
+      "slug": "trong-sinh-toi-khong-con-canh-bao-anh-ho-ve-nhung-mon-an-nguy-hiem",
+      "language": "vi",
+      "score": 58,
+      "demandScore": 62,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 58,
+      "enMotif": "rebirth",
+      "viMotif": "trọng sinh",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện trọng sinh audio",
+          "text": "Full Audio + Paper Cutting | TRỌNG SINH, TÔI KHÔNG CÒN CẢNH BÁO ANH HỌ VỀ NHỮNG MÓN ĂN NGUY HIỂM"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Trọng Sinh, Tôi Không Còn Cảnh Báo Anh Họ Về Những Món Ăn Nguy Hiểm\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Trọng Sinh, Tôi Không Còn Cảnh Báo Anh Họ Về Những Món Ăn Nguy Hiểm\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Chị Gái Trà Xanh Giả Bệnh Cướp Chồng, Nhưng Anh Chỉ Yêu Mình Tôi",
+      "slug": "chi-gai-tra-xanh-gia-benh-cuop-chong-nhung-anh-chi-yeu-minh-toi",
+      "language": "vi",
+      "score": 58,
+      "demandScore": 62,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 58,
+      "enMotif": "green tea rival",
+      "viMotif": "trà xanh",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện trà xanh audio",
+          "text": "Chị Gái Trà Xanh Giả Bệnh Cướp Chồng, Nhưng Anh Chỉ Yêu Mình Tôi | Truyện Full"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Chị Gái Trà Xanh Giả Bệnh Cướp Chồng, Nhưng Anh Chỉ Yêu Mình Tôi\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Chị Gái Trà Xanh Giả Bệnh Cướp Chồng, Nhưng Anh Chỉ Yêu Mình Tôi\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Em Gái Trà Xanh Bị Cả Nhà Nghe Được Tiếng Lòng, Tôi Chỉ Việc Xem Kịch",
+      "slug": "em-gai-tra-xanh-bi-ca-nha-nghe-duoc-tieng-long-toi-chi-viec-xem-kich",
+      "language": "vi",
+      "score": 58,
+      "demandScore": 62,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 58,
+      "enMotif": "green tea rival",
+      "viMotif": "trà xanh",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện trà xanh audio",
+          "text": "Em gái trà xanh bị cả nhà nghe được tiếng lòng, tôi chỉ việc xem kịch | Full audio"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Em Gái Trà Xanh Bị Cả Nhà Nghe Được Tiếng Lòng, Tôi Chỉ Việc Xem Kịch\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Em Gái Trà Xanh Bị Cả Nhà Nghe Được Tiếng Lòng, Tôi Chỉ Việc Xem Kịch\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Lỡ Nhìn Trộm Đại Ca Trường, Tôi Bị Anh Cướp Luôn Nụ Hôn Đầu",
+      "slug": "lo-nhin-trom-dai-ca-truong-toi-bi-anh-cuop-luon-nu-hon-dau",
+      "language": "vi",
+      "score": 52,
+      "demandScore": 62,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 2,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 52,
+      "enMotif": "school romance",
+      "viMotif": "vườn trường",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện ngôn tình audio full",
+          "text": "Lỡ Nhìn Trộm Đại Ca Trường, Tôi Bị Anh Cướp Luôn Nụ Hôn Đầu | Truyện Audio Nấu Ăn"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Lỡ Nhìn Trộm Đại Ca Trường, Tôi Bị Anh Cướp Luôn Nụ Hôn Đầu\" \"truyện audio\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Lỡ Nhìn Trộm Đại Ca Trường, Tôi Bị Anh Cướp Luôn Nụ Hôn Đầu\" audio",
+          "text": "Lỡ Nhìn Trộm Đại Ca Trường, Tôi Bị Anh Cướp Luôn Nụ Hôn Đầu | Truyện Audio Nấu Ăn"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Lỡ Nhìn Trộm Đại Ca Trường, Tôi Bị Anh Cướp Luôn Nụ Hôn Đầu\" audio",
+          "text": "Tiểu Màn Thầu Audio #59 || Lỡ Nhìn Trộm Đại Ca Trường, Tôi Bị Anh Cướp Luôn Nụ Hôn Đầu #audio"
+        }
+      ],
+      "status": "draft"
+    }
+  ]
+}
