@@ -1907,6 +1907,13 @@ const topics = [
     enMotif: "web fiction and romance drama",
     viMotif: "truyện mạng Việt và romance drama",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "gwapong-boss-nahumaling-sa-kagandahan-ng-maid-niya-sobrang-ganda-kasi-ng-dalaga",
+    title: "Gwapong Boss, Nahumaling Sa Kagandahan Ng Maid Niya! Sobrang Ganda Kasi Ng Dalaga",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["en"]
   })
 ];
 
