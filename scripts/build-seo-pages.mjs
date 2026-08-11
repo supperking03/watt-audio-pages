@@ -1914,6 +1914,13 @@ const topics = [
     enMotif: "web fiction and romance drama",
     viMotif: "truyện mạng Việt và romance drama",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "this-lady-shall-rise-to-prominance-litrpg-op-mc",
+    title: "This Lady Shall Rise To Prominance! [LitRPG, OP MC]",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["en"]
   })
 ];
 
