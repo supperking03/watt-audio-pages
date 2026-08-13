@@ -1921,6 +1921,13 @@ const topics = [
     enMotif: "web fiction and romance drama",
     viMotif: "truyện mạng Việt và romance drama",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "toi-block-thai-tu-gia-ai-ngo-anh-la-ke-nghien-vo",
+    title: "Tôi Block Thái Tử Gia Ai Ngờ Anh Là Kẻ Nghiện Vợ",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["vi"]
   })
 ];
 
