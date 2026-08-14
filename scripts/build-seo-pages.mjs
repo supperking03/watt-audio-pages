@@ -1928,6 +1928,13 @@ const topics = [
     enMotif: "Vietnamese web fiction and romance drama",
     viMotif: "truyện mạng Việt và romance drama",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "the-god-of-death-just-wants-to-quit",
+    title: "The God Of Death Just Wants To Quit?!",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["en"]
   })
 ];
 
