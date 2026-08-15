@@ -1935,6 +1935,20 @@ const topics = [
     enMotif: "web fiction and romance drama",
     viMotif: "truyện mạng Việt và romance drama",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "role-without-a-self-impersonation-isekai-fate-manipulation",
+    title: "Role Without A Self [Impersonation + Isekai + Fate Manipulation]",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "trong-sinh-toi-khong-con-canh-bao-anh-ho-ve-nhung-mon-an-nguy-hiem",
+    title: "Trọng Sinh, Tôi Không Còn Cảnh Báo Anh Họ Về Những Món Ăn Nguy Hiểm",
+    enMotif: "rebirth",
+    viMotif: "trọng sinh",
+    languages: ["vi"]
   })
 ];
 
