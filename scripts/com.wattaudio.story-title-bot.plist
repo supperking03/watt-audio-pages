@@ -13,13 +13,24 @@
         <string>/Users/kelvin/.bubu/watt-audio-story-title-bot.sh</string>
     </array>
 
-    <!-- Run once per day at 10:00 Vietnam time. If the Mac is asleep, launchd
+    <!-- Three runs per day at 10:00, 15:00 and 20:00 Vietnam time so the five markets
+         (vi, en, hi, id, ar) get published more often. If the Mac is asleep, launchd
          usually runs one missed interval shortly after wake. -->
     <key>StartCalendarInterval</key>
-    <dict>
-        <key>Hour</key><integer>10</integer>
-        <key>Minute</key><integer>0</integer>
-    </dict>
+    <array>
+        <dict>
+            <key>Hour</key><integer>10</integer>
+            <key>Minute</key><integer>0</integer>
+        </dict>
+        <dict>
+            <key>Hour</key><integer>15</integer>
+            <key>Minute</key><integer>0</integer>
+        </dict>
+        <dict>
+            <key>Hour</key><integer>20</integer>
+            <key>Minute</key><integer>0</integer>
+        </dict>
+    </array>
 
     <key>StandardOutPath</key>
     <string>/Users/kelvin/.bubu/watt-audio-story-title-bot-launchd.log</string>

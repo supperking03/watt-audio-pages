@@ -10,12 +10,17 @@ const cliArgs = process.argv.slice(2);
 const minScore = Number(cliArgs.find((arg) => arg.startsWith("--min-score="))?.split("=")[1] || 85);
 const maxPublish = Number(cliArgs.find((arg) => arg.startsWith("--max="))?.split("=")[1] || 1);
 const maxPerLanguage = Number(cliArgs.find((arg) => arg.startsWith("--max-per-language="))?.split("=")[1] || maxPublish);
+const supportedLanguages = ["en", "vi", "hi", "id", "ar"];
 const publishLanguages = new Set(
   (cliArgs.find((arg) => arg.startsWith("--languages="))?.split("=")[1] || "vi")
     .split(",")
     .map((lang) => lang.trim())
     .filter(Boolean)
 );
+
+function candidateLanguage(candidate) {
+  return supportedLanguages.includes(candidate.language) ? candidate.language : "vi";
+}
 const shouldBuild = cliArgs.includes("--build");
 const dryRun = cliArgs.includes("--dry-run");
 const draftArg = cliArgs.find((arg) => arg.startsWith("--draft="))?.split("=")[1];
@@ -42,12 +47,15 @@ function normalizeTitle(title) {
 }
 
 function topicBlock(candidate) {
-  const language = candidate.language === "en" ? "en" : "vi";
+  const language = candidateLanguage(candidate);
   return `  storyTitleTopic({
     slug: ${quote(candidate.slug)},
     title: ${quote(candidate.title)},
     enMotif: ${quote(candidate.enMotif)},
     viMotif: ${quote(candidate.viMotif)},
+    hiMotif: ${quote(candidate.hiMotif || candidate.enMotif)},
+    idMotif: ${quote(candidate.idMotif || candidate.enMotif)},
+    arMotif: ${quote(candidate.arMotif || candidate.enMotif)},
     languages: [${quote(language)}]
   })`;
 }
@@ -66,7 +74,7 @@ const existingTitles = new Set([...source.matchAll(/title:\s*"([^"]+)"/g)].map((
 
 const publishable = draft.candidates
   .filter((candidate) => candidate.score >= minScore)
-  .filter((candidate) => publishLanguages.has(candidate.language === "en" ? "en" : "vi"))
+  .filter((candidate) => publishLanguages.has(candidateLanguage(candidate)))
   .filter((candidate) => !existingSlugs.has(candidate.slug))
   .filter((candidate) => !existingTitles.has(normalizeTitle(candidate.title)))
   .sort((a, b) => b.score - a.score);
@@ -74,12 +82,12 @@ const publishable = draft.candidates
 const selected = [];
 const languageCounts = new Map();
 for (const candidate of publishable) {
-  const language = candidate.language === "en" ? "en" : "vi";
+  const language = candidateLanguage(candidate);
   const count = languageCounts.get(language) || 0;
   if (count >= maxPerLanguage) continue;
   selected.push(candidate);
   languageCounts.set(language, count + 1);
-  if (selected.length >= maxPublish && publishLanguages.size === 1) break;
+  if (selected.length >= maxPublish) break;
 }
 
 if (!selected.length) {
@@ -91,7 +99,7 @@ const blocks = selected.map(topicBlock);
 
 console.log(`Publishable drafts: ${selected.length}`);
 for (const candidate of selected) {
-  console.log(`- [${candidate.language === "en" ? "en" : "vi"}] ${candidate.title} (${candidate.score}) -> ${candidate.slug}`);
+  console.log(`- [${candidateLanguage(candidate)}] ${candidate.title} (${candidate.score}) -> ${candidate.slug}`);
 }
 
 if (dryRun) {

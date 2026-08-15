@@ -21,13 +21,15 @@ fi
 PROJECT_DIR="${WATT_AUDIO_PAGES_DIR:-/Users/kelvin/Downloads/watt-audio-pages}"
 LOG="$HOME/.bubu/watt-audio-story-title-bot.log"
 NOTIFY_ENV="$HOME/.bubu/notify.env"
-LIMIT="${STORY_TITLE_BOT_LIMIT:-12}"
+LIMIT="${STORY_TITLE_BOT_LIMIT:-10}"
 AUTO_PUBLISH="${STORY_TITLE_BOT_AUTO_PUBLISH:-0}"
 PUBLISH_MIN_SCORE="${STORY_TITLE_BOT_PUBLISH_MIN_SCORE:-65}"
-PUBLISH_MAX="${STORY_TITLE_BOT_PUBLISH_MAX:-2}"
-PUBLISH_MAX_PER_LANGUAGE="${STORY_TITLE_BOT_PUBLISH_MAX_PER_LANGUAGE:-1}"
-PUBLISH_LANGUAGES="${STORY_TITLE_BOT_PUBLISH_LANGUAGES:-vi}"
+PUBLISH_MAX="${STORY_TITLE_BOT_PUBLISH_MAX:-10}"
+PUBLISH_MAX_PER_LANGUAGE="${STORY_TITLE_BOT_PUBLISH_MAX_PER_LANGUAGE:-2}"
+PUBLISH_LANGUAGES="${STORY_TITLE_BOT_PUBLISH_LANGUAGES:-vi,en,hi,id,ar}"
 GIT_PUSH="${STORY_TITLE_BOT_GIT_PUSH:-1}"
+# Markets the research pass crawls. Publishing is filtered separately by PUBLISH_LANGUAGES.
+BOT_LANGUAGES="${STORY_TITLE_BOT_LANGUAGES:-vi,en,hi,id,ar}"
 
 mkdir -p "$HOME/.bubu"
 cd / || exit 1
@@ -105,7 +107,7 @@ Log: $LOG"
   exit 1
 fi
 
-output=$(run_node scripts/run-story-title-bot.mjs --limit="$LIMIT" 2>&1)
+output=$(run_node scripts/run-story-title-bot.mjs --limit="$LIMIT" --languages="$BOT_LANGUAGES" 2>&1)
 status=$?
 printf '%s\n' "$output" >> "$LOG"
 

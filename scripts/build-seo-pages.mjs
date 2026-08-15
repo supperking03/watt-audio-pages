@@ -6,6 +6,11 @@ const androidUrl = "https://play.google.com/store/apps/details?id=com.supperking
 const chromeUrl = "https://chromewebstore.google.com/detail/watt-audio-nghe-wattpad-a/aipmnekljadgnhedbkhmbghkanjepied";
 const downloadUrls = [iosUrl, androidUrl, chromeUrl];
 const siteUrl = "https://wattaudios.com";
+// Languages that get their own /<lang>/ directory, homepage, guides index and sitemap entries.
+// "en" and "vi" carry the hand-written evergreen guides; "hi", "id" and "ar" are story-title
+// markets fed by the automated SEO bot.
+const siteLanguages = ["en", "vi", "hi", "id", "ar"];
+const storyOnlyLanguages = ["hi", "id", "ar"];
 const lastModified = "2026-07-15";
 const gaMeasurementId = "G-CPTTPW88BP";
 const cssVersion = "20260715-chrome-extension";
@@ -58,6 +63,15 @@ const homeImages = {
     alt: "Watt Audio homepage hero image in English showing the app turning stories into audio"
   }
 };
+// Story-title markets reuse the English hero artwork with localized alt text.
+for (const lang of storyOnlyLanguages) {
+  const alt = {
+    hi: "Watt Audio होमपेज इमेज, जिसमें ऐप कहानियों को ऑडियो में बदलता है",
+    id: "Gambar utama halaman depan Watt Audio yang menunjukkan aplikasi mengubah cerita menjadi audio",
+    ar: "صورة الصفحة الرئيسية لتطبيق Watt Audio وهو يحوّل الروايات إلى صوت"
+  }[lang];
+  homeImages[lang] = { ...homeImages.en, alt };
+}
 const faviconTags = `<link rel="icon" href="/favicon.ico" sizes="any" />
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png" />
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png" />
@@ -149,7 +163,75 @@ function searchIntentTopic({
   };
 }
 
-function storyTitleTopic({ slug, title, enMotif, viMotif, languages = ["en", "vi"] }) {
+// Story-title page copy for the markets that do not carry the hand-written evergreen guides.
+// Every field mirrors the shape produced by searchIntentTopic so the renderer stays language-agnostic.
+const storyTitlePageBuilders = {
+  hi: (title, motif) => ({
+    title: `${title} ऑडियो में कैसे सुनें`,
+    description: `${title} और इससे मिलती-जुलती ${motif} कहानियाँ ऑडियो में सुनने की गाइड, साथ में Watt Audio का चैप्टर-वाइज़ वर्कफ़्लो।`,
+    audience: `उन पाठकों के लिए जो ${title}, हिंदी वेब स्टोरी ऑडियो, Wattpad ऑडियो या इसी तरह की ${motif} कहानियाँ खोज रहे हैं`,
+    focus: `${title} और इसी तरह की ${motif} कहानियाँ सुनना`,
+    scenario: `लंबे चैप्टर पूरे करना, सफ़र में सुनना, आँखों को आराम देना और सोने से पहले कहानी सुनना`,
+    screenshot: `Watt Audio की स्क्रीन, जिसमें ${title} जैसी कहानियों के लिए चैप्टर-वाइज़ लिसनिंग वर्कफ़्लो दिख रहा है।`,
+    steps: [
+      `जिस चैनल, साइट या ऐप का आप पहले से इस्तेमाल करते हैं, वहीं ${title} खोजें।`,
+      "सपोर्टेड कहानी या चैप्टर का लिंक Watt Audio में डालें ताकि सुनने की प्रोग्रेस एक जगह रहे।",
+      "पहले एक चैप्टर का ऑडियो बनाएँ, फिर स्पीड, स्लीप टाइमर और बैकग्राउंड प्लेबैक अपने हिसाब से सेट करें."
+    ],
+    tips: [
+      `इस पेज को ${title} और इसी वाइब की ${motif} कहानियाँ खोजने की गाइड की तरह इस्तेमाल करें, यह कहानी का रीपोस्ट नहीं है।`,
+      "लंबी वेब स्टोरी के लिए एक बार में कुछ ही चैप्टर तैयार करें, इससे लिसनिंग क्यू साफ़ रहती है।"
+    ],
+    faq: [
+      [`क्या Watt Audio पर ${title} होस्ट की जाती है?`, "नहीं। Watt Audio सपोर्टेड कहानी लिंक के लिए एक निजी लिसनिंग वर्कफ़्लो है। यह गाइड सुनने का तरीका बताती है, कहानी डाउनलोड या दोबारा प्रकाशित नहीं करती।"],
+      ["कहानी के नाम पर अलग पेज क्यों?", "बहुत से पाठक YouTube या किसी ऐप पर एक एपिसोड सुनने के बाद सीधे कहानी का नाम सर्च करते हैं और आगे सुनने का आसान तरीका ढूँढ़ते हैं।"]
+    ]
+  }),
+  id: (title, motif) => ({
+    title: `Cara Mendengarkan ${title} dalam Bentuk Audio`,
+    description: `Panduan mendengarkan ${title} dan cerita ${motif} sejenis dalam bentuk audio per bab bersama Watt Audio.`,
+    audience: `pembaca yang mencari ${title}, cerita Wattpad Indonesia, audio novel online, atau cerita ${motif} sejenis`,
+    focus: `mendengarkan ${title} dan cerita ${motif} sejenis`,
+    scenario: `mengejar bab yang panjang, mendengarkan saat perjalanan, mengistirahatkan mata, dan menyimak cerita sebelum tidur`,
+    screenshot: `Layar Watt Audio yang menampilkan alur mendengarkan per bab untuk cerita seperti ${title}.`,
+    steps: [
+      `Cari ${title} di kanal, situs, atau aplikasi cerita yang memang sudah kamu pakai.`,
+      "Salin tautan cerita atau bab yang didukung ke Watt Audio supaya progres mendengarmu tetap rapi.",
+      "Buat audio satu bab dulu, lalu atur kecepatan, sleep timer, dan pemutaran latar sesuai kebiasaanmu."
+    ],
+    tips: [
+      `Pakai halaman ini sebagai panduan menemukan ${title} dan cerita ${motif} dengan vibe serupa, bukan sebagai unggahan ulang isi ceritanya.`,
+      "Untuk cerita bersambung yang panjang, siapkan beberapa bab saja sekali jalan agar antrean dengarmu tidak berantakan."
+    ],
+    faq: [
+      [`Apakah Watt Audio menyimpan ${title}?`, "Tidak. Watt Audio adalah alur mendengarkan pribadi untuk tautan cerita yang didukung. Panduan ini membantu menata cara mendengar, bukan mengunduh atau menyebarkan isi cerita."],
+      ["Kenapa dibuat halaman khusus judul cerita?", "Banyak pembaca menonton satu episode audio lebih dulu, lalu mencari judul ceritanya untuk menemukan cara melanjutkan yang lebih nyaman."]
+    ]
+  }),
+  ar: (title, motif) => ({
+    title: `كيف تستمع إلى ${title} كرواية صوتية`,
+    description: `دليل للاستماع إلى ${title} والروايات المشابهة من نوع ${motif} على شكل فصول صوتية مع Watt Audio.`,
+    audience: `القراء الذين يبحثون عن ${title} أو الروايات الصوتية العربية أو روايات Wattpad أو أعمال ${motif} مشابهة`,
+    focus: `الاستماع إلى ${title} والروايات المشابهة من نوع ${motif}`,
+    scenario: `متابعة الفصول الطويلة، والاستماع أثناء التنقل، وإراحة العينين، وسماع الرواية قبل النوم`,
+    screenshot: `شاشة من Watt Audio تعرض طريقة الاستماع فصلاً بفصل لروايات مثل ${title}.`,
+    steps: [
+      `ابحث عن ${title} في القناة أو الموقع أو التطبيق الذي تستخدمه أصلاً.`,
+      "انسخ رابط الرواية أو الفصل المدعوم إلى Watt Audio ليبقى تقدّمك في الاستماع منظّماً.",
+      "أنشئ صوت فصل واحد أولاً، ثم اضبط السرعة ومؤقت النوم والتشغيل في الخلفية حسب عادتك."
+    ],
+    tips: [
+      `استخدم هذه الصفحة كدليل لاكتشاف ${title} والروايات المشابهة من نوع ${motif}، لا كإعادة نشر لمحتوى الرواية.`,
+      "مع الروايات الطويلة، جهّز بضعة فصول فقط في كل مرة حتى تبقى قائمة الاستماع مرتبة."
+    ],
+    faq: [
+      [`هل يستضيف Watt Audio رواية ${title}؟`, "لا. Watt Audio هو أسلوب استماع شخصي لروابط الروايات المدعومة. هذا الدليل يساعدك على تنظيم الاستماع، ولا يحمّل محتوى الرواية أو يعيد نشره."],
+      ["لماذا صفحة خاصة باسم الرواية؟", "كثير من القراء يسمعون حلقة صوتية واحدة ثم يبحثون باسم الرواية مباشرة عن طريقة أسهل لمتابعة الاستماع."]
+    ]
+  })
+};
+
+function storyTitleTopic({ slug, title, enMotif, viMotif, hiMotif, idMotif, arMotif, languages = ["en", "vi"] }) {
   const englishOnly = languages.length === 1 && languages[0] === "en";
   const enAudienceContext = englishOnly
     ? `readers who searched for ${title}, Wattpad-style stories, web fiction audio, read-aloud story apps, or similar ${enMotif} fiction`
@@ -200,6 +282,12 @@ function storyTitleTopic({ slug, title, enMotif, viMotif, languages = ["en", "vi
     [`Watt Audio có lưu trữ ${title} không?`, "Không. Watt Audio là workflow nghe cá nhân cho link truyện được hỗ trợ. Bài này giúp người đọc tổ chức việc nghe, không tải lại hoặc phân phối nội dung truyện."],
     ["Vì sao dùng thẳng tên truyện làm keyword?", "Nhiều người xem một tập truyện audio trên YouTube rồi search đúng tên truyện để tìm cách nghe tiếp thuận tiện hơn."]
   ];
+  const motifByLanguage = { hi: hiMotif, id: idMotif, ar: arMotif };
+  for (const lang of storyOnlyLanguages) {
+    if (!languages.includes(lang)) continue;
+    topic[lang] = storyTitlePageBuilders[lang](title, motifByLanguage[lang] || enMotif);
+  }
+  topic.storyTitle = title;
   if (!languages.includes("en")) delete topic.en;
   if (!languages.includes("vi")) delete topic.vi;
   return topic;
@@ -1949,13 +2037,78 @@ const topics = [
     enMotif: "rebirth",
     viMotif: "trọng sinh",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "pembantu-rumah-tangga-yang-terjebak-cinta-dengan-pejabat",
+    title: "Pembantu Rumah Tangga Yang Terjebak Cinta Dengan Pejabat",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "cerita-cinta-bertepuk-sebelah-tangan-yang-berakhir-bahagia",
+    title: "Cerita Cinta Bertepuk Sebelah Tangan Yang Berakhir Bahagia",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "majaburi-vaibhav-aur-anushka-ki-prem-kahani-hindi-stories",
+    title: "मजबूरी - वैभव और अनुष्का की प्रेम कहानी",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "bina-kisi-surag-ke-hatyare-ko-kaise-pakarega-jasus",
+    title: "बिना किसी सुराग के हत्यारे को कैसे पकड़ेगा जासूस?",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "rwayh-ma-la-nbwh-bh-kamlh-lsandra-syraj",
+    title: "ما لا نبوح به لساندرا سيراج",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["ar"]
   })
 ];
 
 const labels = {
   en: {
     htmlLang: "en",
+    dir: "ltr",
+    hreflang: "en",
+    ogLocale: "en_US",
+    schemaLang: "en",
+    languageName: "English",
     path: "en",
+    audienceLead: "This guide is written for",
+    tagRowLabel: "Topic tags",
+    storeIos: "App Store",
+    storeAndroid: "Google Play",
+    storeChrome: "Chrome Extension",
+    storyCtaLabel: "Download Watt Audio",
+    storyCtaTitle: "Download Watt Audio to listen to {name}",
+    storyCtaText: "Turn supported story links into chapter audio, listen with the screen off, and keep the story moving anywhere.",
+    popularHeading: "Popular Wattpad Audio Guides",
+    allGuidesHeading: "All Guides",
     guide: "Watt Audio Guide",
     home: "Home",
     guides: "Guides",
@@ -1990,7 +2143,22 @@ const labels = {
   },
   vi: {
     htmlLang: "vi",
+    dir: "ltr",
+    hreflang: "vi-VN",
+    ogLocale: "vi_VN",
+    schemaLang: "vi-VN",
+    languageName: "Tiếng Việt",
     path: "vi",
+    audienceLead: "Bài này dành cho",
+    tagRowLabel: "Chủ đề",
+    storeIos: "Tải trên App Store",
+    storeAndroid: "Tải trên Google Play",
+    storeChrome: "Thêm vào Chrome",
+    storyCtaLabel: "Tải Watt Audio",
+    storyCtaTitle: "Tải Watt Audio để nghe {name}",
+    storyCtaText: "Chuyển link truyện được hỗ trợ thành audio theo chương, nghe khi tắt màn hình và tiếp tục truyện mọi lúc.",
+    popularHeading: "Hướng dẫn Wattpad audio nổi bật",
+    allGuidesHeading: "Tất cả hướng dẫn",
     guide: "Hướng dẫn Watt Audio",
     home: "Trang chủ",
     guides: "Hướng dẫn",
@@ -2022,6 +2190,156 @@ const labels = {
     tipsOutro: "Nếu bạn quan tâm đến sự nhập tâm, hãy nghe vài phút trước khi quyết định chương đó có hợp với audio không. Có chương rất hợp nghe rảnh tay vì tuyến tính và nhiều đối thoại. Có chương chứa danh sách, định dạng lạ hoặc world-building nặng nên đọc bằng mắt sẽ dễ hơn. Người đọc linh hoạt dùng cả hai chế độ.",
     usefulA: "Watt Audio hữu ích nhất khi truyện đã là một phần thói quen của bạn. Nếu bạn theo dõi nhiều truyện đăng kỳ, bạn biết việc tụt lại dễ thế nào. Audio biến các khoảng trống nhỏ trong ngày thành thời gian đọc: đi bộ, đi xe, dọn nhà hoặc vài phút yên tĩnh trước khi ngủ. Những khoảng nhỏ đó cộng lại rất nhanh.",
     usefulB: "App cũng hữu ích khi đọc lại. Khi bạn đã biết cốt truyện, nghe audio có thể kéo lại không khí truyện mà không cần tập trung thị giác như lần đầu. Bạn có thể quay lại chương yêu thích, bắt kịp trước cập nhật mới hoặc đi qua đoạn chậm hơn để dành năng lượng đọc kỹ cho cảnh quan trọng."
+  },
+  hi: {
+    htmlLang: "hi",
+    dir: "ltr",
+    hreflang: "hi-IN",
+    ogLocale: "hi_IN",
+    schemaLang: "hi-IN",
+    languageName: "हिन्दी",
+    path: "hi",
+    audienceLead: "यह गाइड इनके लिए है:",
+    tagRowLabel: "विषय",
+    storeIos: "App Store से डाउनलोड करें",
+    storeAndroid: "Google Play से डाउनलोड करें",
+    storeChrome: "Chrome में जोड़ें",
+    storyCtaLabel: "Watt Audio डाउनलोड करें",
+    storyCtaTitle: "{name} सुनने के लिए Watt Audio डाउनलोड करें",
+    storyCtaText: "सपोर्टेड कहानी लिंक को चैप्टर ऑडियो में बदलें, स्क्रीन बंद करके सुनें और कहानी कहीं भी आगे बढ़ाएँ।",
+    popularHeading: "लोकप्रिय ऑडियो स्टोरी गाइड",
+    allGuidesHeading: "सभी गाइड",
+    guide: "Watt Audio गाइड",
+    home: "होम",
+    guides: "गाइड",
+    support: "सहायता",
+    download: "ऐप डाउनलोड करें",
+    downloadCta: "App Store से डाउनलोड करें",
+    screenshotTitle: "स्क्रीनशॉट प्लेसहोल्डर",
+    screenshotSuffix: "इस हिस्से को बाद में प्रोडक्ट स्क्रीनशॉट से बदलें।",
+    stepHeading: "स्टेप-बाय-स्टेप सेटअप",
+    whyHeading: "वेब स्टोरी के लिए पाठक ऑडियो क्यों चुनते हैं",
+    tipsHeading: "बेहतर सुनने के लिए क्या करें",
+    usefulHeading: "Watt Audio कब सबसे ज़्यादा काम आता है",
+    faqHeading: "अक्सर पूछे जाने वाले सवाल",
+    relatedHeading: "संबंधित गाइड",
+    ctaHeading: "Watt Audio डाउनलोड करें",
+    ctaText: "सपोर्टेड कहानी लिंक को चैप्टर ऑडियो में बदलें, स्क्रीन बंद करके सुनें, स्पीड बदलें और व्यस्त दिनों में भी कहानी पढ़ने की आदत बनाए रखें।",
+    indexTitle: "Watt Audio हिंदी गाइड",
+    indexDescription: "हिंदी वेब स्टोरी, Wattpad कहानियाँ और लंबी सीरीज़ को ऑडियो में सुनने की गाइड, टेक्स्ट टू स्पीच टिप्स और Watt Audio का चैप्टर-वाइज़ वर्कफ़्लो।",
+    homeTag: "कहानियों को ऑडियो में बदलें और कहीं भी सुनें।",
+    privacy: "गोपनीयता नीति",
+    footer: "AI की मदद से बनी जानकारी गाइड",
+    introA: "अगर आप {focus} का तरीका खोज रहे हैं, तो शायद आप हर चैप्टर के लिए स्क्रीन देखने से ज़्यादा आरामदायक कुछ चाहते हैं। वेब स्टोरी ढूँढ़ना आसान है, लेकिन रोज़मर्रा की ज़िंदगी में उन्हें पढ़ पाना हमेशा आसान नहीं होता। नए चैप्टर अजीब समय पर आते हैं, कहानियाँ बहुत लंबी हो जाती हैं, और पढ़ने का सबसे अच्छा वक़्त अक्सर तब आता है जब हाथ या आँखें पहले से व्यस्त हों।",
+    introB: "Watt Audio ठीक इसी समस्या के लिए बना है। कहानी के पेज को एक आम वेब आर्टिकल की तरह मानने के बजाय, यह सपोर्टेड कहानी लिंक को एक लिसनिंग लाइब्रेरी में लाता है, चैप्टर ऑडियो बनाता है और ऑडियोबुक प्लेयर जैसे कंट्रोल के साथ कहानी आगे बढ़ाने देता है। मक़सद मूल स्रोत या लेखक की जगह लेना नहीं है, बल्कि आपकी निजी पढ़ाई को ज़्यादा लचीला बनाना है।",
+    whyA: "फ़ोन पर पढ़ना सुविधाजनक है, पर थकाने वाला भी। तेज़ रोशनी, छोटे अक्षर, लंबी स्क्रॉलिंग और लगातार नोटिफ़िकेशन पसंदीदा कहानी को भी बोझ बना देते हैं। ऑडियो एक दूसरा तरीका देता है। आप {scenario} के दौरान चैप्टर आगे बढ़ा सकते हैं, और जब पूरा ध्यान देना हो तब पढ़ने पर लौट सकते हैं।",
+    whyB: "सबसे अच्छा ऑडियो वर्कफ़्लो चैप्टर के हिसाब से चलता है। कोई आम टेक्स्ट रीडर पूरे वेब पेज को पढ़ देता है, जिसमें मेन्यू, कमेंट और बटन भी शामिल होते हैं। कहानी पर केंद्रित ऐप ध्यान चैप्टर पर रखता है, आपकी जगह याद रखता है और हर बार क्यू दोबारा बनाए बिना आगे बढ़ने का साफ़ रास्ता देता है।",
+    stepIntro: "शुरुआत का सबसे आसान तरीका है पहले चैप्टर को एक टेस्ट की तरह लेना। पहले ही दिन पूरी लाइब्रेरी बदलने की ज़रूरत नहीं है। एक कहानी जोड़ें, एक चैप्टर का ऑडियो बनाएँ और देखें कि आवाज़, स्पीड और कंट्रोल आपकी पढ़ने की आदत से मेल खाते हैं या नहीं।",
+    stepOutro: "जब यह पहला फ़्लो सहज लगने लगे, तो इसे लंबे सेशन के लिए इस्तेमाल करें। कुछ पाठक सफ़र से पहले कुछ चैप्टर तैयार कर लेते हैं, कुछ सिर्फ़ नया अपडेट बनाते हैं। सबसे काम की आदत यह है कि ऑडियो तैयारी आपकी असली दिनचर्या के पास रहे, न कि एक बड़ी क़तार बन जाए जो कभी पूरी न हो।",
+    tipsIntro: "टेक्स्ट टू स्पीच तब सबसे अच्छा काम करता है जब आप सेटिंग बदलने में झिझकें नहीं। कहानी एक जैसी नहीं होती। एक शांत इज़हार वाला सीन, एक फ़ैंटेसी लड़ाई, एक रीकैप चैप्टर और लेखक का नोट—सबकी लय अलग होती है। एक ही स्पीड हर जगह सही नहीं लगेगी।",
+    tipsOutro: "अगर आपको कहानी में डूबना पसंद है, तो कुछ मिनट सुनकर तय करें कि यह चैप्टर ऑडियो के लिए ठीक है या नहीं। संवाद वाले सीधे चैप्टर सुनने में बढ़िया लगते हैं। जिनमें सूचियाँ, अलग फ़ॉर्मैटिंग या भारी वर्ल्ड-बिल्डिंग हो, उन्हें आँखों से पढ़ना आसान रहता है। अच्छा पाठक दोनों तरीक़े इस्तेमाल करता है।",
+    usefulA: "Watt Audio तब सबसे ज़्यादा काम आता है जब कहानी आपकी दिनचर्या का हिस्सा बन चुकी हो। अगर आप कई सीरीज़ फ़ॉलो करते हैं तो पीछे छूट जाना आम बात है। ऑडियो दिन के छोटे-छोटे अंतराल को पढ़ने के समय में बदल देता है: टहलना, बस का सफ़र, घर का काम या सोने से पहले के कुछ शांत मिनट। ये छोटे सेशन तेज़ी से जुड़ते हैं।",
+    usefulB: "दोबारा सुनने में भी यह उपयोगी है। जब कहानी पहले से पता हो, तब सुनना उसका माहौल लौटा देता है और उतना ध्यान भी नहीं माँगता। आप पसंदीदा चैप्टर दोबारा सुन सकते हैं, नए अपडेट से पहले कहानी ताज़ा कर सकते हैं, या धीमे हिस्सों से गुज़र सकते हैं और अपनी पूरी एकाग्रता उन दृश्यों के लिए बचा सकते हैं जो सबसे मायने रखते हैं।"
+  },
+  id: {
+    htmlLang: "id",
+    dir: "ltr",
+    hreflang: "id-ID",
+    ogLocale: "id_ID",
+    schemaLang: "id-ID",
+    languageName: "Bahasa Indonesia",
+    path: "id",
+    audienceLead: "Panduan ini ditujukan untuk",
+    tagRowLabel: "Topik",
+    storeIos: "Unduh di App Store",
+    storeAndroid: "Unduh di Google Play",
+    storeChrome: "Tambahkan ke Chrome",
+    storyCtaLabel: "Unduh Watt Audio",
+    storyCtaTitle: "Unduh Watt Audio untuk mendengarkan {name}",
+    storyCtaText: "Ubah tautan cerita yang didukung menjadi audio per bab, dengarkan dengan layar mati, dan lanjutkan ceritamu di mana saja.",
+    popularHeading: "Panduan Audio Cerita Populer",
+    allGuidesHeading: "Semua Panduan",
+    guide: "Panduan Watt Audio",
+    home: "Beranda",
+    guides: "Panduan",
+    support: "Dukungan",
+    download: "Unduh aplikasi",
+    downloadCta: "Unduh di App Store",
+    screenshotTitle: "Tempat tangkapan layar",
+    screenshotSuffix: "Ganti blok ini dengan tangkapan layar produk nanti.",
+    stepHeading: "Panduan langkah demi langkah",
+    whyHeading: "Kenapa pembaca memilih audio untuk cerita online",
+    tipsHeading: "Cara mendapat hasil dengar yang lebih baik",
+    usefulHeading: "Kapan Watt Audio paling berguna",
+    faqHeading: "Pertanyaan yang sering diajukan",
+    relatedHeading: "Panduan terkait",
+    ctaHeading: "Unduh Watt Audio",
+    ctaText: "Ubah tautan cerita yang didukung menjadi audio per bab, dengarkan dengan layar mati, atur kecepatan, dan pertahankan kebiasaan membaca walau harimu padat.",
+    indexTitle: "Panduan Watt Audio Indonesia",
+    indexDescription: "Panduan mendengarkan cerita Wattpad, novel online, dan cerita bersambung panjang dalam bentuk audio, plus tips text to speech dan alur per bab Watt Audio.",
+    homeTag: "Ubah cerita menjadi audio dan dengarkan di mana saja.",
+    privacy: "Kebijakan Privasi",
+    footer: "Panduan edukatif dibantu AI",
+    introA: "Kalau kamu sedang mencari cara {focus}, kemungkinan besar kamu ingin sesuatu yang lebih nyaman daripada menatap layar di setiap bab. Cerita online mudah ditemukan, tapi tidak selalu mudah dibaca di sela kesibukan harian. Bab baru muncul di jam yang tidak menentu, ceritanya bisa jadi sangat panjang, dan waktu terbaik untuk membaca sering datang justru saat tangan atau matamu sudah sibuk.",
+    introB: "Watt Audio dirancang untuk masalah itu. Alih-alih memperlakukan halaman cerita seperti artikel web biasa, aplikasi ini membantumu memasukkan tautan cerita yang didukung ke dalam pustaka dengar, membuat audio per bab, dan melanjutkan cerita dengan kontrol yang terasa seperti pemutar buku audio. Tujuannya bukan menggantikan sumber cerita atau penulisnya, melainkan membuat kebiasaan membacamu lebih fleksibel.",
+    whyA: "Membaca di ponsel memang praktis, tapi juga melelahkan. Layar terang, huruf kecil, scroll panjang, dan notifikasi yang terus muncul bisa membuat cerita favorit pun terasa berat diselesaikan. Audio memberi mode lain. Kamu bisa melanjutkan satu bab sambil {scenario}, lalu kembali membaca saat ingin fokus penuh.",
+    whyB: "Alur dengar terbaik itu berbasis bab. Pembaca teks umum bisa membacakan seluruh isi halaman, termasuk menu, komentar, tombol, dan bagian yang tidak relevan. Aplikasi yang fokus pada cerita menjaga perhatian tetap di bab, mengingat posisimu, dan memberi jalan jelas untuk melanjutkan tanpa menyusun ulang antrean setiap kali.",
+    stepIntro: "Cara paling sederhana untuk memulai adalah menjadikan bab pertama sebagai uji coba. Tidak perlu memindahkan seluruh pustaka di hari pertama. Tambahkan satu cerita, buat satu bab, lalu cek apakah suara, kecepatan, dan kontrolnya cocok dengan gayamu membaca.",
+    stepOutro: "Begitu alur pertama terasa wajar, kamu bisa memakainya untuk sesi yang lebih panjang. Sebagian pembaca menyiapkan beberapa bab sebelum berangkat kerja. Sebagian lain hanya membuat update terbaru dari cerita favorit. Kebiasaan paling berguna adalah menyiapkan audio sedekat mungkin dengan rutinitas nyatamu, bukan menumpuk antrean yang tak pernah selesai.",
+    tipsIntro: "Text to speech bekerja paling baik saat kamu membolehkan diri menyesuaikan pengalamannya. Fiksi bukan satu format seragam. Adegan pernyataan cinta yang tenang, pertarungan fantasi, bab rekap, dan catatan penulis punya ritme berbeda. Kecepatan yang sama tidak selalu terasa pas.",
+    tipsOutro: "Kalau kamu peduli pada imersi, dengarkan beberapa menit sebelum memutuskan apakah sebuah bab cocok untuk audio. Bab yang linear dan penuh dialog biasanya enak didengar bebas genggam. Bab dengan daftar, format tidak biasa, atau world-building padat lebih mudah dibaca secara visual. Pembaca yang lentur memakai kedua mode.",
+    usefulA: "Watt Audio paling membantu ketika cerita sudah jadi bagian rutinitasmu. Kalau kamu mengikuti banyak cerita bersambung, kamu tahu betapa mudahnya tertinggal. Audio mengubah celah kecil dalam sehari menjadi waktu membaca: jalan kaki, naik kendaraan, beres-beres, atau momen tenang sebelum tidur. Sesi-sesi kecil itu cepat menumpuk.",
+    usefulB: "Ini juga berguna untuk membaca ulang. Saat alurnya sudah kamu tahu, mendengarkan bisa mengembalikan suasananya tanpa menuntut perhatian visual yang sama. Kamu bisa menengok lagi bab favorit, menyegarkan ingatan sebelum update baru, atau melewati bagian yang lambat sambil menyimpan energi bacamu untuk adegan yang paling kamu tunggu."
+  },
+  ar: {
+    htmlLang: "ar",
+    dir: "rtl",
+    hreflang: "ar",
+    ogLocale: "ar_AR",
+    schemaLang: "ar",
+    languageName: "العربية",
+    path: "ar",
+    audienceLead: "هذا الدليل موجّه إلى",
+    tagRowLabel: "المواضيع",
+    storeIos: "التحميل من App Store",
+    storeAndroid: "التحميل من Google Play",
+    storeChrome: "إضافة إلى Chrome",
+    storyCtaLabel: "حمّل Watt Audio",
+    storyCtaTitle: "حمّل Watt Audio للاستماع إلى {name}",
+    storyCtaText: "حوّل روابط الروايات المدعومة إلى فصول صوتية، واستمع والشاشة مطفأة، وتابع الرواية أينما كنت.",
+    popularHeading: "أدلة الاستماع الأكثر رواجاً",
+    allGuidesHeading: "كل الأدلة",
+    guide: "دليل Watt Audio",
+    home: "الرئيسية",
+    guides: "الأدلة",
+    support: "الدعم",
+    download: "تحميل التطبيق",
+    downloadCta: "التحميل من App Store",
+    screenshotTitle: "مكان لقطة الشاشة",
+    screenshotSuffix: "استبدل هذا الجزء بلقطة شاشة من التطبيق لاحقاً.",
+    stepHeading: "خطوات الإعداد",
+    whyHeading: "لماذا يفضّل القرّاء الاستماع إلى الروايات",
+    tipsHeading: "كيف تحصل على تجربة استماع أفضل",
+    usefulHeading: "متى يكون Watt Audio أكثر فائدة",
+    faqHeading: "الأسئلة الشائعة",
+    relatedHeading: "أدلة ذات صلة",
+    ctaHeading: "حمّل Watt Audio",
+    ctaText: "حوّل روابط الروايات المدعومة إلى فصول صوتية، واستمع والشاشة مطفأة، واضبط سرعة القراءة، وحافظ على عادتك في متابعة الروايات مهما انشغل يومك.",
+    indexTitle: "أدلة Watt Audio بالعربية",
+    indexDescription: "أدلة للاستماع إلى روايات Wattpad والروايات العربية الطويلة على شكل فصول صوتية، مع نصائح تحويل النص إلى كلام وطريقة عمل Watt Audio.",
+    homeTag: "حوّل الروايات إلى صوت واستمع أينما كنت.",
+    privacy: "سياسة الخصوصية",
+    footer: "دليل تعليمي بمساعدة الذكاء الاصطناعي",
+    introA: "إذا كنت تبحث عن {focus}، فغالباً تريد طريقة أرحم من التحديق في الشاشة مع كل فصل. الروايات على الإنترنت سهلة الاكتشاف، لكنها ليست دائماً سهلة القراءة في زحمة اليوم. الفصول تصدر في أوقات متفرقة، والروايات تطول كثيراً، وأفضل أوقات المتابعة تأتي عادةً وأنت مشغول اليدين أو مرهق العينين.",
+    introB: "صُمم Watt Audio لهذه المشكلة تحديداً. فبدل التعامل مع صفحة الرواية كمقال عادي، يساعدك على إدخال رابط رواية مدعوم إلى مكتبة استماع، وإنشاء صوت لكل فصل، ومتابعة الرواية بأدوات تحكّم أقرب إلى مشغّل الكتب الصوتية. الهدف ليس الاستغناء عن المصدر الأصلي أو عن الكاتب، بل جعل قراءتك الشخصية أكثر مرونة.",
+    whyA: "القراءة على الهاتف مريحة لكنها متعبة أيضاً. الشاشة الساطعة والخط الصغير والتمرير الطويل والإشعارات المتواصلة قد تجعل حتى الرواية المفضلة عبئاً. الصوت يمنحك وضعاً آخر. يمكنك متابعة فصل أثناء {scenario}، ثم العودة إلى القراءة حين ترغب بتركيز كامل.",
+    whyB: "أفضل طريقة للاستماع تقوم على الفصول. القارئ النصي العام قد ينطق كل ما في الصفحة، بما فيه القوائم والتعليقات والأزرار وعناصر لا علاقة لها بالرواية. أما التطبيق المخصص للروايات فيبقي الانتباه على الفصل، ويتذكر موضعك، ويمنحك طريقاً واضحاً للمتابعة دون إعادة بناء قائمتك في كل مرة.",
+    stepIntro: "أبسط بداية هي اعتبار الفصل الأول تجربة. لا داعي لتحويل مكتبتك كلها في اليوم الأول. أضف رواية واحدة، وأنشئ فصلاً واحداً، وتحقق إن كان الصوت والسرعة وأدوات التحكم تناسب طريقتك في القراءة.",
+    stepOutro: "حين يصبح هذا المسار مألوفاً، استخدمه لجلسات أطول. بعض القرّاء يجهّزون بضعة فصول قبل التنقل، وبعضهم ينشئ الفصل الجديد فقط من رواية يتابعها. أنفع عادة هي أن يبقى تجهيز الصوت قريباً من روتينك الحقيقي، لا أن تبني قائمة ضخمة لن تنهيها.",
+    tipsIntro: "تعمل تقنية تحويل النص إلى كلام على أفضل وجه حين تسمح لنفسك بضبط التجربة. الروايات ليست قالباً واحداً. مشهد اعتراف هادئ، ومعركة خيالية، وفصل تلخيص، وملاحظة من الكاتب: لكلٍّ إيقاعه، وسرعة واحدة لن تناسب الجميع.",
+    tipsOutro: "إن كان الاندماج في الأجواء يهمّك، استمع بضع دقائق قبل أن تقرر إن كان الفصل مناسباً للصوت. الفصول المتسلسلة الغنية بالحوار ممتازة للاستماع بلا يدين، أما الفصول التي تحوي قوائم أو تنسيقاً غير معتاد أو بناء عالم مكثفاً فقد تكون أسهل بالقراءة. القارئ المرن يستخدم الوضعين معاً.",
+    usefulA: "يظهر نفع Watt Audio أكثر حين تصبح الرواية جزءاً من روتينك. من يتابع سلاسل كثيرة يعرف كم يسهل التأخر عنها. الصوت يحوّل الفجوات الصغيرة في اليوم إلى وقت متابعة: مشي، أو طريق، أو ترتيب المنزل، أو دقائق هادئة قبل النوم. هذه الجلسات القصيرة تتراكم بسرعة.",
+    usefulB: "وهو مفيد أيضاً عند إعادة الاستماع. حين تعرف الأحداث مسبقاً، يعيد لك الصوت أجواء الرواية دون أن يطلب التركيز البصري نفسه. يمكنك العودة إلى فصولك المفضلة، أو تحديث ذاكرتك قبل صدور فصل جديد، أو تجاوز الأجزاء البطيئة مع الاحتفاظ بتركيزك للمشاهد التي تنتظرها فعلاً."
   }
 };
 
@@ -2071,7 +2389,7 @@ function fill(template, page) {
 }
 
 function relPrefix(lang) {
-  return lang === "en" || lang === "vi" ? "../" : "";
+  return siteLanguages.includes(lang) ? "../" : "";
 }
 
 function articleUrl(lang, slug) {
@@ -2079,7 +2397,7 @@ function articleUrl(lang, slug) {
 }
 
 function topicLanguages(topic) {
-  return ["en", "vi"].filter((lang) => topic[lang]);
+  return siteLanguages.filter((lang) => topic[lang]);
 }
 
 function absoluteUrl(pathname) {
@@ -2090,11 +2408,29 @@ function stylesheetHref(pathname) {
   return `${pathname}?v=${cssVersion}`;
 }
 
+function htmlDirAttr(lang) {
+  return labels[lang]?.dir === "rtl" ? ` dir="rtl"` : "";
+}
+
+// assets/seo.css is authored left-to-right, so RTL pages get a small override block
+// instead of a second stylesheet.
+function rtlStyleTag(lang) {
+  if (labels[lang]?.dir !== "rtl") return "";
+  return `
+<style>
+  body { direction: rtl; text-align: right; }
+  ol, ul { padding-left: 0; padding-right: 22px; }
+  .home-links a::after { right: auto; left: 18px; transform: rotate(-135deg); }
+  .store-options { left: 0; right: auto; }
+</style>`;
+}
+
 function downloadButtonLinks(lang) {
-  const iosLabel = lang === "vi" ? "Tải trên App Store" : "App Store";
-  const androidLabel = lang === "vi" ? "Tải trên Google Play" : "Google Play";
-  const chromeLabel = lang === "vi" ? "Thêm vào Chrome" : "Chrome Extension";
-  const downloadLabel = lang === "vi" ? "Tải app" : "Download app";
+  const l = labels[lang];
+  const iosLabel = l.storeIos;
+  const androidLabel = l.storeAndroid;
+  const chromeLabel = l.storeChrome;
+  const downloadLabel = l.download;
   return `<div class="store-menu">
           <button class="btn store-trigger" type="button" aria-haspopup="true">${downloadLabel}</button>
           <div class="store-options" aria-label="${downloadLabel}">
@@ -2166,11 +2502,27 @@ function articleTags(topic, lang) {
   const storyTitleTags = viTitle
     ? [viTitle, `${viTitle} audio`, `${viTitle} truyện audio`, "truyện audio YouTube", "truyện full audio"]
     : [];
+  if (storyOnlyLanguages.includes(lang)) {
+    const name = topic.storyTitle || topic[lang]?.title || "";
+    const localizedShared = {
+      hi: ["Watt Audio", "ऑडियो कहानी", "हिंदी कहानी ऑडियो", "Wattpad ऑडियो", "टेक्स्ट टू स्पीच", "AI आवाज़", "वेब स्टोरी"],
+      id: ["Watt Audio", "cerita audio", "audio Wattpad", "novel audio", "text to speech", "suara AI", "cerita online"],
+      ar: ["Watt Audio", "رواية صوتية", "روايات صوتية", "Wattpad صوت", "تحويل النص إلى كلام", "صوت الذكاء الاصطناعي", "روايات إلكترونية"]
+    }[lang];
+    const localizedStory = name
+      ? {
+        hi: [name, `${name} ऑडियो`, `${name} कहानी ऑडियो`, `${name} हिंदी`],
+        id: [name, `${name} audio`, `${name} cerita audio`, `${name} bahasa Indonesia`],
+        ar: [name, `${name} صوتي`, `${name} رواية صوتية`, `${name} استماع`]
+      }[lang]
+      : [];
+    return [...localizedShared, ...localizedStory, "Wattpad audio", "story audio"];
+  }
   return [...shared, ...storyTitleTags, ...(bySlug[topic.slug] || []), ...(lang === "vi" ? vi : [])];
 }
 
 function hashtagText(tag) {
-  return `#${tag.replace(/[^A-Za-z0-9À-ỹ]+/g, "")}`;
+  return `#${tag.replace(/[^\p{L}\p{N}]+/gu, "")}`;
 }
 
 function jsonScript(data) {
@@ -2178,7 +2530,7 @@ function jsonScript(data) {
 }
 
 function baseMeta({ title, description, canonical, image, imageWidth, imageHeight, lang, type = "website", keywords = [] }) {
-  const locale = lang === "vi" ? "vi_VN" : "en_US";
+  const locale = labels[lang]?.ogLocale || "en_US";
   return `${faviconTags}
 <meta name="description" content="${escapeHtml(description)}" />
 ${keywords.length ? `<meta name="keywords" content="${escapeHtml(keywords.join(", "))}" />` : ""}
@@ -2223,9 +2575,12 @@ function relatedLinks(currentSlug, lang) {
 }
 
 function popularGuideLinks(lang, prefix = "articles/") {
-  return popularGuideSlugs
+  const curated = popularGuideSlugs
     .map((slug) => topics.find((topic) => topic.slug === slug))
-    .filter((topic) => topic?.[lang])
+    .filter((topic) => topic?.[lang]);
+  // Story-title markets have no curated evergreen guides yet, so fall back to their newest pages.
+  const selected = curated.length ? curated : topics.filter((topic) => topic[lang]).slice(-12).reverse();
+  return selected
     .map((topic) => {
       const page = topic[lang];
       return `<a href="${prefix}${topic.slug}.html">${escapeHtml(page.title)}<span>${escapeHtml(page.description)}</span></a>`;
@@ -2257,7 +2612,7 @@ function articleHtml(topic, lang) {
       }
     },
     mainEntityOfPage: canonical,
-    inLanguage: lang === "vi" ? "vi-VN" : "en",
+    inLanguage: l.schemaLang,
     keywords: tags,
     datePublished: "2026-06-11",
     dateModified: lastModified
@@ -2268,7 +2623,7 @@ function articleHtml(topic, lang) {
     name: page.title,
     description: page.description,
     image: absoluteUrl(blogImage.src),
-    inLanguage: lang === "vi" ? "vi-VN" : "en",
+    inLanguage: l.schemaLang,
     step: page.steps.map((step, index) => ({
       "@type": "HowToStep",
       position: index + 1,
@@ -2301,28 +2656,27 @@ function articleHtml(topic, lang) {
   const faq = page.faq.map(([question, answer]) => `
       <h3>${escapeHtml(question)}</h3>
       <p>${escapeHtml(answer)}</p>`).join("\n");
-  const languageSwitchLink = lang === "en" && topic.vi
-    ? `<a href="../../vi/articles/${topic.slug}.html">Tiếng Việt</a>`
-    : lang === "vi" && topic.en
-      ? `<a href="../../en/articles/${topic.slug}.html">English</a>`
-      : "";
+  const languageSwitchLink = languages
+    .filter((other) => other !== lang)
+    .map((other) => `<a href="../../${other}/articles/${topic.slug}.html">${labels[other].languageName}</a>`)
+    .join("\n      ");
   const storyTitleName = topic.kind === "story-title"
-    ? page.title.replace(/^Nghe audio\s+/i, "").replace(/:\s*Audio Story Listening Guide$/i, "")
+    ? topic.storyTitle || page.title.replace(/^Nghe audio\s+/i, "").replace(/:\s*Audio Story Listening Guide$/i, "")
     : "";
   const topStoryCta = topic.kind === "story-title"
     ? `
 
-      <section class="story-quick-cta" aria-label="${escapeHtml(lang === "vi" ? "Tải Watt Audio" : "Download Watt Audio")}">
+      <section class="story-quick-cta" aria-label="${escapeHtml(l.storyCtaLabel)}">
         <div>
-          <strong>${escapeHtml(lang === "vi" ? `Tải Watt Audio để nghe ${storyTitleName}` : `Download Watt Audio to listen to ${storyTitleName}`)}</strong>
-          <p>${escapeHtml(lang === "vi" ? "Chuyển link truyện được hỗ trợ thành audio theo chương, nghe khi tắt màn hình và tiếp tục truyện mọi lúc." : "Turn supported story links into chapter audio, listen with the screen off, and keep the story moving anywhere.")}</p>
+          <strong>${escapeHtml(l.storyCtaTitle.replace("{name}", storyTitleName))}</strong>
+          <p>${escapeHtml(l.storyCtaText)}</p>
         </div>
         ${downloadButtonLinks(lang)}
       </section>`
     : "";
 
   return `<!DOCTYPE html>
-<html lang="${l.htmlLang}">
+<html lang="${l.htmlLang}"${htmlDirAttr(lang)}>
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -2338,8 +2692,7 @@ ${baseMeta({
   type: "article",
   keywords: tags
 })}
-${topic.en ? `<link rel="alternate" hreflang="en" href="${articleUrl("en", topic.slug)}" />` : ""}
-${topic.vi ? `<link rel="alternate" hreflang="vi-VN" href="${articleUrl("vi", topic.slug)}" />` : ""}
+${languages.map((other) => `<link rel="alternate" hreflang="${labels[other].hreflang}" href="${articleUrl(other, topic.slug)}" />`).join("\n")}
 <link rel="alternate" hreflang="x-default" href="${articleUrl(defaultLang, topic.slug)}" />
 ${tags.map((tag) => `<meta property="article:tag" content="${escapeHtml(tag)}" />`).join("\n")}
 <meta property="article:published_time" content="2026-06-11T00:00:00+07:00" />
@@ -2350,7 +2703,7 @@ ${jsonScript(howToSchema)}
 ${jsonScript(faqSchema)}
 ${jsonScript(breadcrumbSchema)}
 ${analyticsTags}
-<link rel="stylesheet" href="${stylesheetHref("../../assets/seo.css")}" />
+<link rel="stylesheet" href="${stylesheetHref("../../assets/seo.css")}" />${rtlStyleTag(lang)}
 </head>
 <body>
   <div class="wrap">
@@ -2369,7 +2722,7 @@ ${analyticsTags}
     <article>
       <div class="eyebrow">${l.guide}</div>
       <h1>${escapeHtml(page.title)}</h1>
-      <p class="intro">${escapeHtml(page.description)} ${lang === "en" ? "This guide is written for" : "Bài này dành cho"} ${escapeHtml(page.audience)}.</p>${topStoryCta}
+      <p class="intro">${escapeHtml(page.description)} ${l.audienceLead} ${escapeHtml(page.audience)}.</p>${topStoryCta}
 
       <figure class="blog-figure blog-figure-top">
         <picture>
@@ -2386,7 +2739,7 @@ ${analyticsTags}
         <figcaption>${escapeHtml(page.screenshot)}</figcaption>
       </figure>
 
-      <div class="tag-row" aria-label="${lang === "en" ? "Topic tags" : "Chủ đề"}">
+      <div class="tag-row" aria-label="${escapeHtml(l.tagRowLabel)}">
         ${tags.slice(0, 8).map((tag) => `<a href="index.html">${escapeHtml(hashtagText(tag))}</a>`).join("\n        ")}
       </div>
 
@@ -2441,15 +2794,19 @@ function guidesIndexHtml(lang) {
   const l = labels[lang];
   const title = `${l.indexTitle} | Watt Audio`;
   const canonical = `${siteUrl}/${lang}/articles/`;
-  const keywords = lang === "vi"
-    ? ["Watt Audio", "nghe audio trên Wattpad", "nghe truyện Wattpad", "Wattpad audio", "app text to speech", "app thay thế Speechify", "chuyển truyện thành audio", "giọng đọc AI", "truyện audio"]
-    : ["Watt Audio", "listen to Wattpad audio", "Wattpad audio", "story audio guides", "text to speech", "text to speech app", "Speechify alternative", "TTS reader", "AI voice"];
+  const keywords = {
+    vi: ["Watt Audio", "nghe audio trên Wattpad", "nghe truyện Wattpad", "Wattpad audio", "app text to speech", "app thay thế Speechify", "chuyển truyện thành audio", "giọng đọc AI", "truyện audio"],
+    en: ["Watt Audio", "listen to Wattpad audio", "Wattpad audio", "story audio guides", "text to speech", "text to speech app", "Speechify alternative", "TTS reader", "AI voice"],
+    hi: ["Watt Audio", "ऑडियो कहानी", "हिंदी कहानी ऑडियो", "Wattpad ऑडियो", "टेक्स्ट टू स्पीच", "AI आवाज़", "वेब स्टोरी ऑडियो", "कहानी सुनें"],
+    id: ["Watt Audio", "cerita audio", "audio Wattpad", "novel audio", "text to speech", "suara AI", "dengar cerita online", "cerita bersambung"],
+    ar: ["Watt Audio", "رواية صوتية", "روايات صوتية", "Wattpad صوت", "تحويل النص إلى كلام", "صوت الذكاء الاصطناعي", "استماع للروايات", "روايات إلكترونية"]
+  }[lang];
   const list = topics.filter((topic) => topic[lang]).map((topic) => {
     const page = topic[lang];
     return `<a href="${topic.slug}.html">${escapeHtml(page.title)}<span>${escapeHtml(page.description)}</span></a>`;
   }).join("\n");
   return `<!DOCTYPE html>
-<html lang="${l.htmlLang}">
+<html lang="${l.htmlLang}"${htmlDirAttr(lang)}>
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -2465,8 +2822,7 @@ ${baseMeta({
   type: "website",
   keywords
 })}
-<link rel="alternate" hreflang="en" href="${siteUrl}/en/articles/" />
-<link rel="alternate" hreflang="vi-VN" href="${siteUrl}/vi/articles/" />
+${siteLanguages.map((other) => `<link rel="alternate" hreflang="${labels[other].hreflang}" href="${siteUrl}/${other}/articles/" />`).join("\n")}
 <link rel="alternate" hreflang="x-default" href="${siteUrl}/en/articles/" />
 ${jsonScript({
   "@context": "https://schema.org",
@@ -2474,11 +2830,11 @@ ${jsonScript({
   name: l.indexTitle,
   description: l.indexDescription,
   url: canonical,
-  inLanguage: lang === "vi" ? "vi-VN" : "en",
+  inLanguage: l.schemaLang,
   publisher
 })}
 ${analyticsTags}
-<link rel="stylesheet" href="${stylesheetHref("../../assets/seo.css")}" />
+<link rel="stylesheet" href="${stylesheetHref("../../assets/seo.css")}" />${rtlStyleTag(lang)}
 </head>
 <body>
   <div class="wrap">
@@ -2489,18 +2845,18 @@ ${analyticsTags}
     <nav class="nav">
       <a href="../index.html">${l.home}</a>
       <a href="../../support.html">${l.support}</a>
-      <a href="${lang === "en" ? "../../vi/articles/" : "../../en/articles/"}">${lang === "en" ? "Tiếng Việt" : "English"}</a>
+      ${siteLanguages.filter((other) => other !== lang).map((other) => `<a href="../../${other}/articles/">${labels[other].languageName}</a>`).join("\n      ")}
       ${downloadNavLinks(lang)}
     </nav>
     <article>
       <div class="eyebrow">${l.guides}</div>
       <h1>${l.indexTitle}</h1>
       <p class="intro">${escapeHtml(l.indexDescription)}</p>
-      <h2>${lang === "en" ? "Popular Wattpad Audio Guides" : "Hướng dẫn Wattpad audio nổi bật"}</h2>
+      <h2>${escapeHtml(l.popularHeading)}</h2>
       <div class="article-list">
         ${popularGuideLinks(lang, "")}
       </div>
-      <h2>${lang === "en" ? "All Guides" : "Tất cả hướng dẫn"}</h2>
+      <h2>${escapeHtml(l.allGuidesHeading)}</h2>
       <div class="article-list">
         ${list}
       </div>
@@ -2512,55 +2868,46 @@ ${analyticsTags}
 `;
 }
 
-function localizedHomeHtml(lang) {
-  const l = labels[lang];
-  const homeImage = homeImages[lang];
-  const title = lang === "en"
-    ? "Watt Audio | Turn Stories into Audio"
-    : "Watt Audio | Chuyển truyện chữ thành audio";
-  const description = lang === "en"
-    ? "Listen to Wattpad stories as audio with Watt Audio. Turn stories you can access into personal audio and listen anytime, anywhere."
-    : "Nghe audio trên Wattpad bằng Watt Audio. Chuyển truyện chữ bạn truy cập được thành audio và nghe mọi lúc mọi nơi.";
-  const keywords = lang === "en"
-    ? ["Watt Audio", "listen to Wattpad audio", "Wattpad audio app", "text to speech stories", "text to speech app for Wattpad", "Speechify alternative", "AI voice reader", "listen to stories"]
-    : ["Watt Audio", "nghe audio trên Wattpad", "nghe truyện Wattpad", "Wattpad audio", "app text to speech", "app thay thế Speechify", "chuyển truyện thành audio", "app đọc truyện audio", "giọng đọc AI"];
-  const canonical = `${siteUrl}/${lang}/`;
-  const guideTitle = lang === "en" ? "Watt Audio Guides" : "Hướng dẫn Watt Audio";
-  const guideSub = lang === "en" ? "Listening guides and TTS tips" : "Hướng dẫn nghe truyện và TTS";
-  const appTitle = lang === "en" ? "Listen to stories your way" : "Nghe truyện theo cách của bạn";
-  const appText = lang === "en"
-    ? "Listen to Wattpad stories as audio, turn stories you can access into personal audio, and keep your reading habit moving anywhere."
-    : "Nghe audio trên Wattpad, chuyển truyện chữ bạn truy cập được thành audio và tiếp tục nghe mọi lúc mọi nơi.";
-  const seoText = lang === "en"
-    ? "Watt Audio is a mobile app for people who want to listen to Wattpad audio, use story text to speech, compare Speechify alternatives, follow web novels, romance, fantasy, background playback, chapter audio, and offline replay."
-    : "Watt Audio là app mobile cho nhu cầu nghe audio trên Wattpad, nghe truyện Wattpad, Wattpad audio, text to speech cho truyện, giọng đọc AI, app thay thế Speechify, web novel, romance, fantasy, phát nền, audio theo chương và nghe lại offline.";
-  const trustChips = lang === "en"
-    ? ["Wattpad audio", "Chapter listening", "Background playback", "iOS & Android", "Personal use"]
-    : ["Nghe audio Wattpad", "Theo từng chương", "Phát nền", "iOS & Android", "Dùng cá nhân"];
-  const workflowItems = lang === "en"
-    ? [
+// Homepage copy per market. "searchLinks" only lists pages that exist in that language,
+// so the story-title markets keep the section empty until they have evergreen guides.
+const homeCopy = {
+  en: {
+    title: "Watt Audio | Turn Stories into Audio",
+    description: "Listen to Wattpad stories as audio with Watt Audio. Turn stories you can access into personal audio and listen anytime, anywhere.",
+    keywords: ["Watt Audio", "listen to Wattpad audio", "Wattpad audio app", "text to speech stories", "text to speech app for Wattpad", "Speechify alternative", "AI voice reader", "listen to stories"],
+    guideTitle: "Watt Audio Guides",
+    guideSub: "Listening guides and TTS tips",
+    appTitle: "Listen to stories your way",
+    appText: "Listen to Wattpad stories as audio, turn stories you can access into personal audio, and keep your reading habit moving anywhere.",
+    seoText: "Watt Audio is a mobile app for people who want to listen to Wattpad audio, use story text to speech, compare Speechify alternatives, follow web novels, romance, fantasy, background playback, chapter audio, and offline replay.",
+    trustChips: ["Wattpad audio", "Chapter listening", "Background playback", "iOS & Android", "Personal use"],
+    trustLabel: "Watt Audio highlights",
+    heroEyebrow: "Listen to Wattpad Audio",
+    heroHeading: "Turn story links into chapter audio",
+    heroText: "Watt Audio is built for readers who search for Wattpad audio, text to speech for stories, and a better way to keep up with long chapters without staring at the screen.",
+    whyEyebrow: "Why Readers Use Audio",
+    whyHeading: "Made for long story sessions",
+    pagesLabel: "Watt Audio pages",
+    aboutTitle: "About Watt Audio",
+    aboutSub: "App details and listening workflow",
+    supportSub: "Help and contact",
+    searchesEyebrow: "Popular Searches",
+    searchesHeading: "Guides for Wattpad audio, TTS, and story listening",
+    popularEyebrow: "Popular Guides",
+    popularHeading: "Popular Wattpad Audio Guides",
+    popularLabel: "Popular Wattpad audio guides",
+    faqHeading: "Common questions about Wattpad audio",
+    workflowItems: [
       ["Paste a story link", "Start from a supported story link you can access instead of copying text paragraph by paragraph."],
       ["Generate chapter audio", "Turn long chapters into personal audio so your listening progress stays organized."],
       ["Listen hands-free", "Keep up with stories while commuting, resting your eyes, doing chores, or listening before sleep."]
-    ]
-    : [
-      ["Dán link truyện", "Bắt đầu từ link truyện được hỗ trợ mà bạn truy cập được, không cần copy từng đoạn chữ."],
-      ["Tạo audio theo chương", "Chuyển chương dài thành audio cá nhân để tiến độ nghe luôn gọn gàng."],
-      ["Nghe rảnh tay", "Theo dõi truyện khi đi làm, nghỉ mắt, làm việc nhà hoặc nghe trước khi ngủ."]
-    ];
-  const painItems = lang === "en"
-    ? [
+    ],
+    painItems: [
       ["Less screen fatigue", "Use audio when your eyes are tired but you still want to continue a story."],
       ["Better than generic TTS for chapters", "A story library keeps chapters, playback, and rereads easier to manage than one-off text selection."],
       ["Useful for Wattpad-style stories", "Works best for serialized fiction, romance, fantasy, fanfiction, web novels, and long updates."]
-    ]
-    : [
-      ["Đỡ mỏi mắt", "Dùng audio khi mắt đã mệt nhưng vẫn muốn nghe tiếp truyện."],
-      ["Hợp truyện dài hơn TTS chung", "Thư viện truyện giữ chương, playback và nghe lại gọn hơn việc chọn text thủ công."],
-      ["Dành cho truyện kiểu Wattpad", "Hợp với truyện đăng kỳ, romance, fantasy, fanfiction, web novel và chương dài."]
-    ];
-  const searchLinks = lang === "en"
-    ? [
+    ],
+    searchLinks: [
       ["How to listen to Wattpad stories", "articles/how-to-listen-to-wattpad-stories.html"],
       ["Wattpad text to speech", "articles/wattpad-text-to-speech-app.html"],
       ["Can Wattpad read to you?", "articles/how-to-get-wattpad-to-read-to-you.html"],
@@ -2568,8 +2915,51 @@ function localizedHomeHtml(lang) {
       ["Does Wattpad have audiobooks?", "articles/does-wattpad-have-audiobooks.html"],
       ["Wattpad audio on Android", "articles/wattpad-audio-on-android.html"],
       ["Offline Wattpad audio", "articles/how-to-listen-to-wattpad-offline.html"]
+    ],
+    homeFaq: [
+      ["Can you listen to Wattpad stories as audio?", "Yes. Watt Audio helps you turn supported story links you can access into personal chapter audio for hands-free listening."],
+      ["Is Watt Audio available on Android?", "Yes. Watt Audio has download links for Android on Google Play, iOS on the App Store, and a Chrome extension for desktop browsing."],
+      ["Is Watt Audio affiliated with Wattpad?", "No. Watt Audio is independent and is not owned by, operated by, or officially affiliated with Wattpad."],
+      ["Why use Watt Audio instead of a generic text to speech app?", "Watt Audio is built around story links, chapter audio, background playback, and listening progress, which is more comfortable for long serialized fiction."]
     ]
-    : [
+  },
+  vi: {
+    title: "Watt Audio | Chuyển truyện chữ thành audio",
+    description: "Nghe audio trên Wattpad bằng Watt Audio. Chuyển truyện chữ bạn truy cập được thành audio và nghe mọi lúc mọi nơi.",
+    keywords: ["Watt Audio", "nghe audio trên Wattpad", "nghe truyện Wattpad", "Wattpad audio", "app text to speech", "app thay thế Speechify", "chuyển truyện thành audio", "app đọc truyện audio", "giọng đọc AI"],
+    guideTitle: "Hướng dẫn Watt Audio",
+    guideSub: "Hướng dẫn nghe truyện và TTS",
+    appTitle: "Nghe truyện theo cách của bạn",
+    appText: "Nghe audio trên Wattpad, chuyển truyện chữ bạn truy cập được thành audio và tiếp tục nghe mọi lúc mọi nơi.",
+    seoText: "Watt Audio là app mobile cho nhu cầu nghe audio trên Wattpad, nghe truyện Wattpad, Wattpad audio, text to speech cho truyện, giọng đọc AI, app thay thế Speechify, web novel, romance, fantasy, phát nền, audio theo chương và nghe lại offline.",
+    trustChips: ["Nghe audio Wattpad", "Theo từng chương", "Phát nền", "iOS & Android", "Dùng cá nhân"],
+    trustLabel: "Điểm nổi bật của Watt Audio",
+    heroEyebrow: "Nghe audio trên Wattpad",
+    heroHeading: "Chuyển link truyện thành audio theo chương",
+    heroText: "Watt Audio dành cho người đang tìm cách nghe audio trên Wattpad, text to speech cho truyện và cách theo dõi chương dài mà không phải nhìn màn hình liên tục.",
+    whyEyebrow: "Vì sao người đọc chọn audio",
+    whyHeading: "Hợp với những buổi nghe truyện dài",
+    pagesLabel: "Các trang Watt Audio",
+    aboutTitle: "Giới thiệu Watt Audio",
+    aboutSub: "Thông tin app và cách nghe truyện",
+    supportSub: "Trợ giúp và liên hệ",
+    searchesEyebrow: "Từ khóa người đọc hay tìm",
+    searchesHeading: "Hướng dẫn về Wattpad audio, TTS và nghe truyện",
+    popularEyebrow: "Hướng dẫn nổi bật",
+    popularHeading: "Hướng dẫn Wattpad audio nổi bật",
+    popularLabel: "Hướng dẫn Wattpad audio nổi bật",
+    faqHeading: "Câu hỏi thường gặp về nghe audio Wattpad",
+    workflowItems: [
+      ["Dán link truyện", "Bắt đầu từ link truyện được hỗ trợ mà bạn truy cập được, không cần copy từng đoạn chữ."],
+      ["Tạo audio theo chương", "Chuyển chương dài thành audio cá nhân để tiến độ nghe luôn gọn gàng."],
+      ["Nghe rảnh tay", "Theo dõi truyện khi đi làm, nghỉ mắt, làm việc nhà hoặc nghe trước khi ngủ."]
+    ],
+    painItems: [
+      ["Đỡ mỏi mắt", "Dùng audio khi mắt đã mệt nhưng vẫn muốn nghe tiếp truyện."],
+      ["Hợp truyện dài hơn TTS chung", "Thư viện truyện giữ chương, playback và nghe lại gọn hơn việc chọn text thủ công."],
+      ["Dành cho truyện kiểu Wattpad", "Hợp với truyện đăng kỳ, romance, fantasy, fanfiction, web novel và chương dài."]
+    ],
+    searchLinks: [
       ["Cách nghe truyện Wattpad", "articles/how-to-listen-to-wattpad-stories.html"],
       ["Nghe audio trên Wattpad", "articles/how-to-listen-to-stories-on-wattpad.html"],
       ["Wattpad bị chặn", "articles/wattpad-bi-chan-vpn.html"],
@@ -2577,20 +2967,166 @@ function localizedHomeHtml(lang) {
       ["Wattpad audio Android", "articles/wattpad-audio-on-android.html"],
       ["App nghe audiobook Wattpad", "articles/best-wattpad-audiobook-app.html"],
       ["Nghe Wattpad offline", "articles/how-to-listen-to-wattpad-offline.html"]
-    ];
-  const homeFaq = lang === "en"
-    ? [
-      ["Can you listen to Wattpad stories as audio?", "Yes. Watt Audio helps you turn supported story links you can access into personal chapter audio for hands-free listening."],
-      ["Is Watt Audio available on Android?", "Yes. Watt Audio has download links for Android on Google Play, iOS on the App Store, and a Chrome extension for desktop browsing."],
-      ["Is Watt Audio affiliated with Wattpad?", "No. Watt Audio is independent and is not owned by, operated by, or officially affiliated with Wattpad."],
-      ["Why use Watt Audio instead of a generic text to speech app?", "Watt Audio is built around story links, chapter audio, background playback, and listening progress, which is more comfortable for long serialized fiction."]
-    ]
-    : [
+    ],
+    homeFaq: [
       ["Có nghe truyện Wattpad bằng audio được không?", "Có. Watt Audio giúp bạn chuyển link truyện được hỗ trợ mà bạn truy cập được thành audio theo chương để nghe rảnh tay."],
       ["Watt Audio có Android chưa?", "Có. Watt Audio có link tải Android trên Google Play, iOS trên App Store và extension Chrome cho desktop."],
       ["Watt Audio có phải của Wattpad không?", "Không. Watt Audio là app độc lập, không thuộc sở hữu, vận hành hoặc liên kết chính thức với Wattpad."],
       ["Vì sao dùng Watt Audio thay vì app text to speech chung?", "Watt Audio tập trung vào link truyện, audio theo chương, phát nền và tiến độ nghe, nên hợp với truyện đăng kỳ dài hơn."]
-    ];
+    ]
+  },
+  hi: {
+    title: "Watt Audio | कहानियों को ऑडियो में बदलें",
+    description: "Watt Audio के साथ Wattpad और हिंदी वेब स्टोरी को ऑडियो में सुनें। जिन कहानियों तक आपकी पहुँच है, उन्हें निजी ऑडियो में बदलें और कभी भी, कहीं भी सुनें।",
+    keywords: ["Watt Audio", "ऑडियो कहानी ऐप", "हिंदी कहानी ऑडियो", "Wattpad ऑडियो", "टेक्स्ट टू स्पीच हिंदी", "AI आवाज़ रीडर", "कहानी सुनने वाला ऐप", "वेब स्टोरी ऑडियो"],
+    guideTitle: "Watt Audio गाइड",
+    guideSub: "सुनने की गाइड और TTS टिप्स",
+    appTitle: "कहानियाँ अपने तरीक़े से सुनें",
+    appText: "Wattpad और वेब स्टोरी को ऑडियो में सुनें, अपनी पहुँच वाली कहानियों को निजी ऑडियो में बदलें और पढ़ने की आदत कहीं भी जारी रखें।",
+    seoText: "Watt Audio एक मोबाइल ऐप है उन पाठकों के लिए जो Wattpad ऑडियो, कहानी के लिए टेक्स्ट टू स्पीच, हिंदी वेब स्टोरी, रोमांस, फ़ैंटेसी, बैकग्राउंड प्लेबैक, चैप्टर ऑडियो और ऑफ़लाइन रीप्ले चाहते हैं।",
+    trustChips: ["Wattpad ऑडियो", "चैप्टर-वाइज़ सुनना", "बैकग्राउंड प्लेबैक", "iOS और Android", "निजी इस्तेमाल"],
+    trustLabel: "Watt Audio की ख़ास बातें",
+    heroEyebrow: "कहानियाँ ऑडियो में सुनें",
+    heroHeading: "कहानी के लिंक को चैप्टर ऑडियो में बदलें",
+    heroText: "Watt Audio उन पाठकों के लिए है जो Wattpad ऑडियो, कहानी के लिए टेक्स्ट टू स्पीच और लंबे चैप्टर बिना स्क्रीन देखे पूरे करने का तरीका खोजते हैं।",
+    whyEyebrow: "पाठक ऑडियो क्यों चुनते हैं",
+    whyHeading: "लंबे रीडिंग सेशन के लिए बना",
+    pagesLabel: "Watt Audio के पेज",
+    aboutTitle: "Watt Audio के बारे में",
+    aboutSub: "ऐप की जानकारी और सुनने का तरीका",
+    supportSub: "मदद और संपर्क",
+    searchesEyebrow: "लोकप्रिय खोज",
+    searchesHeading: "ऑडियो कहानी और TTS से जुड़ी गाइड",
+    popularEyebrow: "लोकप्रिय गाइड",
+    popularHeading: "लोकप्रिय ऑडियो स्टोरी गाइड",
+    popularLabel: "लोकप्रिय ऑडियो स्टोरी गाइड",
+    faqHeading: "ऑडियो में कहानी सुनने से जुड़े आम सवाल",
+    workflowItems: [
+      ["कहानी का लिंक पेस्ट करें", "पैराग्राफ़-दर-पैराग्राफ़ कॉपी करने के बजाय सपोर्टेड कहानी लिंक से शुरू करें।"],
+      ["चैप्टर ऑडियो बनाएँ", "लंबे चैप्टर को निजी ऑडियो में बदलें ताकि सुनने की प्रोग्रेस व्यवस्थित रहे।"],
+      ["बिना हाथ लगाए सुनें", "सफ़र में, आँखें आराम देते हुए, घर का काम करते हुए या सोने से पहले कहानी आगे बढ़ाएँ।"]
+    ],
+    painItems: [
+      ["आँखों की थकान कम", "जब आँखें थक जाएँ पर कहानी आगे बढ़ानी हो, तब ऑडियो काम आता है।"],
+      ["आम TTS से बेहतर", "स्टोरी लाइब्रेरी चैप्टर, प्लेबैक और दोबारा सुनना संभालना आसान बनाती है।"],
+      ["वेब स्टोरी के लिए उपयुक्त", "सीरीज़, रोमांस, फ़ैंटेसी, फ़ैनफ़िक्शन और लंबे अपडेट के लिए सबसे अच्छा।"]
+    ],
+    searchLinks: [],
+    homeFaq: [
+      ["क्या Wattpad कहानियाँ ऑडियो में सुनी जा सकती हैं?", "हाँ। Watt Audio आपकी पहुँच वाली सपोर्टेड कहानी लिंक को निजी चैप्टर ऑडियो में बदलने में मदद करता है।"],
+      ["क्या Watt Audio Android पर उपलब्ध है?", "हाँ। Google Play पर Android, App Store पर iOS और डेस्कटॉप के लिए Chrome एक्सटेंशन उपलब्ध है।"],
+      ["क्या Watt Audio का Wattpad से कोई संबंध है?", "नहीं। Watt Audio स्वतंत्र है और Wattpad के स्वामित्व, संचालन या आधिकारिक साझेदारी में नहीं है।"],
+      ["आम टेक्स्ट टू स्पीच ऐप के बजाय Watt Audio क्यों?", "Watt Audio कहानी लिंक, चैप्टर ऑडियो, बैकग्राउंड प्लेबैक और लिसनिंग प्रोग्रेस पर बना है, जो लंबी सीरीज़ के लिए ज़्यादा आरामदायक है।"]
+    ]
+  },
+  id: {
+    title: "Watt Audio | Ubah Cerita Menjadi Audio",
+    description: "Dengarkan cerita Wattpad dan novel online sebagai audio bersama Watt Audio. Ubah cerita yang bisa kamu akses menjadi audio pribadi dan dengarkan kapan saja, di mana saja.",
+    keywords: ["Watt Audio", "aplikasi cerita audio", "audio Wattpad", "novel audio Indonesia", "text to speech cerita", "pembaca suara AI", "dengar cerita online", "audio novel bersambung"],
+    guideTitle: "Panduan Watt Audio",
+    guideSub: "Panduan mendengar dan tips TTS",
+    appTitle: "Dengarkan cerita dengan caramu",
+    appText: "Dengarkan cerita Wattpad sebagai audio, ubah cerita yang bisa kamu akses menjadi audio pribadi, dan lanjutkan kebiasaan membacamu di mana saja.",
+    seoText: "Watt Audio adalah aplikasi mobile untuk kamu yang ingin mendengarkan audio Wattpad, memakai text to speech untuk cerita, mengikuti novel online, romansa, fantasi, pemutaran latar, audio per bab, dan putar ulang offline.",
+    trustChips: ["Audio Wattpad", "Dengar per bab", "Pemutaran latar", "iOS & Android", "Pemakaian pribadi"],
+    trustLabel: "Keunggulan Watt Audio",
+    heroEyebrow: "Dengarkan Cerita dalam Audio",
+    heroHeading: "Ubah tautan cerita menjadi audio per bab",
+    heroText: "Watt Audio dibuat untuk pembaca yang mencari audio Wattpad, text to speech untuk cerita, dan cara lebih nyaman mengikuti bab panjang tanpa terus menatap layar.",
+    whyEyebrow: "Kenapa Pembaca Memilih Audio",
+    whyHeading: "Dibuat untuk sesi baca yang panjang",
+    pagesLabel: "Halaman Watt Audio",
+    aboutTitle: "Tentang Watt Audio",
+    aboutSub: "Detail aplikasi dan alur mendengarkan",
+    supportSub: "Bantuan dan kontak",
+    searchesEyebrow: "Pencarian Populer",
+    searchesHeading: "Panduan audio cerita dan text to speech",
+    popularEyebrow: "Panduan Populer",
+    popularHeading: "Panduan Audio Cerita Populer",
+    popularLabel: "Panduan audio cerita populer",
+    faqHeading: "Pertanyaan umum tentang audio cerita",
+    workflowItems: [
+      ["Tempel tautan cerita", "Mulai dari tautan cerita yang didukung, bukan menyalin teks paragraf demi paragraf."],
+      ["Buat audio per bab", "Ubah bab panjang menjadi audio pribadi supaya progres dengarmu tetap rapi."],
+      ["Dengarkan bebas genggam", "Ikuti ceritanya sambil di perjalanan, mengistirahatkan mata, beres-beres, atau sebelum tidur."]
+    ],
+    painItems: [
+      ["Mata tidak cepat lelah", "Pakai audio saat matamu lelah tapi kamu masih ingin melanjutkan cerita."],
+      ["Lebih pas daripada TTS umum", "Pustaka cerita membuat bab, pemutaran, dan baca ulang lebih mudah diatur."],
+      ["Cocok untuk cerita bersambung", "Paling pas untuk fiksi berseri, romansa, fantasi, fanfiksi, dan update panjang."]
+    ],
+    searchLinks: [],
+    homeFaq: [
+      ["Apakah cerita Wattpad bisa didengarkan sebagai audio?", "Bisa. Watt Audio membantumu mengubah tautan cerita yang didukung menjadi audio per bab untuk didengarkan bebas genggam."],
+      ["Apakah Watt Audio tersedia di Android?", "Ya. Watt Audio tersedia di Google Play untuk Android, App Store untuk iOS, dan ekstensi Chrome untuk desktop."],
+      ["Apakah Watt Audio berafiliasi dengan Wattpad?", "Tidak. Watt Audio berdiri sendiri dan tidak dimiliki, dioperasikan, atau berafiliasi resmi dengan Wattpad."],
+      ["Kenapa pakai Watt Audio dan bukan aplikasi text to speech biasa?", "Watt Audio dibangun untuk tautan cerita, audio per bab, pemutaran latar, dan progres mendengar, yang lebih nyaman untuk cerita berseri panjang."]
+    ]
+  },
+  ar: {
+    title: "Watt Audio | حوّل الروايات إلى صوت",
+    description: "استمع إلى روايات Wattpad والروايات العربية كملفات صوتية مع Watt Audio. حوّل الروايات التي يمكنك الوصول إليها إلى صوت شخصي واستمع في أي وقت وأي مكان.",
+    keywords: ["Watt Audio", "تطبيق روايات صوتية", "روايات صوتية عربية", "Wattpad صوت", "تحويل النص إلى كلام", "قارئ بصوت الذكاء الاصطناعي", "الاستماع إلى الروايات", "روايات إلكترونية صوتية"],
+    guideTitle: "أدلة Watt Audio",
+    guideSub: "أدلة الاستماع ونصائح تحويل النص إلى كلام",
+    appTitle: "استمع إلى الروايات بطريقتك",
+    appText: "استمع إلى روايات Wattpad كملفات صوتية، وحوّل ما تصل إليه من روايات إلى صوت شخصي، وواصل عادتك في القراءة أينما كنت.",
+    seoText: "Watt Audio تطبيق للهاتف لمن يريد الاستماع إلى روايات Wattpad، واستخدام تحويل النص إلى كلام، ومتابعة الروايات الإلكترونية والرومانسية والخيالية، مع التشغيل في الخلفية والفصول الصوتية وإعادة الاستماع دون إنترنت.",
+    trustChips: ["روايات Wattpad صوتياً", "الاستماع فصلاً بفصل", "تشغيل في الخلفية", "iOS و Android", "استخدام شخصي"],
+    trustLabel: "أبرز مزايا Watt Audio",
+    heroEyebrow: "استمع إلى الروايات صوتياً",
+    heroHeading: "حوّل روابط الروايات إلى فصول صوتية",
+    heroText: "صُمم Watt Audio للقرّاء الذين يبحثون عن روايات Wattpad الصوتية، وتحويل النص إلى كلام، وطريقة أفضل لمتابعة الفصول الطويلة دون التحديق في الشاشة.",
+    whyEyebrow: "لماذا يختار القرّاء الصوت",
+    whyHeading: "مصمّم لجلسات القراءة الطويلة",
+    pagesLabel: "صفحات Watt Audio",
+    aboutTitle: "عن Watt Audio",
+    aboutSub: "تفاصيل التطبيق وطريقة الاستماع",
+    supportSub: "المساعدة والتواصل",
+    searchesEyebrow: "عمليات بحث شائعة",
+    searchesHeading: "أدلة الروايات الصوتية وتحويل النص إلى كلام",
+    popularEyebrow: "أدلة رائجة",
+    popularHeading: "أدلة الاستماع الأكثر رواجاً",
+    popularLabel: "أدلة الاستماع الأكثر رواجاً",
+    faqHeading: "أسئلة شائعة عن الروايات الصوتية",
+    workflowItems: [
+      ["ألصق رابط الرواية", "ابدأ من رابط رواية مدعوم بدل نسخ النص فقرة بفقرة."],
+      ["أنشئ صوت الفصل", "حوّل الفصول الطويلة إلى صوت شخصي ليبقى تقدّمك في الاستماع منظّماً."],
+      ["استمع دون استخدام يديك", "تابع الرواية أثناء التنقل، أو وأنت تريح عينيك، أو خلال أعمال المنزل، أو قبل النوم."]
+    ],
+    painItems: [
+      ["إجهاد أقل للعينين", "استخدم الصوت حين تتعب عيناك وما زلت تريد متابعة الرواية."],
+      ["أفضل من قارئ نصي عام", "مكتبة الروايات تجعل الفصول والتشغيل وإعادة الاستماع أسهل في الإدارة."],
+      ["مناسب للروايات المتسلسلة", "الأنسب للروايات المسلسلة والرومانسية والخيالية والفانفيك والفصول الطويلة."]
+    ],
+    searchLinks: [],
+    homeFaq: [
+      ["هل يمكن الاستماع إلى روايات Wattpad صوتياً؟", "نعم. يساعدك Watt Audio على تحويل روابط الروايات المدعومة التي تصل إليها إلى فصول صوتية شخصية للاستماع دون استخدام يديك."],
+      ["هل Watt Audio متاح على Android؟", "نعم. التطبيق متاح على Google Play لأجهزة Android، وعلى App Store لأجهزة iOS، مع إضافة Chrome لسطح المكتب."],
+      ["هل Watt Audio تابع لـ Wattpad؟", "لا. Watt Audio مستقل تماماً وليس مملوكاً لـ Wattpad أو مُشغّلاً من قِبله أو تابعاً له رسمياً."],
+      ["لماذا Watt Audio بدل تطبيق تحويل نص إلى كلام عادي؟", "لأن Watt Audio مبني حول روابط الروايات والفصول الصوتية والتشغيل في الخلفية وتتبّع تقدّم الاستماع، وهو أريح للروايات الطويلة المتسلسلة."]
+    ]
+  }
+};
+
+function localizedHomeHtml(lang) {
+  const l = labels[lang];
+  const homeImage = homeImages[lang];
+  const copy = homeCopy[lang];
+  const title = copy.title;
+  const description = copy.description;
+  const keywords = copy.keywords;
+  const canonical = `${siteUrl}/${lang}/`;
+  const guideTitle = copy.guideTitle;
+  const guideSub = copy.guideSub;
+  const appTitle = copy.appTitle;
+  const appText = copy.appText;
+  const seoText = copy.seoText;
+  const trustChips = copy.trustChips;
+  const workflowItems = copy.workflowItems;
+  const painItems = copy.painItems;
+  const searchLinks = copy.searchLinks;
+  const homeFaq = copy.homeFaq;
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -2604,7 +3140,7 @@ function localizedHomeHtml(lang) {
     }))
   };
   return `<!DOCTYPE html>
-<html lang="${l.htmlLang}">
+<html lang="${l.htmlLang}"${htmlDirAttr(lang)}>
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -2620,8 +3156,7 @@ ${baseMeta({
   type: "website",
   keywords
 })}
-<link rel="alternate" hreflang="en" href="${siteUrl}/en/" />
-<link rel="alternate" hreflang="vi-VN" href="${siteUrl}/vi/" />
+${siteLanguages.map((other) => `<link rel="alternate" hreflang="${labels[other].hreflang}" href="${siteUrl}/${other}/" />`).join("\n")}
 <link rel="alternate" hreflang="x-default" href="${siteUrl}/en/" />
 ${jsonScript({
   "@context": "https://schema.org",
@@ -2797,14 +3332,14 @@ ${analyticsTags}
     .home-links { grid-template-columns:1fr; }
     .feature-grid { grid-template-columns:1fr; }
   }
-</style>
+</style>${rtlStyleTag(lang)}
 </head>
 <body>
   <div class="wrap home-wrap">
     <nav class="nav home-nav">
       <a class="home-brand" href="./"><img src="..${appIcon.src}" width="${appIcon.width}" height="${appIcon.height}" alt="" /><span>Watt Audio</span></a>
       <div class="home-actions">
-        <a href="${lang === "en" ? "../vi/" : "../en/"}">${lang === "en" ? "Tiếng Việt" : "English"}</a>
+        ${siteLanguages.filter((other) => other !== lang).map((other) => `<a href="../${other}/">${labels[other].languageName}</a>`).join("\n        ")}
         ${downloadButtonLinks(lang)}
       </div>
     </nav>
@@ -2822,7 +3357,7 @@ ${analyticsTags}
           decoding="async" />
       </picture>
     </section>
-    <div class="trust-strip" aria-label="${lang === "en" ? "Watt Audio highlights" : "Điểm nổi bật của Watt Audio"}">
+    <div class="trust-strip" aria-label="${escapeHtml(copy.trustLabel)}">
       ${trustChips.map((chip) => `<span>${escapeHtml(chip)}</span>`).join("\n      ")}
     </div>
 
@@ -2830,42 +3365,42 @@ ${analyticsTags}
       <h1 class="visually-hidden">${appTitle}</h1>
       <p class="visually-hidden">${appText} ${seoText}</p>
       <section class="home-section">
-        <div class="eyebrow">${lang === "en" ? "Listen to Wattpad Audio" : "Nghe audio trên Wattpad"}</div>
-        <h2>${lang === "en" ? "Turn story links into chapter audio" : "Chuyển link truyện thành audio theo chương"}</h2>
-        <p>${lang === "en" ? "Watt Audio is built for readers who search for Wattpad audio, text to speech for stories, and a better way to keep up with long chapters without staring at the screen." : "Watt Audio dành cho người đang tìm cách nghe audio trên Wattpad, text to speech cho truyện và cách theo dõi chương dài mà không phải nhìn màn hình liên tục."}</p>
+        <div class="eyebrow">${escapeHtml(copy.heroEyebrow)}</div>
+        <h2>${escapeHtml(copy.heroHeading)}</h2>
+        <p>${escapeHtml(copy.heroText)}</p>
         <div class="feature-grid">
           ${workflowItems.map(([heading, text]) => `<div><h3>${escapeHtml(heading)}</h3><p>${escapeHtml(text)}</p></div>`).join("\n          ")}
         </div>
       </section>
       <section class="home-section">
-        <div class="eyebrow">${lang === "en" ? "Why Readers Use Audio" : "Vì sao người đọc chọn audio"}</div>
-        <h2>${lang === "en" ? "Made for long story sessions" : "Hợp với những buổi nghe truyện dài"}</h2>
+        <div class="eyebrow">${escapeHtml(copy.whyEyebrow)}</div>
+        <h2>${escapeHtml(copy.whyHeading)}</h2>
         <div class="feature-grid">
           ${painItems.map(([heading, text]) => `<div><h3>${escapeHtml(heading)}</h3><p>${escapeHtml(text)}</p></div>`).join("\n          ")}
         </div>
       </section>
-      <nav class="article-list home-links" aria-label="${lang === "en" ? "Watt Audio pages" : "Các trang Watt Audio"}">
+      <nav class="article-list home-links" aria-label="${escapeHtml(copy.pagesLabel)}">
         <a href="articles/">${guideTitle}<span>${guideSub}</span></a>
-        <a href="../about.html">${lang === "en" ? "About Watt Audio" : "Giới thiệu Watt Audio"}<span>${lang === "en" ? "App details and listening workflow" : "Thông tin app và cách nghe truyện"}</span></a>
-        <a href="../support.html">${l.support}<span>${lang === "en" ? "Help and contact" : "Trợ giúp và liên hệ"}</span></a>
-      </nav>
+        <a href="../about.html">${escapeHtml(copy.aboutTitle)}<span>${escapeHtml(copy.aboutSub)}</span></a>
+        <a href="../support.html">${l.support}<span>${escapeHtml(copy.supportSub)}</span></a>
+      </nav>${searchLinks.length ? `
       <section class="home-section">
-        <div class="eyebrow">${lang === "en" ? "Popular Searches" : "Từ khóa người đọc hay tìm"}</div>
-        <h2>${lang === "en" ? "Guides for Wattpad audio, TTS, and story listening" : "Hướng dẫn về Wattpad audio, TTS và nghe truyện"}</h2>
+        <div class="eyebrow">${escapeHtml(copy.searchesEyebrow)}</div>
+        <h2>${escapeHtml(copy.searchesHeading)}</h2>
         <div class="search-grid">
           ${searchLinks.map(([label, href]) => `<a href="${href}">${escapeHtml(label)}</a>`).join("\n          ")}
         </div>
-      </section>
-      <section aria-label="${lang === "en" ? "Popular Wattpad audio guides" : "Hướng dẫn Wattpad audio nổi bật"}">
-        <div class="eyebrow">${lang === "en" ? "Popular Guides" : "Hướng dẫn nổi bật"}</div>
-        <h2>${lang === "en" ? "Popular Wattpad Audio Guides" : "Hướng dẫn Wattpad audio nổi bật"}</h2>
+      </section>` : ""}
+      <section aria-label="${escapeHtml(copy.popularLabel)}">
+        <div class="eyebrow">${escapeHtml(copy.popularEyebrow)}</div>
+        <h2>${escapeHtml(copy.popularHeading)}</h2>
         <div class="article-list home-links">
           ${popularGuideLinks(lang, "articles/")}
         </div>
       </section>
       <section class="home-section">
         <div class="eyebrow">FAQ</div>
-        <h2>${lang === "en" ? "Common questions about Wattpad audio" : "Câu hỏi thường gặp về nghe audio Wattpad"}</h2>
+        <h2>${escapeHtml(copy.faqHeading)}</h2>
         <div class="faq-list">
           ${homeFaq.map(([question, answer]) => `<details><summary>${escapeHtml(question)}</summary><p>${escapeHtml(answer)}</p></details>`).join("\n          ")}
         </div>
@@ -2899,8 +3434,7 @@ ${baseMeta({
   type: "website",
   keywords: ["Watt Audio", "listen to Wattpad audio", "nghe audio trên Wattpad", "Wattpad audio", "Wattpad audio app", "story audio", "AI voice", "text to speech", "text to speech app", "TTS reader", "Speechify alternative"]
 })}
-<link rel="alternate" hreflang="en" href="${siteUrl}/en/" />
-<link rel="alternate" hreflang="vi-VN" href="${siteUrl}/vi/" />
+${siteLanguages.map((other) => `<link rel="alternate" hreflang="${labels[other].hreflang}" href="${siteUrl}/${other}/" />`).join("\n")}
 <link rel="alternate" hreflang="x-default" href="${siteUrl}/en/" />
 ${jsonScript({
   "@context": "https://schema.org",
@@ -2908,7 +3442,7 @@ ${jsonScript({
   name: "Watt Audio",
   url: siteUrl,
   description,
-  inLanguage: ["en", "vi-VN"],
+  inLanguage: siteLanguages.map((other) => labels[other].schemaLang),
   publisher
 })}
 ${analyticsTags}
@@ -2920,8 +3454,13 @@ ${analyticsTags}
     var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""];
     var tz = "";
     try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ""; } catch (e) {}
-    var isVietnam = tz === "Asia/Ho_Chi_Minh" || tz === "Asia/Saigon" || langs.some(function (lang) { return /^vi\\b/i.test(lang); });
-    window.location.replace(isVietnam ? "/vi/" : "/en/");
+    function prefers(code) { return langs.some(function (lang) { return new RegExp("^" + code + "\\\\b", "i").test(lang); }); }
+    var target = "/en/";
+    if (tz === "Asia/Ho_Chi_Minh" || tz === "Asia/Saigon" || prefers("vi")) target = "/vi/";
+    else if (tz === "Asia/Kolkata" || tz === "Asia/Calcutta" || prefers("hi")) target = "/hi/";
+    else if (tz === "Asia/Jakarta" || tz === "Asia/Makassar" || tz === "Asia/Jayapura" || prefers("id") || prefers("in")) target = "/id/";
+    else if (prefers("ar")) target = "/ar/";
+    window.location.replace(target);
   })();
 </script>
 </head>
@@ -2930,13 +3469,16 @@ ${analyticsTags}
     <article>
       <div class="eyebrow">Watt Audio</div>
       <h1>Choose your language</h1>
-      <p class="intro">We will automatically show Vietnamese for Vietnam/vi browsers and English for other visitors when JavaScript is available.</p>
+      <p class="intro">When JavaScript is available we open the version that matches your browser language or time zone, and fall back to English.</p>
       <div class="article-list">
-        <a href="vi/">Tiếng Việt<span>Dành cho người dùng ở Việt Nam hoặc trình duyệt tiếng Việt</span></a>
         <a href="en/">English<span>For international visitors</span></a>
+        <a href="vi/">Tiếng Việt<span>Dành cho người dùng ở Việt Nam hoặc trình duyệt tiếng Việt</span></a>
+        <a href="hi/">हिन्दी<span>हिंदी पाठकों के लिए ऑडियो कहानी गाइड</span></a>
+        <a href="id/">Bahasa Indonesia<span>Panduan audio cerita untuk pembaca Indonesia</span></a>
+        <a href="ar/">العربية<span>أدلة الاستماع إلى الروايات للقرّاء العرب</span></a>
       </div>
       <noscript>
-        <p class="intro">JavaScript is disabled. Use the language links above to open the Vietnamese or English version of Watt Audio.</p>
+        <p class="intro">JavaScript is disabled. Use the language links above to open the version of Watt Audio you want.</p>
       </noscript>
     </article>
     <footer>© 2026 Watt Audio</footer>
@@ -3103,13 +3645,11 @@ ${analyticsTags}
 function sitemapXml() {
   const urls = [
     { loc: `${siteUrl}/`, priority: "1.0", changefreq: "weekly" },
-    { loc: `${siteUrl}/en/`, priority: "0.9", changefreq: "weekly" },
-    { loc: `${siteUrl}/vi/`, priority: "0.9", changefreq: "weekly" },
+    ...siteLanguages.map((lang) => ({ loc: `${siteUrl}/${lang}/`, priority: "0.9", changefreq: "weekly" })),
     { loc: `${siteUrl}/about.html`, priority: "0.8", changefreq: "monthly" },
     { loc: `${siteUrl}/support.html`, priority: "0.5", changefreq: "monthly" },
     { loc: `${siteUrl}/privacy.html`, priority: "0.4", changefreq: "yearly" },
-    { loc: `${siteUrl}/en/articles/`, priority: "0.8", changefreq: "weekly" },
-    { loc: `${siteUrl}/vi/articles/`, priority: "0.8", changefreq: "weekly" },
+    ...siteLanguages.map((lang) => ({ loc: `${siteUrl}/${lang}/articles/`, priority: "0.8", changefreq: "weekly" })),
     ...topics.flatMap((topic) => topicLanguages(topic).map((lang) => ({
       loc: articleUrl(lang, topic.slug),
       priority: "0.7",
@@ -3124,14 +3664,17 @@ ${urls.map(({ loc, priority, changefreq }) => `  <url><loc>${loc}</loc><lastmod>
 }
 
 function llmsTxt() {
-  const englishArticles = topics.filter((topic) => topic.en).map((topic) => {
-    const page = topic.en;
-    return `- [${page.title}](${articleUrl("en", topic.slug)}): ${page.description}`;
+  const guideList = (lang) => topics.filter((topic) => topic[lang]).map((topic) => {
+    const page = topic[lang];
+    return `- [${page.title}](${articleUrl(lang, topic.slug)}): ${page.description}`;
   }).join("\n");
-  const vietnameseArticles = topics.filter((topic) => topic.vi).map((topic) => {
-    const page = topic.vi;
-    return `- [${page.title}](${articleUrl("vi", topic.slug)}): ${page.description}`;
-  }).join("\n");
+  const englishArticles = guideList("en");
+  const vietnameseArticles = guideList("vi");
+  const sectionTitles = { hi: "Hindi Guides", id: "Indonesian Guides", ar: "Arabic Guides" };
+  const extraSections = storyOnlyLanguages
+    .filter((lang) => topics.some((topic) => topic[lang]))
+    .map((lang) => `\n## ${sectionTitles[lang]}\n${guideList(lang)}`)
+    .join("\n");
   return `# Watt Audio
 
 Watt Audio is a mobile app for readers who want to listen to Wattpad stories as audio, create personal chapter audio from supported story links, and keep up with long stories hands-free.
@@ -3139,6 +3682,9 @@ Watt Audio is a mobile app for readers who want to listen to Wattpad stories as 
 ## Primary Pages
 - [English homepage](${siteUrl}/en/): Product overview and mobile app download links.
 - [Vietnamese homepage](${siteUrl}/vi/): Tổng quan sản phẩm và link tải app mobile.
+- [Hindi homepage](${siteUrl}/hi/): हिंदी पाठकों के लिए ऑडियो कहानी गाइड और ऐप लिंक।
+- [Indonesian homepage](${siteUrl}/id/): Panduan audio cerita dan tautan aplikasi untuk pembaca Indonesia.
+- [Arabic homepage](${siteUrl}/ar/): أدلة الاستماع إلى الروايات وروابط تحميل التطبيق للقرّاء العرب.
 - [About Watt Audio](${siteUrl}/about.html): Product entity page with features, audience, app description, and download link.
 - [Support](${siteUrl}/support.html): Quick start, troubleshooting, and contact details.
 - [Privacy Policy](${siteUrl}/privacy.html): Privacy, local storage, generated audio, and network use.
@@ -3148,6 +3694,7 @@ ${englishArticles}
 
 ## Vietnamese Guides
 ${vietnameseArticles}
+${extraSections}
 
 ## Download
 - [Download Watt Audio on the App Store](${iosUrl})
@@ -3493,11 +4040,11 @@ function writeJsonFile(filePath, data) {
   fs.writeFileSync(filePath, `${JSON.stringify(data, null, 2)}\n`);
 }
 
-for (const dir of ["en", "vi", "articles"]) {
+for (const dir of [...siteLanguages, "articles"]) {
   fs.rmSync(path.join(process.cwd(), dir), { recursive: true, force: true });
 }
 
-for (const lang of ["en", "vi"]) {
+for (const lang of siteLanguages) {
   fs.mkdirSync(path.join(process.cwd(), lang, "articles"), { recursive: true });
   fs.writeFileSync(path.join(process.cwd(), lang, "index.html"), localizedHomeHtml(lang));
   fs.writeFileSync(path.join(process.cwd(), lang, "articles", "index.html"), guidesIndexHtml(lang));
@@ -3509,7 +4056,8 @@ for (const lang of ["en", "vi"]) {
 fs.mkdirSync(path.join(process.cwd(), "articles"), { recursive: true });
 fs.writeFileSync(path.join(process.cwd(), "articles", "index.html"), legacyRedirectHtml("/en/articles/", "Watt Audio Guides"));
 for (const topic of topics) {
-  const lang = topic.en ? "en" : "vi";
+  const lang = topicLanguages(topic)[0];
+  if (!lang) continue;
   const page = topic[lang];
   fs.writeFileSync(path.join(process.cwd(), "articles", `${topic.slug}.html`), legacyRedirectHtml(`/${lang}/articles/${topic.slug}.html`, page.title));
 }
@@ -3588,6 +4136,33 @@ fs.writeFileSync(path.join(process.cwd(), "vi", "articles", "index.md"), pageMar
     description: topic.vi.description
   }))
 }));
+for (const lang of storyOnlyLanguages) {
+  const copy = homeCopy[lang];
+  fs.writeFileSync(path.join(process.cwd(), lang, "index.md"), pageMarkdown({
+    title: copy.title,
+    description: copy.description,
+    canonical: `${siteUrl}/${lang}/`,
+    lang: labels[lang].schemaLang,
+    links: [
+      { title: labels[lang].guides, href: `${siteUrl}/${lang}/articles/`, description: labels[lang].indexDescription },
+      { title: "iOS", href: iosUrl, description: "Official App Store listing" },
+      { title: "Android", href: androidUrl, description: "Official Google Play listing" },
+      { title: "Chrome", href: chromeUrl, description: "Official Chrome Web Store listing" }
+    ]
+  }));
+  fs.writeFileSync(path.join(process.cwd(), lang, "articles", "index.md"), pageMarkdown({
+    title: labels[lang].indexTitle,
+    description: labels[lang].indexDescription,
+    canonical: `${siteUrl}/${lang}/articles/`,
+    lang: labels[lang].schemaLang,
+    links: topics.filter((topic) => topic[lang]).slice(0, 12).map((topic) => ({
+      title: topic[lang].title,
+      href: articleUrl(lang, topic.slug),
+      description: topic[lang].description
+    }))
+  }));
+}
+
 fs.mkdirSync(path.join(process.cwd(), ".well-known"), { recursive: true });
 fs.writeFileSync(path.join(process.cwd(), ".well-known", "ai.txt"), agentAiTxt());
 writeJsonFile(path.join(process.cwd(), ".well-known", "ai.json"), agentAiJson());
@@ -3635,4 +4210,7 @@ fs.writeFileSync(path.join(process.cwd(), "site.webmanifest"), JSON.stringify({
   ]
 }, null, 2) + "\n");
 
-console.log(`Generated ${topics.length} topics in English and Vietnamese.`);
+const perLanguageCounts = siteLanguages
+  .map((lang) => `${lang}=${topics.filter((topic) => topic[lang]).length}`)
+  .join(" ");
+console.log(`Generated ${topics.length} topics across ${siteLanguages.length} languages (${perLanguageCounts}).`);

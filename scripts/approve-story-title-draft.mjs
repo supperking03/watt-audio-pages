@@ -44,11 +44,17 @@ if (source.includes(`slug: "${candidate.slug}"`)) {
   process.exit(0);
 }
 
+const supportedLanguages = ["en", "vi", "hi", "id", "ar"];
+const language = supportedLanguages.includes(candidate.language) ? candidate.language : "vi";
 const block = `  storyTitleTopic({
     slug: ${quote(candidate.slug)},
     title: ${quote(candidate.title)},
     enMotif: ${quote(candidate.enMotif)},
-    viMotif: ${quote(candidate.viMotif)}
+    viMotif: ${quote(candidate.viMotif)},
+    hiMotif: ${quote(candidate.hiMotif || candidate.enMotif)},
+    idMotif: ${quote(candidate.idMotif || candidate.enMotif)},
+    arMotif: ${quote(candidate.arMotif || candidate.enMotif)},
+    languages: [${quote(language)}]
   })`;
 
 const marker = "\n];\n\nconst labels =";

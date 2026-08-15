@@ -1,97 +1,262 @@
 {
-  "demandQueries": [
-    "truyện wattpad trà xanh",
-    "truyện wattpad trọng sinh",
-    "truyện wattpad xuyên sách",
-    "truyện wattpad hào môn",
-    "truyện wattpad tổng tài",
-    "truyện wattpad vả mặt",
-    "truyện wattpad ngôn tình hay",
-    "truyện wattpad nữ cường",
-    "truyện full trà xanh",
-    "truyện full trọng sinh",
-    "truyện full xuyên sách",
-    "truyện full hào môn",
-    "truyện full ngôn tình hay",
-    "truyện hot wattpad",
-    "truyện hot truyenfull"
-  ],
-  "queries": [
-    "truyện audio hot",
-    "truyện audio ngôn tình",
-    "truyện audio full",
-    "truyện full audio mới",
-    "truyện wattpad audio",
-    "truyện ngôn tình audio youtube",
-    "truyện trọng sinh audio",
-    "truyện trà xanh audio",
-    "truyện tổng tài audio",
-    "truyện xuyên sách audio",
-    "truyenfull audio",
-    "wattpad audio romance"
-  ],
-  "suggestTemplates": [
-    "{query}",
-    "{query} hay",
-    "{query} mới",
-    "{query} full",
-    "{query} youtube"
-  ],
-  "youtubeQueries": [
-    "truyện audio full mới nhất",
-    "truyện ngôn tình audio full",
-    "truyện wattpad audio full",
-    "truyện trọng sinh audio",
-    "truyện trà xanh audio"
-  ],
-  "englishDemandQueries": [
-    "wattpad audio romance",
-    "wattpad story read aloud",
-    "wattpad text to speech",
-    "listen to wattpad stories",
-    "wattpad audiobook",
-    "wattpad werewolf story audio",
-    "wattpad fanfiction audio",
-    "wattpad romance read aloud",
-    "webnovel audio",
-    "royal road audiobook",
-    "royal road text to speech",
-    "listen to web novels"
-  ],
-  "englishQueries": [
-    "wattpad audio",
-    "wattpad audiobook free",
-    "wattpad read aloud",
-    "wattpad text to speech app",
-    "webnovel read aloud",
-    "web novel audiobook",
-    "fiction story audio app",
-    "fanfiction text to speech"
-  ],
-  "englishSuggestTemplates": [
-    "{query}",
-    "{query} app",
-    "{query} free",
-    "{query} online",
-    "{query} chrome extension"
-  ],
-  "englishYoutubeQueries": [
-    "wattpad story audio",
-    "wattpad read aloud romance",
-    "wattpad fanfiction audio",
-    "webnovel audiobook",
-    "royal road audiobook"
-  ],
-  "englishStorySources": [
-    {
-      "name": "royalroad-trending",
-      "url": "https://www.royalroad.com/fictions/trending"
+  "markets": {
+    "vi": {
+      "hl": "vi",
+      "gl": "VN",
+      "enabled": true,
+      "demandQueries": [
+        "truyện wattpad trà xanh",
+        "truyện wattpad trọng sinh",
+        "truyện wattpad xuyên sách",
+        "truyện wattpad hào môn",
+        "truyện wattpad tổng tài",
+        "truyện wattpad vả mặt",
+        "truyện wattpad ngôn tình hay",
+        "truyện wattpad nữ cường",
+        "truyện full trà xanh",
+        "truyện full trọng sinh",
+        "truyện full xuyên sách",
+        "truyện full hào môn",
+        "truyện full ngôn tình hay",
+        "truyện hot wattpad",
+        "truyện hot truyenfull"
+      ],
+      "queries": [
+        "truyện audio hot",
+        "truyện audio ngôn tình",
+        "truyện audio full",
+        "truyện full audio mới",
+        "truyện wattpad audio",
+        "truyện ngôn tình audio youtube",
+        "truyện trọng sinh audio",
+        "truyện trà xanh audio",
+        "truyện tổng tài audio",
+        "truyện xuyên sách audio",
+        "truyenfull audio",
+        "wattpad audio romance"
+      ],
+      "suggestTemplates": [
+        "{query}",
+        "{query} hay",
+        "{query} mới",
+        "{query} full",
+        "{query} youtube"
+      ],
+      "youtubeQueries": [
+        "truyện audio full mới nhất",
+        "truyện ngôn tình audio full",
+        "truyện wattpad audio full",
+        "truyện trọng sinh audio",
+        "truyện trà xanh audio"
+      ],
+      "competitionQueries": [
+        "\"{title}\" audio",
+        "\"{title}\" \"truyện audio\""
+      ]
     },
-    {
-      "name": "royalroad-best-rated",
-      "url": "https://www.royalroad.com/fictions/best-rated"
+    "en": {
+      "hl": "en",
+      "gl": "US",
+      "enabled": true,
+      "demandQueries": [
+        "wattpad audio romance",
+        "wattpad story read aloud",
+        "wattpad text to speech",
+        "listen to wattpad stories",
+        "wattpad audiobook",
+        "wattpad werewolf story audio",
+        "wattpad fanfiction audio",
+        "wattpad romance read aloud",
+        "webnovel audio",
+        "royal road audiobook",
+        "royal road text to speech",
+        "listen to web novels"
+      ],
+      "queries": [
+        "wattpad audio",
+        "wattpad audiobook free",
+        "wattpad read aloud",
+        "wattpad text to speech app",
+        "webnovel read aloud",
+        "web novel audiobook",
+        "fiction story audio app",
+        "fanfiction text to speech"
+      ],
+      "suggestTemplates": [
+        "{query}",
+        "{query} app",
+        "{query} free",
+        "{query} online",
+        "{query} chrome extension"
+      ],
+      "youtubeQueries": [
+        "wattpad story audio",
+        "wattpad read aloud romance",
+        "wattpad fanfiction audio",
+        "webnovel audiobook",
+        "royal road audiobook"
+      ],
+      "storySources": [
+        {
+          "name": "royalroad-trending",
+          "url": "https://www.royalroad.com/fictions/trending"
+        },
+        {
+          "name": "royalroad-best-rated",
+          "url": "https://www.royalroad.com/fictions/best-rated"
+        }
+      ],
+      "competitionQueries": [
+        "\"{title}\" audiobook",
+        "\"{title}\" \"read aloud\"",
+        "\"{title}\" audio"
+      ]
+    },
+    "hi": {
+      "hl": "hi",
+      "gl": "IN",
+      "enabled": true,
+      "demandQueries": [
+        "हिंदी कहानी वेब सीरीज",
+        "हिंदी प्रेम कहानी",
+        "हिंदी रोमांटिक कहानी",
+        "हिंदी सस्पेंस कहानी",
+        "हिंदी उपन्यास पूरा",
+        "हिंदी कहानी वाटपैड",
+        "wattpad hindi story",
+        "hindi romantic novel",
+        "pocket fm hindi story",
+        "kuku fm hindi kahani",
+        "हिंदी हॉरर कहानी",
+        "हिंदी सामाजिक कहानी"
+      ],
+      "queries": [
+        "हिंदी कहानी ऑडियो",
+        "हिंदी ऑडियो बुक कहानी",
+        "हिंदी कहानी सुनें",
+        "हिंदी नॉवेल ऑडियो",
+        "hindi audio story",
+        "hindi kahani audio",
+        "hindi novel audiobook",
+        "wattpad hindi audio"
+      ],
+      "suggestTemplates": [
+        "{query}",
+        "{query} पूरी",
+        "{query} नई",
+        "{query} भाग 1",
+        "{query} youtube"
+      ],
+      "youtubeQueries": [
+        "हिंदी कहानी ऑडियो पूरी",
+        "हिंदी प्रेम कहानी ऑडियो",
+        "हिंदी सस्पेंस कहानी ऑडियो",
+        "hindi audio story full",
+        "wattpad hindi story audio"
+      ],
+      "competitionQueries": [
+        "\"{title}\" ऑडियो",
+        "\"{title}\" कहानी",
+        "\"{title}\" audio story"
+      ]
+    },
+    "id": {
+      "hl": "id",
+      "gl": "ID",
+      "enabled": true,
+      "demandQueries": [
+        "cerita wattpad indonesia",
+        "novel wattpad romantis",
+        "cerita wattpad cinta",
+        "novel indonesia terbaik",
+        "cerita bersambung romantis",
+        "novel wattpad selesai",
+        "cerita wattpad ceo",
+        "novel wattpad pernikahan",
+        "cerita wattpad sekolah",
+        "novel karyakarsa populer",
+        "cerita fantasi indonesia",
+        "novel online gratis indonesia"
+      ],
+      "queries": [
+        "cerita audio indonesia",
+        "novel audio indonesia",
+        "dengar cerita wattpad",
+        "audiobook novel indonesia",
+        "cerita wattpad audio",
+        "text to speech cerita",
+        "novel bersambung audio",
+        "wattpad indonesia audio"
+      ],
+      "suggestTemplates": [
+        "{query}",
+        "{query} lengkap",
+        "{query} terbaru",
+        "{query} part 1",
+        "{query} youtube"
+      ],
+      "youtubeQueries": [
+        "cerita wattpad audio lengkap",
+        "novel romantis audio indonesia",
+        "cerita audio indonesia full",
+        "dengar novel indonesia",
+        "wattpad indonesia baca cerita"
+      ],
+      "competitionQueries": [
+        "\"{title}\" audio",
+        "\"{title}\" cerita audio",
+        "\"{title}\" audiobook"
+      ]
+    },
+    "ar": {
+      "hl": "ar",
+      "gl": "SA",
+      "enabled": true,
+      "demandQueries": [
+        "روايات واتباد",
+        "روايات رومانسية كاملة",
+        "روايات عربية مكتملة",
+        "قصص واتباد كاملة",
+        "روايات خيالية عربية",
+        "روايات حب كاملة",
+        "روايات واتباد عربية",
+        "روايات مكتملة للقراءة",
+        "قصص رومانسية طويلة",
+        "روايات مغربية كاملة",
+        "روايات سعودية كاملة",
+        "روايات مصرية كاملة"
+      ],
+      "queries": [
+        "روايات صوتية كاملة",
+        "رواية صوتية رومانسية",
+        "استماع روايات عربية",
+        "كتاب صوتي رواية",
+        "arabic audio novel",
+        "قصص صوتية واتباد",
+        "تحويل النص إلى كلام رواية",
+        "روايات صوتية يوتيوب"
+      ],
+      "suggestTemplates": [
+        "{query}",
+        "{query} كاملة",
+        "{query} جديدة",
+        "{query} الجزء الاول",
+        "{query} يوتيوب"
+      ],
+      "youtubeQueries": [
+        "رواية صوتية كاملة",
+        "قصص واتباد صوتية",
+        "رواية رومانسية صوتية كاملة",
+        "روايات عربية صوتية",
+        "قصة حب صوتية كاملة"
+      ],
+      "competitionQueries": [
+        "\"{title}\" صوتية",
+        "\"{title}\" رواية صوتية",
+        "\"{title}\" audio"
+      ]
     }
-  ],
+  },
   "blockedTitlePatterns": [
     "watt audio",
     "wattpad",
@@ -101,10 +266,22 @@
     "audio truyện",
     "ngôn tình audio",
     "review truyện",
-    "tóm tắt truyện"
+    "tóm tắt truyện",
+    "हिंदी कहानी",
+    "ऑडियो कहानी",
+    "कहानी ऑडियो",
+    "cerita audio",
+    "audio cerita",
+    "novel audio",
+    "رواية صوتية",
+    "روايات صوتية",
+    "قصص صوتية"
   ],
   "blockedContentPatterns": [
     "18+",
+    "+18",
+    "21+",
+    "+21",
     "ấu dâm",
     "bao dâm",
     "bạo dâm",
@@ -113,6 +290,17 @@
     "loạn luân",
     "tự tử",
     "rape",
-    "suicide"
+    "suicide",
+    "बलात्कार",
+    "आत्महत्या",
+    "अश्लील",
+    "perkosa",
+    "pemerkosaan",
+    "bunuh diri",
+    "dewasa 21+",
+    "اغتصاب",
+    "انتحار",
+    "اباحية",
+    "إباحية"
   ]
 }

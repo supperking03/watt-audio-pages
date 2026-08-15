@@ -1,12 +1,34 @@
 # Story-title Bot
 
-V1 daily SEO bot for story-title pages.
+Multi-market SEO bot for story-title pages.
+
+## Markets
+
+`seeds.json` holds one research block per market under `markets`:
+
+| Language | Directory | Research focus |
+| --- | --- | --- |
+| `vi` | `/vi/` | Wattpad/TruyenFull Vietnamese story demand |
+| `en` | `/en/` | Wattpad, webnovel, Royal Road demand |
+| `hi` | `/hi/` | Hindi web stories, Pocket FM/KUKU FM style audio demand |
+| `id` | `/id/` | Wattpad Indonesia, novel online demand |
+| `ar` | `/ar/` | Arabic Wattpad novels and روايات صوتية demand |
+
+Each block sets `hl`/`gl` for Google Suggest, its own demand and audio queries,
+suggest templates, YouTube queries, and the exact-title `competitionQueries` used to
+score how crowded the audio niche already is. Set `"enabled": false` to pause a market.
+
+`hi` and `ar` candidates must be written in their native script; Devanagari and Arabic
+titles are romanized for the slug (`रोमांटिक` → `romantik`, `رواية` → `rwayh`).
 
 ## Generate Drafts
 
 ```bash
 node scripts/run-story-title-bot.mjs --limit=10
+node scripts/run-story-title-bot.mjs --limit=10 --languages=hi,id,ar
 ```
+
+`--limit` is per market, so a five-market run with `--limit=10` produces up to 50 candidates.
 
 Outputs:
 
@@ -72,13 +94,29 @@ Use:
 ```bash
 STORY_TITLE_BOT_AUTO_PUBLISH="1"
 STORY_TITLE_BOT_PUBLISH_MIN_SCORE="65"
-STORY_TITLE_BOT_PUBLISH_MAX="2"
-STORY_TITLE_BOT_PUBLISH_MAX_PER_LANGUAGE="1"
-STORY_TITLE_BOT_PUBLISH_LANGUAGES="vi,en"
+STORY_TITLE_BOT_PUBLISH_MAX="10"
+STORY_TITLE_BOT_PUBLISH_MAX_PER_LANGUAGE="2"
+STORY_TITLE_BOT_PUBLISH_LANGUAGES="vi,en,hi,id,ar"
+STORY_TITLE_BOT_LANGUAGES="vi,en,hi,id,ar"
+STORY_TITLE_BOT_LIMIT="10"
 STORY_TITLE_BOT_GIT_PUSH="1"
 ```
 
-The publisher checks duplicate slugs and duplicate normalized titles before inserting anything. It then runs `scripts/build-seo-pages.mjs`, which generates Vietnamese and/or English story-title pages based on each candidate language, updates `sitemap.xml`, commits the relevant generated files, and pushes to the current git remote when `STORY_TITLE_BOT_GIT_PUSH="1"`.
+`STORY_TITLE_BOT_LANGUAGES` controls which markets are researched;
+`STORY_TITLE_BOT_PUBLISH_LANGUAGES` controls which of those may publish.
+
+The publisher checks duplicate slugs and duplicate normalized titles before inserting anything. It then runs `scripts/build-seo-pages.mjs`, which generates the story-title page in the candidate's own language, updates `sitemap.xml`, commits the relevant generated files, and pushes to the current git remote when `STORY_TITLE_BOT_GIT_PUSH="1"`.
+
+## Posting Cadence
+
+`scripts/com.wattaudio.story-title-bot.plist` runs the bot at 10:00, 15:00 and 20:00.
+With the defaults above that is up to 3 runs × 10 posts = 30 articles per day,
+capped at 2 per language per run so no single market dominates.
+Reinstall after changing the schedule:
+
+```bash
+bash scripts/install-story-title-bot-local.sh
+```
 
 Manual dry run:
 

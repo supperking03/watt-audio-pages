@@ -16,6 +16,15 @@ const commonPaths = [
   ".well-known/llms.txt",
   "en/articles/index.html",
   "vi/articles/index.html",
+  "hi/articles/index.html",
+  "id/articles/index.html",
+  "ar/articles/index.html",
+  "en/index.html",
+  "vi/index.html",
+  "hi/index.html",
+  "id/index.html",
+  "ar/index.html",
+  "index.html",
   "articles/index.html",
   "data/story-title-bot/drafts/*.json",
   "data/story-title-bot/drafts/*.md"
@@ -39,7 +48,7 @@ if (status !== 0) process.exit(status);
 
 for (const slug of slugs) {
   const [maybeLang, maybeSlug] = slug.includes(":") ? slug.split(":", 2) : ["vi", slug];
-  const lang = maybeLang === "en" ? "en" : "vi";
+  const lang = ["en", "vi", "hi", "id", "ar"].includes(maybeLang) ? maybeLang : "vi";
   const cleanSlug = maybeSlug || slug;
   status = runGit(["add", `${lang}/articles/${cleanSlug}.html`, `articles/${cleanSlug}.html`]);
   if (status !== 0) process.exit(status);
