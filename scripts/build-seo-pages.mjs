@@ -2127,6 +2127,46 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "dai-tieu-thu-tro-ve-la-ba-trum-y-khoa-mo-hon-nhat-thuong-hai",
+    title: "Đại Tiểu Thư Trở Về là Bà Trùm Y Khoa Mỏ Hỗn Nhất Thượng Hải",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "ba-trum-xa-hoi-den-xuyen-vao-thien-kim-that-mo-hon-nha-hao-mon",
+    title: "Bà Trùm Xã Hội Đen Xuyên Vào Thiên Kim Thật Mỏ Hỗn Nhà Hào Môn",
+    enMotif: "rich-family romance",
+    viMotif: "hào môn",
+    hiMotif: "अमीर परिवार की रोमांस",
+    idMotif: "romansa keluarga kaya",
+    arMotif: "رومانسية العائلات الثرية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "y-n-coded-effortless-beauty-life-social-butterfly-rich-romance-more",
+    title: "Y/N CODED! Effortless Beauty, Life, Social Butterfly, Rich, Romance&More!",
+    enMotif: "rich-family romance and suspense and mystery",
+    viMotif: "hào môn và kinh dị bí ẩn",
+    hiMotif: "अमीर परिवार की रोमांस और सस्पेंस और रहस्य",
+    idMotif: "romansa keluarga kaya dan misteri dan ketegangan",
+    arMotif: "رومانسية العائلات الثرية و التشويق والغموض",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "i-shouldn-t-have-taken-this-job-to-teach-him",
+    title: "I Shouldn't Have Taken This Job To Teach Him",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["en"]
   })
 ];
 
