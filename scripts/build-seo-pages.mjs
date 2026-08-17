@@ -2197,6 +2197,56 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "hoa-khoi-bat-ca-lop-di-bo-10km-toi-diem-thi-cho-may-man",
+    title: "Hoa Khôi Bắt Cả Lớp Đi Bộ 10KM Tới Điểm Thi Cho May Mắn",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "i-reincarnated-as-a-druid-and-accidentally-started-an-immortal-clan",
+    title: "I Reincarnated As A Druid and Accidentally Started An Immortal Clan",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "i-made-a-railgun-with-lightning-magic-litrpg",
+    title: "I Made A Railgun With Lightning Magic (LitRPG",
+    enMotif: "transmigration, suspense and mystery and fantasy adventure",
+    viMotif: "xuyên sách, kinh dị bí ẩn và tiên hiệp fantasy",
+    hiMotif: "दूसरी दुनिया, सस्पेंस और रहस्य और फ़ैंटेसी एडवेंचर",
+    idMotif: "pindah dunia, misteri dan ketegangan dan petualangan fantasi",
+    arMotif: "الانتقال إلى عالم آخر, التشويق والغموض و مغامرات خيالية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "aku-seharusnya-tidak-menyelamatkannya-malam-itu",
+    title: "Aku Seharusnya Tidak Menyelamatkannya Malam Itu...",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "nggak-perlu-daftar-gym-pemasan-sudah-bikin-kamu-sehat",
+    title: "Nggak Perlu Daftar Gym, Pemasan Sudah Bikin Kamu Sehat",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["id"]
   })
 ];
 
