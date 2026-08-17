@@ -2247,6 +2247,16 @@ const topics = [
     idMotif: "misteri dan ketegangan",
     arMotif: "التشويق والغموض",
     languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "ca-man-xuyen-thanh-nu-phu-nhung-toi-luoi-doc-ac-lam-he-thong-oiii",
+    title: "Cá Mặn Xuyên Thành Nữ Phụ, Nhưng Tôi Lười Độc Ác Lắm Hệ Thống Ơiii",
+    enMotif: "comedy",
+    viMotif: "hài hước",
+    hiMotif: "कॉमेडी",
+    idMotif: "komedi",
+    arMotif: "الكوميديا",
+    languages: ["vi"]
   })
 ];
 
