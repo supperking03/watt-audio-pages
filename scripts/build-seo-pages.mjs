@@ -2167,6 +2167,36 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "tai-sinh-toi-khoanh-tay-dung-nhin-em-gai-tu-huy-hoai-cuoc-doi",
+    title: "Tái Sinh, Tôi Khoanh Tay Đứng Nhìn Em Gái Tự Hủy Hoại Cuộc Đời",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "second-life-as-a-soldier-book-1-complete",
+    title: "Second Life As A Soldier [Book 1 Complete]",
+    enMotif: "family drama",
+    viMotif: "gia đình",
+    hiMotif: "पारिवारिक ड्रामा",
+    idMotif: "drama keluarga",
+    arMotif: "دراما عائلية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "listen-to-music-while-reading",
+    title: "Listen To Music While Reading",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["id"]
   })
 ];
 
