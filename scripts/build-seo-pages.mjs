@@ -2317,6 +2317,76 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["ar"]
+  }),
+  storyTitleTopic({
+    slug: "tra-xanh-doi-ca-lop-khong-duoc-noi-chuyen-voi-hoc-ba",
+    title: "Trà Xanh Đòi Cả Lớp Không Được Nói Chuyện Với Học Bá",
+    enMotif: "green tea rival and school romance",
+    viMotif: "trà xanh và vườn trường",
+    hiMotif: "छल भरी प्रतिद्वंद्वी और कॉलेज रोमांस",
+    idMotif: "rival bermuka dua dan romansa sekolah",
+    arMotif: "المنافسة الماكرة و رومانسية المدرسة",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "tra-xanh-doi-doi-cho-vi-muon-ngoi-canh-hoc-ba",
+    title: "Trà Xanh Đòi Đổi Chỗ Vì Muốn Ngồi Cạnh Học Bá",
+    enMotif: "green tea rival and school romance",
+    viMotif: "trà xanh và vườn trường",
+    hiMotif: "छल भरी प्रतिद्वंद्वी और कॉलेज रोमांस",
+    idMotif: "rival bermuka dua dan romansa sekolah",
+    arMotif: "المنافسة الماكرة و رومانسية المدرسة",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "pembaca-vs-pembaca-buku-kamu-termasuk-yang-mana",
+    title: "Pembaca Vs Pembaca Buku (Kamu Termasuk Yang Mana?)",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "naraj-sahi-par-tera-hun",
+    title: "नाराज सही पर तेरा हूं",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "gujarat-ke-mundra-port-ki-puri-kahani-dusare-desh-ke-aae-jahazon-men-kya-hota-hai",
+    title: "Gujarat के Mundra Port की पूरी कहानी, दूसरे देश के आए जहाज़ों में क्या होता है?",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "the-worst-litrpg-story-on-royal-road-by-j-regan-is-so-bad-it-s-good",
+    title: "The Worst LitRPG Story On Royal Road By J Regan Is So Bad It's Good",
+    enMotif: "fantasy adventure",
+    viMotif: "tiên hiệp fantasy",
+    hiMotif: "फ़ैंटेसी एडवेंचर",
+    idMotif: "petualangan fantasi",
+    arMotif: "مغامرات خيالية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "romansa-miliarder-gelap-buku",
+    title: "Romansa Miliarder Gelap (Buku )",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["id"]
   })
 ];
 
