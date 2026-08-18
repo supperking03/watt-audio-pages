@@ -2287,6 +2287,36 @@ const topics = [
     idMotif: "romansa sekolah",
     arMotif: "رومانسية المدرسة",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "headless-over-heels-a-dark-fantasy-romance-book-1-complete",
+    title: "Headless Over Heels [A Dark Fantasy Romance][Book 1 Complete]",
+    enMotif: "suspense and mystery and fantasy adventure",
+    viMotif: "kinh dị bí ẩn và tiên hiệp fantasy",
+    hiMotif: "सस्पेंस और रहस्य और फ़ैंटेसी एडवेंचर",
+    idMotif: "misteri dan ketegangan dan petualangan fantasi",
+    arMotif: "التشويق والغموض و مغامرات خيالية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "seharusnya-aku-tidak-menerima-pekerjaan-ini-untuk-mengajarinya",
+    title: "Seharusnya Aku Tidak Menerima Pekerjaan Ini Untuk Mengajarinya",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "dlm-aldalm-ydwm",
+    title: "ضلم الضالم يدوم #",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["ar"]
   })
 ];
 
