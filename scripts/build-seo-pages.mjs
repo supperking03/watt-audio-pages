@@ -2257,6 +2257,36 @@ const topics = [
     idMotif: "komedi",
     arMotif: "الكوميديا",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "adopted-noble-is-not-human-superhuman-in-a-medieval-fantasy-book-1-complete",
+    title: "Adopted Noble Is Not Human [Superhuman In A Medieval Fantasy][Book 1 Complete]",
+    enMotif: "suspense and mystery and fantasy adventure",
+    viMotif: "kinh dị bí ẩn và tiên hiệp fantasy",
+    hiMotif: "सस्पेंस और रहस्य और फ़ैंटेसी एडवेंचर",
+    idMotif: "misteri dan ketegangan dan petualangan fantasi",
+    arMotif: "التشويق والغموض و مغامرات خيالية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "tra-xanh-dung-nham-thien-kim-that-vua-mo-hon-vua-co-tri-thuc",
+    title: "Trà Xanh Đụng Nhầm Thiên Kim Thật Vừa Mỏ Hỗn Vừa Có Tri Thức",
+    enMotif: "green tea rival",
+    viMotif: "trà xanh",
+    hiMotif: "छल भरी प्रतिद्वंद्वी",
+    idMotif: "rival bermuka dua",
+    arMotif: "المنافسة الماكرة",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "tu-gia-su-thanh-vo-yeu-cua-trum-truong",
+    title: "Từ Gia Sư Thành Vợ Yêu Của Trùm Trường",
+    enMotif: "school romance",
+    viMotif: "vườn trường",
+    hiMotif: "कॉलेज रोमांस",
+    idMotif: "romansa sekolah",
+    arMotif: "رومانسية المدرسة",
+    languages: ["vi"]
   })
 ];
 
