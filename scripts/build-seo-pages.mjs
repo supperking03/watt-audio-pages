@@ -2427,6 +2427,56 @@ const topics = [
     idMotif: "petualangan fantasi",
     arMotif: "مغامرات خيالية",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "the-number-crunching-peasant-saves-the-world-grim-dark-slow-burn",
+    title: "The Number Crunching Peasant Saves The World [Grim Dark, Slow Burn]",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "reincarnation-heavenly-demon-in-a-world-of-magic",
+    title: "Reincarnation Heavenly Demon In A World of Magic",
+    enMotif: "suspense and mystery and fantasy adventure",
+    viMotif: "kinh dị bí ẩn và tiên hiệp fantasy",
+    hiMotif: "सस्पेंस और रहस्य और फ़ैंटेसी एडवेंचर",
+    idMotif: "misteri dan ketegangan dan petualangan fantasi",
+    arMotif: "التشويق والغموض و مغامرات خيالية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "dil-ko-chhu-lene-vali",
+    title: "दिल को छू लेने वाली",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "rht-llazwmh-wlbst-fstany-alahmr-alqsyr-bad-ally-sar-ma-wld-khalty",
+    title: "رحت للعزومــة ولبســت فستانــي الأحمــر القصيــر… بعــد اللــي صــار مــع ولــد خالتــي!",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["ar"]
+  }),
+  storyTitleTopic({
+    slug: "tra-xanh-tu-nhan-duoc-hoc-ba-day-kem-moi-toi",
+    title: "Trà Xanh Tự Nhận Được Học Bá Dạy Kèm Mỗi Tối",
+    enMotif: "rebirth, green tea rival and school romance",
+    viMotif: "trọng sinh, trà xanh và vườn trường",
+    hiMotif: "पुनर्जन्म, छल भरी प्रतिद्वंद्वी और कॉलेज रोमांस",
+    idMotif: "terlahir kembali, rival bermuka dua dan romansa sekolah",
+    arMotif: "العودة إلى الماضي, المنافسة الماكرة و رومانسية المدرسة",
+    languages: ["vi"]
   })
 ];
 
