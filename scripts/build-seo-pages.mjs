@@ -2417,6 +2417,16 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "the-worst-litrpg-story-on-royal-road",
+    title: "The Worst Litrpg Story On Royal Road",
+    enMotif: "fantasy adventure",
+    viMotif: "tiên hiệp fantasy",
+    hiMotif: "फ़ैंटेसी एडवेंचर",
+    idMotif: "petualangan fantasi",
+    arMotif: "مغامرات خيالية",
+    languages: ["en"]
   })
 ];
 
