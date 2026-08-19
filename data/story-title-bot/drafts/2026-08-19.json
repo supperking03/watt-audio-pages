@@ -1,0 +1,952 @@
+{
+  "generatedAt": "2026-08-19T03:00:51.905Z",
+  "date": "2026-08-19",
+  "mode": "network",
+  "languages": [
+    "vi",
+    "en",
+    "hi",
+    "id",
+    "ar"
+  ],
+  "sourceCount": 1132,
+  "scoring": "v4-multi-market-opportunity-demand-minus-audio-competition",
+  "candidates": [
+    {
+      "title": "In The Library, The Cold And Aloof Top Student Had Just Rejected The Campus Beauty’s Confession...",
+      "slug": "in-the-library-the-cold-and-aloof-top-student-had-just-rejected-the-campus-beauty-s-confessi",
+      "language": "en",
+      "score": 72,
+      "demandScore": 64,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "none",
+      "opportunityScore": 72,
+      "enMotif": "school romance and family drama",
+      "viMotif": "vườn trường và gia đình",
+      "hiMotif": "कॉलेज रोमांस और पारिवारिक ड्रामा",
+      "idMotif": "romansa sekolah dan drama keluarga",
+      "arMotif": "رومانسية المدرسة و دراما عائلية",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "en",
+          "query": "webnovel audiobook",
+          "text": "In the library, the cold and aloof top student had just rejected the campus beauty’s confession..."
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "My Only Familiar Is Me[A Late-Blooming Evolution Story]",
+      "slug": "my-only-familiar-is-me-a-late-blooming-evolution-story",
+      "language": "en",
+      "score": 70,
+      "demandScore": 70,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "none",
+      "opportunityScore": 70,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "evidence": [
+        {
+          "source": "royalroad-trending",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/trending",
+          "text": "My Only Familiar Is Me[A Late-Blooming Evolution Story]"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "The Magpie And The Archmage [Book 2 Complete]",
+      "slug": "the-magpie-and-the-archmage-book-2-complete",
+      "language": "en",
+      "score": 70,
+      "demandScore": 70,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "none",
+      "opportunityScore": 70,
+      "enMotif": "suspense and mystery",
+      "viMotif": "kinh dị bí ẩn",
+      "hiMotif": "सस्पेंस और रहस्य",
+      "idMotif": "misteri dan ketegangan",
+      "arMotif": "التشويق والغموض",
+      "evidence": [
+        {
+          "source": "royalroad-trending",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/trending",
+          "text": "The Magpie and The Archmage [Book 2 Complete]"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Magpie And The Archmage [Book 2 Complete]\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "I Am Weapon [Mage, Litrpg, Academy, Progression]",
+      "slug": "i-am-weapon-mage-litrpg-academy-progression",
+      "language": "en",
+      "score": 70,
+      "demandScore": 70,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "none",
+      "opportunityScore": 70,
+      "enMotif": "suspense and mystery and fantasy adventure",
+      "viMotif": "kinh dị bí ẩn và tiên hiệp fantasy",
+      "hiMotif": "सस्पेंस और रहस्य और फ़ैंटेसी एडवेंचर",
+      "idMotif": "misteri dan ketegangan dan petualangan fantasi",
+      "arMotif": "التشويق والغموض و مغامرات خيالية",
+      "evidence": [
+        {
+          "source": "royalroad-trending",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/trending",
+          "text": "I Am Weapon [Mage, Litrpg, Academy, Progression]"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"I Am Weapon [Mage, Litrpg, Academy, Progression]\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "The Unexpected Engagement Of The Marvelous Mr. Penn",
+      "slug": "the-unexpected-engagement-of-the-marvelous-mr-penn",
+      "language": "en",
+      "score": 70,
+      "demandScore": 70,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "none",
+      "opportunityScore": 70,
+      "enMotif": "marriage drama and suspense and mystery",
+      "viMotif": "cưới gả và kinh dị bí ẩn",
+      "hiMotif": "शादी का ड्रामा और सस्पेंस और रहस्य",
+      "idMotif": "drama pernikahan dan misteri dan ketegangan",
+      "arMotif": "دراما الزواج و التشويق والغموض",
+      "evidence": [
+        {
+          "source": "royalroad-best-rated",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/best-rated",
+          "text": "The Unexpected Engagement of the Marvelous Mr. Penn"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Unexpected Engagement Of The Marvelous Mr. Penn\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Unexpected Engagement Of The Marvelous Mr. Penn\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Khi Nam Phụ Từ Bỏ Theo Đuổi Đóa Hoa Cao Ngạo",
+      "slug": "khi-nam-phu-tu-bo-theo-duoi-doa-hoa-cao-ngao",
+      "language": "vi",
+      "score": 66,
+      "demandScore": 64,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 1,
+      "audioCompetitionLevel": "low",
+      "opportunityScore": 66,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "TRUYỆN BOY LOVE FULL | KHI NAM PHỤ TỪ BỎ THEO ĐUỔI ĐÓA HOA CAO NGẠO | Mặt Thịt Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Khi Nam Phụ Từ Bỏ Theo Đuổi Đóa Hoa Cao Ngạo\" audio",
+          "text": "TRUYỆN BOY LOVE FULL | KHI NAM PHỤ TỪ BỎ THEO ĐUỔI ĐÓA HOA CAO NGẠO | Mặt Thịt Audio"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia",
+      "slug": "toi-nghe-thay-tieng-long-cua-thai-tu-gia",
+      "language": "vi",
+      "score": 64,
+      "demandScore": 71,
+      "audioSignalScore": 11,
+      "audioCompetitionScore": 3,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 64,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện audio full mới nhất",
+          "text": "Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia | Truyện Full"
+        },
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện ngôn tình audio full",
+          "text": "Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia | Truyện Full"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia\" \"truyện audio\"",
+          "text": "Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia | Truyện Full"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia\" \"truyện audio\"",
+          "text": "[TRUYỆN AUDIO] Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia Bắc Kinh | Dịt Dàng Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Tôi Nghe Thấy Tiếng Lòng Của Thái Tử Gia\" audio",
+          "text": "TÔI NGHE THẤY TIẾNG LÒNG CỦA THÁI TỬ GIA [FULL] - LÁ LỐT AUDIO #truyenaudio #audiotruyenhay"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Thái Tử Gia Xích Tôi Trong Biệt Thự Để Chiếm Làm Của Riêng",
+      "slug": "thai-tu-gia-xich-toi-trong-biet-thu-de-chiem-lam-cua-rieng",
+      "language": "vi",
+      "score": 58,
+      "demandScore": 68,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 4,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 58,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "[Audio] Thái Tử Gia Xích Tôi Trong Biệt Thự Để Chiếm Làm Của Riêng | Mắc Cỡ Audio "
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Thái Tử Gia Xích Tôi Trong Biệt Thự Để Chiếm Làm Của Riêng\" audio",
+          "text": "[Audio] Thái Tử Gia Xích Tôi Trong Biệt Thự Để Chiếm Làm Của Riêng | Mắc Cỡ Audio "
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Thái Tử Gia Xích Tôi Trong Biệt Thự Để Chiếm Làm Của Riêng\" audio",
+          "text": "( FULL AUDIO ) THÁI TỬ GIA XÍCH TÔI TRONG BIỆT THỰ ĐỂ CHIẾM LÀM CỦA RIÊNG "
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Thái Tử Gia Xích Tôi Trong Biệt Thự Để Chiếm Làm Của Riêng\" audio",
+          "text": "[Audio] Thái Tử Gia Xích Tôi Trong Biệt Thự Để Chiếm Làm Của Riêng |  Mèo Mỡ Audio  | YouTube"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Thái Tử Gia Xích Tôi Trong Biệt Thự Để Chiếm Làm Của Riêng\" audio",
+          "text": "[Audio] Thái Tử Gia Xích Tôi Trong Biệt Thự Để Chiếm Làm Của Riêng"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Từ Fan Trở Thành Bé Cưng Của Ảnh Đế Nghiện Vợ",
+      "slug": "tu-fan-tro-thanh-be-cung-cua-anh-de-nghien-vo",
+      "language": "vi",
+      "score": 54,
+      "demandScore": 64,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 2,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 54,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "[Truyện Audio] Từ Fan Trở Thành Bé Cưng Của Ảnh Đế Nghiện Vợ | Mèo Cưng Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Từ Fan Trở Thành Bé Cưng Của Ảnh Đế Nghiện Vợ\" \"truyện audio\"",
+          "text": "[Truyện Audio] Từ Fan Trở Thành Bé Cưng Của Ảnh Đế Nghiện Vợ | Mèo Cưng Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Từ Fan Trở Thành Bé Cưng Của Ảnh Đế Nghiện Vợ\" \"truyện audio\"",
+          "text": "[Truyện Audio] Từ Fan Trở Thành Bé Cưng Của Ảnh Đế Nghiện Vợ | Đậu Nành Audio"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Lỡ Nhìn Trộm Đại Ca Trường, Tôi Bị Anh Cướp Luôn Nụ Hôn Đầu",
+      "slug": "lo-nhin-trom-dai-ca-truong-toi-bi-anh-cuop-luon-nu-hon-dau",
+      "language": "vi",
+      "score": 52,
+      "demandScore": 62,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 2,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 52,
+      "enMotif": "school romance",
+      "viMotif": "vườn trường",
+      "hiMotif": "कॉलेज रोमांस",
+      "idMotif": "romansa sekolah",
+      "arMotif": "رومانسية المدرسة",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện ngôn tình audio full",
+          "text": "Lỡ Nhìn Trộm Đại Ca Trường, Tôi Bị Anh Cướp Luôn Nụ Hôn Đầu | Truyện Audio Nấu Ăn"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Lỡ Nhìn Trộm Đại Ca Trường, Tôi Bị Anh Cướp Luôn Nụ Hôn Đầu\" \"truyện audio\"",
+          "text": "Lỡ Nhìn Trộm Đại Ca Trường, Tôi Bị Anh Cướp Luôn Nụ Hôn Đầu | Truyện Audio Nấu Ăn"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Lỡ Nhìn Trộm Đại Ca Trường, Tôi Bị Anh Cướp Luôn Nụ Hôn Đầu\" audio",
+          "text": "Tiểu Màn Thầu Audio #59 || Lỡ Nhìn Trộm Đại Ca Trường, Tôi Bị Anh Cướp Luôn Nụ Hôn Đầu #audio"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Buku Romansa Asisten Miliarder",
+      "slug": "buku-romansa-asisten-miliarder",
+      "language": "id",
+      "score": 52,
+      "demandScore": 56,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 52,
+      "enMotif": "suspense and mystery",
+      "viMotif": "kinh dị bí ẩn",
+      "hiMotif": "सस्पेंस और रहस्य",
+      "idMotif": "misteri dan ketegangan",
+      "arMotif": "التشويق والغموض",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "id",
+          "query": "cerita wattpad audio lengkap",
+          "text": "Buku Audio Romansa Asisten Miliarder"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Buku Romansa Asisten Miliarder\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Buku Romansa Asisten Miliarder\" cerita audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Buku Romansa Asisten Miliarder\" audiobook",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Cerita My Nerd Girl Indonesia",
+      "slug": "cerita-my-nerd-girl-indonesia",
+      "language": "id",
+      "score": 50,
+      "demandScore": 62,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 50,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "evidence": [
+        {
+          "source": "google-demand-suggest",
+          "language": "id",
+          "query": "cerita wattpad indonesia",
+          "text": "cerita my nerd girl wattpad indonesia"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Cerita My Nerd Girl Indonesia\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Cerita My Nerd Girl Indonesia\" cerita audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Cerita My Nerd Girl Indonesia\" audiobook",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Cerita Cinta Bertepuk Sebelah Tangan",
+      "slug": "cerita-cinta-bertepuk-sebelah-tangan",
+      "language": "id",
+      "score": 50,
+      "demandScore": 62,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 50,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "evidence": [
+        {
+          "source": "google-demand-suggest",
+          "language": "id",
+          "query": "cerita wattpad cinta",
+          "text": "cerita wattpad cinta bertepuk sebelah tangan"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Cerita Cinta Bertepuk Sebelah Tangan\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Cerita Cinta Bertepuk Sebelah Tangan\" cerita audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Cerita Cinta Bertepuk Sebelah Tangan\" audiobook",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Niat Minta Izin Pulang, GADIS MISKIN Ini Malah Ditarik Duduk Di Pangkuan BOS MILIARDER!",
+      "slug": "niat-minta-izin-pulang-gadis-miskin-ini-malah-ditarik-duduk-di-pangkuan-bos-miliarder",
+      "language": "id",
+      "score": 50,
+      "demandScore": 54,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 50,
+      "enMotif": "suspense and mystery",
+      "viMotif": "kinh dị bí ẩn",
+      "hiMotif": "सस्पेंस और रहस्य",
+      "idMotif": "misteri dan ketegangan",
+      "arMotif": "التشويق والغموض",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "id",
+          "query": "novel romantis audio indonesia",
+          "text": "Niat Minta Izin Pulang, GADIS MISKIN Ini Malah Ditarik Duduk Di Pangkuan BOS MILIARDER!"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Niat Minta Izin Pulang, GADIS MISKIN Ini Malah Ditarik Duduk Di Pangkuan BOS MILIARDER!\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Niat Minta Izin Pulang, GADIS MISKIN Ini Malah Ditarik Duduk Di Pangkuan BOS MILIARDER!\" cerita audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Niat Minta Izin Pulang, GADIS MISKIN Ini Malah Ditarik Duduk Di Pangkuan BOS MILIARDER!\" audiobook",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "ولد عمــي المغــرور الرومانســي جانــي بذيــك الليلــة… واللــي صــار بينــا!",
+      "slug": "wld-amy-almghrwr-alrwmansy-jany-bdhyk-allylh-wally-sar-byna",
+      "language": "ar",
+      "score": 50,
+      "demandScore": 54,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 50,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "ar",
+          "query": "قصص واتباد صوتية",
+          "text": "ولد عمــي المغــرور الرومانســي جانــي بذيــك الليلــة… واللــي صــار بينــا! 🤫❤️‍🔥"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"ولد عمــي المغــرور الرومانســي جانــي بذيــك الليلــة… واللــي صــار بينــا!\" صوتية",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"ولد عمــي المغــرور الرومانســي جانــي بذيــك الليلــة… واللــي صــار بينــا!\" رواية صوتية",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"ولد عمــي المغــرور الرومانســي جانــي بذيــك الليلــة… واللــي صــار بينــا!\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Cerita Bl Bahasa Indonesia",
+      "slug": "cerita-bl-bahasa-indonesia",
+      "language": "id",
+      "score": 48,
+      "demandScore": 60,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 48,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "evidence": [
+        {
+          "source": "google-demand-suggest",
+          "language": "id",
+          "query": "cerita wattpad indonesia",
+          "text": "cerita bl wattpad bahasa indonesia"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Cerita Bl Bahasa Indonesia\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Cerita Bl Bahasa Indonesia\" cerita audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Cerita Bl Bahasa Indonesia\" audiobook",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "يحبها ولد عمها الغيووور ويجننها بغيرته الحلوه.. !",
+      "slug": "yhbha-wld-amha-alghywwwr-wyjnnha-bghyrth-alhlwh",
+      "language": "ar",
+      "score": 46,
+      "demandScore": 50,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 46,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "ar",
+          "query": "قصص واتباد صوتية",
+          "text": "قصة | يحبها ولد عمها الغيووور ويجننها بغيرته الحلوه..🖤🔥!"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"يحبها ولد عمها الغيووور ويجننها بغيرته الحلوه.. !\" صوتية",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"يحبها ولد عمها الغيووور ويجننها بغيرته الحلوه.. !\" رواية صوتية",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"يحبها ولد عمها الغيووور ويجننها بغيرته الحلوه.. !\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Phir Ek Baar (फिर एक बार)",
+      "slug": "phir-ek-baar-phir-ek-bar",
+      "language": "hi",
+      "score": 44,
+      "demandScore": 48,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 44,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "hi",
+          "query": "हिंदी कहानी ऑडियो पूरी",
+          "text": "Phir Ek Baar (फिर एक बार) |  Kahaani Express with Neelesh Misra | Audio Story"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Phir Ek Baar (फिर एक बार)\" ऑडियो",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Phir Ek Baar (फिर एक बार)\" कहानी",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Phir Ek Baar (फिर एक बार)\" audio story",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "बीरबल के दिमागी खेल में उलझ गया पूरा दरबार इंटरेस्टिंग कहानी",
+      "slug": "birabal-ke-dimagi-khel-men-ulajh-gaya-pura-darabar-intaresting-kahani",
+      "language": "hi",
+      "score": 44,
+      "demandScore": 48,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 44,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "hi",
+          "query": "हिंदी कहानी ऑडियो पूरी",
+          "text": "बीरबल के दिमागी खेल में उलझ गया 🤔 पूरा दरबार इंटरेस्टिंग कहानी | interesting akbar birbal new kahani"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"बीरबल के दिमागी खेल में उलझ गया पूरा दरबार इंटरेस्टिंग कहानी\" ऑडियो",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"बीरबल के दिमागी खेल में उलझ गया पूरा दरबार इंटरेस्टिंग कहानी\" कहानी",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"बीरबल के दिमागी खेल में उलझ गया पूरा दरबार इंटरेस्टिंग कहानी\" audio story",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "तूफानी बारिश में सहेली का घर",
+      "slug": "tuphani-barish-men-saheli-ka-ghar",
+      "language": "hi",
+      "score": 44,
+      "demandScore": 48,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 44,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "hi",
+          "query": "हिंदी कहानी ऑडियो पूरी",
+          "text": "तूफानी बारिश में सहेली का घर | Hindi kahani | Hindi cartoon | Moral stories | cartoon story"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"तूफानी बारिश में सहेली का घर\" ऑडियो",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"तूफानी बारिश में सहेली का घर\" कहानी",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"तूफानी बारिश में सहेली का घर\" audio story",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "जादुई मोर और विक्रम का शिकार",
+      "slug": "jadui-mor-aur-vikram-ka-shikar",
+      "language": "hi",
+      "score": 44,
+      "demandScore": 48,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 44,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "hi",
+          "query": "हिंदी कहानी ऑडियो पूरी",
+          "text": "जादुई मोर और विक्रम का शिकार | Moral story |Hindi story | cartoon stories | Hindi Kahaniya"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"जादुई मोर और विक्रम का शिकार\" ऑडियो",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"जादुई मोर और विक्रम का शिकार\" कहानी",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"जादुई मोर और विक्रम का शिकार\" audio story",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "दिल को छू लेने वाली सच्ची लव स्टोरी",
+      "slug": "dil-ko-chhu-lene-vali-sachchi-lav-stori",
+      "language": "hi",
+      "score": 44,
+      "demandScore": 48,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 44,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "hi",
+          "query": "हिंदी प्रेम कहानी ऑडियो",
+          "text": "प्रेम कहानी ❤️ | दिल को छू लेने वाली सच्ची लव स्टोरी | Emotional Hindi Story | True Love Story"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"दिल को छू लेने वाली सच्ची लव स्टोरी\" ऑडियो",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"दिल को छू लेने वाली सच्ची लव स्टोरी\" कहानी",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"दिल को छू लेने वाली सच्ची लव स्टोरी\" audio story",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "صراع العودة بين الوحوش والجبابرة",
+      "slug": "sraa-alawdh-byn-alwhwsh-waljbabrh",
+      "language": "ar",
+      "score": 42,
+      "demandScore": 46,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 42,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "ar",
+          "query": "رواية صوتية كاملة",
+          "text": "الأوديسا (رواية صوتية) | صراع العودة بين الوحوش والجبابرة| مسموع"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"صراع العودة بين الوحوش والجبابرة\" صوتية",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"صراع العودة بين الوحوش والجبابرة\" رواية صوتية",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"صراع العودة بين الوحوش والجبابرة\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "شرارة ال عربيد بارت( الاول )كامل #",
+      "slug": "shrarh-al-arbyd-bart-alawl-kaml",
+      "language": "ar",
+      "score": 42,
+      "demandScore": 46,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 42,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "ar",
+          "query": "قصص واتباد صوتية",
+          "text": "شرارة ال عربيد بارت( الاول )كامل #بصوتى #قصص #واتباد "
+        },
+        {
+          "source": "competition-error",
+          "query": "\"شرارة ال عربيد بارت( الاول )كامل #\" صوتية",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"شرارة ال عربيد بارت( الاول )كامل #\" رواية صوتية",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"شرارة ال عربيد بارت( الاول )كامل #\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "عشق ذو الفقار وغزالة كاملة.",
+      "slug": "ashq-dhw-alfqar-wghzalh-kamlh",
+      "language": "ar",
+      "score": 42,
+      "demandScore": 46,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 42,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "ar",
+          "query": "قصص واتباد صوتية",
+          "text": "#روايات_عراقية_بصوتي، قصة قصيرة: عشق ذو الفقار وغزالة كاملة."
+        },
+        {
+          "source": "competition-error",
+          "query": "\"عشق ذو الفقار وغزالة كاملة.\" صوتية",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"عشق ذو الفقار وغزالة كاملة.\" رواية صوتية",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"عشق ذو الفقار وغزالة كاملة.\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    }
+  ]
+}

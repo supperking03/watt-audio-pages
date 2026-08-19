@@ -2387,6 +2387,36 @@ const topics = [
     idMotif: "misteri dan ketegangan",
     arMotif: "التشويق والغموض",
     languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "in-the-library-the-cold-and-aloof-top-student-had-just-rejected-the-campus-beauty-s-confessi",
+    title: "In The Library, The Cold And Aloof Top Student Had Just Rejected The Campus Beauty’s Confession...",
+    enMotif: "school romance and family drama",
+    viMotif: "vườn trường và gia đình",
+    hiMotif: "कॉलेज रोमांस और पारिवारिक ड्रामा",
+    idMotif: "romansa sekolah dan drama keluarga",
+    arMotif: "رومانسية المدرسة و دراما عائلية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "my-only-familiar-is-me-a-late-blooming-evolution-story",
+    title: "My Only Familiar Is Me[A Late-Blooming Evolution Story]",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "khi-nam-phu-tu-bo-theo-duoi-doa-hoa-cao-ngao",
+    title: "Khi Nam Phụ Từ Bỏ Theo Đuổi Đóa Hoa Cao Ngạo",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
