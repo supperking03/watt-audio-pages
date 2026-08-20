@@ -2477,6 +2477,36 @@ const topics = [
     idMotif: "terlahir kembali, rival bermuka dua dan romansa sekolah",
     arMotif: "العودة إلى الماضي, المنافسة الماكرة و رومانسية المدرسة",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "sebelum-aku-benar-benar-pergi-10",
+    title: "Sebelum Aku Benar-Benar Pergi ( -10)",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "chong-toi-ban-ngay-la-giao-su-nhung-dem-deu-bat-toi-tra-bai",
+    title: "Chồng Tôi Ban Ngày Là Giáo Sư, Nhưng Đêm Đều Bắt Tôi Trả Bài",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "no-one-truly-dies-in-my-dungeon",
+    title: "No One Truly Dies In My Dungeon",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["en"]
   })
 ];
 
