@@ -2507,6 +2507,46 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "ise-nahin-samajha-to-bahut-rona-parega-best-motivational-speech-hindi-video-new-life-quotes",
+    title: "इसे नहीं समझा तो बहुत रोना पड़ेगा Best Motivational Speech Hindi Video New Life Quotes",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "the-unexpected-engagement-of-the-marvelous-mr-penn",
+    title: "The Unexpected Engagement Of The Marvelous Mr. Penn",
+    enMotif: "marriage drama and suspense and mystery",
+    viMotif: "cưới gả và kinh dị bí ẩn",
+    hiMotif: "शादी का ड्रामा और सस्पेंस और रहस्य",
+    idMotif: "drama pernikahan dan misteri dan ketegangan",
+    arMotif: "دراما الزواج و التشويق والغموض",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "to-touch-infinity-martial-arts-strategy",
+    title: "To Touch Infinity [Martial Arts, Strategy]",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "hmaty-wbntha-atfqwa-alya-mkanwsh-ytwqawa-ally-hyhslhm",
+    title: "حماتي وبنتها اتفقوا عليا .. مكانوش يتوقعوا اللي هيحصلهم !",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["ar"]
   })
 ];
 
