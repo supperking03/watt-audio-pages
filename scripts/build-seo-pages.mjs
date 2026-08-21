@@ -2597,6 +2597,46 @@ const topics = [
     idMotif: "misteri dan ketegangan",
     arMotif: "التشويق والغموض",
     languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "cwtch-mereka-di-dijamin-seru-banget-mereka-sama-sama-anak-feb",
+    title: "CWTCH. Mereka Di Dijamin Seru Banget, Mereka Sama-sama Anak FEB",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "trong-sinh-toi-mac-ke-tra-nam-va-tra-xanh-toi-chon-ong-trum",
+    title: "Trọng Sinh Tôi Mặc Kệ Tra Nam Và Trà Xanh, Tôi Chọn Ông Trùm",
+    enMotif: "rebirth and green tea rival",
+    viMotif: "trọng sinh và trà xanh",
+    hiMotif: "पुनर्जन्म और छल भरी प्रतिद्वंद्वी",
+    idMotif: "terlahir kembali dan rival bermuka dua",
+    arMotif: "العودة إلى الماضي و المنافسة الماكرة",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "the-lich-king-reincarnates-as-a-baby",
+    title: "The Lich King Reincarnates As A Baby",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "pak-bu-aku-capek",
+    title: "Pak, Bu, Aku Capek",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["id"]
   })
 ];
 
