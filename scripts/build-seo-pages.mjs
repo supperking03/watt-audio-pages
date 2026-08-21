@@ -2637,6 +2637,26 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "sovereign-of-immortals-xianxia-novel-350k-words-updated",
+    title: "Sovereign Of Immortals（Xianxia Novel, 350K Words Updated.）",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "to-love-you-was-a-crime-against-reality",
+    title: "To Love You Was A Crime Against Reality",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["en"]
   })
 ];
 
