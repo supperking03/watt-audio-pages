@@ -2567,6 +2567,36 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "my-boyfriend-flew-to-iceland-ahead-of-me-with-my-best-friend-before-boarding-he-called-me",
+    title: "My Boyfriend Flew To Iceland Ahead Of Me With My Best Friend.Before Boarding, He Called Me...",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "a-time-loop-progression-fantasy-book-1-stubbed-book-2-stubbing-sept-9",
+    title: "A Time Loop Progression Fantasy (Book 1 Stubbed, Book 2 Stubbing Sept 9!)",
+    enMotif: "fantasy adventure",
+    viMotif: "tiên hiệp fantasy",
+    hiMotif: "फ़ैंटेसी एडवेंचर",
+    idMotif: "petualangan fantasi",
+    arMotif: "مغامرات خيالية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "pisah-aja-yuk-mas",
+    title: "Pisah Aja Yuk, Mas?",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["id"]
   })
 ];
 
