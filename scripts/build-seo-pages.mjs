@@ -2657,6 +2657,46 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "sau-khi-toi-khong-con-quan-lay-nguoi-yeu-qua-mang-anh-ay-lai-tranh-toi",
+    title: "Sau Khi Tôi Không Còn Quấn Lấy Người Yêu Qua Mạng, Anh Ấy Lại Tranh Tôi",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "toi-vua-bien-mat-khoi-tieu-thuyet-nam-chinh-lien-phat-dien-di-tim-toi",
+    title: "Tôi Vừa Biến Mất Khỏi Tiểu Thuyết, Nam Chính Liền Phát Điên Đi Tìm Tôi",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "babe-i-m-the-best-in-dolou-dalu-dolou-dalu-harem",
+    title: "Babe, I'm The Best In Dolou Dalu [Dolou Dalu, Harem]",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "my-ceo-wife-s-assistant-provoked-me-yet-she-comforted-him-after-i-beat-him-up",
+    title: "My CEO Wife’s Assistant Provoked Me, Yet She Comforted Him After I Beat Him Up",
+    enMotif: "rich-family romance",
+    viMotif: "hào môn",
+    hiMotif: "अमीर परिवार की रोमांस",
+    idMotif: "romansa keluarga kaya",
+    arMotif: "رومانسية العائلات الثرية",
+    languages: ["en"]
   })
 ];
 
