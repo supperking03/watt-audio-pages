@@ -2697,6 +2697,36 @@ const topics = [
     idMotif: "romansa keluarga kaya",
     arMotif: "رومانسية العائلات الثرية",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "sauteli-man-ne-rajakumari-ki-shadi-bhikhari-se-ki-phir-sach-ne-sabake-hosh-ura-die",
+    title: "सौतेली माँ ने राजकुमारी की शादी भिखारी से की... फिर सच ने सबके होश उड़ा दिए!",
+    enMotif: "marriage drama and family drama",
+    viMotif: "cưới gả và gia đình",
+    hiMotif: "शादी का ड्रामा और पारिवारिक ड्रामा",
+    idMotif: "drama pernikahan dan drama keluarga",
+    arMotif: "دراما الزواج و دراما عائلية",
+    languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "slt-bab-001-tolong-selamat-kan-dia-pak-dokter",
+    title: "SLT Bab.001. Tolong Selamat Kan Dia Pak Dokter",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "overworked-repairman-reborn-as-a-young-noble-that-everyone-thinks-he-s-weak",
+    title: "Overworked Repairman Reborn As A Young Noble That Everyone Thinks He’s Weak…",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["en"]
   })
 ];
 
