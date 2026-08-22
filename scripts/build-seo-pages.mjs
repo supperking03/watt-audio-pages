@@ -2727,6 +2727,66 @@ const topics = [
     idMotif: "misteri dan ketegangan",
     arMotif: "التشويق والغموض",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "arranged-mafia-marriage-by-bella-king",
+    title: "Arranged Mafia Marriage By Bella King",
+    enMotif: "marriage drama and suspense and mystery",
+    viMotif: "cưới gả và kinh dị bí ẩn",
+    hiMotif: "शादी का ड्रामा और सस्पेंस और रहस्य",
+    idMotif: "drama pernikahan dan misteri dan ketegangan",
+    arMotif: "دراما الزواج و التشويق والغموض",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "tra-xanh-choc-nham-dai-tieu-thu-mo-hon-nhat-bac-kinh",
+    title: "Trà Xanh Chọc Nhầm Đại Tiểu Thư Mỏ Hỗn Nhất Bắc Kinh",
+    enMotif: "green tea rival and school romance",
+    viMotif: "trà xanh và vườn trường",
+    hiMotif: "छल भरी प्रतिद्वंद्वी और कॉलेज रोमांस",
+    idMotif: "rival bermuka dua dan romansa sekolah",
+    arMotif: "المنافسة الماكرة و رومانسية المدرسة",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "the-magpie-and-the-archmage-book-2-complete",
+    title: "The Magpie And The Archmage [Book 2 Complete]",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "pernikahan-yang-dijodohkan-oleh-mafia",
+    title: "Pernikahan Yang Dijodohkan Oleh Mafia",
+    enMotif: "marriage drama and suspense and mystery",
+    viMotif: "cưới gả và kinh dị bí ẩn",
+    hiMotif: "शादी का ड्रामा और सस्पेंस और रहस्य",
+    idMotif: "drama pernikahan dan misteri dan ketegangan",
+    arMotif: "دراما الزواج و التشويق والغموض",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "sahbtha-kant-aqrb-wahdh-lyha-lkn-ally-amlth-fyha-kan-sdmh-alamr",
+    title: "صاحبتها كانت أقرب واحدة ليها.. لكن اللي عملته فيها كان صدمة العمر!",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["ar"]
+  }),
+  storyTitleTopic({
+    slug: "toi-bo-thoi-quan-nguoi-thanh-mai-lai-ghen-phat-dien",
+    title: "Tôi Bỏ Thói Quấn Người Thanh Mai Lại Ghen Phát Điên",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["vi"]
   })
 ];
 
