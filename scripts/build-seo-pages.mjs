@@ -2787,6 +2787,36 @@ const topics = [
     idMotif: "misteri dan ketegangan",
     arMotif: "التشويق والغموض",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "the-ghost-of-the-wastes-op-mc-magic-school-unique-magic-system-romance",
+    title: "The Ghost Of The Wastes [OP MC; Magic School, Unique Magic System; Romance]",
+    enMotif: "school romance, suspense and mystery and fantasy adventure",
+    viMotif: "vườn trường, kinh dị bí ẩn và tiên hiệp fantasy",
+    hiMotif: "कॉलेज रोमांस, सस्पेंस और रहस्य और फ़ैंटेसी एडवेंचर",
+    idMotif: "romansa sekolah, misteri dan ketegangan dan petualangan fantasi",
+    arMotif: "رومانسية المدرسة, التشويق والغموض و مغامرات خيالية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "i-can-see-your-hidden-potential-a-xianxia-sect-building-litrpg",
+    title: "I Can See Your Hidden Potential! (A Xianxia Sect-Building LitRPG)",
+    enMotif: "suspense and mystery and fantasy adventure",
+    viMotif: "kinh dị bí ẩn và tiên hiệp fantasy",
+    hiMotif: "सस्पेंस और रहस्य और फ़ैंटेसी एडवेंचर",
+    idMotif: "misteri dan ketegangan dan petualangan fantasi",
+    arMotif: "التشويق والغموض و مغامرات خيالية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "toi-dong-vai-thien-than-de-bach-nguyet-quang-tu-lo-ra-mong-vuot",
+    title: "Tôi Đóng Vai Thiên Thần, Để Bạch Nguyệt Quang Tự Lộ Ra Móng Vuốt",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
