@@ -2817,6 +2817,56 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "trong-sinh-toi-mac-ke-tra-nam-va-tra-xanh-pha-san-toi-thi-do-bac-dai",
+    title: "Trọng Sinh Tôi Mặc Kệ Tra Nam Và Trà Xanh Phá Sản, Tôi Thi đỗ Bắc Đại",
+    enMotif: "rebirth and green tea rival",
+    viMotif: "trọng sinh và trà xanh",
+    hiMotif: "पुनर्जन्म और छल भरी प्रतिद्वंद्वी",
+    idMotif: "terlahir kembali dan rival bermuka dua",
+    arMotif: "العودة إلى الماضي و المنافسة الماكرة",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "ghamandi-rajakumari-ki-3-aisi-sharten-jinhen-1108-raja-rajakumar-bhi-pura-nahin-kar-pae",
+    title: "घमंडी राजकुमारी की 3 ऐसी शर्तें… जिन्हें 1108 राजा-राजकुमार भी पूरा नहीं कर पाए!",
+    enMotif: "palace drama",
+    viMotif: "cổ trang",
+    hiMotif: "राजमहल ड्रामा",
+    idMotif: "drama kerajaan",
+    arMotif: "دراما القصور",
+    languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "co-ay-thue-toi-lam-ban-gai-gia-roi-lai-ghen-voi-chinh-minh",
+    title: "Cô Ấy Thuê Tôi Làm Bạn Gái Giả… Rồi Lại Ghen Với Chính Mình",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "rebuilding-rome-business-republic-building-book-2-complete",
+    title: "Rebuilding Rome [Business/Republic Building] [Book 2 Complete]",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "qi-like-tar-xianxia-progression-fantasy",
+    title: "Qi Like Tar [XianXia, Progression Fantasy]",
+    enMotif: "fantasy adventure",
+    viMotif: "tiên hiệp fantasy",
+    hiMotif: "फ़ैंटेसी एडवेंचर",
+    idMotif: "petualangan fantasi",
+    arMotif: "مغامرات خيالية",
+    languages: ["en"]
   })
 ];
 
