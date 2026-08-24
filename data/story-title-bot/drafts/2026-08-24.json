@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T03:00:04.545Z",
+  "generatedAt": "2026-08-24T08:00:05.232Z",
   "date": "2026-08-24",
   "mode": "network",
   "languages": [
@@ -9,48 +9,12 @@
     "id",
     "ar"
   ],
-  "sourceCount": 1184,
+  "sourceCount": 1159,
   "scoring": "v4-multi-market-opportunity-demand-minus-audio-competition",
   "candidates": [
     {
-      "title": "Trọng Sinh Không Cản Bạn Trai để Em Gái Nuôi Cắn để Lại Sẹo",
-      "slug": "trong-sinh-khong-can-ban-trai-de-em-gai-nuoi-can-de-lai-seo",
-      "language": "vi",
-      "score": 85,
-      "demandScore": 80,
-      "audioSignalScore": 11,
-      "audioCompetitionScore": 1,
-      "audioCompetitionLevel": "low",
-      "opportunityScore": 85,
-      "enMotif": "rebirth",
-      "viMotif": "trọng sinh",
-      "hiMotif": "पुनर्जन्म",
-      "idMotif": "terlahir kembali",
-      "arMotif": "العودة إلى الماضي",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "language": "vi",
-          "query": "truyện ngôn tình audio full",
-          "text": "[Full audio + Tô màu] Trọng sinh không cản bạn trai để em gái nuôi cắn để lại sẹo | Ác Nữ Audio"
-        },
-        {
-          "source": "youtube-search",
-          "language": "vi",
-          "query": "truyện trọng sinh audio",
-          "text": "[Full audio + Tô màu] Trọng sinh không cản bạn trai để em gái nuôi cắn để lại sẹo | Ác Nữ Audio"
-        },
-        {
-          "source": "youtube-audio-competition",
-          "query": "\"Trọng Sinh Không Cản Bạn Trai để Em Gái Nuôi Cắn để Lại Sẹo\" \"truyện audio\"",
-          "text": "[Full audio + Tô màu] Trọng sinh không cản bạn trai để em gái nuôi cắn để lại sẹo | Ác Nữ Audio"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "Sau Khi Kẻ Qua Đường là Tôi Đòi Chia Tay Nam Chính, Hắn Phát Điên",
-      "slug": "sau-khi-ke-qua-duong-la-toi-doi-chia-tay-nam-chinh-han-phat-dien",
+      "title": "Thế Thân cho Chị Gái, Tôi Được Nhà Chồng Chống Lưng Vả Mặt Trà Xanh",
+      "slug": "the-than-cho-chi-gai-toi-duoc-nha-chong-chong-lung-va-mat-tra-xanh",
       "language": "vi",
       "score": 74,
       "demandScore": 72,
@@ -58,6 +22,41 @@
       "audioCompetitionScore": 1,
       "audioCompetitionLevel": "low",
       "opportunityScore": 74,
+      "enMotif": "green tea rival",
+      "viMotif": "trà xanh",
+      "hiMotif": "छल भरी प्रतिद्वंद्वी",
+      "idMotif": "rival bermuka dua",
+      "arMotif": "المنافسة الماكرة",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "[Truyện Audio Full] | THẾ THÂN CHO CHỊ GÁI, TÔI ĐƯỢC NHÀ CHỒNG CHỐNG LƯNG VẢ MẶT TRÀ XANH"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Thế Thân cho Chị Gái, Tôi Được Nhà Chồng Chống Lưng Vả Mặt Trà Xanh\" \"truyện audio\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Thế Thân cho Chị Gái, Tôi Được Nhà Chồng Chống Lưng Vả Mặt Trà Xanh\" audio",
+          "text": "[Truyện Audio Full] | THẾ THÂN CHO CHỊ GÁI, TÔI ĐƯỢC NHÀ CHỒNG CHỐNG LƯNG VẢ MẶT TRÀ XANH"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "नदी किनारे रहने वाली दो बहनों की किस्मत ऐसी चमकी कि पूरा गांव हैरान रह गया",
+      "slug": "nadi-kinare-rahane-vali-do-bahanon-ki-kismat-aisi-chamaki-ki-pura-ganv-hairan-rah-gaya",
+      "language": "hi",
+      "score": 72,
+      "demandScore": 64,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "none",
+      "opportunityScore": 72,
       "enMotif": "Vietnamese web fiction and romance drama",
       "viMotif": "truyện mạng Việt và romance drama",
       "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
@@ -66,14 +65,19 @@
       "evidence": [
         {
           "source": "youtube-search",
-          "language": "vi",
-          "query": "truyện wattpad audio full",
-          "text": "[Đam Mỹ Audio] [Full] SAU KHI KẺ QUA ĐƯỜNG LÀ TÔI ĐÒI CHIA TAY NAM CHÍNH, HẮN PHÁT ĐIÊN"
+          "language": "hi",
+          "query": "हिंदी कहानी ऑडियो पूरी",
+          "text": "नदी किनारे रहने वाली दो बहनों की किस्मत ऐसी चमकी कि पूरा गांव हैरान रह गया😱 | Hindi Kahani "
         },
         {
-          "source": "youtube-audio-competition",
-          "query": "\"Sau Khi Kẻ Qua Đường là Tôi Đòi Chia Tay Nam Chính, Hắn Phát Điên\" audio",
-          "text": "[Đam Mỹ Audio] [Full] SAU KHI KẺ QUA ĐƯỜNG LÀ TÔI ĐÒI CHIA TAY NAM CHÍNH, HẮN PHÁT ĐIÊN"
+          "source": "competition-error",
+          "query": "\"नदी किनारे रहने वाली दो बहनों की किस्मत ऐसी चमकी कि पूरा गांव हैरान रह गया\" कहानी",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"नदी किनारे रहने वाली दो बहनों की किस्मत ऐसी चमकी कि पूरा गांव हैरान रह गया\" audio story",
+          "text": "fetch failed"
         }
       ],
       "status": "draft"
@@ -109,6 +113,41 @@
           "source": "youtube-audio-competition",
           "query": "\"Tôi Cá Mặn Mỏ Hỗn Nhưng Đại Boss Lại Càng Nghiện Tôi\" audio",
           "text": "[Truyện Full] TÔI CÁ MẶN MỎ HỖN NHƯNG ĐẠI BOSS LẠI CÀNG NGHIỆN TÔI | Tịch Nhan Audio"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "पिछले जन्म का रहस्य और माथे का निशान",
+      "slug": "pichhale-janm-ka-rahasy-aur-mathe-ka-nishan",
+      "language": "hi",
+      "score": 60,
+      "demandScore": 52,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "none",
+      "opportunityScore": 60,
+      "enMotif": "suspense and mystery",
+      "viMotif": "kinh dị bí ẩn",
+      "hiMotif": "सस्पेंस और रहस्य",
+      "idMotif": "misteri dan ketegangan",
+      "arMotif": "التشويق والغموض",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "hi",
+          "query": "हिंदी कहानी ऑडियो पूरी",
+          "text": "पिछले जन्म का रहस्य और माथे का निशान | Moral story |Hindi story | cartoon stories | Hindi Kahaniya"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"पिछले जन्म का रहस्य और माथे का निशान\" ऑडियो",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"पिछले जन्म का रहस्य और माथे का निशान\" कहानी",
+          "text": "fetch failed"
         }
       ],
       "status": "draft"
@@ -184,6 +223,41 @@
       "status": "draft"
     },
     {
+      "title": "Trùng Sinh Ngày Cha Mẹ Ly Hôn, Em Gái Đổi Lựa Chọn Còn Tôi Đổi Đời",
+      "slug": "trung-sinh-ngay-cha-me-ly-hon-em-gai-doi-lua-chon-con-toi-doi-doi",
+      "language": "vi",
+      "score": 58,
+      "demandScore": 62,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 58,
+      "enMotif": "rebirth and family drama",
+      "viMotif": "trọng sinh và gia đình",
+      "hiMotif": "पुनर्जन्म और पारिवारिक ड्रामा",
+      "idMotif": "terlahir kembali dan drama keluarga",
+      "arMotif": "العودة إلى الماضي و دراما عائلية",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện trọng sinh audio",
+          "text": "Full Audio | Trùng Sinh Ngày Cha Mẹ Ly Hôn, Em Gái Đổi Lựa Chọn Còn Tôi Đổi Đời | Bít Tết Audio"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Trùng Sinh Ngày Cha Mẹ Ly Hôn, Em Gái Đổi Lựa Chọn Còn Tôi Đổi Đời\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Trùng Sinh Ngày Cha Mẹ Ly Hôn, Em Gái Đổi Lựa Chọn Còn Tôi Đổi Đời\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
       "title": "[COMPLETE] The Immortal Berserker Ch 1-522 ( Fantasy, Weak-to-strong, Cultivation)",
       "slug": "complete-the-immortal-berserker-ch-1-522-fantasy-weak-to-strong-cultivation",
       "language": "en",
@@ -218,58 +292,6 @@
         {
           "source": "competition-error",
           "query": "\"[COMPLETE] The Immortal Berserker Ch 1-522 ( Fantasy, Weak-to-strong, Cultivation)\" audio",
-          "text": "fetch failed"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "Dongeng Bahasa Indonesia Sebelum Tidur",
-      "slug": "dongeng-bahasa-indonesia-sebelum-tidur",
-      "language": "id",
-      "score": 58,
-      "demandScore": 56,
-      "audioSignalScore": 14,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "unknown",
-      "opportunityScore": 58,
-      "enMotif": "suspense and mystery",
-      "viMotif": "kinh dị bí ẩn",
-      "hiMotif": "सस्पेंस और रहस्य",
-      "idMotif": "misteri dan ketegangan",
-      "arMotif": "التشويق والغموض",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "language": "id",
-          "query": "cerita audio indonesia full",
-          "text": "Legenda Keong Mas | Dongeng Bahasa Indonesia Sebelum Tidur | Cerita Rakyat dan Kisah Nusantara"
-        },
-        {
-          "source": "youtube-search",
-          "language": "id",
-          "query": "cerita audio indonesia full",
-          "text": "Sangkuriang dan Tangkuban Perahu | Dongeng Bahasa Indonesia Sebelum Tidur | Cerita Rakyat Nusantara"
-        },
-        {
-          "source": "youtube-search",
-          "language": "id",
-          "query": "cerita audio indonesia full",
-          "text": "Malin Kundang | Dongeng Bahasa Indonesia Sebelum Tidur | Cerita Rakyat Nusantara Sumatera | Kartun"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"Dongeng Bahasa Indonesia Sebelum Tidur\" audio",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"Dongeng Bahasa Indonesia Sebelum Tidur\" cerita audio",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"Dongeng Bahasa Indonesia Sebelum Tidur\" audiobook",
           "text": "fetch failed"
         }
       ],
@@ -602,6 +624,46 @@
       "status": "draft"
     },
     {
+      "title": "Lupakan Yang Terjadi Tadi",
+      "slug": "lupakan-yang-terjadi-tadi",
+      "language": "id",
+      "score": 52,
+      "demandScore": 56,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 52,
+      "enMotif": "transmigration",
+      "viMotif": "xuyên sách",
+      "hiMotif": "दूसरी दुनिया",
+      "idMotif": "pindah dunia",
+      "arMotif": "الانتقال إلى عالم آخر",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "id",
+          "query": "cerita wattpad audio lengkap",
+          "text": "Lupakan Yang Terjadi Tadi - ARABELLA TRANSMIGRATION - By im_starla"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Lupakan Yang Terjadi Tadi\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Lupakan Yang Terjadi Tadi\" cerita audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Lupakan Yang Terjadi Tadi\" audiobook",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
       "title": "د. نبيل فاروق (جريمة في مدينة متطورة للغاية في اعماق البحر!)",
       "slug": "d-nbyl-farwq-jrymh-fy-mdynh-mttwrh-llghayh-fy-aamaq-albhr",
       "language": "ar",
@@ -636,6 +698,92 @@
         {
           "source": "competition-error",
           "query": "\"د. نبيل فاروق (جريمة في مدينة متطورة للغاية في اعماق البحر!)\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Detective Story- क़त्ल का रहस्य",
+      "slug": "detective-story-qatl-ka-rahasy",
+      "language": "hi",
+      "score": 52,
+      "demandScore": 53,
+      "audioSignalScore": 11,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 52,
+      "enMotif": "suspense and mystery",
+      "viMotif": "kinh dị bí ẩn",
+      "hiMotif": "सस्पेंस और रहस्य",
+      "idMotif": "misteri dan ketegangan",
+      "arMotif": "التشويق والغموض",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "hi",
+          "query": "हिंदी सस्पेंस कहानी ऑडियो",
+          "text": "Detective Story- क़त्ल का रहस्य| Detective Mystery Of Malvika| Detective Stories In Hindi| Jasus"
+        },
+        {
+          "source": "youtube-search",
+          "language": "hi",
+          "query": "hindi audio story full",
+          "text": "Detective Story- क़त्ल का रहस्य| Detective Mystery Of Malvika| Detective Stories In Hindi| Jasus"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Detective Story- क़त्ल का रहस्य\" ऑडियो",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Detective Story- क़त्ल का रहस्य\" कहानी",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Detective Story- क़त्ल का रहस्य\" audio story",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "क्या जासूस अपराधी से ज्यादा होशियार साबित होगा? Detective Story",
+      "slug": "kya-jasus-aparadhi-se-jyada-hoshiyar-sabit-hoga-detective-story",
+      "language": "hi",
+      "score": 50,
+      "demandScore": 54,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 50,
+      "enMotif": "suspense and mystery",
+      "viMotif": "kinh dị bí ẩn",
+      "hiMotif": "सस्पेंस और रहस्य",
+      "idMotif": "misteri dan ketegangan",
+      "arMotif": "التشويق والغموض",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "hi",
+          "query": "हिंदी सस्पेंस कहानी ऑडियो",
+          "text": "क्या जासूस अपराधी से ज्यादा होशियार साबित होगा? Detective story"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"क्या जासूस अपराधी से ज्यादा होशियार साबित होगा? Detective Story\" ऑडियो",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"क्या जासूस अपराधी से ज्यादा होशियार साबित होगा? Detective Story\" कहानी",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"क्या जासूस अपराधी से ज्यादा होशियार साबित होगा? Detective Story\" audio story",
           "text": "fetch failed"
         }
       ],
@@ -682,15 +830,15 @@
       "status": "draft"
     },
     {
-      "title": "Phir Ek Baar (फिर एक बार)",
-      "slug": "phir-ek-baar-phir-ek-bar",
+      "title": "तेरे बिन (दिल को छू लेने वाली एक प्रेम कहानी)",
+      "slug": "tere-bin-dil-ko-chhu-lene-vali-ek-prem-kahani",
       "language": "hi",
-      "score": 44,
-      "demandScore": 48,
+      "score": 48,
+      "demandScore": 52,
       "audioSignalScore": 8,
       "audioCompetitionScore": 0,
       "audioCompetitionLevel": "unknown",
-      "opportunityScore": 44,
+      "opportunityScore": 48,
       "enMotif": "Vietnamese web fiction and romance drama",
       "viMotif": "truyện mạng Việt và romance drama",
       "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
@@ -700,62 +848,22 @@
         {
           "source": "youtube-search",
           "language": "hi",
-          "query": "हिंदी कहानी ऑडियो पूरी",
-          "text": "Phir Ek Baar (फिर एक बार) |  Kahaani Express with Neelesh Misra | Audio Story"
+          "query": "हिंदी प्रेम कहानी ऑडियो",
+          "text": "तेरे बिन (दिल को छू लेने वाली एक प्रेम कहानी) Hindi Kahani | Kahaniya | Love City"
         },
         {
           "source": "competition-error",
-          "query": "\"Phir Ek Baar (फिर एक बार)\" ऑडियो",
+          "query": "\"तेरे बिन (दिल को छू लेने वाली एक प्रेम कहानी)\" ऑडियो",
           "text": "fetch failed"
         },
         {
           "source": "competition-error",
-          "query": "\"Phir Ek Baar (फिर एक बार)\" कहानी",
+          "query": "\"तेरे बिन (दिल को छू लेने वाली एक प्रेम कहानी)\" कहानी",
           "text": "fetch failed"
         },
         {
           "source": "competition-error",
-          "query": "\"Phir Ek Baar (फिर एक बार)\" audio story",
-          "text": "fetch failed"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "बीरबल के दिमागी खेल में उलझ गया पूरा दरबार इंटरेस्टिंग कहानी",
-      "slug": "birabal-ke-dimagi-khel-men-ulajh-gaya-pura-darabar-intaresting-kahani",
-      "language": "hi",
-      "score": 44,
-      "demandScore": 48,
-      "audioSignalScore": 8,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "unknown",
-      "opportunityScore": 44,
-      "enMotif": "Vietnamese web fiction and romance drama",
-      "viMotif": "truyện mạng Việt và romance drama",
-      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
-      "idMotif": "cerita online dan drama romansa",
-      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "language": "hi",
-          "query": "हिंदी कहानी ऑडियो पूरी",
-          "text": "बीरबल के दिमागी खेल में उलझ गया 🤔 पूरा दरबार इंटरेस्टिंग कहानी | interesting akbar birbal new kahani"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"बीरबल के दिमागी खेल में उलझ गया पूरा दरबार इंटरेस्टिंग कहानी\" ऑडियो",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"बीरबल के दिमागी खेल में उलझ गया पूरा दरबार इंटरेस्टिंग कहानी\" कहानी",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"बीरबल के दिमागी खेल में उलझ गया पूरा दरबार इंटरेस्टिंग कहानी\" audio story",
+          "query": "\"तेरे बिन (दिल को छू लेने वाली एक प्रेम कहानी)\" audio story",
           "text": "fetch failed"
         }
       ],
@@ -802,86 +910,6 @@
         {
           "source": "competition-error",
           "query": "\"رواية ولو بعد حين\" audio",
-          "text": "fetch failed"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "कंजूस के घर आए मेहमान",
-      "slug": "kanjus-ke-ghar-aae-mehaman",
-      "language": "hi",
-      "score": 42,
-      "demandScore": 46,
-      "audioSignalScore": 8,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "unknown",
-      "opportunityScore": 42,
-      "enMotif": "suspense and mystery",
-      "viMotif": "kinh dị bí ẩn",
-      "hiMotif": "सस्पेंस और रहस्य",
-      "idMotif": "misteri dan ketegangan",
-      "arMotif": "التشويق والغموض",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "language": "hi",
-          "query": "हिंदी कहानी ऑडियो पूरी",
-          "text": "कंजूस के घर आए मेहमान | kanjoos Ke Ghar Aaye Mehman | Hindi stories | Hindi Emotional Hindi Story"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"कंजूस के घर आए मेहमान\" ऑडियो",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"कंजूस के घर आए मेहमान\" कहानी",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"कंजूस के घर आए मेहमान\" audio story",
-          "text": "fetch failed"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "आपको भी रुला देगी ये Love Story",
-      "slug": "aapako-bhi-rula-degi-ye-love-story",
-      "language": "hi",
-      "score": 42,
-      "demandScore": 46,
-      "audioSignalScore": 8,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "unknown",
-      "opportunityScore": 42,
-      "enMotif": "family drama and suspense and mystery",
-      "viMotif": "gia đình và kinh dị bí ẩn",
-      "hiMotif": "पारिवारिक ड्रामा और सस्पेंस और रहस्य",
-      "idMotif": "drama keluarga dan misteri dan ketegangan",
-      "arMotif": "دراما عائلية و التشويق والغموض",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "language": "hi",
-          "query": "हिंदी प्रेम कहानी ऑडियो",
-          "text": "आपको भी रुला देगी ये Love Story || Very Sad Heart Touching Painful Love Story - Mahesh Chaudhary"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"आपको भी रुला देगी ये Love Story\" ऑडियो",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"आपको भी रुला देगी ये Love Story\" कहानी",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"आपको भी रुला देगी ये Love Story\" audio story",
           "text": "fetch failed"
         }
       ],
@@ -962,46 +990,6 @@
         {
           "source": "competition-error",
           "query": "\"شرارة ال عربيد بارت( الاول )كامل #\" audio",
-          "text": "fetch failed"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "प्रेम कहानी पूरी फिल्म हिंदी में",
-      "slug": "prem-kahani-puri-philm-hindi-men",
-      "language": "hi",
-      "score": 40,
-      "demandScore": 52,
-      "audioSignalScore": 0,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "unknown",
-      "opportunityScore": 40,
-      "enMotif": "Vietnamese web fiction and romance drama",
-      "viMotif": "truyện mạng Việt và romance drama",
-      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
-      "idMotif": "cerita online dan drama romansa",
-      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
-      "evidence": [
-        {
-          "source": "google-demand-suggest",
-          "language": "hi",
-          "query": "हिंदी प्रेम कहानी पूरी",
-          "text": "प्रेम कहानी पूरी फिल्म हिंदी में"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"प्रेम कहानी पूरी फिल्म हिंदी में\" ऑडियो",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"प्रेम कहानी पूरी फिल्म हिंदी में\" कहानी",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"प्रेम कहानी पूरी फिल्म हिंदी में\" audio story",
           "text": "fetch failed"
         }
       ],
