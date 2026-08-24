@@ -2947,6 +2947,36 @@ const topics = [
     idMotif: "komedi",
     arMotif: "الكوميديا",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "trong-sinh-toi-mac-ke-em-gai-lay-chong-pha-san",
+    title: "Trọng Sinh Tôi Mặc Kệ Em Gái Lấy Chồng Phá Sản",
+    enMotif: "rebirth",
+    viMotif: "trọng sinh",
+    hiMotif: "पुनर्जन्म",
+    idMotif: "terlahir kembali",
+    arMotif: "العودة إلى الماضي",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "toi-khong-theo-duoi-nua-anh-lai-ghen-dien-roi",
+    title: "Tôi Không Theo Đuổi Nữa Anh Lại Ghen Điên Rồi",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "death-s-job-reaper-litrpg-weak-to-strong",
+    title: "Death's Job [Reaper LitRPG/Weak To Strong]",
+    enMotif: "fantasy adventure",
+    viMotif: "tiên hiệp fantasy",
+    hiMotif: "फ़ैंटेसी एडवेंचर",
+    idMotif: "petualangan fantasi",
+    arMotif: "مغامرات خيالية",
+    languages: ["en"]
   })
 ];
 
