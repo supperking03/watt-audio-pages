@@ -2897,6 +2897,26 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "trong-sinh-khong-can-ban-trai-de-em-gai-nuoi-can-de-lai-seo",
+    title: "Trọng Sinh Không Cản Bạn Trai để Em Gái Nuôi Cắn để Lại Sẹo",
+    enMotif: "rebirth",
+    viMotif: "trọng sinh",
+    hiMotif: "पुनर्जन्म",
+    idMotif: "terlahir kembali",
+    arMotif: "العودة إلى الماضي",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "sau-khi-ke-qua-duong-la-toi-doi-chia-tay-nam-chinh-han-phat-dien",
+    title: "Sau Khi Kẻ Qua Đường là Tôi Đòi Chia Tay Nam Chính, Hắn Phát Điên",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
