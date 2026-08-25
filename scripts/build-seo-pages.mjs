@@ -2977,6 +2977,26 @@ const topics = [
     idMotif: "petualangan fantasi",
     arMotif: "مغامرات خيالية",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "vo-nho-xinh-dep-cua-toi-that-ra-la-dai-thieu-gia",
+    title: "Vợ Nhỏ Xinh Đẹp Của Tôi Thật Ra Là Đại Thiếu Gia",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "bilyonaryong-kauuwi-lang-sa-pinas-na-love-at-first-sight-sa-kasambahay-na-mistulang-anghel-s",
+    title: "Bilyonaryong Kauuwi Lang Sa Pinas, Na LOVE AT FIRST SIGHT Sa KASAMBAHAY Na Mistulang Anghel Sa Ganda",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["en"]
   })
 ];
 
