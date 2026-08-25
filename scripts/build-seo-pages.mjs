@@ -2997,6 +2997,36 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "iphone-ki-jid-men-ujara-pura-parivar-old-video-dekh-ro-pare-log",
+    title: "IPhone की जिद में उजड़ा पूरा परिवार, Old Video देख रो पड़े लोग",
+    enMotif: "family drama and suspense and mystery",
+    viMotif: "gia đình và kinh dị bí ẩn",
+    hiMotif: "पारिवारिक ड्रामा और सस्पेंस और रहस्य",
+    idMotif: "drama keluarga dan misteri dan ketegangan",
+    arMotif: "دراما عائلية و التشويق والغموض",
+    languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "nam-than-hoc-ba-la-vi-hon-phu-nuoi-tu-be-cua-toi",
+    title: "Nam Thần Học Bá Là Vị Hôn Phu Nuôi Từ Bé Của Tôi",
+    enMotif: "school romance",
+    viMotif: "vườn trường",
+    hiMotif: "कॉलेज रोमांस",
+    idMotif: "romansa sekolah",
+    arMotif: "رومانسية المدرسة",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "aalu-ne-pure-ganv-ki-madad-ki-ai-vegetable-storyvegetable-story",
+    title: "आलू ने पूरे गाँव की मदद की Ai Vegetable Storyvegetable Story",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["hi"]
   })
 ];
 
