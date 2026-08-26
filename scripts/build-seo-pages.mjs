@@ -3047,6 +3047,26 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "hocus-pocus-hypothesis-a-scientific-isekai",
+    title: "Hocus, Pocus, Hypothesis [A Scientific Isekai]",
+    enMotif: "transmigration",
+    viMotif: "xuyên sách",
+    hiMotif: "दूसरी दुनिया",
+    idMotif: "pindah dunia",
+    arMotif: "الانتقال إلى عالم آخر",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "coreless-is-complete-at-330k-words",
+    title: "Coreless Is Complete At ~330k Words)",
+    enMotif: "fantasy adventure",
+    viMotif: "tiên hiệp fantasy",
+    hiMotif: "फ़ैंटेसी एडवेंचर",
+    idMotif: "petualangan fantasi",
+    arMotif: "مغامرات خيالية",
+    languages: ["en"]
   })
 ];
 
