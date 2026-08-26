@@ -3027,6 +3027,26 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "dwstwyfsky-mn-afdl-aamalh",
+    title: "دوستويفسكي (من أفضل أعماله",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["ar"]
+  }),
+  storyTitleTopic({
+    slug: "cong-luoc-that-bai-nu-phu-toi-day-khong-them-dien-nua",
+    title: "【 】công Lược Thất Bại, Nữ Phụ Tôi Đây Không Thèm Diễn Nữa",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
