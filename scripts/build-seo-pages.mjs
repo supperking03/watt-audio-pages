@@ -3097,6 +3097,26 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "please-don-t-eat-the-guinea-pig",
+    title: "Please Don't Eat The Guinea Pig",
+    enMotif: "transmigration",
+    viMotif: "xuyên sách",
+    hiMotif: "दूसरी दुनिया",
+    idMotif: "pindah dunia",
+    arMotif: "الانتقال إلى عالم آخر",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "savant-barbarian-litrpg-adventure-kingdom-tribe-building",
+    title: "Savant Barbarian [LitRPG Adventure, Kingdom(Tribe)-building]",
+    enMotif: "fantasy adventure",
+    viMotif: "tiên hiệp fantasy",
+    hiMotif: "फ़ैंटेसी एडवेंचर",
+    idMotif: "petualangan fantasi",
+    arMotif: "مغامرات خيالية",
+    languages: ["en"]
   })
 ];
 
