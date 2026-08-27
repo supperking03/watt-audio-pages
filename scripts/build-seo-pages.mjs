@@ -3087,6 +3087,16 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "buat-kamu-yg-suka-baca-jgn-sampai-ketinggalan-karna-belum-ini",
+    title: "Buat Kamu Yg Suka Baca , Jgn Sampai Ketinggalan Karna Belum Ini",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["id"]
   })
 ];
 

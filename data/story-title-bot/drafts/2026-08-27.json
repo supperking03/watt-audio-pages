@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T03:00:05.922Z",
+  "generatedAt": "2026-08-27T08:00:05.254Z",
   "date": "2026-08-27",
   "mode": "network",
   "languages": [
@@ -9,19 +9,49 @@
     "id",
     "ar"
   ],
-  "sourceCount": 1227,
+  "sourceCount": 1168,
   "scoring": "v4-multi-market-opportunity-demand-minus-audio-competition",
   "candidates": [
     {
-      "title": "Mê Trùm Trường Vì Đẹp Trai, Ai Ngờ Một Vết Sẹo Khiến Tôi Tỉnh Ngộ",
-      "slug": "me-trum-truong-vi-dep-trai-ai-ngo-mot-vet-seo-khien-toi-tinh-ngo",
-      "language": "vi",
-      "score": 74,
-      "demandScore": 72,
+      "title": "Buat Kamu Yg Suka Baca , Jgn Sampai Ketinggalan Karna Belum Ini",
+      "slug": "buat-kamu-yg-suka-baca-jgn-sampai-ketinggalan-karna-belum-ini",
+      "language": "id",
+      "score": 78,
+      "demandScore": 70,
       "audioSignalScore": 8,
-      "audioCompetitionScore": 1,
-      "audioCompetitionLevel": "low",
-      "opportunityScore": 74,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "none",
+      "opportunityScore": 78,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "id",
+          "query": "wattpad indonesia baca cerita",
+          "text": "Buat Kamu Yg Suka Baca Wattpad, Jgn sampai ketinggalan karna belum baca cerita ini #shorts #wattpad"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Buat Kamu Yg Suka Baca , Jgn Sampai Ketinggalan Karna Belum Ini\" audiobook",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Quên Tắt Mic Trêu Đại Ca Trường, Tôi Bị Anh Bắt Về Làm Vợ",
+      "slug": "quen-tat-mic-treu-dai-ca-truong-toi-bi-anh-bat-ve-lam-vo",
+      "language": "vi",
+      "score": 58,
+      "demandScore": 62,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 58,
       "enMotif": "school romance",
       "viMotif": "vườn trường",
       "hiMotif": "कॉलेज रोमांस",
@@ -31,181 +61,29 @@
         {
           "source": "youtube-search",
           "language": "vi",
-          "query": "truyện wattpad audio full",
-          "text": "Truyện Full | Mê Trùm Trường Vì Đẹp Trai, Ai Ngờ Một Vết Sẹo Khiến Tôi Tỉnh Ngộ | Xuân Xuân Audio"
+          "query": "truyện ngôn tình audio full",
+          "text": "Quên Tắt Mic Trêu Đại Ca Trường, Tôi Bị Anh Bắt Về Làm Vợ | Truyện Full"
         },
         {
-          "source": "youtube-audio-competition",
-          "query": "\"Mê Trùm Trường Vì Đẹp Trai, Ai Ngờ Một Vết Sẹo Khiến Tôi Tỉnh Ngộ\" \"truyện audio\"",
-          "text": "Truyện Full | Mê Trùm Trường Vì Đẹp Trai, Ai Ngờ Một Vết Sẹo Khiến Tôi Tỉnh Ngộ | Xuân Xuân Audio"
+          "source": "competition-error",
+          "query": "\"Quên Tắt Mic Trêu Đại Ca Trường, Tôi Bị Anh Bắt Về Làm Vợ\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Quên Tắt Mic Trêu Đại Ca Trường, Tôi Bị Anh Bắt Về Làm Vợ\" \"truyện audio\"",
+          "text": "fetch failed"
         }
       ],
       "status": "draft"
     },
     {
-      "title": "Sợ Tôi Bỏ Rơi, Na9 Lại Xích Chân Tôi Để Cưỡng Ép Yêu Tiếp Rồi",
-      "slug": "so-toi-bo-roi-na9-lai-xich-chan-toi-de-cuong-ep-yeu-tiep-roi",
+      "title": "NAM THẦN CƯNG CHIỀU VỢ NHỎ TỪ BÉ ~ Mót",
+      "slug": "nam-than-cung-chieu-vo-nho-tu-be-mot",
       "language": "vi",
-      "score": 74,
-      "demandScore": 72,
-      "audioSignalScore": 8,
-      "audioCompetitionScore": 1,
-      "audioCompetitionLevel": "low",
-      "opportunityScore": 74,
-      "enMotif": "Vietnamese web fiction and romance drama",
-      "viMotif": "truyện mạng Việt và romance drama",
-      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
-      "idMotif": "cerita online dan drama romansa",
-      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "language": "vi",
-          "query": "truyện wattpad audio full",
-          "text": "SỢ TÔI BỎ RƠI, NA9 LẠI XÍCH CHÂN TÔI ĐỂ CƯỠNG ÉP YÊU TIẾP RỒI | Bủm Bủm TV | Truyện Audio"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"Sợ Tôi Bỏ Rơi, Na9 Lại Xích Chân Tôi Để Cưỡng Ép Yêu Tiếp Rồi\" \"truyện audio\"",
-          "text": "fetch failed"
-        },
-        {
-          "source": "youtube-audio-competition",
-          "query": "\"Sợ Tôi Bỏ Rơi, Na9 Lại Xích Chân Tôi Để Cưỡng Ép Yêu Tiếp Rồi\" audio",
-          "text": "SỢ TÔI BỎ RƠI, NA9 LẠI XÍCH CHÂN TÔI ĐỂ CƯỠNG ÉP YÊU TIẾP RỒI | Bủm Bủm TV | Truyện Audio"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "Hoa Khôi Tự Nhận Mình là Vợ Hồi Nhỏ của Nam Thần",
-      "slug": "hoa-khoi-tu-nhan-minh-la-vo-hoi-nho-cua-nam-than",
-      "language": "vi",
-      "score": 62,
-      "demandScore": 66,
-      "audioSignalScore": 8,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "unknown",
-      "opportunityScore": 62,
-      "enMotif": "Vietnamese web fiction and romance drama",
-      "viMotif": "truyện mạng Việt và romance drama",
-      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
-      "idMotif": "cerita online dan drama romansa",
-      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "language": "vi",
-          "query": "truyện wattpad audio full",
-          "text": "Truyện Audio Full | HOA KHÔI TỰ NHẬN MÌNH LÀ VỢ HỒI NHỎ CỦA NAM THẦN | Mạn Mạn Audio"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"Hoa Khôi Tự Nhận Mình là Vợ Hồi Nhỏ của Nam Thần\" audio",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"Hoa Khôi Tự Nhận Mình là Vợ Hồi Nhỏ của Nam Thần\" \"truyện audio\"",
-          "text": "fetch failed"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "Chị Họ Bày Kèo Cược Tôi Lật Xe Khi Yêu Qua Mạng",
-      "slug": "chi-ho-bay-keo-cuoc-toi-lat-xe-khi-yeu-qua-mang",
-      "language": "vi",
-      "score": 62,
-      "demandScore": 66,
-      "audioSignalScore": 8,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "unknown",
-      "opportunityScore": 62,
-      "enMotif": "Vietnamese web fiction and romance drama",
-      "viMotif": "truyện mạng Việt và romance drama",
-      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
-      "idMotif": "cerita online dan drama romansa",
-      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "language": "vi",
-          "query": "truyện wattpad audio full",
-          "text": "Full | Lanh Audio Số 516 | CHỊ HỌ BÀY KÈO CƯỢC TÔI LẬT XE KHI YÊU QUA MẠNG"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"Chị Họ Bày Kèo Cược Tôi Lật Xe Khi Yêu Qua Mạng\" audio",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"Chị Họ Bày Kèo Cược Tôi Lật Xe Khi Yêu Qua Mạng\" \"truyện audio\"",
-          "text": "fetch failed"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "Dongeng Bahasa Indonesia Sebelum Tidur",
-      "slug": "dongeng-bahasa-indonesia-sebelum-tidur",
-      "language": "id",
       "score": 58,
-      "demandScore": 56,
-      "audioSignalScore": 14,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "unknown",
-      "opportunityScore": 58,
-      "enMotif": "suspense and mystery",
-      "viMotif": "kinh dị bí ẩn",
-      "hiMotif": "सस्पेंस और रहस्य",
-      "idMotif": "misteri dan ketegangan",
-      "arMotif": "التشويق والغموض",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "language": "id",
-          "query": "cerita audio indonesia full",
-          "text": "Legenda Keong Mas | Dongeng Bahasa Indonesia Sebelum Tidur | Cerita Rakyat dan Kisah Nusantara"
-        },
-        {
-          "source": "youtube-search",
-          "language": "id",
-          "query": "cerita audio indonesia full",
-          "text": "Sangkuriang dan Tangkuban Perahu | Dongeng Bahasa Indonesia Sebelum Tidur | Cerita Rakyat Nusantara"
-        },
-        {
-          "source": "youtube-search",
-          "language": "id",
-          "query": "cerita audio indonesia full",
-          "text": "Malin Kundang | Dongeng Bahasa Indonesia Sebelum Tidur | Cerita Rakyat Nusantara Sumatera | Kartun"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"Dongeng Bahasa Indonesia Sebelum Tidur\" audio",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"Dongeng Bahasa Indonesia Sebelum Tidur\" cerita audio",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"Dongeng Bahasa Indonesia Sebelum Tidur\" audiobook",
-          "text": "fetch failed"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "هاروكي موراكامي (الكاتب الأفضل في العالم)",
-      "slug": "harwky-mwrakamy-alkatb-alafdl-fy-alaalm",
-      "language": "ar",
-      "score": 58,
-      "demandScore": 59,
-      "audioSignalScore": 11,
+      "demandScore": 62,
+      "audioSignalScore": 8,
       "audioCompetitionScore": 0,
       "audioCompetitionLevel": "unknown",
       "opportunityScore": 58,
@@ -217,29 +95,93 @@
       "evidence": [
         {
           "source": "youtube-search",
-          "language": "ar",
-          "query": "روايات عربية صوتية",
-          "text": "رواية مسموعة | الصمت - هاروكي موراكامي (الكاتب الأفضل في العالم)"
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "[ AUDIO FULL ] NAM THẦN CƯNG CHIỀU VỢ NHỎ TỪ BÉ ~ Mót audio | Vẽ tô màu kể chuyện"
         },
+        {
+          "source": "competition-error",
+          "query": "\"NAM THẦN CƯNG CHIỀU VỢ NHỎ TỪ BÉ ~ Mót\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"NAM THẦN CƯNG CHIỀU VỢ NHỎ TỪ BÉ ~ Mót\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "[ Bách Hợp ] Crush Của Anh Trai Thích Tôi",
+      "slug": "bach-hop-crush-cua-anh-trai-thich-toi",
+      "language": "vi",
+      "score": 58,
+      "demandScore": 62,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 58,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "evidence": [
         {
           "source": "youtube-search",
-          "language": "ar",
-          "query": "روايات عربية صوتية",
-          "text": "رواية مسموعة | نعاس - هاروكي موراكامي (الكاتب الأفضل في العالم)"
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "[ Bách Hợp ] Crush Của Anh Trai Thích Tôi - Truyện Girl Love / GL Audio Full"
         },
         {
           "source": "competition-error",
-          "query": "\"هاروكي موراكامي (الكاتب الأفضل في العالم)\" صوتية",
+          "query": "\"[ Bách Hợp ] Crush Của Anh Trai Thích Tôi\" audio",
           "text": "fetch failed"
         },
         {
           "source": "competition-error",
-          "query": "\"هاروكي موراكامي (الكاتب الأفضل في العالم)\" رواية صوتية",
+          "query": "\"[ Bách Hợp ] Crush Của Anh Trai Thích Tôi\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Reincarnated As A Mage, I Learned Magic Is A Curse",
+      "slug": "reincarnated-as-a-mage-i-learned-magic-is-a-curse",
+      "language": "en",
+      "score": 58,
+      "demandScore": 62,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 58,
+      "enMotif": "suspense and mystery and fantasy adventure",
+      "viMotif": "kinh dị bí ẩn và tiên hiệp fantasy",
+      "hiMotif": "सस्पेंस और रहस्य और फ़ैंटेसी एडवेंचर",
+      "idMotif": "misteri dan ketegangan dan petualangan fantasi",
+      "arMotif": "التشويق والغموض و مغامرات خيالية",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "en",
+          "query": "webnovel audiobook",
+          "text": "Reincarnated as a Mage, I Learned Magic Is a Curse Part 01"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Reincarnated As A Mage, I Learned Magic Is A Curse\" audiobook",
           "text": "fetch failed"
         },
         {
           "source": "competition-error",
-          "query": "\"هاروكي موراكامي (الكاتب الأفضل في العالم)\" audio",
+          "query": "\"Reincarnated As A Mage, I Learned Magic Is A Curse\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Reincarnated As A Mage, I Learned Magic Is A Curse\" audio",
           "text": "fetch failed"
         }
       ],
@@ -462,80 +404,80 @@
       "status": "draft"
     },
     {
-      "title": "Savant Barbarian [LitRPG Adventure, Kingdom(Tribe)-building]",
-      "slug": "savant-barbarian-litrpg-adventure-kingdom-tribe-building",
-      "language": "en",
-      "score": 54,
-      "demandScore": 66,
-      "audioSignalScore": 0,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "unknown",
-      "opportunityScore": 54,
-      "enMotif": "fantasy adventure",
-      "viMotif": "tiên hiệp fantasy",
-      "hiMotif": "फ़ैंटेसी एडवेंचर",
-      "idMotif": "petualangan fantasi",
-      "arMotif": "مغامرات خيالية",
+      "title": "Lỡ Nhìn Trộm Đại Ca Trường, Tôi Bị Anh Cướp Luôn Nụ Hôn Đầu",
+      "slug": "lo-nhin-trom-dai-ca-truong-toi-bi-anh-cuop-luon-nu-hon-dau",
+      "language": "vi",
+      "score": 52,
+      "demandScore": 62,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 2,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 52,
+      "enMotif": "school romance",
+      "viMotif": "vườn trường",
+      "hiMotif": "कॉलेज रोमांस",
+      "idMotif": "romansa sekolah",
+      "arMotif": "رومانسية المدرسة",
       "evidence": [
         {
-          "source": "royalroad-trending",
-          "language": "en",
-          "query": "https://www.royalroad.com/fictions/trending",
-          "text": "Savant Barbarian [LitRPG Adventure, Kingdom(Tribe)-building]"
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện ngôn tình audio full",
+          "text": "Lỡ Nhìn Trộm Đại Ca Trường, Tôi Bị Anh Cướp Luôn Nụ Hôn Đầu | Truyện Audio Nấu Ăn"
         },
         {
           "source": "competition-error",
-          "query": "\"Savant Barbarian [LitRPG Adventure, Kingdom(Tribe)-building]\" audiobook",
+          "query": "\"Lỡ Nhìn Trộm Đại Ca Trường, Tôi Bị Anh Cướp Luôn Nụ Hôn Đầu\" \"truyện audio\"",
           "text": "fetch failed"
         },
         {
-          "source": "competition-error",
-          "query": "\"Savant Barbarian [LitRPG Adventure, Kingdom(Tribe)-building]\" \"read aloud\"",
-          "text": "fetch failed"
+          "source": "youtube-audio-competition",
+          "query": "\"Lỡ Nhìn Trộm Đại Ca Trường, Tôi Bị Anh Cướp Luôn Nụ Hôn Đầu\" audio",
+          "text": "Lỡ Nhìn Trộm Đại Ca Trường, Tôi Bị Anh Cướp Luôn Nụ Hôn Đầu | Truyện Audio Nấu Ăn"
         },
         {
-          "source": "competition-error",
-          "query": "\"Savant Barbarian [LitRPG Adventure, Kingdom(Tribe)-building]\" audio",
-          "text": "fetch failed"
+          "source": "youtube-audio-competition",
+          "query": "\"Lỡ Nhìn Trộm Đại Ca Trường, Tôi Bị Anh Cướp Luôn Nụ Hôn Đầu\" audio",
+          "text": "Tiểu Màn Thầu Audio #59 || Lỡ Nhìn Trộm Đại Ca Trường, Tôi Bị Anh Cướp Luôn Nụ Hôn Đầu #audio"
         }
       ],
       "status": "draft"
     },
     {
-      "title": "Cara Upload Cerita Dan Optimasinya Agar Banyak Yang Baca ( 2020 )",
-      "slug": "cara-upload-cerita-dan-optimasinya-agar-banyak-yang-baca-2020",
-      "language": "id",
-      "score": 54,
-      "demandScore": 58,
+      "title": "₹1 Lakh Scooty पर ₹10 Lakhs Challans वाला Funny And",
+      "slug": "1-lakh-scooty-par-10-lakhs-challans-vala-funny-and",
+      "language": "hi",
+      "score": 52,
+      "demandScore": 56,
       "audioSignalScore": 8,
       "audioCompetitionScore": 0,
       "audioCompetitionLevel": "unknown",
-      "opportunityScore": 54,
-      "enMotif": "suspense and mystery",
-      "viMotif": "kinh dị bí ẩn",
-      "hiMotif": "सस्पेंस और रहस्य",
-      "idMotif": "misteri dan ketegangan",
-      "arMotif": "التشويق والغموض",
+      "opportunityScore": 52,
+      "enMotif": "family drama and comedy",
+      "viMotif": "gia đình và hài hước",
+      "hiMotif": "पारिवारिक ड्रामा और कॉमेडी",
+      "idMotif": "drama keluarga dan komedi",
+      "arMotif": "دراما عائلية و الكوميديا",
       "evidence": [
         {
           "source": "youtube-search",
-          "language": "id",
-          "query": "wattpad indonesia baca cerita",
-          "text": "Cara Upload Cerita Wattpad dan Optimasinya agar banyak yang baca ( 2020 )"
+          "language": "hi",
+          "query": "हिंदी कहानी ऑडियो पूरी",
+          "text": "₹1 Lakh Scooty पर ₹10 Lakhs Challans वाला Funny And | Hindi Kahaniya Moral Stories Comedy Video"
         },
         {
           "source": "competition-error",
-          "query": "\"Cara Upload Cerita Dan Optimasinya Agar Banyak Yang Baca ( 2020 )\" audio",
+          "query": "\"₹1 Lakh Scooty पर ₹10 Lakhs Challans वाला Funny And\" ऑडियो",
           "text": "fetch failed"
         },
         {
           "source": "competition-error",
-          "query": "\"Cara Upload Cerita Dan Optimasinya Agar Banyak Yang Baca ( 2020 )\" cerita audio",
+          "query": "\"₹1 Lakh Scooty पर ₹10 Lakhs Challans वाला Funny And\" कहानी",
           "text": "fetch failed"
         },
         {
           "source": "competition-error",
-          "query": "\"Cara Upload Cerita Dan Optimasinya Agar Banyak Yang Baca ( 2020 )\" audiobook",
+          "query": "\"₹1 Lakh Scooty पर ₹10 Lakhs Challans वाला Funny And\" audio story",
           "text": "fetch failed"
         }
       ],
@@ -702,6 +644,86 @@
       "status": "draft"
     },
     {
+      "title": "Cerita My Nerd Girl Indonesia",
+      "slug": "cerita-my-nerd-girl-indonesia",
+      "language": "id",
+      "score": 50,
+      "demandScore": 62,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 50,
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "evidence": [
+        {
+          "source": "google-demand-suggest",
+          "language": "id",
+          "query": "cerita wattpad indonesia",
+          "text": "cerita my nerd girl wattpad indonesia"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Cerita My Nerd Girl Indonesia\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Cerita My Nerd Girl Indonesia\" cerita audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Cerita My Nerd Girl Indonesia\" audiobook",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "बूढ़ी माँ का इकलौता बेटा और चालक बहु",
+      "slug": "burhi-man-ka-ikalauta-beta-aur-chalak-bahu",
+      "language": "hi",
+      "score": 48,
+      "demandScore": 52,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 48,
+      "enMotif": "family drama",
+      "viMotif": "gia đình",
+      "hiMotif": "पारिवारिक ड्रामा",
+      "idMotif": "drama keluarga",
+      "arMotif": "دراما عائلية",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "hi",
+          "query": "हिंदी कहानी ऑडियो पूरी",
+          "text": "बूढ़ी माँ का इकलौता बेटा और चालक बहु | Hindi Story | Moral Story | Cartoon Story | Hindi Kahaniyan |"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"बूढ़ी माँ का इकलौता बेटा और चालक बहु\" ऑडियो",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"बूढ़ी माँ का इकलौता बेटा और चालक बहु\" कहानी",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"बूढ़ी माँ का इकलौता बेटा और चालक बहु\" audio story",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
       "title": "तेरे बिन (दिल को छू लेने वाली एक प्रेम कहानी)",
       "slug": "tere-bin-dil-ko-chhu-lene-vali-ek-prem-kahani",
       "language": "hi",
@@ -742,120 +764,40 @@
       "status": "draft"
     },
     {
-      "title": "واتباد ضابط ابو صكر الكاتبة غدير بارت (24)تفاعلكم #",
-      "slug": "watbad-dabt-abw-skr-alkatbh-ghdyr-bart-24-tfaalkm",
-      "language": "ar",
+      "title": "रेलवे स्टेशन पर गरीब सब्जी पूड़ी वाला",
+      "slug": "relave-steshan-par-garib-sabji-puri-vala",
+      "language": "hi",
       "score": 46,
       "demandScore": 50,
       "audioSignalScore": 8,
       "audioCompetitionScore": 0,
       "audioCompetitionLevel": "unknown",
       "opportunityScore": 46,
-      "enMotif": "suspense and mystery",
-      "viMotif": "kinh dị bí ẩn",
-      "hiMotif": "सस्पेंस और रहस्य",
-      "idMotif": "misteri dan ketegangan",
-      "arMotif": "التشويق والغموض",
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
       "evidence": [
         {
           "source": "youtube-search",
-          "language": "ar",
-          "query": "قصص واتباد صوتية",
-          "text": "واتباد ضابط ابو صكر الكاتبة غدير بارت (24)تفاعلكم #قصص #animation #واتباد #اكسبلور "
+          "language": "hi",
+          "query": "हिंदी कहानी ऑडियो पूरी",
+          "text": "रेलवे स्टेशन पर गरीब सब्जी पूड़ी वाला | Railway Station Par Garib Sabji Poodi Wala | hindi stories"
         },
         {
           "source": "competition-error",
-          "query": "\"واتباد ضابط ابو صكر الكاتبة غدير بارت (24)تفاعلكم #\" صوتية",
+          "query": "\"रेलवे स्टेशन पर गरीब सब्जी पूड़ी वाला\" ऑडियो",
           "text": "fetch failed"
         },
         {
           "source": "competition-error",
-          "query": "\"واتباد ضابط ابو صكر الكاتبة غدير بارت (24)تفاعلكم #\" رواية صوتية",
+          "query": "\"रेलवे स्टेशन पर गरीब सब्जी पूड़ी वाला\" कहानी",
           "text": "fetch failed"
         },
         {
           "source": "competition-error",
-          "query": "\"واتباد ضابط ابو صكر الكاتبة غدير بارت (24)تفاعلكم #\" audio",
-          "text": "fetch failed"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "واتباد ضابط ابو صكر الكاتبة غدير بارت(29) تفاعلكم #",
-      "slug": "watbad-dabt-abw-skr-alkatbh-ghdyr-bart-29-tfaalkm",
-      "language": "ar",
-      "score": 46,
-      "demandScore": 50,
-      "audioSignalScore": 8,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "unknown",
-      "opportunityScore": 46,
-      "enMotif": "suspense and mystery",
-      "viMotif": "kinh dị bí ẩn",
-      "hiMotif": "सस्पेंस और रहस्य",
-      "idMotif": "misteri dan ketegangan",
-      "arMotif": "التشويق والغموض",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "language": "ar",
-          "query": "قصص واتباد صوتية",
-          "text": "واتباد ضابط ابو صكر الكاتبة غدير بارت(29) تفاعلكم #animation #قصص #واتباد #اكسبلور "
-        },
-        {
-          "source": "competition-error",
-          "query": "\"واتباد ضابط ابو صكر الكاتبة غدير بارت(29) تفاعلكم #\" صوتية",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"واتباد ضابط ابو صكر الكاتبة غدير بارت(29) تفاعلكم #\" رواية صوتية",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"واتباد ضابط ابو صكر الكاتبة غدير بارت(29) تفاعلكم #\" audio",
-          "text": "fetch failed"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "واتباد ضابط ابو صكر الكاتبة غدير بارت(21) تفاعلكم #",
-      "slug": "watbad-dabt-abw-skr-alkatbh-ghdyr-bart-21-tfaalkm",
-      "language": "ar",
-      "score": 46,
-      "demandScore": 50,
-      "audioSignalScore": 8,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "unknown",
-      "opportunityScore": 46,
-      "enMotif": "suspense and mystery",
-      "viMotif": "kinh dị bí ẩn",
-      "hiMotif": "सस्पेंस और रहस्य",
-      "idMotif": "misteri dan ketegangan",
-      "arMotif": "التشويق والغموض",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "language": "ar",
-          "query": "قصص واتباد صوتية",
-          "text": "واتباد ضابط ابو صكر الكاتبة غدير بارت(21) تفاعلكم#واتباد #اكسبلور #animation #قصص #واتباديات  "
-        },
-        {
-          "source": "competition-error",
-          "query": "\"واتباد ضابط ابو صكر الكاتبة غدير بارت(21) تفاعلكم #\" صوتية",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"واتباد ضابط ابو صكر الكاتبة غدير بارت(21) تفاعلكم #\" رواية صوتية",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"واتباد ضابط ابو صكر الكاتبة غدير بارت(21) تفاعلكم #\" audio",
+          "query": "\"रेलवे स्टेशन पर गरीब सब्जी पूड़ी वाला\" audio story",
           "text": "fetch failed"
         }
       ],
@@ -902,12 +844,12 @@
       "status": "draft"
     },
     {
-      "title": "बीरबल के दिमागी खेल में उलझ गया पूरा दरबार इंटरेस्टिंग कहानी",
-      "slug": "birabal-ke-dimagi-khel-men-ulajh-gaya-pura-darabar-intaresting-kahani",
-      "language": "hi",
+      "title": "رواية ولو بعد حين",
+      "slug": "rwayh-wlw-bad-hyn",
+      "language": "ar",
       "score": 44,
-      "demandScore": 48,
-      "audioSignalScore": 8,
+      "demandScore": 45,
+      "audioSignalScore": 11,
       "audioCompetitionScore": 0,
       "audioCompetitionLevel": "unknown",
       "opportunityScore": 44,
@@ -919,103 +861,149 @@
       "evidence": [
         {
           "source": "youtube-search",
-          "language": "hi",
-          "query": "हिंदी कहानी ऑडियो पूरी",
-          "text": "बीरबल के दिमागी खेल में उलझ गया 🤔 पूरा दरबार इंटरेस्टिंग कहानी | interesting akbar birbal new kahani"
+          "language": "ar",
+          "query": "رواية صوتية كاملة",
+          "text": "رواية ولو بعد حين | القصة كاملة صوتية مسموعة"
         },
-        {
-          "source": "competition-error",
-          "query": "\"बीरबल के दिमागी खेल में उलझ गया पूरा दरबार इंटरेस्टिंग कहानी\" ऑडियो",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"बीरबल के दिमागी खेल में उलझ गया पूरा दरबार इंटरेस्टिंग कहानी\" कहानी",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"बीरबल के दिमागी खेल में उलझ गया पूरा दरबार इंटरेस्टिंग कहानी\" audio story",
-          "text": "fetch failed"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "बारिश में गरीब दुकानदार की किस्मत",
-      "slug": "barish-men-garib-dukanadar-ki-kismat",
-      "language": "hi",
-      "score": 44,
-      "demandScore": 48,
-      "audioSignalScore": 8,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "unknown",
-      "opportunityScore": 44,
-      "enMotif": "Vietnamese web fiction and romance drama",
-      "viMotif": "truyện mạng Việt và romance drama",
-      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
-      "idMotif": "cerita online dan drama romansa",
-      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
-      "evidence": [
         {
           "source": "youtube-search",
-          "language": "hi",
-          "query": "हिंदी कहानी ऑडियो पूरी",
-          "text": "बारिश में गरीब दुकानदार की किस्मत | Hindi kahani | Hindi cartoon | Moral stories | cartoon story"
+          "language": "ar",
+          "query": "روايات عربية صوتية",
+          "text": "رواية ولو بعد حين | القصة كاملة صوتية مسموعة"
         },
         {
           "source": "competition-error",
-          "query": "\"बारिश में गरीब दुकानदार की किस्मत\" ऑडियो",
+          "query": "\"رواية ولو بعد حين\" صوتية",
           "text": "fetch failed"
         },
         {
           "source": "competition-error",
-          "query": "\"बारिश में गरीब दुकानदार की किस्मत\" कहानी",
+          "query": "\"رواية ولو بعد حين\" رواية صوتية",
           "text": "fetch failed"
         },
         {
           "source": "competition-error",
-          "query": "\"बारिश में गरीब दुकानदार की किस्मत\" audio story",
+          "query": "\"رواية ولو بعد حين\" audio",
           "text": "fetch failed"
         }
       ],
       "status": "draft"
     },
     {
-      "title": "कंजूस के घर आए मेहमान",
-      "slug": "kanjus-ke-ghar-aae-mehaman",
-      "language": "hi",
+      "title": "صراع العودة بين الوحوش والجبابرة",
+      "slug": "sraa-alawdh-byn-alwhwsh-waljbabrh",
+      "language": "ar",
       "score": 42,
       "demandScore": 46,
       "audioSignalScore": 8,
       "audioCompetitionScore": 0,
       "audioCompetitionLevel": "unknown",
       "opportunityScore": 42,
-      "enMotif": "suspense and mystery",
-      "viMotif": "kinh dị bí ẩn",
-      "hiMotif": "सस्पेंस और रहस्य",
-      "idMotif": "misteri dan ketegangan",
-      "arMotif": "التشويق والغموض",
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
       "evidence": [
         {
           "source": "youtube-search",
-          "language": "hi",
-          "query": "हिंदी कहानी ऑडियो पूरी",
-          "text": "कंजूस के घर आए मेहमान | kanjoos Ke Ghar Aaye Mehman | Hindi stories | Hindi Emotional Hindi Story"
+          "language": "ar",
+          "query": "رواية صوتية كاملة",
+          "text": "الأوديسا (رواية صوتية) | صراع العودة بين الوحوش والجبابرة| مسموع"
         },
         {
           "source": "competition-error",
-          "query": "\"कंजूस के घर आए मेहमान\" ऑडियो",
+          "query": "\"صراع العودة بين الوحوش والجبابرة\" صوتية",
           "text": "fetch failed"
         },
         {
           "source": "competition-error",
-          "query": "\"कंजूस के घर आए मेहमान\" कहानी",
+          "query": "\"صراع العودة بين الوحوش والجبابرة\" رواية صوتية",
           "text": "fetch failed"
         },
         {
           "source": "competition-error",
-          "query": "\"कंजूस के घर आए मेहमान\" audio story",
+          "query": "\"صراع العودة بين الوحوش والجبابرة\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "عشق ذو الفقار وغزالة كاملة.",
+      "slug": "ashq-dhw-alfqar-wghzalh-kamlh",
+      "language": "ar",
+      "score": 42,
+      "demandScore": 46,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 42,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "ar",
+          "query": "قصص واتباد صوتية",
+          "text": "#روايات_عراقية_بصوتي، قصة قصيرة: عشق ذو الفقار وغزالة كاملة."
+        },
+        {
+          "source": "competition-error",
+          "query": "\"عشق ذو الفقار وغزالة كاملة.\" صوتية",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"عشق ذو الفقار وغزالة كاملة.\" رواية صوتية",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"عشق ذو الفقار وغزالة كاملة.\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "شرارة ال عربيد بارت( الاول )كامل #",
+      "slug": "shrarh-al-arbyd-bart-alawl-kaml",
+      "language": "ar",
+      "score": 42,
+      "demandScore": 46,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 42,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "ar",
+          "query": "قصص واتباد صوتية",
+          "text": "شرارة ال عربيد بارت( الاول )كامل #بصوتى #قصص #واتباد "
+        },
+        {
+          "source": "competition-error",
+          "query": "\"شرارة ال عربيد بارت( الاول )كامل #\" صوتية",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"شرارة ال عربيد بارت( الاول )كامل #\" رواية صوتية",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"شرارة ال عربيد بارت( الاول )كامل #\" audio",
           "text": "fetch failed"
         }
       ],
