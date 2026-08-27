@@ -3067,6 +3067,26 @@ const topics = [
     idMotif: "petualangan fantasi",
     arMotif: "مغامرات خيالية",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "me-trum-truong-vi-dep-trai-ai-ngo-mot-vet-seo-khien-toi-tinh-ngo",
+    title: "Mê Trùm Trường Vì Đẹp Trai, Ai Ngờ Một Vết Sẹo Khiến Tôi Tỉnh Ngộ",
+    enMotif: "school romance",
+    viMotif: "vườn trường",
+    hiMotif: "कॉलेज रोमांस",
+    idMotif: "romansa sekolah",
+    arMotif: "رومانسية المدرسة",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "so-toi-bo-roi-na9-lai-xich-chan-toi-de-cuong-ep-yeu-tiep-roi",
+    title: "Sợ Tôi Bỏ Rơi, Na9 Lại Xích Chân Tôi Để Cưỡng Ép Yêu Tiếp Rồi",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
