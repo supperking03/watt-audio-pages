@@ -3117,6 +3117,26 @@ const topics = [
     idMotif: "petualangan fantasi",
     arMotif: "مغامرات خيالية",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "trong-sinh-ke-chi-dau-ren-luyen-chau-trai-thanh-tong-tai-lanh-khoc-yeu-nang",
+    title: "Trọng Sinh Kệ Chị Dâu Rèn Luyện Cháu Trai Thành Tổng Tài Lãnh Khốc Yêu Nàng",
+    enMotif: "rebirth and rich-family romance",
+    viMotif: "trọng sinh và hào môn",
+    hiMotif: "पुनर्जन्म और अमीर परिवार की रोमांस",
+    idMotif: "terlahir kembali dan romansa keluarga kaya",
+    arMotif: "العودة إلى الماضي و رومانسية العائلات الثرية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "lord-of-the-mysteries-the-other-impacts-of-the-purge",
+    title: "Lord Of The Mysteries & The Other Impacts Of The Purge",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["en"]
   })
 ];
 
