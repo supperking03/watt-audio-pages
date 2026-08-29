@@ -3157,6 +3157,66 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "trong-sinh-mac-ke-em-gai-muon-lam-thieu-phu-nhan-toi-chon-lam-ti-phu",
+    title: "Trọng Sinh Mặc Kệ Em Gái Muốn Làm Thiếu Phu Nhân, Tôi Chọn Làm Tỉ Phú",
+    enMotif: "rebirth",
+    viMotif: "trọng sinh",
+    hiMotif: "पुनर्जन्म",
+    idMotif: "terlahir kembali",
+    arMotif: "العودة إلى الماضي",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "ca-lop-hoc-ba-cung-va-mat-tra-xanh",
+    title: "Cả Lớp Học Bá Cùng Vả Mặt Trà Xanh",
+    enMotif: "rebirth, green tea rival and school romance",
+    viMotif: "trọng sinh, trà xanh và vườn trường",
+    hiMotif: "पुनर्जन्म, छल भरी प्रतिद्वंद्वी और कॉलेज रोमांस",
+    idMotif: "terlahir kembali, rival bermuka dua dan romansa sekolah",
+    arMotif: "العودة إلى الماضي, المنافسة الماكرة و رومانسية المدرسة",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "reincarnated-as-a-mage-i-learned-magic-is-a-curse",
+    title: "Reincarnated As A Mage, I Learned Magic Is A Curse",
+    enMotif: "suspense and mystery and fantasy adventure",
+    viMotif: "kinh dị bí ẩn và tiên hiệp fantasy",
+    hiMotif: "सस्पेंस और रहस्य और फ़ैंटेसी एडवेंचर",
+    idMotif: "misteri dan ketegangan dan petualangan fantasi",
+    arMotif: "التشويق والغموض و مغامرات خيالية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "mstfa-mhmwd-mn-amta-ma-qrat",
+    title: "مصطفى محمود (من أمتع ما قرأت)",
+    enMotif: "family drama",
+    viMotif: "gia đình",
+    hiMotif: "पारिवारिक ड्रामा",
+    idMotif: "drama keluarga",
+    arMotif: "دراما عائلية",
+    languages: ["ar"]
+  }),
+  storyTitleTopic({
+    slug: "five-element-sovereign-xianxia-op-mc",
+    title: "Five Element Sovereign [Xianxia] [OP MC]",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "jis-beti-ko-kamajor-samajha-vahi-ias-banakar-lauti-to",
+    title: "जिस बेटी को कमजोर समझा, वही Ias बनकर लौटी तो…",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["hi"]
   })
 ];
 
