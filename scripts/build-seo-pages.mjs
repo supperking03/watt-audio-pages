@@ -3237,6 +3237,26 @@ const topics = [
     idMotif: "romansa sekolah dan misteri dan ketegangan",
     arMotif: "رومانسية المدرسة و التشويق والغموض",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "i-reincarnated-as-the-villainous-consort-so-i-retired-to-eat-sleep-and-confuse-the-emperor",
+    title: "I Reincarnated As The Villainous Consort, So I Retired To Eat, Sleep, And Confuse The Emperor",
+    enMotif: "family drama",
+    viMotif: "gia đình",
+    hiMotif: "पारिवारिक ड्रामा",
+    idMotif: "drama keluarga",
+    arMotif: "دراما عائلية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "comments-make-fun-of-y-n",
+    title: "Comments Make Fun Of Y/N",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["en"]
   })
 ];
 
