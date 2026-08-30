@@ -3217,6 +3217,26 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "tra-nam-hien-than-cho-tra-xanh-lai-muon-toi-nuoi-ca-doi",
+    title: "Tra Nam Hiến Thận Cho Trà Xanh, Lại Muốn Tôi Nuôi Cả Đời",
+    enMotif: "rebirth and green tea rival",
+    viMotif: "trọng sinh và trà xanh",
+    hiMotif: "पुनर्जन्म और छल भरी प्रतिद्वंद्वी",
+    idMotif: "terlahir kembali dan rival bermuka dua",
+    arMotif: "العودة إلى الماضي و المنافسة الماكرة",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "o-nho-nha-thanh-mai-toi-thanh-ngoai-le-cua-trum-truong",
+    title: "Ở Nhờ Nhà Thanh Mai, Tôi Thành Ngoại Lệ Của Trùm Trường",
+    enMotif: "school romance and suspense and mystery",
+    viMotif: "vườn trường và kinh dị bí ẩn",
+    hiMotif: "कॉलेज रोमांस और सस्पेंस और रहस्य",
+    idMotif: "romansa sekolah dan misteri dan ketegangan",
+    arMotif: "رومانسية المدرسة و التشويق والغموض",
+    languages: ["vi"]
   })
 ];
 
