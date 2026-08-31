@@ -3277,6 +3277,16 @@ const topics = [
     idMotif: "misteri dan ketegangan dan petualangan fantasi",
     arMotif: "التشويق والغموض و مغامرات خيالية",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "shiv-parvati-ek-deh-men-kyon-samae-tin-pairon-vale-rishi-bhringi-ka-rahasy",
+    title: "शिव-पार्वती एक देह में क्यों समाए? तीन पैरों वाले ऋषि भृंगी का रहस्य",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["hi"]
   })
 ];
 
