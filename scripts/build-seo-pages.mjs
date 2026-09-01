@@ -3316,6 +3316,56 @@ const topics = [
     idMotif: "misteri dan ketegangan",
     arMotif: "التشويق والغموض",
     languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "trong-sinh-toi-khong-can-ca-nha-chong-cu-di-mien-bac-ma-huong-phuc",
+    title: "Trọng Sinh Tôi Không Cản, Cả Nhà Chồng Cứ Đi Miến Bắc Mà Hưởng Phúc",
+    enMotif: "rebirth",
+    viMotif: "trọng sinh",
+    hiMotif: "पुनर्जन्म",
+    idMotif: "terlahir kembali",
+    arMotif: "العودة إلى الماضي",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "should-smut-be-allowed-on-a-platform-used-by-teens",
+    title: "Should Smut Be Allowed On A Platform Used By Teens?",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "qbl-jwazy-aktshft-sr-an-amy-ally-hsl-badha-ghyr-hyaty-klha",
+    title: "قبل جوازي اكتشفت سر عن أمي.. اللي حصل بعدها غير حياتي كلها!",
+    enMotif: "family drama",
+    viMotif: "gia đình",
+    hiMotif: "पारिवारिक ड्रामा",
+    idMotif: "drama keluarga",
+    arMotif: "دراما عائلية",
+    languages: ["ar"]
+  }),
+  storyTitleTopic({
+    slug: "srkht-bwjh-wld-amy-maahbk-sktny-bbwsh-wqfl-albab-yly-sar-sdmny",
+    title: "صرخت بوجه ولد عمي ماأحبك سكتني ببوسة وقفل الباب يلي صار صدمني",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["ar"]
+  }),
+  storyTitleTopic({
+    slug: "lost-and-found-warhammer-40k-si",
+    title: "Lost And Found (Warhammer 40k SI)",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["en"]
   })
 ];
 
