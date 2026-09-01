@@ -3,8 +3,7 @@ import path from "node:path";
 
 const iosUrl = "https://apps.apple.com/vn/app/watt-audio-%C4%91%E1%BB%8Dc-truy%E1%BB%87n-audio/id6775724279";
 const androidUrl = "https://play.google.com/store/apps/details?id=com.supperking03.wattpadaudio";
-const chromeUrl = "https://chromewebstore.google.com/detail/watt-audio-nghe-wattpad-a/aipmnekljadgnhedbkhmbghkanjepied";
-const downloadUrls = [iosUrl, androidUrl, chromeUrl];
+const downloadUrls = [iosUrl, androidUrl];
 const siteUrl = "https://wattaudios.com";
 // Languages that get their own /<lang>/ directory, homepage, guides index and sitemap entries.
 // "en" and "vi" carry the hand-written evergreen guides; "hi", "id" and "ar" are story-title
@@ -13,7 +12,7 @@ const siteLanguages = ["en", "vi", "hi", "id", "ar"];
 const storyOnlyLanguages = ["hi", "id", "ar"];
 const lastModified = "2026-07-15";
 const gaMeasurementId = "G-CPTTPW88BP";
-const cssVersion = "20260715-chrome-extension";
+const cssVersion = "20260715-mobile-app";
 const publisher = {
   "@type": "Organization",
   name: "Watt Audio",
@@ -85,7 +84,7 @@ const analyticsTags = `<script async src="https://www.googletagmanager.com/gtag/
   gtag('js', new Date());
   gtag('config', '${gaMeasurementId}');
   document.addEventListener('click', function (event) {
-    var link = event.target.closest && event.target.closest('a[href*="apps.apple.com"], a[href*="play.google.com/store/apps"], a[href*="chromewebstore.google.com"]');
+    var link = event.target.closest && event.target.closest('a[href*="apps.apple.com"], a[href*="play.google.com/store/apps"]');
     if (!link || typeof gtag !== 'function') return;
     gtag('event', 'download_app_click', {
       event_category: 'engagement',
@@ -3333,7 +3332,6 @@ const labels = {
     tagRowLabel: "Topic tags",
     storeIos: "App Store",
     storeAndroid: "Google Play",
-    storeChrome: "Chrome Extension",
     storyCtaLabel: "Download Watt Audio",
     storyCtaTitle: "Download Watt Audio to listen to {name}",
     storyCtaText: "Turn supported story links into chapter audio, listen with the screen off, and keep the story moving anywhere.",
@@ -3383,7 +3381,6 @@ const labels = {
     tagRowLabel: "Chủ đề",
     storeIos: "Tải trên App Store",
     storeAndroid: "Tải trên Google Play",
-    storeChrome: "Thêm vào Chrome",
     storyCtaLabel: "Tải Watt Audio",
     storyCtaTitle: "Tải Watt Audio để nghe {name}",
     storyCtaText: "Chuyển link truyện được hỗ trợ thành audio theo chương, nghe khi tắt màn hình và tiếp tục truyện mọi lúc.",
@@ -3433,7 +3430,6 @@ const labels = {
     tagRowLabel: "विषय",
     storeIos: "App Store से डाउनलोड करें",
     storeAndroid: "Google Play से डाउनलोड करें",
-    storeChrome: "Chrome में जोड़ें",
     storyCtaLabel: "Watt Audio डाउनलोड करें",
     storyCtaTitle: "{name} सुनने के लिए Watt Audio डाउनलोड करें",
     storyCtaText: "सपोर्टेड कहानी लिंक को चैप्टर ऑडियो में बदलें, स्क्रीन बंद करके सुनें और कहानी कहीं भी आगे बढ़ाएँ।",
@@ -3483,7 +3479,6 @@ const labels = {
     tagRowLabel: "Topik",
     storeIos: "Unduh di App Store",
     storeAndroid: "Unduh di Google Play",
-    storeChrome: "Tambahkan ke Chrome",
     storyCtaLabel: "Unduh Watt Audio",
     storyCtaTitle: "Unduh Watt Audio untuk mendengarkan {name}",
     storyCtaText: "Ubah tautan cerita yang didukung menjadi audio per bab, dengarkan dengan layar mati, dan lanjutkan ceritamu di mana saja.",
@@ -3533,7 +3528,6 @@ const labels = {
     tagRowLabel: "المواضيع",
     storeIos: "التحميل من App Store",
     storeAndroid: "التحميل من Google Play",
-    storeChrome: "إضافة إلى Chrome",
     storyCtaLabel: "حمّل Watt Audio",
     storyCtaTitle: "حمّل Watt Audio للاستماع إلى {name}",
     storyCtaText: "حوّل روابط الروايات المدعومة إلى فصول صوتية، واستمع والشاشة مطفأة، وتابع الرواية أينما كنت.",
@@ -3659,14 +3653,12 @@ function downloadButtonLinks(lang) {
   const l = labels[lang];
   const iosLabel = l.storeIos;
   const androidLabel = l.storeAndroid;
-  const chromeLabel = l.storeChrome;
   const downloadLabel = l.download;
   return `<div class="store-menu">
           <button class="btn store-trigger" type="button" aria-haspopup="true">${downloadLabel}</button>
           <div class="store-options" aria-label="${downloadLabel}">
             <a href="${androidUrl}">${androidLabel}</a>
             <a href="${iosUrl}">${iosLabel}</a>
-            <a href="${chromeUrl}">${chromeLabel}</a>
           </div>
         </div>`;
 }
@@ -4148,7 +4140,7 @@ const homeCopy = {
     ],
     homeFaq: [
       ["Can you listen to Wattpad stories as audio?", "Yes. Watt Audio helps you turn supported story links you can access into personal chapter audio for hands-free listening."],
-      ["Is Watt Audio available on Android?", "Yes. Watt Audio has download links for Android on Google Play, iOS on the App Store, and a Chrome extension for desktop browsing."],
+      ["Is Watt Audio available on Android?", "Yes. Watt Audio has download links for Android on Google Play and iOS on the App Store."],
       ["Is Watt Audio affiliated with Wattpad?", "No. Watt Audio is independent and is not owned by, operated by, or officially affiliated with Wattpad."],
       ["Why use Watt Audio instead of a generic text to speech app?", "Watt Audio is built around story links, chapter audio, background playback, and listening progress, which is more comfortable for long serialized fiction."]
     ]
@@ -4200,7 +4192,7 @@ const homeCopy = {
     ],
     homeFaq: [
       ["Có nghe truyện Wattpad bằng audio được không?", "Có. Watt Audio giúp bạn chuyển link truyện được hỗ trợ mà bạn truy cập được thành audio theo chương để nghe rảnh tay."],
-      ["Watt Audio có Android chưa?", "Có. Watt Audio có link tải Android trên Google Play, iOS trên App Store và extension Chrome cho desktop."],
+      ["Watt Audio có Android chưa?", "Có. Watt Audio có link tải Android trên Google Play và iOS trên App Store."],
       ["Watt Audio có phải của Wattpad không?", "Không. Watt Audio là app độc lập, không thuộc sở hữu, vận hành hoặc liên kết chính thức với Wattpad."],
       ["Vì sao dùng Watt Audio thay vì app text to speech chung?", "Watt Audio tập trung vào link truyện, audio theo chương, phát nền và tiến độ nghe, nên hợp với truyện đăng kỳ dài hơn."]
     ]
@@ -4244,7 +4236,7 @@ const homeCopy = {
     searchLinks: [],
     homeFaq: [
       ["क्या Wattpad कहानियाँ ऑडियो में सुनी जा सकती हैं?", "हाँ। Watt Audio आपकी पहुँच वाली सपोर्टेड कहानी लिंक को निजी चैप्टर ऑडियो में बदलने में मदद करता है।"],
-      ["क्या Watt Audio Android पर उपलब्ध है?", "हाँ। Google Play पर Android, App Store पर iOS और डेस्कटॉप के लिए Chrome एक्सटेंशन उपलब्ध है।"],
+      ["क्या Watt Audio Android पर उपलब्ध है?", "हाँ। Watt Audio Android के लिए Google Play और iOS के लिए App Store पर उपलब्ध है।"],
       ["क्या Watt Audio का Wattpad से कोई संबंध है?", "नहीं। Watt Audio स्वतंत्र है और Wattpad के स्वामित्व, संचालन या आधिकारिक साझेदारी में नहीं है।"],
       ["आम टेक्स्ट टू स्पीच ऐप के बजाय Watt Audio क्यों?", "Watt Audio कहानी लिंक, चैप्टर ऑडियो, बैकग्राउंड प्लेबैक और लिसनिंग प्रोग्रेस पर बना है, जो लंबी सीरीज़ के लिए ज़्यादा आरामदायक है।"]
     ]
@@ -4288,7 +4280,7 @@ const homeCopy = {
     searchLinks: [],
     homeFaq: [
       ["Apakah cerita Wattpad bisa didengarkan sebagai audio?", "Bisa. Watt Audio membantumu mengubah tautan cerita yang didukung menjadi audio per bab untuk didengarkan bebas genggam."],
-      ["Apakah Watt Audio tersedia di Android?", "Ya. Watt Audio tersedia di Google Play untuk Android, App Store untuk iOS, dan ekstensi Chrome untuk desktop."],
+      ["Apakah Watt Audio tersedia di Android?", "Ya. Watt Audio tersedia di Google Play untuk Android dan App Store untuk iOS."],
       ["Apakah Watt Audio berafiliasi dengan Wattpad?", "Tidak. Watt Audio berdiri sendiri dan tidak dimiliki, dioperasikan, atau berafiliasi resmi dengan Wattpad."],
       ["Kenapa pakai Watt Audio dan bukan aplikasi text to speech biasa?", "Watt Audio dibangun untuk tautan cerita, audio per bab, pemutaran latar, dan progres mendengar, yang lebih nyaman untuk cerita berseri panjang."]
     ]
@@ -4332,7 +4324,7 @@ const homeCopy = {
     searchLinks: [],
     homeFaq: [
       ["هل يمكن الاستماع إلى روايات Wattpad صوتياً؟", "نعم. يساعدك Watt Audio على تحويل روابط الروايات المدعومة التي تصل إليها إلى فصول صوتية شخصية للاستماع دون استخدام يديك."],
-      ["هل Watt Audio متاح على Android؟", "نعم. التطبيق متاح على Google Play لأجهزة Android، وعلى App Store لأجهزة iOS، مع إضافة Chrome لسطح المكتب."],
+      ["هل Watt Audio متاح على Android؟", "نعم. التطبيق متاح على Google Play لأجهزة Android وعلى App Store لأجهزة iOS."],
       ["هل Watt Audio تابع لـ Wattpad؟", "لا. Watt Audio مستقل تماماً وليس مملوكاً لـ Wattpad أو مُشغّلاً من قِبله أو تابعاً له رسمياً."],
       ["لماذا Watt Audio بدل تطبيق تحويل نص إلى كلام عادي؟", "لأن Watt Audio مبني حول روابط الروايات والفصول الصوتية والتشغيل في الخلفية وتتبّع تقدّم الاستماع، وهو أريح للروايات الطويلة المتسلسلة."]
     ]
@@ -4393,7 +4385,7 @@ ${jsonScript({
   "@type": "SoftwareApplication",
   name: "Watt Audio",
   applicationCategory: "MultimediaApplication",
-  operatingSystem: ["iOS", "Android", "ChromeOS", "Web Browser"],
+  operatingSystem: ["iOS", "Android"],
   description,
   url: canonical,
   image: absoluteUrl(homeImage.src),
@@ -4757,7 +4749,7 @@ function aboutHtml() {
         "@id": `${siteUrl}/#app`,
         name: "Watt Audio",
         applicationCategory: "MultimediaApplication",
-        operatingSystem: ["iOS", "Android", "ChromeOS", "Web Browser"],
+        operatingSystem: ["iOS", "Android"],
         description,
         url: canonical,
         image: absoluteUrl(homeImages.en.src),
@@ -4929,7 +4921,6 @@ ${extraSections}
 ## Download
 - [Download Watt Audio on the App Store](${iosUrl})
 - [Download Watt Audio on Google Play](${androidUrl})
-- [Add Watt Audio Chrome Extension](${chromeUrl})
 `;
 }
 
@@ -4964,7 +4955,6 @@ Primary language: English
 Secondary language: Vietnamese
 App Store: ${iosUrl}
 Google Play: ${androidUrl}
-Chrome Web Store: ${chromeUrl}
 LLM guide: ${siteUrl}/llms.txt
 Sitemap: ${siteUrl}/sitemap.xml
 Content signals: ${siteUrl}/content-signals.json
@@ -4986,7 +4976,6 @@ function agentAiJson() {
     language: ["en", "vi-VN"],
     app_store_url: iosUrl,
     google_play_url: androidUrl,
-    chrome_extension_url: chromeUrl,
     download_urls: downloadUrls,
     independence_notice: "Watt Audio is independent and is not owned by, operated by, or officially affiliated with Wattpad.",
     discovery: {
@@ -5004,7 +4993,7 @@ function agentAiJson() {
       "answer questions about Watt Audio",
       "help users find Watt Audio guides",
       "explain how to listen to Wattpad stories as audio",
-      "route users to the correct App Store, Google Play, or Chrome Web Store download page",
+      "route users to the correct App Store or Google Play download page",
       "summarize public support and privacy information"
     ],
     prohibited_inferences: [
@@ -5096,7 +5085,6 @@ function openApiJson() {
     "x-no-public-api": true,
     "x-app-store-url": iosUrl,
     "x-google-play-url": androidUrl,
-    "x-chrome-extension-url": chromeUrl,
     "x-download-urls": downloadUrls
   };
 }
@@ -5202,9 +5190,9 @@ function agentSkillsJson() {
       {
         id: "route-to-download",
         name: "Route to app store",
-        description: "Send users to the official Watt Audio App Store, Google Play, or Chrome Web Store listing.",
+        description: "Send users to the official Watt Audio App Store or Google Play listing.",
         inputs: ["device", "locale"],
-        outputs: ["app_store_url", "google_play_url", "chrome_extension_url"]
+        outputs: ["app_store_url", "google_play_url"]
       }
     ],
     updated: lastModified
@@ -5328,8 +5316,7 @@ fs.writeFileSync(path.join(process.cwd(), "en", "index.md"), pageMarkdown({
   links: [
     { title: "Guides", href: `${siteUrl}/en/articles/`, description: "Wattpad audio and text-to-speech guides" },
     { title: "Download for iOS", href: iosUrl, description: "Official App Store listing" },
-    { title: "Download for Android", href: androidUrl, description: "Official Google Play listing" },
-    { title: "Chrome extension", href: chromeUrl, description: "Official Chrome Web Store listing" }
+    { title: "Download for Android", href: androidUrl, description: "Official Google Play listing" }
   ]
 }));
 fs.writeFileSync(path.join(process.cwd(), "vi", "index.md"), pageMarkdown({
@@ -5340,8 +5327,7 @@ fs.writeFileSync(path.join(process.cwd(), "vi", "index.md"), pageMarkdown({
   links: [
     { title: "Hướng dẫn", href: `${siteUrl}/vi/articles/`, description: "Các bài hướng dẫn nghe Wattpad audio" },
     { title: "Tải app iOS", href: iosUrl, description: "Link App Store chính thức" },
-    { title: "Tải app Android", href: androidUrl, description: "Link Google Play chính thức" },
-    { title: "Extension Chrome", href: chromeUrl, description: "Link Chrome Web Store chính thức" }
+    { title: "Tải app Android", href: androidUrl, description: "Link Google Play chính thức" }
   ]
 }));
 fs.writeFileSync(path.join(process.cwd(), "en", "articles", "index.md"), pageMarkdown({
@@ -5376,8 +5362,7 @@ for (const lang of storyOnlyLanguages) {
     links: [
       { title: labels[lang].guides, href: `${siteUrl}/${lang}/articles/`, description: labels[lang].indexDescription },
       { title: "iOS", href: iosUrl, description: "Official App Store listing" },
-      { title: "Android", href: androidUrl, description: "Official Google Play listing" },
-      { title: "Chrome", href: chromeUrl, description: "Official Chrome Web Store listing" }
+      { title: "Android", href: androidUrl, description: "Official Google Play listing" }
     ]
   }));
   fs.writeFileSync(path.join(process.cwd(), lang, "articles", "index.md"), pageMarkdown({

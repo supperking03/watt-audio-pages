@@ -445,7 +445,7 @@ function detectLanguage(text) {
   return "en";
 }
 
-// Search-page chrome that YouTube renders with the same markup as video titles.
+// Search-page UI that YouTube renders with the same markup as video titles.
 const interfaceNoise = /^(bộ lọc|tìm kiếm|kết quả|video 360|đăng ký|xem sau|phát tất cả|thêm|tất cả|search filters?|filters?|shorts|live|playlists?|subscribe|watch later|play all|sort by|latest|show more|खोज|फ़िल्टर|सदस्यता|प्लेलिस्ट|सभी|filter penelusuran|langganan|putar semua|semua|عوامل التصفية|نتائج البحث|اشترك|قائمة التشغيل|الكل)\b/i;
 
 async function collectRoyalRoad(source) {
@@ -586,7 +586,7 @@ function makeCandidate(item) {
   if (language === "en" && /^google-/.test(item.source)) return null;
   if (language === "en" && /^(how|does|do|can|is|are|what|why|where|when|which)\b/i.test(title)) return null;
   if (language === "en" && /^(reading|watching|reacting to|trying|ranking|reviewing)\b/i.test(title)) return null;
-  if (language === "en" && /\b(text to speech|tts|read aloud|audiobook|audio book|chrome extension|app for android|reading on free)\b/i.test(title)) return null;
+  if (language === "en" && /\b(text to speech|tts|read aloud|audiobook|audio book|app for android|reading on free)\b/i.test(title)) return null;
   if (language === "vi" && /^google-/.test(item.source) && /^truyện\s+(đam mỹ|ngôn tình|trọng sinh|xuyên sách|tổng tài|wattpad|full|hot|hay)\b/i.test(title)) return null;
   if (language === "hi" && /^(हिंदी|कहानी|ऑडियो|नई|बेस्ट|टॉप)\s/.test(title)) return null;
   if (language === "hi" && /\b(audio story|audiobook|text to speech|kahani sunao)\b/i.test(title)) return null;

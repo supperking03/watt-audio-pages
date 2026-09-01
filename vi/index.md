@@ -10,7 +10,6 @@ Language: vi-VN
 - [Hướng dẫn](https://wattaudios.com/vi/articles/): Các bài hướng dẫn nghe Wattpad audio
 - [Tải app iOS](https://apps.apple.com/vn/app/watt-audio-%C4%91%E1%BB%8Dc-truy%E1%BB%87n-audio/id6775724279): Link App Store chính thức
 - [Tải app Android](https://play.google.com/store/apps/details?id=com.supperking03.wattpadaudio): Link Google Play chính thức
-- [Extension Chrome](https://chromewebstore.google.com/detail/watt-audio-nghe-wattpad-a/aipmnekljadgnhedbkhmbghkanjepied): Link Chrome Web Store chính thức
 
 ## Agent Notes
 - Watt Audio is an independent mobile app. It is not owned by, operated by, or officially affiliated with Wattpad.
