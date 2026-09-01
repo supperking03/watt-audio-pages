@@ -3287,6 +3287,36 @@ const topics = [
     idMotif: "misteri dan ketegangan",
     arMotif: "التشويق والغموض",
     languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "grub-of-the-ironfang-goblin-mc-multiple-mc-litrpg-progression-books-1-2-complete-500k-word-b",
+    title: "Grub Of The Ironfang [Goblin MC] [Multiple MC] [LitRPG/Progression] [Books 1 & 2 Complete] [500K+ Word Backlog]",
+    enMotif: "fantasy adventure",
+    viMotif: "tiên hiệp fantasy",
+    hiMotif: "फ़ैंटेसी एडवेंचर",
+    idMotif: "petualangan fantasi",
+    arMotif: "مغامرات خيالية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "the-legendary-demon-hunter-s-cursed-brother-progression-fantasy-isekai-system",
+    title: "The Legendary Demon Hunter’s Cursed Brother [Progression Fantasy • Isekai • System]",
+    enMotif: "transmigration and fantasy adventure",
+    viMotif: "xuyên sách và tiên hiệp fantasy",
+    hiMotif: "दूसरी दुनिया और फ़ैंटेसी एडवेंचर",
+    idMotif: "pindah dunia dan petualangan fantasi",
+    arMotif: "الانتقال إلى عالم آخر و مغامرات خيالية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "jasusi-kahani-qatal-ka-rahasy",
+    title: "जासूसी कहानी- क़तल का रहस्य",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["hi"]
   })
 ];
 
