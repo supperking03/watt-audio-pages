@@ -3366,6 +3366,16 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "trong-sinh-dung-ngay-em-ho-gap-nan-toi-tu-choi-ganh-hoa-thay-ca-nha",
+    title: "Trọng Sinh Đúng Ngày Em Họ Gặp Nạn, Tôi Từ Chối Gánh Họa Thay Cả Nhà",
+    enMotif: "rebirth",
+    viMotif: "trọng sinh",
+    hiMotif: "पुनर्जन्म",
+    idMotif: "terlahir kembali",
+    arMotif: "العودة إلى الماضي",
+    languages: ["vi"]
   })
 ];
 
