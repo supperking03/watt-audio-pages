@@ -3376,6 +3376,16 @@ const topics = [
     idMotif: "terlahir kembali",
     arMotif: "العودة إلى الماضي",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "the-level-1-transmigrator-litrpg-skill-progression-book-2-written",
+    title: "The Level 1 Transmigrator [LitRPG Skill Progression] [Book 2 Written]",
+    enMotif: "suspense and mystery and fantasy adventure",
+    viMotif: "kinh dị bí ẩn và tiên hiệp fantasy",
+    hiMotif: "सस्पेंस और रहस्य और फ़ैंटेसी एडवेंचर",
+    idMotif: "misteri dan ketegangan dan petualangan fantasi",
+    arMotif: "التشويق والغموض و مغامرات خيالية",
+    languages: ["en"]
   })
 ];
 
