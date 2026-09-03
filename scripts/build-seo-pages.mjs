@@ -3386,6 +3386,36 @@ const topics = [
     idMotif: "misteri dan ketegangan dan petualangan fantasi",
     arMotif: "التشويق والغموض و مغامرات خيالية",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "trong-sinh-toi-mac-ke-tra-nam-theo-tra-xanh-toi-cung-trum-truong-thi-do-dai-hoc",
+    title: "Trọng Sinh Tôi Mặc Kệ Tra Nam Theo Trà Xanh, Tôi Cùng Trùm Trường Thi đỗ Đại Học",
+    enMotif: "rebirth, green tea rival and school romance",
+    viMotif: "trọng sinh, trà xanh và vườn trường",
+    hiMotif: "पुनर्जन्म, छल भरी प्रतिद्वंद्वी और कॉलेज रोमांस",
+    idMotif: "terlahir kembali, rival bermuka dua dan romansa sekolah",
+    arMotif: "العودة إلى الماضي, المنافسة الماكرة و رومانسية المدرسة",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "toi-pha-am-muu-trao-con-cua-tra-xanh-va-mat-thang-con-phan-boi",
+    title: "Tôi Phá Âm Mưu Tráo Con của Trà Xanh, Vả Mặt Thằng Con Phản Bội",
+    enMotif: "green tea rival and family drama",
+    viMotif: "trà xanh và gia đình",
+    hiMotif: "छल भरी प्रतिद्वंद्वी और पारिवारिक ड्रामा",
+    idMotif: "rival bermuka dua dan drama keluarga",
+    arMotif: "المنافسة الماكرة و دراما عائلية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "a-journey-of-black-and-red",
+    title: "A Journey of Black and Red",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["en"]
   })
 ];
 
