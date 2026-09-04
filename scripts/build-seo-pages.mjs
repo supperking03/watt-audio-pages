@@ -3426,6 +3426,26 @@ const topics = [
     idMotif: "misteri dan ketegangan dan petualangan fantasi",
     arMotif: "التشويق والغموض و مغامرات خيالية",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "trong-sinh-roi-toi-luoi-den-muc-tra-xanh-phat-hoang",
+    title: "Trọng Sinh Rồi, Tôi Lười Đến Mức Trà Xanh Phát Hoảng",
+    enMotif: "rebirth and green tea rival",
+    viMotif: "trọng sinh và trà xanh",
+    hiMotif: "पुनर्जन्म और छल भरी प्रतिद्वंद्वी",
+    idMotif: "terlahir kembali dan rival bermuka dua",
+    arMotif: "العودة إلى الماضي و المنافسة الماكرة",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "hon-uoc-tu-be-voi-ong-trum-hac-bang",
+    title: "Hôn Ước Từ Bé với Ông Trùm Hắc Bang",
+    enMotif: "marriage drama",
+    viMotif: "cưới gả",
+    hiMotif: "शादी का ड्रामा",
+    idMotif: "drama pernikahan",
+    arMotif: "دراما الزواج",
+    languages: ["vi"]
   })
 ];
 
