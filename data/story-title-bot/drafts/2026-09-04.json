@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T03:00:06.165Z",
+  "generatedAt": "2026-09-04T08:00:05.177Z",
   "date": "2026-09-04",
   "mode": "network",
   "languages": [
@@ -9,96 +9,66 @@
     "id",
     "ar"
   ],
-  "sourceCount": 1214,
+  "sourceCount": 1199,
   "scoring": "v4-multi-market-opportunity-demand-minus-audio-competition",
   "candidates": [
     {
-      "title": "Trọng Sinh Rồi, Tôi Lười Đến Mức Trà Xanh Phát Hoảng",
-      "slug": "trong-sinh-roi-toi-luoi-den-muc-tra-xanh-phat-hoang",
-      "language": "vi",
-      "score": 80,
-      "demandScore": 75,
-      "audioSignalScore": 11,
-      "audioCompetitionScore": 1,
-      "audioCompetitionLevel": "low",
-      "opportunityScore": 80,
-      "enMotif": "rebirth and green tea rival",
-      "viMotif": "trọng sinh và trà xanh",
-      "hiMotif": "पुनर्जन्म और छल भरी प्रतिद्वंद्वी",
-      "idMotif": "terlahir kembali dan rival bermuka dua",
-      "arMotif": "العودة إلى الماضي و المنافسة الماكرة",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "language": "vi",
-          "query": "truyện trọng sinh audio",
-          "text": "Audio Full | TRỌNG SINH RỒI, TÔI LƯỜI ĐẾN MỨC TRÀ XANH PHÁT HOẢNG | Trà Xanh Audio"
-        },
-        {
-          "source": "youtube-search",
-          "language": "vi",
-          "query": "truyện trà xanh audio",
-          "text": "Audio Full | TRỌNG SINH RỒI, TÔI LƯỜI ĐẾN MỨC TRÀ XANH PHÁT HOẢNG | Trà Xanh Audio"
-        },
-        {
-          "source": "youtube-audio-competition",
-          "query": "\"Trọng Sinh Rồi, Tôi Lười Đến Mức Trà Xanh Phát Hoảng\" audio",
-          "text": "Audio Full | TRỌNG SINH RỒI, TÔI LƯỜI ĐẾN MỨC TRÀ XANH PHÁT HOẢNG | Trà Xanh Audio"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "Hôn Ước Từ Bé với Ông Trùm Hắc Bang",
-      "slug": "hon-uoc-tu-be-voi-ong-trum-hac-bang",
-      "language": "vi",
-      "score": 69,
-      "demandScore": 70,
-      "audioSignalScore": 11,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "unknown",
-      "opportunityScore": 69,
-      "enMotif": "marriage drama",
-      "viMotif": "cưới gả",
-      "hiMotif": "शादी का ड्रामा",
-      "idMotif": "drama pernikahan",
-      "arMotif": "دراما الزواج",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "language": "vi",
-          "query": "truyện ngôn tình audio full",
-          "text": "Truyện Audio || HÔN ƯỚC TỪ BÉ VỚI ÔNG TRÙM HẮC BANG (Full) || AnAn Audio"
-        },
-        {
-          "source": "youtube-search",
-          "language": "vi",
-          "query": "truyện wattpad audio full",
-          "text": "Truyện Audio || HÔN ƯỚC TỪ BÉ VỚI ÔNG TRÙM HẮC BANG (Full) || AnAn Audio"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"Hôn Ước Từ Bé với Ông Trùm Hắc Bang\" audio",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"Hôn Ước Từ Bé với Ông Trùm Hắc Bang\" \"truyện audio\"",
-          "text": "fetch failed"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "शिमशोन की पूरी बाइबल से स्टोरी Simpson Ki Bible Se Hindi Christian Story Video",
-      "slug": "shimashon-ki-puri-baibal-se-stori-simpson-ki-bible-se-hindi-christian-story-video",
+      "title": "Detective Story- क़त्ल का रहस्य",
+      "slug": "detective-story-qatl-ka-rahasy",
       "language": "hi",
-      "score": 60,
-      "demandScore": 64,
-      "audioSignalScore": 8,
+      "score": 85,
+      "demandScore": 71,
+      "audioSignalScore": 14,
       "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "unknown",
-      "opportunityScore": 60,
+      "audioCompetitionLevel": "none",
+      "opportunityScore": 85,
+      "enMotif": "suspense and mystery",
+      "viMotif": "kinh dị bí ẩn",
+      "hiMotif": "सस्पेंस और रहस्य",
+      "idMotif": "misteri dan ketegangan",
+      "arMotif": "التشويق والغموض",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "hi",
+          "query": "हिंदी कहानी ऑडियो पूरी",
+          "text": "Detective Story- क़त्ल का रहस्य| Detective Mystery Of Malvika| Detective Stories In Hindi| Jasus"
+        },
+        {
+          "source": "youtube-search",
+          "language": "hi",
+          "query": "हिंदी सस्पेंस कहानी ऑडियो",
+          "text": "Detective Story- क़त्ल का रहस्य| Detective Mystery Of Malvika| Detective Stories In Hindi| Jasus"
+        },
+        {
+          "source": "youtube-search",
+          "language": "hi",
+          "query": "hindi audio story full",
+          "text": "Detective Story- क़त्ल का रहस्य| Detective Mystery Of Malvika| Detective Stories In Hindi| Jasus"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Detective Story- क़त्ल का रहस्य\" कहानी",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Detective Story- क़त्ल का रहस्य\" audio story",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "عندما يتحول الحب إلى أسر لا مفر منه",
+      "slug": "andma-ythwl-alhb-ila-asr-la-mfr-mnh",
+      "language": "ar",
+      "score": 80,
+      "demandScore": 69,
+      "audioSignalScore": 11,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "none",
+      "opportunityScore": 80,
       "enMotif": "Vietnamese web fiction and romance drama",
       "viMotif": "truyện mạng Việt và romance drama",
       "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
@@ -107,31 +77,183 @@
       "evidence": [
         {
           "source": "youtube-search",
-          "language": "hi",
-          "query": "हिंदी कहानी ऑडियो पूरी",
-          "text": "शिमशोन की पूरी बाइबल से स्टोरी Simpson ki Bible se full Hindi Christian Story Video"
+          "language": "ar",
+          "query": "رواية رومانسية صوتية كاملة",
+          "text": "حب تحت رهن العشق ❤️ | قصة رومانسية مشوقة | عندما يتحول الحب إلى أسر لا مفر منه 🔥#توتا_وماجى"
+        },
+        {
+          "source": "youtube-search",
+          "language": "ar",
+          "query": "قصة حب صوتية كاملة",
+          "text": "حب تحت رهن العشق ❤️ | قصة رومانسية مشوقة | عندما يتحول الحب إلى أسر لا مفر منه 🔥#توتا_وماجى"
         },
         {
           "source": "competition-error",
-          "query": "\"शिमशोन की पूरी बाइबल से स्टोरी Simpson Ki Bible Se Hindi Christian Story Video\" ऑडियो",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"शिमशोन की पूरी बाइबल से स्टोरी Simpson Ki Bible Se Hindi Christian Story Video\" कहानी",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"शिमशोन की पूरी बाइबल से स्टोरी Simpson Ki Bible Se Hindi Christian Story Video\" audio story",
+          "query": "\"عندما يتحول الحب إلى أسر لا مفر منه\" audio",
           "text": "fetch failed"
         }
       ],
       "status": "draft"
     },
     {
-      "title": "Lỡ Nhìn Trộm Đại Ca Trường, Tôi Bị Anh Cướp Luôn Nụ Hôn Đầu",
-      "slug": "lo-nhin-trom-dai-ca-truong-toi-bi-anh-cuop-luon-nu-hon-dau",
+      "title": "Gả Thay Em Gái, Tôi Được Mẹ Chồng Cưng Tận Nóc",
+      "slug": "ga-thay-em-gai-toi-duoc-me-chong-cung-tan-noc",
+      "language": "vi",
+      "score": 66,
+      "demandScore": 70,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 66,
+      "enMotif": "family drama",
+      "viMotif": "gia đình",
+      "hiMotif": "पारिवारिक ड्रामा",
+      "idMotif": "drama keluarga",
+      "arMotif": "دراما عائلية",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "[Truyện Audio] | Gả Thay Em Gái, Tôi Được Mẹ Chồng Cưng Tận Nóc | Túi Mù Audio #audio  #truyenaudio"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Gả Thay Em Gái, Tôi Được Mẹ Chồng Cưng Tận Nóc\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Gả Thay Em Gái, Tôi Được Mẹ Chồng Cưng Tận Nóc\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Gả Thay Chị Gái, Tôi Được Thái Tử Gia Cưng Chiều",
+      "slug": "ga-thay-chi-gai-toi-duoc-thai-tu-gia-cung-chieu",
+      "language": "vi",
+      "score": 66,
+      "demandScore": 70,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 66,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "[Truyện Audio] | Gả Thay Chị Gái, Tôi Được Thái Tử Gia Cưng Chiều | DuDu Audio"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Gả Thay Chị Gái, Tôi Được Thái Tử Gia Cưng Chiều\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Gả Thay Chị Gái, Tôi Được Thái Tử Gia Cưng Chiều\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Hoa Khôi Bắt Cả Lớp Không Được Mặc Đẹp Hơn Mình Trong Dạ Hội",
+      "slug": "hoa-khoi-bat-ca-lop-khong-duoc-mac-dep-hon-minh-trong-da-hoi",
+      "language": "vi",
+      "score": 66,
+      "demandScore": 70,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 66,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "Full Audio | Hoa Khôi Bắt Cả Lớp Không Được Mặc Đẹp Hơn Mình Trong Dạ Hội"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Hoa Khôi Bắt Cả Lớp Không Được Mặc Đẹp Hơn Mình Trong Dạ Hội\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Hoa Khôi Bắt Cả Lớp Không Được Mặc Đẹp Hơn Mình Trong Dạ Hội\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Hoa Khôi Đặt 1000 Suất Gà Rán Rồi Bắt Cả Lớp Trả Tiền",
+      "slug": "hoa-khoi-dat-1000-suat-ga-ran-roi-bat-ca-lop-tra-tien",
+      "language": "vi",
+      "score": 64,
+      "demandScore": 71,
+      "audioSignalScore": 11,
+      "audioCompetitionScore": 3,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 64,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện audio full mới nhất",
+          "text": "Truyện Audio Full | HOA KHÔI ĐẶT 1000 SUẤT GÀ RÁN RỒI BẮT CẢ LỚP TRẢ TIỀN | Mạn Mạn Audio"
+        },
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện ngôn tình audio full",
+          "text": "Truyện Audio Full | HOA KHÔI ĐẶT 1000 SUẤT GÀ RÁN RỒI BẮT CẢ LỚP TRẢ TIỀN | Mạn Mạn Audio"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Hoa Khôi Đặt 1000 Suất Gà Rán Rồi Bắt Cả Lớp Trả Tiền\" \"truyện audio\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Hoa Khôi Đặt 1000 Suất Gà Rán Rồi Bắt Cả Lớp Trả Tiền\" audio",
+          "text": "Truyện Audio Full | HOA KHÔI ĐẶT 1000 SUẤT GÀ RÁN RỒI BẮT CẢ LỚP TRẢ TIỀN | Mạn Mạn Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Hoa Khôi Đặt 1000 Suất Gà Rán Rồi Bắt Cả Lớp Trả Tiền\" audio",
+          "text": "[TRUYỆN AUDIO] HOA KHÔI ĐẶT 1000 SUẤT GÀ RÁN RỒI BẮT CẢ LỚP TRẢ TIỀN | ĐAN TÂM AUDIO SỐ 109"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Hoa Khôi Đặt 1000 Suất Gà Rán Rồi Bắt Cả Lớp Trả Tiền\" audio",
+          "text": "[Truyện Audio Full] HOA KHÔI ĐẶT 1000 SUẤT GÀ RÁN, RỒI BẮT CẢ LỚP TRẢ TIỀN | Cú Đêm Audio"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Tôi Vả Mặt Trà Xanh Nghèo Thích Vừa Ăn Cướp Vừa La Làng",
+      "slug": "toi-va-mat-tra-xanh-ngheo-thich-vua-an-cuop-vua-la-lang",
       "language": "vi",
       "score": 58,
       "demandScore": 62,
@@ -139,61 +261,26 @@
       "audioCompetitionScore": 0,
       "audioCompetitionLevel": "unknown",
       "opportunityScore": 58,
-      "enMotif": "school romance",
-      "viMotif": "vườn trường",
-      "hiMotif": "कॉलेज रोमांस",
-      "idMotif": "romansa sekolah",
-      "arMotif": "رومانسية المدرسة",
+      "enMotif": "green tea rival",
+      "viMotif": "trà xanh",
+      "hiMotif": "छल भरी प्रतिद्वंद्वी",
+      "idMotif": "rival bermuka dua",
+      "arMotif": "المنافسة الماكرة",
       "evidence": [
         {
           "source": "youtube-search",
           "language": "vi",
-          "query": "truyện ngôn tình audio full",
-          "text": "Lỡ Nhìn Trộm Đại Ca Trường, Tôi Bị Anh Cướp Luôn Nụ Hôn Đầu | Truyện Audio Nấu Ăn"
+          "query": "truyện audio full mới nhất",
+          "text": "Truyện Audio| TÔI VẢ MẶT TRÀ XANH NGHÈO THÍCH VỪA ĂN CƯỚP VỪA LA LÀNG| Full Audio"
         },
         {
           "source": "competition-error",
-          "query": "\"Lỡ Nhìn Trộm Đại Ca Trường, Tôi Bị Anh Cướp Luôn Nụ Hôn Đầu\" audio",
+          "query": "\"Tôi Vả Mặt Trà Xanh Nghèo Thích Vừa Ăn Cướp Vừa La Làng\" audio",
           "text": "fetch failed"
         },
         {
           "source": "competition-error",
-          "query": "\"Lỡ Nhìn Trộm Đại Ca Trường, Tôi Bị Anh Cướp Luôn Nụ Hôn Đầu\" \"truyện audio\"",
-          "text": "fetch failed"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "Quên Tắt Mic Trêu Đại Ca Trường, Tôi Bị Anh Bắt Về Làm Vợ",
-      "slug": "quen-tat-mic-treu-dai-ca-truong-toi-bi-anh-bat-ve-lam-vo",
-      "language": "vi",
-      "score": 58,
-      "demandScore": 62,
-      "audioSignalScore": 8,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "unknown",
-      "opportunityScore": 58,
-      "enMotif": "school romance",
-      "viMotif": "vườn trường",
-      "hiMotif": "कॉलेज रोमांस",
-      "idMotif": "romansa sekolah",
-      "arMotif": "رومانسية المدرسة",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "language": "vi",
-          "query": "truyện ngôn tình audio full",
-          "text": "Quên Tắt Mic Trêu Đại Ca Trường, Tôi Bị Anh Bắt Về Làm Vợ | Truyện Full"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"Quên Tắt Mic Trêu Đại Ca Trường, Tôi Bị Anh Bắt Về Làm Vợ\" audio",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"Quên Tắt Mic Trêu Đại Ca Trường, Tôi Bị Anh Bắt Về Làm Vợ\" \"truyện audio\"",
+          "query": "\"Tôi Vả Mặt Trà Xanh Nghèo Thích Vừa Ăn Cướp Vừa La Làng\" \"truyện audio\"",
           "text": "fetch failed"
         }
       ],
@@ -332,8 +419,8 @@
       "status": "draft"
     },
     {
-      "title": "X Lofi Girl Presents Lofi Beats To Write/read To",
-      "slug": "x-lofi-girl-presents-lofi-beats-to-write-read-to",
+      "title": "Defend Me, Attorney By Josh Gonzales (Part 1)",
+      "slug": "defend-me-attorney-by-josh-gonzales-part-1",
       "language": "en",
       "score": 54,
       "demandScore": 58,
@@ -350,22 +437,22 @@
         {
           "source": "youtube-search",
           "language": "en",
-          "query": "wattpad fanfiction audio",
-          "text": "Wattpad x Lofi Girl presents lofi beats to write/read to"
+          "query": "wattpad story audio",
+          "text": "Law Series 1: Defend Me, Attorney by Josh Gonzales (Part 1)"
         },
         {
           "source": "competition-error",
-          "query": "\"X Lofi Girl Presents Lofi Beats To Write/read To\" audiobook",
+          "query": "\"Defend Me, Attorney By Josh Gonzales (Part 1)\" audiobook",
           "text": "fetch failed"
         },
         {
           "source": "competition-error",
-          "query": "\"X Lofi Girl Presents Lofi Beats To Write/read To\" \"read aloud\"",
+          "query": "\"Defend Me, Attorney By Josh Gonzales (Part 1)\" \"read aloud\"",
           "text": "fetch failed"
         },
         {
           "source": "competition-error",
-          "query": "\"X Lofi Girl Presents Lofi Beats To Write/read To\" audio",
+          "query": "\"Defend Me, Attorney By Josh Gonzales (Part 1)\" audio",
           "text": "fetch failed"
         }
       ],
@@ -412,8 +499,8 @@
       "status": "draft"
     },
     {
-      "title": "Weatherologist In A World Of Magic (Reincarnation, Grimdark, Fantasy, Magic) Royal Road",
-      "slug": "weatherologist-in-a-world-of-magic-reincarnation-grimdark-fantasy-magic-royal-road",
+      "title": "[1-30] My College Rival Is Obsessed With Me",
+      "slug": "1-30-my-college-rival-is-obsessed-with-me",
       "language": "en",
       "score": 52,
       "demandScore": 56,
@@ -421,31 +508,31 @@
       "audioCompetitionScore": 0,
       "audioCompetitionLevel": "unknown",
       "opportunityScore": 52,
-      "enMotif": "suspense and mystery and fantasy adventure",
-      "viMotif": "kinh dị bí ẩn và tiên hiệp fantasy",
-      "hiMotif": "सस्पेंस और रहस्य और फ़ैंटेसी एडवेंचर",
-      "idMotif": "misteri dan ketegangan dan petualangan fantasi",
-      "arMotif": "التشويق والغموض و مغامرات خيالية",
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
       "evidence": [
         {
           "source": "youtube-search",
           "language": "en",
-          "query": "royal road audiobook",
-          "text": "Weatherologist in a World of Magic  (Reincarnation, Grimdark, Fantasy, Magic) Royal Road Audiobook"
+          "query": "wattpad fanfiction audio",
+          "text": "[1-30] My College Rival is Obsessed with Me"
         },
         {
           "source": "competition-error",
-          "query": "\"Weatherologist In A World Of Magic (Reincarnation, Grimdark, Fantasy, Magic) Royal Road\" audiobook",
+          "query": "\"[1-30] My College Rival Is Obsessed With Me\" audiobook",
           "text": "fetch failed"
         },
         {
           "source": "competition-error",
-          "query": "\"Weatherologist In A World Of Magic (Reincarnation, Grimdark, Fantasy, Magic) Royal Road\" \"read aloud\"",
+          "query": "\"[1-30] My College Rival Is Obsessed With Me\" \"read aloud\"",
           "text": "fetch failed"
         },
         {
           "source": "competition-error",
-          "query": "\"Weatherologist In A World Of Magic (Reincarnation, Grimdark, Fantasy, Magic) Royal Road\" audio",
+          "query": "\"[1-30] My College Rival Is Obsessed With Me\" audio",
           "text": "fetch failed"
         }
       ],
@@ -652,52 +739,6 @@
       "status": "draft"
     },
     {
-      "title": "Detective Story- क़त्ल का रहस्य",
-      "slug": "detective-story-qatl-ka-rahasy",
-      "language": "hi",
-      "score": 52,
-      "demandScore": 53,
-      "audioSignalScore": 11,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "unknown",
-      "opportunityScore": 52,
-      "enMotif": "suspense and mystery",
-      "viMotif": "kinh dị bí ẩn",
-      "hiMotif": "सस्पेंस और रहस्य",
-      "idMotif": "misteri dan ketegangan",
-      "arMotif": "التشويق والغموض",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "language": "hi",
-          "query": "हिंदी सस्पेंस कहानी ऑडियो",
-          "text": "Detective Story- क़त्ल का रहस्य| Detective Mystery Of Malvika| Detective Stories In Hindi| Jasus"
-        },
-        {
-          "source": "youtube-search",
-          "language": "hi",
-          "query": "hindi audio story full",
-          "text": "Detective Story- क़त्ल का रहस्य| Detective Mystery Of Malvika| Detective Stories In Hindi| Jasus"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"Detective Story- क़त्ल का रहस्य\" ऑडियो",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"Detective Story- क़त्ल का रहस्य\" कहानी",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"Detective Story- क़त्ल का रहस्य\" audio story",
-          "text": "fetch failed"
-        }
-      ],
-      "status": "draft"
-    },
-    {
       "title": "वफादार कपिला गाय का प्यार और तिलिस्मी नदी",
       "slug": "vaphadar-kapila-gay-ka-pyar-aur-tilismi-nadi",
       "language": "hi",
@@ -733,62 +774,6 @@
           "source": "competition-error",
           "query": "\"वफादार कपिला गाय का प्यार और तिलिस्मी नदी\" audio story",
           "text": "fetch failed"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "Vị Hôn Thê Nhút Nhát của Trùm Hắc Bang là Sát Thủ",
-      "slug": "vi-hon-the-nhut-nhat-cua-trum-hac-bang-la-sat-thu",
-      "language": "vi",
-      "score": 47,
-      "demandScore": 72,
-      "audioSignalScore": 11,
-      "audioCompetitionScore": 6,
-      "audioCompetitionLevel": "high",
-      "opportunityScore": 47,
-      "enMotif": "Vietnamese web fiction and romance drama",
-      "viMotif": "truyện mạng Việt và romance drama",
-      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
-      "idMotif": "cerita online dan drama romansa",
-      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "language": "vi",
-          "query": "truyện audio full mới nhất",
-          "text": "Truyện Audio || VỊ HÔN THÊ NHÚT NHÁT CỦA TRÙM HẮC BANG LÀ SÁT THỦ || Tô Màu || AnAn Audio"
-        },
-        {
-          "source": "youtube-search",
-          "language": "vi",
-          "query": "truyện wattpad audio full",
-          "text": "Truyện Audio || VỊ HÔN THÊ NHÚT NHÁT CỦA TRÙM HẮC BANG LÀ SÁT THỦ || Tô Màu || AnAn Audio"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"Vị Hôn Thê Nhút Nhát của Trùm Hắc Bang là Sát Thủ\" \"truyện audio\"",
-          "text": "fetch failed"
-        },
-        {
-          "source": "youtube-audio-competition",
-          "query": "\"Vị Hôn Thê Nhút Nhát của Trùm Hắc Bang là Sát Thủ\" audio",
-          "text": "Truyện Audio || VỊ HÔN THÊ NHÚT NHÁT CỦA TRÙM HẮC BANG LÀ SÁT THỦ || Tô Màu || AnAn Audio"
-        },
-        {
-          "source": "youtube-audio-competition",
-          "query": "\"Vị Hôn Thê Nhút Nhát của Trùm Hắc Bang là Sát Thủ\" audio",
-          "text": "[TRUYEN AUDIO] [FULL] VỊ HÔN THÊ NHÚT NHÁT CỦA TRÙM HẮC BANG LÀ SÁT THỦ"
-        },
-        {
-          "source": "youtube-audio-competition",
-          "query": "\"Vị Hôn Thê Nhút Nhát của Trùm Hắc Bang là Sát Thủ\" audio",
-          "text": "Truyện Audio FULL | VỊ HÔN THÊ NHÚT NHÁT CỦA TRÙM HẮC BANG LÀ SÁT THỦ #manmanaudio123#audiotruyen"
-        },
-        {
-          "source": "youtube-audio-competition",
-          "query": "\"Vị Hôn Thê Nhút Nhát của Trùm Hắc Bang là Sát Thủ\" audio",
-          "text": "FULL | VỊ HÔN THÊ NHÚT NHÁT CỦA TRÙM HẮC BANG LÀ SÁT THỦ"
         }
       ],
       "status": "draft"
@@ -834,8 +819,8 @@
       "status": "draft"
     },
     {
-      "title": "الرواية التي كشفت أن الاستعمار لا يخرج من العقل",
-      "slug": "alrwayh-alty-kshft-an-alastamar-la-ykhrj-mn-alaql",
+      "title": "رواية الشتاء الطويل كاملة عندما يصوب اليوناني السهم فإنه لا يخطئ الهدف",
+      "slug": "rwayh-alshta-altwyl-kamlh-andma-yswb-alywnany-alshm-finh-la-ykhty-alhdf",
       "language": "ar",
       "score": 46,
       "demandScore": 50,
@@ -852,143 +837,23 @@
         {
           "source": "youtube-search",
           "language": "ar",
-          "query": "روايات عربية صوتية",
-          "text": "موسم الهجرة إلى الشمال – الرواية التي كشفت أن الاستعمار لا يخرج من العقل - الطيب صالح"
+          "query": "رواية رومانسية صوتية كاملة",
+          "text": "رواية الشتاء الطويل كاملة 💘عندما يصوب اليوناني السهم فإنه لا يخطئ الهدف💘"
         },
         {
           "source": "competition-error",
-          "query": "\"الرواية التي كشفت أن الاستعمار لا يخرج من العقل\" صوتية",
+          "query": "\"رواية الشتاء الطويل كاملة عندما يصوب اليوناني السهم فإنه لا يخطئ الهدف\" صوتية",
           "text": "fetch failed"
         },
         {
           "source": "competition-error",
-          "query": "\"الرواية التي كشفت أن الاستعمار لا يخرج من العقل\" رواية صوتية",
+          "query": "\"رواية الشتاء الطويل كاملة عندما يصوب اليوناني السهم فإنه لا يخطئ الهدف\" رواية صوتية",
           "text": "fetch failed"
         },
         {
           "source": "competition-error",
-          "query": "\"الرواية التي كشفت أن الاستعمار لا يخرج من العقل\" audio",
+          "query": "\"رواية الشتاء الطويل كاملة عندما يصوب اليوناني السهم فإنه لا يخطئ الهدف\" audio",
           "text": "fetch failed"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "Phir Ek Baar (फिर एक बार)",
-      "slug": "phir-ek-baar-phir-ek-bar",
-      "language": "hi",
-      "score": 44,
-      "demandScore": 48,
-      "audioSignalScore": 8,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "unknown",
-      "opportunityScore": 44,
-      "enMotif": "Vietnamese web fiction and romance drama",
-      "viMotif": "truyện mạng Việt và romance drama",
-      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
-      "idMotif": "cerita online dan drama romansa",
-      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "language": "hi",
-          "query": "हिंदी कहानी ऑडियो पूरी",
-          "text": "Phir Ek Baar (फिर एक बार) |  Kahaani Express with Neelesh Misra | Audio Story"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"Phir Ek Baar (फिर एक बार)\" ऑडियो",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"Phir Ek Baar (फिर एक बार)\" कहानी",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"Phir Ek Baar (फिर एक बार)\" audio story",
-          "text": "fetch failed"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "صراع العودة بين الوحوش والجبابرة",
-      "slug": "sraa-alawdh-byn-alwhwsh-waljbabrh",
-      "language": "ar",
-      "score": 42,
-      "demandScore": 46,
-      "audioSignalScore": 8,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "unknown",
-      "opportunityScore": 42,
-      "enMotif": "Vietnamese web fiction and romance drama",
-      "viMotif": "truyện mạng Việt và romance drama",
-      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
-      "idMotif": "cerita online dan drama romansa",
-      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "language": "ar",
-          "query": "رواية صوتية كاملة",
-          "text": "الأوديسا (رواية صوتية) | صراع العودة بين الوحوش والجبابرة| مسموع"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"صراع العودة بين الوحوش والجبابرة\" صوتية",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"صراع العودة بين الوحوش والجبابرة\" رواية صوتية",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"صراع العودة بين الوحوش والجبابرة\" audio",
-          "text": "fetch failed"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "شرارة ال عربيد بارت( الاول )كامل #",
-      "slug": "shrarh-al-arbyd-bart-alawl-kaml",
-      "language": "ar",
-      "score": 42,
-      "demandScore": 46,
-      "audioSignalScore": 8,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "unknown",
-      "opportunityScore": 42,
-      "enMotif": "Vietnamese web fiction and romance drama",
-      "viMotif": "truyện mạng Việt và romance drama",
-      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
-      "idMotif": "cerita online dan drama romansa",
-      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "language": "ar",
-          "query": "قصص واتباد صوتية",
-          "text": "شرارة ال عربيد بارت( الاول )كامل #بصوتى #قصص #واتباد "
-        },
-        {
-          "source": "competition-error",
-          "query": "\"شرارة ال عربيد بارت( الاول )كامل #\" صوتية",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"شرارة ال عربيد بارت( الاول )كامل #\" رواية صوتية",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"شرارة ال عربيد بارت( الاول )كامل #\" audio",
-          "text": "This operation was aborted"
         }
       ],
       "status": "draft"
@@ -997,12 +862,12 @@
       "title": "رواية ولو بعد حين",
       "slug": "rwayh-wlw-bad-hyn",
       "language": "ar",
-      "score": 20,
+      "score": 44,
       "demandScore": 45,
       "audioSignalScore": 11,
-      "audioCompetitionScore": 5,
-      "audioCompetitionLevel": "high",
-      "opportunityScore": 20,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 44,
       "enMotif": "Vietnamese web fiction and romance drama",
       "viMotif": "truyện mạng Việt và romance drama",
       "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
@@ -1028,28 +893,133 @@
         },
         {
           "source": "competition-error",
-          "query": "\"رواية ولو بعد حين\" audio",
+          "query": "\"رواية ولو بعد حين\" رواية صوتية",
           "text": "fetch failed"
         },
         {
-          "source": "youtube-audio-competition",
-          "query": "\"رواية ولو بعد حين\" رواية صوتية",
-          "text": "رواية ولو بعد حين | القصة كاملة صوتية مسموعة"
+          "source": "competition-error",
+          "query": "\"رواية ولو بعد حين\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "الفريسة والصياد 42 أقوى قصة عشق رومانسية مشوقة تجذب القلوب توتاوماجي",
+      "slug": "alfrysh-walsyad-42-aqwa-qsh-ashq-rwmansyh-mshwqh-tjdhb-alqlwb-twtawmajy",
+      "language": "ar",
+      "score": 44,
+      "demandScore": 48,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 44,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "ar",
+          "query": "رواية رومانسية صوتية كاملة",
+          "text": "الفريسة والصياد  🎀  42 👳‍♂️  أقوى قصة عشق رومانسية مشوقة تجذب القلوب ❤️  #حكايات توتاوماجي"
         },
         {
-          "source": "youtube-audio-competition",
-          "query": "\"رواية ولو بعد حين\" رواية صوتية",
-          "text": "رواية ولو بعد حين مسموعة كاملة للدكتور دعاء عبد الرحمن"
+          "source": "competition-error",
+          "query": "\"الفريسة والصياد 42 أقوى قصة عشق رومانسية مشوقة تجذب القلوب توتاوماجي\" صوتية",
+          "text": "fetch failed"
         },
         {
-          "source": "youtube-audio-competition",
-          "query": "\"رواية ولو بعد حين\" رواية صوتية",
-          "text": "تحميل رواية ولو بعد حين pdf مجانا دعاء عبد الرحمن"
+          "source": "competition-error",
+          "query": "\"الفريسة والصياد 42 أقوى قصة عشق رومانسية مشوقة تجذب القلوب توتاوماجي\" رواية صوتية",
+          "text": "fetch failed"
         },
         {
-          "source": "youtube-audio-competition",
-          "query": "\"رواية ولو بعد حين\" رواية صوتية",
-          "text": "رواية الإنتقام عدالة قاسية ولو بعد حين - روايات"
+          "source": "competition-error",
+          "query": "\"الفريسة والصياد 42 أقوى قصة عشق رومانسية مشوقة تجذب القلوب توتاوماجي\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "आपको भी रुला देगी ये Love Story",
+      "slug": "aapako-bhi-rula-degi-ye-love-story",
+      "language": "hi",
+      "score": 42,
+      "demandScore": 46,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 42,
+      "enMotif": "family drama and suspense and mystery",
+      "viMotif": "gia đình và kinh dị bí ẩn",
+      "hiMotif": "पारिवारिक ड्रामा और सस्पेंस और रहस्य",
+      "idMotif": "drama keluarga dan misteri dan ketegangan",
+      "arMotif": "دراما عائلية و التشويق والغموض",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "hi",
+          "query": "हिंदी प्रेम कहानी ऑडियो",
+          "text": "आपको भी रुला देगी ये Love Story || Very Sad Heart Touching Painful Love Story - Mahesh Chaudhary"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"आपको भी रुला देगी ये Love Story\" ऑडियो",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"आपको भी रुला देगी ये Love Story\" कहानी",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"आपको भी रुला देगी ये Love Story\" audio story",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "प्रेम कहानी पूरी फिल्म हिंदी में",
+      "slug": "prem-kahani-puri-philm-hindi-men",
+      "language": "hi",
+      "score": 40,
+      "demandScore": 52,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 40,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "evidence": [
+        {
+          "source": "google-demand-suggest",
+          "language": "hi",
+          "query": "हिंदी प्रेम कहानी पूरी",
+          "text": "प्रेम कहानी पूरी फिल्म हिंदी में"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"प्रेम कहानी पूरी फिल्म हिंदी में\" ऑडियो",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"प्रेम कहानी पूरी फिल्म हिंदी में\" कहानी",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"प्रेम कहानी पूरी फिल्म हिंदी में\" audio story",
+          "text": "fetch failed"
         }
       ],
       "status": "draft"

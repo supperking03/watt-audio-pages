@@ -3446,6 +3446,46 @@ const topics = [
     idMotif: "drama pernikahan",
     arMotif: "دراما الزواج",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "detective-story-qatl-ka-rahasy",
+    title: "Detective Story- क़त्ल का रहस्य",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "andma-ythwl-alhb-ila-asr-la-mfr-mnh",
+    title: "عندما يتحول الحب إلى أسر لا مفر منه",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["ar"]
+  }),
+  storyTitleTopic({
+    slug: "ga-thay-em-gai-toi-duoc-me-chong-cung-tan-noc",
+    title: "Gả Thay Em Gái, Tôi Được Mẹ Chồng Cưng Tận Nóc",
+    enMotif: "family drama",
+    viMotif: "gia đình",
+    hiMotif: "पारिवारिक ड्रामा",
+    idMotif: "drama keluarga",
+    arMotif: "دراما عائلية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "ga-thay-chi-gai-toi-duoc-thai-tu-gia-cung-chieu",
+    title: "Gả Thay Chị Gái, Tôi Được Thái Tử Gia Cưng Chiều",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
