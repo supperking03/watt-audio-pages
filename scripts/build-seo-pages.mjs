@@ -3486,6 +3486,16 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "ajatha-krysty-akhtfa-khadmh-ythwl-ila-wahdh-mn-akthr-aljraym-itharh",
+    title: "اجاثا كريستي (اختفاء خادمة يتحول إلى واحدة من أكثر الجرائم إثارة!)",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["ar"]
   })
 ];
 
