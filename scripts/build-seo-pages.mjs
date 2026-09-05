@@ -3496,6 +3496,36 @@ const topics = [
     idMotif: "misteri dan ketegangan",
     arMotif: "التشويق والغموض",
     languages: ["ar"]
+  }),
+  storyTitleTopic({
+    slug: "how-to-get-text-to-speech-on-2025-new-method-a-step-by-step-guide",
+    title: "How To Get Text-to-Speech On 2025 [New Method] A Step-by-Step Guide",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "x-lofi-girl-presents-lofi-beats-to-write-read-to",
+    title: "X Lofi Girl Presents Lofi Beats To Write/read To",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "cara-upload-cerita-dan-optimasinya-agar-banyak-yang-baca-2020",
+    title: "Cara Upload Cerita Dan Optimasinya Agar Banyak Yang Baca ( 2020 )",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["id"]
   })
 ];
 
