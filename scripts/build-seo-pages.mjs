@@ -3526,6 +3526,16 @@ const topics = [
     idMotif: "misteri dan ketegangan",
     arMotif: "التشويق والغموض",
     languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "an-archmage-s-second-life-op-mc-litrpg-book-1-complete",
+    title: "An Archmage's Second Life [OP MC, LitRPG, Book 1 Complete!]",
+    enMotif: "family drama, suspense and mystery and fantasy adventure",
+    viMotif: "gia đình, kinh dị bí ẩn và tiên hiệp fantasy",
+    hiMotif: "पारिवारिक ड्रामा, सस्पेंस और रहस्य और फ़ैंटेसी एडवेंचर",
+    idMotif: "drama keluarga, misteri dan ketegangan dan petualangan fantasi",
+    arMotif: "دراما عائلية, التشويق والغموض و مغامرات خيالية",
+    languages: ["en"]
   })
 ];
 
