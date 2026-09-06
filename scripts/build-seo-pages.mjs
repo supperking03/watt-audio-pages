@@ -3536,6 +3536,16 @@ const topics = [
     idMotif: "drama keluarga, misteri dan ketegangan dan petualangan fantasi",
     arMotif: "دراما عائلية, التشويق والغموض و مغامرات خيالية",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "awakening-in-the-altered-world-litrpg-isekai",
+    title: "Awakening In The Altered World [LitRPG Isekai]",
+    enMotif: "transmigration and fantasy adventure",
+    viMotif: "xuyên sách và tiên hiệp fantasy",
+    hiMotif: "दूसरी दुनिया और फ़ैंटेसी एडवेंचर",
+    idMotif: "pindah dunia dan petualangan fantasi",
+    arMotif: "الانتقال إلى عالم آخر و مغامرات خيالية",
+    languages: ["en"]
   })
 ];
 
