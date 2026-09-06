@@ -3546,6 +3546,16 @@ const topics = [
     idMotif: "pindah dunia dan petualangan fantasi",
     arMotif: "الانتقال إلى عالم آخر و مغامرات خيالية",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "jis-ghamandi-laraki-ne-mujhe-garib-samajhakar-bejjati-ki-usake-hi-pita-ne",
+    title: "जिस घमण्डी लड़की ने मुझे गरीब समझकर बेज्जती की उसके ही पिता ने...",
+    enMotif: "family drama",
+    viMotif: "gia đình",
+    hiMotif: "पारिवारिक ड्रामा",
+    idMotif: "drama keluarga",
+    arMotif: "دراما عائلية",
+    languages: ["hi"]
   })
 ];
 
