@@ -3556,6 +3556,16 @@ const topics = [
     idMotif: "drama keluarga",
     arMotif: "دراما عائلية",
     languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "va-mat-ban-cung-phong-nao-yeu-duong-voi-ga-dau-bep-can-tin",
+    title: "Vả Mặt Bạn Cùng Phòng Não Yêu Đương Với Gã Đầu Bếp Căn Tin",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
