@@ -3576,6 +3576,16 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "tieng-long-mo-hon-cua-ca-man-vo-tri-bi-ca-nha-hao-mon-nghe-thay",
+    title: "Tiếng Lòng Mỏ Hỗn của Cá Mặn Vô Tri Bị Cả Nhà Hào Môn Nghe Thấy",
+    enMotif: "rich-family romance and comedy",
+    viMotif: "hào môn và hài hước",
+    hiMotif: "अमीर परिवार की रोमांस और कॉमेडी",
+    idMotif: "romansa keluarga kaya dan komedi",
+    arMotif: "رومانسية العائلات الثرية و الكوميديا",
+    languages: ["vi"]
   })
 ];
 
