@@ -3596,6 +3596,16 @@ const topics = [
     idMotif: "terlahir kembali, rival bermuka dua dan komedi",
     arMotif: "العودة إلى الماضي, المنافسة الماكرة و الكوميديا",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "trung-sinh-toi-vo-tac-thanh-cho-tra-xanh-gia-mao-va-mat-thang-ngu",
+    title: "Trùng Sinh Tôi Vờ Tác Thành cho Trà Xanh Giả Mạo, Vả Mặt Thằng Ngu",
+    enMotif: "green tea rival",
+    viMotif: "trà xanh",
+    hiMotif: "छल भरी प्रतिद्वंद्वी",
+    idMotif: "rival bermuka dua",
+    arMotif: "المنافسة الماكرة",
+    languages: ["vi"]
   })
 ];
 

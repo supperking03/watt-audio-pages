@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T03:00:04.414Z",
+  "generatedAt": "2026-09-08T08:00:05.149Z",
   "date": "2026-09-08",
   "mode": "network",
   "languages": [
@@ -9,60 +9,19 @@
     "id",
     "ar"
   ],
-  "sourceCount": 1182,
+  "sourceCount": 1216,
   "scoring": "v4-multi-market-opportunity-demand-minus-audio-competition",
   "candidates": [
     {
-      "title": "Cả Nhà Trọng Sinh Vả Mặt Trà Xanh",
-      "slug": "ca-nha-trong-sinh-va-mat-tra-xanh",
+      "title": "Trùng Sinh Tôi Vờ Tác Thành cho Trà Xanh Giả Mạo, Vả Mặt Thằng Ngu",
+      "slug": "trung-sinh-toi-vo-tac-thanh-cho-tra-xanh-gia-mao-va-mat-thang-ngu",
       "language": "vi",
-      "score": 69,
-      "demandScore": 64,
-      "audioSignalScore": 11,
+      "score": 116,
+      "demandScore": 108,
+      "audioSignalScore": 14,
       "audioCompetitionScore": 1,
       "audioCompetitionLevel": "low",
-      "opportunityScore": 69,
-      "enMotif": "rebirth, green tea rival and comedy",
-      "viMotif": "trọng sinh, trà xanh và hài hước",
-      "hiMotif": "पुनर्जन्म, छल भरी प्रतिद्वंद्वी और कॉमेडी",
-      "idMotif": "terlahir kembali, rival bermuka dua dan komedi",
-      "arMotif": "العودة إلى الماضي, المنافسة الماكرة و الكوميديا",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "language": "vi",
-          "query": "truyện trọng sinh audio",
-          "text": "TRUYỆN AUDIO [ HÀI VL ] | CẢ NHÀ TRỌNG SINH VẢ MẶT TRÀ XANH | THẨM TIÊN SINH AUDIO"
-        },
-        {
-          "source": "youtube-search",
-          "language": "vi",
-          "query": "truyện trà xanh audio",
-          "text": "TRUYỆN AUDIO [ HÀI VL ] | CẢ NHÀ TRỌNG SINH VẢ MẶT TRÀ XANH | THẨM TIÊN SINH AUDIO"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"Cả Nhà Trọng Sinh Vả Mặt Trà Xanh\" \"truyện audio\"",
-          "text": "fetch failed"
-        },
-        {
-          "source": "youtube-audio-competition",
-          "query": "\"Cả Nhà Trọng Sinh Vả Mặt Trà Xanh\" audio",
-          "text": "TRUYỆN AUDIO [ HÀI VL ] | CẢ NHÀ TRỌNG SINH VẢ MẶT TRÀ XANH | THẨM TIÊN SINH AUDIO"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "Thiên Kim Được Các Anh Trai Cưng Chiều Khiến Trà Xanh Trầm Cảm",
-      "slug": "thien-kim-duoc-cac-anh-trai-cung-chieu-khien-tra-xanh-tram-cam",
-      "language": "vi",
-      "score": 58,
-      "demandScore": 62,
-      "audioSignalScore": 8,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "unknown",
-      "opportunityScore": 58,
+      "opportunityScore": 116,
       "enMotif": "green tea rival",
       "viMotif": "trà xanh",
       "hiMotif": "छल भरी प्रतिद्वंद्वी",
@@ -73,66 +32,43 @@
           "source": "youtube-search",
           "language": "vi",
           "query": "truyện audio full mới nhất",
-          "text": "[Truyện Audio Full] | THIÊN KIM ĐƯỢC CÁC ANH TRAI CƯNG CHIỀU KHIẾN TRÀ XANH TRẦM CẢM | Vả Mặt Audio"
+          "text": "Truyện Audio| TRÙNG SINH TÔI VỜ TÁC THÀNH CHO TRÀ XANH GIẢ MẠO, VẢ MẶT THẰNG NGU| Full Audio"
         },
-        {
-          "source": "competition-error",
-          "query": "\"Thiên Kim Được Các Anh Trai Cưng Chiều Khiến Trà Xanh Trầm Cảm\" audio",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"Thiên Kim Được Các Anh Trai Cưng Chiều Khiến Trà Xanh Trầm Cảm\" \"truyện audio\"",
-          "text": "fetch failed"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "Trọng Sinh, Tôi Không Cản Tra Nam Cưới Trà Xanh Lẳng Lơ",
-      "slug": "trong-sinh-toi-khong-can-tra-nam-cuoi-tra-xanh-lang-lo",
-      "language": "vi",
-      "score": 58,
-      "demandScore": 62,
-      "audioSignalScore": 8,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "unknown",
-      "opportunityScore": 58,
-      "enMotif": "rebirth, green tea rival and marriage drama",
-      "viMotif": "trọng sinh, trà xanh và cưới gả",
-      "hiMotif": "पुनर्जन्म, छल भरी प्रतिद्वंद्वी और शादी का ड्रामा",
-      "idMotif": "terlahir kembali, rival bermuka dua dan drama pernikahan",
-      "arMotif": "العودة إلى الماضي, المنافسة الماكرة و دراما الزواج",
-      "evidence": [
         {
           "source": "youtube-search",
           "language": "vi",
-          "query": "truyện audio full mới nhất",
-          "text": "[Truyện Audio – Full] TRỌNG SINH, TÔI KHÔNG CẢN TRA NAM CƯỚI TRÀ XANH LẲNG LƠ | Hắc Vũ Audio"
+          "query": "truyện trọng sinh audio",
+          "text": "Truyện Audio| TRÙNG SINH TÔI VỜ TÁC THÀNH CHO TRÀ XANH GIẢ MẠO, VẢ MẶT THẰNG NGU| Full Audio"
+        },
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện trà xanh audio",
+          "text": "Truyện Audio| TRÙNG SINH TÔI VỜ TÁC THÀNH CHO TRÀ XANH GIẢ MẠO, VẢ MẶT THẰNG NGU| Full Audio"
         },
         {
           "source": "competition-error",
-          "query": "\"Trọng Sinh, Tôi Không Cản Tra Nam Cưới Trà Xanh Lẳng Lơ\" audio",
+          "query": "\"Trùng Sinh Tôi Vờ Tác Thành cho Trà Xanh Giả Mạo, Vả Mặt Thằng Ngu\" \"truyện audio\"",
           "text": "fetch failed"
         },
         {
-          "source": "competition-error",
-          "query": "\"Trọng Sinh, Tôi Không Cản Tra Nam Cưới Trà Xanh Lẳng Lơ\" \"truyện audio\"",
-          "text": "fetch failed"
+          "source": "youtube-audio-competition",
+          "query": "\"Trùng Sinh Tôi Vờ Tác Thành cho Trà Xanh Giả Mạo, Vả Mặt Thằng Ngu\" audio",
+          "text": "Truyện Audio| TRÙNG SINH TÔI VỜ TÁC THÀNH CHO TRÀ XANH GIẢ MẠO, VẢ MẶT THẰNG NGU| Full Audio"
         }
       ],
       "status": "draft"
     },
     {
-      "title": "Babae Napaibig Ang Masungit Na Boss Dahil Sa Cold Coffee",
-      "slug": "babae-napaibig-ang-masungit-na-boss-dahil-sa-cold-coffee",
-      "language": "en",
-      "score": 56,
-      "demandScore": 60,
+      "title": "नाजायज़ औलाद Ll Ep10 Love Stories",
+      "slug": "najayaz-aulad-ll-ep10-love-stories",
+      "language": "hi",
+      "score": 60,
+      "demandScore": 64,
       "audioSignalScore": 8,
       "audioCompetitionScore": 0,
       "audioCompetitionLevel": "unknown",
-      "opportunityScore": 56,
+      "opportunityScore": 60,
       "enMotif": "suspense and mystery",
       "viMotif": "kinh dị bí ẩn",
       "hiMotif": "सस्पेंस और रहस्य",
@@ -141,23 +77,104 @@
       "evidence": [
         {
           "source": "youtube-search",
+          "language": "hi",
+          "query": "wattpad hindi story audio",
+          "text": "नाजायज़ औलाद ll Ep10 Love stories: Pratilipi : Wattpad : Bed time Stories : Romance : Audio Hindi "
+        },
+        {
+          "source": "competition-error",
+          "query": "\"नाजायज़ औलाद Ll Ep10 Love Stories\" ऑडियो",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"नाजायज़ औलाद Ll Ep10 Love Stories\" कहानी",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"नाजायज़ औलाद Ll Ep10 Love Stories\" audio story",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Hoa Khôi Đòi Thay Đồng Phục Cả Trường",
+      "slug": "hoa-khoi-doi-thay-dong-phuc-ca-truong",
+      "language": "vi",
+      "score": 58,
+      "demandScore": 59,
+      "audioSignalScore": 11,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 58,
+      "enMotif": "school romance",
+      "viMotif": "vườn trường",
+      "hiMotif": "कॉलेज रोमांस",
+      "idMotif": "romansa sekolah",
+      "arMotif": "رومانسية المدرسة",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện audio full mới nhất",
+          "text": "Truyện Audio Full | HOA KHÔI ĐÒI THAY ĐỒNG PHỤC CẢ TRƯỜNG | Mạn Mạn Audio"
+        },
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện ngôn tình audio full",
+          "text": "Truyện Audio Full | HOA KHÔI ĐÒI THAY ĐỒNG PHỤC CẢ TRƯỜNG | Mạn Mạn Audio"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Hoa Khôi Đòi Thay Đồng Phục Cả Trường\" audio",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Hoa Khôi Đòi Thay Đồng Phục Cả Trường\" \"truyện audio\"",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "[COMPLETE] The Immortal Berserker Ch 1-522 ( Fantasy, Weak-to-strong, Cultivation)",
+      "slug": "complete-the-immortal-berserker-ch-1-522-fantasy-weak-to-strong-cultivation",
+      "language": "en",
+      "score": 58,
+      "demandScore": 62,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 58,
+      "enMotif": "fantasy adventure",
+      "viMotif": "tiên hiệp fantasy",
+      "hiMotif": "फ़ैंटेसी एडवेंचर",
+      "idMotif": "petualangan fantasi",
+      "arMotif": "مغامرات خيالية",
+      "evidence": [
+        {
+          "source": "youtube-search",
           "language": "en",
-          "query": "wattpad story audio",
-          "text": "BABAE NAPAIBIG ANG MASUNGIT NA BOSS DAHIL SA COLD COFFEE: FULLSTORY MY COLDHEARTED BOSS |PINOY STORY"
+          "query": "webnovel audiobook",
+          "text": "[COMPLETE] The Immortal Berserker Ch 1-522 ( Fantasy, Weak-to-strong, Cultivation) Audiobook"
         },
         {
           "source": "competition-error",
-          "query": "\"Babae Napaibig Ang Masungit Na Boss Dahil Sa Cold Coffee\" audiobook",
+          "query": "\"[COMPLETE] The Immortal Berserker Ch 1-522 ( Fantasy, Weak-to-strong, Cultivation)\" audiobook",
           "text": "fetch failed"
         },
         {
           "source": "competition-error",
-          "query": "\"Babae Napaibig Ang Masungit Na Boss Dahil Sa Cold Coffee\" \"read aloud\"",
+          "query": "\"[COMPLETE] The Immortal Berserker Ch 1-522 ( Fantasy, Weak-to-strong, Cultivation)\" \"read aloud\"",
           "text": "fetch failed"
         },
         {
           "source": "competition-error",
-          "query": "\"Babae Napaibig Ang Masungit Na Boss Dahil Sa Cold Coffee\" audio",
+          "query": "\"[COMPLETE] The Immortal Berserker Ch 1-522 ( Fantasy, Weak-to-strong, Cultivation)\" audio",
           "text": "fetch failed"
         }
       ],
@@ -198,6 +215,46 @@
         {
           "source": "competition-error",
           "query": "\"House Of Amarin Book ( Adventure, Fantasy, Magic, School Life ) Web Novel Royal Road\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "The Wixx Chronicles [Progression, LITRPG, ISEKAI]",
+      "slug": "the-wixx-chronicles-progression-litrpg-isekai",
+      "language": "en",
+      "score": 56,
+      "demandScore": 68,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 56,
+      "enMotif": "transmigration and fantasy adventure",
+      "viMotif": "xuyên sách và tiên hiệp fantasy",
+      "hiMotif": "दूसरी दुनिया और फ़ैंटेसी एडवेंचर",
+      "idMotif": "pindah dunia dan petualangan fantasi",
+      "arMotif": "الانتقال إلى عالم آخر و مغامرات خيالية",
+      "evidence": [
+        {
+          "source": "royalroad-trending",
+          "language": "en",
+          "query": "https://www.royalroad.com/fictions/trending",
+          "text": "The Wixx Chronicles [Progression, LITRPG, ISEKAI]"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Wixx Chronicles [Progression, LITRPG, ISEKAI]\" audiobook",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Wixx Chronicles [Progression, LITRPG, ISEKAI]\" \"read aloud\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"The Wixx Chronicles [Progression, LITRPG, ISEKAI]\" audio",
           "text": "fetch failed"
         }
       ],
@@ -284,6 +341,56 @@
       "status": "draft"
     },
     {
+      "title": "Mang Tiếng Mỏ Hỗn, Tôi Lỡ Tay Dạy Hư Luôn Cả Hào Môn",
+      "slug": "mang-tieng-mo-hon-toi-lo-tay-day-hu-luon-ca-hao-mon",
+      "language": "vi",
+      "score": 54,
+      "demandScore": 64,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 4,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 54,
+      "enMotif": "rich-family romance and suspense and mystery",
+      "viMotif": "hào môn và kinh dị bí ẩn",
+      "hiMotif": "अमीर परिवार की रोमांस और सस्पेंस और रहस्य",
+      "idMotif": "romansa keluarga kaya dan misteri dan ketegangan",
+      "arMotif": "رومانسية العائلات الثرية و التشويق والغموض",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện audio full mới nhất",
+          "text": "[Truyện Audio] MANG TIẾNG MỎ HỖN, TÔI LỠ TAY DẠY HƯ LUÔN CẢ HÀO MÔN | Trạm Sạc Audio"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Mang Tiếng Mỏ Hỗn, Tôi Lỡ Tay Dạy Hư Luôn Cả Hào Môn\" \"truyện audio\"",
+          "text": "fetch failed"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Mang Tiếng Mỏ Hỗn, Tôi Lỡ Tay Dạy Hư Luôn Cả Hào Môn\" audio",
+          "text": "[Truyện Audio] MANG TIẾNG MỎ HỖN, TÔI LỠ TAY DẠY HƯ LUÔN CẢ HÀO MÔN | Trạm Sạc Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Mang Tiếng Mỏ Hỗn, Tôi Lỡ Tay Dạy Hư Luôn Cả Hào Môn\" audio",
+          "text": "[Truyện Audio Full] MANG TIẾNG MỎ HỖN, TÔI LỠ TAY DẠY HƯ LUÔN CẢ HÀO MÔN | Trạm Ngọt Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Mang Tiếng Mỏ Hỗn, Tôi Lỡ Tay Dạy Hư Luôn Cả Hào Môn\" audio",
+          "text": "[Truyện Audio] MANG TIẾNG MỎ HỖN, TÔI LỠ TAY DẠY HƯ LUÔN CẢ HÀO MÔN | Cún Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Mang Tiếng Mỏ Hỗn, Tôi Lỡ Tay Dạy Hư Luôn Cả Hào Môn\" audio",
+          "text": "[Truyện Audio ] MANG TIẾNG MỎ HỖN TÔI LỠ TAY DẠY HƯ LUÔN CẢ HÀO MÔN I ỈN KHÔNG MẬP"
+        }
+      ],
+      "status": "draft"
+    },
+    {
       "title": "Nữ S.á.t Thủ Mỏ Hỗn Xuyên Vào Thiên Kim Thật Bị Bắt Nạt Nhà Hào Môn",
       "slug": "nu-s-a-t-thu-mo-hon-xuyen-vao-thien-kim-that-bi-bat-nat-nha-hao-mon",
       "language": "vi",
@@ -319,132 +426,6 @@
           "source": "youtube-audio-competition",
           "query": "\"Nữ S.á.t Thủ Mỏ Hỗn Xuyên Vào Thiên Kim Thật Bị Bắt Nạt Nhà Hào Môn\" audio",
           "text": "NỮ S.Á.T THỦ MỎ HỖN XUYÊN VÀO THIÊN KIM THẬT BỊ BẮT NẠT NHÀ HÀO MÔN | Dam Dang Audio"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "Defend Me, Attorney By Josh Gonzales (Part 1)",
-      "slug": "defend-me-attorney-by-josh-gonzales-part-1",
-      "language": "en",
-      "score": 54,
-      "demandScore": 58,
-      "audioSignalScore": 8,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "unknown",
-      "opportunityScore": 54,
-      "enMotif": "web fiction and romance drama",
-      "viMotif": "truyện mạng Việt và romance drama",
-      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
-      "idMotif": "cerita online dan drama romansa",
-      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "language": "en",
-          "query": "wattpad story audio",
-          "text": "Law Series 1: Defend Me, Attorney by Josh Gonzales (Part 1)"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"Defend Me, Attorney By Josh Gonzales (Part 1)\" audiobook",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"Defend Me, Attorney By Josh Gonzales (Part 1)\" \"read aloud\"",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"Defend Me, Attorney By Josh Gonzales (Part 1)\" audio",
-          "text": "fetch failed"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "खूनी खेल खेलने वाला दरिंदा क्या कभी पकड़ा जाएगा? Detective Thriller Stories",
-      "slug": "khuni-khel-khelane-vala-darinda-kya-kabhi-pakara-jaega-detective-thriller-stories",
-      "language": "hi",
-      "score": 54,
-      "demandScore": 58,
-      "audioSignalScore": 8,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "unknown",
-      "opportunityScore": 54,
-      "enMotif": "suspense and mystery",
-      "viMotif": "kinh dị bí ẩn",
-      "hiMotif": "सस्पेंस और रहस्य",
-      "idMotif": "misteri dan ketegangan",
-      "arMotif": "التشويق والغموض",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "language": "hi",
-          "query": "हिंदी सस्पेंस कहानी ऑडियो",
-          "text": "खूनी खेल खेलने वाला दरिंदा क्या कभी पकड़ा जाएगा? Detective thriller stories"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"खूनी खेल खेलने वाला दरिंदा क्या कभी पकड़ा जाएगा? Detective Thriller Stories\" ऑडियो",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"खूनी खेल खेलने वाला दरिंदा क्या कभी पकड़ा जाएगा? Detective Thriller Stories\" कहानी",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"खूनी खेल खेलने वाला दरिंदा क्या कभी पकड़ा जाएगा? Detective Thriller Stories\" audio story",
-          "text": "fetch failed"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "كتب بصوت إسلام عادل",
-      "slug": "ktb-bswt-islam-aadl",
-      "language": "ar",
-      "score": 53,
-      "demandScore": 54,
-      "audioSignalScore": 11,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "unknown",
-      "opportunityScore": 53,
-      "enMotif": "Vietnamese web fiction and romance drama",
-      "viMotif": "truyện mạng Việt và romance drama",
-      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
-      "idMotif": "cerita online dan drama romansa",
-      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "language": "ar",
-          "query": "رواية صوتية كاملة",
-          "text": "دولة اليهود | تيودور هرتزل | كتب صوتية  بصوت إسلام عادل"
-        },
-        {
-          "source": "youtube-search",
-          "language": "ar",
-          "query": "روايات عربية صوتية",
-          "text": "كتاب فن الحرب  | سون تزو | كتب صوتية  بصوت إسلام عادل"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"كتب بصوت إسلام عادل\" صوتية",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"كتب بصوت إسلام عادل\" رواية صوتية",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"كتب بصوت إسلام عادل\" audio",
-          "text": "fetch failed"
         }
       ],
       "status": "draft"
@@ -610,40 +591,120 @@
       "status": "draft"
     },
     {
-      "title": "Lupakan Yang Terjadi Tadi",
-      "slug": "lupakan-yang-terjadi-tadi",
-      "language": "id",
+      "title": "د. نبيل فاروق (جريمة في مدينة متطورة للغاية في اعماق البحر!)",
+      "slug": "d-nbyl-farwq-jrymh-fy-mdynh-mttwrh-llghayh-fy-aamaq-albhr",
+      "language": "ar",
       "score": 52,
       "demandScore": 56,
       "audioSignalScore": 8,
       "audioCompetitionScore": 0,
       "audioCompetitionLevel": "unknown",
       "opportunityScore": 52,
-      "enMotif": "transmigration",
-      "viMotif": "xuyên sách",
-      "hiMotif": "दूसरी दुनिया",
-      "idMotif": "pindah dunia",
-      "arMotif": "الانتقال إلى عالم آخر",
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
       "evidence": [
         {
           "source": "youtube-search",
-          "language": "id",
-          "query": "cerita wattpad audio lengkap",
-          "text": "Lupakan Yang Terjadi Tadi - ARABELLA TRANSMIGRATION - By im_starla"
+          "language": "ar",
+          "query": "روايات عربية صوتية",
+          "text": "رواية مسموعة | مدينة الأعماق - د. نبيل فاروق (جريمة في مدينة متطورة للغاية في اعماق البحر!)"
         },
         {
           "source": "competition-error",
-          "query": "\"Lupakan Yang Terjadi Tadi\" audio",
+          "query": "\"د. نبيل فاروق (جريمة في مدينة متطورة للغاية في اعماق البحر!)\" صوتية",
           "text": "fetch failed"
         },
         {
           "source": "competition-error",
-          "query": "\"Lupakan Yang Terjadi Tadi\" cerita audio",
+          "query": "\"د. نبيل فاروق (جريمة في مدينة متطورة للغاية في اعماق البحر!)\" رواية صوتية",
           "text": "fetch failed"
         },
         {
           "source": "competition-error",
-          "query": "\"Lupakan Yang Terjadi Tadi\" audiobook",
+          "query": "\"د. نبيل فاروق (جريمة في مدينة متطورة للغاية في اعماق البحر!)\" audio",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "رواية الشتاء الطويل كاملة عندما يصوب اليوناني السهم فإنه لا يخطئ الهدف",
+      "slug": "rwayh-alshta-altwyl-kamlh-andma-yswb-alywnany-alshm-finh-la-ykhty-alhdf",
+      "language": "ar",
+      "score": 52,
+      "demandScore": 50,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 1,
+      "audioCompetitionLevel": "low",
+      "opportunityScore": 52,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "ar",
+          "query": "رواية رومانسية صوتية كاملة",
+          "text": "رواية الشتاء الطويل كاملة 💘عندما يصوب اليوناني السهم فإنه لا يخطئ الهدف💘"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"رواية الشتاء الطويل كاملة عندما يصوب اليوناني السهم فإنه لا يخطئ الهدف\" صوتية",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"رواية الشتاء الطويل كاملة عندما يصوب اليوناني السهم فإنه لا يخطئ الهدف\" رواية صوتية",
+          "text": "fetch failed"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"رواية الشتاء الطويل كاملة عندما يصوب اليوناني السهم فإنه لا يخطئ الهدف\" audio",
+          "text": "رواية الشتاء الطويل كاملة 💘عندما يصوب اليوناني السهم فإنه لا يخطئ الهدف💘"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Ep:4 मौत का कुआँ एक दस्तक अंत की",
+      "slug": "ep-4-maut-ka-kuaan-ek-dastak-ant-ki",
+      "language": "hi",
+      "score": 50,
+      "demandScore": 54,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "unknown",
+      "opportunityScore": 50,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "hi",
+          "query": "हिंदी कहानी ऑडियो पूरी",
+          "text": "EP:4 मौत का कुआँ एक दस्तक अंत की"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Ep:4 मौत का कुआँ एक दस्तक अंत की\" ऑडियो",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Ep:4 मौत का कुआँ एक दस्तक अंत की\" कहानी",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Ep:4 मौत का कुआँ एक दस्तक अंत की\" audio story",
           "text": "fetch failed"
         }
       ],
@@ -690,94 +751,48 @@
       "status": "draft"
     },
     {
-      "title": "इस बार जासूस का पाला पड़ा है बेहद खतरनाक अपराधी से",
-      "slug": "is-bar-jasus-ka-pala-para-hai-behad-khataranak-aparadhi-se",
-      "language": "hi",
+      "title": "Cerita My Nerd Girl Indonesia",
+      "slug": "cerita-my-nerd-girl-indonesia",
+      "language": "id",
       "score": 50,
-      "demandScore": 54,
-      "audioSignalScore": 8,
+      "demandScore": 62,
+      "audioSignalScore": 0,
       "audioCompetitionScore": 0,
       "audioCompetitionLevel": "unknown",
       "opportunityScore": 50,
-      "enMotif": "suspense and mystery",
-      "viMotif": "kinh dị bí ẩn",
-      "hiMotif": "सस्पेंस और रहस्य",
-      "idMotif": "misteri dan ketegangan",
-      "arMotif": "التشويق والغموض",
+      "enMotif": "web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
       "evidence": [
         {
-          "source": "youtube-search",
-          "language": "hi",
-          "query": "हिंदी सस्पेंस कहानी ऑडियो",
-          "text": "इस बार जासूस का पाला पड़ा है बेहद खतरनाक अपराधी से । Detective story / Hindi literature novel"
+          "source": "google-demand-suggest",
+          "language": "id",
+          "query": "cerita wattpad indonesia",
+          "text": "cerita my nerd girl wattpad indonesia"
         },
         {
           "source": "competition-error",
-          "query": "\"इस बार जासूस का पाला पड़ा है बेहद खतरनाक अपराधी से\" ऑडियो",
+          "query": "\"Cerita My Nerd Girl Indonesia\" audio",
           "text": "fetch failed"
         },
         {
           "source": "competition-error",
-          "query": "\"इस बार जासूस का पाला पड़ा है बेहद खतरनाक अपराधी से\" कहानी",
+          "query": "\"Cerita My Nerd Girl Indonesia\" cerita audio",
           "text": "fetch failed"
         },
         {
           "source": "competition-error",
-          "query": "\"इस बार जासूस का पाला पड़ा है बेहद खतरनाक अपराधी से\" audio story",
+          "query": "\"Cerita My Nerd Girl Indonesia\" audiobook",
           "text": "fetch failed"
         }
       ],
       "status": "draft"
     },
     {
-      "title": "कश्मीर में अजीब हत्या",
-      "slug": "kashmir-men-ajib-hatya",
-      "language": "hi",
-      "score": 49,
-      "demandScore": 50,
-      "audioSignalScore": 11,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "unknown",
-      "opportunityScore": 49,
-      "enMotif": "suspense and mystery",
-      "viMotif": "kinh dị bí ẩn",
-      "hiMotif": "सस्पेंस और रहस्य",
-      "idMotif": "misteri dan ketegangan",
-      "arMotif": "التشويق والغموض",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "language": "hi",
-          "query": "हिंदी सस्पेंस कहानी ऑडियो",
-          "text": "कश्मीर में अजीब हत्या PART 1 । Satyajit Ray । Murder mystery in hindi"
-        },
-        {
-          "source": "youtube-search",
-          "language": "hi",
-          "query": "hindi audio story full",
-          "text": "कश्मीर में अजीब हत्या PART 1 । Satyajit Ray । Murder mystery in hindi"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"कश्मीर में अजीब हत्या\" ऑडियो",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"कश्मीर में अजीब हत्या\" कहानी",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"कश्मीर में अजीब हत्या\" audio story",
-          "text": "fetch failed"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "एक ही बर्तन में खाना बनवाने वाली सास",
-      "slug": "ek-hi-bartan-men-khana-banavane-vali-sas",
+      "title": "Ep:6 पुराने किले की वो खौफनाक रात",
+      "slug": "ep-6-purane-kile-ki-vo-khauphanak-rat",
       "language": "hi",
       "score": 48,
       "demandScore": 52,
@@ -795,30 +810,30 @@
           "source": "youtube-search",
           "language": "hi",
           "query": "हिंदी कहानी ऑडियो पूरी",
-          "text": "एक ही बर्तन में खाना बनवाने वाली सास | A mother-in-law who insists that food be | Cartoon Video"
+          "text": "EP:6 पुराने किले की वो खौफनाक रात"
         },
         {
           "source": "competition-error",
-          "query": "\"एक ही बर्तन में खाना बनवाने वाली सास\" ऑडियो",
+          "query": "\"Ep:6 पुराने किले की वो खौफनाक रात\" ऑडियो",
           "text": "fetch failed"
         },
         {
           "source": "competition-error",
-          "query": "\"एक ही बर्तन में खाना बनवाने वाली सास\" कहानी",
+          "query": "\"Ep:6 पुराने किले की वो खौफनाक रात\" कहानी",
           "text": "fetch failed"
         },
         {
           "source": "competition-error",
-          "query": "\"एक ही बर्तन में खाना बनवाने वाली सास\" audio story",
+          "query": "\"Ep:6 पुराने किले की वो खौफनाक रात\" audio story",
           "text": "fetch failed"
         }
       ],
       "status": "draft"
     },
     {
-      "title": "رواية الشتاء الطويل كاملة عندما يصوب اليوناني السهم فإنه لا يخطئ الهدف",
-      "slug": "rwayh-alshta-altwyl-kamlh-andma-yswb-alywnany-alshm-finh-la-ykhty-alhdf",
-      "language": "ar",
+      "title": "Ep:2 डर के साये में घर",
+      "slug": "ep-2-dar-ke-saye-men-ghar",
+      "language": "hi",
       "score": 46,
       "demandScore": 50,
       "audioSignalScore": 8,
@@ -833,23 +848,23 @@
       "evidence": [
         {
           "source": "youtube-search",
-          "language": "ar",
-          "query": "رواية رومانسية صوتية كاملة",
-          "text": "رواية الشتاء الطويل كاملة 💘عندما يصوب اليوناني السهم فإنه لا يخطئ الهدف💘"
+          "language": "hi",
+          "query": "हिंदी कहानी ऑडियो पूरी",
+          "text": "EP:2 डर के साये में घर"
         },
         {
           "source": "competition-error",
-          "query": "\"رواية الشتاء الطويل كاملة عندما يصوب اليوناني السهم فإنه لا يخطئ الهدف\" صوتية",
+          "query": "\"Ep:2 डर के साये में घर\" ऑडियो",
           "text": "fetch failed"
         },
         {
           "source": "competition-error",
-          "query": "\"رواية الشتاء الطويل كاملة عندما يصوب اليوناني السهم فإنه لا يخطئ الهدف\" رواية صوتية",
+          "query": "\"Ep:2 डर के साये में घर\" कहानी",
           "text": "fetch failed"
         },
         {
           "source": "competition-error",
-          "query": "\"رواية الشتاء الطويل كاملة عندما يصوب اليوناني السهم فإنه لا يخطئ الهدف\" audio",
+          "query": "\"Ep:2 डर के साये में घर\" audio story",
           "text": "fetch failed"
         }
       ],
@@ -1004,13 +1019,8 @@
           "text": "Truyện Audio || VỊ HÔN THÊ NHÚT NHÁT CỦA TRÙM HẮC BANG LÀ SÁT THỦ || Tô Màu || AnAn Audio"
         },
         {
-          "source": "competition-error",
-          "query": "\"Vị Hôn Thê Nhút Nhát của Trùm Hắc Bang là Sát Thủ\" \"truyện audio\"",
-          "text": "fetch failed"
-        },
-        {
           "source": "youtube-audio-competition",
-          "query": "\"Vị Hôn Thê Nhút Nhát của Trùm Hắc Bang là Sát Thủ\" audio",
+          "query": "\"Vị Hôn Thê Nhút Nhát của Trùm Hắc Bang là Sát Thủ\" \"truyện audio\"",
           "text": "Truyện Audio || VỊ HÔN THÊ NHÚT NHÁT CỦA TRÙM HẮC BANG LÀ SÁT THỦ || Tô Màu || AnAn Audio"
         },
         {
@@ -1020,12 +1030,12 @@
         },
         {
           "source": "youtube-audio-competition",
-          "query": "\"Vị Hôn Thê Nhút Nhát của Trùm Hắc Bang là Sát Thủ\" audio",
+          "query": "\"Vị Hôn Thê Nhút Nhát của Trùm Hắc Bang là Sát Thủ\" \"truyện audio\"",
           "text": "Truyện Audio FULL | VỊ HÔN THÊ NHÚT NHÁT CỦA TRÙM HẮC BANG LÀ SÁT THỦ #manmanaudio123#audiotruyen"
         },
         {
           "source": "youtube-audio-competition",
-          "query": "\"Vị Hôn Thê Nhút Nhát của Trùm Hắc Bang là Sát Thủ\" audio",
+          "query": "\"Vị Hôn Thê Nhút Nhát của Trùm Hắc Bang là Sát Thủ\" \"truyện audio\"",
           "text": "FULL | VỊ HÔN THÊ NHÚT NHÁT CỦA TRÙM HẮC BANG LÀ SÁT THỦ"
         }
       ],
