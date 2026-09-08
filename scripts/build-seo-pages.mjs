@@ -3586,6 +3586,16 @@ const topics = [
     idMotif: "romansa keluarga kaya dan komedi",
     arMotif: "رومانسية العائلات الثرية و الكوميديا",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "ca-nha-trong-sinh-va-mat-tra-xanh",
+    title: "Cả Nhà Trọng Sinh Vả Mặt Trà Xanh",
+    enMotif: "rebirth, green tea rival and comedy",
+    viMotif: "trọng sinh, trà xanh và hài hước",
+    hiMotif: "पुनर्जन्म, छल भरी प्रतिद्वंद्वी और कॉमेडी",
+    idMotif: "terlahir kembali, rival bermuka dua dan komedi",
+    arMotif: "العودة إلى الماضي, المنافسة الماكرة و الكوميديا",
+    languages: ["vi"]
   })
 ];
 
