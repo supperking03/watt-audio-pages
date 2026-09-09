@@ -3616,6 +3616,36 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "the-wixx-chronicles-progression-litrpg-isekai",
+    title: "The Wixx Chronicles [Progression, LITRPG, ISEKAI]",
+    enMotif: "transmigration and fantasy adventure",
+    viMotif: "xuyên sách và tiên hiệp fantasy",
+    hiMotif: "दूसरी दुनिया और फ़ैंटेसी एडवेंचर",
+    idMotif: "pindah dunia dan petualangan fantasi",
+    arMotif: "الانتقال إلى عالم آخر و مغامرات خيالية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "tales-of-the-endless-empire-litrpg-apocalypse",
+    title: "Tales Of The Endless Empire [LitRPG Apocalypse]",
+    enMotif: "fantasy adventure",
+    viMotif: "tiên hiệp fantasy",
+    hiMotif: "फ़ैंटेसी एडवेंचर",
+    idMotif: "petualangan fantasi",
+    arMotif: "مغامرات خيالية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "nu-s-a-t-thu-mo-hon-xuyen-vao-thien-kim-that-bi-bat-nat-nha-hao-mon",
+    title: "Nữ S.á.t Thủ Mỏ Hỗn Xuyên Vào Thiên Kim Thật Bị Bắt Nạt Nhà Hào Môn",
+    enMotif: "rich-family romance",
+    viMotif: "hào môn",
+    hiMotif: "अमीर परिवार की रोमांस",
+    idMotif: "romansa keluarga kaya",
+    arMotif: "رومانسية العائلات الثرية",
+    languages: ["vi"]
   })
 ];
 
