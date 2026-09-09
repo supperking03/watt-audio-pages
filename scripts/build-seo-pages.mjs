@@ -3646,6 +3646,16 @@ const topics = [
     idMotif: "romansa keluarga kaya",
     arMotif: "رومانسية العائلات الثرية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "max-level-vampire-rebuilds-the-demon-kingdom",
+    title: "Max Level Vampire Rebuilds the Demon Kingdom",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["en"]
   })
 ];
 
