@@ -3666,6 +3666,16 @@ const topics = [
     idMotif: "romansa keluarga kaya dan drama pernikahan",
     arMotif: "رومانسية العائلات الثرية و دراما الزواج",
     languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "the-artificer-s-guide-to-the-apocalypse",
+    title: "The Artificer's Guide To The Apocalypse",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["en"]
   })
 ];
 
