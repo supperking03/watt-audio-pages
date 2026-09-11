@@ -3696,6 +3696,26 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "ditinggalkan-tunangan-tak-punya-uang-aku-tak-menyangka-putri-konglomerat-diam-diam-mencintai",
+    title: "Ditinggalkan Tunangan Tak Punya Uang, Aku Tak Menyangka Putri Konglomerat Diam-Diam Mencintaiku",
+    enMotif: "rich-family romance and marriage drama",
+    viMotif: "hào môn và cưới gả",
+    hiMotif: "अमीर परिवार की रोमांस और शादी का ड्रामा",
+    idMotif: "romansa keluarga kaya dan drama pernikahan",
+    arMotif: "رومانسية العائلات الثرية و دراما الزواج",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "kashmir-men-ajib-hatya",
+    title: "कश्मीर में अजीब हत्या",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["hi"]
   })
 ];
 
