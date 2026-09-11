@@ -3716,6 +3716,16 @@ const topics = [
     idMotif: "misteri dan ketegangan",
     arMotif: "التشويق والغموض",
     languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "dosen-dinginku-bos-mafia-menikahi-putri-kiai-demi-siasat-dendam-malah-berlutut-di-sepertiga",
+    title: "DOSEN DINGINKU BOS MAFIA‼ Menikahi Putri Kiai Demi Siasat Dendam Malah Berlutut Di Sepertiga Malam…",
+    enMotif: "marriage drama and suspense and mystery",
+    viMotif: "cưới gả và kinh dị bí ẩn",
+    hiMotif: "शादी का ड्रामा और सस्पेंस और रहस्य",
+    idMotif: "drama pernikahan dan misteri dan ketegangan",
+    arMotif: "دراما الزواج و التشويق والغموض",
+    languages: ["id"]
   })
 ];
 
