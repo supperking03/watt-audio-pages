@@ -3726,6 +3726,16 @@ const topics = [
     idMotif: "drama pernikahan dan misteri dan ketegangan",
     arMotif: "دراما الزواج و التشويق والغموض",
     languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "ascension-of-the-primalist-a-tamer-class-litrpg",
+    title: "Ascension Of The Primalist [A Tamer Class, LitRPG]",
+    enMotif: "suspense and mystery and fantasy adventure",
+    viMotif: "kinh dị bí ẩn và tiên hiệp fantasy",
+    hiMotif: "सस्पेंस और रहस्य और फ़ैंटेसी एडवेंचर",
+    idMotif: "misteri dan ketegangan dan petualangan fantasi",
+    arMotif: "التشويق والغموض و مغامرات خيالية",
+    languages: ["en"]
   })
 ];
 
