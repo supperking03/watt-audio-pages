@@ -3736,6 +3736,36 @@ const topics = [
     idMotif: "misteri dan ketegangan dan petualangan fantasi",
     arMotif: "التشويق والغموض و مغامرات خيالية",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "akabar-ke-darabar-ka-sabase-chatur-mantri-birabal-achanak-bagadad-kyon-gaya-akbar-birbal",
+    title: "अकबर के दरबार का सबसे चतुर मंत्री, बीरबल अचानक बगदाद क्यों गया? Akbar Birbal",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "andma-la-ykwn-alhb-kafya",
+    title: "عندما لا يكون الحب كافيًا",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["ar"]
+  }),
+  storyTitleTopic({
+    slug: "quen-tat-mic-treu-dai-ca-truong-toi-bi-anh-bat-ve-lam-vo",
+    title: "Quên Tắt Mic Trêu Đại Ca Trường, Tôi Bị Anh Bắt Về Làm Vợ",
+    enMotif: "school romance",
+    viMotif: "vườn trường",
+    hiMotif: "कॉलेज रोमांस",
+    idMotif: "romansa sekolah",
+    arMotif: "رومانسية المدرسة",
+    languages: ["vi"]
   })
 ];
 
