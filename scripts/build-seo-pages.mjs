@@ -3776,6 +3776,26 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "sau-khi-livestream-huyen-hoc-an-dua-toi-bao-hong-toan-mang",
+    title: "Sau Khi Livestream Huyền Học Ăn Dưa Tôi Bạo Hồng Toàn Mạng",
+    enMotif: "school romance and entertainment circle",
+    viMotif: "vườn trường và showbiz",
+    hiMotif: "कॉलेज रोमांस और शोबिज़",
+    idMotif: "romansa sekolah dan dunia hiburan",
+    arMotif: "رومانسية المدرسة و عالم الشهرة",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "hoa-khoi-tu-nhan-minh-la-vo-hoi-nho-cua-nam-than",
+    title: "Hoa Khôi Tự Nhận Mình là Vợ Hồi Nhỏ của Nam Thần",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
