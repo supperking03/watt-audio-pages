@@ -3796,6 +3796,36 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "disuruh-baca-ledib-x-ayoncakra-malah-aku-kena-mental",
+    title: "Disuruh Baca @ledib X @ayoncakra Malah Aku Kena Mental !",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "hoa-khoi-tho-doc-vi-mac-ao-dong-phuc-triet-eo-het-co",
+    title: "Hoa Khôi Thở Dốc Vì Mặc Áo Đồng Phục Triết Eo Hết Cỡ",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "the-primordial-vampire-of-house-vaust",
+    title: "The Primordial Vampire of House Vaust",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["en"]
   })
 ];
 
