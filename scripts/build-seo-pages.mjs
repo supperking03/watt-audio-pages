@@ -3856,6 +3856,76 @@ const topics = [
     idMotif: "misteri dan ketegangan dan petualangan fantasi",
     arMotif: "التشويق والغموض و مغامرات خيالية",
     languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "pati-ne-patni-ko-puri-aazadi-di-phir-vahi-aazadi-usaka-ghar-ujar-gai",
+    title: "पति ने पत्नी को पूरी आज़ादी दी… फिर वही आज़ादी उसका घर उजाड़ गई!",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "vi-hon-the-yeu-duoi-cua-thai-tu-gia-hoa-ra-la-sat-thu-khet-tieng",
+    title: "Vị Hôn Thê Yếu Đuối Của Thái Tử Gia Hoá Ra Là Sát Thủ Khét Tiếng",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "raja-bhoj-ke-darabar-men-bakare-ke-panch-jute-parhane-ka-rahasy",
+    title: "राजा भोज के दरबार में बकरे के पांच जूते पढ़ने का रहस्य",
+    enMotif: "palace drama and suspense and mystery",
+    viMotif: "cổ trang và kinh dị bí ẩn",
+    hiMotif: "राजमहल ड्रामा और सस्पेंस और रहस्य",
+    idMotif: "drama kerajaan dan misteri dan ketegangan",
+    arMotif: "دراما القصور و التشويق والغموض",
+    languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "a-sorcerer-s-tale-ch-1-360-adventure-reincarnation-magic",
+    title: "A Sorcerer's Tale Ch 1-360 (Adventure, Reincarnation, Magic)",
+    enMotif: "suspense and mystery and fantasy adventure",
+    viMotif: "kinh dị bí ẩn và tiên hiệp fantasy",
+    hiMotif: "सस्पेंस और रहस्य और फ़ैंटेसी एडवेंचर",
+    idMotif: "misteri dan ketegangan dan petualangan fantasi",
+    arMotif: "التشويق والغموض و مغامرات خيالية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "kontrak-nikah-360-hari-bersama-mas-dokter",
+    title: "Kontrak Nikah 360 Hari Bersama Mas Dokter",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "rekomendasi-fiksi-remaja-sadboy-bikin-baper",
+    title: "Rekomendasi Fiksi Remaja SadBoy Bikin BAPER..!!!",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "zwjwny-wld-khalty-alasby-ghsb-wma-twqat-yqlb-hnwn-fy-awl-lylh",
+    title: "زوجوني ولد خالتي العصبي غصب.. وما توقعت يقلب حنون في أول ليلة!",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["ar"]
   })
 ];
 
