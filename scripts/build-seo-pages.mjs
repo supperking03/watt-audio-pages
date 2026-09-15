@@ -3826,6 +3826,36 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "sau-khi-toi-ngung-theo-duoi-hotboy-lanh-lung-phat-dien-di-tim-toi",
+    title: "Sau Khi Tôi Ngừng Theo Đuổi, Hotboy Lạnh Lùng Phát Điên Đi Tìm Tôi",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "phao-hoi-bi-van-nguoi-ghet-trong-tieu-thuyet-doan-sung-khong-them-tranh-gianh-nua",
+    title: "Pháo Hôi Bị Vạn Người Ghét Trong Tiểu Thuyết Đoàn Sủng Không Thèm Tranh Giành Nữa",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "tak-berdaya-1-dari-2-trilogi-tak-berdaya",
+    title: "Tak Berdaya 1 Dari 2 [Trilogi Tak Berdaya",
+    enMotif: "suspense and mystery and fantasy adventure",
+    viMotif: "kinh dị bí ẩn và tiên hiệp fantasy",
+    hiMotif: "सस्पेंस और रहस्य और फ़ैंटेसी एडवेंचर",
+    idMotif: "misteri dan ketegangan dan petualangan fantasi",
+    arMotif: "التشويق والغموض و مغامرات خيالية",
+    languages: ["id"]
   })
 ];
 
