@@ -3926,6 +3926,46 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["ar"]
+  }),
+  storyTitleTopic({
+    slug: "tra-xanh-bi-ao-tuong-choc-nham-bao-boi-mo-hon-nhat-gioi-thuong-luu",
+    title: "Trà Xanh Bị Ảo Tưởng Chọc Nhầm Bảo Bối Mỏ Hỗn Nhất Giới Thượng Lưu",
+    enMotif: "green tea rival and school romance",
+    viMotif: "trà xanh và vườn trường",
+    hiMotif: "छल भरी प्रतिद्वंद्वी और कॉलेज रोमांस",
+    idMotif: "rival bermuka dua dan romansa sekolah",
+    arMotif: "المنافسة الماكرة و رومانسية المدرسة",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "sdaqh-altfwlh-zwaj-balakrah-rwayh-rwmansa-qsh-kamlh-rwmansy-drama-qsh-ma-fnjan-qhwh",
+    title: "صداقه الطفوله زواج بالاكراه روايه رومانسى قصه كامله رومانسي دراما -قصه مع_فنجان_قهوه",
+    enMotif: "marriage drama",
+    viMotif: "cưới gả",
+    hiMotif: "शादी का ड्रामा",
+    idMotif: "drama pernikahan",
+    arMotif: "دراما الزواج",
+    languages: ["ar"]
+  }),
+  storyTitleTopic({
+    slug: "cerita-mendadak-hilang-dihapus-atau-error-februari-2020-cara-balikinnya-gimana",
+    title: "Cerita Mendadak Hilang Dihapus Atau Error Februari 2020? Cara Balikinnya Gimana?",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "qsty-ma-sahb-rajly-mtany-w-brany-dakshy-andw-zwyn-bzaf",
+    title: "قصتي مع صاحب راجلي متعني و برعني داكشي عندو زوين بزاف",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["ar"]
   })
 ];
 
