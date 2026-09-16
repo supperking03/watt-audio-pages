@@ -3966,6 +3966,46 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["ar"]
+  }),
+  storyTitleTopic({
+    slug: "thu-ca-man-lo-treu-canh-sat-ngam-va-cai-ket-om-bau-bo-tron",
+    title: "Thụ Cá Mặn Lỡ Trêu Cảnh Sát Ngầm Và Cái Kết Ôm Bầu Bỏ Trốn!",
+    enMotif: "comedy",
+    viMotif: "hài hước",
+    hiMotif: "कॉमेडी",
+    idMotif: "komedi",
+    arMotif: "الكوميديا",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "raja-ne-aadhi-rat-apani-beti-ki-shadi-ek-pagal-se-karai-agali-subah-ek-rajakumar-se",
+    title: "राजा ने आधी रात अपनी बेटी की शादी एक पागल से कराई,अगली सुबह एक राजकुमार से",
+    enMotif: "marriage drama and palace drama",
+    viMotif: "cưới gả và cổ trang",
+    hiMotif: "शादी का ड्रामा और राजमहल ड्रामा",
+    idMotif: "drama pernikahan dan drama kerajaan",
+    arMotif: "دراما الزواج و دراما القصور",
+    languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "apane-hi-pati-se-bichhar-gai-indira-aur-phir-usi-ke-ghar-pahunchi",
+    title: "अपने ही पति से बिछड़ गई इंदिरा… और फिर उसी के घर पहुँची!",
+    enMotif: "family drama",
+    viMotif: "gia đình",
+    hiMotif: "पारिवारिक ड्रामा",
+    idMotif: "drama keluarga",
+    arMotif: "دراما عائلية",
+    languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "tieu-thuyet-tinh-yeu-nhat-dinh-phai-nghe-1-lan-trong-doi",
+    title: "Tiểu Thuyết Tình Yêu Nhất Định Phải Nghe 1 Lần Trong Đời",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
