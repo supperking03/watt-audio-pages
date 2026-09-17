@@ -4036,6 +4036,16 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["ar"]
+  }),
+  storyTitleTopic({
+    slug: "reverse-engineered-magic-title-trait-collecting-battle-grinding-post-apoc-system-apocalypse",
+    title: "Reverse Engineered Magic [Title/Trait Collecting, Battle Grinding, Post-apoc System Apocalypse]",
+    enMotif: "suspense and mystery and fantasy adventure",
+    viMotif: "kinh dị bí ẩn và tiên hiệp fantasy",
+    hiMotif: "सस्पेंस और रहस्य और फ़ैंटेसी एडवेंचर",
+    idMotif: "misteri dan ketegangan dan petualangan fantasi",
+    arMotif: "التشويق والغموض و مغامرات خيالية",
+    languages: ["en"]
   })
 ];
 
