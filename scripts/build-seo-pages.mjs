@@ -4076,6 +4076,16 @@ const topics = [
     idMotif: "misteri dan ketegangan dan petualangan fantasi",
     arMotif: "التشويق والغموض و مغامرات خيالية",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "qatl-klma-qtat-lh-rasa-nbtt-lh-rasan",
+    title: "قاتل كلما قُطعت له رأسًا نبتت له رأسان",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["ar"]
   })
 ];
 
