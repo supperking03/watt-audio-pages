@@ -4086,6 +4086,16 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["ar"]
+  }),
+  storyTitleTopic({
+    slug: "thien-kim-gia-dung-khoc-nua-ca-nha-nghe-het-tieng-long-cua-toi-roi",
+    title: "Thiên Kim Giả Đừng Khóc Nữa, Cả Nhà Nghe Hết Tiếng Lòng Của Tôi Rồi!",
+    enMotif: "emotional angst",
+    viMotif: "ngược tâm",
+    hiMotif: "दर्द भरी कहानी",
+    idMotif: "kisah pilu",
+    arMotif: "الحكايات الموجعة",
+    languages: ["vi"]
   })
 ];
 
