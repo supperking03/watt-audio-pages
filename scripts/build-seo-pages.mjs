@@ -4136,6 +4136,26 @@ const topics = [
     idMotif: "drama keluarga",
     arMotif: "دراما عائلية",
     languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "jis-laraki-ko-sab-badasurat-kahate-the-usaki-aalu-chat-ne-puri-jindagi-badal-di",
+    title: "जिस लड़की को सब बदसूरत कहते थे, उसकी आलू चाट ने पूरी जिंदगी बदल दी",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "to-tinh-nam-than-that-bai-toi-yeu-luon-dai-ca-nghien-vo",
+    title: "Tỏ Tình Nam Thần Thất Bại, Tôi Yêu Luôn Đại Ca Nghiện Vợ",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
