@@ -4106,6 +4106,36 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["ar"]
+  }),
+  storyTitleTopic({
+    slug: "lost-divinity-reincarnation-litrpg-death-magic",
+    title: "Lost Divinity [Reincarnation, LitRPG, Death Magic]",
+    enMotif: "suspense and mystery and fantasy adventure",
+    viMotif: "kinh dị bí ẩn và tiên hiệp fantasy",
+    hiMotif: "सस्पेंस और रहस्य और फ़ैंटेसी एडवेंचर",
+    idMotif: "misteri dan ketegangan dan petualangan fantasi",
+    arMotif: "التشويق والغموض و مغامرات خيالية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "dil-men-base-ho-tum-parta-15-heart-touching-emotional-sadabahar-kahaniya",
+    title: "दिल में बसे हो तुम,, पार्ट=15,,, Heart Touching, Emotional, Sadabahar Kahaniya,",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "hal-yang-perlu-kalian-perhatikan-agar-cerita-bisa-mendapatkan-ratusan-ribu-pembaca",
+    title: "Hal Yang Perlu Kalian Perhatikan Agar Cerita Bisa Mendapatkan RATUSAN RIBU Pembaca!",
+    enMotif: "family drama",
+    viMotif: "gia đình",
+    hiMotif: "पारिवारिक ड्रामा",
+    idMotif: "drama keluarga",
+    arMotif: "دراما عائلية",
+    languages: ["id"]
   })
 ];
 
