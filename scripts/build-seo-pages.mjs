@@ -4186,6 +4186,36 @@ const topics = [
     idMotif: "misteri dan ketegangan",
     arMotif: "التشويق والغموض",
     languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "dabang-jatani-ka-aisa-badala-ki-ghamandi-rajakumar-ki-puri-jindagi-badal-gai",
+    title: "दबंग जाटनी का ऐसा बदला कि घमंडी राजकुमार की पूरी जिंदगी बदल गई!",
+    enMotif: "revenge",
+    viMotif: "báo thù",
+    hiMotif: "बदला",
+    idMotif: "balas dendam",
+    arMotif: "الانتقام",
+    languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "dai-tieu-thu-cua-gia-toc-quyen-luc-nhat-gioi-thuong-luu-tro-ve-va-mat-tra-xanh",
+    title: "Đại Tiểu Thư của Gia Tộc Quyền Lực Nhất Giới Thượng Lưu Trở Về Vả Mặt Trà Xanh",
+    enMotif: "green tea rival",
+    viMotif: "trà xanh",
+    hiMotif: "छल भरी प्रतिद्वंद्वी",
+    idMotif: "rival bermuka dua",
+    arMotif: "المنافسة الماكرة",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "sau-khi-doc-dong-binh-luan-ay-toi-buong-tay-han",
+    title: "Sau Khi Đọc Dòng Bình Luận Ấy Tôi Buông Tay Hắn",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
