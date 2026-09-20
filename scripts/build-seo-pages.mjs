@@ -4156,6 +4156,36 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "boylove-sau-muoi-nam-giam-cam-anh-trang-sang-toi-hoan-luong",
+    title: "《BOYLOVE 》Sau Mười Năm Giam Cầm Ánh Trăng Sáng Tôi Hoàn Lương",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "boylove-be-chon-tuyet-cua-phong-ngan-hoa-thanh-nguoi-roi",
+    title: "《BOYLOVE 》Bé Chồn Tuyết Của Phong Ngạn Hoá Thành Người Rồi",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "maaf-aku-tak-mau-menggantikanmu-dimadu-bu",
+    title: "Maaf, Aku Tak Mau Menggantikanmu Dimadu, Bu!",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["id"]
   })
 ];
 
