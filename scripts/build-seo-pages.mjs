@@ -4216,6 +4216,26 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "boylove-em-trai-omega-chay-tron-toi-bi-thay-the-dang-cho-thua-tuong-trong-thuong",
+    title: "《BOYLOVE 》Em Trai Omega Chạy Trốn Tôi Bị Thay Thế Dâng Cho Thừa Tướng Trọng Thương",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "ganv-men-jadui-lassi-ka-mataka-gaon-me-jadui-lassi-ka-matka",
+    title: "गांव में जादुई लस्सी का मटका Gaon Me Jadui Lassi Ka Matka",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["hi"]
   })
 ];
 
