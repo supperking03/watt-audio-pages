@@ -4306,6 +4306,26 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "trung-sinh-toi-lat-tay-tra-xanh-va-ong-hoi-ngoai-tinh-va-chung-nat-mat",
+    title: "Trùng Sinh Tôi Lật Tẩy Trà Xanh và Ông Hói Ngoại Tình, Vả Chúng Nát Mặt",
+    enMotif: "green tea rival",
+    viMotif: "trà xanh",
+    hiMotif: "छल भरी प्रतिद्वंद्वी",
+    idMotif: "rival bermuka dua",
+    arMotif: "المنافسة الماكرة",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "hot-search-bao-toi-cam-sung-anh-de-anh-ay-ghen-den-phat-dien-roi",
+    title: "Hot Search Bảo Tôi Cắm Sừng Ảnh Đế, Anh Ấy Ghen Đến Phát Điên Rồi",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
