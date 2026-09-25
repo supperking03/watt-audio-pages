@@ -4346,6 +4346,36 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["ar"]
+  }),
+  storyTitleTopic({
+    slug: "tra-xanh-moi-chuyen-vao-lop-toi-thich-nhong-nheo",
+    title: "Trà Xanh Mới Chuyển Vào Lớp Tôi Thích Nhõng Nhẽo",
+    enMotif: "green tea rival",
+    viMotif: "trà xanh",
+    hiMotif: "छल भरी प्रतिद्वंद्वी",
+    idMotif: "rival bermuka dua",
+    arMotif: "المنافسة الماكرة",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "hoa-khoi-doi-thay-dong-phuc-ca-truong",
+    title: "Hoa Khôi Đòi Thay Đồng Phục Cả Trường",
+    enMotif: "school romance",
+    viMotif: "vườn trường",
+    hiMotif: "कॉलेज रोमांस",
+    idMotif: "romansa sekolah",
+    arMotif: "رومانسية المدرسة",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "bare-bijanesamain-ne-di-dhamaki-laraki-ne-phar-diya-karoron-ka-egriment",
+    title: "बड़े बिजनेसमैन ने दी धमकी, लड़की ने फाड़ दिया करोड़ों का एग्रीमेंट!",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["hi"]
   })
 ];
 
