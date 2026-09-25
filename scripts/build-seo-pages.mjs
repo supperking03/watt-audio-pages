@@ -4376,6 +4376,46 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "sau-khi-trong-sinh-toi-doi-lai-cuoc-doi-minh",
+    title: "Sau Khi Trọng Sinh Tôi Đòi Lại Cuộc Đời Mình",
+    enMotif: "rebirth",
+    viMotif: "trọng sinh",
+    hiMotif: "पुनर्जन्म",
+    idMotif: "terlahir kembali",
+    arMotif: "العودة إلى الماضي",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "p1-i-got-trapped-in-a-novel-as-the-villain-but-the-heroines-can-hear-my-thoughts",
+    title: "P1.I Got Trapped In A Novel As The Villain, But The Heroines Can Hear My Thoughts",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "boss-kinh-di-lai-la-be-tho-duoc-toi-nuoi-chieu",
+    title: "Boss Kinh Dị Lại là Bé Thỏ Được Tôi Nuôi Chiều",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "a-rainy-cabin-romance-sleep-story-for-grown-ups",
+    title: "A Rainy Cabin Romance Sleep Story For Grown Ups",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["en"]
   })
 ];
 
