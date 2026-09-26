@@ -4436,6 +4436,16 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "trong-sinh-toi-khong-can-tra-xanh-thich-lam-tro-de-cau-view",
+    title: "Trọng Sinh, Tôi Không Cản Trà Xanh Thích Làm Trò Để Câu View",
+    enMotif: "rebirth and green tea rival",
+    viMotif: "trọng sinh và trà xanh",
+    hiMotif: "पुनर्जन्म और छल भरी प्रतिद्वंद्वी",
+    idMotif: "terlahir kembali dan rival bermuka dua",
+    arMotif: "العودة إلى الماضي و المنافسة الماكرة",
+    languages: ["vi"]
   })
 ];
 
