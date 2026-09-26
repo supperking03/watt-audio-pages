@@ -4446,6 +4446,16 @@ const topics = [
     idMotif: "terlahir kembali dan rival bermuka dua",
     arMotif: "العودة إلى الماضي و المنافسة الماكرة",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "toi-phai-o-ke-nha-ke-thu-tu-be",
+    title: "Tôi Phải Ở Ké Nhà Kẻ Thù Từ Bé",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
