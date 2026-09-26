@@ -4416,6 +4416,26 @@ const topics = [
     idMotif: "misteri dan ketegangan",
     arMotif: "التشويق والغموض",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "bina-ek-bhi-sabut-ke-doshi-kaise-pakara-jaega-murder-mystery-in-hindi",
+    title: "बिना एक भी सबूत के दोषी कैसे पकड़ा जाएगा? Murder Mystery In Hindi",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "that-tinh-di-bar-ai-ngo-vo-duoc-vo-giau",
+    title: "Thất Tình Đi Bar, Ai Ngờ Vớ Được Vợ Giàu",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
