@@ -4486,6 +4486,26 @@ const topics = [
     idMotif: "petualangan fantasi",
     arMotif: "مغامرات خيالية",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "em-gai-yeu-nguoi-day-kem-hon-minh-20-tuoi-va-da-co-vo-con",
+    title: "Em Gái Yêu Người Dạy Kèm Hơn Mình 20 Tuổi Và đã Có Vợ Con",
+    enMotif: "family drama",
+    viMotif: "gia đình",
+    hiMotif: "पारिवारिक ड्रामा",
+    idMotif: "drama keluarga",
+    arMotif: "دراما عائلية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "vo-cung-cua-doi-truong-luc-la-sat-thu-an-than",
+    title: "Vợ Cưng Của Đội Trưởng Lục Là Sát Thủ Ẩn Thân",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
