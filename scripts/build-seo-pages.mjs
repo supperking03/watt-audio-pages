@@ -4516,6 +4516,56 @@ const topics = [
     idMotif: "misteri dan ketegangan",
     arMotif: "التشويق والغموض",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "terjebak-perasaan-pada-ibu-sahabatku-sendiri-semua-berawal-saat-rumah-itu-sepi",
+    title: "Terjebak Perasaan Pada Ibu Sahabatku Sendiri… Semua Berawal Saat Rumah Itu Sepi",
+    enMotif: "family drama and suspense and mystery",
+    viMotif: "gia đình và kinh dị bí ẩn",
+    hiMotif: "पारिवारिक ड्रामा और सस्पेंस और रहस्य",
+    idMotif: "drama keluarga dan misteri dan ketegangan",
+    arMotif: "دراما عائلية و التشويق والغموض",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "jis-naukarani-ko-malhotra-ne-ghar-se-nikala-usi-ka-beta-nikala-zile-ka-naya-kalektar",
+    title: "जिस नौकरानी को मल्होत्रा ने घर से निकाला... उसी का बेटा निकला ज़िले का नया कलेक्टर!",
+    enMotif: "palace drama",
+    viMotif: "cổ trang",
+    hiMotif: "राजमहल ड्रामा",
+    idMotif: "drama kerajaan",
+    arMotif: "دراما القصور",
+    languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "edisi-dongeng-alam-karel-de-bruin-pria-dengan-sejuta-mimpi-dan-trauma-nya",
+    title: "Edisi Dongeng Alam = KAREL De BRUIN (Pria Dengan Sejuta Mimpi Dan Trauma-nya)",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "hoa-khoi-dat-1000-suat-ga-ran-roi-bat-ca-lop-tra-tien",
+    title: "Hoa Khôi Đặt 1000 Suất Gà Rán Rồi Bắt Cả Lớp Trả Tiền",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "co-mot-nguoi-dung-ca-doi-de-giu-mot-loi-hua",
+    title: "Có Một Người Dùng Cả Đời Để Giữ Một Lời Hứa",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
