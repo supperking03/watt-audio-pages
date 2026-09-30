@@ -4646,6 +4646,26 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "ca-mang-doi-toi-bien-khoi-showbiz-toi-di-that-thi-ho-lai-hoang",
+    title: "Cả Mạng Đòi Tôi Biến Khỏi Showbiz, Tôi Đi Thật Thì Họ Lại Hoảng",
+    enMotif: "entertainment circle",
+    viMotif: "showbiz",
+    hiMotif: "शोबिज़",
+    idMotif: "dunia hiburan",
+    arMotif: "عالم الشهرة",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "sau-khi-bi-ep-debut-bang-huyen-hoc-toi-noi-tieng-toan-mang",
+    title: "Sau Khi Bị Ép Debut Bằng Huyền Học Tôi Nổi Tiếng Toàn Mạng",
+    enMotif: "school romance",
+    viMotif: "vườn trường",
+    hiMotif: "कॉलेज रोमांस",
+    idMotif: "romansa sekolah",
+    arMotif: "رومانسية المدرسة",
+    languages: ["vi"]
   })
 ];
 
