@@ -4606,6 +4606,46 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "tra-xanh-doi-nam-than-xoa-toi-khoi-danh-sach-ban-be",
+    title: "Trà Xanh Đòi Nam Thần Xóa Tôi Khỏi Danh Sách Bạn Bè",
+    enMotif: "green tea rival",
+    viMotif: "trà xanh",
+    hiMotif: "छल भरी प्रतिद्वंद्वी",
+    idMotif: "rival bermuka dua",
+    arMotif: "المنافسة الماكرة",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "begini-kalo-bocil-nulis-cerita",
+    title: "Begini Kalo Bocil Nulis Cerita",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "jise-sab-chaparasi-samajhakar-beijjat-karate-the-vahi-nikala-kanpani-ka-malik",
+    title: "जिसे सब चपरासी समझकर बेइज्जत करते थे, वही निकला कंपनी का मालिक",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "ke-thu-che-toi-phien-nhung-lai-phat-dien-cuong-me-toi",
+    title: "Kẻ Thù Chê Tôi Phiền Nhưng Lại Phát Điên Cuồng Mê Tôi",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
