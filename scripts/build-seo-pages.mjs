@@ -4726,6 +4726,36 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "menikah-tanpa-cinta-demi-anak-bisakah-cinta-itu-tumbuh",
+    title: "Menikah Tanpa Cinta Demi Anak, Bisakah Cinta Itu Tumbuh?",
+    enMotif: "marriage drama and suspense and mystery",
+    viMotif: "cưới gả và kinh dị bí ẩn",
+    hiMotif: "शादी का ड्रामा और सस्पेंस और रहस्य",
+    idMotif: "drama pernikahan dan misteri dan ketegangan",
+    arMotif: "دراما الزواج و التشويق والغموض",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "toi-bi-nguoi-yeu-cua-anh-ca-tat-2-phat-ca-hao-mon-phat-hoang-roi",
+    title: "Tôi Bị Người Yêu của Anh Cả Tát 2 Phát, Cả Hào Môn Phát Hoảng Rồi",
+    enMotif: "green tea rival and rich-family romance",
+    viMotif: "trà xanh và hào môn",
+    hiMotif: "छल भरी प्रतिद्वंद्वी और अमीर परिवार की रोमांस",
+    idMotif: "rival bermuka dua dan romansa keluarga kaya",
+    arMotif: "المنافسة الماكرة و رومانسية العائلات الثرية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "toi-la-mot-thu-ky-nam-vo-cung-that-tha-trong-mot-tieu-thuyet-ngon-tinh",
+    title: "Tôi là Một Thư Ký Nam Vô Cùng Thật Thà Trong Một Tiểu Thuyết Ngôn Tình",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
