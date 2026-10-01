@@ -4666,6 +4666,36 @@ const topics = [
     idMotif: "romansa sekolah",
     arMotif: "رومانسية المدرسة",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "kutunggu-talakmu-mas-kapten",
+    title: "Kutunggu Talakmu, Mas Kapten !",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "vo-cung-cua-thai-tu-gia-cam-la-sat-thu-lam-chieu",
+    title: "Vợ Cưng của Thái Tử Gia Câm là Sát Thủ Lắm Chiêu",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "lelaki-tua-dan-kebun-rahasianya-di-tengah-kota",
+    title: "Lelaki Tua Dan Kebun Rahasianya Di Tengah Kota",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["id"]
   })
 ];
 
