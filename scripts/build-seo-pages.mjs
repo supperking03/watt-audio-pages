@@ -4696,6 +4696,36 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "thay-chi-ga-cho-thai-tu-gia-duoc-cung-nhat-thuong-hai",
+    title: "Thay Chị Gả Cho Thái Tử Gia Được Cưng Nhất Thượng Hải",
+    enMotif: "rebirth",
+    viMotif: "trọng sinh",
+    hiMotif: "पुनर्जन्म",
+    idMotif: "terlahir kembali",
+    arMotif: "العودة إلى الماضي",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "chacha-7-din-ke-lie-bahar-gae-aur-chachi-rohan-ghar-men-akele-rah-gae",
+    title: "चाचा 7 दिन के लिए बाहर गए और चाची-रोहन घर में अकेले रह गए",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "aku-tak-ada-di-grup-wa",
+    title: "Aku Tak Ada Di Grup Wa",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["id"]
   })
 ];
 
