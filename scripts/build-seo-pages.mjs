@@ -4756,6 +4756,16 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "toi-khien-ten-oan-gia-ghen-den-phat-khoc",
+    title: "Tôi Khiến Tên Oan Gia Ghen Đến Phát Khóc",
+    enMotif: "emotional angst",
+    viMotif: "ngược tâm",
+    hiMotif: "दर्द भरी कहानी",
+    idMotif: "kisah pilu",
+    arMotif: "الحكايات الموجعة",
+    languages: ["vi"]
   })
 ];
 
