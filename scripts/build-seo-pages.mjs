@@ -4766,6 +4766,16 @@ const topics = [
     idMotif: "kisah pilu",
     arMotif: "الحكايات الموجعة",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "ghamandi-rajakumari-ne-garib-larake-ko-di-aisi-saja-phir-usi-se-kar-liya-vivah",
+    title: "घमंडी राजकुमारी ने गरीब लड़के को दी ऐसी सजा, फिर उसी से कर लिया विवाह!",
+    enMotif: "marriage drama",
+    viMotif: "cưới gả",
+    hiMotif: "शादी का ड्रामा",
+    idMotif: "drama pernikahan",
+    arMotif: "دراما الزواج",
+    languages: ["hi"]
   })
 ];
 
