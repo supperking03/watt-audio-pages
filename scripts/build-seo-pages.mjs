@@ -4776,6 +4776,16 @@ const topics = [
     idMotif: "drama pernikahan",
     arMotif: "دراما الزواج",
     languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "she-hired-a-husband-for-six-months-to-keep-her-stepson-then-wanted-him-to-stay",
+    title: "She Hired A Husband For Six Months To Keep Her Stepson, Then Wanted Him To Stay",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["en"]
   })
 ];
 
