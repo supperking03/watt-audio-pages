@@ -4796,6 +4796,36 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "sat-thu-tro-ve-hao-mon-duoc-thai-tu-gia-lanh-lung-chon-lam-vo-cung",
+    title: "Sát Thủ Trở Về Hào Môn, Được Thái Tử Gia Lạnh Lùng Chọn Làm Vợ Cưng!",
+    enMotif: "rich-family romance",
+    viMotif: "hào môn",
+    hiMotif: "अमीर परिवार की रोमांस",
+    idMotif: "romansa keluarga kaya",
+    arMotif: "رومانسية العائلات الثرية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "tu-chinh-phuc-thanh-chiem-doat-nu-9-nay-rat-ba-khi",
+    title: "Từ Chinh Phục Thành Chiếm Đoạt, Nữ 9 Này Rất Bá Khí",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "bhukhe-aadami-ko-di-sirph-2-rotiyan-phir-usi-ne-badal-di-laraki-ki-puri-jindagi",
+    title: "भूखे आदमी को दी सिर्फ 2 रोटियां, फिर उसी ने बदल दी लड़की की पूरी जिंदगी",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["hi"]
   })
 ];
 
