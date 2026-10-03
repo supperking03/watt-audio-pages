@@ -4786,6 +4786,16 @@ const topics = [
     idMotif: "misteri dan ketegangan",
     arMotif: "التشويق والغموض",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "xuyen-vao-tieu-thuyet-h-van-toi-tram-cam-roi-ii-may-may",
+    title: "Xuyên Vào Tiểu Thuyết H Văn, Tôi Trầm Cảm Rồi Ii Mây Mây",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
