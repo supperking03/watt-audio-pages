@@ -4826,6 +4826,46 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "mn-zwaj-alghdb-ila-ajml-qsh-ashq-qsh-hfsh-wwld-amha-albyary",
+    title: "من زواج الغضب إلى اجمل قصة عشق قصة حفصة وولد عمها البياري",
+    enMotif: "marriage drama",
+    viMotif: "cưới gả",
+    hiMotif: "शादी का ड्रामा",
+    idMotif: "drama pernikahan",
+    arMotif: "دراما الزواج",
+    languages: ["ar"]
+  }),
+  storyTitleTopic({
+    slug: "rajakumar-ko-pariyan-uthakar-le-gain-phir-rajakumari-ne-jo-kiya-vo-hairan-kar-dega",
+    title: "राजकुमार को परियाँ उठाकर ले गईं, फिर राजकुमारी ने जो किया वो हैरान कर देगा",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "iyfan-almghfl-alqsh-kamlh-hyn-ysbh-altghafl-alslah-alamda-fy-alhyah-lyw-twlstwy",
+    title: "إيفان المغفل (القصة كاملة) حين يصبح التغافل السلاح الأمضى في الحياة، ليو تولستوي",
+    enMotif: "family drama",
+    viMotif: "gia đình",
+    hiMotif: "पारिवारिक ड्रामा",
+    idMotif: "drama keluarga",
+    arMotif: "دراما عائلية",
+    languages: ["ar"]
+  }),
+  storyTitleTopic({
+    slug: "tabele-vale-ke-sath-jab-raja-ne-apani-patni-ko-dekha",
+    title: "तबेले वाले के साथ जब राजा ने अपनी पत्नी को देखा",
+    enMotif: "palace drama",
+    viMotif: "cổ trang",
+    hiMotif: "राजमहल ड्रामा",
+    idMotif: "drama kerajaan",
+    arMotif: "دراما القصور",
+    languages: ["hi"]
   })
 ];
 
