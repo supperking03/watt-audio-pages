@@ -4876,6 +4876,16 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "toi-tra-xanh-nhung-ca-showbiz-lai-me",
+    title: "Tôi Trà Xanh Nhưng Cả Showbiz Lại Mê",
+    enMotif: "green tea rival, palace drama and entertainment circle",
+    viMotif: "trà xanh, cổ trang và showbiz",
+    hiMotif: "छल भरी प्रतिद्वंद्वी, राजमहल ड्रामा और शोबिज़",
+    idMotif: "rival bermuka dua, drama kerajaan dan dunia hiburan",
+    arMotif: "المنافسة الماكرة, دراما القصور و عالم الشهرة",
+    languages: ["vi"]
   })
 ];
 
