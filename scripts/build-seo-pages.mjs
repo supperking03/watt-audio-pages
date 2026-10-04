@@ -4866,6 +4866,16 @@ const topics = [
     idMotif: "drama kerajaan",
     arMotif: "دراما القصور",
     languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "ghar-se-nikali-garib-besahara-laraki-ki-halat-dekh-hotal-malik-ka-dil-pighal-gaya",
+    title: "घर से निकली गरीब बेसहारा लड़की की हालत देख होटल मालिक का दिल पिघल गया",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["hi"]
   })
 ];
 
