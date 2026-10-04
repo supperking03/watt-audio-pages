@@ -4886,6 +4886,36 @@ const topics = [
     idMotif: "rival bermuka dua, drama kerajaan dan dunia hiburan",
     arMotif: "المنافسة الماكرة, دراما القصور و عالم الشهرة",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "he-rolled-a-trash-summoner-class-but-his-god-tier-system-lets-summons-evolve-infinitely",
+    title: "He Rolled A Trash Summoner Class, But His God-Tier System Lets Summons Evolve Infinitely!",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "she-arrived-to-marry-one-brother-but-the-other-opened-the-door",
+    title: "She Arrived To Marry One Brother, But The Other Opened The Door",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "hoa-khoi-ve-van-hotboy-truong-ngo-dau-anh-cung-chieu-co-vo-nho-to-mau",
+    title: "HOA KHÔI VE VÃN HOTBOY TRƯỜNG, NGỜ ĐÂU ANH CƯNG CHIỀU CÔ VỢ NHỎ Tô Màu",
+    enMotif: "school romance",
+    viMotif: "vườn trường",
+    hiMotif: "कॉलेज रोमांस",
+    idMotif: "romansa sekolah",
+    arMotif: "رومانسية المدرسة",
+    languages: ["vi"]
   })
 ];
 
