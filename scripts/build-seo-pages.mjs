@@ -4916,6 +4916,26 @@ const topics = [
     idMotif: "romansa sekolah",
     arMotif: "رومانسية المدرسة",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "nhat-duoc-anh-chong-thuong-ta-nho-di-nang-phe-vat",
+    title: "Nhặt Được Anh Chồng Thượng Tá Nhờ Dị Năng Phế Vật",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "hdhh-alrwayh-tkhdak-bdhka-mrab",
+    title: "هذه الرواية تخدعك بذكاء مرعب",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["ar"]
   })
 ];
 
