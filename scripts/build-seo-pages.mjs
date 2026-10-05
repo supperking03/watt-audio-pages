@@ -4936,6 +4936,16 @@ const topics = [
     idMotif: "misteri dan ketegangan",
     arMotif: "التشويق والغموض",
     languages: ["ar"]
+  }),
+  storyTitleTopic({
+    slug: "i-reincarnated-as-a-side-character-so-i-became-the-villain",
+    title: "I Reincarnated As A Side Character, So I Became The Villain",
+    enMotif: "family drama",
+    viMotif: "gia đình",
+    hiMotif: "पारिवारिक ड्रामा",
+    idMotif: "drama keluarga",
+    arMotif: "دراما عائلية",
+    languages: ["en"]
   })
 ];
 
