@@ -4966,6 +4966,46 @@ const topics = [
     idMotif: "rival bermuka dua",
     arMotif: "المنافسة الماكرة",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "tapi-keluarga-barunya-bisa-mendengar-setiap-pikirannya",
+    title: "Tapi Keluarga Barunya Bisa Mendengar Setiap Pikirannya",
+    enMotif: "family drama",
+    viMotif: "gia đình",
+    hiMotif: "पारिवारिक ड्रामा",
+    idMotif: "drama keluarga",
+    arMotif: "دراما عائلية",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "chilor-aur-siyarin-ki-jitiya-vrat-katha-sunane-matr-se-mrit-putr-jivit-ho-jata-hai",
+    title: "चिलोर और सियारिन की जितिया व्रत कथा सुनाने मात्र से मृत पुत्र जीवित हो जाता है",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "vo-cung-cua-quan-truong-vua-mang-thai-da-bo-tron",
+    title: "Vợ Cưng của Quân Trưởng Vừa Mang Thai Đã Bỏ Trốn!",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "nzlt-almtbkh-bns-allyl-bmlabs-alnwm-shafny-wld-amy-wsar-ally-ma-tkhylth",
+    title: "نزلت المطبخ بنص الليل بملابس النوم.. شافني ولد عمي وصار اللي ما تخيلته!",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["ar"]
   })
 ];
 
