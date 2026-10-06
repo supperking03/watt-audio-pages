@@ -4946,6 +4946,26 @@ const topics = [
     idMotif: "drama keluarga",
     arMotif: "دراما عائلية",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "ayahnya-bilang-itu-demi-masa-depan-tapi-yang-dirasakan-ratih-justru-semakin-sempit",
+    title: "Ayahnya Bilang Itu Demi Masa Depan, Tapi Yang Dirasakan Ratih Justru Semakin Sempit..",
+    enMotif: "family drama and suspense and mystery",
+    viMotif: "gia đình và kinh dị bí ẩn",
+    hiMotif: "पारिवारिक ड्रामा और सस्पेंस और रहस्य",
+    idMotif: "drama keluarga dan misteri dan ketegangan",
+    arMotif: "دراما عائلية و التشويق والغموض",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "tra-xanh-khong-ngo-toi-la-tra-xanh-hao-hang",
+    title: "Trà Xanh Không Ngờ Tôi Là Trà Xanh Hảo Hạng",
+    enMotif: "green tea rival",
+    viMotif: "trà xanh",
+    hiMotif: "छल भरी प्रतिद्वंद्वी",
+    idMotif: "rival bermuka dua",
+    arMotif: "المنافسة الماكرة",
+    languages: ["vi"]
   })
 ];
 
