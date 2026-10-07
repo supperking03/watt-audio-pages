@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T08:01:30.354Z",
+  "generatedAt": "2026-10-06T13:09:56.518Z",
   "date": "2026-10-06",
   "mode": "network",
   "languages": [
@@ -9,50 +9,19 @@
     "id",
     "ar"
   ],
-  "sourceCount": 1100,
+  "sourceCount": 1170,
   "scoring": "v4-multi-market-opportunity-demand-minus-audio-competition",
   "candidates": [
     {
-      "title": "Tapi Keluarga Barunya Bisa Mendengar Setiap Pikirannya",
-      "slug": "tapi-keluarga-barunya-bisa-mendengar-setiap-pikirannya",
-      "language": "id",
-      "score": 84,
-      "demandScore": 73,
-      "audioSignalScore": 11,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "none",
-      "opportunityScore": 84,
-      "enMotif": "family drama",
-      "viMotif": "gia đình",
-      "hiMotif": "पारिवारिक ड्रामा",
-      "idMotif": "drama keluarga",
-      "arMotif": "دراما عائلية",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "language": "id",
-          "query": "cerita wattpad audio lengkap",
-          "text": "Dia pindah ke dalam novel – Tapi keluarga barunya bisa mendengar setiap pikirannya"
-        },
-        {
-          "source": "youtube-search",
-          "language": "id",
-          "query": "dengar novel indonesia",
-          "text": "Dia pindah ke dalam novel – Tapi keluarga barunya bisa mendengar setiap pikirannya"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "चिलोर और सियारिन की जितिया व्रत कथा सुनाने मात्र से मृत पुत्र जीवित हो जाता है",
-      "slug": "chilor-aur-siyarin-ki-jitiya-vrat-katha-sunane-matr-se-mrit-putr-jivit-ho-jata-hai",
-      "language": "hi",
-      "score": 72,
-      "demandScore": 64,
+      "title": "Khi Hai Trái Tim Cùng Giới Lạc Nhau Giữa Đời…",
+      "slug": "khi-hai-trai-tim-cung-gioi-lac-nhau-giua-doi",
+      "language": "vi",
+      "score": 64,
+      "demandScore": 62,
       "audioSignalScore": 8,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "none",
-      "opportunityScore": 72,
+      "audioCompetitionScore": 1,
+      "audioCompetitionLevel": "low",
+      "opportunityScore": 64,
       "enMotif": "Vietnamese web fiction and romance drama",
       "viMotif": "truyện mạng Việt và romance drama",
       "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
@@ -61,58 +30,63 @@
       "evidence": [
         {
           "source": "youtube-search",
-          "language": "hi",
-          "query": "हिंदी कहानी ऑडियो पूरी",
-          "text": "चिलोर और सियारिन की जितिया व्रत कथा सुनाने मात्र से मृत पुत्र जीवित हो जाता है | #jitiya "
+          "language": "vi",
+          "query": "truyện wattpad audio full",
+          "text": "[Truyện Audio GL]  Một Kiếp Tình Si | Trọn tập – Khi hai trái tim cùng giới lạc nhau giữa đời…"
         },
         {
           "source": "competition-error",
-          "query": "\"चिलोर और सियारिन की जितिया व्रत कथा सुनाने मात्र से मृत पुत्र जीवित हो जाता है\" audio story",
+          "query": "\"Khi Hai Trái Tim Cùng Giới Lạc Nhau Giữa Đời…\" audio",
           "text": "This operation was aborted"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Khi Hai Trái Tim Cùng Giới Lạc Nhau Giữa Đời…\" \"truyện audio\"",
+          "text": "[Truyện Audio GL]  Một Kiếp Tình Si | Trọn tập – Khi hai trái tim cùng giới lạc nhau giữa đời…"
         }
       ],
       "status": "draft"
     },
     {
-      "title": "Vợ Cưng của Quân Trưởng Vừa Mang Thai Đã Bỏ Trốn!",
-      "slug": "vo-cung-cua-quan-truong-vua-mang-thai-da-bo-tron",
+      "title": "[ Bách Hợp ] Crush Của Anh Trai Thích Tôi",
+      "slug": "bach-hop-crush-cua-anh-trai-thich-toi",
       "language": "vi",
-      "score": 68,
-      "demandScore": 66,
+      "score": 64,
+      "demandScore": 62,
       "audioSignalScore": 8,
       "audioCompetitionScore": 1,
       "audioCompetitionLevel": "low",
-      "opportunityScore": 68,
-      "enMotif": "suspense and mystery",
-      "viMotif": "kinh dị bí ẩn",
-      "hiMotif": "सस्पेंस और रहस्य",
-      "idMotif": "misteri dan ketegangan",
-      "arMotif": "التشويق والغموض",
+      "opportunityScore": 64,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
       "evidence": [
         {
           "source": "youtube-search",
           "language": "vi",
           "query": "truyện wattpad audio full",
-          "text": "Truyện Audio || VỢ CƯNG CỦA QUÂN TRƯỞNG VỪA MANG THAI ĐÃ BỎ TRỐN! || Kem Audio"
+          "text": "[ Bách Hợp ] Crush Của Anh Trai Thích Tôi - Truyện Girl Love / GL Audio Full"
         },
         {
           "source": "youtube-audio-competition",
-          "query": "\"Vợ Cưng của Quân Trưởng Vừa Mang Thai Đã Bỏ Trốn!\" \"truyện audio\"",
-          "text": "Truyện Audio || VỢ CƯNG CỦA QUÂN TRƯỞNG VỪA MANG THAI ĐÃ BỎ TRỐN! || Kem Audio"
+          "query": "\"[ Bách Hợp ] Crush Của Anh Trai Thích Tôi\" \"truyện audio\"",
+          "text": "[ Bách Hợp ] Crush Của Anh Trai Thích Tôi - Truyện Girl Love / GL Audio Full"
         }
       ],
       "status": "draft"
     },
     {
-      "title": "نزلت المطبخ بنص الليل بملابس النوم.. شافني ولد عمي وصار اللي ما تخيلته!",
-      "slug": "nzlt-almtbkh-bns-allyl-bmlabs-alnwm-shafny-wld-amy-wsar-ally-ma-tkhylth",
+      "title": "ستندم إن لم تستمع لهذه الرواية! رواية كاملة",
+      "slug": "stndm-in-lm-tstma-lhdhh-alrwayh-rwayh-kamlh",
       "language": "ar",
-      "score": 68,
-      "demandScore": 60,
-      "audioSignalScore": 8,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "none",
-      "opportunityScore": 68,
+      "score": 64,
+      "demandScore": 59,
+      "audioSignalScore": 11,
+      "audioCompetitionScore": 1,
+      "audioCompetitionLevel": "low",
+      "opportunityScore": 64,
       "enMotif": "Vietnamese web fiction and romance drama",
       "viMotif": "truyện mạng Việt và romance drama",
       "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
@@ -122,44 +96,19 @@
         {
           "source": "youtube-search",
           "language": "ar",
-          "query": "قصص واتباد صوتية",
-          "text": "نزلت المطبخ بنص الليل بملابس النوم.. شافني ولد عمي وصار اللي ما تخيلته! 🫣🔥❤️‍🔥"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "Dekusquad Read Stories MHa/BNHA PT1",
-      "slug": "dekusquad-read-stories-mha-bnha-pt1",
-      "language": "en",
-      "score": 64,
-      "demandScore": 53,
-      "audioSignalScore": 11,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "none",
-      "opportunityScore": 64,
-      "enMotif": "web fiction and romance drama",
-      "viMotif": "truyện mạng Việt và romance drama",
-      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
-      "idMotif": "cerita online dan drama romansa",
-      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "language": "en",
-          "query": "wattpad story audio",
-          "text": "Dekusquad read ✨Wattpad Stories ✨ [] MHa/BNHA [] PT1"
+          "query": "رواية صوتية كاملة",
+          "text": "ستندم إن لم تستمع لهذه الرواية! رواية مسموعة كاملة | بلد العميان - هربرت جورج ويلز"
         },
         {
           "source": "youtube-search",
-          "language": "en",
-          "query": "wattpad fanfiction audio",
-          "text": "Dekusquad read ✨Wattpad Stories ✨ [] MHa/BNHA [] PT1"
+          "language": "ar",
+          "query": "روايات عربية صوتية",
+          "text": "ستندم إن لم تستمع لهذه الرواية! رواية مسموعة كاملة | بلد العميان - هربرت جورج ويلز"
         },
         {
-          "source": "competition-error",
-          "query": "\"Dekusquad Read Stories MHa/BNHA PT1\" audiobook",
-          "text": "This operation was aborted"
+          "source": "youtube-audio-competition",
+          "query": "\"ستندم إن لم تستمع لهذه الرواية! رواية كاملة\" رواية صوتية",
+          "text": "ستندم إن لم تستمع لهذه الرواية! رواية مسموعة كاملة | بلد العميان - هربرت جورج ويلز"
         }
       ],
       "status": "draft"
@@ -188,7 +137,7 @@
         },
         {
           "source": "competition-error",
-          "query": "\"Rekomendasi Cerita Cinta Bertepuk Sebelah Tangan\" audio",
+          "query": "\"Rekomendasi Cerita Cinta Bertepuk Sebelah Tangan\" cerita audio",
           "text": "This operation was aborted"
         }
       ],
@@ -215,6 +164,11 @@
           "language": "id",
           "query": "cerita wattpad cinta",
           "text": "cerita wattpad mengejar cinta suami dingin ku"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Cerita Mengejar Cinta Suami Dingin Ku\" audio",
+          "text": "This operation was aborted"
         }
       ],
       "status": "draft"
@@ -245,91 +199,61 @@
       "status": "draft"
     },
     {
-      "title": "Xuyên Thành Vợ Của Trùm Phản Diện Tôi Quyết Ôm Đùi Vàng Của Hắn",
-      "slug": "xuyen-thanh-vo-cua-trum-phan-dien-toi-quyet-om-dui-vang-cua-han",
-      "language": "vi",
-      "score": 60,
-      "demandScore": 70,
+      "title": "Babae Napaibig Ang Masungit Na Boss Dahil Sa Cold Coffee",
+      "slug": "babae-napaibig-ang-masungit-na-boss-dahil-sa-cold-coffee",
+      "language": "en",
+      "score": 62,
+      "demandScore": 60,
       "audioSignalScore": 8,
-      "audioCompetitionScore": 4,
-      "audioCompetitionLevel": "medium",
-      "opportunityScore": 60,
-      "enMotif": "Vietnamese web fiction and romance drama",
-      "viMotif": "truyện mạng Việt và romance drama",
-      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
-      "idMotif": "cerita online dan drama romansa",
-      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "audioCompetitionScore": 1,
+      "audioCompetitionLevel": "low",
+      "opportunityScore": 62,
+      "enMotif": "suspense and mystery",
+      "viMotif": "kinh dị bí ẩn",
+      "hiMotif": "सस्पेंस और रहस्य",
+      "idMotif": "misteri dan ketegangan",
+      "arMotif": "التشويق والغموض",
       "evidence": [
         {
           "source": "youtube-search",
-          "language": "vi",
-          "query": "truyện wattpad audio full",
-          "text": "[Truyện Audio] | Xuyên Thành Vợ Của Trùm Phản Diện Tôi Quyết Ôm Đùi Vàng Của Hắn #audio #truyenaudio"
+          "language": "en",
+          "query": "wattpad story audio",
+          "text": "BABAE NAPAIBIG ANG MASUNGIT NA BOSS DAHIL SA COLD COFFEE: FULLSTORY MY COLDHEARTED BOSS |PINOY STORY"
         },
         {
           "source": "youtube-audio-competition",
-          "query": "\"Xuyên Thành Vợ Của Trùm Phản Diện Tôi Quyết Ôm Đùi Vàng Của Hắn\" \"truyện audio\"",
-          "text": "[Truyện Audio] | Xuyên Thành Vợ Của Trùm Phản Diện Tôi Quyết Ôm Đùi Vàng Của Hắn #audio #truyenaudio"
-        },
-        {
-          "source": "youtube-audio-competition",
-          "query": "\"Xuyên Thành Vợ Của Trùm Phản Diện Tôi Quyết Ôm Đùi Vàng Của Hắn\" \"truyện audio\"",
-          "text": "Truyện Audio: Xuyên Thành Vợ Của Trùm Phản Diện Tôi Quyết Ôm Đùi Vàng Của Hắn"
-        },
-        {
-          "source": "youtube-audio-competition",
-          "query": "\"Xuyên Thành Vợ Của Trùm Phản Diện Tôi Quyết Ôm Đùi Vàng Của Hắn\" \"truyện audio\"",
-          "text": "[ Truyện Audio ] Xuyên Thành Vợ Của Trùm Phản Diện Tôi Quyết Ôm Đùi Vàng Của Hắn"
-        },
-        {
-          "source": "youtube-audio-competition",
-          "query": "\"Xuyên Thành Vợ Của Trùm Phản Diện Tôi Quyết Ôm Đùi Vàng Của Hắn\" audio",
-          "text": "FULL I XUYÊN THÀNH VỢ CỦA TRÙM PHẢN DIỆN TÔI QUYẾT ÔM ĐÙI VÀNG CỦA HẮN | #phuonghoangcotran"
+          "query": "\"Babae Napaibig Ang Masungit Na Boss Dahil Sa Cold Coffee\" audio",
+          "text": "BABAE NAPAIBIG ANG MASUNGIT NA BOSS DAHIL SA COLD COFFEE: FULLSTORY MY COLDHEARTED BOSS |PINOY STORY"
         }
       ],
       "status": "draft"
     },
     {
-      "title": "Xuyên Thành Nữ Phụ Cá Mặn, Tôi Chọc Điên Cả Nam Nữ Chính",
-      "slug": "xuyen-thanh-nu-phu-ca-man-toi-choc-dien-ca-nam-nu-chinh",
-      "language": "vi",
-      "score": 60,
-      "demandScore": 70,
+      "title": "The Rise Of The Dark Hero (Book 1-10)",
+      "slug": "the-rise-of-the-dark-hero-book-1-10",
+      "language": "en",
+      "score": 62,
+      "demandScore": 60,
       "audioSignalScore": 8,
-      "audioCompetitionScore": 4,
-      "audioCompetitionLevel": "medium",
-      "opportunityScore": 60,
-      "enMotif": "school romance and comedy",
-      "viMotif": "vườn trường và hài hước",
-      "hiMotif": "कॉलेज रोमांस और कॉमेडी",
-      "idMotif": "romansa sekolah dan komedi",
-      "arMotif": "رومانسية المدرسة و الكوميديا",
+      "audioCompetitionScore": 1,
+      "audioCompetitionLevel": "low",
+      "opportunityScore": 62,
+      "enMotif": "fantasy adventure",
+      "viMotif": "tiên hiệp fantasy",
+      "hiMotif": "फ़ैंटेसी एडवेंचर",
+      "idMotif": "petualangan fantasi",
+      "arMotif": "مغامرات خيالية",
       "evidence": [
         {
           "source": "youtube-search",
-          "language": "vi",
-          "query": "truyện wattpad audio full",
-          "text": "[Truyện Full] XUYÊN THÀNH NỮ PHỤ CÁ MẶN, TÔI CHỌC ĐIÊN CẢ NAM NỮ CHÍNH | Tịch Nhan Audio"
+          "language": "en",
+          "query": "webnovel audiobook",
+          "text": "LitRPG Audiobooks: The Rise of the Dark Hero (Book 1-10) | Free Audiobook 2026"
         },
         {
           "source": "youtube-audio-competition",
-          "query": "\"Xuyên Thành Nữ Phụ Cá Mặn, Tôi Chọc Điên Cả Nam Nữ Chính\" \"truyện audio\"",
-          "text": "[Truyện Full] XUYÊN THÀNH NỮ PHỤ CÁ MẶN, TÔI CHỌC ĐIÊN CẢ NAM NỮ CHÍNH | Tịch Nhan Audio"
-        },
-        {
-          "source": "youtube-audio-competition",
-          "query": "\"Xuyên Thành Nữ Phụ Cá Mặn, Tôi Chọc Điên Cả Nam Nữ Chính\" \"truyện audio\"",
-          "text": "AUDIO/ XUYÊN THÀNH NỮ PHỤ ĐỘC ÁC TÔI HUẤN LUYỆN CẢ BỐN NAM CHÍNH"
-        },
-        {
-          "source": "youtube-audio-competition",
-          "query": "\"Xuyên Thành Nữ Phụ Cá Mặn, Tôi Chọc Điên Cả Nam Nữ Chính\" \"truyện audio\"",
-          "text": "XUYÊN THÀNH NỮ PHỤ TRONG TRUYỆN H, TÔI BỊ NAM CHÍNH BIẾN THÁI ĐIÊN CUỒNG CHIẾM HỮU | Full audio"
-        },
-        {
-          "source": "youtube-audio-competition",
-          "query": "\"Xuyên Thành Nữ Phụ Cá Mặn, Tôi Chọc Điên Cả Nam Nữ Chính\" \"truyện audio\"",
-          "text": "Full audio | Xuyên Sách Thành Nữ Phụ Độc Ác, Cả Phản Diện Và Nam Chính Đều Yêu Tôi | Bim Bim Audio"
+          "query": "\"The Rise Of The Dark Hero (Book 1-10)\" audio",
+          "text": "LitRPG Audiobooks: The Rise of the Dark Hero (Book 1-10) | Free Audiobook 2026"
         }
       ],
       "status": "draft"
@@ -363,59 +287,54 @@
           "text": "【Truyện Audio】Đi Xem Mắt Thay Bạn Thân, Không Ngờ Đối Tượng Lại Là Sếp Mới Của Tôi (Full) | Nhà Kho"
         },
         {
-          "source": "youtube-audio-competition",
+          "source": "competition-error",
           "query": "\"【 】Đi Xem Mắt Thay Bạn Thân, Không Ngờ Đối Tượng Lại Là Sếp Mới Của Tôi\" \"truyện audio\"",
+          "text": "This operation was aborted"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"【 】Đi Xem Mắt Thay Bạn Thân, Không Ngờ Đối Tượng Lại Là Sếp Mới Của Tôi\" audio",
           "text": "【Truyện Audio】Đi Xem Mắt Thay Bạn Thân, Không Ngờ Đối Tượng Lại Là Sếp Mới Của Tôi (Full) | Nhà Kho"
         },
         {
           "source": "youtube-audio-competition",
-          "query": "\"【 】Đi Xem Mắt Thay Bạn Thân, Không Ngờ Đối Tượng Lại Là Sếp Mới Của Tôi\" \"truyện audio\"",
+          "query": "\"【 】Đi Xem Mắt Thay Bạn Thân, Không Ngờ Đối Tượng Lại Là Sếp Mới Của Tôi\" audio",
           "text": "【Truyện Audio】 Đi Xem Mắt Thay Bạn Thân, Không Ngờ Đối Tượng Lại là sếp mới của tôi (full)"
         },
         {
           "source": "youtube-audio-competition",
-          "query": "\"【 】Đi Xem Mắt Thay Bạn Thân, Không Ngờ Đối Tượng Lại Là Sếp Mới Của Tôi\" \"truyện audio\"",
+          "query": "\"【 】Đi Xem Mắt Thay Bạn Thân, Không Ngờ Đối Tượng Lại Là Sếp Mới Của Tôi\" audio",
           "text": "【Truyện Audio】Đi Xem Mắt Thay Bạn Thân, Không Ngờ Đối Tượng Lại Là Sếp Mới Của Tôi (phan 1)"
         },
         {
           "source": "youtube-audio-competition",
-          "query": "\"【 】Đi Xem Mắt Thay Bạn Thân, Không Ngờ Đối Tượng Lại Là Sếp Mới Của Tôi\" \"truyện audio\"",
+          "query": "\"【 】Đi Xem Mắt Thay Bạn Thân, Không Ngờ Đối Tượng Lại Là Sếp Mới Của Tôi\" audio",
           "text": "(Truyện Audio) ĐI XEM MẮT THAY BẠN THÂN, KHÔNG NGỜ ĐỐI TƯỢNG LẠI LÀ SẾP MỚI CỦA TÔI | Meow Thì Thầm"
         }
       ],
       "status": "draft"
     },
     {
-      "title": "गांव की बहु की ताज़ा सब्जी पूरी",
-      "slug": "ganv-ki-bahu-ki-taza-sabji-puri",
-      "language": "hi",
+      "title": "واتباد ضابط ابو صكر الكاتبة غدير بارت(21) تفاعلكم #",
+      "slug": "watbad-dabt-abw-skr-alkatbh-ghdyr-bart-21-tfaalkm",
+      "language": "ar",
       "score": 58,
       "demandScore": 50,
       "audioSignalScore": 8,
       "audioCompetitionScore": 0,
       "audioCompetitionLevel": "none",
       "opportunityScore": 58,
-      "enMotif": "Vietnamese web fiction and romance drama",
-      "viMotif": "truyện mạng Việt và romance drama",
-      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
-      "idMotif": "cerita online dan drama romansa",
-      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "enMotif": "suspense and mystery",
+      "viMotif": "kinh dị bí ẩn",
+      "hiMotif": "सस्पेंस और रहस्य",
+      "idMotif": "misteri dan ketegangan",
+      "arMotif": "التشويق والغموض",
       "evidence": [
         {
           "source": "youtube-search",
-          "language": "hi",
-          "query": "हिंदी कहानी ऑडियो पूरी",
-          "text": "गांव की बहु की ताज़ा सब्जी पूरी | Gaon Ki Bahu | Hindi Kahani | Hindi Cartoon | Moral Stories |Story"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"गांव की बहु की ताज़ा सब्जी पूरी\" ऑडियो",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"गांव की बहु की ताज़ा सब्जी पूरी\" कहानी",
-          "text": "fetch failed"
+          "language": "ar",
+          "query": "قصص واتباد صوتية",
+          "text": "واتباد ضابط ابو صكر الكاتبة غدير بارت(21) تفاعلكم#واتباد #اكسبلور #animation #قصص #واتباديات  "
         }
       ],
       "status": "draft"
@@ -451,31 +370,147 @@
       "status": "draft"
     },
     {
-      "title": "She Was Off Limits… Then They Crossed The Line",
-      "slug": "she-was-off-limits-then-they-crossed-the-line",
+      "title": "Surviving the Primitive World With Infinite Talent",
+      "slug": "surviving-the-primitive-world-with-infinite-talent",
       "language": "en",
-      "score": 54,
-      "demandScore": 52,
+      "score": 56,
+      "demandScore": 54,
       "audioSignalScore": 8,
       "audioCompetitionScore": 1,
       "audioCompetitionLevel": "low",
-      "opportunityScore": 54,
-      "enMotif": "suspense and mystery",
-      "viMotif": "kinh dị bí ẩn",
-      "hiMotif": "सस्पेंस और रहस्य",
-      "idMotif": "misteri dan ketegangan",
-      "arMotif": "التشويق والغموض",
+      "opportunityScore": 56,
+      "enMotif": "fantasy adventure",
+      "viMotif": "tiên hiệp fantasy",
+      "hiMotif": "फ़ैंटेसी एडवेंचर",
+      "idMotif": "petualangan fantasi",
+      "arMotif": "مغامرات خيالية",
       "evidence": [
         {
           "source": "youtube-search",
           "language": "en",
-          "query": "wattpad read aloud romance",
-          "text": "She Was Off Limits… Then They Crossed the Line (Hockey Romance Audiobook)"
+          "query": "webnovel audiobook",
+          "text": "Surviving The Primitive World With Infinite Talent | LitRPG Full Audiobook"
         },
         {
           "source": "youtube-audio-competition",
-          "query": "\"She Was Off Limits… Then They Crossed The Line\" audio",
-          "text": "She Was Off Limits… Then They Crossed the Line (Hockey Romance Audiobook)"
+          "query": "\"Surviving the Primitive World With Infinite Talent\" audio",
+          "text": "Surviving The Primitive World With Infinite Talent | LitRPG Full Audiobook"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "अक्लमंद अंधा बूढ़ा और तीन चोर",
+      "slug": "aklamand-andha-burha-aur-tin-chor",
+      "language": "hi",
+      "score": 56,
+      "demandScore": 48,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "none",
+      "opportunityScore": 56,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "hi",
+          "query": "हिंदी कहानी ऑडियो पूरी",
+          "text": "🔴 अक्लमंद अंधा बूढ़ा और तीन चोर । Hindi Moral Story  | नई कहानियाँ I | Moral kahani। bedtime story"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"अक्लमंद अंधा बूढ़ा और तीन चोर\" कहानी",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"अक्लमंद अंधा बूढ़ा और तीन चोर\" audio story",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "आपको भी रुला देगी ये Love Story",
+      "slug": "aapako-bhi-rula-degi-ye-love-story",
+      "language": "hi",
+      "score": 54,
+      "demandScore": 46,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 0,
+      "audioCompetitionLevel": "none",
+      "opportunityScore": 54,
+      "enMotif": "family drama and suspense and mystery",
+      "viMotif": "gia đình và kinh dị bí ẩn",
+      "hiMotif": "पारिवारिक ड्रामा और सस्पेंस और रहस्य",
+      "idMotif": "drama keluarga dan misteri dan ketegangan",
+      "arMotif": "دراما عائلية و التشويق والغموض",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "hi",
+          "query": "हिंदी प्रेम कहानी ऑडियो",
+          "text": "आपको भी रुला देगी ये Love Story || Very Sad Heart Touching Painful Love Story - Mahesh Chaudhary"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"आपको भी रुला देगी ये Love Story\" ऑडियो",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"आपको भी रुला देगी ये Love Story\" कहानी",
+          "text": "fetch failed"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "كتب بصوت إسلام عادل",
+      "slug": "ktb-bswt-islam-aadl",
+      "language": "ar",
+      "score": 52,
+      "demandScore": 59,
+      "audioSignalScore": 11,
+      "audioCompetitionScore": 3,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 52,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "ar",
+          "query": "رواية صوتية كاملة",
+          "text": "دولة اليهود | تيودور هرتزل | كتب صوتية  بصوت إسلام عادل"
+        },
+        {
+          "source": "youtube-search",
+          "language": "ar",
+          "query": "رواية صوتية كاملة",
+          "text": "كتاب فن الحرب  | سون تزو | كتب صوتية  بصوت إسلام عادل"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"كتب بصوت إسلام عادل\" رواية صوتية",
+          "text": "كتاب طبائع الاستبداد ومصارع الاستعباد| عبد الرحمن الكواكبي  | كتب صوتية  بصوت إسلام عادل"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"كتب بصوت إسلام عادل\" صوتية",
+          "text": "كلام فارغ  | أحمد رجب  | كتاب ساخر  | كتب صوتية بصوت إسلام عادل"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"كتب بصوت إسلام عادل\" رواية صوتية",
+          "text": "كتاب صوتي | دع القلق وابدأ الحياة | الجزء الأول | ديل كارنيجي |  بصوت إسلام عادل"
         }
       ],
       "status": "draft"
@@ -503,6 +538,11 @@
           "text": "House of Amarin Full Book ( Adventure, Fantasy, Magic, School Life ) Web novel Royal Road Audiobook"
         },
         {
+          "source": "competition-error",
+          "query": "\"House Of Amarin Book ( Adventure, Fantasy, Magic, School Life ) Web Novel Royal Road\" \"read aloud\"",
+          "text": "This operation was aborted"
+        },
+        {
           "source": "youtube-audio-competition",
           "query": "\"House Of Amarin Book ( Adventure, Fantasy, Magic, School Life ) Web Novel Royal Road\" audio",
           "text": "House of Amarin 1-10 ( Adventure, Fantasy, Magic, School Life ) Web novel Royal Road Audiobook"
@@ -526,15 +566,15 @@
       "status": "draft"
     },
     {
-      "title": "बारिश में गरीब के घर चतुर मेहमान",
-      "slug": "barish-men-garib-ke-ghar-chatur-mehaman",
-      "language": "hi",
-      "score": 46,
-      "demandScore": 50,
+      "title": "جون شتاينبك (الحائزة على جائزة نوبل)",
+      "slug": "jwn-shtaynbk-alhayzh-ala-jayzh-nwbl",
+      "language": "ar",
+      "score": 50,
+      "demandScore": 48,
       "audioSignalScore": 8,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "unknown",
-      "opportunityScore": 46,
+      "audioCompetitionScore": 1,
+      "audioCompetitionLevel": "low",
+      "opportunityScore": 50,
       "enMotif": "Vietnamese web fiction and romance drama",
       "viMotif": "truyện mạng Việt và romance drama",
       "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
@@ -543,24 +583,24 @@
       "evidence": [
         {
           "source": "youtube-search",
-          "language": "hi",
-          "query": "हिंदी कहानी ऑडियो पूरी",
-          "text": "बारिश में गरीब के घर चतुर मेहमान | Hindi Kahani | Moral Stories | Cartoon Video | Kahani"
+          "language": "ar",
+          "query": "رواية صوتية كاملة",
+          "text": "رواية مسموعة | اللؤلؤة - جون شتاينبك (الحائزة على جائزة نوبل)"
         },
         {
           "source": "competition-error",
-          "query": "\"बारिश में गरीब के घर चतुर मेहमान\" ऑडियो",
+          "query": "\"جون شتاينبك (الحائزة على جائزة نوبل)\" صوتية",
           "text": "fetch failed"
         },
         {
           "source": "competition-error",
-          "query": "\"बारिश में गरीब के घर चतुर मेहमान\" कहानी",
+          "query": "\"جون شتاينبك (الحائزة على جائزة نوبل)\" audio",
           "text": "fetch failed"
         },
         {
-          "source": "competition-error",
-          "query": "\"बारिश में गरीब के घर चतुर मेहमान\" audio story",
-          "text": "fetch failed"
+          "source": "youtube-audio-competition",
+          "query": "\"جون شتاينبك (الحائزة على جائزة نوبل)\" رواية صوتية",
+          "text": "رواية مسموعة | اللؤلؤة - جون شتاينبك (الحائزة على جائزة نوبل)"
         }
       ],
       "status": "draft"
@@ -601,41 +641,41 @@
       "status": "draft"
     },
     {
-      "title": "Phir Ek Baar (फिर एक बार)",
-      "slug": "phir-ek-baar-phir-ek-bar",
-      "language": "hi",
+      "title": "Cerita Cinta Bertepuk Sebelah Tangan",
+      "slug": "cerita-cinta-bertepuk-sebelah-tangan",
+      "language": "id",
       "score": 44,
-      "demandScore": 48,
-      "audioSignalScore": 8,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "unknown",
+      "demandScore": 62,
+      "audioSignalScore": 0,
+      "audioCompetitionScore": 3,
+      "audioCompetitionLevel": "medium",
       "opportunityScore": 44,
-      "enMotif": "Vietnamese web fiction and romance drama",
+      "enMotif": "web fiction and romance drama",
       "viMotif": "truyện mạng Việt và romance drama",
       "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
       "idMotif": "cerita online dan drama romansa",
       "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
       "evidence": [
         {
-          "source": "youtube-search",
-          "language": "hi",
-          "query": "हिंदी कहानी ऑडियो पूरी",
-          "text": "Phir Ek Baar (फिर एक बार) |  Kahaani Express with Neelesh Misra | Audio Story"
+          "source": "google-demand-suggest",
+          "language": "id",
+          "query": "cerita wattpad cinta",
+          "text": "cerita wattpad cinta bertepuk sebelah tangan"
         },
         {
-          "source": "competition-error",
-          "query": "\"Phir Ek Baar (फिर एक बार)\" ऑडियो",
-          "text": "fetch failed"
+          "source": "youtube-audio-competition",
+          "query": "\"Cerita Cinta Bertepuk Sebelah Tangan\" audiobook",
+          "text": "CERPEN💋Cerita Pendek [ Cinta Tak Bertepuk Sebelah Tangan ]"
         },
         {
-          "source": "competition-error",
-          "query": "\"Phir Ek Baar (फिर एक बार)\" कहानी",
-          "text": "fetch failed"
+          "source": "youtube-audio-competition",
+          "query": "\"Cerita Cinta Bertepuk Sebelah Tangan\" audio",
+          "text": "Cerita cinta bertepuk sebelah tangan"
         },
         {
-          "source": "competition-error",
-          "query": "\"Phir Ek Baar (फिर एक बार)\" audio story",
-          "text": "fetch failed"
+          "source": "youtube-audio-competition",
+          "query": "\"Cerita Cinta Bertepuk Sebelah Tangan\" audio",
+          "text": "Pupus Ketika cinta bertepuk sebelah tangan   YouTube"
         }
       ],
       "status": "draft"
@@ -681,9 +721,9 @@
       "status": "draft"
     },
     {
-      "title": "جون شتاينبك (الحائزة على جائزة نوبل)",
-      "slug": "jwn-shtaynbk-alhayzh-ala-jayzh-nwbl",
-      "language": "ar",
+      "title": "बीरबल के दिमागी खेल में उलझ गया पूरा दरबार इंटरेस्टिंग कहानी",
+      "slug": "birabal-ke-dimagi-khel-men-ulajh-gaya-pura-darabar-intaresting-kahani",
+      "language": "hi",
       "score": 44,
       "demandScore": 48,
       "audioSignalScore": 8,
@@ -698,23 +738,23 @@
       "evidence": [
         {
           "source": "youtube-search",
-          "language": "ar",
-          "query": "رواية صوتية كاملة",
-          "text": "رواية مسموعة | اللؤلؤة - جون شتاينبك (الحائزة على جائزة نوبل)"
+          "language": "hi",
+          "query": "हिंदी कहानी ऑडियो पूरी",
+          "text": "बीरबल के दिमागी खेल में उलझ गया 🤔 पूरा दरबार इंटरेस्टिंग कहानी | interesting akbar birbal new kahani"
         },
         {
           "source": "competition-error",
-          "query": "\"جون شتاينبك (الحائزة على جائزة نوبل)\" صوتية",
+          "query": "\"बीरबल के दिमागी खेल में उलझ गया पूरा दरबार इंटरेस्टिंग कहानी\" ऑडियो",
           "text": "fetch failed"
         },
         {
           "source": "competition-error",
-          "query": "\"جون شتاينبك (الحائزة على جائزة نوبل)\" رواية صوتية",
+          "query": "\"बीरबल के दिमागी खेल में उलझ गया पूरा दरबार इंटरेस्टिंग कहानी\" कहानी",
           "text": "fetch failed"
         },
         {
           "source": "competition-error",
-          "query": "\"جون شتاينبك (الحائزة على جائزة نوبل)\" audio",
+          "query": "\"बीरबल के दिमागी खेल में उलझ गया पूरा दरबार इंटरेस्टिंग कहानी\" audio story",
           "text": "fetch failed"
         }
       ],
@@ -756,131 +796,6 @@
           "source": "competition-error",
           "query": "\"صراع العودة بين الوحوش والجبابرة\" audio",
           "text": "fetch failed"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "شرارة ال عربيد بارت( الاول )كامل #",
-      "slug": "shrarh-al-arbyd-bart-alawl-kaml",
-      "language": "ar",
-      "score": 42,
-      "demandScore": 46,
-      "audioSignalScore": 8,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "unknown",
-      "opportunityScore": 42,
-      "enMotif": "Vietnamese web fiction and romance drama",
-      "viMotif": "truyện mạng Việt và romance drama",
-      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
-      "idMotif": "cerita online dan drama romansa",
-      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "language": "ar",
-          "query": "قصص واتباد صوتية",
-          "text": "شرارة ال عربيد بارت( الاول )كامل #بصوتى #قصص #واتباد "
-        },
-        {
-          "source": "competition-error",
-          "query": "\"شرارة ال عربيد بارت( الاول )كامل #\" صوتية",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"شرارة ال عربيد بارت( الاول )كامل #\" رواية صوتية",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"شرارة ال عربيد بارت( الاول )كامل #\" audio",
-          "text": "fetch failed"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "عشق ذو الفقار وغزالة كاملة.",
-      "slug": "ashq-dhw-alfqar-wghzalh-kamlh",
-      "language": "ar",
-      "score": 42,
-      "demandScore": 46,
-      "audioSignalScore": 8,
-      "audioCompetitionScore": 0,
-      "audioCompetitionLevel": "unknown",
-      "opportunityScore": 42,
-      "enMotif": "Vietnamese web fiction and romance drama",
-      "viMotif": "truyện mạng Việt và romance drama",
-      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
-      "idMotif": "cerita online dan drama romansa",
-      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "language": "ar",
-          "query": "قصص واتباد صوتية",
-          "text": "#روايات_عراقية_بصوتي، قصة قصيرة: عشق ذو الفقار وغزالة كاملة."
-        },
-        {
-          "source": "competition-error",
-          "query": "\"عشق ذو الفقار وغزالة كاملة.\" صوتية",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"عشق ذو الفقار وغزالة كاملة.\" رواية صوتية",
-          "text": "fetch failed"
-        },
-        {
-          "source": "competition-error",
-          "query": "\"عشق ذو الفقار وغزالة كاملة.\" audio",
-          "text": "fetch failed"
-        }
-      ],
-      "status": "draft"
-    },
-    {
-      "title": "Ruthless Marriage By Bella King",
-      "slug": "ruthless-marriage-by-bella-king",
-      "language": "en",
-      "score": 40,
-      "demandScore": 50,
-      "audioSignalScore": 8,
-      "audioCompetitionScore": 4,
-      "audioCompetitionLevel": "medium",
-      "opportunityScore": 40,
-      "enMotif": "marriage drama and suspense and mystery",
-      "viMotif": "cưới gả và kinh dị bí ẩn",
-      "hiMotif": "शादी का ड्रामा और सस्पेंस और रहस्य",
-      "idMotif": "drama pernikahan dan misteri dan ketegangan",
-      "arMotif": "دراما الزواج و التشويق والغموض",
-      "evidence": [
-        {
-          "source": "youtube-search",
-          "language": "en",
-          "query": "wattpad read aloud romance",
-          "text": "Ruthless Marriage by Bella King - Full Mafia Romance Audiobook"
-        },
-        {
-          "source": "youtube-audio-competition",
-          "query": "\"Ruthless Marriage By Bella King\" audio",
-          "text": "Ruthless Marriage by Bella King - Full Mafia Romance Audiobook"
-        },
-        {
-          "source": "youtube-audio-competition",
-          "query": "\"Ruthless Marriage By Bella King\" audio",
-          "text": "Ruthless Marriage by Bella King - Fantasy Romance Audiobook Full"
-        },
-        {
-          "source": "youtube-audio-competition",
-          "query": "\"Ruthless Marriage By Bella King\" \"read aloud\"",
-          "text": "Arranged Mafia Marriage by Bella King - Full Romance Audiobook"
-        },
-        {
-          "source": "youtube-audio-competition",
-          "query": "\"Ruthless Marriage By Bella King\" \"read aloud\"",
-          "text": "Ruthless Marriage – Bella King | Mafia Romance | Audiobook"
         }
       ],
       "status": "draft"
@@ -932,6 +847,107 @@
           "source": "youtube-audio-competition",
           "query": "\"Hôn Ước Từ Bé Với Thái Tử Gia Bắc Kinh\" \"truyện audio\"",
           "text": "Hôn Ước Từ Bé Với Thái Tử Gia Bắc Kinh | Truyện Audio Ngôn Tình - Truyện Audio Xuyên Không"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Phir Ek Baar (फिर एक बार)",
+      "slug": "phir-ek-baar-phir-ek-bar",
+      "language": "hi",
+      "score": 38,
+      "demandScore": 48,
+      "audioSignalScore": 8,
+      "audioCompetitionScore": 2,
+      "audioCompetitionLevel": "medium",
+      "opportunityScore": 38,
+      "enMotif": "Vietnamese web fiction and romance drama",
+      "viMotif": "truyện mạng Việt và romance drama",
+      "hiMotif": "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+      "idMotif": "cerita online dan drama romansa",
+      "arMotif": "الروايات الإلكترونية و الدراما الرومانسية",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "hi",
+          "query": "हिंदी कहानी ऑडियो पूरी",
+          "text": "Phir Ek Baar (फिर एक बार) |  Kahaani Express with Neelesh Misra | Audio Story"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Phir Ek Baar (फिर एक बार)\" कहानी",
+          "text": "fetch failed"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Phir Ek Baar (फिर एक बार)\" audio story",
+          "text": "fetch failed"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Phir Ek Baar (फिर एक बार)\" ऑडियो",
+          "text": "Phir Ek Baar (फिर एक बार) |  Kahaani Express with Neelesh Misra | Audio Story"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Phir Ek Baar (फिर एक बार)\" ऑडियो",
+          "text": "✨Phir Ek Baar (फिर एक बार) - Official Lofi Audio | Hindi Lofi Song | Emotional \\u0026 Motivational Song 🌙"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "title": "Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ",
+      "slug": "trung-sinh-toi-quyet-nghe-theo-bo-me",
+      "language": "vi",
+      "score": 36,
+      "demandScore": 61,
+      "audioSignalScore": 11,
+      "audioCompetitionScore": 8,
+      "audioCompetitionLevel": "high",
+      "opportunityScore": 36,
+      "enMotif": "family drama",
+      "viMotif": "gia đình",
+      "hiMotif": "पारिवारिक ड्रामा",
+      "idMotif": "drama keluarga",
+      "arMotif": "دراما عائلية",
+      "evidence": [
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện audio full mới nhất",
+          "text": "[Truyện Audio] | Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ | Túi Mù Audio #audio  #truyenaudio"
+        },
+        {
+          "source": "youtube-search",
+          "language": "vi",
+          "query": "truyện trọng sinh audio",
+          "text": "[Truyện Audio] | Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ | Túi Mù Audio #audio  #truyenaudio"
+        },
+        {
+          "source": "competition-error",
+          "query": "\"Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ\" \"truyện audio\"",
+          "text": "This operation was aborted"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ\" audio",
+          "text": "[Truyện Audio] | Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ | Túi Mù Audio #audio  #truyenaudio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ\" audio",
+          "text": "[Truyện Audio] | Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ | Aris Audio"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ\" audio",
+          "text": "Trọng Sinh, Tôi Quyết Nghe Theo Bố Mẹ | Truyện Ngôn Tình Trùng Sinh Hay Nhất 2026"
+        },
+        {
+          "source": "youtube-audio-competition",
+          "query": "\"Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ\" audio",
+          "text": "[Truyện Audio] Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ | Xuân Xanh Audio"
         }
       ],
       "status": "draft"

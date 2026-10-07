@@ -5006,6 +5006,36 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["ar"]
+  }),
+  storyTitleTopic({
+    slug: "bi-duoi-khoi-hao-mon-toi-vui-ve-xach-vali-ve-que-nghi-huu-som",
+    title: "Bị Đuổi Khỏi Hào Môn, Tôi Vui Vẻ Xách Vali Về Quê Nghỉ Hưu Sớm",
+    enMotif: "rich-family romance and palace drama",
+    viMotif: "hào môn và cổ trang",
+    hiMotif: "अमीर परिवार की रोमांस और राजमहल ड्रामा",
+    idMotif: "romansa keluarga kaya dan drama kerajaan",
+    arMotif: "رومانسية العائلات الثرية و دراما القصور",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "yaya-lihim-na-may-gusto-kay-boss-paano-kung-isang-gabi-ay-magtagpo-ang-kanilang-mga-labi",
+    title: "Yaya, Lihim Na May Gusto Kay Boss! Paano Kung Isang Gabi Ay Magtagpo Ang Kanilang Mga Labi?",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "xuyen-thanh-nu-phu-ca-man-toi-choc-dien-ca-nam-nu-chinh",
+    title: "Xuyên Thành Nữ Phụ Cá Mặn, Tôi Chọc Điên Cả Nam Nữ Chính",
+    enMotif: "school romance and comedy",
+    viMotif: "vườn trường và hài hước",
+    hiMotif: "कॉलेज रोमांस और कॉमेडी",
+    idMotif: "romansa sekolah dan komedi",
+    arMotif: "رومانسية المدرسة و الكوميديا",
+    languages: ["vi"]
   })
 ];
 
