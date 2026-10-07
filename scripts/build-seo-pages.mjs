@@ -5036,6 +5036,26 @@ const topics = [
     idMotif: "romansa sekolah dan komedi",
     arMotif: "رومانسية المدرسة و الكوميديا",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "kisah-bl-aku-membesarkan-seorang-anak-laki-laki-iblis-lima-tahun-kemudian-dia-kembali-terobs",
+    title: "KISAH BL Aku Membesarkan Seorang Anak Laki-Laki Iblis, Lima Tahun Kemudian Dia Kembali Terobsesi Padaku",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "toi-ngung-bam-nguoi-bac-tong-ghen-dien-len-roi",
+    title: "Tôi Ngưng Bám Người, Bạc Tổng Ghen Điên Lên Rồi",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
