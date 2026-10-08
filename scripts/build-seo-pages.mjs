@@ -5096,6 +5096,36 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "that-strange-snake-has-brought-me-back-to-life-naruto-edo-tensei-action",
+    title: "That Strange Snake Has Brought Me Back To Life [Naruto, Edo Tensei, Action]",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "hoa-khoi-mang-giay-kham-thai-den-lop-ep-nam-than-chiu-trach-nhiem",
+    title: "Hoa Khôi Mang Giấy Khám Thai Đến Lớp Ép Nam Thần Chịu Trách Nhiệm",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "hoc-sinh-moi-toi-da-nhan-minh-la-hoa-khoi-cua-truong",
+    title: "Học Sinh Mới Tới Đã Nhận Mình Là Hoa Khôi Của Trường",
+    enMotif: "school romance",
+    viMotif: "vườn trường",
+    hiMotif: "कॉलेज रोमांस",
+    idMotif: "romansa sekolah",
+    arMotif: "رومانسية المدرسة",
+    languages: ["vi"]
   })
 ];
 
