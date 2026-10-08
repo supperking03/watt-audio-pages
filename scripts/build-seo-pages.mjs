@@ -5056,6 +5056,36 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "ca-gia-toc-hao-mon-nha-toi-co-tien-co-nao-co-ca-tri-thuc",
+    title: "Cả Gia Tộc Hào Môn Nhà Tôi Có Tiền, Có Não, Có Cả Tri Thức",
+    enMotif: "rich-family romance",
+    viMotif: "hào môn",
+    hiMotif: "अमीर परिवार की रोमांस",
+    idMotif: "romansa keluarga kaya",
+    arMotif: "رومانسية العائلات الثرية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "babae-napaibig-ang-masungit-na-boss-dahil-sa-cold-coffee",
+    title: "Babae Napaibig Ang Masungit Na Boss Dahil Sa Cold Coffee",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "abo-ke-thu-enigma-lam-toi-mang-thai-roi-ii-thu-khoa-nganh-y",
+    title: "[abo] Kẻ Thù Enigma Làm Tôi Mang Thai Rồi Ii Thủ Khoa Ngành Y",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["vi"]
   })
 ];
 
