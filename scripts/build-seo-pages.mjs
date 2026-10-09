@@ -5146,6 +5146,26 @@ const topics = [
     idMotif: "romansa keluarga kaya dan komedi",
     arMotif: "رومانسية العائلات الثرية و الكوميديا",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "chi-gai-tra-xanh-gia-benh-cuop-chong-nhung-anh-chi-yeu-minh-toi",
+    title: "Chị Gái Trà Xanh Giả Bệnh Cướp Chồng, Nhưng Anh Chỉ Yêu Mình Tôi",
+    enMotif: "green tea rival",
+    viMotif: "trà xanh",
+    hiMotif: "छल भरी प्रतिद्वंद्वी",
+    idMotif: "rival bermuka dua",
+    arMotif: "المنافسة الماكرة",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "thay-doi-cot-truyen-han-the-cho-toi-tro-thanh-phan-dien",
+    title: "Thay Đổi Cốt Truyện, Hắn Thế Chỗ Tôi Trở Thành Phản Diện",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
