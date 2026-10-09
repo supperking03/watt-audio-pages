@@ -5126,6 +5126,26 @@ const topics = [
     idMotif: "romansa sekolah",
     arMotif: "رومانسية المدرسة",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "toi-va-anh-de-gianh-nhau-cho-ngu-tren-show-lai-len-hot-search-roi",
+    title: "Tôi và Ảnh Đế Giành Nhau Chỗ Ngủ Trên Show Lại Lên Hot Search Rồi!",
+    enMotif: "palace drama",
+    viMotif: "cổ trang",
+    hiMotif: "राजमहल ड्रामा",
+    idMotif: "drama kerajaan",
+    arMotif: "دراما القصور",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "xuyen-thanh-ac-nu-ca-man-toi-day-hu-ca-hao-mon",
+    title: "Xuyên Thành Ác Nữ, Cá Mặn Tôi Dạy Hư Cả Hào Môn",
+    enMotif: "rich-family romance and comedy",
+    viMotif: "hào môn và hài hước",
+    hiMotif: "अमीर परिवार की रोमांस और कॉमेडी",
+    idMotif: "romansa keluarga kaya dan komedi",
+    arMotif: "رومانسية العائلات الثرية و الكوميديا",
+    languages: ["vi"]
   })
 ];
 
