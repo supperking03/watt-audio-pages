@@ -5166,6 +5166,16 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "tra-xanh-dung-nham-dai-tieu-thu-moi-ve-nuoc-la-linh-danh-thue-cap-s",
+    title: "Trà Xanh Đụng Nhầm Đại Tiểu Thư Mới Về Nước là Lính Đánh Thuê Cấp S",
+    enMotif: "green tea rival",
+    viMotif: "trà xanh",
+    hiMotif: "छल भरी प्रतिद्वंद्वी",
+    idMotif: "rival bermuka dua",
+    arMotif: "المنافسة الماكرة",
+    languages: ["vi"]
   })
 ];
 
