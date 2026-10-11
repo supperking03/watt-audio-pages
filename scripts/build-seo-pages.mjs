@@ -5196,6 +5196,16 @@ const topics = [
     idMotif: "misteri dan ketegangan",
     arMotif: "التشويق والغموض",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "vault-men-mili-vo-dayari-jisane-hila-diya-pura-shahar",
+    title: "Vault में मिली वो डायरी, जिसने हिला दिया पूरा शहर",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["hi"]
   })
 ];
 
