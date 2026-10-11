@@ -5206,6 +5206,16 @@ const topics = [
     idMotif: "misteri dan ketegangan",
     arMotif: "التشويق والغموض",
     languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "toi-mang-thai-con-cua-doi-truong-hoac-roi-bo-tron-suot-5-nam",
+    title: "Tôi Mang Thai Con của Đội Trưởng Hoắc, Rồi Bỏ Trốn Suốt 5 Năm!",
+    enMotif: "family drama and suspense and mystery",
+    viMotif: "gia đình và kinh dị bí ẩn",
+    hiMotif: "पारिवारिक ड्रामा और सस्पेंस और रहस्य",
+    idMotif: "drama keluarga dan misteri dan ketegangan",
+    arMotif: "دراما عائلية و التشويق والغموض",
+    languages: ["vi"]
   })
 ];
 
