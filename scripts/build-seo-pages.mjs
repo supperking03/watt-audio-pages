@@ -5226,6 +5226,16 @@ const topics = [
     idMotif: "drama keluarga dan petualangan fantasi",
     arMotif: "دراما عائلية و مغامرات خيالية",
     languages: ["ar"]
+  }),
+  storyTitleTopic({
+    slug: "hl-nsttya-inqadh-rwh-talmt-an-thb-rahh-qfsha",
+    title: "هل نستطيع إنقاذ روح تعلمت أن تحب راحة قفصها.",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["ar"]
   })
 ];
 
