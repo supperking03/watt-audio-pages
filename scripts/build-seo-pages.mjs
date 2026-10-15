@@ -5256,6 +5256,16 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["ar"]
+  }),
+  storyTitleTopic({
+    slug: "xuyen-thanh-ac-nu-ca-man-toi-day-hu-ca-dai-gia-dinh-hao-mon",
+    title: "Xuyên Thành Ác Nữ, Cá Mặn Tôi Dạy Hư Cả Đại Gia Đình Hào Môn",
+    enMotif: "rich-family romance, family drama and comedy",
+    viMotif: "hào môn, gia đình và hài hước",
+    hiMotif: "अमीर परिवार की रोमांस, पारिवारिक ड्रामा और कॉमेडी",
+    idMotif: "romansa keluarga kaya, drama keluarga dan komedi",
+    arMotif: "رومانسية العائلات الثرية, دراما عائلية و الكوميديا",
+    languages: ["vi"]
   })
 ];
 
