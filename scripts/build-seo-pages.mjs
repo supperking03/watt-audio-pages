@@ -5266,6 +5266,36 @@ const topics = [
     idMotif: "romansa keluarga kaya, drama keluarga dan komedi",
     arMotif: "رومانسية العائلات الثرية, دراما عائلية و الكوميديا",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "srkht-ak-rhk-bwjh-wld-amy-sd-f-my-btryqth-wkhlany-adhwb-byn-ydyh",
+    title: "صـرخت أكــ رهك بوجـه ولـد عمي سـد فـ مي بطريقـته وخـلاني أذوب بيـن يـديه",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["ar"]
+  }),
+  storyTitleTopic({
+    slug: "su-chiem-huu-cua-me-lam-toi-vua-so-vua-mong",
+    title: "Sự Chiếm Hữu Của Mẹ Làm Tôi Vừa Sợ Vừa Mong",
+    enMotif: "family drama",
+    viMotif: "gia đình",
+    hiMotif: "पारिवारिक ड्रामा",
+    idMotif: "drama keluarga",
+    arMotif: "دراما عائلية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "ek-majaburi-ne-mira-ki-jindagi-ko-hamesha-ke-lie-badal-diya",
+    title: "एक मजबूरी ने मीरा की जिंदगी को हमेशा के लिए बदल दिया!",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["hi"]
   })
 ];
 
