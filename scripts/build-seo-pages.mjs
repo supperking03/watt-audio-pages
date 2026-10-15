@@ -5246,6 +5246,16 @@ const topics = [
     idMotif: "rival bermuka dua",
     arMotif: "المنافسة الماكرة",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "jwn-shtaynbk-alhayzh-ala-jayzh-nwbl",
+    title: "جون شتاينبك (الحائزة على جائزة نوبل)",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["ar"]
   })
 ];
 
