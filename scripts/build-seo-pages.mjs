@@ -5326,6 +5326,36 @@ const topics = [
     idMotif: "misteri dan ketegangan",
     arMotif: "التشويق والغموض",
     languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "trong-sinh-toi-mac-ke-chong-nhay-xuong-bien-cuu-tra-xanh",
+    title: "Trọng Sinh Tôi Mặc Kệ Chồng Nhảy Xuống Biển Cứu Trà Xanh",
+    enMotif: "rebirth and green tea rival",
+    viMotif: "trọng sinh và trà xanh",
+    hiMotif: "पुनर्जन्म और छल भरी प्रतिद्वंद्वी",
+    idMotif: "terlahir kembali dan rival bermuka dua",
+    arMotif: "العودة إلى الماضي و المنافسة الماكرة",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "trung-sinh-toi-dung-loa-keu-ca-lang-den-xem-tra-nam-tra-xanh-ngoai-tinh",
+    title: "Trùng Sinh Tôi Dùng Loa Kêu Cả Làng Đến Xem Tra Nam Trà Xanh Ngoại Tình",
+    enMotif: "green tea rival",
+    viMotif: "trà xanh",
+    hiMotif: "छल भरी प्रतिद्वंद्वी",
+    idMotif: "rival bermuka dua",
+    arMotif: "المنافسة الماكرة",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "aur-ek-garib-lakarahare-ne-kaise-tora-ghamandi-rajakumari-ka-gurur",
+    title: "और एक गरीब लकड़हारे ने कैसे तोड़ा घमंडी राजकुमारी का गुरूर",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["hi"]
   })
 ];
 
