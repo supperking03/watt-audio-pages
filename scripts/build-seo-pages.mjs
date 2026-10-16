@@ -5306,6 +5306,26 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "saya-meninjau-kembali-cerita-cerita-terpopuler-dari-tahun-2016",
+    title: "Saya Meninjau Kembali Cerita-cerita Terpopuler Dari Tahun 2016.",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "kenangan-indah-bersama-bu-lastri-dan-ipah",
+    title: "Kenangan Indah Bersama Bu Lastri Dan Ipah",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["id"]
   })
 ];
 
