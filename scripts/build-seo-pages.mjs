@@ -5356,6 +5356,26 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "thien-kim-gia-khong-biet-ca-nha-toi-deu-co-nao",
+    title: "Thiên Kim Giả Không Biết Cả Nhà Tôi Đều Có Não",
+    enMotif: "green tea rival",
+    viMotif: "trà xanh",
+    hiMotif: "छल भरी प्रतिद्वंद्वी",
+    idMotif: "rival bermuka dua",
+    arMotif: "المنافسة الماكرة",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "theo-duoi-hot-boy-truong-toi-bi-block-32-lan",
+    title: "Theo Đuổi Hot Boy Trường, Tôi Bị Block 32 Lần",
+    enMotif: "school romance",
+    viMotif: "vườn trường",
+    hiMotif: "कॉलेज रोमांस",
+    idMotif: "romansa sekolah",
+    arMotif: "رومانسية المدرسة",
+    languages: ["vi"]
   })
 ];
 
