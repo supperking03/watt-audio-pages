@@ -5416,6 +5416,36 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "aam-laraki-samajhakar-ips-maidam-ko-mara-thappar-phir-jo-huaa-pura-pulis-steshan-hil-gaya",
+    title: "आम लड़की समझकर Ips मैडम को मारा थप्पड़ फिर जो हुआ, पूरा पुलिस स्टेशन हिल गया!",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "tuong-han-ko-nghe-thay-toi-lo-goi-ong-xa-luc-chia-tay",
+    title: "Tưởng Hắn Ko Nghe Thấy, Tôi Lỡ Gọi Ông Xã Lúc Chia Tay",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "tan-do-hoa-khoi-nhung-toi-phai-hen-ho-voi-anh-trai-co-ay",
+    title: "Tán Đỗ Hoa Khôi Nhưng Tôi Phải Hẹn Hò với Anh Trai Cô Ấy",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
