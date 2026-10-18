@@ -5396,6 +5396,26 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["ar"]
+  }),
+  storyTitleTopic({
+    slug: "trong-sinh-chi-ho-nhat-quyet-ga-ve-vung-nui-toi-khong-khuyen-chi-ta-nua",
+    title: "Trọng Sinh Chị Họ Nhất Quyết Gả Về Vùng Núi, Tôi Không Khuyên Chị Ta Nữa",
+    enMotif: "rebirth",
+    viMotif: "trọng sinh",
+    hiMotif: "पुनर्जन्म",
+    idMotif: "terlahir kembali",
+    arMotif: "العودة إلى الماضي",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "lien-hon-voi-thai-tu-gia-ai-ngo-anh-ngay-cang-nghien-vo",
+    title: "Liên Hôn với Thái Tử Gia, Ai Ngờ Anh Ngày Càng Nghiện Vợ",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
