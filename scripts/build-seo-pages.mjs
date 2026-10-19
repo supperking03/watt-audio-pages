@@ -5516,6 +5516,16 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "em-gai-tra-xanh-tim-moi-cach-de-thay-toi-tro-ve-nha-hao-mon",
+    title: "# Em Gái Trà Xanh Tìm Mọi Cách Để Thay Tôi Trở Về Nhà Hào Môn",
+    enMotif: "green tea rival and rich-family romance",
+    viMotif: "trà xanh và hào môn",
+    hiMotif: "छल भरी प्रतिद्वंद्वी और अमीर परिवार की रोमांस",
+    idMotif: "rival bermuka dua dan romansa keluarga kaya",
+    arMotif: "المنافسة الماكرة و رومانسية العائلات الثرية",
+    languages: ["vi"]
   })
 ];
 
