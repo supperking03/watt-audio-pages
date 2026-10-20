@@ -5546,6 +5546,16 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "trung-sinh-tra-xanh-chui-vao-bung-toi-de-hai-doi-toi-va-a-sap-mat",
+    title: "Trùng Sinh Trà Xanh Chui Vào Bụng Tôi Để Hại Đời, Tôi Vả Ả Sấp Mặt",
+    enMotif: "green tea rival",
+    viMotif: "trà xanh",
+    hiMotif: "छल भरी प्रतिद्वंद्वी",
+    idMotif: "rival bermuka dua",
+    arMotif: "المنافسة الماكرة",
+    languages: ["vi"]
   })
 ];
 
