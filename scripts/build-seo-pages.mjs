@@ -5526,6 +5526,26 @@ const topics = [
     idMotif: "rival bermuka dua dan romansa keluarga kaya",
     arMotif: "المنافسة الماكرة و رومانسية العائلات الثرية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "trung-sinh-toi-pha-he-thong-cuop-doat-than-xac-va-tra-xanh-toi-ta",
+    title: "Trùng Sinh, Tôi Phá Hệ Thống Cướp Đoạt Thân Xác, Vả Trà Xanh Tơi Tả",
+    enMotif: "green tea rival",
+    viMotif: "trà xanh",
+    hiMotif: "छल भरी प्रतिद्वंद्वी",
+    idMotif: "rival bermuka dua",
+    arMotif: "المنافسة الماكرة",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "bi-truc-ma-tu-choi-toi-om-tien-bo-tron-sang-thanh-pho-khac",
+    title: "Bị Trúc Mã Từ Chối, Tôi Ôm Tiền Bỏ Trốn Sang Thành Phố Khác",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
