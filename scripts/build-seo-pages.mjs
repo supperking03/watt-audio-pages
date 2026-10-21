@@ -5566,6 +5566,26 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "toi-ngung-theo-duoi-ong-trum-bac-kinh-lai-doi-cuoi-toi",
+    title: "Tôi Ngừng Theo Đuổi, Ông Trùm Bắc Kinh Lại Đòi Cưới Tôi",
+    enMotif: "marriage drama",
+    viMotif: "cưới gả",
+    hiMotif: "शादी का ड्रामा",
+    idMotif: "drama pernikahan",
+    arMotif: "دراما الزواج",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "toi-khong-bam-dinh-nua-trum-truong-lai-ghen-dien-len-roi",
+    title: "Tôi Không Bám Dính Nữa, Trùm Trường Lại Ghen Điên Lên Rồi",
+    enMotif: "school romance",
+    viMotif: "vườn trường",
+    hiMotif: "कॉलेज रोमांस",
+    idMotif: "romansa sekolah",
+    arMotif: "رومانسية المدرسة",
+    languages: ["vi"]
   })
 ];
 
