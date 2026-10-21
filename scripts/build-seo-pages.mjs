@@ -5586,6 +5586,26 @@ const topics = [
     idMotif: "romansa sekolah",
     arMotif: "رومانسية المدرسة",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "trung-sinh-toi-thong-tha-de-chong-hien-than-cho-tra-xanh",
+    title: "Trùng Sinh, Tôi Thong Thả Để Chồng Hiến Thận cho Trà Xanh",
+    enMotif: "green tea rival",
+    viMotif: "trà xanh",
+    hiMotif: "छल भरी प्रतिद्वंद्वी",
+    idMotif: "rival bermuka dua",
+    arMotif: "المنافسة الماكرة",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "kalektar-banakar-ganv-lauta-pati-patni-sadak-par-dudh-bechate-mili",
+    title: "कलेक्टर बनकर गांव लौटा पति… पत्नी सडक पर दूध बेचते मिली",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["hi"]
   })
 ];
 
