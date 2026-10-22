@@ -5646,6 +5646,16 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "toi-doc-lai-fanfic-sieu-am-toi-tung-thich-hoi-cap-2",
+    title: "Tôi Đọc Lại Fanfic Siêu Ấm Tôi Từng Thích Hồi Cấp 2",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
