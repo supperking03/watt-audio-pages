@@ -5606,6 +5606,46 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "andaravarld-king-ki-masum-bivi",
+    title: "अंडरवर्ल्ड किंग की मासूम बीवी",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "mlkhs-w-thlyl-lajml-qsh-hb-khaldh",
+    title: "ملخص و تحليل لأجمل قصة حب خالدة",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["ar"]
+  }),
+  storyTitleTopic({
+    slug: "quyen-ru-anh-nong-dan-binh-luan-chui-toi-lang-lo",
+    title: "Quyến Rũ Anh Nông Dân, Bình Luận Chửi Tôi Lẳng Lơ",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "hoa-khoi-tu-nhan-minh-la-cong-chua-that-lac",
+    title: "Hoa Khôi Tự Nhận Mình là Công Chúa Thất Lạc",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
