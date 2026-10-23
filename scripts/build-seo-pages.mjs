@@ -5656,6 +5656,16 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "giup-co-ban-than-cua-crush-ai-ngo-toi-lai-tan-do-luon-quan-su-nha-trai",
+    title: "Giúp Cô Bạn Thân Cưa Crush, Ai Ngờ Tôi Lại Tán Đổ Luôn Quân Sư Nhà Trai",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
