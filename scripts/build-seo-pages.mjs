@@ -5696,6 +5696,36 @@ const topics = [
     idMotif: "drama pernikahan",
     arMotif: "دراما الزواج",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "bukan-suami-pilihan-15",
+    title: "Bukan Suami Pilihan -15",
+    enMotif: "marriage drama",
+    viMotif: "cưới gả",
+    hiMotif: "शादी का ड्रामा",
+    idMotif: "drama pernikahan",
+    arMotif: "دراما الزواج",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "terjebak-badai-salju-bersama-ayah-sahabatku-dia-adalah-vampir-berusia-200-tahun",
+    title: "Terjebak Badai Salju Bersama Ayah Sahabatku... Dia Adalah Vampir Berusia 200 Tahun",
+    enMotif: "family drama and suspense and mystery",
+    viMotif: "gia đình và kinh dị bí ẩn",
+    hiMotif: "पारिवारिक ड्रामा और सस्पेंस और रहस्य",
+    idMotif: "drama keluarga dan misteri dan ketegangan",
+    arMotif: "دراما عائلية و التشويق والغموض",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "trong-sinh-toi-mac-ke-em-gai-bo-thai-tu-ty-phu-chon-anh-de-benh-hoan",
+    title: "Trọng Sinh Tôi Mặc Kệ Em Gái Bỏ Thái Tử Tỷ Phú, Chọn Ảnh đế Bệnh Hoạn",
+    enMotif: "rebirth",
+    viMotif: "trọng sinh",
+    hiMotif: "पुनर्जन्म",
+    idMotif: "terlahir kembali",
+    arMotif: "العودة إلى الماضي",
+    languages: ["vi"]
   })
 ];
 
