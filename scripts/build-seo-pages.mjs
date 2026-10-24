@@ -5666,6 +5666,36 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "ikyd-eps-010-mantan-suami-menyusul-ke-eropa-sahabat-berkhianat",
+    title: "IKYD Eps 010 Mantan Suami Menyusul Ke Eropa, Sahabat Berkhianat",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "dung-den-ca-nha-toi-deu-la-sad-nhan-ii-may-may",
+    title: "Đừng Đến! Cả Nhà Tôi Đều là Sad Nhân Ii Mây Mây",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "toi-va-co-ban-than-cung-cuoi-hai-anh-em-nha-giau-dinh-vo",
+    title: "Tôi Và Cô Bạn Thân Cùng Cưới Hai Anh Em Nhà Giàu Dính Vợ",
+    enMotif: "marriage drama",
+    viMotif: "cưới gả",
+    hiMotif: "शादी का ड्रामा",
+    idMotif: "drama pernikahan",
+    arMotif: "دراما الزواج",
+    languages: ["vi"]
   })
 ];
 
