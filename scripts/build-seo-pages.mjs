@@ -5726,6 +5726,36 @@ const topics = [
     idMotif: "terlahir kembali",
     arMotif: "العودة إلى الماضي",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "i-ve-already-became-an-immortal-and-only-now-i-join-a-group-chat-part-1",
+    title: "I've Already Became An Immortal ,and Only Now I Join A Group Chat?(PART-1).",
+    enMotif: "family drama",
+    viMotif: "gia đình",
+    hiMotif: "पारिवारिक ड्रामा",
+    idMotif: "drama keluarga",
+    arMotif: "دراما عائلية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "trung-sinh-toi-mac-ke-thanh-mai-tra-xanh-cua-tra-nam-bi-chay-den-thui",
+    title: "Trùng Sinh Tôi Mặc Kệ Thanh Mai Trà Xanh của Tra Nam Bị Cháy Đen Thui",
+    enMotif: "green tea rival and suspense and mystery",
+    viMotif: "trà xanh và kinh dị bí ẩn",
+    hiMotif: "छल भरी प्रतिद्वंद्वी और सस्पेंस और रहस्य",
+    idMotif: "rival bermuka dua dan misteri dan ketegangan",
+    arMotif: "المنافسة الماكرة و التشويق والغموض",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "zwaj-lmdh-6-shhwr-tzwjha-bla-hb-lkn-qlbh-khan-atfaqh",
+    title: "زواج لمدة 6 شهور تزوجها بلا حب…لكن قلبه خان اتفاقه!",
+    enMotif: "rich-family romance and marriage drama",
+    viMotif: "hào môn và cưới gả",
+    hiMotif: "अमीर परिवार की रोमांस और शादी का ड्रामा",
+    idMotif: "romansa keluarga kaya dan drama pernikahan",
+    arMotif: "رومانسية العائلات الثرية و دراما الزواج",
+    languages: ["ar"]
   })
 ];
 
