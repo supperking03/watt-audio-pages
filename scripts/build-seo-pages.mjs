@@ -5776,6 +5776,16 @@ const topics = [
     idMotif: "rival bermuka dua",
     arMotif: "المنافسة الماكرة",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "hon-uoc-tu-be-voi-thieu-gia-hoc-ba-nghien-vo",
+    title: "Hôn Ước Từ Bé Với Thiếu Gia Học Bá Nghiện Vợ",
+    enMotif: "marriage drama and school romance",
+    viMotif: "cưới gả và vườn trường",
+    hiMotif: "शादी का ड्रामा और कॉलेज रोमांस",
+    idMotif: "drama pernikahan dan romansa sekolah",
+    arMotif: "دراما الزواج و رومانسية المدرسة",
+    languages: ["vi"]
   })
 ];
 
