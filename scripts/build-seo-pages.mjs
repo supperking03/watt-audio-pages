@@ -5756,6 +5756,26 @@ const topics = [
     idMotif: "romansa keluarga kaya dan drama pernikahan",
     arMotif: "رومانسية العائلات الثرية و دراما الزواج",
     languages: ["ar"]
+  }),
+  storyTitleTopic({
+    slug: "thai-tu-gia-di-ung-voi-con-gai-con-toi-la-ngoai-le",
+    title: "Thái Tử Gia Dị Ứng Với Con Gái, Còn Tôi Là Ngoại Lệ",
+    enMotif: "family drama",
+    viMotif: "gia đình",
+    hiMotif: "पारिवारिक ड्रामा",
+    idMotif: "drama keluarga",
+    arMotif: "دراما عائلية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "tra-xanh-dung-nham-dai-tieu-thu-bac-kinh-cao-tay",
+    title: "Trà Xanh Đụng Nhầm Đại Tiểu Thư Bắc Kinh Cao Tay",
+    enMotif: "green tea rival",
+    viMotif: "trà xanh",
+    hiMotif: "छल भरी प्रतिद्वंद्वी",
+    idMotif: "rival bermuka dua",
+    arMotif: "المنافسة الماكرة",
+    languages: ["vi"]
   })
 ];
 
