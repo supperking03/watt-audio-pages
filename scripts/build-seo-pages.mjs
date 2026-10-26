@@ -5786,6 +5786,26 @@ const topics = [
     idMotif: "drama pernikahan dan romansa sekolah",
     arMotif: "دراما الزواج و رومانسية المدرسة",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "toi-lua-tra-nam-li-hon-tay-trang-khien-tra-xanh-bi-va-tuc-phat-dien",
+    title: "Tôi Lừa Tra Nam Li Hôn Tay Trắng Khiến Trà Xanh Bị Vả Tức Phát Điên",
+    enMotif: "green tea rival",
+    viMotif: "trà xanh",
+    hiMotif: "छल भरी प्रतिद्वंद्वी",
+    idMotif: "rival bermuka dua",
+    arMotif: "المنافسة الماكرة",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "jary-aljdyd-rjany-bnt-andha-20-snh-bad-wfah-jwzy",
+    title: "جاري الجديد رجعني بنت عندها 20 سنة بعد وفاة جوزي!",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["ar"]
   })
 ];
 
