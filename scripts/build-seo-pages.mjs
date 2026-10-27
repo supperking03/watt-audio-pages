@@ -5866,6 +5866,16 @@ const topics = [
     idMotif: "misteri dan ketegangan",
     arMotif: "التشويق والغموض",
     languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "trong-sinh-toi-tinh-nguyen-ra-dao-de-khong-phai-di-day-cung-gia-dinh",
+    title: "Trọng Sinh Tôi Tình Nguyện Ra Đảo Để Không Phải Đi Đày Cùng Gia Đình",
+    enMotif: "rebirth and family drama",
+    viMotif: "trọng sinh và gia đình",
+    hiMotif: "पुनर्जन्म और पारिवारिक ड्रामा",
+    idMotif: "terlahir kembali dan drama keluarga",
+    arMotif: "العودة إلى الماضي و دراما عائلية",
+    languages: ["vi"]
   })
 ];
 
