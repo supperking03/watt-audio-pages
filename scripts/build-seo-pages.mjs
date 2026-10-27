@@ -5846,6 +5846,26 @@ const topics = [
     idMotif: "misteri dan ketegangan",
     arMotif: "التشويق والغموض",
     languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "dibuang-saat-suami-bangkrut-aku-dilamar-musuh-bebuyutannya-yang-kaya-raya",
+    title: "Dibuang Saat Suami Bangkrut, Aku Dilamar Musuh Bebuyutannya Yang Kaya Raya!",
+    enMotif: "rich-family romance, family drama and suspense and mystery",
+    viMotif: "hào môn, gia đình và kinh dị bí ẩn",
+    hiMotif: "अमीर परिवार की रोमांस, पारिवारिक ड्रामा और सस्पेंस और रहस्य",
+    idMotif: "romansa keluarga kaya, drama keluarga dan misteri dan ketegangan",
+    arMotif: "رومانسية العائلات الثرية, دراما عائلية و التشويق والغموض",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "gara-gara-menginap-dirumah-teman-ku",
+    title: "Gara Gara Menginap Dirumah Teman Ku",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["id"]
   })
 ];
 
