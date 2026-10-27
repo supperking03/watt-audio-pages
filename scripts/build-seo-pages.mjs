@@ -5826,6 +5826,26 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "cara-mengaktifkan-text-to-speech-di-2025-metode-baru-panduan-langkah-demi-langkah",
+    title: "Cara Mengaktifkan Text-to-Speech Di 2025 [Metode Baru] Panduan Langkah Demi Langkah",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "buku-yang-akan-kamu-selesaikan-dalam-satu-malam",
+    title: "Buku Yang Akan Kamu Selesaikan Dalam Satu Malam",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["id"]
   })
 ];
 
