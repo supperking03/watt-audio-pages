@@ -5876,6 +5876,26 @@ const topics = [
     idMotif: "terlahir kembali dan drama keluarga",
     arMotif: "العودة إلى الماضي و دراما عائلية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "cung-thai-tu-gia-lam-chuyen-mac-co-tren-xe-i-dau-dau",
+    title: "【 】Cùng Thái Tử Gia Làm Chuyện ''MẮC CỠ'' Trên Xe I Dâu Dâu",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "hadiah-pedas-untuk-ibu-tiri-yang-selingkuh-5",
+    title: "Hadiah Pedas Untuk Ibu Tiri Yang Selingkuh- -5",
+    enMotif: "family drama",
+    viMotif: "gia đình",
+    hiMotif: "पारिवारिक ड्रामा",
+    idMotif: "drama keluarga",
+    arMotif: "دراما عائلية",
+    languages: ["id"]
   })
 ];
 
