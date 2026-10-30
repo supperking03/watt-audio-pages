@@ -5946,6 +5946,16 @@ const topics = [
     idMotif: "drama keluarga",
     arMotif: "دراما عائلية",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "hamen-tumase-pyar-kitana-hindi",
+    title: "हमें तुमसे प्यार कितना Hindi",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["hi"]
   })
 ];
 
