@@ -5916,6 +5916,36 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "hon-uoc-tu-be-voi-truc-ma-thai-tu-gia-bac-kinh",
+    title: "Hôn Ước Từ Bé Với Trúc Mã Thái Tử Gia Bắc Kinh",
+    enMotif: "marriage drama",
+    viMotif: "cưới gả",
+    hiMotif: "शादी का ड्रामा",
+    idMotif: "drama pernikahan",
+    arMotif: "دراما الزواج",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "productivity-boost-lofi-study-music-for-deep-concentration-lofi-study-room-study",
+    title: "Productivity Boost Lofi Study Music For Deep Concentration ~ Lofi Study Room [study",
+    enMotif: "family drama",
+    viMotif: "gia đình",
+    hiMotif: "पारिवारिक ड्रामा",
+    idMotif: "drama keluarga",
+    arMotif: "دراما عائلية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "the-hurtful-part-of-chasing-the-sun-story-by-inksteady",
+    title: "The Hurtful Part of Chasing the Sun Story By Inksteady",
+    enMotif: "family drama",
+    viMotif: "gia đình",
+    hiMotif: "पारिवारिक ड्रामा",
+    idMotif: "drama keluarga",
+    arMotif: "دراما عائلية",
+    languages: ["en"]
   })
 ];
 
