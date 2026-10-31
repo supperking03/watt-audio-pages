@@ -5956,6 +5956,36 @@ const topics = [
     idMotif: "misteri dan ketegangan",
     arMotif: "التشويق والغموض",
     languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "tra-xanh-dac-toi-dai-tieu-thu-cua-gia-toc-hac-dao",
+    title: "Trà Xanh Đắc Tội Đại Tiểu Thư của Gia Tộc Hắc Đạo",
+    enMotif: "green tea rival",
+    viMotif: "trà xanh",
+    hiMotif: "छल भरी प्रतिद्वंद्वी",
+    idMotif: "rival bermuka dua",
+    arMotif: "المنافسة الماكرة",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "i-arrived-20-years-early-and-became-the-demon-god",
+    title: "I Arrived 20 Years Early And Became The Demon God",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "to-cho-cau-muon-bo-cau-cho-to-muon-me",
+    title: "Tớ Cho Cậu Mượn Bố, Cậu Cho Tớ Mượn Mẹ",
+    enMotif: "family drama",
+    viMotif: "gia đình",
+    hiMotif: "पारिवारिक ड्रामा",
+    idMotif: "drama keluarga",
+    arMotif: "دراما عائلية",
+    languages: ["vi"]
   })
 ];
 
