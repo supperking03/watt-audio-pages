@@ -5986,6 +5986,16 @@ const topics = [
     idMotif: "drama keluarga",
     arMotif: "دراما عائلية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "hoc-sinh-moi-den-da-muon-giu-vi-tri-hoa-khoi",
+    title: "# Học Sinh Mới Đến Đã Muốn Giữ Vị Trí Hoa Khôi",
+    enMotif: "school romance",
+    viMotif: "vườn trường",
+    hiMotif: "कॉलेज रोमांस",
+    idMotif: "romansa sekolah",
+    arMotif: "رومانسية المدرسة",
+    languages: ["vi"]
   })
 ];
 
