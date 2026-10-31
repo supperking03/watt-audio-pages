@@ -5996,6 +5996,26 @@ const topics = [
     idMotif: "romansa sekolah",
     arMotif: "رومانسية المدرسة",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "sau-khi-ket-hon-voi-nguoi-minh-tham-yeu-chong-toi-dot-nhien-thay-doi",
+    title: "Sau Khi Kết Hôn với Người Mình Thầm Yêu, Chồng Tôi Đột Nhiên Thay Đổi",
+    enMotif: "marriage drama",
+    viMotif: "cưới gả",
+    hiMotif: "शादी का ड्रामा",
+    idMotif: "drama pernikahan",
+    arMotif: "دراما الزواج",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "anh-de-to-tinh-tieu-tam-tren-show-truc-tiep-mot-so-18",
+    title: "Ảnh Đế Tỏ Tình Tiểu Tam Trên Show Trực Tiếp ~ Mót Số 18",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
