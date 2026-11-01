@@ -6016,6 +6016,16 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "ta-nam-thang-om-dui-ty-ty-trong-sinh",
+    title: "Ta Nằm Thẳng Ôm Đùi Tỷ Tỷ Trọng Sinh",
+    enMotif: "rebirth",
+    viMotif: "trọng sinh",
+    hiMotif: "पुनर्जन्म",
+    idMotif: "terlahir kembali",
+    arMotif: "العودة إلى الماضي",
+    languages: ["vi"]
   })
 ];
 
