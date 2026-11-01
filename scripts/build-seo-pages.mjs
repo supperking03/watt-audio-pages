@@ -6026,6 +6026,16 @@ const topics = [
     idMotif: "terlahir kembali",
     arMotif: "العودة إلى الماضي",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "dal-katane-vale-ganvar-ne-kaise-racha-meghadutam-aur-shakuntala",
+    title: "डाल काटने वाले गँवार ने कैसे रचा 'मेघदूतम्' और 'शकुंतला'?",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["hi"]
   })
 ];
 
