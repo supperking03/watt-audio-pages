@@ -6046,6 +6046,16 @@ const topics = [
     idMotif: "pindah dunia, komedi dan misteri dan ketegangan",
     arMotif: "الانتقال إلى عالم آخر, الكوميديا و التشويق والغموض",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "trung-sinh-toi-quyet-nghe-theo-bo-me",
+    title: "Trùng Sinh, Tôi Quyết Nghe Theo Bố Mẹ",
+    enMotif: "family drama",
+    viMotif: "gia đình",
+    hiMotif: "पारिवारिक ड्रामा",
+    idMotif: "drama keluarga",
+    arMotif: "دراما عائلية",
+    languages: ["vi"]
   })
 ];
 
