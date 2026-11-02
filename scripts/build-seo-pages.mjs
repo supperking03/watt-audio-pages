@@ -6036,6 +6036,16 @@ const topics = [
     idMotif: "misteri dan ketegangan",
     arMotif: "التشويق والغموض",
     languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "the-human-from-a-dungeon-ch-1-100-isekai-dungeon-comedy-by-itsdirector",
+    title: "The Human From A Dungeon Ch 1-100 (Isekai, Dungeon, Comedy) (by Itsdirector)",
+    enMotif: "transmigration, comedy and suspense and mystery",
+    viMotif: "xuyên sách, hài hước và kinh dị bí ẩn",
+    hiMotif: "दूसरी दुनिया, कॉमेडी और सस्पेंस और रहस्य",
+    idMotif: "pindah dunia, komedi dan misteri dan ketegangan",
+    arMotif: "الانتقال إلى عالم آخر, الكوميديا و التشويق والغموض",
+    languages: ["en"]
   })
 ];
 
