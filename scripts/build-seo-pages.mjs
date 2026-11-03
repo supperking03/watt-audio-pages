@@ -6066,6 +6066,46 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "ba-duong-phao-hoi-dat-phan-dien-nhi-len-show-nuoi-con-va-mat",
+    title: "Ba Dượng Pháo Hôi Dắt Phản Diện Nhí Lên Show Nuôi Con Vả Mặt",
+    enMotif: "family drama",
+    viMotif: "gia đình",
+    hiMotif: "पारिवारिक ड्रामा",
+    idMotif: "drama keluarga",
+    arMotif: "دراما عائلية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "ang-bilyonaryong-boss-ang-nakauna-sa-magandang-maid-na-gabi-gabi-niyang-pinapantasya",
+    title: "Ang Bilyonaryong Boss Ang Nakauna Sa Magandang Maid Na Gabi-gabi Niyang Pinapantasya",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "jis-laraki-ko-bardasht-nahin-kar-sakata-tha-usi-ke-pyar-men-par-gaya",
+    title: "जिस लड़की को बर्दाश्त नहीं कर सकता था, उसी के प्यार में पड़ गया!",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "bintang-di-surga-official-music-video",
+    title: "Bintang Di Surga (Official Music Video)",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["id"]
   })
 ];
 
