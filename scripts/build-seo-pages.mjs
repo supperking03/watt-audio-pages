@@ -6056,6 +6056,16 @@ const topics = [
     idMotif: "drama keluarga",
     arMotif: "دراما عائلية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "ishk-to-hona-hi-tha-hindi-story",
+    title: "इश्क तो होना ही था Hindi Story",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["hi"]
   })
 ];
 
