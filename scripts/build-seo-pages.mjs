@@ -6146,6 +6146,16 @@ const topics = [
     idMotif: "rival bermuka dua",
     arMotif: "المنافسة الماكرة",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "tu-be-bo-me-day-toi-khong-duoc-de-ban-than-chiu-thiet",
+    title: "Từ Bé Bố Mẹ Dạy Tôi Không Được Để Bản Thân Chịu Thiệt",
+    enMotif: "family drama",
+    viMotif: "gia đình",
+    hiMotif: "पारिवारिक ड्रामा",
+    idMotif: "drama keluarga",
+    arMotif: "دراما عائلية",
+    languages: ["vi"]
   })
 ];
 
