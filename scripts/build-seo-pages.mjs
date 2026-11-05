@@ -6156,6 +6156,36 @@ const topics = [
     idMotif: "drama keluarga",
     arMotif: "دراما عائلية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "chu-nho-cua-ban-than-la-ong-trum-cung-vo-nhat-bac-kinh",
+    title: "Chú Nhỏ Của Bạn Thân Là Ông Trùm Cưng Vợ Nhất Bắc Kinh",
+    enMotif: "rebirth",
+    viMotif: "trọng sinh",
+    hiMotif: "पुनर्जन्म",
+    idMotif: "terlahir kembali",
+    arMotif: "العودة إلى الماضي",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "he-insulted-the-cold-professor-to-get-expelled-but-she-locked-the-door",
+    title: "He Insulted The Cold Professor To Get Expelled, But She Locked The Door!",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "vo-cung-luoi-bieng-cua-thai-tu-tan-gia-hoa-ra-la-sat-thu-khet-tieng",
+    title: "Vợ Cưng Lười Biếng Của Thái Tử Tần Gia Hoá Ra Là Sát Thủ Khét Tiếng",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
