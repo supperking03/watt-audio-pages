@@ -6196,6 +6196,36 @@ const topics = [
     idMotif: "misteri dan ketegangan",
     arMotif: "التشويق والغموض",
     languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "jise-mamuli-saphai-vala-samajhakar-kiya-beijjat-vahi-nikala-karoron-ki-kanpani-ka-cheyaramai",
+    title: "जिसे मामूली सफाई वाला समझकर किया बेइज्जत वही निकला करोड़ों की कंपनी का चेयरमैन!",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "ban-cung-phong-cho-ban-trai-chia-khoa-phong-ki-tuc",
+    title: "Bạn Cùng Phòng Cho Bạn Trai Chìa Khóa Phòng Kí Túc",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "dai-ca-truong-la-thai-tu-gia-sieu-cuong-ban-gai",
+    title: "Đại Ca Trường Là Thái Tử Gia Siêu Cuồng Bạn Gái",
+    enMotif: "school romance",
+    viMotif: "vườn trường",
+    hiMotif: "कॉलेज रोमांस",
+    idMotif: "romansa sekolah",
+    arMotif: "رومانسية المدرسة",
+    languages: ["vi"]
   })
 ];
 
