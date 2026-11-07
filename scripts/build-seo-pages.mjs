@@ -6256,6 +6256,36 @@ const topics = [
     idMotif: "misteri dan ketegangan",
     arMotif: "التشويق والغموض",
     languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "ibuku-di-hina-dan-usir-oleh-ibu-mertua-dia-syok-saat-tau-ibuku-konglomerat",
+    title: "Ibuku Di Hina Dan Usir Oleh Ibu Mertua Dia Syok Saat Tau Ibuku Konglomerat",
+    enMotif: "rich-family romance, family drama and suspense and mystery",
+    viMotif: "hào môn, gia đình và kinh dị bí ẩn",
+    hiMotif: "अमीर परिवार की रोमांस, पारिवारिक ड्रामा और सस्पेंस और रहस्य",
+    idMotif: "romansa keluarga kaya, drama keluarga dan misteri dan ketegangan",
+    arMotif: "رومانسية العائلات الثرية, دراما عائلية و التشويق والغموض",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "litrpg-system-apocalypse-progression-fantasy",
+    title: "LitRPG, System Apocalypse, Progression Fantasy",
+    enMotif: "fantasy adventure",
+    viMotif: "tiên hiệp fantasy",
+    hiMotif: "फ़ैंटेसी एडवेंचर",
+    idMotif: "petualangan fantasi",
+    arMotif: "مغامرات خيالية",
+    languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "i-raised-demons-now-they-rule-the-world",
+    title: "I Raised Demons, Now They Rule The World",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["en"]
   })
 ];
 
