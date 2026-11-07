@@ -6236,6 +6236,26 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["ar"]
+  }),
+  storyTitleTopic({
+    slug: "the-than-van-nguoi-ghet-bo-doi-kich-ban-thanh-bac-thay-thao-tung",
+    title: "Thế Thân Vạn Người Ghét Bỏ Đổi Kịch Bản Thành Bậc Thầy Thao Túng",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "junun-teri-mohabbat-ka-hindi-romantic",
+    title: "जुनून तेरी मोहब्बत का Hindi Romantic",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["hi"]
   })
 ];
 
