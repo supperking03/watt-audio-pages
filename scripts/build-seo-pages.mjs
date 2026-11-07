@@ -6286,6 +6286,36 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "hon-uoc-tu-be-voi-thai-tu-gia-bac-kinh",
+    title: "Hôn Ước Từ Bé Với Thái Tử Gia Bắc Kinh",
+    enMotif: "marriage drama",
+    viMotif: "cưới gả",
+    hiMotif: "शादी का ड्रामा",
+    idMotif: "drama pernikahan",
+    arMotif: "دراما الزواج",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "tieu-tam-khoc-loc-doi-danh-phan-con-che-toi-quai-thai",
+    title: "Tiểu Tam Khóc Lóc Đòi Danh Phận, Còn Chê Tôi Quái Thai !",
+    enMotif: "emotional angst",
+    viMotif: "ngược tâm",
+    hiMotif: "दर्द भरी कहानी",
+    idMotif: "kisah pilu",
+    arMotif: "الحكايات الموجعة",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "garib-samajhakar-jis-aurat-ko-diya-khana-vahi-nikali-karoron-ki-malakin",
+    title: "गरीब समझकर जिस औरत को दिया खाना, वही निकली करोड़ों की मालकिन!",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["hi"]
   })
 ];
 
