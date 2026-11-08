@@ -6336,6 +6336,16 @@ const topics = [
     idMotif: "kisah pilu",
     arMotif: "الحكايات الموجعة",
     languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "khi-nu-phu-benh-tat-nhin-thay-kich-ban-mot-so-24",
+    title: "Khi Nữ Phụ Bệnh Tật Nhìn Thấy Kịch Bản ~ Mót Số 24",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
