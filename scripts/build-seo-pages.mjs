@@ -6326,6 +6326,16 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "kisah-gelap-paling-ikonik-dari-eka-kurniawan",
+    title: "Kisah Gelap Paling Ikonik Dari Eka Kurniawan",
+    enMotif: "emotional angst",
+    viMotif: "ngược tâm",
+    hiMotif: "दर्द भरी कहानी",
+    idMotif: "kisah pilu",
+    arMotif: "الحكايات الموجعة",
+    languages: ["id"]
   })
 ];
 
