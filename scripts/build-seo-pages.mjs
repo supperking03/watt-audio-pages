@@ -6316,6 +6316,16 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "monthly-blessings-for-the-ninja-academy-slacker-naruto-kakashi-era",
+    title: "Monthly Blessings For The Ninja Academy Slacker [Naruto, Kakashi Era]",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["en"]
   })
 ];
 
