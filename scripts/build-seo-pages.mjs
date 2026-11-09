@@ -6356,6 +6356,36 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "toi-la-con-gai-duy-nhat-cua-hao-mon",
+    title: "Tôi là Con Gái Duy Nhất của Hào Môn",
+    enMotif: "rich-family romance and family drama",
+    viMotif: "hào môn và gia đình",
+    hiMotif: "अमीर परिवार की रोमांस और पारिवारिक ड्रामा",
+    idMotif: "romansa keluarga kaya dan drama keluarga",
+    arMotif: "رومانسية العائلات الثرية و دراما عائلية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "hoa-khoi-dien-vay-ngan-het-co-di-cham-phay-den-phong-thi",
+    title: "Hoa Khôi Diện Váy Ngắn Hết Cỡ Đi Chấm Phẩy Đến Phòng Thi",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "i-regressed-and-became-an-imperialist-to-save-the-world",
+    title: "I Regressed and Became An Imperialist To Save the World",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["en"]
   })
 ];
 
