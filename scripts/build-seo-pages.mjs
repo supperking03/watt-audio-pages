@@ -6416,6 +6416,26 @@ const topics = [
     idMotif: "misteri dan ketegangan",
     arMotif: "التشويق والغموض",
     languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "xuyen-thanh-vai-phan-dien-trong-sach-toi-cung-nam-chinh-dau-da-nhau-ca-doi",
+    title: "Xuyên Thành Vai Phản Diện Trong Sách, Tôi Cùng Nam Chính Đấu Đá Nhau Cả Đời",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "sau-khi-chia-tay-dinh-luu-toi-roi-khoi-gioi-giai-tri",
+    title: "Sau Khi Chia Tay Đỉnh Lưu, Tôi Rời Khỏi Giới Giải Trí",
+    enMotif: "entertainment circle",
+    viMotif: "showbiz",
+    hiMotif: "शोबिज़",
+    idMotif: "dunia hiburan",
+    arMotif: "عالم الشهرة",
+    languages: ["vi"]
   })
 ];
 
