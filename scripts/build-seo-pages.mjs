@@ -6386,6 +6386,26 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "toi-khong-theo-duoi-nua-hoc-ba-lanh-lung-phat-hoang-roi",
+    title: "Tôi Không Theo Đuổi Nữa, Học Bá Lạnh Lùng Phát Hoảng Rồi",
+    enMotif: "school romance",
+    viMotif: "vườn trường",
+    hiMotif: "कॉलेज रोमांस",
+    idMotif: "romansa sekolah",
+    arMotif: "رومانسية المدرسة",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "ngay-anh-biet-yeu-toi-toi-da-ngung-yeu-anh",
+    title: "Ngày Anh Biết Yêu Tôi, Tôi Đã Ngừng Yêu Anh",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
