@@ -6406,6 +6406,16 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "disiram-air-kotor-gelandangan-ini-lempar-uang-miliaran-batalkan-nikah-paksa-si-gadis-penolon",
+    title: "Disiram Air Kotor, Gelandangan Ini Lempar Uang Miliaran & Batalkan Nikah Paksa Si Gadis Penolongnya!",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["id"]
   })
 ];
 
