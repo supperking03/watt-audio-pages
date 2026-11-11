@@ -6436,6 +6436,26 @@ const topics = [
     idMotif: "dunia hiburan",
     arMotif: "عالم الشهرة",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "toi-la-con-gai-thu-hai-trong-nha-the-nhung-ca-gia-dinh-lai",
+    title: "Tôi Là Con Gái Thứ Hai Trong Nhà Thế Nhưng Cả Gia Đình Lại",
+    enMotif: "family drama",
+    viMotif: "gia đình",
+    hiMotif: "पारिवारिक ड्रामा",
+    idMotif: "drama keluarga",
+    arMotif: "دراما عائلية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "tham-thich-nguoi-cung-thich-minh",
+    title: "Thầm Thích Người Cũng Thích Mình",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
