@@ -6466,6 +6466,16 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "cuplikan-seru-akan-segera-hadir-aktifkan-notifikasi-untuk-akses-lebih-awal",
+    title: "Cuplikan Seru Akan Segera Hadir! Aktifkan Notifikasi Untuk Akses Lebih Awal.",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["id"]
   })
 ];
 
