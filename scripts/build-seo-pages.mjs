@@ -6476,6 +6476,36 @@ const topics = [
     idMotif: "misteri dan ketegangan",
     arMotif: "التشويق والغموض",
     languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "kupikir-posesif-karena-terlalu-cinta-ternyata-aku-cuma-dijadikan-rahasia-di-atas-rekening-be",
+    title: "Kupikir Posesif Karena Terlalu Cinta, Ternyata Aku Cuma Dijadikan Rahasia Di Atas Rekening Bersamaku",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "toi-khong-theo-duoi-nua-hoc-ba-lai-phat-dien-muon-chiem-huu",
+    title: "Tôi Không Theo Đuổi Nữa, Học Bá Lại Phát Điên Muốn Chiếm Hữu",
+    enMotif: "school romance",
+    viMotif: "vườn trường",
+    hiMotif: "कॉलेज रोमांस",
+    idMotif: "romansa sekolah",
+    arMotif: "رومانسية المدرسة",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "ca-ky-tuc-xa-toi-deu-la-thien-kim-mo-hon-vua-co-nao-vua-co-tri-thuc",
+    title: "Cả Ký Túc Xá Tôi Đều là Thiên Kim Mỏ Hỗn Vừa Có Não Vừa Có Tri Thức",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
