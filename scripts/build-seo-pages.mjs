@@ -6556,6 +6556,26 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["ar"]
+  }),
+  storyTitleTopic({
+    slug: "masuk-novel-isi-hati-anak-magang-ini-terdengar-ceo",
+    title: "Masuk Novel, Isi Hati Anak Magang Ini Terdengar CEO!",
+    enMotif: "rich-family romance and suspense and mystery",
+    viMotif: "hào môn và kinh dị bí ẩn",
+    hiMotif: "अमीर परिवार की रोमांस और सस्पेंस और रहस्य",
+    idMotif: "romansa keluarga kaya dan misteri dan ketegangan",
+    arMotif: "رومانسية العائلات الثرية و التشويق والغموض",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "berlangganan-sekarang-dan-nikmati-pengalaman-drama-yang-penuh-semangat",
+    title: "Berlangganan Sekarang Dan Nikmati Pengalaman Drama Yang Penuh Semangat!",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["id"]
   })
 ];
 
