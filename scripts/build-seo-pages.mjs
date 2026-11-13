@@ -6536,6 +6536,26 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "anh-hau-showbiz-la-nguoi-yeu-dai-than-esport",
+    title: "Ảnh Hậu Showbiz là Người Yêu Đại Thần Esport",
+    enMotif: "entertainment circle",
+    viMotif: "showbiz",
+    hiMotif: "शोबिज़",
+    idMotif: "dunia hiburan",
+    arMotif: "عالم الشهرة",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "amy-wmrath-jwzwny-wahd-maa-q-wkhdwa-wrthy-mkanwsh-ytwqawa-almfajah-al-mstnyahm",
+    title: "عمي ومراته جوزوني واحد معا.ق وخدوا ورثي ! مكانوش يتوقعوا المفاجأه ال مستنياهم !",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["ar"]
   })
 ];
 
