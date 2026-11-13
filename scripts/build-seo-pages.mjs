@@ -6576,6 +6576,16 @@ const topics = [
     idMotif: "misteri dan ketegangan",
     arMotif: "التشويق والغموض",
     languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "trung-sinh-toi-mac-ke-tra-xanh-nhet-con-roi-trong-thung-xe-tu-va-mat",
+    title: "Trùng Sinh, Tôi Mặc Kệ Trà Xanh Nhét Con Rơi Trong Thùng Xe Tự Vả Mặt",
+    enMotif: "green tea rival and family drama",
+    viMotif: "trà xanh và gia đình",
+    hiMotif: "छल भरी प्रतिद्वंद्वी और पारिवारिक ड्रामा",
+    idMotif: "rival bermuka dua dan drama keluarga",
+    arMotif: "المنافسة الماكرة و دراما عائلية",
+    languages: ["vi"]
   })
 ];
 
