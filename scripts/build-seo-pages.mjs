@@ -6626,6 +6626,16 @@ const topics = [
     idMotif: "romansa sekolah",
     arMotif: "رومانسية المدرسة",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "to-tinh-crush-that-bai-toi-yeu-luon-hoc-ba-dai-thieu-gia",
+    title: "Tỏ Tình Crush Thất Bại, Tôi Yêu Luôn Học Bá Đại Thiếu Gia",
+    enMotif: "school romance",
+    viMotif: "vườn trường",
+    hiMotif: "कॉलेज रोमांस",
+    idMotif: "romansa sekolah",
+    arMotif: "رومانسية المدرسة",
+    languages: ["vi"]
   })
 ];
 
