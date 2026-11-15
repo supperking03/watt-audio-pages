@@ -6636,6 +6636,36 @@ const topics = [
     idMotif: "romansa sekolah",
     arMotif: "رومانسية المدرسة",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "dil-tujhe-itana-kyon-chahe-cousin-based-hindi",
+    title: "दिल तुझे इतना क्यों चाहे Cousin Based Hindi",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "vo-nho-dong-danh-cua-nhan-vat-phan-dien-pha-san",
+    title: "Vợ Nhỏ Đỏng Đảnh Của Nhân Vật Phản Diện Phá Sản",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "vi-hon-the-cua-hoac-quan-truong-la-bac-si-thien-tai",
+    title: "Vị Hôn Thê Của Hoắc Quân Trưởng Là Bác Sĩ Thiên Tài",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
