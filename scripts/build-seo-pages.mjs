@@ -6666,6 +6666,36 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "co-vo-bao-doi-cua-thieu-soai-luc-lanh-lung-la-bac-si-thien-tai",
+    title: "Cô Vợ Báo Đời của Thiếu Soái Lục Lạnh Lùng, là Bác Sĩ Thiên Tài!",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "trong-sinh-mac-ke-ban-cung-phong-nap-tien-boc-tui-mu-tham-my",
+    title: "Trọng Sinh Mặc Kệ Bạn Cùng Phòng Nạp Tiền Bóc Túi Mù Thẩm Mỹ",
+    enMotif: "rebirth",
+    viMotif: "trọng sinh",
+    hiMotif: "पुनर्जन्म",
+    idMotif: "terlahir kembali",
+    arMotif: "العودة إلى الماضي",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "cara-mengubah-mode-baca-fitur-baru",
+    title: "Cara Mengubah Mode Baca (fitur Baru )",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["id"]
   })
 ];
 
