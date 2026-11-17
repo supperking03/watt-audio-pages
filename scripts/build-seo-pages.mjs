@@ -6746,6 +6746,26 @@ const topics = [
     idMotif: "misteri dan ketegangan",
     arMotif: "التشويق والغموض",
     languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "khi-hai-trai-tim-cung-gioi-lac-nhau-giua-doi",
+    title: "Khi Hai Trái Tim Cùng Giới Lạc Nhau Giữa Đời…",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "house-of-amarin-book-adventure-fantasy-magic-school-life-web-novel-royal-road",
+    title: "House Of Amarin Book ( Adventure, Fantasy, Magic, School Life ) Web Novel Royal Road",
+    enMotif: "school romance, suspense and mystery and fantasy adventure",
+    viMotif: "vườn trường, kinh dị bí ẩn và tiên hiệp fantasy",
+    hiMotif: "कॉलेज रोमांस, सस्पेंस और रहस्य और फ़ैंटेसी एडवेंचर",
+    idMotif: "romansa sekolah, misteri dan ketegangan dan petualangan fantasi",
+    arMotif: "رومانسية المدرسة, التشويق والغموض و مغامرات خيالية",
+    languages: ["en"]
   })
 ];
 
