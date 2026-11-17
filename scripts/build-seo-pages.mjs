@@ -6726,6 +6726,26 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "bat-coc-nham-thai-tu-gia-toi-bi-anh-dien-cuong-chiem-huu",
+    title: "Bắt Cóc Nhầm Thái Tử Gia, Tôi Bị Anh Điên Cuồng Chiếm Hữu",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "najayaz-aulad-ll-ep10-love-stories",
+    title: "नाजायज़ औलाद Ll Ep10 Love Stories",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["hi"]
   })
 ];
 
