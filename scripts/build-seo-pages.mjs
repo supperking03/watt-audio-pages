@@ -6816,6 +6816,36 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "saat-diya-datang-5",
+    title: "Saat Diya Datang ( -5)",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "sistem-baca-pikiran-aktif-istri-ceo-batal-cerai-gara-gara-dengar-suara-batin",
+    title: "Sistem Baca Pikiran Aktif, Istri CEO Batal Cerai Gara-Gara Dengar Suara Batin!",
+    enMotif: "rich-family romance and suspense and mystery",
+    viMotif: "hào môn và kinh dị bí ẩn",
+    hiMotif: "अमीर परिवार की रोमांस और सस्पेंस और रहस्य",
+    idMotif: "romansa keluarga kaya dan misteri dan ketegangan",
+    arMotif: "رومانسية العائلات الثرية و التشويق والغموض",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "show-hen-ho-bien-thanh-hien-truong-tim-vo-cua-anh-de",
+    title: "Show Hẹn Hò Biến Thành Hiện Trường Tìm Vợ Của Ảnh Đế",
+    enMotif: "school romance",
+    viMotif: "vườn trường",
+    hiMotif: "कॉलेज रोमांस",
+    idMotif: "romansa sekolah",
+    arMotif: "رومانسية المدرسة",
+    languages: ["vi"]
   })
 ];
 
