@@ -6776,6 +6776,46 @@ const topics = [
     idMotif: "misteri dan ketegangan dan petualangan fantasi",
     arMotif: "التشويق والغموض و مغامرات خيالية",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "tra-xanh-tuoi-gi-chi-day-moi-la-matcha-hao-hang",
+    title: "Trà Xanh Tuổi Gì Chị Đây Mới Là Matcha Hảo Hạng",
+    enMotif: "green tea rival, family drama and suspense and mystery",
+    viMotif: "trà xanh, gia đình và kinh dị bí ẩn",
+    hiMotif: "छल भरी प्रतिद्वंद्वी, पारिवारिक ड्रामा और सस्पेंस और रहस्य",
+    idMotif: "rival bermuka dua, drama keluarga dan misteri dan ketegangan",
+    arMotif: "المنافسة الماكرة, دراما عائلية و التشويق والغموض",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "hoa-khoi-cam-ca-lop-dung-nuoc-hoa-giong-minh",
+    title: "Hoa Khôi Cấm Cả Lớp Dùng Nước Hoa Giống Mình",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "par-us-garib-laraki-ko-chuna-jo-sirph-naukarani-banana-chahati-thi",
+    title: "पर उस गरीब लड़की को चुना जो सिर्फ नौकरानी बनना चाहती थी!",
+    enMotif: "rich-family romance and palace drama",
+    viMotif: "hào môn và cổ trang",
+    hiMotif: "अमीर परिवार की रोमांस और राजमहल ड्रामा",
+    idMotif: "romansa keluarga kaya dan drama kerajaan",
+    arMotif: "رومانسية العائلات الثرية و دراما القصور",
+    languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "ghamandi-rajakumari-ke-raste-men-koi-aam-aadami-nahin-aana-chahie",
+    title: "घमंडी राजकुमारी के रास्ते में कोई आम आदमी नहीं आना चाहिए!",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["hi"]
   })
 ];
 
