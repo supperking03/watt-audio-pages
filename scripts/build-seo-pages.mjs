@@ -6766,6 +6766,16 @@ const topics = [
     idMotif: "romansa sekolah, misteri dan ketegangan dan petualangan fantasi",
     arMotif: "رومانسية المدرسة, التشويق والغموض و مغامرات خيالية",
     languages: ["en"]
+  }),
+  storyTitleTopic({
+    slug: "a-broken-ex-mercenary-reincarnates-as-a-child-healer-and-begins-his-rise-through-a-magic-tec",
+    title: "A Broken Ex-Mercenary Reincarnates As A Child Healer And Begins His Rise Through A Magic-Tech World",
+    enMotif: "suspense and mystery and fantasy adventure",
+    viMotif: "kinh dị bí ẩn và tiên hiệp fantasy",
+    hiMotif: "सस्पेंस और रहस्य और फ़ैंटेसी एडवेंचर",
+    idMotif: "misteri dan ketegangan dan petualangan fantasi",
+    arMotif: "التشويق والغموض و مغامرات خيالية",
+    languages: ["en"]
   })
 ];
 
