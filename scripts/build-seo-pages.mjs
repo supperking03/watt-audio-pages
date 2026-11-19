@@ -6846,6 +6846,16 @@ const topics = [
     idMotif: "romansa sekolah",
     arMotif: "رومانسية المدرسة",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "ca-man-ga-cho-ong-trum-hac-bang-ngo-dau-anh-la-ke-nghien-vo",
+    title: "Cá Mặn Gả cho Ông Trùm Hắc Bang Ngờ Đâu Anh là Kẻ Nghiện Vợ",
+    enMotif: "comedy",
+    viMotif: "hài hước",
+    hiMotif: "कॉमेडी",
+    idMotif: "komedi",
+    arMotif: "الكوميديا",
+    languages: ["vi"]
   })
 ];
 
