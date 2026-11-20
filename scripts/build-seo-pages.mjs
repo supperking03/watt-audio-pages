@@ -6856,6 +6856,16 @@ const topics = [
     idMotif: "komedi",
     arMotif: "الكوميديا",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "bagaimana-cara-agar-kamu-sukses-menulis-di-novel-dan-di-tips-by-poppi-pertiwi",
+    title: "BAGAIMANA CARA AGAR KAMU SUKSES MENULIS DI NOVEL DAN DI ? (TIPS By Poppi Pertiwi)",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["id"]
   })
 ];
 
