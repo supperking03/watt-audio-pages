@@ -6866,6 +6866,26 @@ const topics = [
     idMotif: "misteri dan ketegangan",
     arMotif: "التشويق والغموض",
     languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "thu-khoa-thanh-hoa-bac-dai-chinh-la-thien-kim-that-mo-hon-nha-hao-mon",
+    title: "Thủ Khoa Thanh Hoa Bắc Đại Chính là Thiên Kim Thật Mỏ Hỗn Nhà Hào Môn",
+    enMotif: "rich-family romance",
+    viMotif: "hào môn",
+    hiMotif: "अमीर परिवार की रोमांस",
+    idMotif: "romansa keluarga kaya",
+    arMotif: "رومانسية العائلات الثرية",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "hoa-khoi-mac-vay-xoe-ren-la-luot-di-hai-dau-tay",
+    title: "Hoa Khôi Mặc Váy Xòe Ren Lả Lướt Đi Hái Dâu Tây",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
