@@ -6976,6 +6976,36 @@ const topics = [
     idMotif: "rival bermuka dua dan romansa sekolah",
     arMotif: "المنافسة الماكرة و رومانسية المدرسة",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "hath-rakh-de-sanam-dil-pe-jara-cousin-based-hindi",
+    title: "हाथ रख दे सनम दिल पे जरा Cousin Based Hindi",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["hi"]
+  }),
+  storyTitleTopic({
+    slug: "toi-block-ban-trai-qua-mang-hoc-ba-thien-tai-phat-dien-roi",
+    title: "Tôi Block Bạn Trai Qua Mạng, Học Bá Thiên Tài Phát Điên Rồi",
+    enMotif: "school romance",
+    viMotif: "vườn trường",
+    hiMotif: "कॉलेज रोमांस",
+    idMotif: "romansa sekolah",
+    arMotif: "رومانسية المدرسة",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "lot-xac-ngay-he-toi-tro-thanh-hotgirl-hoc-ba",
+    title: "Lột Xác Ngày Hè Tôi Trở Thành Hotgirl ,học Bá",
+    enMotif: "school romance",
+    viMotif: "vườn trường",
+    hiMotif: "कॉलेज रोमांस",
+    idMotif: "romansa sekolah",
+    arMotif: "رومانسية المدرسة",
+    languages: ["vi"]
   })
 ];
 
