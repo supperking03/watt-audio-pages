@@ -6926,6 +6926,26 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "alaml-aldhy-ytlasha-amam-qswh-alwaqa-almady",
+    title: "الأمل الذي يتلاشى أمام قسوة الواقع المادي",
+    enMotif: "family drama",
+    viMotif: "gia đình",
+    hiMotif: "पारिवारिक ड्रामा",
+    idMotif: "drama keluarga",
+    arMotif: "دراما عائلية",
+    languages: ["ar"]
+  }),
+  storyTitleTopic({
+    slug: "widyaztr-baca-selengkapnya-di-kbm-app",
+    title: "Widyaztr Baca Selengkapnya Di KBM App.",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["id"]
   })
 ];
 
