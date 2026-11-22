@@ -6946,6 +6946,36 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "ep14-takut-jadi-duda-rasa-perjaka",
+    title: "Ep14 Takut Jadi Duda Rasa Perjaka",
+    enMotif: "rich-family romance and suspense and mystery",
+    viMotif: "hào môn và kinh dị bí ẩn",
+    hiMotif: "अमीर परिवार की रोमांस और सस्पेंस और रहस्य",
+    idMotif: "romansa keluarga kaya dan misteri dan ketegangan",
+    arMotif: "رومانسية العائلات الثرية و التشويق والغموض",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "tawaran-yang-sulit-di-tolak-oleh-aldian-dari-pak-haji",
+    title: "Tawaran Yang Sulit Di Tolak Oleh Aldian Dari Pak Haji",
+    enMotif: "web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "tra-xanh-choc-nham-vi-hon-the-tu-be-cua-thai-tu-gia",
+    title: "Trà Xanh Chọc Nhầm Vị Hôn Thê Từ Bé Của Thái Tử Gia",
+    enMotif: "green tea rival and school romance",
+    viMotif: "trà xanh và vườn trường",
+    hiMotif: "छल भरी प्रतिद्वंद्वी और कॉलेज रोमांस",
+    idMotif: "rival bermuka dua dan romansa sekolah",
+    arMotif: "المنافسة الماكرة و رومانسية المدرسة",
+    languages: ["vi"]
   })
 ];
 
