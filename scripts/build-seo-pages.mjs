@@ -7006,6 +7006,16 @@ const topics = [
     idMotif: "romansa sekolah",
     arMotif: "رومانسية المدرسة",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "vi-hon-the-nhut-nhat-cua-hac-bang-lai-la-ac-mong-cua-gioi-sat-thu",
+    title: "Vị Hôn Thê Nhút Nhát Của Hắc Bang Lại Là Ác Mộng Của Giới Sát Thủ",
+    enMotif: "Vietnamese web fiction and romance drama",
+    viMotif: "truyện mạng Việt và romance drama",
+    hiMotif: "हिंदी वेब स्टोरी और रोमांस ड्रामा",
+    idMotif: "cerita online dan drama romansa",
+    arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
+    languages: ["vi"]
   })
 ];
 
