@@ -7016,6 +7016,16 @@ const topics = [
     idMotif: "cerita online dan drama romansa",
     arMotif: "الروايات الإلكترونية و الدراما الرومانسية",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "ini-alasan-utama-kenapa-ceritamu-di-nggak-pernah-viral-cari-tahu-yukk",
+    title: "Ini Alasan Utama Kenapa Ceritamu Di Nggak Pernah Viral CARI TAHU YUKK!",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["id"]
   })
 ];
 
