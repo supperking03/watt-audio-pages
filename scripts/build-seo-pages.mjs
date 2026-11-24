@@ -7026,6 +7026,26 @@ const topics = [
     idMotif: "misteri dan ketegangan",
     arMotif: "التشويق والغموض",
     languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "lan-nay-den-luot-anh-theo-duoi-em",
+    title: "Lần Này, Đến Lượt Anh Theo Đuổi Em",
+    enMotif: "emotional angst",
+    viMotif: "ngược tâm",
+    hiMotif: "दर्द भरी कहानी",
+    idMotif: "kisah pilu",
+    arMotif: "الحكايات الموجعة",
+    languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "trong-sinh-mac-ke-tra-xanh-doi-len-nui-tuyet-an-sushi",
+    title: "Trọng Sinh Mặc Kệ Trà Xanh Đòi Lên Núi Tuyết Ăn Sushi",
+    enMotif: "rebirth and green tea rival",
+    viMotif: "trọng sinh và trà xanh",
+    hiMotif: "पुनर्जन्म और छल भरी प्रतिद्वंद्वी",
+    idMotif: "terlahir kembali dan rival bermuka dua",
+    arMotif: "العودة إلى الماضي و المنافسة الماكرة",
+    languages: ["vi"]
   })
 ];
 
