@@ -7046,6 +7046,26 @@ const topics = [
     idMotif: "terlahir kembali dan rival bermuka dua",
     arMotif: "العودة إلى الماضي و المنافسة الماكرة",
     languages: ["vi"]
+  }),
+  storyTitleTopic({
+    slug: "istri-sah-tapi-disembunyikan-ternyata-suami-cinta-adikku-satu-malam-mengubah-segalanya",
+    title: "Istri Sah Tapi Disembunyikan Ternyata Suami Cinta Adikku, Satu Malam Mengubah Segalanya",
+    enMotif: "suspense and mystery",
+    viMotif: "kinh dị bí ẩn",
+    hiMotif: "सस्पेंस और रहस्य",
+    idMotif: "misteri dan ketegangan",
+    arMotif: "التشويق والغموض",
+    languages: ["id"]
+  }),
+  storyTitleTopic({
+    slug: "trong-sinh-mac-ke-ban-than-thay-toi-cuoi-dai-gia",
+    title: "Trọng Sinh Mặc Kệ Bạn Thân Thay Tôi Cưới Đại Gia",
+    enMotif: "rebirth and marriage drama",
+    viMotif: "trọng sinh và cưới gả",
+    hiMotif: "पुनर्जन्म और शादी का ड्रामा",
+    idMotif: "terlahir kembali dan drama pernikahan",
+    arMotif: "العودة إلى الماضي و دراما الزواج",
+    languages: ["vi"]
   })
 ];
 
